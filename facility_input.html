@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Facility Data Entry Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #33A7B5;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #33A7B5;
+        }
+        
+        /* Facility Table of Contents Styles */
+        .facility-toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .toc-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #33A7B5;
+        }
+        
+        .toc-toggle {
+            background: none;
+            border: none;
+            color: #64748b;
+            cursor: pointer;
+            font-size: 20px;
+            transition: transform 0.2s;
+        }
+        
+        .facility-toc.collapsed .toc-content {
+            display: none;
+        }
+        
+        .facility-toc.collapsed .toc-toggle {
+            transform: rotate(-90deg);
+        }
+        
+        .facility-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .facility-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 12px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        
+        .facility-item:hover {
+            background: #f1f5f9;
+            border-color: #33A7B5;
+        }
+        
+        .facility-item.active {
+            background: #dbeafe;
+            border-color: #33A7B5;
+            box-shadow: 0 2px 4px rgba(51, 167, 181, 0.1);
+        }
+        
+        .facility-name {
+            font-weight: 500;
+            color: #33A7B5;
+            flex: 1;
+        }
+        
+        .facility-name.empty {
+            color: #9ca3af;
+            font-style: italic;
+        }
+        
+        .facility-index {
+            font-size: 12px;
+            color: #6b7280;
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 8px;
+        }
+        
+        .toc-stats {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+        
+        .facility-controls {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .facility-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+            background: #33A7B5;
+            color: white;
+        }
+        
+        .btn:hover {
+            background: #2a8c96;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background: #f8fafc;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        
+        .section-header:hover {
+            background: #f1f5f9;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #33A7B5;
+        }
+        
+        .section-toggle {
+            font-size: 20px;
+            color: #64748b;
+            transition: transform 0.2s;
+        }
+        
+        .section-content {
+            padding: 20px;
+            display: none;
+        }
+        
+        .section.expanded .section-content {
+            display: block;
+        }
+        
+        .section.expanded .section-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .form-row-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row, .form-row-3 {
+                grid-template-columns: 1fr;
+            }
+            .facility-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #33A7B5;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #33A7B5;
+            box-shadow: 0 0 0 3px rgba(51, 167, 181, 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .dropdown-container {
+            position: relative;
+        }
+        
+        .dropdown-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .dropdown-item {
+            padding: 10px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid #f1f5f9;
+            transition: background 0.2s;
+        }
+        
+        .dropdown-item:hover {
+            background: #f8fafc;
+        }
+        
+        .array-container {
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 15px;
+            background: #fafafa;
+        }
+        
+        .array-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        
+        .array-item input {
+            flex: 1;
+        }
+        
+        .array-item button {
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+        
+        .add-item-btn {
+            width: 100%;
+            padding: 10px;
+            background: #33A7B5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .add-item-btn:hover {
+            background: #2a8c96;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .project-management {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .upload-status {
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .upload-status.success {
+            background-color: #dcfce7;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+        }
+        
+        .upload-status.error {
+            background-color: #fef2f2;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+        }
+        
+        .upload-status.info {
+            background-color: #dbeafe;
+            color: #2563eb;
+            border: 1px solid #93c5fd;
+        }
+        
+        .json-output {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        
+        .json-output pre {
+            background: #f1f3f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            max-height: 400px;
+        }
+        
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .copy-btn {
+            padding: 8px 16px;
+            background: #33A7B5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .copy-btn:hover {
+            background: #2a8c96;
+        }
+        
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            margin-bottom: 5px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        .project-item:hover {
+            background: #f8fafc;
+        }
+        
+        .project-item-name {
+            font-weight: 500;
+            color: #33A7B5;
+            cursor: pointer;
+            flex: 1;
+        }
+        
+        .project-item-date {
+            font-size: 12px;
+            color: #6b7280;
+            margin-right: 10px;
+        }
+        
+        .project-item-actions {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .project-item-btn {
+            padding: 4px 8px;
+            font-size: 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .project-item-load {
+            background: #33A7B5;
+            color: white;
+        }
+        
+        .project-item-load:hover {
+            background: #2a8c96;
+        }
+        
+        .project-item-delete {
+            background: #ef4444;
+            color: white;
+        }
+        
+        .project-item-delete:hover {
+            background: #dc2626;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced Facility Data Entry Form</h1>
+        
+        <!-- Project Management Section -->
+        <div class="project-management">
+            <h2 style="margin-bottom: 20px; color: #33A7B5;">Projects & Data Import</h2>
+            
+            <div class="form-group">
+                <label>Project Management</label>
+                <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                    <input type="text" id="project-name" placeholder="Enter project name..." style="flex: 1; min-width: 200px;">
+                    <button class="btn" onclick="saveCurrentProject()">Save Project</button>
+                    <button class="btn" onclick="loadProject()">Load Project</button>
+                    <button class="btn" onclick="newProject()">New Project</button>
+					<button class="btn" onclick="exportAllProjects()">Export All Projects</button>
+                </div>
+                <div id="project-status" style="margin-top: 10px; font-size: 14px; color: #6b7280;"></div>
+            </div>
+            
+            <div class="form-group">
+                <label>Saved Projects</label>
+                <div id="saved-projects-list" style="max-height: 150px; overflow-y: auto; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px; background: #fafafa;">
+                    <div style="color: #6b7280; font-style: italic;">No saved projects</div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="file-upload">Import Data Files</label>
+                <input type="file" id="file-upload" accept=".json,.csv,.txt" onchange="handleFileUpload(event)">
+                <p style="margin-top: 10px; color: #6b7280; font-size: 14px;">
+                    Upload JSON or CSV files. JSON files will load directly into the form.
+                </p>
+            </div>
+            
+            <div class="form-group">
+                <label for="json-paste">Or Paste JSON Data</label>
+                <textarea id="json-paste" rows="4" placeholder="Paste any JSON here..."></textarea>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button class="btn" onclick="importFromTextarea()">Import JSON</button>
+                    <button class="btn" onclick="clearAllData()">Clear Form</button>
+                </div>
+            </div>
+            
+            <div id="upload-status" style="display: none;"></div>
+        </div>
+        
+        <!-- Facility Table of Contents -->
+        <div class="facility-toc" id="facility-toc">
+            <div class="toc-header">
+                <h2 class="toc-title">Facilities Overview</h2>
+                <button class="toc-toggle" onclick="toggleTableOfContents()">▼</button>
+            </div>
+            <div class="toc-content">
+                <div class="toc-stats" id="toc-stats">Total: 1 facility</div>
+                <div class="facility-list" id="facility-list">
+                    <!-- Facility items will be populated here -->
+                </div>
+                <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                    <button class="btn" onclick="addFacility()">Add New Facility</button>
+                    <button class="btn btn-secondary" onclick="sortFacilities()">Sort Alphabetically</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Facility Navigation -->
+        <div class="facility-controls">
+            <div class="facility-header">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <strong>Current Facility: <span id="facility-counter">1 of 1</span></strong>
+                    <span id="current-facility-name" style="color: #6b7280; font-weight: normal;"></span>
+                    <div style="display: flex; gap: 5px;">
+                        <button class="btn" onclick="previousFacility()" id="prev-facility-btn" style="display: none; padding: 8px 12px;">◀ Previous</button>
+                        <button class="btn" onclick="nextFacility()" id="next-facility-btn" style="display: none; padding: 8px 12px;">Next ▶</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="btn" onclick="showTransferDialog()">Clone/Transfer Facility</button>
+                    <button class="btn" onclick="removeFacility()" id="remove-facility-btn" style="display: none;">Remove Current</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Operator Information Section -->
+        <div class="section expanded" id="operator-section">
+            <div class="section-header" onclick="toggleSection('operator-section')">
+                <h2 class="section-title">Operator Information</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="operator-name">Operator Name</label>
+                        <div class="dropdown-container">
+                            <input type="text" id="operator-name" class="dropdown-input" placeholder="e.g., Brown Schools">
+                            <div id="operator-name-dropdown" class="dropdown-list"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="operator-current-name">Current Name</label>
+                        <input type="text" id="operator-current-name" placeholder="Current legal name if different">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Past Names</label>
+                    <div class="array-container" data-path="operator.pastNames"></div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="operator-location">Primary Location</label>
+                        <input type="text" id="operator-location" placeholder="e.g., Waynesboro, TN">
+                    </div>
+                    <div class="form-group">
+                        <label for="operator-headquarters">Headquarters</label>
+                        <input type="text" id="operator-headquarters" placeholder="e.g., Nashville, TN">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="operator-founded">Founded</label>
+                        <input type="text" id="operator-founded" placeholder="e.g., 1985">
+                    </div>
+                    <div class="form-group">
+                        <label for="operator-period">Operating Period</label>
+                        <input type="text" id="operator-period" placeholder="e.g., 1985-Present">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="operator-status">Status</label>
+                    <select id="operator-status">
+                        <option value="">Select Status</option>
+                        <option value="Active">Active</option>
+                        <option value="Acquired">Acquired</option>
+                        <option value="Merged">Merged</option>
+                        <option value="Defunct">Defunct</option>
+                        <option value="Bankruptcy">Bankruptcy</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Parent Companies</label>
+                    <div class="array-container" data-path="operator.parentCompanies"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Websites</label>
+                    <div class="array-container" data-path="operator.websites"></div>
+                </div>
+                
+                <h3 style="margin: 20px 0 15px 0; color: #33A7B5; font-size: 16px;">Key Staff</h3>
+                
+                <div class="form-group">
+                    <label for="operator-ceo">CEO/President</label>
+                    <input type="text" id="operator-ceo" placeholder="e.g., John Smith">
+                </div>
+                
+                <div class="form-group">
+                    <label>Founders</label>
+                    <div class="array-container" data-path="operator.keyStaff.founders"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Key Executives</label>
+                    <div class="array-container" data-path="operator.keyStaff.keyExecutives"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Operator Notes</label>
+                    <div class="array-container" data-path="operator.notes"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Transfer/Clone Dialog -->
+        <div id="transfer-dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 10000; align-items: center; justify-content: center;">
+            <div style="background: white; border-radius: 12px; padding: 30px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                <h2 style="margin-bottom: 20px; color: #33A7B5; text-align: center;">Clone/Transfer Facility</h2>
+                <p style="margin-bottom: 20px; color: #6b7280; text-align: center; font-size: 14px;">
+                    Create a copy of "<span id="source-facility-name" style="font-weight: 600;"></span>" with a new operator and updated information.
+                </p>
+                
+                <div class="form-group">
+                    <label for="transfer-new-operator">New Operator</label>
+                    <input type="text" id="transfer-new-operator" placeholder="Select or enter new operator...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="transfer-new-name">Facility Name (optional modification)</label>
+                    <input type="text" id="transfer-new-name" placeholder="Leave blank to keep current name">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="transfer-start-year">New Start Year</label>
+                        <input type="number" id="transfer-start-year" placeholder="e.g., 2020">
+                    </div>
+                    <div class="form-group">
+                        <label for="transfer-end-year">New End Year (optional)</label>
+                        <input type="number" id="transfer-end-year" placeholder="Leave blank if still operating">
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 10px; justify-content: center; margin-top: 25px;">
+                    <button class="btn" onclick="executeTransfer()">Create Clone</button>
+                    <button class="btn" onclick="hideTransferDialog()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Identification Section -->
+        <div class="section" id="identification-section">
+            <div class="section-header" onclick="toggleSection('identification-section')">
+                <h2 class="section-title">Identification & Names</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="facility-field" data-field="identification.name">
+                    </div>
+                    <div class="form-group">
+                        <label>Current Name</label>
+                        <input type="text" class="facility-field" data-field="identification.currentName">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Current Operator</label>
+                    <input type="text" class="facility-field" data-field="identification.currentOperator">
+                </div>
+                <div class="form-group">
+                    <label>Past Names</label>
+                    <div class="array-container" data-path="identification.pastNames"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Location Section -->
+        <div class="section" id="location-section">
+            <div class="section-header" onclick="toggleSection('location-section')">
+                <h2 class="section-title">Location & Address</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" class="facility-field" data-field="location">
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea class="facility-field" data-field="address" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Operations Section -->
+        <div class="section" id="operations-section">
+            <div class="section-header" onclick="toggleSection('operations-section')">
+                <h2 class="section-title">Facility Operations</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Past Operators</label>
+                    <div class="array-container" data-path="pastOperators"></div>
+                </div>
+                
+                <h3 style="margin: 20px 0 15px 0; color: #33A7B5; font-size: 16px;">Facility Operating Dates</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Facility Opened (Year)</label>
+                        <input type="number" class="facility-field" data-field="operatingPeriod.startYear" placeholder="e.g., 1985">
+                    </div>
+                    <div class="form-group">
+                        <label>Facility Closed (Year)</label>
+                        <input type="number" class="facility-field" data-field="operatingPeriod.endYear" placeholder="Leave blank if still open">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Current Status</label>
+                    <select class="facility-field" data-field="operatingPeriod.status">
+                        <option value="">Select Status</option>
+                        <option value="Open">Open</option>
+                        <option value="Closed">Closed</option>
+                        <option value="Temporarily Closed">Temporarily Closed</option>
+                        <option value="Under Investigation">Under Investigation</option>
+                        <option value="License Suspended">License Suspended</option>
+                        <option value="License Revoked">License Revoked</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Years of Operation</label>
+                    <input type="text" class="facility-field" data-field="operatingPeriod.yearsOfOperation" placeholder="e.g., 1985-2010, 2015-Present">
+                </div>
+                <div class="form-group">
+                    <label>Operational Notes</label>
+                    <div class="array-container" data-path="operatingPeriod.notes"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Staff Section -->
+        <div class="section" id="staff-section">
+            <div class="section-header" onclick="toggleSection('staff-section')">
+                <h2 class="section-title">Staff & Links</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Administrator</label>
+                    <div class="array-container" data-path="staff.administrator"></div>
+                </div>
+                <div class="form-group">
+                    <label>Notable Staff</label>
+                    <div class="array-container" data-path="staff.notableStaff"></div>
+                </div>
+                <div class="form-group">
+                    <label>Profile Links</label>
+                    <div class="array-container" data-path="profileLinks"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Facility Details Section -->
+        <div class="section" id="facility-section">
+            <div class="section-header" onclick="toggleSection('facility-section')">
+                <h2 class="section-title">Facility Details</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Program Type</label>
+                    <div class="dropdown-container">
+                        <input type="text" class="facility-field dropdown-input" data-field="facilityDetails.type" id="facility-type" placeholder="e.g., Residential Treatment Center">
+                        <div id="facility-type-dropdown" class="dropdown-list"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Capacity</label>
+                        <input type="number" class="facility-field" data-field="facilityDetails.capacity">
+                    </div>
+                    <div class="form-group">
+                        <label>Current Census</label>
+                        <input type="number" class="facility-field" data-field="facilityDetails.currentCensus">
+                    </div>
+                </div>
+                <div class="form-row-3">
+                    <div class="form-group">
+                        <label>Min Age</label>
+                        <input type="number" class="facility-field" data-field="facilityDetails.ageRange.min">
+                    </div>
+                    <div class="form-group">
+                        <label>Max Age</label>
+                        <input type="number" class="facility-field" data-field="facilityDetails.ageRange.max">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select class="facility-field" data-field="facilityDetails.gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="coed">Co-ed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Accreditations & Memberships Section -->
+        <div class="section" id="accreditations-section">
+            <div class="section-header" onclick="toggleSection('accreditations-section')">
+                <h2 class="section-title">Accreditations & Memberships</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Current Accreditations</label>
+                    <div class="dropdown-container">
+                        <input type="text" id="current-accreditations" class="dropdown-input" placeholder="Type to search accreditations...">
+                        <div id="current-accreditations-dropdown" class="dropdown-list"></div>
+                    </div>
+                    <div class="array-container" data-path="accreditations.current"></div>
+                </div>
+                <div class="form-group">
+                    <label>Past Accreditations</label>
+                    <div class="dropdown-container">
+                        <input type="text" id="past-accreditations" class="dropdown-input" placeholder="Type to search accreditations...">
+                        <div id="past-accreditations-dropdown" class="dropdown-list"></div>
+                    </div>
+                    <div class="array-container" data-path="accreditations.past"></div>
+                </div>
+                <div class="form-group">
+                    <label>Professional Memberships</label>
+                    <div class="dropdown-container">
+                        <input type="text" id="memberships" class="dropdown-input" placeholder="Type to search memberships...">
+                        <div id="memberships-dropdown" class="dropdown-list"></div>
+                    </div>
+                    <div class="array-container" data-path="memberships"></div>
+                </div>
+                <div class="form-group">
+                    <label>Certifications</label>
+                    <div class="dropdown-container">
+                        <input type="text" id="certifications" class="dropdown-input" placeholder="Type to search certifications...">
+                        <div id="certifications-dropdown" class="dropdown-list"></div>
+                    </div>
+                    <div class="array-container" data-path="certifications"></div>
+                </div>
+                <div class="form-group">
+                    <label>Licensing Information</label>
+                    <div class="dropdown-container">
+                        <input type="text" id="licensing" class="dropdown-input" placeholder="Type to search licensing info...">
+                        <div id="licensing-dropdown" class="dropdown-list"></div>
+                    </div>
+                    <div class="array-container" data-path="licensing"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Resources & Documentation Section -->
+        <div class="section" id="resources-section">
+            <div class="section-header" onclick="toggleSection('resources-section')">
+                <h2 class="section-title">Available Resources & Documentation</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <h3 style="margin: 20px 0 15px 0; color: #33A7B5; font-size: 16px;">Standard Resource Types</h3>
+                
+                <h4 style="margin: 15px 0 10px 0; color: #33A7B5; font-size: 14px;">News & Media</h4>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasNews" id="has-news">
+                    <label for="has-news">News Articles</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasPressReleases" id="has-press">
+                    <label for="has-press">Press Releases</label>
+                </div>
+                
+                <h4 style="margin: 15px 0 10px 0; color: #33A7B5; font-size: 14px;">Official Documentation</h4>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasInspections" id="has-inspections">
+                    <label for="has-inspections">Inspection Reports</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasStateReports" id="has-state-reports">
+                    <label for="has-state-reports">State Reports</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasRegulatoryFilings" id="has-regulatory">
+                    <label for="has-regulatory">Regulatory Filings</label>
+                </div>
+                
+                <h4 style="margin: 15px 0 10px 0; color: #33A7B5; font-size: 14px;">Legal & Compliance</h4>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasLawsuits" id="has-lawsuits">
+                    <label for="has-lawsuits">Lawsuits</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasSettlements" id="has-settlements">
+                    <label for="has-settlements">Settlements</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasViolations" id="has-violations">
+                    <label for="has-violations">Violations</label>
+                </div>
+                
+                <h4 style="margin: 15px 0 10px 0; color: #33A7B5; font-size: 14px;">Other Standard Resources</h4>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasResearch" id="has-research">
+                    <label for="has-research">Academic Research</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasFinancial" id="has-financial">
+                    <label for="has-financial">Financial Reports</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasStudent" id="has-student">
+                    <label for="has-student">Student or Resident Manual</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasStaff" id="has-Staff">
+                    <label for="has-staff">Staff Manual</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasParent" id="has-parent">
+                    <label for="has-parent">Parent Manual</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasWebsite" id="has-website">
+                    <label for="has-website">Archived Website</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="facility-checkbox" data-field="resources.hasOther" id="has-other">
+                    <label for="has-other">Other Documentation</label>
+                </div>
+                
+                <h3 style="margin: 30px 0 15px 0; color: #33A7B5; font-size: 16px;">Additional Resource Types</h3>
+                <div id="custom-resources-container"></div>
+                <div style="margin-top: 10px;">
+                    <input type="text" id="new-resource-type" placeholder="Enter new resource type..." style="width: 70%; margin-right: 10px;">
+                    <button class="btn" onclick="addCustomResourceType()" style="padding: 8px 16px;">Add Resource Type</button>
+                </div>
+                
+                <h3 style="margin: 30px 0 15px 0; color: #33A7B5; font-size: 16px;">Resource Notes</h3>
+                <div class="form-group">
+                    <div class="array-container" data-path="resources.notes"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- General Notes Section -->
+        <div class="section" id="notes-section">
+            <div class="section-header" onclick="toggleSection('notes-section')">
+                <h2 class="section-title">General Notes</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="form-group">
+                    <label>Facility Notes</label>
+                    <div class="array-container" data-path="notes"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- JSON Output Section -->
+        <div class="section expanded" id="output-section">
+            <div class="section-header" onclick="toggleSection('output-section')">
+                <h2 class="section-title">JSON Output</h2>
+                <span class="section-toggle">▼</span>
+            </div>
+            <div class="section-content">
+                <div class="json-output">
+                    <div class="output-header">
+                        <h3>Generated JSON</h3>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+                            <button class="copy-btn" onclick="downloadJSON()">Download JSON</button>
+                        </div>
+                    </div>
+                    <pre id="json-display">{}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // GLOBAL DATA
+        let formData = {
+            operator: {
+                name: "",
+                currentName: "",
+                pastNames: [],
+                location: "",
+                headquarters: "",
+                founded: "",
+                operatingPeriod: "",
+                status: "",
+                parentCompanies: [],
+                websites: [],
+                keyStaff: {
+                    ceo: "",
+                    founders: [],
+                    keyExecutives: []
+                },
+                notes: []
+            },
+            facilities: [{
+                identification: {
+                    name: "",
+                    currentName: "",
+                    currentOperator: "",
+                    pastNames: []
+                },
+                location: "",
+                address: "",
+                pastOperators: [],
+                operatingPeriod: {
+                    startYear: null,
+                    endYear: null,
+                    status: "",
+                    yearsOfOperation: "",
+                    notes: []
+                },
+                staff: {
+                    administrator: [],
+                    notableStaff: []
+                },
+                profileLinks: [],
+                facilityDetails: {
+                    type: "",
+                    capacity: null,
+                    currentCensus: null,
+                    ageRange: {
+                        min: null,
+                        max: null
+                    },
+                    gender: ""
+                },
+                accreditations: {
+                    current: [],
+                    past: []
+                },
+                memberships: [],
+                certifications: [],
+                licensing: [],
+                resources: {
+                    hasNews: false,
+                    hasPressReleases: false,
+                    hasInspections: false,
+                    hasStateReports: false,
+                    hasRegulatoryFilings: false,
+                    hasLawsuits: false,
+                    hasSettlements: false,
+                    hasViolations: false,
+                    hasResearch: false,
+                    hasFinancial: false,
+                    hasOther: false,
+                    customResources: {},
+                    notes: []
+                },
+                notes: []
+            }]
+        };
+        
+        let currentFacilityIndex = 0;
+        
+		function exportAllProjects() {
+			try {
+				const allProjects = window.projectManager.getSavedProjects();
+				const projectNames = Object.keys(allProjects);
+				
+				if (projectNames.length === 0) {
+					showUploadStatus('No projects to export.', 'info');
+					return;
+				}
+				
+				const exportData = {
+					exportDate: new Date().toISOString(),
+					version: '1.0',
+					totalProjects: projectNames.length,
+					projects: allProjects
+				};
+				
+				const jsonString = JSON.stringify(exportData, null, 2);
+				const blob = new Blob([jsonString], { type: 'application/json' });
+				const url = URL.createObjectURL(blob);
+				
+				const a = document.createElement('a');
+				a.href = url;
+				a.download = `facility-projects-export-${new Date().toISOString().split('T')[0]}.json`;
+				document.body.appendChild(a);
+				a.click();
+				document.body.removeChild(a);
+				URL.revokeObjectURL(url);
+				
+				showUploadStatus(`Successfully exported ${projectNames.length} projects.`, 'success');
+			} catch (error) {
+				console.error('Export failed:', error);
+				showUploadStatus('Failed to export projects.', 'error');
+			}
+		}
+        // DROPDOWN OPTIONS
+        const dropdownOptions = {
+            operators: ['Brown Schools', 'Sequel TSI', 'Three Springs', 'Universal Health Services', 'Devereux', 'Aspen Education Group', 'TrueCore Behavioral Solutions', 'Youth Services International', 'Correctional Services Corporation', 'Rite of Passage', 'Youth Opportunity Investments', 'Vivant Behavioral Healthcare', 'Embark Behavioral Health', 'AMIkids', 'Wayne Halfway House', 'Acadia Healthcare', 'Sequel Youth & Family Services'],
+            facilityTypes: [
+                'Residential Treatment Center',
+                'Group Home', 
+                'Therapeutic Boarding School',
+                'Wilderness Therapy',
+                'Psychiatric Hospital',
+                'Juvenile Detention Center',
+                'Therapeutic Foster Care',
+                'Transitional Living',
+				'Residential Treatment Facility',
+				'Specialty Boarding School',
+				'Boot Camp',
+				'Military School',
+				'Fundamentalist Religious Home'
+            ],
+            accreditations: [
+                'CARF (Commission on Accreditation of Rehabilitation Facilities)',
+                'Joint Commission',
+                'NATSAP (National Association of Therapeutic Schools and Programs)',
+                'COA (Council on Accreditation)',
+                'WASC (Western Association of Schools and Colleges)',
+                'SACS (Southern Association of Colleges and Schools)',
+                'Northwest Accreditation Commission',
+                'Middle States Association',
+                'SEVIS',
+                'Northwest Association of Accredited Schools'
+            ],
+            memberships: [
+                'NATSAP',
+                'IECA (Independent Educational Consultants Association)',
+                'OBHIC (Outdoor Behavioral Healthcare Industry Council)',
+                'AACRC (American Association of Children\'s Residential Centers)',
+                'CWLA (Child Welfare League of America)',
+                'NASMHPD (National Association of State Mental Health Program Directors)'
+            ],
+            certifications: [
+                'BBS (Board of Behavioral Sciences)',
+                'LCSW (Licensed Clinical Social Worker)',
+                'LMFT (Licensed Marriage and Family Therapist)',
+                'LPC (Licensed Professional Counselor)',
+                'BCBA (Board Certified Behavior Analyst)',
+                'CARF Accreditation',
+                'ISO 9001',
+                'State Certification'
+            ],
+            licensing: [
+                'State Department of Health Services',
+                'Department of Social Services',
+                'Department of Education',
+                'Department of Mental Health',
+                'DHHS (Department of Health and Human Services)',
+                'State Licensing Board',
+                'Residential Care Facility License',
+                'Group Home License',
+                'Therapeutic School License'
+            ]
+        };
+        
+        // GLOBAL FUNCTIONS - DEFINED AT TOP LEVEL FOR HTML ONCLICK HANDLERS
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.classList.toggle('expanded');
+            }
+        }
+        
+        function toggleTableOfContents() {
+            const toc = document.getElementById('facility-toc');
+            if (toc) {
+                toc.classList.toggle('collapsed');
+            }
+        }
+        
+        function getFacilityDisplayName(facility) {
+            if (!facility || !facility.identification) return 'Unnamed Facility';
+            return facility.identification.name || 
+                   facility.identification.currentName || 
+                   'Unnamed Facility';
+        }
+        
+        function sortFacilities() {
+            if (formData.facilities.length <= 1) {
+                showUploadStatus('No need to sort - only one facility exists.', 'info');
+                return;
+            }
+            
+            const currentFacilityName = getFacilityDisplayName(formData.facilities[currentFacilityIndex]);
+            
+            formData.facilities.sort((a, b) => {
+                const nameA = getFacilityDisplayName(a).toLowerCase();
+                const nameB = getFacilityDisplayName(b).toLowerCase();
+                return nameA.localeCompare(nameB);
+            });
+            
+            const newIndex = formData.facilities.findIndex(facility => 
+                getFacilityDisplayName(facility) === currentFacilityName
+            );
+            
+            if (newIndex !== -1) {
+                currentFacilityIndex = newIndex;
+            } else {
+                currentFacilityIndex = 0;
+            }
+            
+            updateTableOfContents();
+            updateFacilityControls();
+            updateJSON();
+            
+            showUploadStatus('Facilities sorted alphabetically.', 'success');
+        }
+        
+        function navigateToFacility(index) {
+            if (index >= 0 && index < formData.facilities.length) {
+                currentFacilityIndex = index;
+                loadFacilityData();
+                updateFacilityControls();
+                updateTableOfContents();
+                
+                document.querySelector('.facility-controls').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        function addFacility() {
+            const newFacility = {
+                identification: { name: "", currentName: "", currentOperator: "", pastNames: [] },
+                location: "", address: "", pastOperators: [],
+                operatingPeriod: { startYear: null, endYear: null, status: "", yearsOfOperation: "", notes: [] },
+                staff: { administrator: [], notableStaff: [] }, profileLinks: [],
+                facilityDetails: { type: "", capacity: null, currentCensus: null, ageRange: { min: null, max: null }, gender: "" },
+                accreditations: { current: [], past: [] }, memberships: [], certifications: [], licensing: [],
+                resources: {
+                    hasNews: false, hasPressReleases: false, hasInspections: false, hasStateReports: false,
+                    hasRegulatoryFilings: false, hasLawsuits: false, hasSettlements: false, hasViolations: false,
+                    hasResearch: false, hasFinancial: false, hasOther: false, customResources: {}, notes: []
+                },
+                notes: []
+            };
+            
+            formData.facilities.push(newFacility);
+            currentFacilityIndex = formData.facilities.length - 1;
+            loadFacilityData();
+            updateFacilityControls();
+            updateTableOfContents();
+            updateJSON();
+        }
+        
+        function removeFacility() {
+            if (formData.facilities.length > 1) {
+                formData.facilities.splice(currentFacilityIndex, 1);
+                if (currentFacilityIndex >= formData.facilities.length) {
+                    currentFacilityIndex = formData.facilities.length - 1;
+                }
+                loadFacilityData();
+                updateFacilityControls();
+                updateTableOfContents();
+                updateJSON();
+            }
+        }
+        
+        function previousFacility() {
+            if (currentFacilityIndex > 0) {
+                currentFacilityIndex--;
+                loadFacilityData();
+                updateFacilityControls();
+                updateTableOfContents();
+            }
+        }
+        
+        function nextFacility() {
+            if (currentFacilityIndex < formData.facilities.length - 1) {
+                currentFacilityIndex++;
+                loadFacilityData();
+                updateFacilityControls();
+                updateTableOfContents();
+            }
+        }
+        
+        function showTransferDialog() {
+            const currentFacility = formData.facilities[currentFacilityIndex];
+            const facilityName = getFacilityDisplayName(currentFacility);
+            
+            document.getElementById('source-facility-name').textContent = facilityName;
+            document.getElementById('transfer-new-operator').value = '';
+            document.getElementById('transfer-new-name').value = '';
+            document.getElementById('transfer-start-year').value = '';
+            document.getElementById('transfer-end-year').value = '';
+            
+            document.getElementById('transfer-dialog').style.display = 'flex';
+        }
+        
+        function hideTransferDialog() {
+            document.getElementById('transfer-dialog').style.display = 'none';
+        }
+        
+        function executeTransfer() {
+            const newOperator = document.getElementById('transfer-new-operator').value.trim();
+            const newName = document.getElementById('transfer-new-name').value.trim();
+            const startYear = document.getElementById('transfer-start-year').value;
+            const endYear = document.getElementById('transfer-end-year').value;
+            
+            if (!newOperator) {
+                showUploadStatus('Please enter a new operator name.', 'error');
+                return;
+            }
+            
+            const currentFacility = formData.facilities[currentFacilityIndex];
+            const clonedFacility = deepClone(currentFacility);
+            
+            const oldName = clonedFacility.identification.name;
+            
+            if (newName && newName !== oldName) {
+                if (oldName && !clonedFacility.identification.pastNames.includes(oldName)) {
+                    clonedFacility.identification.pastNames.push(oldName);
+                }
+                clonedFacility.identification.name = newName;
+            }
+            
+            clonedFacility.identification.currentOperator = "";
+            clonedFacility.identification.currentName = "";
+            
+            clonedFacility.operatingPeriod.startYear = startYear ? parseInt(startYear) : null;
+            clonedFacility.operatingPeriod.endYear = endYear ? parseInt(endYear) : null;
+            
+            if (!Array.isArray(clonedFacility.notes)) {
+                clonedFacility.notes = [];
+            }
+            clonedFacility.notes.push(`Cloned facility for ${newOperator} operations`);
+            
+            formData.facilities.push(clonedFacility);
+            
+            // Auto-sort and navigate to new facility
+            sortFacilities();
+            
+            const facilityName = getFacilityDisplayName(clonedFacility);
+            const newIndex = formData.facilities.findIndex(facility => 
+                getFacilityDisplayName(facility) === facilityName
+            );
+            if (newIndex !== -1) {
+                currentFacilityIndex = newIndex;
+            }
+            
+            loadFacilityData();
+            updateFacilityControls();
+            updateTableOfContents();
+            updateJSON();
+            hideTransferDialog();
+            
+            showUploadStatus(`Successfully cloned facility for ${newOperator}`, 'success');
+        }
+        
+        function addCustomResourceType() {
+            const input = document.getElementById('new-resource-type');
+            const resourceType = input.value.trim();
+            
+            if (!resourceType) {
+                alert('Please enter a resource type name.');
+                return;
+            }
+            
+            const currentFacility = formData.facilities[currentFacilityIndex];
+            if (!currentFacility.resources.customResources) {
+                currentFacility.resources.customResources = {};
+            }
+            
+            currentFacility.resources.customResources[resourceType] = false;
+            input.value = '';
+            renderCustomResources();
+            updateJSON();
+        }
+        
+        function removeCustomResourceType(resourceType) {
+            if (confirm(`Remove "${resourceType}" resource type?`)) {
+                const currentFacility = formData.facilities[currentFacilityIndex];
+                delete currentFacility.resources.customResources[resourceType];
+                renderCustomResources();
+                updateJSON();
+            }
+        }
+        
+        function saveCurrentProject() {
+            const projectName = document.getElementById('project-name').value.trim();
+            if (!projectName) {
+                showUploadStatus('Please enter a project name first.', 'error');
+                return;
+            }
+            window.projectManager.saveProject(projectName);
+        }
+        
+        function loadProject() {
+            const projectName = document.getElementById('project-name').value.trim();
+            if (!projectName) {
+                showUploadStatus('Please enter a project name to load.', 'error');
+                return;
+            }
+            window.projectManager.loadProject(projectName);
+        }
+        
+        function newProject() {
+            if (confirm('Start a new project? This will clear all current data.')) {
+                window.projectManager.currentProjectName = null;
+                window.projectManager.lastSaveTime = null;
+                clearAllData();
+                document.getElementById('project-name').value = '';
+                window.projectManager.updateProjectStatus();
+            }
+        }
+        
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const fileName = file.name.toLowerCase();
+            const reader = new FileReader();
+            
+            reader.onload = function(e) {
+                const content = e.target.result;
+                
+                if (fileName.endsWith('.csv')) {
+                    showUploadStatus('CSV import functionality will be implemented with proper logic', 'info');
+                } else {
+                    loadJSONData(content);
+                }
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        function importFromTextarea() {
+            const content = document.getElementById('json-paste').value.trim();
+            if (!content) {
+                showUploadStatus('Please paste some JSON data first.', 'error');
+                return;
+            }
+            loadJSONData(content);
+        }
+        
+        function clearAllData() {
+            if (!confirm('Are you sure you want to clear all data? This action cannot be undone.')) {
+                return;
+            }
+            
+            formData = {
+                operator: {
+                    name: "", currentName: "", pastNames: [], location: "", headquarters: "", founded: "",
+                    operatingPeriod: "", status: "", parentCompanies: [], websites: [],
+                    keyStaff: { ceo: "", founders: [], keyExecutives: [] }, notes: []
+                },
+                facilities: [{
+                    identification: { name: "", currentName: "", currentOperator: "", pastNames: [] },
+                    location: "", address: "", pastOperators: [],
+                    operatingPeriod: { startYear: null, endYear: null, status: "", yearsOfOperation: "", notes: [] },
+                    staff: { administrator: [], notableStaff: [] }, profileLinks: [],
+                    facilityDetails: { type: "", capacity: null, currentCensus: null, ageRange: { min: null, max: null }, gender: "" },
+                    accreditations: { current: [], past: [] }, memberships: [], certifications: [], licensing: [],
+                    resources: {
+                        hasNews: false, hasPressReleases: false, hasInspections: false, hasStateReports: false,
+                        hasRegulatoryFilings: false, hasLawsuits: false, hasSettlements: false, hasViolations: false,
+                        hasResearch: false, hasFinancial: false, hasOther: false, customResources: {}, notes: []
+                    },
+                    notes: []
+                }]
+            };
+            
+            currentFacilityIndex = 0;
+            loadOperatorData();
+            loadFacilityData();
+            updateFacilityControls();
+            updateTableOfContents();
+            updateJSON();
+            document.getElementById('json-paste').value = '';
+            
+            showUploadStatus('All data has been cleared.', 'success');
+        }
+        
+        function copyToClipboard() {
+            const text = JSON.stringify(formData, null, 2);
+            navigator.clipboard.writeText(text).then(() => {
+                showUploadStatus('JSON copied to clipboard!', 'success');
+            });
+        }
+        
+        function downloadJSON() {
+            const jsonString = JSON.stringify(formData, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'facility_data.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        // UTILITY FUNCTIONS
+        function deepClone(obj) {
+            return JSON.parse(JSON.stringify(obj));
+        }
+        
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((current, key) => current && current[key] !== undefined ? current[key] : null, obj);
+        }
+        
+        function setNestedValue(obj, path, value) {
+            const keys = path.split('.');
+            const lastKey = keys.pop();
+            const target = keys.reduce((current, key) => {
+                if (!current[key]) current[key] = {};
+                return current[key];
+            }, obj);
+            target[lastKey] = value;
+        }
+        
+        function updateJSON() {
+            document.getElementById('json-display').textContent = JSON.stringify(formData, null, 2);
+        }
+        
+        function showUploadStatus(message, type) {
+            const statusDiv = document.getElementById('upload-status');
+            statusDiv.style.display = 'block';
+            statusDiv.textContent = message;
+            statusDiv.className = 'upload-status ' + type;
+            
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, type === 'error' ? 8000 : 4000);
+        }
+        
+        // TABLE OF CONTENTS FUNCTIONS
+        function updateTableOfContents() {
+            const facilityList = document.getElementById('facility-list');
+            const tocStats = document.getElementById('toc-stats');
+            const totalFacilities = formData.facilities.length;
+            
+            tocStats.textContent = `Total: ${totalFacilities} facilit${totalFacilities === 1 ? 'y' : 'ies'}`;
+            
+            facilityList.innerHTML = '';
+            
+            formData.facilities.forEach((facility, index) => {
+                const facilityItem = document.createElement('div');
+                facilityItem.className = `facility-item ${index === currentFacilityIndex ? 'active' : ''}`;
+                
+                const facilityName = getFacilityDisplayName(facility);
+                const isEmpty = facilityName === 'Unnamed Facility';
+                
+                facilityItem.innerHTML = `
+                    <span class="facility-name ${isEmpty ? 'empty' : ''}" title="Click to view this facility">
+                        ${facilityName}
+                    </span>
+                    <span class="facility-index">${index + 1}</span>
+                `;
+                
+                facilityItem.addEventListener('click', () => navigateToFacility(index));
+                
+                facilityList.appendChild(facilityItem);
+            });
+        }
+        
+        function updateFacilityControls() {
+            const counter = document.getElementById('facility-counter');
+            const currentFacilityNameSpan = document.getElementById('current-facility-name');
+            const removeBtn = document.getElementById('remove-facility-btn');
+            const prevBtn = document.getElementById('prev-facility-btn');
+            const nextBtn = document.getElementById('next-facility-btn');
+            const totalFacilities = formData.facilities.length;
+            
+            counter.textContent = `${currentFacilityIndex + 1} of ${totalFacilities}`;
+            
+            const currentName = getFacilityDisplayName(formData.facilities[currentFacilityIndex]);
+            currentFacilityNameSpan.textContent = currentName !== 'Unnamed Facility' ? `(${currentName})` : '';
+            
+            removeBtn.style.display = totalFacilities > 1 ? 'inline-block' : 'none';
+            
+            if (totalFacilities > 1) {
+                prevBtn.style.display = currentFacilityIndex > 0 ? 'inline-block' : 'none';
+                nextBtn.style.display = currentFacilityIndex < totalFacilities - 1 ? 'inline-block' : 'none';
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+        }
+        
+        // ARRAY MANAGEMENT FUNCTIONS
+        function renderArray(container, path, items = []) {
+            if (!container) return;
+            
+            container.innerHTML = '';
+            
+            if (!Array.isArray(items)) {
+                items = [];
+            }
+            
+            const itemsToShow = items.length > 0 ? items : [''];
+            
+            itemsToShow.forEach((item, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'array-item';
+                
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.value = typeof item === 'string' ? item : '';
+                input.className = 'array-input';
+                
+                input.addEventListener('input', function() {
+                    updateArrayItemValue(path, index, this.value);
+                });
+                
+                itemDiv.appendChild(input);
+                
+                if (itemsToShow.length > 1) {
+                    const removeBtn = document.createElement('button');
+                    removeBtn.className = 'btn';
+                    removeBtn.textContent = 'Remove';
+                    removeBtn.type = 'button';
+                    
+                    removeBtn.addEventListener('click', function() {
+                        removeArrayItemAtIndex(path, index);
+                    });
+                    
+                    itemDiv.appendChild(removeBtn);
+                }
+                
+                container.appendChild(itemDiv);
+            });
+            
+            const addButton = document.createElement('button');
+            addButton.className = 'add-item-btn';
+            addButton.textContent = 'Add Item';
+            addButton.type = 'button';
+            
+            addButton.addEventListener('click', function() {
+                addNewArrayItem(path);
+            });
+            
+            container.appendChild(addButton);
+        }
+        
+        function updateArrayItemValue(path, index, value) {
+            const target = path.startsWith('operator.') ? formData : formData.facilities[currentFacilityIndex];
+            let array = getNestedValue(target, path);
+            
+            if (!Array.isArray(array)) {
+                array = [];
+                setNestedValue(target, path, array);
+            }
+            
+            while (array.length <= index) {
+                array.push('');
+            }
+            
+            array[index] = value;
+            
+            // Update table of contents if facility name changed
+            if (path === 'identification.name' || path === 'identification.currentName') {
+                updateTableOfContents();
+                updateFacilityControls();
+            }
+            
+            updateJSON();
+        }
+        
+        function addNewArrayItem(path) {
+            const target = path.startsWith('operator.') ? formData : formData.facilities[currentFacilityIndex];
+            let array = getNestedValue(target, path);
+            
+            if (!Array.isArray(array)) {
+                array = [];
+                setNestedValue(target, path, array);
+            }
+            
+            array.push('');
+            
+            const container = document.querySelector(`[data-path="${path}"]`);
+            if (container) {
+                renderArray(container, path, array);
+            }
+            
+            updateJSON();
+        }
+        
+        function removeArrayItemAtIndex(path, index) {
+            const target = path.startsWith('operator.') ? formData : formData.facilities[currentFacilityIndex];
+            const array = getNestedValue(target, path);
+            
+            if (Array.isArray(array) && array.length > 1 && index >= 0 && index < array.length) {
+                array.splice(index, 1);
+                
+                const container = document.querySelector(`[data-path="${path}"]`);
+                if (container) {
+                    renderArray(container, path, array);
+                }
+                
+                updateJSON();
+            }
+        }
+        
+        function renderCustomResources() {
+            const container = document.getElementById('custom-resources-container');
+            const currentFacility = formData.facilities[currentFacilityIndex];
+            const customResources = currentFacility.resources.customResources || {};
+            
+            container.innerHTML = '';
+            
+            Object.keys(customResources).forEach(resourceType => {
+                const div = document.createElement('div');
+                div.className = 'checkbox-group';
+                div.style.marginBottom = '10px';
+                
+                const checkboxId = `custom-resource-${resourceType.replace(/\s+/g, '-').toLowerCase()}`;
+                
+                div.innerHTML = `
+                    <input type="checkbox" id="${checkboxId}" ${customResources[resourceType] ? 'checked' : ''}>
+                    <label for="${checkboxId}">${resourceType}</label>
+                    <button class="btn" onclick="removeCustomResourceType('${resourceType}')" style="margin-left: 10px; padding: 4px 8px; font-size: 12px;">Remove</button>
+                `;
+                
+                const checkbox = div.querySelector('input[type="checkbox"]');
+                checkbox.addEventListener('change', function() {
+                    currentFacility.resources.customResources[resourceType] = this.checked;
+                    updateJSON();
+                });
+                
+                container.appendChild(div);
+            });
+        }
+        
+        // DATA LOADING
+        function loadOperatorData() {
+            document.getElementById('operator-name').value = formData.operator.name || '';
+            document.getElementById('operator-current-name').value = formData.operator.currentName || '';
+            document.getElementById('operator-location').value = formData.operator.location || '';
+            document.getElementById('operator-headquarters').value = formData.operator.headquarters || '';
+            document.getElementById('operator-founded').value = formData.operator.founded || '';
+            document.getElementById('operator-period').value = formData.operator.operatingPeriod || '';
+            document.getElementById('operator-status').value = formData.operator.status || '';
+            document.getElementById('operator-ceo').value = formData.operator.keyStaff?.ceo || '';
+            
+            renderArray(document.querySelector('[data-path="operator.pastNames"]'), 'operator.pastNames', formData.operator.pastNames);
+            renderArray(document.querySelector('[data-path="operator.parentCompanies"]'), 'operator.parentCompanies', formData.operator.parentCompanies);
+            renderArray(document.querySelector('[data-path="operator.websites"]'), 'operator.websites', formData.operator.websites);
+            renderArray(document.querySelector('[data-path="operator.keyStaff.founders"]'), 'operator.keyStaff.founders', formData.operator.keyStaff?.founders || []);
+            renderArray(document.querySelector('[data-path="operator.keyStaff.keyExecutives"]'), 'operator.keyStaff.keyExecutives', formData.operator.keyStaff?.keyExecutives || []);
+            renderArray(document.querySelector('[data-path="operator.notes"]'), 'operator.notes', formData.operator.notes);
+        }
+        
+        function loadFacilityData() {
+            const currentFacility = formData.facilities[currentFacilityIndex];
+            
+            document.querySelectorAll('.facility-field').forEach(field => {
+                const path = field.dataset.field;
+                const value = getNestedValue(currentFacility, path);
+                field.value = value === null ? '' : value;
+            });
+            
+            document.querySelectorAll('.facility-checkbox').forEach(checkbox => {
+                const path = checkbox.dataset.field;
+                const value = getNestedValue(currentFacility, path);
+                checkbox.checked = !!value;
+            });
+            
+            renderArray(document.querySelector('[data-path="identification.pastNames"]'), 'identification.pastNames', currentFacility.identification?.pastNames || []);
+            renderArray(document.querySelector('[data-path="pastOperators"]'), 'pastOperators', currentFacility.pastOperators || []);
+            renderArray(document.querySelector('[data-path="operatingPeriod.notes"]'), 'operatingPeriod.notes', currentFacility.operatingPeriod?.notes || []);
+            renderArray(document.querySelector('[data-path="staff.administrator"]'), 'staff.administrator', currentFacility.staff?.administrator || []);
+            renderArray(document.querySelector('[data-path="staff.notableStaff"]'), 'staff.notableStaff', currentFacility.staff?.notableStaff || []);
+            renderArray(document.querySelector('[data-path="profileLinks"]'), 'profileLinks', currentFacility.profileLinks || []);
+            renderArray(document.querySelector('[data-path="accreditations.current"]'), 'accreditations.current', currentFacility.accreditations?.current || []);
+            renderArray(document.querySelector('[data-path="accreditations.past"]'), 'accreditations.past', currentFacility.accreditations?.past || []);
+            renderArray(document.querySelector('[data-path="memberships"]'), 'memberships', currentFacility.memberships || []);
+            renderArray(document.querySelector('[data-path="certifications"]'), 'certifications', currentFacility.certifications || []);
+            renderArray(document.querySelector('[data-path="licensing"]'), 'licensing', currentFacility.licensing || []);
+            renderArray(document.querySelector('[data-path="resources.notes"]'), 'resources.notes', currentFacility.resources?.notes || []);
+            renderArray(document.querySelector('[data-path="notes"]'), 'notes', currentFacility.notes || []);
+            
+            renderCustomResources();
+        }
+        
+        // JSON DATA LOADING
+        function loadJSONData(jsonString) {
+            if (!jsonString || jsonString.trim() === '') {
+                showUploadStatus('No data provided', 'error');
+                return;
+            }
+            
+            showUploadStatus('Processing JSON data...', 'info');
+            
+            try {
+                const data = JSON.parse(jsonString);
+                
+                if (Array.isArray(data)) {
+                    if (data.length === 0) {
+                        showUploadStatus('No data found in array', 'error');
+                        return;
+                    }
+                    
+                    if (data.length === 1) {
+                        loadSingleOperatorData(data[0]);
+                    } else {
+                        // For simplicity, just load the first operator for now
+                        loadSingleOperatorData(data[0]);
+                    }
+                } else if (data && typeof data === 'object') {
+                    loadSingleOperatorData(data);
+                } else {
+                    showUploadStatus('Invalid data structure', 'error');
+                    return;
+                }
+                
+                document.getElementById('json-paste').value = '';
+                
+                // Auto-sort facilities after loading
+                if (formData.facilities.length > 1) {
+                    sortFacilities();
+                }
+                
+                loadOperatorData();
+                loadFacilityData();
+                updateFacilityControls();
+                updateTableOfContents();
+                updateJSON();
+                
+                showUploadStatus(`Successfully loaded data with ${formData.facilities.length} facilities.`, 'success');
+                
+            } catch (error) {
+                console.error('JSON loading failed:', error);
+                showUploadStatus(`Import failed: ${error.message}`, 'error');
+            }
+        }
+        
+        function loadSingleOperatorData(operatorData) {
+            if (operatorData.operator) {
+                formData.operator = {
+                    name: operatorData.operator.name || '',
+                    currentName: operatorData.operator.currentName || '',
+                    pastNames: Array.isArray(operatorData.operator.pastNames) ? operatorData.operator.pastNames : [],
+                    location: operatorData.operator.location || '',
+                    headquarters: operatorData.operator.headquarters || '',
+                    founded: operatorData.operator.founded || '',
+                    operatingPeriod: operatorData.operator.operatingPeriod || '',
+                    status: operatorData.operator.status || '',
+                    parentCompanies: Array.isArray(operatorData.operator.parentCompanies) ? operatorData.operator.parentCompanies : [],
+                    websites: Array.isArray(operatorData.operator.websites) ? operatorData.operator.websites : [],
+                    keyStaff: {
+                        ceo: (operatorData.operator.keyStaff && operatorData.operator.keyStaff.ceo) || '',
+                        founders: (operatorData.operator.keyStaff && Array.isArray(operatorData.operator.keyStaff.founders)) ? operatorData.operator.keyStaff.founders : [],
+                        keyExecutives: (operatorData.operator.keyStaff && Array.isArray(operatorData.operator.keyStaff.keyExecutives)) ? operatorData.operator.keyStaff.keyExecutives : []
+                    },
+                    notes: Array.isArray(operatorData.operator.notes) ? operatorData.operator.notes : []
+                };
+            }
+            
+            if (operatorData.facilities && Array.isArray(operatorData.facilities)) {
+                formData.facilities = operatorData.facilities.map(facility => convertFacilityFormat(facility));
+                currentFacilityIndex = 0;
+            }
+        }
+        
+        function convertFacilityFormat(facility) {
+            // Basic format conversion - simplified for this clean version
+            return {
+                identification: {
+                    name: (facility.identification && facility.identification.name) || facility.name || '',
+                    currentName: (facility.identification && facility.identification.currentName) || '',
+                    currentOperator: (facility.identification && facility.identification.currentOperator) || '',
+                    pastNames: (facility.identification && Array.isArray(facility.identification.pastNames)) ? facility.identification.pastNames : []
+                },
+                location: facility.location || '',
+                address: facility.address || '',
+                pastOperators: Array.isArray(facility.pastOperators) ? facility.pastOperators : [],
+                operatingPeriod: {
+                    startYear: (facility.operatingPeriod && facility.operatingPeriod.startYear) || null,
+                    endYear: (facility.operatingPeriod && facility.operatingPeriod.endYear) || null,
+                    status: (facility.operatingPeriod && facility.operatingPeriod.status) || '',
+                    yearsOfOperation: (facility.operatingPeriod && facility.operatingPeriod.yearsOfOperation) || '',
+                    notes: (facility.operatingPeriod && Array.isArray(facility.operatingPeriod.notes)) ? facility.operatingPeriod.notes : []
+                },
+                staff: {
+                    administrator: (facility.staff && Array.isArray(facility.staff.administrator)) ? facility.staff.administrator : [],
+                    notableStaff: (facility.staff && Array.isArray(facility.staff.notableStaff)) ? facility.staff.notableStaff : []
+                },
+                profileLinks: Array.isArray(facility.profileLinks) ? facility.profileLinks : [],
+                facilityDetails: {
+                    type: (facility.facilityDetails && facility.facilityDetails.type) || '',
+                    capacity: (facility.facilityDetails && facility.facilityDetails.capacity) || null,
+                    currentCensus: (facility.facilityDetails && facility.facilityDetails.currentCensus) || null,
+                    ageRange: {
+                        min: (facility.facilityDetails && facility.facilityDetails.ageRange && facility.facilityDetails.ageRange.min) || null,
+                        max: (facility.facilityDetails && facility.facilityDetails.ageRange && facility.facilityDetails.ageRange.max) || null
+                    },
+                    gender: (facility.facilityDetails && facility.facilityDetails.gender) || ''
+                },
+                accreditations: {
+                    current: (facility.accreditations && Array.isArray(facility.accreditations.current)) ? facility.accreditations.current : [],
+                    past: (facility.accreditations && Array.isArray(facility.accreditations.past)) ? facility.accreditations.past : []
+                },
+                memberships: Array.isArray(facility.memberships) ? facility.memberships : [],
+                certifications: Array.isArray(facility.certifications) ? facility.certifications : [],
+                licensing: Array.isArray(facility.licensing) ? facility.licensing : [],
+                resources: {
+                    hasNews: (facility.resources && facility.resources.hasNews) || false,
+                    hasPressReleases: (facility.resources && facility.resources.hasPressReleases) || false,
+                    hasInspections: (facility.resources && facility.resources.hasInspections) || false,
+                    hasStateReports: (facility.resources && facility.resources.hasStateReports) || false,
+                    hasRegulatoryFilings: (facility.resources && facility.resources.hasRegulatoryFilings) || false,
+                    hasLawsuits: (facility.resources && facility.resources.hasLawsuits) || false,
+                    hasSettlements: (facility.resources && facility.resources.hasSettlements) || false,
+                    hasViolations: (facility.resources && facility.resources.hasViolations) || false,
+                    hasResearch: (facility.resources && facility.resources.hasResearch) || false,
+                    hasFinancial: (facility.resources && facility.resources.hasFinancial) || false,
+                    hasOther: (facility.resources && facility.resources.hasOther) || false,
+                    customResources: (facility.resources && facility.resources.customResources) || {},
+                    notes: (facility.resources && Array.isArray(facility.resources.notes)) ? facility.resources.notes : []
+                },
+                notes: Array.isArray(facility.notes) ? facility.notes : []
+            };
+        }
+        
+        // PROJECT MANAGEMENT CLASS
+        class ProjectManager {
+            constructor() {
+                this.currentProjectName = null;
+                this.autoSaveInterval = null;
+                this.lastSaveTime = null;
+            }
+            
+            saveProject(name) {
+                if (!name || name.trim() === '') {
+                    showUploadStatus('Please enter a project name.', 'error');
+                    return false;
+                }
+                
+                const projectData = {
+                    name: name.trim(),
+                    data: deepClone(formData),
+                    currentFacilityIndex: currentFacilityIndex,
+                    timestamp: new Date().toISOString(),
+                    version: '1.0'
+                };
+                
+                try {
+                    const savedProjects = this.getSavedProjects();
+                    savedProjects[name.trim()] = projectData;
+                    localStorage.setItem('facilityFormProjects', JSON.stringify(savedProjects));
+                    
+                    this.currentProjectName = name.trim();
+                    this.lastSaveTime = Date.now();
+                    this.updateProjectStatus(`Project "${name}" saved successfully`);
+                    this.renderSavedProjectsList();
+                    
+                    return true;
+                } catch (error) {
+                    console.error('Failed to save project:', error);
+                    showUploadStatus('Failed to save project. Storage may be full.', 'error');
+                    return false;
+                }
+            }
+            
+            loadProject(name) {
+                try {
+                    const savedProjects = this.getSavedProjects();
+                    const project = savedProjects[name];
+                    
+                    if (!project) {
+                        showUploadStatus('Project not found.', 'error');
+                        return false;
+                    }
+                    
+                    formData = deepClone(project.data);
+                    currentFacilityIndex = project.currentFacilityIndex || 0;
+                    
+                    if (currentFacilityIndex >= formData.facilities.length) {
+                        currentFacilityIndex = 0;
+                    }
+                    
+                    loadOperatorData();
+                    loadFacilityData();
+                    updateFacilityControls();
+                    updateTableOfContents();
+                    updateJSON();
+                    
+                    this.currentProjectName = name;
+                    this.lastSaveTime = Date.now();
+                    this.updateProjectStatus(`Project "${name}" loaded successfully`);
+                    
+                    document.getElementById('project-name').value = name;
+                    
+                    return true;
+                } catch (error) {
+                    console.error('Failed to load project:', error);
+                    showUploadStatus('Failed to load project.', 'error');
+                    return false;
+                }
+            }
+            
+            deleteProject(name) {
+                if (!confirm(`Are you sure you want to delete project "${name}"? This action cannot be undone.`)) {
+                    return false;
+                }
+                
+                try {
+                    const savedProjects = this.getSavedProjects();
+                    delete savedProjects[name];
+                    localStorage.setItem('facilityFormProjects', JSON.stringify(savedProjects));
+                    
+                    if (this.currentProjectName === name) {
+                        this.currentProjectName = null;
+                    }
+                    
+                    this.renderSavedProjectsList();
+                    this.updateProjectStatus(`Project "${name}" deleted`);
+                    
+                    return true;
+                } catch (error) {
+                    console.error('Failed to delete project:', error);
+                    showUploadStatus('Failed to delete project.', 'error');
+                    return false;
+                }
+            }
+            
+            getSavedProjects() {
+                try {
+                    const saved = localStorage.getItem('facilityFormProjects');
+                    return saved ? JSON.parse(saved) : {};
+                } catch (error) {
+                    console.error('Failed to load saved projects:', error);
+                    return {};
+                }
+            }
+            
+            renderSavedProjectsList() {
+                const container = document.getElementById('saved-projects-list');
+                const projects = this.getSavedProjects();
+                const projectNames = Object.keys(projects);
+                
+                if (projectNames.length === 0) {
+                    container.innerHTML = '<div style="color: #6b7280; font-style: italic;">No saved projects</div>';
+                    return;
+                }
+                
+                projectNames.sort((a, b) => {
+                    const timeA = new Date(projects[a].timestamp).getTime();
+                    const timeB = new Date(projects[b].timestamp).getTime();
+                    return timeB - timeA;
+                });
+                
+                container.innerHTML = '';
+                
+                projectNames.forEach(name => {
+                    const project = projects[name];
+                    const div = document.createElement('div');
+                    div.className = 'project-item';
+                    
+                    const date = new Date(project.timestamp);
+                    const dateStr = date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    
+                    div.innerHTML = `
+                        <span class="project-item-name" onclick="window.projectManager.loadProject('${name}')" title="Click to load">${name}</span>
+                        <span class="project-item-date">${dateStr}</span>
+                        <div class="project-item-actions">
+                            <button class="project-item-btn project-item-load" onclick="window.projectManager.loadProject('${name}')">Load</button>
+                            <button class="project-item-btn project-item-delete" onclick="window.projectManager.deleteProject('${name}')">Delete</button>
+                        </div>
+                    `;
+                    
+                    container.appendChild(div);
+                });
+            }
+            
+            updateProjectStatus(message) {
+                const statusDiv = document.getElementById('project-status');
+                if (message) {
+                    statusDiv.textContent = message;
+                    statusDiv.style.color = '#16a34a';
+                } else if (this.currentProjectName) {
+                    const timeAgo = this.lastSaveTime ? this.getTimeAgo(this.lastSaveTime) : 'unknown';
+                    statusDiv.innerHTML = `Current project: <strong>${this.currentProjectName}</strong> (saved ${timeAgo})`;
+                    statusDiv.style.color = '#6b7280';
+                } else {
+                    statusDiv.textContent = 'No project loaded';
+                    statusDiv.style.color = '#6b7280';
+                }
+            }
+            
+            getTimeAgo(timestamp) {
+                const seconds = Math.floor((Date.now() - timestamp) / 1000);
+                
+                if (seconds < 60) return 'just now';
+                if (seconds < 3600) return `${Math.floor(seconds / 60)} minutes ago`;
+                if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
+                return `${Math.floor(seconds / 86400)} days ago`;
+            }
+            
+            startAutoSave() {
+                this.autoSaveInterval = setInterval(() => {
+                    if (this.currentProjectName) {
+                        this.saveProject(this.currentProjectName);
+                    }
+                }, 120000);
+            }
+            
+            stopAutoSave() {
+                if (this.autoSaveInterval) {
+                    clearInterval(this.autoSaveInterval);
+                    this.autoSaveInterval = null;
+                }
+            }
+        }
+        
+        // CREATE PROJECT MANAGER AND MAKE GLOBAL
+        const projectManager = new ProjectManager();
+        window.projectManager = projectManager;
+        
+        // INITIALIZATION
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Initializing enhanced facility form...');
+            
+            // Initialize project manager
+            projectManager.renderSavedProjectsList();
+            projectManager.updateProjectStatus();
+            projectManager.startAutoSave();
+            
+            // Set up operator field listeners
+            const operatorFields = [
+                { id: 'operator-name', field: 'name' },
+                { id: 'operator-current-name', field: 'currentName' },
+                { id: 'operator-location', field: 'location' },
+                { id: 'operator-headquarters', field: 'headquarters' },
+                { id: 'operator-founded', field: 'founded' },
+                { id: 'operator-period', field: 'operatingPeriod' },
+                { id: 'operator-status', field: 'status' },
+                { id: 'operator-ceo', field: 'keyStaff.ceo' }
+            ];
+            
+            operatorFields.forEach(({id, field}) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.addEventListener('input', function() {
+                        if (field.includes('.')) {
+                            const parts = field.split('.');
+                            if (parts[0] === 'keyStaff') {
+                                if (!formData.operator.keyStaff) formData.operator.keyStaff = {};
+                                formData.operator.keyStaff[parts[1]] = this.value;
+                            }
+                        } else {
+                            formData.operator[field] = this.value;
+                        }
+                        updateJSON();
+                        projectManager.updateProjectStatus();
+                    });
+                }
+            });
+            
+            // Set up facility field listeners
+            document.querySelectorAll('.facility-field').forEach(field => {
+                field.addEventListener('input', function() {
+                    const path = this.dataset.field;
+                    setNestedValue(formData.facilities[currentFacilityIndex], path, this.value);
+                    
+                    if (path === 'identification.name' || path === 'identification.currentName') {
+                        updateTableOfContents();
+                        updateFacilityControls();
+                    }
+                    
+                    updateJSON();
+                    projectManager.updateProjectStatus();
+                });
+                
+                field.addEventListener('change', function() {
+                    const path = this.dataset.field;
+                    setNestedValue(formData.facilities[currentFacilityIndex], path, this.value);
+                    
+                    if (path === 'identification.name' || path === 'identification.currentName') {
+                        updateTableOfContents();
+                        updateFacilityControls();
+                    }
+                    
+                    updateJSON();
+                    projectManager.updateProjectStatus();
+                });
+            });
+            
+            // Set up facility checkbox listeners
+            document.querySelectorAll('.facility-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const path = this.dataset.field;
+                    setNestedValue(formData.facilities[currentFacilityIndex], path, this.checked);
+                    updateJSON();
+                    projectManager.updateProjectStatus();
+                });
+            });
+            
+            // Load initial data
+            loadOperatorData();
+            loadFacilityData();
+            updateFacilityControls();
+            updateTableOfContents();
+            updateJSON();
+            
+            console.log('Enhanced form initialization complete');
+        });
+    </script>
+</body>
