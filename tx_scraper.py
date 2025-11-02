@@ -359,7 +359,7 @@ def run():
     with sync_playwright() as p:
         # Configure browser to download to a specific directory
         browser = p.chromium.launch(
-            headless=False,
+            headless=True,
             downloads_path=downloads_path
         )
         context = browser.new_context(accept_downloads=True)
