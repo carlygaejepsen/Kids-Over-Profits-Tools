@@ -474,22 +474,42 @@ def run():
                 
                 # 9. Click download dropdown - scroll to it first
                 print("Step 9: Looking for download dropdown...")
-                download_dropdown = page.locator("div.Multi-Select__control:has-text('Download Deficiencies')")
+                download_dropdown = None
+                for locator in (
+                    page.get_by_role("button", name=re.compile(r"Download Deficiencies", re.I)),
+                    page.locator("div.Multi-Select__control:has-text('Download Deficiencies')")
+                ):
+                    if locator.count() > 0:
+                        download_dropdown = locator.first
+                        break
                 
-                if download_dropdown.count() == 0:
+                if download_dropdown is None:
                     print("❌ Download dropdown not found!")
                     continue
                 
                 download_dropdown.scroll_into_view_if_needed()
                 time.sleep(1)
                 download_dropdown.click(force=True)
-                time.sleep(2)
-                print("✔ Download dropdown clicked")
+                
+                menu = page.locator("div.Multi-Select__menu").first
+                try:
+                    menu.wait_for(state="visible", timeout=5000)
+                except Exception:
+                    print("❌ Download menu did not appear!")
+                    continue
+                print("✔ Download dropdown opened")
                 
                 # 10. Select CSV option and handle download
                 print("Step 10: Selecting CSV option...")
-                with page.expect_download(timeout=30000) as download_info:
-                    csv_option = page.locator("div[role='option']").nth(1)
+                csv_option = menu.locator("div[role='option']", has_text=re.compile(r"CSV", re.I)).first
+                if csv_option.count() == 0:
+                    csv_option = page.locator("div[role='option']", has_text=re.compile(r"CSV", re.I)).first
+                
+                if csv_option.count() == 0:
+                    print("❌ CSV option not found!")
+                    continue
+                
+                with page.expect_download(timeout=60000) as download_info:
                     csv_option.scroll_into_view_if_needed()
                     time.sleep(1)
                     csv_option.click(force=True)
@@ -499,6 +519,9 @@ def run():
                 
                 # Get the original download path
                 original_path = download.path()
+                if not original_path:
+                    print("❌ Download completed but no file path was returned!")
+                    continue
                 print(f"Original download path: {original_path}")
                 
                 # Copy to your downloads folder with the desired name
