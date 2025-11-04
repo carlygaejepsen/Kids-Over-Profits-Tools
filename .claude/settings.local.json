@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python mt_dl.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
