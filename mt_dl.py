@@ -95,23 +95,35 @@ def run():
             facility_links = page.locator("a[id*='lbOrganizationName']")
 
             name = facility_links.nth(i).inner_text().strip()
-            print(f"\nFacility: {name}")
+            print(f"\nFacility {i+1}/{count}: {name}")
 
-            # click into facility detail
-            facility_links.nth(i).click()
+            # click into facility detail and wait for navigation
+            with page.expect_navigation(wait_until="networkidle", timeout=60000):
+                facility_links.nth(i).click()
+
+            print("  Navigated to facility page, waiting for surveys...")
+
+            # Wait for page to fully load
+            page.wait_for_load_state("domcontentloaded")
+
+            # Wait for surveys container
             surveys_container = page.locator("#MainContent_repSurveys")
-            surveys_container.wait_for(state="visible", timeout=60000)
+            surveys_container.wait_for(state="attached", timeout=60000)
 
             # 7. Grab survey links
             survey_links = page.locator("a[onclick*='SurveyGenerator']")
             survey_count = survey_links.count()
-            print(f"Found {survey_count} surveys")
+            print(f"  Found {survey_count} surveys")
+
+            if survey_count == 0:
+                print("  No surveys found for this facility, skipping...")
+                continue
 
             for j in range(survey_count):
                 onclick = survey_links.nth(j).get_attribute("onclick")
                 match = re.search(r"SurveyGenerator\('(\d+)'\)", onclick)
                 if not match:
-                    print(f"Skipping survey {j} - no ID found")
+                    print(f"  Skipping survey {j+1} - no ID found")
                     continue
                 sid = match.group(1)
 
@@ -120,12 +132,18 @@ def run():
                     with page.expect_download(timeout=30000) as dl_info:
                         survey_links.nth(j).click()
                     download = dl_info.value
-                    filename = f"{name}_{sid}.pdf".replace(" ", "_")
-                    download.save_as(os.path.join("downloads", filename))
-                    print(f"Saved {filename}")
+                    # Sanitize filename - remove/replace problematic characters
+                    safe_name = re.sub(r'[<>:"/\\|?*]', '_', name)
+                    filename = f"{safe_name}_{sid}.pdf"
+                    filepath = os.path.join("downloads", filename)
+                    download.save_as(filepath)
+                    print(f"  ✓ Saved survey {j+1}/{survey_count}: {filename}")
                 except Exception as e:
-                    print(f"Failed to download survey {sid}: {e}")
+                    print(f"  ✗ Failed to download survey {sid}: {e}")
 
+        print("\n" + "="*60)
+        print("Download complete! Check the 'downloads' folder for PDFs.")
+        print("="*60)
         browser.close()
 
 if __name__ == "__main__":
