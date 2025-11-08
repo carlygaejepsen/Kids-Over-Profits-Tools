@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python mt_dl.py:*)"
+      "Bash(python mt_dl.py:*)",
+      "Bash(pip install:*)",
+      "Bash(if exist \"%USERPROFILE%\\.undetected_chromedriver\" rd /s /q \"%USERPROFILE%\\.undetected_chromedriver\")",
+      "Bash(python:*)",
+      "Bash(cmd /c \"if exist %USERPROFILE%\\.undetected_chromedriver rd /s /q %USERPROFILE%\\.undetected_chromedriver\")",
+      "Bash(.venvScriptspython.exe -m pip install --upgrade setuptools undetected-chromedriver)",
+      "Bash(\".venv/Scripts/python.exe\" -c \"import undetected_chromedriver as uc; print(''Import successful!'')\")",
+      "Bash(\".venv/Scripts/python.exe\" mt_dl.py)"
     ],
     "deny": [],
     "ask": []

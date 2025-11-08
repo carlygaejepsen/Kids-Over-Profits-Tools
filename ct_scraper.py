@@ -731,9 +731,19 @@ def save_to_json(data: Dict, filename: str = "ct_reports.json") -> bool:
     Save data to JSON with proper formatting
     """
     try:
-        with open(filename, 'w', encoding='utf-8') as f:
+        import os
+        # Define the output directory
+        output_dir = r"C:\Users\daniu\OneDrive\Documents\GitHub\Kids-Over-Profits\js\data"
+
+        # Create directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Construct full path
+        full_path = os.path.join(output_dir, filename)
+
+        with open(full_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=True)
-        logger.info(f"Data saved to {filename}")
+        logger.info(f"Data saved to {full_path}")
         return True
     except Exception as e:
         logger.error(f"Error saving to JSON: {e}")

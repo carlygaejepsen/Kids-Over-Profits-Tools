@@ -35,6 +35,13 @@ OUTPUT_JSON = OUTPUT_DIR / "ut_reports_with_ocr.json"
 OUTPUT_CSV = OUTPUT_DIR / f"utah_citations_{datetime.now().strftime('%m-%d-%Y')}.csv"
 
 # Configuration
+DEBUG_EXTRACTION = True  # Set to True to see detailed extraction debug info
+SAVE_EXTRACTED_TEXT = True  # Set to True to save extracted text for manual review
+TEST_MODE = False  # Set to True to only process first 3 facilities for testing
+TEXT_OUTPUT_DIR = BASE_DIR / "extracted_text"
+if SAVE_EXTRACTED_TEXT:
+    TEXT_OUTPUT_DIR.mkdir(exist_ok=True)
+
 FACILITY_IDS = [
     96697,
     93201,
@@ -196,34 +203,202 @@ ChecklistResult = Dict[str, Optional[Any]]
 FacilityRecord = Dict[str, Any]
 
 
-def extract_data_from_text(text: str, method: str = "text") -> ChecklistResult:
-    """Extract census, contact person, and licensor from text using multiple pattern sets."""
+def extract_data_from_text(text: str, method: str = "text", debug: bool = False) -> ChecklistResult:
+    """Extract census, capacity, contact person, and licensor from text using multiple pattern sets."""
 
     if not text or not text.strip():
-        return {"census": None, "contact_person": None, "licensor": None}
+        return {"census": None, "capacity": None, "contact_person": None, "licensor": None}
 
     census: Optional[int] = None
+    capacity: Optional[int] = None
     contact_person: Optional[str] = None
     licensor: Optional[str] = None
 
     if method == "easyocr":
         # OCR-specific pattern for table format
-        pattern = r"Present.*?(\d+).*?Capacity"
+        # Try to find "Present [number] Capacity [number]"
+        pattern = r"Present.*?(\d+).*?Capacity.*?(\d+)"
         match = re.search(pattern, text, re.IGNORECASE | re.DOTALL)
         if match:
             census = int(match.group(1))
+            capacity = int(match.group(2))
+            if debug:
+                print(f"      DEBUG OCR: Census={census}, Capacity={capacity}")
+        elif debug:
+            print(f"      DEBUG OCR: Pattern failed")
     else:
-        census_pattern1 = re.search(r"Approved # of Present\s*\n\s*(\d+)", text)
-        if census_pattern1:
-            census = int(census_pattern1.group(1))
+        # Try multiple patterns in order of specificity
+        patterns_tried = []
+
+        # Pattern 1: Table format "Approved # | Capacity | Present" with values below
+        table_pattern = re.search(
+            r"Approved\s*#.*?Capacity.*?Present.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
+            text,
+            re.IGNORECASE | re.DOTALL
+        )
+        if table_pattern:
+            capacity = int(table_pattern.group(2))
+            census = int(table_pattern.group(3))
+            if debug:
+                print(f"      DEBUG P1-Table: Approved={table_pattern.group(1)}, "
+                      f"Capacity={capacity}, Census={census}")
         else:
-            census_pattern2 = re.search(r"Approved # of Present\s+(\d+)", text)
-            if census_pattern2:
-                census = int(census_pattern2.group(1))
+            patterns_tried.append("P1-Table")
+
+            # Pattern 2: Alternate table order "Present | Capacity | Approved #"
+            table_pattern2 = re.search(
+                r"Present.*?Capacity.*?Approved\s*#.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
+                text,
+                re.IGNORECASE | re.DOTALL
+            )
+            if table_pattern2:
+                census = int(table_pattern2.group(1))
+                capacity = int(table_pattern2.group(2))
+                if debug:
+                    print(f"      DEBUG P2-TableAlt: Census={census}, "
+                          f"Capacity={capacity}, Approved={table_pattern2.group(3)}")
             else:
-                census_pattern3 = re.search(r"Approved # of Present\s+\d+\s+(\d+)", text)
-                if census_pattern3:
-                    census = int(census_pattern3.group(1))
+                patterns_tried.append("P2-TableAlt")
+
+                # Pattern 2b: Try to find Present and Capacity on same line or nearby
+                # Format: "Present: 12  Capacity: 30" or similar
+                combined_pattern = re.search(
+                    r"Present[:\s]+(\d+).*?Capacity[:\s]+(\d+)",
+                    text,
+                    re.IGNORECASE | re.DOTALL
+                )
+                if combined_pattern:
+                    census = int(combined_pattern.group(1))
+                    capacity = int(combined_pattern.group(2))
+                    if debug:
+                        print(f"      DEBUG P2b-Combined: Census={census}, Capacity={capacity}")
+                else:
+                    patterns_tried.append("P2b-Combined")
+
+                # Pattern 3-7: Various "Present" formats
+                present_patterns = [
+                    (r"Present\s*\n\s*(\d+)", "P3-Present\\n"),
+                    (r"Present\s*[:;]\s*(\d+)", "P4-Present:"),
+                    (r"Present\s+(\d+)(?:\s|$)", "P5-Present_"),
+                    (r"Present\s*[|]\s*(\d+)", "P6-Present|"),
+                    (r"(?:^|\n)Present.*?(\d+)", "P7-PresentAny"),
+                ]
+
+                for pattern, label in present_patterns:
+                    match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
+                    if match:
+                        census = int(match.group(1))
+                        # Try multiple capacity patterns in order (including variations)
+                        capacity_patterns = [
+                            (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                            (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                            (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                            (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                            (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                            (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),  # Approved # then two numbers
+                        ]
+                        cap_found = False
+                        for cap_pattern, cap_label in capacity_patterns:
+                            capacity_match = re.search(cap_pattern, text, re.IGNORECASE)
+                            if capacity_match:
+                                capacity = int(capacity_match.group(1))
+                                cap_found = True
+                                if debug:
+                                    print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (via {cap_label})")
+                                break
+                        if not cap_found and debug:
+                            print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (not found)")
+                        break
+                    patterns_tried.append(label)
+                else:
+                    # Pattern 8-11: "# of Present" or "# Present" formats
+                    num_present_patterns = [
+                        (r"#\s*of\s*Present\s+(\d+)(?:\s|$)", "P8-#ofPresent"),
+                        (r"#\s*Present\s+(\d+)(?:\s|$)", "P9-#Present"),
+                        (r"Approved.*?Present\s+\d+\s+(\d+)", "P10-Skip1st"),
+                        (r"(?:number|count|total)\s+present[:\s]*(\d+)", "P11-NumPresent"),
+                    ]
+
+                    for pattern, label in num_present_patterns:
+                        match = re.search(pattern, text, re.IGNORECASE)
+                        if match:
+                            census = int(match.group(1))
+                            # Try comprehensive capacity patterns
+                            capacity_patterns = [
+                                (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                                (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                                (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                                (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),
+                            ]
+                            cap_found = False
+                            for cap_pattern, cap_label in capacity_patterns:
+                                capacity_match = re.search(cap_pattern, text, re.IGNORECASE)
+                                if capacity_match:
+                                    capacity = int(capacity_match.group(1))
+                                    cap_found = True
+                                    break
+                            if debug:
+                                cap_status = f"(via {cap_label})" if cap_found else "(not found)"
+                                print(f"      DEBUG {label}: Census={census}, Capacity={capacity} {cap_status}")
+                            break
+                        patterns_tried.append(label)
+                    else:
+                        # Pattern 12: Look for "census" keyword
+                        census_kw = re.search(r"census[:\s]*(\d+)", text, re.IGNORECASE)
+                        if census_kw:
+                            census = int(census_kw.group(1))
+                            # Try comprehensive capacity patterns
+                            cap_patterns = [
+                                (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                                (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                                (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                            ]
+                            cap_found = False
+                            for cap_pat, cap_lbl in cap_patterns:
+                                cap_match = re.search(cap_pat, text, re.IGNORECASE)
+                                if cap_match:
+                                    capacity = int(cap_match.group(1))
+                                    cap_found = True
+                                    break
+                            if debug:
+                                cap_status = f"(via {cap_lbl})" if cap_found else "(not found)"
+                                print(f"      DEBUG P12-Census: Census={census}, Capacity={capacity} {cap_status}")
+                        else:
+                            patterns_tried.append("P12-Census")
+
+                            # Pattern 13: Fallback - find "present" and take the first number near it
+                            present_nearby = re.search(r"present.{0,20}?(\d+)", text, re.IGNORECASE | re.DOTALL)
+                            if present_nearby:
+                                census = int(present_nearby.group(1))
+                                # Try comprehensive capacity patterns
+                                cap_patterns = [
+                                    (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                                    (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                                    (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                                    (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                                    (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                                ]
+                                cap_found = False
+                                for cap_pat, cap_lbl in cap_patterns:
+                                    cap_match = re.search(cap_pat, text, re.IGNORECASE)
+                                    if cap_match:
+                                        capacity = int(cap_match.group(1))
+                                        cap_found = True
+                                        break
+                                if debug:
+                                    cap_status = f"(via {cap_lbl})" if cap_found else "(not found)"
+                                    print(f"      DEBUG P13-Nearby: Census={census}, Capacity={capacity} {cap_status}")
+                            else:
+                                patterns_tried.append("P13-Nearby")
+                                if debug:
+                                    print(f"      DEBUG: No pattern matched. Tried: {', '.join(patterns_tried)}")
+                                    # Show text sample to help debug
+                                    lines = text.split('\n')[:15]
+                                    print(f"      DEBUG: First 15 lines:\n      " + "\n      ".join(lines))
 
     contact_patterns = [
         r"Name of Individual Informed.*?Inspection:?\s*([^\n\r]+)",
@@ -245,10 +420,27 @@ def extract_data_from_text(text: str, method: str = "text") -> ChecklistResult:
             licensor = re.sub(r"\s+", " ", match.group(1).strip())
             break
 
-    return {"census": census, "contact_person": contact_person, "licensor": licensor}
+    # Validation: Flag suspicious cases where census > capacity
+    validation_warning = None
+    if census is not None and capacity is not None:
+        if census > capacity:
+            validation_warning = f"⚠️ SUSPICIOUS: Census ({census}) > Capacity ({capacity})"
+            if debug:
+                print(f"      {validation_warning}")
+
+    result = {
+        "census": census,
+        "capacity": capacity,
+        "contact_person": contact_person,
+        "licensor": licensor
+    }
+    if validation_warning:
+        result["validation_warning"] = validation_warning
+
+    return result
 
 
-def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
+def extract_checklist_data(pdf_content: bytes, checklist_id: Optional[int] = None) -> ChecklistResult:
     """Extract data with EasyOCR fallback ONLY when regular extraction completely fails."""
 
     try:
@@ -256,6 +448,7 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
             if not pdf.pages:
                 return {
                     "census": None,
+                    "capacity": None,
                     "contact_person": None,
                     "licensor": None,
                     "extraction_method": "no_pages",
@@ -264,8 +457,13 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
             first_page = pdf.pages[0]
             text = first_page.extract_text() or ""
 
+            # Save extracted text for debugging
+            if SAVE_EXTRACTED_TEXT and checklist_id and text.strip():
+                text_file = TEXT_OUTPUT_DIR / f"checklist_{checklist_id}_text.txt"
+                text_file.write_text(text, encoding="utf-8")
+
             if text.strip():
-                result = extract_data_from_text(text, method="text")
+                result = extract_data_from_text(text, method="text", debug=DEBUG_EXTRACTION)
                 if any(result.values()):
                     result["extraction_method"] = "text"
                     return result
@@ -299,7 +497,7 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
                                 best_text = ocr_text
                                 best_angle = angle
 
-                                test_result = extract_data_from_text(ocr_text, method="easyocr")
+                                test_result = extract_data_from_text(ocr_text, method="easyocr", debug=DEBUG_EXTRACTION)
                                 if any(test_result.values()):
                                     best_result = test_result
                                     break
@@ -309,7 +507,12 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
                                 f"      EasyOCR extracted {len(best_text)} characters (rotation: {best_angle}\N{DEGREE SIGN})"
                             )
 
-                            result = best_result or extract_data_from_text(best_text, method="easyocr")
+                            # Save OCR extracted text for debugging
+                            if SAVE_EXTRACTED_TEXT and checklist_id:
+                                ocr_file = TEXT_OUTPUT_DIR / f"checklist_{checklist_id}_ocr.txt"
+                                ocr_file.write_text(best_text, encoding="utf-8")
+
+                            result = best_result or extract_data_from_text(best_text, method="easyocr", debug=DEBUG_EXTRACTION)
                             result["extraction_method"] = f"easyocr_rotated_{best_angle}"
                             return result
                         print("      EasyOCR found no text at any rotation")
@@ -318,6 +521,7 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
 
             return {
                 "census": None,
+                "capacity": None,
                 "contact_person": None,
                 "licensor": None,
                 "extraction_method": "all_failed",
@@ -326,6 +530,7 @@ def extract_checklist_data(pdf_content: bytes) -> ChecklistResult:
         print(f"      Error parsing PDF: {error}")
         return {
             "census": None,
+            "capacity": None,
             "contact_person": None,
             "licensor": None,
             "extraction_method": "error",
@@ -389,6 +594,9 @@ def build_checklist_summary(checklists: List[ChecklistResult]) -> str:
         census = checklist.get("census")
         if census is not None:
             parts.append(f"Census={census}")
+        capacity = checklist.get("capacity")
+        if capacity is not None:
+            parts.append(f"Capacity={capacity}")
         contact = checklist.get("contact_person")
         if contact:
             parts.append(f"Contact={contact}")
@@ -398,6 +606,9 @@ def build_checklist_summary(checklists: List[ChecklistResult]) -> str:
         method = checklist.get("extraction_method")
         if method:
             parts.append(f"Method={method}")
+        warning = checklist.get("validation_warning")
+        if warning:
+            parts.append(f"WARNING: {warning}")
         if parts:
             summaries.append("; ".join(parts))
     return " | ".join(summaries)
@@ -465,11 +676,13 @@ def write_csv_output(facilities_data: List[FacilityRecord]) -> None:
 
 
 def main() -> None:
-    print(f"🚀 Starting data export with OCR fallback ({len(FACILITY_IDS)} facilities)")
+    facility_list = FACILITY_IDS[:3] if TEST_MODE else FACILITY_IDS
+    mode_str = " (TEST MODE - first 3 facilities only)" if TEST_MODE else ""
+    print(f"🚀 Starting data export with OCR fallback ({len(facility_list)} facilities){mode_str}")
 
     facilities_data: List[FacilityRecord] = []
 
-    for facility_id in FACILITY_IDS:
+    for facility_id in facility_list:
         data = fetch_facility_data(facility_id)
         if not data:
             continue
@@ -511,7 +724,7 @@ def main() -> None:
                     pdf_response = download_with_retry(pdf_url)
 
                     if pdf_response:
-                        checklist_data = extract_checklist_data(pdf_response.content)
+                        checklist_data = extract_checklist_data(pdf_response.content, checklist_id=checklist_id)
                         checklist_data["checklist_id"] = checklist_id
 
                         pdf_path = CHECKLIST_DIR / f"facility_{facility_id}_checklist_{checklist_id}.pdf"
@@ -519,13 +732,18 @@ def main() -> None:
                         checklist_data["pdf_file"] = str(pdf_path)
 
                         inspection_record["checklists"].append(checklist_data)
-                        print(
-                            "    📋 Checklist {0}: Census={1}, Method={2}".format(
-                                checklist_id,
-                                checklist_data.get("census"),
-                                checklist_data.get("extraction_method", "unknown"),
-                            )
-                        )
+
+                        # Build output message with census, capacity, and warnings
+                        msg_parts = [f"📋 Checklist {checklist_id}"]
+                        msg_parts.append(f"Census={checklist_data.get('census')}")
+                        msg_parts.append(f"Capacity={checklist_data.get('capacity')}")
+                        msg_parts.append(f"Method={checklist_data.get('extraction_method', 'unknown')}")
+
+                        # Add warning if present
+                        if checklist_data.get("validation_warning"):
+                            msg_parts.append(checklist_data.get("validation_warning"))
+
+                        print("    " + ", ".join(msg_parts))
                     else:
                         print(f"    ❌ Failed to download checklist {checklist_id} after retries")
                 except Exception as error:  # pragma: no cover - logging only

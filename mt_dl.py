@@ -1,5 +1,10 @@
-from playwright.sync_api import sync_playwright
-import os, re
+import undetected_chromedriver as uc
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait, Select
+from selenium.webdriver.support import expected_conditions as EC
+import os
+import re
+import time
 
 URL = "https://mt-reports.com/portal/FacilityDetails.aspx"
 
@@ -11,78 +16,142 @@ LICENSE_TYPES = [
     # Example: "1234", "5678", etc.
 ]
 
-def process_license_type(page, license_type, first_load=False):
+def process_license_type(driver, license_type, first_load=False):
     """Process all facilities for a given license type"""
     print(f"\n{'='*60}")
     print(f"Processing License Type: {license_type}")
     print(f"{'='*60}\n")
 
-    # Navigate to the page
-    page.goto(URL, wait_until="domcontentloaded")
-    page.wait_for_load_state("networkidle")
+    # Only navigate to the page on first load
+    if first_load:
+        driver.get(URL)
+        time.sleep(2)  # Give page time to load
+    else:
+        # For subsequent license types, navigate back to search form
+        # Use back button to preserve session and avoid new reCAPTCHA
+        print("Navigating back to search form...")
+        for _ in range(10):  # Go back up to 10 times to get to search form
+            try:
+                # Check if we're already on the search page by looking for the dropdown
+                driver.find_element(By.ID, "MainContent_ddlLicenseType")
+                print("Already on search form")
+                break
+            except:
+                # Not on search form yet, go back
+                driver.back()
+                time.sleep(1)
 
     # Select license type
-    dropdown = page.locator("#MainContent_ddlLicenseType")
-    dropdown.wait_for(state="visible", timeout=10000)
-    dropdown.select_option(license_type)
-    print(f"Selected license type {license_type}")
+    try:
+        dropdown_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "MainContent_ddlLicenseType"))
+        )
+        dropdown = Select(dropdown_element)
+        dropdown.select_by_value(license_type)
+        print(f"Selected license type {license_type}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"ERROR: Could not select license type: {e}")
+        return
 
     # Handle reCAPTCHA only on first load
     if first_load:
-        recaptcha_solved = False
-        try:
-            recaptcha_frame = page.frame_locator("iframe[title*='reCAPTCHA']")
-            recaptcha_checkbox = recaptcha_frame.locator(".recaptcha-checkbox-border")
-            if recaptcha_checkbox.count() > 0:
-                print("\n" + "="*60)
-                print("reCAPTCHA DETECTED!")
-                print("Please solve the reCAPTCHA in the browser window.")
-                print("The script will wait up to 60 seconds...")
-                print("="*60 + "\n")
+        print("\n" + "="*60)
+        print("CHECKING FOR reCAPTCHA...")
+        print("If you see a reCAPTCHA, please solve it manually.")
+        print("The script will wait up to 2 minutes...")
+        print("="*60 + "\n")
 
-                # Wait for user to solve reCAPTCHA - check every 2 seconds
-                for i in range(30):  # 60 seconds total
-                    try:
-                        # Check if checkbox is checked
-                        if page.locator("iframe[title*='reCAPTCHA']").count() == 0:
-                            # reCAPTCHA might have disappeared after solving
-                            recaptcha_solved = True
-                            break
-                        page.wait_for_timeout(2000)
-                        print(f"Waiting for reCAPTCHA... ({i*2} seconds)")
-                    except:
-                        pass
+        # Wait a bit for reCAPTCHA to potentially appear
+        time.sleep(3)
 
-                if recaptcha_solved:
-                    print("reCAPTCHA appears to be solved!")
-                else:
-                    print("Proceeding anyway - reCAPTCHA may still need solving")
-        except Exception as e:
-            print(f"reCAPTCHA check error (may not be present): {e}")
+        # Check if reCAPTCHA iframe exists
+        recaptcha_frames = driver.find_elements(By.XPATH, "//iframe[contains(@title, 'reCAPTCHA') or contains(@src, 'recaptcha')]")
 
-    # Click Search button (it's a link, not a button)
-    search_btn = page.locator("#MainContent_lbSearch")
-    search_btn.wait_for(state="visible", timeout=10000)
-    search_btn.click()
-    print("Clicked search button")
+        if recaptcha_frames:
+            print(f"reCAPTCHA detected! ({len(recaptcha_frames)} frame(s) found)")
+            print("Please solve it in the browser window.")
+            print("Waiting for you to complete it...\n")
+
+            # Wait up to 120 seconds for user to solve
+            solved = False
+            for i in range(60):
+                time.sleep(2)
+                # Check if reCAPTCHA is still present
+                recaptcha_frames = driver.find_elements(By.XPATH, "//iframe[contains(@title, 'reCAPTCHA') or contains(@src, 'recaptcha')]")
+
+                # Also check if the search button is now enabled/clickable
+                try:
+                    search_btn = driver.find_element(By.ID, "MainContent_lbSearch")
+                    if search_btn.is_enabled():
+                        print("✓ reCAPTCHA solved! Search button is now enabled.")
+                        solved = True
+                        break
+                except:
+                    pass
+
+                if not recaptcha_frames:
+                    print("✓ reCAPTCHA frames cleared!")
+                    solved = True
+                    break
+
+                if i % 5 == 0 and i > 0:
+                    print(f"  Still waiting... ({i*2} seconds elapsed)")
+
+            if not solved:
+                print("⚠ WARNING: Timeout waiting for reCAPTCHA. Attempting to continue anyway...")
+
+            time.sleep(3)  # Extra time after solving to ensure page is ready
+        else:
+            print("No reCAPTCHA detected, proceeding...")
+
+    # Click Search button
+    try:
+        search_btn = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "MainContent_lbSearch"))
+        )
+        search_btn.click()
+        print("Clicked search button")
+        time.sleep(2)
+
+        # Check if a new reCAPTCHA appeared after clicking search
+        recaptcha_check = driver.find_elements(By.XPATH, "//iframe[contains(@title, 'reCAPTCHA') or contains(@src, 'recaptcha')]")
+        if recaptcha_check and not first_load:
+            print("\n⚠ WARNING: New reCAPTCHA appeared after clicking search!")
+            print("This shouldn't happen. Please solve it manually.")
+            print("Waiting for you to solve it...")
+            for i in range(30):
+                time.sleep(2)
+                recaptcha_check = driver.find_elements(By.XPATH, "//iframe[contains(@title, 'reCAPTCHA') or contains(@src, 'recaptcha')]")
+                if not recaptcha_check:
+                    print("✓ reCAPTCHA solved!")
+                    break
+                if i % 5 == 0 and i > 0:
+                    print(f"  Still waiting... ({i*2} seconds)")
+            time.sleep(2)
+
+    except Exception as e:
+        print(f"ERROR: Could not click search button: {e}")
+        return
 
     # Wait for results table
     print("Waiting for results to load...")
-    results = page.locator("#iTable")
     try:
-        results.wait_for(state="visible", timeout=60000)
+        WebDriverWait(driver, 60).until(
+            EC.presence_of_element_located((By.ID, "iTable"))
+        )
         print("Results table loaded successfully!")
     except Exception as e:
         # Take a screenshot to see what's on the page
-        page.screenshot(path=f"error_no_results_{license_type}.png")
+        driver.save_screenshot(f"error_no_results_{license_type}.png")
         print(f"ERROR: Results table did not appear. Screenshot saved to error_no_results_{license_type}.png")
         print("This usually means reCAPTCHA was not solved or search failed.")
         print("Skipping this license type...")
         return
 
     # Count facilities
-    facility_links = page.locator("a[id*='lbOrganizationName']")
-    count = facility_links.count()
+    facility_links = driver.find_elements(By.XPATH, "//a[contains(@id, 'lbOrganizationName')]")
+    count = len(facility_links)
     print(f"Found {count} facilities")
 
     if count == 0:
@@ -96,108 +165,168 @@ def process_license_type(page, license_type, first_load=False):
         # If not the first iteration, go back to search results
         if i > 0:
             print("  Going back to search results...")
-            page.go_back(wait_until="networkidle", timeout=60000)
-            page.wait_for_load_state("domcontentloaded")
-            # Re-fetch facility links after navigation
-            facility_links = page.locator("a[id*='lbOrganizationName']")
+            driver.back()
+            time.sleep(2)
 
-        name = facility_links.nth(i).inner_text().strip()
-        print(f"  Name: {name}")
-
-        # click into facility detail and wait for navigation
-        print("  Clicking facility link...")
-        with page.expect_navigation(wait_until="networkidle", timeout=60000):
-            facility_links.nth(i).click()
-
-        print("  Navigated to facility page, waiting for surveys...")
-
-        # Wait for page to fully load
-        page.wait_for_load_state("domcontentloaded")
-
-        # Wait for surveys container - try multiple selectors
-        surveys_found = False
-        possible_selectors = ["#MainContent_repSurveys", "[id*='repSurveys']", ".survey", "[id*='Survey']"]
-
-        for selector in possible_selectors:
+            # Wait for results table to reload
             try:
-                container = page.locator(selector).first
-                if container.count() > 0:
-                    surveys_found = True
-                    print(f"  Found surveys with selector: {selector}")
-                    break
+                WebDriverWait(driver, 60).until(
+                    EC.presence_of_element_located((By.ID, "iTable"))
+                )
             except:
+                print("  ERROR: Could not reload results table")
+                break
+
+            # Re-fetch facility links after navigation
+            facility_links = driver.find_elements(By.XPATH, "//a[contains(@id, 'lbOrganizationName')]")
+
+        try:
+            name = facility_links[i].text.strip()
+            print(f"  Name: {name}")
+
+            # Click into facility detail
+            print("  Clicking facility link...")
+            facility_links[i].click()
+            time.sleep(3)  # Wait for navigation
+
+            print("  Navigated to facility page, waiting for surveys...")
+
+            # Wait for surveys container - try multiple selectors
+            surveys_found = False
+            possible_selectors = [
+                (By.ID, "MainContent_repSurveys"),
+                (By.CSS_SELECTOR, "[id*='repSurveys']"),
+                (By.CSS_SELECTOR, ".survey"),
+                (By.CSS_SELECTOR, "[id*='Survey']")
+            ]
+
+            for selector_type, selector_value in possible_selectors:
+                try:
+                    elements = driver.find_elements(selector_type, selector_value)
+                    if elements:
+                        surveys_found = True
+                        print(f"  Found surveys container with selector: {selector_value}")
+                        break
+                except:
+                    continue
+
+            if not surveys_found:
+                print("  WARNING: No survey container found - this facility may not have surveys")
+                print(f"  Skipping...")
                 continue
 
-        if not surveys_found:
-            print("  WARNING: No survey container found - this facility may not have surveys")
-            print(f"  Skipping...")
-            continue
+            # Grab survey links
+            survey_links = driver.find_elements(By.XPATH, "//a[contains(@onclick, 'SurveyGenerator')]")
+            survey_count = len(survey_links)
+            print(f"  Found {survey_count} surveys")
 
-        # Grab survey links
-        survey_links = page.locator("a[onclick*='SurveyGenerator']")
-        survey_count = survey_links.count()
-        print(f"  Found {survey_count} surveys")
-
-        if survey_count == 0:
-            print("  No surveys found for this facility, skipping...")
-            continue
-
-        for j in range(survey_count):
-            onclick = survey_links.nth(j).get_attribute("onclick")
-            match = re.search(r"SurveyGenerator\('(\d+)'\)", onclick)
-            if not match:
-                print(f"    Skipping survey {j+1} - no ID found")
+            if survey_count == 0:
+                print("  No surveys found for this facility, skipping...")
                 continue
-            sid = match.group(1)
 
-            # Download PDF
-            try:
-                with page.expect_download(timeout=30000) as dl_info:
-                    survey_links.nth(j).click()
-                download = dl_info.value
-                # Sanitize filename - remove/replace problematic characters
-                safe_name = re.sub(r'[<>:"/\\|?*]', '_', name)
-                filename = f"{license_type}_{safe_name}_{sid}.pdf"
-                filepath = os.path.join("downloads", filename)
-                download.save_as(filepath)
-                print(f"    [OK] Saved survey {j+1}/{survey_count}: {filename}")
-            except Exception as e:
-                print(f"    [FAIL] Failed to download survey {sid}: {e}")
+            # Process each survey
+            for j in range(survey_count):
+                # Re-fetch survey links in case DOM changed
+                survey_links = driver.find_elements(By.XPATH, "//a[contains(@onclick, 'SurveyGenerator')]")
+
+                onclick = survey_links[j].get_attribute("onclick")
+                match = re.search(r"SurveyGenerator\('(\d+)'\)", onclick)
+                if not match:
+                    print(f"    Skipping survey {j+1} - no ID found")
+                    continue
+                sid = match.group(1)
+
+                # Download PDF
+                try:
+                    # Set up download waiting
+                    # Get the current number of files in downloads folder
+                    downloads_dir = os.path.join(os.getcwd(), "downloads")
+                    before_files = set(os.listdir(downloads_dir)) if os.path.exists(downloads_dir) else set()
+
+                    # Click the survey link
+                    survey_links[j].click()
+                    print(f"    Clicked survey {j+1}/{survey_count}, waiting for download...")
+
+                    # Wait for new file to appear (up to 30 seconds)
+                    downloaded = False
+                    for _ in range(30):
+                        time.sleep(1)
+                        if os.path.exists(downloads_dir):
+                            after_files = set(os.listdir(downloads_dir))
+                            new_files = after_files - before_files
+                            # Filter out .crdownload or .tmp files
+                            complete_files = [f for f in new_files if not f.endswith(('.crdownload', '.tmp', '.part'))]
+                            if complete_files:
+                                # Rename the file
+                                downloaded_file = complete_files[0]
+                                old_path = os.path.join(downloads_dir, downloaded_file)
+
+                                # Sanitize filename
+                                safe_name = re.sub(r'[<>:"/\\|?*]', '_', name)
+                                filename = f"{license_type}_{safe_name}_{sid}.pdf"
+                                new_path = os.path.join(downloads_dir, filename)
+
+                                # Rename if different
+                                if old_path != new_path:
+                                    try:
+                                        os.rename(old_path, new_path)
+                                    except:
+                                        # File might already exist, use the old name
+                                        filename = downloaded_file
+
+                                print(f"    [OK] Saved survey {j+1}/{survey_count}: {filename}")
+                                downloaded = True
+                                break
+
+                    if not downloaded:
+                        print(f"    [FAIL] Download timed out for survey {sid}")
+
+                except Exception as e:
+                    print(f"    [FAIL] Failed to download survey {sid}: {e}")
+
+        except Exception as e:
+            print(f"  ERROR processing facility: {e}")
+            continue
 
 
 def run():
-    with sync_playwright() as p:
-        # Launch browser with args to appear more like a real user
-        browser = p.chromium.launch(
-            headless=False,
-            args=[
-                '--disable-blink-features=AutomationControlled',
-                '--disable-dev-shm-usage',
-                '--no-sandbox'
-            ]
-        )
+    # Set up Chrome options
+    options = uc.ChromeOptions()
 
-        # Create context with realistic user agent and other settings
-        context = browser.new_context(
-            viewport={'width': 1920, 'height': 1080},
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        )
+    # Set download directory
+    downloads_dir = os.path.join(os.getcwd(), "downloads")
+    os.makedirs(downloads_dir, exist_ok=True)
 
-        page = context.new_page()
+    prefs = {
+        "download.default_directory": downloads_dir,
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True,
+        "plugins.always_open_pdf_externally": True  # Don't open PDFs in browser
+    }
+    options.add_experimental_option("prefs", prefs)
 
-        # Add script to remove webdriver flag
-        page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', {
-                get: () => undefined
-            });
-        """)
+    # Additional options to avoid detection
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--start-maximized")
 
-        os.makedirs("downloads", exist_ok=True)
+    print("Launching browser...")
+    print("Auto-downloading ChromeDriver for your Chrome version...")
+    # Let undetected-chromedriver auto-detect and download the correct version
+    driver = uc.Chrome(options=options)
+
+    # Set window size
+    driver.set_window_size(1920, 1080)
+
+    try:
+        print(f"\nWill process {len(LICENSE_TYPES)} license type(s): {', '.join(LICENSE_TYPES)}\n")
 
         # Process each license type
         for idx, license_type in enumerate(LICENSE_TYPES):
             try:
-                process_license_type(page, license_type, first_load=(idx == 0))
+                print(f"\n[{idx + 1}/{len(LICENSE_TYPES)}] Starting license type: {license_type}")
+                process_license_type(driver, license_type, first_load=(idx == 0))
+                print(f"[{idx + 1}/{len(LICENSE_TYPES)}] Completed license type: {license_type}")
             except Exception as e:
                 print(f"\n[ERROR] Failed to process license type {license_type}: {e}")
                 print("Continuing to next license type...")
@@ -206,8 +335,11 @@ def run():
         print("\n" + "="*60)
         print("Download complete! Check the 'downloads' folder for PDFs.")
         print("="*60)
-        context.close()
-        browser.close()
+
+    finally:
+        print("\nClosing browser in 5 seconds...")
+        time.sleep(5)
+        driver.quit()
 
 if __name__ == "__main__":
     run()
