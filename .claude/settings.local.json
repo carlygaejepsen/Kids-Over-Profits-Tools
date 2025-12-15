@@ -8,7 +8,9 @@
       "Bash(cmd /c \"if exist %USERPROFILE%\\.undetected_chromedriver rd /s /q %USERPROFILE%\\.undetected_chromedriver\")",
       "Bash(.venvScriptspython.exe -m pip install --upgrade setuptools undetected-chromedriver)",
       "Bash(\".venv/Scripts/python.exe\" -c \"import undetected_chromedriver as uc; print(''Import successful!'')\")",
-      "Bash(\".venv/Scripts/python.exe\" mt_dl.py)"
+      "Bash(\".venv/Scripts/python.exe\" mt_dl.py)",
+      "Bash(timeout 300 python:*)",
+      "Bash(new_inspection_ids.csv)"
     ],
     "deny": [],
     "ask": []
