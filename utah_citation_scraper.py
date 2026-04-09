@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
+import logging
 import re
 import time
 from datetime import datetime
@@ -13,6 +14,8 @@ from typing import Any, Dict, List, Optional
 
 import pdfplumber
 import requests
+
+logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
 # EasyOCR imports
 try:
@@ -202,6 +205,55 @@ MAX_INSPECTIONS = 20  # Maximum number of inspections per facility to include
 ChecklistResult = Dict[str, Optional[Any]]
 FacilityRecord = Dict[str, Any]
 
+_CID_OFFSET = 29  # These PDFs encode glyphs as CID = ASCII code point - 29
+_SPACED_TOKEN = re.compile(r"^[A-Za-z#\\]{1,2}$")
+
+
+def collapse_spaced_chars(text: str) -> str:
+    """Collapse runs of 3+ single/double characters separated by spaces.
+
+    Fixes PDF column-interleaving artifacts like "R a n c h" -> "Ranch" and
+    "A p p r o v e d" -> "Approved", while leaving normal words untouched.
+    Apostrophes, slashes, and tokens longer than 2 chars break the run.
+    """
+    tokens = text.split(" ")
+    result: List[str] = []
+    run: List[str] = []
+
+    for token in tokens:
+        if _SPACED_TOKEN.match(token):
+            run.append(token)
+        else:
+            if len(run) >= 3:
+                result.append("".join(run))
+            else:
+                result.extend(run)
+            run = []
+            result.append(token)
+
+    if len(run) >= 3:
+        result.append("".join(run))
+    else:
+        result.extend(run)
+
+    return " ".join(result)
+
+
+def decode_cid_chars(text: str) -> str:
+    """Decode (cid:XX) sequences that pdfplumber emits when font glyphs lack Unicode mappings.
+
+    Utah CCL PDFs use an embedded font where CID = Unicode code point - 29,
+    so (cid:3) -> ' ' (32), (cid:53) -> 'R' (82), etc.
+    """
+    if "(cid:" not in text:
+        return text
+
+    def _replace(m: re.Match) -> str:
+        char_code = int(m.group(1)) + _CID_OFFSET
+        return chr(char_code) if 32 <= char_code <= 126 else ""
+
+    return re.sub(r"\(cid:(\d+)\)", _replace, text)
+
 
 def extract_data_from_text(text: str, method: str = "text", debug: bool = False) -> ChecklistResult:
     """Extract census, capacity, contact person, and licensor from text using multiple pattern sets."""
@@ -230,107 +282,102 @@ def extract_data_from_text(text: str, method: str = "text", debug: bool = False)
         # Try multiple patterns in order of specificity
         patterns_tried = []
 
-        # Pattern 1: Table format "Approved # | Capacity | Present" with values below
-        table_pattern = re.search(
-            r"Approved\s*#.*?Capacity.*?Present.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
-            text,
-            re.IGNORECASE | re.DOTALL
+        # Pattern -1: Garbled columns (pdfplumber reads two table columns char-by-char interleaved)
+        # Example: "A C p a p p r a o c v it e y d : 23 Reside # n o ts f \ P C r l e ie s n e t n s t : 15"
+        # First ": NUMBER" = capacity, second ": NUMBER" = census
+        garbled_cols = re.search(
+            r"(?:[A-Za-z#\\]{1,2} ){4,}[A-Za-z#\\]{1,2}\s*:\s*(\d+)"
+            r"[\s\S]{0,80}?"
+            r"(?:[A-Za-z#\\]{1,2} ){4,}[A-Za-z#\\]{1,2}\s*:\s*(\d+)",
+            text
         )
-        if table_pattern:
-            capacity = int(table_pattern.group(2))
-            census = int(table_pattern.group(3))
+        if garbled_cols:
+            capacity = int(garbled_cols.group(1))
+            census = int(garbled_cols.group(2))
             if debug:
-                print(f"      DEBUG P1-Table: Approved={table_pattern.group(1)}, "
-                      f"Capacity={capacity}, Census={census}")
-        else:
-            patterns_tried.append("P1-Table")
+                print(f"      DEBUG P-1-Garbled: Capacity={capacity}, Census={census}")
 
-            # Pattern 2: Alternate table order "Present | Capacity | Approved #"
-            table_pattern2 = re.search(
-                r"Present.*?Capacity.*?Approved\s*#.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
+        # Pattern 0: Two-column format "Approved # of Present\n12 12\nCapacity: Residents\Clients:"
+        # First number = capacity (Approved #), second number = census (# Present)
+        if census is None or capacity is None:
+            two_col_pattern = re.search(
+                r"Approved\s*#\s+of\s+Present\s*\n\s*(\d+)\s+(\d+)",
+                text,
+                re.IGNORECASE
+            )
+            if two_col_pattern:
+                capacity = int(two_col_pattern.group(1))
+                census = int(two_col_pattern.group(2))
+                if debug:
+                    print(f"      DEBUG P0-TwoCol: Capacity={capacity}, Census={census}")
+
+        if census is None or capacity is None:
+            # Pattern 1: Table format "Approved # | Capacity | Present" with values below
+            table_pattern = re.search(
+                r"Approved\s*#.*?Capacity.*?Present.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
                 text,
                 re.IGNORECASE | re.DOTALL
             )
-            if table_pattern2:
-                census = int(table_pattern2.group(1))
-                capacity = int(table_pattern2.group(2))
+            if table_pattern:
+                capacity = int(table_pattern.group(2))
+                census = int(table_pattern.group(3))
                 if debug:
-                    print(f"      DEBUG P2-TableAlt: Census={census}, "
-                          f"Capacity={capacity}, Approved={table_pattern2.group(3)}")
+                    print(f"      DEBUG P1-Table: Approved={table_pattern.group(1)}, "
+                          f"Capacity={capacity}, Census={census}")
             else:
-                patterns_tried.append("P2-TableAlt")
+                patterns_tried.append("P1-Table")
 
-                # Pattern 2b: Try to find Present and Capacity on same line or nearby
-                # Format: "Present: 12  Capacity: 30" or similar
-                combined_pattern = re.search(
-                    r"Present[:\s]+(\d+).*?Capacity[:\s]+(\d+)",
+                # Pattern 2: Alternate table order "Present | Capacity | Approved #"
+                table_pattern2 = re.search(
+                    r"Present.*?Capacity.*?Approved\s*#.*?\n\s*(\d+)\s+(\d+)\s+(\d+)",
                     text,
                     re.IGNORECASE | re.DOTALL
                 )
-                if combined_pattern:
-                    census = int(combined_pattern.group(1))
-                    capacity = int(combined_pattern.group(2))
+                if table_pattern2:
+                    census = int(table_pattern2.group(1))
+                    capacity = int(table_pattern2.group(2))
                     if debug:
-                        print(f"      DEBUG P2b-Combined: Census={census}, Capacity={capacity}")
+                        print(f"      DEBUG P2-TableAlt: Census={census}, "
+                              f"Capacity={capacity}, Approved={table_pattern2.group(3)}")
                 else:
-                    patterns_tried.append("P2b-Combined")
+                    patterns_tried.append("P2-TableAlt")
 
-                # Pattern 3-7: Various "Present" formats
-                present_patterns = [
-                    (r"Present\s*\n\s*(\d+)", "P3-Present\\n"),
-                    (r"Present\s*[:;]\s*(\d+)", "P4-Present:"),
-                    (r"Present\s+(\d+)(?:\s|$)", "P5-Present_"),
-                    (r"Present\s*[|]\s*(\d+)", "P6-Present|"),
-                    (r"(?:^|\n)Present.*?(\d+)", "P7-PresentAny"),
-                ]
+                    # Pattern 2b: Try to find Present and Capacity on same line or nearby
+                    # Format: "Present: 12  Capacity: 30" or similar
+                    combined_pattern = re.search(
+                        r"Present[:\s]+(\d+).*?Capacity[:\s]+(\d+)",
+                        text,
+                        re.IGNORECASE | re.DOTALL
+                    )
+                    if combined_pattern:
+                        census = int(combined_pattern.group(1))
+                        capacity = int(combined_pattern.group(2))
+                        if debug:
+                            print(f"      DEBUG P2b-Combined: Census={census}, Capacity={capacity}")
+                    else:
+                        patterns_tried.append("P2b-Combined")
 
-                for pattern, label in present_patterns:
-                    match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
-                    if match:
-                        census = int(match.group(1))
-                        # Try multiple capacity patterns in order (including variations)
-                        capacity_patterns = [
-                            (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
-                            (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
-                            (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
-                            (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
-                            (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
-                            (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),  # Approved # then two numbers
-                        ]
-                        cap_found = False
-                        for cap_pattern, cap_label in capacity_patterns:
-                            capacity_match = re.search(cap_pattern, text, re.IGNORECASE)
-                            if capacity_match:
-                                capacity = int(capacity_match.group(1))
-                                cap_found = True
-                                if debug:
-                                    print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (via {cap_label})")
-                                break
-                        if not cap_found and debug:
-                            print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (not found)")
-                        break
-                    patterns_tried.append(label)
-                else:
-                    # Pattern 8-11: "# of Present" or "# Present" formats
-                    num_present_patterns = [
-                        (r"#\s*of\s*Present\s+(\d+)(?:\s|$)", "P8-#ofPresent"),
-                        (r"#\s*Present\s+(\d+)(?:\s|$)", "P9-#Present"),
-                        (r"Approved.*?Present\s+\d+\s+(\d+)", "P10-Skip1st"),
-                        (r"(?:number|count|total)\s+present[:\s]*(\d+)", "P11-NumPresent"),
+                    # Pattern 3-7: Various "Present" formats
+                    present_patterns = [
+                        (r"Present\s*\n\s*(\d+)", "P3-Present\\n"),
+                        (r"Present\s*[:;]\s*(\d+)", "P4-Present:"),
+                        (r"Present\s+(\d+)(?:\s|$)", "P5-Present_"),
+                        (r"Present\s*[|]\s*(\d+)", "P6-Present|"),
+                        (r"(?:^|\n)Present.*?(\d+)", "P7-PresentAny"),
                     ]
 
-                    for pattern, label in num_present_patterns:
-                        match = re.search(pattern, text, re.IGNORECASE)
+                    for pattern, label in present_patterns:
+                        match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
                         if match:
                             census = int(match.group(1))
-                            # Try comprehensive capacity patterns
+                            # Try multiple capacity patterns in order (including variations)
                             capacity_patterns = [
                                 (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
                                 (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
                                 (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
                                 (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
                                 (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
-                                (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),
+                                (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),  # Approved # then two numbers
                             ]
                             cap_found = False
                             for cap_pattern, cap_label in capacity_patterns:
@@ -338,42 +385,52 @@ def extract_data_from_text(text: str, method: str = "text", debug: bool = False)
                                 if capacity_match:
                                     capacity = int(capacity_match.group(1))
                                     cap_found = True
+                                    if debug:
+                                        print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (via {cap_label})")
                                     break
-                            if debug:
-                                cap_status = f"(via {cap_label})" if cap_found else "(not found)"
-                                print(f"      DEBUG {label}: Census={census}, Capacity={capacity} {cap_status}")
+                            if not cap_found and debug:
+                                print(f"      DEBUG {label}: Census={census}, Capacity={capacity} (not found)")
                             break
                         patterns_tried.append(label)
                     else:
-                        # Pattern 12: Look for "census" keyword
-                        census_kw = re.search(r"census[:\s]*(\d+)", text, re.IGNORECASE)
-                        if census_kw:
-                            census = int(census_kw.group(1))
-                            # Try comprehensive capacity patterns
-                            cap_patterns = [
-                                (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
-                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
-                                (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
-                                (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
-                                (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
-                            ]
-                            cap_found = False
-                            for cap_pat, cap_lbl in cap_patterns:
-                                cap_match = re.search(cap_pat, text, re.IGNORECASE)
-                                if cap_match:
-                                    capacity = int(cap_match.group(1))
-                                    cap_found = True
-                                    break
-                            if debug:
-                                cap_status = f"(via {cap_lbl})" if cap_found else "(not found)"
-                                print(f"      DEBUG P12-Census: Census={census}, Capacity={capacity} {cap_status}")
-                        else:
-                            patterns_tried.append("P12-Census")
+                        # Pattern 8-11: "# of Present" or "# Present" formats
+                        num_present_patterns = [
+                            (r"#\s*of\s*Present\s+(\d+)(?:\s|$)", "P8-#ofPresent"),
+                            (r"#\s*Present\s+(\d+)(?:\s|$)", "P9-#Present"),
+                            (r"Approved.*?Present\s+\d+\s+(\d+)", "P10-Skip1st"),
+                            (r"(?:number|count|total)\s+present[:\s]*(\d+)", "P11-NumPresent"),
+                        ]
 
-                            # Pattern 13: Fallback - find "present" and take the first number near it
-                            present_nearby = re.search(r"present.{0,20}?(\d+)", text, re.IGNORECASE | re.DOTALL)
-                            if present_nearby:
-                                census = int(present_nearby.group(1))
+                        for pattern, label in num_present_patterns:
+                            match = re.search(pattern, text, re.IGNORECASE)
+                            if match:
+                                census = int(match.group(1))
+                                # Try comprehensive capacity patterns
+                                capacity_patterns = [
+                                    (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                                    (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                                    (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                                    (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                                    (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                                    (r"Approved\s*#\s*\n\s*\d+\s+(\d+)", "ApprAlt"),
+                                ]
+                                cap_found = False
+                                for cap_pattern, cap_label in capacity_patterns:
+                                    capacity_match = re.search(cap_pattern, text, re.IGNORECASE)
+                                    if capacity_match:
+                                        capacity = int(capacity_match.group(1))
+                                        cap_found = True
+                                        break
+                                if debug:
+                                    cap_status = f"(via {cap_label})" if cap_found else "(not found)"
+                                    print(f"      DEBUG {label}: Census={census}, Capacity={capacity} {cap_status}")
+                                break
+                            patterns_tried.append(label)
+                        else:
+                            # Pattern 12: Look for "census" keyword
+                            census_kw = re.search(r"census[:\s]*(\d+)", text, re.IGNORECASE)
+                            if census_kw:
+                                census = int(census_kw.group(1))
                                 # Try comprehensive capacity patterns
                                 cap_patterns = [
                                     (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
@@ -391,14 +448,39 @@ def extract_data_from_text(text: str, method: str = "text", debug: bool = False)
                                         break
                                 if debug:
                                     cap_status = f"(via {cap_lbl})" if cap_found else "(not found)"
-                                    print(f"      DEBUG P13-Nearby: Census={census}, Capacity={capacity} {cap_status}")
+                                    print(f"      DEBUG P12-Census: Census={census}, Capacity={capacity} {cap_status}")
                             else:
-                                patterns_tried.append("P13-Nearby")
-                                if debug:
-                                    print(f"      DEBUG: No pattern matched. Tried: {', '.join(patterns_tried)}")
-                                    # Show text sample to help debug
-                                    lines = text.split('\n')[:15]
-                                    print(f"      DEBUG: First 15 lines:\n      " + "\n      ".join(lines))
+                                patterns_tried.append("P12-Census")
+
+                                # Pattern 13: Fallback - find "present" and take the first number near it
+                                present_nearby = re.search(r"present.{0,20}?(\d+)", text, re.IGNORECASE | re.DOTALL)
+                                if present_nearby:
+                                    census = int(present_nearby.group(1))
+                                    # Try comprehensive capacity patterns
+                                    cap_patterns = [
+                                        (r"(?:Licensed\s+)?Capacity\s*\n\s*(\d+)", "Cap\\n"),
+                                        (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s*[:;\s]+(\d+)", "Cap:"),
+                                        (r"(?:Licensed\s+)?Capacity\s*[|]\s*(\d+)", "Cap|"),
+                                        (r"(?:Licensed\s+|Approved\s+|Max(?:imum)?\s+)?Capacity\s+(\d+)", "Cap_"),
+                                        (r"(?:Licensed|Approved|Max|Maximum)?\s*Capacity.*?(\d+)", "CapAny"),
+                                    ]
+                                    cap_found = False
+                                    for cap_pat, cap_lbl in cap_patterns:
+                                        cap_match = re.search(cap_pat, text, re.IGNORECASE)
+                                        if cap_match:
+                                            capacity = int(cap_match.group(1))
+                                            cap_found = True
+                                            break
+                                    if debug:
+                                        cap_status = f"(via {cap_lbl})" if cap_found else "(not found)"
+                                        print(f"      DEBUG P13-Nearby: Census={census}, Capacity={capacity} {cap_status}")
+                                else:
+                                    patterns_tried.append("P13-Nearby")
+                                    if debug:
+                                        print(f"      DEBUG: No pattern matched. Tried: {', '.join(patterns_tried)}")
+                                        # Show text sample to help debug
+                                        lines = text.split('\n')[:15]
+                                        print(f"      DEBUG: First 15 lines:\n      " + "\n      ".join(lines))
 
     contact_patterns = [
         r"Name of Individual Informed.*?Inspection:?\s*([^\n\r]+)",
@@ -456,6 +538,7 @@ def extract_checklist_data(pdf_content: bytes, checklist_id: Optional[int] = Non
 
             first_page = pdf.pages[0]
             text = first_page.extract_text() or ""
+            text = decode_cid_chars(text)
 
             # Save extracted text for debugging
             if SAVE_EXTRACTED_TEXT and checklist_id and text.strip():
@@ -467,6 +550,15 @@ def extract_checklist_data(pdf_content: bytes, checklist_id: Optional[int] = Non
                 if any(result.values()):
                     result["extraction_method"] = "text"
                     return result
+
+                # Second pass: collapse spaced-out characters from column-interleaving artifacts
+                # e.g. "R a n c h 's S c h o o l" -> "Ranch 's School"
+                collapsed = collapse_spaced_chars(text)
+                if collapsed != text:
+                    result = extract_data_from_text(collapsed, method="text", debug=DEBUG_EXTRACTION)
+                    if any(result.values()):
+                        result["extraction_method"] = "text_collapsed"
+                        return result
 
             print("      Regular extraction failed completely, trying OCR...")
 
