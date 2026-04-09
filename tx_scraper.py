@@ -1,5 +1,9 @@
 from playwright.sync_api import sync_playwright
+import csv
+import io
+import json
 import re
+import requests
 import time
 import os
 import shutil
@@ -352,128 +356,189 @@ OPERATION_IDS = [
 "1802456",
 ]
 
+API_URL = "https://kidsoverprofits.com/wp-content/themes/child/api/inspections-write.php"
+API_KEY = "CHANGE_ME"  # Must match the key in your PHP endpoint
+
+
+def parse_csv_to_citations(csv_path):
+    """Parse a downloaded deficiency CSV into a list of citation dicts."""
+    citations = []
+    try:
+        with open(csv_path, "r", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                citations.append({k: (v or "").strip() for k, v in row.items()})
+    except Exception as e:
+        print(f"  Error parsing CSV {csv_path}: {e}")
+    return citations
+
+
+def scrape_facility_info(page):
+    """Extract facility details from the search-result / details page."""
+    info = {}
+    try:
+        # The facility name usually appears as a heading on the details page
+        name_el = page.locator("h1, h2, .operation-name, .facility-name").first
+        if name_el.count() > 0:
+            info["facility_name"] = name_el.inner_text().strip()
+
+        # Try to grab the info table/fields visible on the details page
+        field_map = {
+            "Operation #": "operation_num",
+            "Type": "program_category",
+            "Address": "full_address",
+            "City": "city",
+            "County": "county",
+            "Phone": "phone",
+            "Capacity": "bed_capacity",
+            "Ages Served": "ages_served",
+            "Status": "action",
+            "Issue Date": "license_exp_date",
+        }
+        for label, key in field_map.items():
+            try:
+                el = page.locator(f"text='{label}' >> xpath=../following-sibling::*[1]").first
+                if el.count() > 0:
+                    info[key] = el.inner_text().strip()
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"  Warning: could not scrape facility info: {e}")
+    return info
+
+
+def save_to_api(facilities):
+    """POST all collected facility data to the live site."""
+    from datetime import datetime
+
+    payload = {
+        "api_key": API_KEY,
+        "state": "TX",
+        "scraped_timestamp": datetime.now().isoformat(),
+        "facilities": facilities,
+    }
+
+    try:
+        print(f"\nPosting {len(facilities)} facilities to API...")
+        resp = requests.post(
+            API_URL,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=120,
+        )
+        resp.raise_for_status()
+        result = resp.json()
+        if result.get("success"):
+            print(f"API saved {result.get('facilities_saved', 0)} facilities, "
+                  f"{result.get('reports_saved', 0)} reports")
+            return True
+        else:
+            print(f"API error: {result.get('error', 'unknown')}")
+            return False
+    except Exception as e:
+        print(f"Error posting to API: {e}")
+        return False
+
+
 def run():
-    # Hardcoded path to your Downloads folder
     downloads_path = r"C:\Users\daniu\Downloads"
-    
+    all_facilities = []
+
     with sync_playwright() as p:
-        # Configure browser to download to a specific directory
         browser = p.chromium.launch(
             headless=True,
             downloads_path=downloads_path
         )
         context = browser.new_context(accept_downloads=True)
         page = context.new_page()
-        
+
         for i, op_id in enumerate(OPERATION_IDS):
             try:
                 print(f"\n=== Processing {op_id} ({i+1}/{len(OPERATION_IDS)}) ===")
-                
+
                 # 1. Go to search page and wait
                 print("Step 1: Loading search page...")
                 page.goto("https://childcare.hhs.texas.gov/Public/ChildCareSearch")
                 time.sleep(5)
-                print("✔ Search page loaded")
-                
-                # 2. Select radio button - scroll to it first
-                print("Step 2: Selecting care type...")
+
+                # 2. Select radio button
                 radio_button = page.get_by_role("radio", name=re.compile(r"24[\s\-]?hr.*Residential", re.I))
                 radio_button.scroll_into_view_if_needed()
                 time.sleep(1)
                 radio_button.click(force=True)
                 time.sleep(3)
-                print("✔ Care type selected")
-                
-                # 3. Click "By Provider" button - scroll to it first
-                print("Step 3: Clicking By Provider...")
+
+                # 3. Click "By Provider"
                 by_provider_button = page.locator("button#by-provider")
                 by_provider_button.scroll_into_view_if_needed()
                 time.sleep(1)
                 by_provider_button.click(force=True)
                 time.sleep(3)
-                print("✔ By Provider clicked")
-                
+
                 # 4. Fill operation number
-                print(f"Step 4: Entering operation ID {op_id}...")
                 operation_input = page.locator("input[placeholder*='Operation Number']")
                 operation_input.scroll_into_view_if_needed()
                 time.sleep(1)
                 operation_input.fill(op_id)
                 time.sleep(2)
-                print(f"✔ Entered: {op_id}")
-                
-                # 5. Click search button - scroll to it first
-                print("Step 5: Clicking search...")
+
+                # 5. Click search
                 by_pro_search = page.locator("button.by-pro-search")
                 by_pro_search.scroll_into_view_if_needed()
                 time.sleep(1)
                 by_pro_search.click(force=True)
-                time.sleep(10)  # Increased wait time for search
-                print("✔ Search completed")
-                
-                # 6. Look for "More Details/Compliance History" button with better error handling
-                print("Step 6: Looking for More Details button...")
-                print(f"Current URL: {page.url}")
-                
-                # Try multiple possible selectors for the More Details button
+                time.sleep(10)
+
+                # 6. Click "More Details/Compliance History"
                 more_details_selectors = [
                     "div.ux-btn-label-wrapper:has-text('More Details/Compliance History')",
                     "button:has-text('More Details/Compliance History')",
                     ".filter-button:has-text('More Details')",
                     "button.filter-button"
                 ]
-                
                 more_details_button = None
                 for selector in more_details_selectors:
                     try:
                         button = page.locator(selector).first
                         if button.count() > 0:
                             more_details_button = button
-                            print(f"Found button with selector: {selector}")
                             break
                     except:
                         continue
-                
                 if more_details_button is None:
-                    print("❌ More Details button not found with any selector!")
+                    print("  More Details button not found, skipping")
                     continue
-                
                 more_details_button.scroll_into_view_if_needed()
                 time.sleep(2)
                 more_details_button.click(force=True)
                 time.sleep(5)
-                print("✔ Clicked 'More Details/Compliance History'")
-                
-                # 7. Click compliance history - scroll to it first
-                print("Step 7: Looking for View Full Compliance History...")
+
+                # --- Scrape facility info from the details page ---
+                facility_info = scrape_facility_info(page)
+                facility_info.setdefault("facility_name", f"Operation #{op_id}")
+                facility_info["program_name"] = op_id  # use op_id as unique key
+
+                # 7. Click compliance history
                 compliance_button = page.locator("div.ux-btn-label-wrapper:has-text('View Full Compliance History')")
-                
                 if compliance_button.count() == 0:
-                    print("❌ Compliance History button not found!")
+                    print("  Compliance History button not found, skipping")
                     continue
-                
                 compliance_button.scroll_into_view_if_needed()
                 time.sleep(1)
                 compliance_button.click(force=True)
                 time.sleep(5)
-                print("✔ Clicked compliance history")
-                
-                # 8. Click Deficiencies tab - scroll to it first
-                print("Step 8: Looking for Deficiencies tab...")
+
+                # 8. Click Deficiencies tab
                 deficiencies_tab = page.locator("li.react-tabs__tab:has-text('Deficiencies')")
-                
                 if deficiencies_tab.count() == 0:
-                    print("❌ Deficiencies tab not found!")
+                    print("  Deficiencies tab not found, skipping")
                     continue
-                
                 deficiencies_tab.scroll_into_view_if_needed()
                 time.sleep(1)
                 deficiencies_tab.click(force=True)
                 time.sleep(5)
-                print("✔ Clicked Deficiencies tab")
-                
-                # 9. Click download dropdown - scroll to it first
-                print("Step 9: Looking for download dropdown...")
+
+                # 9. Click download dropdown
                 download_dropdown = None
                 for locator in (
                     page.get_by_role("button", name=re.compile(r"Download Deficiencies", re.I)),
@@ -482,67 +547,79 @@ def run():
                     if locator.count() > 0:
                         download_dropdown = locator.first
                         break
-                
                 if download_dropdown is None:
-                    print("❌ Download dropdown not found!")
+                    print("  Download dropdown not found, skipping")
                     continue
-                
                 download_dropdown.scroll_into_view_if_needed()
                 time.sleep(1)
                 download_dropdown.click(force=True)
-                
+
                 menu = page.locator("div.Multi-Select__menu").first
                 try:
                     menu.wait_for(state="visible", timeout=5000)
                 except Exception:
-                    print("❌ Download menu did not appear!")
+                    print("  Download menu did not appear, skipping")
                     continue
-                print("✔ Download dropdown opened")
-                
-                # 10. Select CSV option and handle download
-                print("Step 10: Selecting CSV option...")
+
+                # 10. Select CSV option and download
                 csv_option = menu.locator("div[role='option']", has_text=re.compile(r"CSV", re.I)).first
                 if csv_option.count() == 0:
                     csv_option = page.locator("div[role='option']", has_text=re.compile(r"CSV", re.I)).first
-                
                 if csv_option.count() == 0:
-                    print("❌ CSV option not found!")
+                    print("  CSV option not found, skipping")
                     continue
-                
+
                 with page.expect_download(timeout=60000) as download_info:
                     csv_option.scroll_into_view_if_needed()
                     time.sleep(1)
                     csv_option.click(force=True)
-                    print("✔ CSV option clicked, waiting for download...")
-                    
+
                 download = download_info.value
-                
-                # Get the original download path
                 original_path = download.path()
                 if not original_path:
-                    print("❌ Download completed but no file path was returned!")
+                    print("  Download completed but no file path returned")
                     continue
-                print(f"Original download path: {original_path}")
-                
-                # Copy to your downloads folder with the desired name
+
                 final_path = os.path.join(downloads_path, f"{op_id}.csv")
                 shutil.copy2(original_path, final_path)
-                
-                # Verify the file was created
-                if os.path.exists(final_path):
-                    print(f"✅ Successfully copied to: {final_path}")
-                    file_size = os.path.getsize(final_path)
-                    print(f"File size: {file_size} bytes")
-                else:
-                    print(f"❌ Failed to copy file to: {final_path}")
-                    
+
+                # --- Parse CSV into citations and build facility record ---
+                citations = parse_csv_to_citations(final_path)
+                print(f"  Parsed {len(citations)} citations for {facility_info['facility_name']}")
+
+                # Convert each citation row into a "report" for the shared schema
+                reports = []
+                for cit in citations:
+                    report_id = f"{op_id}_{cit.get('Citation Date', '')}_{cit.get('Standard Number / Description', '')}"
+                    # Make a unique-ish report_id from the citation fields
+                    report_id = re.sub(r'[^a-zA-Z0-9_]', '', report_id)[:100]
+                    reports.append({
+                        "report_id": report_id,
+                        "report_date": cit.get("Citation Date", ""),
+                        "raw_content": cit.get("Deficiency Narrative", ""),
+                        "content_length": len(cit.get("Deficiency Narrative", "")),
+                        "summary": cit.get("Standard Number / Description", ""),
+                        "categories": cit,  # store the full citation row as categories
+                    })
+
+                all_facilities.append({
+                    "facility_info": facility_info,
+                    "reports": reports,
+                })
+
             except Exception as e:
-                print(f"❌ ERROR processing {op_id}: {str(e)}")
-                print(f"Current URL: {page.url}")
-                print("Continuing to next operation ID...")
+                print(f"  ERROR processing {op_id}: {str(e)}")
                 continue
-            
+
         browser.close()
+
+    # --- POST everything to the API ---
+    if all_facilities:
+        print(f"\nScraped {len(all_facilities)} facilities total")
+        save_to_api(all_facilities)
+    else:
+        print("\nNo facilities scraped")
+
 
 if __name__ == "__main__":
     run()
