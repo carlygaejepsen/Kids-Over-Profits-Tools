@@ -1,5 +1,6 @@
 import requests
 import re
+import os
 from bs4 import BeautifulSoup
 import logging
 from typing import Dict, List, Optional
@@ -727,7 +728,10 @@ class DCFFacilityScraper:
         logger.info(f"Scraping completed: {len(facilities)} facilities, {result['scraping_notes']['total_reports']} total reports")
         return result
 
-API_URL = "https://kidsoverprofits.com/wp-content/themes/child/api/inspections-write.php"
+API_URL = os.getenv(
+    "INSPECTIONS_API_URL",
+    "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
+)
 API_KEY = "CHANGE_ME"  # Set this to match the key in your PHP endpoint
 
 

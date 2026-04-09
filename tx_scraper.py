@@ -356,7 +356,10 @@ OPERATION_IDS = [
 "1802456",
 ]
 
-API_URL = "https://kidsoverprofits.com/wp-content/themes/child/api/inspections-write.php"
+API_URL = os.getenv(
+    "INSPECTIONS_API_URL",
+    "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
+)
 API_KEY = "CHANGE_ME"  # Must match the key in your PHP endpoint
 
 
