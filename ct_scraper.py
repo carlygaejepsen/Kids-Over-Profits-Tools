@@ -726,27 +726,44 @@ class DCFFacilityScraper:
         logger.info(f"Scraping completed: {len(facilities)} facilities, {result['scraping_notes']['total_reports']} total reports")
         return result
 
-def save_to_json(data: Dict, filename: str = "ct_reports.json") -> bool:
+API_URL = "https://kidsoverprofits.com/wp-content/themes/child/api/inspections-write.php"
+API_KEY = "CHANGE_ME"  # Set this to match the key in your PHP endpoint
+
+
+def save_to_api(data: Dict, state: str = "CT") -> bool:
     """
-    Save data to JSON with proper formatting
+    POST scraped data to the live site's PHP endpoint for MySQL storage.
     """
+    payload = {
+        "api_key": API_KEY,
+        "state": state,
+        "scraped_timestamp": data.get("scraped_timestamp", ""),
+        "facilities": data.get("facilities", []),
+    }
+
     try:
-        import os
-        # Define the output directory
-        output_dir = r"C:\Users\daniu\OneDrive\Documents\GitHub\Kids-Over-Profits\js\data"
+        logger.info(f"Posting {len(payload['facilities'])} facilities to {API_URL}")
+        resp = requests.post(
+            API_URL,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=120,
+        )
+        resp.raise_for_status()
+        result = resp.json()
 
-        # Create directory if it doesn't exist
-        os.makedirs(output_dir, exist_ok=True)
+        if result.get("success"):
+            logger.info(
+                f"API saved {result.get('facilities_saved', 0)} facilities, "
+                f"{result.get('reports_saved', 0)} reports"
+            )
+            return True
+        else:
+            logger.error(f"API error: {result.get('error', 'unknown')}")
+            return False
 
-        # Construct full path
-        full_path = os.path.join(output_dir, filename)
-
-        with open(full_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=True)
-        logger.info(f"Data saved to {full_path}")
-        return True
-    except Exception as e:
-        logger.error(f"Error saving to JSON: {e}")
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error posting to API: {e}")
         return False
 
 def main():
@@ -761,9 +778,9 @@ def main():
         print(f"\nSuccessfully scraped {data['total_facilities']} facilities")
         print(f"Total reports found: {data['scraping_notes']['total_reports']}")
         
-        # Save to JSON
-        if save_to_json(data):
-            print("Data saved successfully!")
+        # Save to live database via API
+        if save_to_api(data, state="CT"):
+            print("Data saved to live database successfully!")
         
         # Show detailed sample
         if data['facilities']:
