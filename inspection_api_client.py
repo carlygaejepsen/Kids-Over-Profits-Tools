@@ -4,6 +4,7 @@ from typing import Any, Callable, Dict, List
 import requests
 
 DEFAULT_MAX_PAYLOAD_BYTES = 750_000
+RETRYABLE_SPLIT_STATUS_CODES = {413, 500}
 
 
 def _noop(_: str) -> None:
@@ -77,6 +78,38 @@ def describe_facility(facility: Dict[str, Any]) -> str:
     return "unknown facility"
 
 
+def describe_facility_details(facility: Dict[str, Any]) -> str:
+    name = describe_facility(facility)
+    reports = facility.get("reports") if isinstance(facility, dict) else None
+    report_count = len(reports) if isinstance(reports, list) else 0
+    report_ids: List[str] = []
+
+    if isinstance(reports, list):
+        for report in reports[:5]:
+            if isinstance(report, dict):
+                report_id = report.get("report_id")
+                if report_id:
+                    report_ids.append(str(report_id))
+
+    report_suffix = ""
+    if report_ids:
+        report_suffix = f"; sample report_ids={', '.join(report_ids)}"
+
+    return f"{name} ({report_count} reports{report_suffix})"
+
+
+def _response_body_snippet(response: requests.Response | None) -> str:
+    if response is None:
+        return ""
+
+    body = (response.text or "").strip()
+    if not body:
+        return ""
+
+    body = " ".join(body.split())
+    return body[:500]
+
+
 def _post_batch(
     api_url: str,
     api_key: str,
@@ -111,12 +144,25 @@ def _post_batch(
         response.raise_for_status()
     except requests.exceptions.HTTPError as exc:
         status_code = exc.response.status_code if exc.response is not None else None
-        if status_code == 413 and len(facilities) > 1:
-            midpoint = len(facilities) // 2
-            info(
-                f"Batch {batch_label} exceeded the server request-size limit; "
-                "retrying as smaller batches"
+        body_snippet = _response_body_snippet(exc.response)
+        if body_snippet:
+            error(
+                f"API response body for batch {batch_label} "
+                f"(HTTP {status_code}): {body_snippet}"
             )
+
+        if status_code in RETRYABLE_SPLIT_STATUS_CODES and len(facilities) > 1:
+            midpoint = len(facilities) // 2
+            if status_code == 413:
+                info(
+                    f"Batch {batch_label} exceeded the server request-size limit; "
+                    "retrying as smaller batches"
+                )
+            else:
+                info(
+                    f"Batch {batch_label} hit HTTP {status_code}; "
+                    "retrying as smaller batches to isolate the failing facility"
+                )
 
             left = _post_batch(
                 api_url=api_url,
@@ -158,7 +204,12 @@ def _post_batch(
         if status_code == 413 and len(facilities) == 1:
             error(
                 "Single facility payload still exceeds the server limit: "
-                f"{describe_facility(facilities[0])}"
+                f"{describe_facility_details(facilities[0])}"
+            )
+        if status_code == 500 and len(facilities) == 1:
+            error(
+                "Single facility still triggers HTTP 500: "
+                f"{describe_facility_details(facilities[0])}"
             )
         return {
             "success": False,
