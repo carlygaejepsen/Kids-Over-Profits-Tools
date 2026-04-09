@@ -1,9 +1,10 @@
 import requests
 import re
-import json
 from bs4 import BeautifulSoup
 import logging
 from typing import Dict, List, Optional
+
+from inspection_api_client import post_facilities_to_api
 
 # Set up logging for better debugging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -734,37 +735,17 @@ def save_to_api(data: Dict, state: str = "CT") -> bool:
     """
     POST scraped data to the live site's PHP endpoint for MySQL storage.
     """
-    payload = {
-        "api_key": API_KEY,
-        "state": state,
-        "scraped_timestamp": data.get("scraped_timestamp", ""),
-        "facilities": data.get("facilities", []),
-    }
-
-    try:
-        logger.info(f"Posting {len(payload['facilities'])} facilities to {API_URL}")
-        resp = requests.post(
-            API_URL,
-            json=payload,
-            headers={"Content-Type": "application/json"},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        result = resp.json()
-
-        if result.get("success"):
-            logger.info(
-                f"API saved {result.get('facilities_saved', 0)} facilities, "
-                f"{result.get('reports_saved', 0)} reports"
-            )
-            return True
-        else:
-            logger.error(f"API error: {result.get('error', 'unknown')}")
-            return False
-
-    except requests.exceptions.RequestException as e:
-        logger.error(f"Error posting to API: {e}")
-        return False
+    result = post_facilities_to_api(
+        api_url=API_URL,
+        api_key=API_KEY,
+        state=state,
+        scraped_timestamp=data.get("scraped_timestamp", ""),
+        facilities=data.get("facilities", []),
+        timeout=120,
+        info=logger.info,
+        error=logger.error,
+    )
+    return bool(result.get("success"))
 
 def main():
     """

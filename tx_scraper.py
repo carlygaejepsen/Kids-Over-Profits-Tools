@@ -1,12 +1,12 @@
 from playwright.sync_api import sync_playwright
 import csv
 import io
-import json
 import re
-import requests
 import time
 import os
 import shutil
+
+from inspection_api_client import post_facilities_to_api
 
 # Replace with your operation IDs
 OPERATION_IDS = [
@@ -411,33 +411,17 @@ def save_to_api(facilities):
     """POST all collected facility data to the live site."""
     from datetime import datetime
 
-    payload = {
-        "api_key": API_KEY,
-        "state": "TX",
-        "scraped_timestamp": datetime.now().isoformat(),
-        "facilities": facilities,
-    }
-
-    try:
-        print(f"\nPosting {len(facilities)} facilities to API...")
-        resp = requests.post(
-            API_URL,
-            json=payload,
-            headers={"Content-Type": "application/json"},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        result = resp.json()
-        if result.get("success"):
-            print(f"API saved {result.get('facilities_saved', 0)} facilities, "
-                  f"{result.get('reports_saved', 0)} reports")
-            return True
-        else:
-            print(f"API error: {result.get('error', 'unknown')}")
-            return False
-    except Exception as e:
-        print(f"Error posting to API: {e}")
-        return False
+    result = post_facilities_to_api(
+        api_url=API_URL,
+        api_key=API_KEY,
+        state="TX",
+        scraped_timestamp=datetime.now().isoformat(),
+        facilities=facilities,
+        timeout=120,
+        info=print,
+        error=print,
+    )
+    return bool(result.get("success"))
 
 
 def run():

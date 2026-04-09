@@ -1,0 +1,265 @@
+import json
+from typing import Any, Callable, Dict, List
+
+import requests
+
+DEFAULT_MAX_PAYLOAD_BYTES = 750_000
+
+
+def _noop(_: str) -> None:
+    pass
+
+
+def build_payload(
+    api_key: str,
+    state: str,
+    scraped_timestamp: str,
+    facilities: List[Dict[str, Any]],
+) -> Dict[str, Any]:
+    return {
+        "api_key": api_key,
+        "state": state,
+        "scraped_timestamp": scraped_timestamp,
+        "facilities": facilities,
+    }
+
+
+def estimate_payload_bytes(payload: Dict[str, Any]) -> int:
+    return len(json.dumps(payload).encode("utf-8"))
+
+
+def chunk_facilities_by_size(
+    api_key: str,
+    state: str,
+    scraped_timestamp: str,
+    facilities: List[Dict[str, Any]],
+    max_payload_bytes: int = DEFAULT_MAX_PAYLOAD_BYTES,
+) -> List[List[Dict[str, Any]]]:
+    batches: List[List[Dict[str, Any]]] = []
+    current_batch: List[Dict[str, Any]] = []
+
+    for facility in facilities:
+        candidate_batch = current_batch + [facility]
+        candidate_payload = build_payload(
+            api_key=api_key,
+            state=state,
+            scraped_timestamp=scraped_timestamp,
+            facilities=candidate_batch,
+        )
+
+        if current_batch and estimate_payload_bytes(candidate_payload) > max_payload_bytes:
+            batches.append(current_batch)
+            current_batch = [facility]
+        else:
+            current_batch = candidate_batch
+
+    if current_batch:
+        batches.append(current_batch)
+
+    return batches
+
+
+def describe_facility(facility: Dict[str, Any]) -> str:
+    if not isinstance(facility, dict):
+        return "unknown facility"
+
+    facility_info = facility.get("facility_info")
+    if isinstance(facility_info, dict):
+        name = facility_info.get("facility_name") or facility_info.get("program_name")
+        if name:
+            return str(name)
+
+    for key in ("facility_name", "program_name", "name", "id"):
+        value = facility.get(key)
+        if value:
+            return str(value)
+
+    return "unknown facility"
+
+
+def _post_batch(
+    api_url: str,
+    api_key: str,
+    state: str,
+    scraped_timestamp: str,
+    facilities: List[Dict[str, Any]],
+    timeout: int,
+    batch_label: str,
+    info: Callable[[str], None],
+    error: Callable[[str], None],
+) -> Dict[str, Any]:
+    payload = build_payload(
+        api_key=api_key,
+        state=state,
+        scraped_timestamp=scraped_timestamp,
+        facilities=facilities,
+    )
+    payload_bytes = estimate_payload_bytes(payload)
+
+    info(
+        f"Posting batch {batch_label}: {len(facilities)} facilities "
+        f"({payload_bytes:,} bytes) to {api_url}"
+    )
+
+    try:
+        response = requests.post(
+            api_url,
+            json=payload,
+            headers={"Content-Type": "application/json"},
+            timeout=timeout,
+        )
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as exc:
+        status_code = exc.response.status_code if exc.response is not None else None
+        if status_code == 413 and len(facilities) > 1:
+            midpoint = len(facilities) // 2
+            info(
+                f"Batch {batch_label} exceeded the server request-size limit; "
+                "retrying as smaller batches"
+            )
+
+            left = _post_batch(
+                api_url=api_url,
+                api_key=api_key,
+                state=state,
+                scraped_timestamp=scraped_timestamp,
+                facilities=facilities[:midpoint],
+                timeout=timeout,
+                batch_label=f"{batch_label}a",
+                info=info,
+                error=error,
+            )
+            if not left.get("success"):
+                return left
+
+            right = _post_batch(
+                api_url=api_url,
+                api_key=api_key,
+                state=state,
+                scraped_timestamp=scraped_timestamp,
+                facilities=facilities[midpoint:],
+                timeout=timeout,
+                batch_label=f"{batch_label}b",
+                info=info,
+                error=error,
+            )
+            if not right.get("success"):
+                return right
+
+            return {
+                "success": True,
+                "facilities_saved": left.get("facilities_saved", 0)
+                + right.get("facilities_saved", 0),
+                "reports_saved": left.get("reports_saved", 0)
+                + right.get("reports_saved", 0),
+            }
+
+        error(f"Error posting batch {batch_label} to API: {exc}")
+        if status_code == 413 and len(facilities) == 1:
+            error(
+                "Single facility payload still exceeds the server limit: "
+                f"{describe_facility(facilities[0])}"
+            )
+        return {
+            "success": False,
+            "error": str(exc),
+            "facilities_saved": 0,
+            "reports_saved": 0,
+        }
+    except requests.exceptions.RequestException as exc:
+        error(f"Error posting batch {batch_label} to API: {exc}")
+        return {
+            "success": False,
+            "error": str(exc),
+            "facilities_saved": 0,
+            "reports_saved": 0,
+        }
+
+    try:
+        result = response.json()
+    except ValueError:
+        body_snippet = response.text[:300].strip()
+        error(f"API returned non-JSON for batch {batch_label}: {body_snippet}")
+        return {
+            "success": False,
+            "error": "non-json response",
+            "facilities_saved": 0,
+            "reports_saved": 0,
+        }
+
+    if result.get("success"):
+        return {
+            "success": True,
+            "facilities_saved": int(result.get("facilities_saved", 0) or 0),
+            "reports_saved": int(result.get("reports_saved", 0) or 0),
+        }
+
+    api_error = str(result.get("error", "unknown"))
+    error(f"API error on batch {batch_label}: {api_error}")
+    return {
+        "success": False,
+        "error": api_error,
+        "facilities_saved": 0,
+        "reports_saved": 0,
+    }
+
+
+def post_facilities_to_api(
+    api_url: str,
+    api_key: str,
+    state: str,
+    scraped_timestamp: str,
+    facilities: List[Dict[str, Any]],
+    timeout: int = 120,
+    max_payload_bytes: int = DEFAULT_MAX_PAYLOAD_BYTES,
+    info: Callable[[str], None] | None = None,
+    error: Callable[[str], None] | None = None,
+) -> Dict[str, Any]:
+    info = info or _noop
+    error = error or _noop
+
+    if not facilities:
+        info(f"No facilities to post to {api_url}")
+        return {"success": True, "facilities_saved": 0, "reports_saved": 0}
+
+    batches = chunk_facilities_by_size(
+        api_key=api_key,
+        state=state,
+        scraped_timestamp=scraped_timestamp,
+        facilities=facilities,
+        max_payload_bytes=max_payload_bytes,
+    )
+
+    if len(batches) > 1:
+        info(
+            f"Split {len(facilities)} facilities into {len(batches)} API requests "
+            f"using a {max_payload_bytes:,}-byte payload cap"
+        )
+
+    facilities_saved = 0
+    reports_saved = 0
+
+    for index, batch in enumerate(batches, start=1):
+        result = _post_batch(
+            api_url=api_url,
+            api_key=api_key,
+            state=state,
+            scraped_timestamp=scraped_timestamp,
+            facilities=batch,
+            timeout=timeout,
+            batch_label=f"{index}/{len(batches)}",
+            info=info,
+            error=error,
+        )
+        if not result.get("success"):
+            return result
+
+        facilities_saved += result.get("facilities_saved", 0)
+        reports_saved += result.get("reports_saved", 0)
+
+    info(f"API saved {facilities_saved} facilities, {reports_saved} reports")
+    return {
+        "success": True,
+        "facilities_saved": facilities_saved,
+        "reports_saved": reports_saved,
+    }
