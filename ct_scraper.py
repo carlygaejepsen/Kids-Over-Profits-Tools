@@ -733,7 +733,7 @@ class DCFFacilityScraper:
         
         result = {
             "total_facilities": len(facilities),
-            "scraped_timestamp": "2024-09-22T12:00:00Z",
+            "scraped_timestamp": datetime.now().isoformat(),
             "source_url": self.url,
             "scraping_notes": {
                 "parser": "BeautifulSoup HTML table parsing",
