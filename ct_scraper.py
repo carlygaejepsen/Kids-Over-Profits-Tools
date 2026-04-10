@@ -4,6 +4,7 @@ import os
 from bs4 import BeautifulSoup
 import logging
 from typing import Dict, List, Optional
+from datetime import datetime
 
 from inspection_api_client import post_facilities_to_api
 
