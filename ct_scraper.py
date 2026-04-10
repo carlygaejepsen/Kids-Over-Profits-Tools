@@ -136,6 +136,23 @@ class DCFFacilityScraper:
         text = text.replace('\xa0', ' ').replace('\t', ' ')
         
         return text
+
+    def _extract_primary_cell_line(self, cell) -> str:
+        """
+        Extract the first non-empty logical line from a multi-line table cell.
+        Some CT cells contain historical date lists, while the downstream schema
+        stores only a single current value.
+        """
+        text = self._extract_cell_text(cell)
+        if not text:
+            return ""
+
+        lines = [
+            re.sub(r'\s+', ' ', line).strip()
+            for line in text.splitlines()
+            if line.strip()
+        ]
+        return lines[0] if lines else ""
     
     def _parse_facility_name_cell(self, cell) -> Dict:
         """
@@ -219,7 +236,7 @@ class DCFFacilityScraper:
                 "executive_director": self._extract_cell_text(cells[4]) if len(cells) > 4 else "",
                 "bed_capacity": self._extract_cell_text(cells[5]) if len(cells) > 5 else "",
                 "license_exp_date": self._extract_cell_text(cells[6]) if len(cells) > 6 else "",
-                "relicense_visit_date": self._extract_cell_text(cells[7]) if len(cells) > 7 else "",
+                "relicense_visit_date": self._extract_primary_cell_line(cells[7]) if len(cells) > 7 else "",
                 "action": self._extract_cell_text(cells[8]) if len(cells) > 8 else ""
             }
             
