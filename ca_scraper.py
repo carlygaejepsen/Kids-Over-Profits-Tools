@@ -6,9 +6,26 @@ Complete version with all continuation logic properly integrated
 import re
 import json
 import time
+import logging
+import os
 import requests
+from datetime import datetime
 from bs4 import BeautifulSoup
 from typing import Dict, List, Optional, Any
+
+from inspection_api_client import post_facilities_to_api
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
+
+API_URL = os.getenv(
+    "INSPECTIONS_API_URL",
+    "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
+)
+API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
 
 def smart_title_case(text):
     """Convert text to title case while preserving acronyms and handling exceptions"""
@@ -112,6 +129,7 @@ class CaliforniaCCLParser:
         """Initialize with list of facility IDs to process"""
         self.facility_ids = [fid for fid in facility_ids if fid]
         self.base_url = "https://www.ccld.dss.ca.gov/transparencyapi/api/FacilityReports"
+        self.all_facilities: List[Dict[str, Any]] = []
     
     def fetch_reports(self, facility_id: str, max_reports: int = 50) -> List[Dict[str, Any]]:
         """Fetch all reports for a facility using index pagination"""
@@ -745,42 +763,198 @@ class CaliforniaCCLParser:
             "734": "Enhanced Behavioral Support Home"
         }
         return types.get(code, f"Type {code}")
-    
-    def process_all_facilities(self) -> List[Dict[str, Any]]:
-        """Process all facilities in the list"""
-        all_reports = []
+
+    @staticmethod
+    def _build_facility_info(facility_id: str, reports: List[Dict[str, Any]]) -> Dict[str, str]:
+        """Map parsed California reports to the shared inspection API facility schema."""
+        primary_report = next((report for report in reports if report), {})
+
+        program_name = str(primary_report.get("facility_number") or facility_id)
+        facility_name = str(primary_report.get("facility_name") or program_name)
+        facility_info = {
+            "facility_name": facility_name,
+            "program_name": program_name,
+            "program_category": str(primary_report.get("facility_type_name") or ""),
+            "bed_capacity": str(primary_report.get("capacity") or ""),
+            "executive_director": str(primary_report.get("administrator") or ""),
+        }
+
+        return {
+            key: value
+            for key, value in facility_info.items()
+            if value not in ("", None)
+        }
+
+    @staticmethod
+    def _build_raw_content(report: Dict[str, Any]) -> str:
+        """Build a readable raw-content field from the parsed California report sections."""
+        sections: List[str] = []
+
+        narrative = report.get("narrative") or ""
+        if narrative:
+            sections.append(f"Narrative:\n{narrative}")
+
+        investigation_findings = report.get("investigation_findings") or ""
+        if investigation_findings:
+            sections.append(f"Investigation Findings:\n{investigation_findings}")
+
+        allegations = report.get("allegations") or []
+        if allegations:
+            allegation_lines = "\n".join(f"- {allegation}" for allegation in allegations)
+            sections.append(f"Allegations:\n{allegation_lines}")
+
+        deficiencies = report.get("deficiencies") or []
+        if deficiencies:
+            deficiency_lines: List[str] = []
+            for deficiency in deficiencies:
+                section_cited = deficiency.get("section_cited") or ""
+                deficiency_type = deficiency.get("deficiency_type") or ""
+                title = deficiency.get("title") or ""
+                description = deficiency.get("description") or title
+                heading = " ".join(part for part in [section_cited, deficiency_type] if part).strip()
+
+                if heading and description:
+                    deficiency_lines.append(f"{heading}: {description}")
+                elif description:
+                    deficiency_lines.append(str(description))
+
+                plan_of_correction = deficiency.get("plan_of_correction") or ""
+                if plan_of_correction:
+                    deficiency_lines.append(f"Plan of Correction: {plan_of_correction}")
+
+            if deficiency_lines:
+                sections.append(f"Deficiencies:\n" + "\n".join(deficiency_lines))
+
+        return "\n\n".join(section for section in sections if section).strip()
+
+    @staticmethod
+    def _build_summary(report: Dict[str, Any]) -> str:
+        """Generate a compact report summary for the shared API schema."""
+        summary_parts: List[str] = []
+
+        report_type = report.get("report_type") or "Inspection Report"
+        summary_parts.append(str(report_type))
+
+        complaint_status = report.get("complaint_status") or ""
+        if complaint_status:
+            summary_parts.append(str(complaint_status).title())
+
+        deficiency_count = len(report.get("deficiencies") or [])
+        if deficiency_count:
+            suffix = "deficiency" if deficiency_count == 1 else "deficiencies"
+            summary_parts.append(f"{deficiency_count} {suffix}")
+
+        allegation_count = len(report.get("allegations") or [])
+        if allegation_count:
+            suffix = "allegation" if allegation_count == 1 else "allegations"
+            summary_parts.append(f"{allegation_count} {suffix}")
+
+        return " - ".join(summary_parts)
+
+    @staticmethod
+    def _build_categories(report: Dict[str, Any]) -> Dict[str, Any]:
+        """Keep California-specific structured fields under categories JSON."""
+        categories = {
+            "report_type": report.get("report_type"),
+            "form_number": report.get("form_number"),
+            "date_signed": report.get("date_signed"),
+            "visit_type": report.get("visit_type"),
+            "visit_date": report.get("visit_date"),
+            "announced_status": report.get("announced_status"),
+            "time_began": report.get("time_began"),
+            "time_completed": report.get("time_completed"),
+            "met_with": report.get("met_with"),
+            "supervisor_name": report.get("supervisor_name"),
+            "evaluator_name": report.get("evaluator_name"),
+            "complaint_control_number": report.get("complaint_control_number"),
+            "complaint_status": report.get("complaint_status"),
+            "complaint_received_date": report.get("complaint_received_date"),
+            "narrative": report.get("narrative"),
+            "investigation_findings": report.get("investigation_findings"),
+            "allegations": report.get("allegations"),
+            "deficiencies": report.get("deficiencies"),
+            "source_url": report.get("source_url"),
+            "report_index": report.get("report_index"),
+            "census": report.get("census"),
+        }
+
+        return {
+            key: value
+            for key, value in categories.items()
+            if value not in ("", None, [], {})
+        }
+
+    def _build_api_report(self, facility_id: str, report: Dict[str, Any]) -> Dict[str, Any]:
+        """Map a parsed California report to the shared inspection API report schema."""
+        report_index = report.get("report_index")
+        report_id = (
+            f"{facility_id}-{report_index}"
+            if report_index is not None
+            else f"{facility_id}-{report.get('report_date') or report.get('visit_date') or 'report'}"
+        )
+        report_date = str(
+            report.get("report_date")
+            or report.get("visit_date")
+            or report.get("complaint_received_date")
+            or ""
+        )
+        raw_content = self._build_raw_content(report)
+        summary = self._build_summary(report)
+
+        return {
+            "report_id": report_id,
+            "report_date": report_date,
+            "raw_content": raw_content,
+            "content_length": len(raw_content),
+            "summary": summary,
+            "categories": self._build_categories(report),
+        }
+
+    def scrape(self) -> List[Dict[str, Any]]:
+        """Scrape California facilities and return the shared inspection API payload."""
+        self.all_facilities = []
         total = len(self.facility_ids)
-        
+
+        logger.info(f"Starting CA scrape for {total} facilities")
+
         for i, fac_id in enumerate(self.facility_ids, 1):
-            # full_url is created here as a local variable
-            full_url = f"{self.base_url}/{fac_id}"
-            print(f"Processing {i}/{total}: {fac_id}")
-            
+            full_url = f"{self.base_url}?facNum={fac_id}"
+            logger.info(f"[{i}/{total}] Facility {fac_id}")
+
             try:
                 reports = self.fetch_reports(fac_id)
-                if reports:
-                    for report in reports:
-                        # source_url is just a dictionary key being added
-                        report["source_url"] = full_url
-                    all_reports.extend(reports)
-                else:
-                    all_reports.append({
-                        "facility_id": fac_id,
-                        "source_url": full_url,  # Dictionary key
-                        "status": "No reports found"
-                    })
-                
+                if not reports:
+                    logger.info("  No reports found")
+                    continue
+
+                for report in reports:
+                    report["source_url"] = full_url
+
+                facility_info = self._build_facility_info(fac_id, reports)
+                api_reports = [self._build_api_report(fac_id, report) for report in reports]
+
+                self.all_facilities.append({
+                    "facility_info": facility_info,
+                    "reports": api_reports,
+                })
+
+                logger.info(
+                    f"  {facility_info.get('facility_name', fac_id)} - {len(api_reports)} reports"
+                )
+
                 if i % 10 == 0:
                     time.sleep(1)
-                    
+
             except Exception as e:
-                print(f"  Error: {e}")
-                all_reports.append({
-                    "facility_id": fac_id,
-                    "error": str(e)
-                })
-        
-        return all_reports
+                logger.error(f"  ERROR on {fac_id}: {e}")
+                continue
+
+        logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
+        return self.all_facilities
+    
+    def process_all_facilities(self) -> List[Dict[str, Any]]:
+        """Backward-compatible wrapper for callers that still use the old method name."""
+        return self.scrape()
     
     def save_json(self, data: List[Dict], filename: str = "ccl_reports.json"):
         """Save results as JSON with error handling"""
@@ -822,6 +996,21 @@ class CaliforniaCCLParser:
             print(f"Error type: {type(e).__name__}")
             import traceback
             traceback.print_exc()
+
+
+def save_to_api(facilities: List[Dict[str, Any]]) -> bool:
+    """POST California facilities to the shared inspections API."""
+    result = post_facilities_to_api(
+        api_url=API_URL,
+        api_key=API_KEY,
+        state="CA",
+        scraped_timestamp=datetime.now().isoformat(),
+        facilities=facilities,
+        timeout=120,
+        info=logger.info,
+        error=logger.error,
+    )
+    return bool(result.get("success"))
 """
 # Main execution
 if __name__ == "__main__":
@@ -837,8 +1026,7 @@ if __name__ == "__main__":
         print("\nTest complete! Check test_output.json")
         print("If results look good, uncomment the full batch processing below")
  """
-if __name__ == "__main__":
-    facility_ids = ["547207220",
+FACILITY_IDS = ["547207220",
     "374690035",
     "347006128",
     "075650177",
@@ -2865,40 +3053,19 @@ if __name__ == "__main__":
     "347005983",
     ]
 
-    batch_size = 100
-    total_report_count = 0
+def main():
+    parser = CaliforniaCCLParser(FACILITY_IDS)
+    facilities = parser.scrape()
 
-    # Split the full list into smaller batches ---
-    id_batches = [facility_ids[i:i + batch_size] for i in range(0, len(facility_ids), batch_size)]
-    total_batches = len(id_batches)
-    print(f"Full list of {len(facility_ids)} IDs has been split into {total_batches} batches of up to {batch_size} each.")
-
-    # --- Step 4: Loop through each batch and process it ---
-    for i, batch_of_ids in enumerate(id_batches, 1):
-        print(f"\n{'='*25}\n--- Processing Batch {i} of {total_batches} ---\n{'='*25}")
-
-        # Initialize the parser with the current batch of IDs
-        parser = CaliforniaCCLParser(batch_of_ids)
-        
-        # Run the process for this batch
-        batch_reports_data = parser.process_all_facilities()
-        # Update report indices to be consecutive across batches
-        for report in batch_reports_data:
-            if 'report_index' in report:
-                report['report_index'] = total_report_count
-                total_report_count += 1
-        print(f"\n--- Batch {i} Complete. Found {len(batch_reports_data)} total reports. ---")
-
-        # Save the results for this batch to uniquely named files
-        if batch_reports_data:
-            json_filename = f"ccl_reports_batch_{i}.json"
-            parser.save_json(batch_reports_data, filename=json_filename)
+    if facilities:
+        logger.info(f"Scraped {len(facilities)} facilities -- posting to API")
+        if save_to_api(facilities):
+            logger.info("Data saved to database successfully!")
         else:
-            print(f"No data was collected for batch {i}, so no files were saved.")
-        
-        # A polite pause between batches to not overwhelm the server
-        if i < total_batches:
-            print("\nPausing for 5 seconds before the next batch...")
-            time.sleep(5)
+            logger.error("API save failed -- check logs above")
+    else:
+        logger.warning("No facilities scraped")
 
-    print(f"\n\nAll {total_batches} batches have been processed.")
+
+if __name__ == "__main__":
+    main()

@@ -135,6 +135,62 @@ class TestScraperUtilities(unittest.TestCase):
         return True
 
 
+class TestCaliforniaApiIntegration(unittest.TestCase):
+    """Test California scraper output against the shared inspections API schema."""
+
+    @patch.object(time, 'sleep', return_value=None)
+    @patch('ca_scraper.CaliforniaCCLParser.fetch_reports')
+    def test_california_scrape_builds_facility_payload(self, mock_fetch_reports, _mock_sleep):
+        from ca_scraper import CaliforniaCCLParser
+
+        mock_fetch_reports.side_effect = [[
+            {
+                'facility_number': '123456789',
+                'facility_name': 'Test Facility',
+                'facility_type_name': 'Short Term Residential Therapeutic Program (STRTP)',
+                'capacity': 12,
+                'administrator': 'Jane Smith',
+                'report_type': 'Complaint Investigation',
+                'report_date': '01/15/2025',
+                'report_index': 0,
+                'narrative': 'Narrative body.',
+                'investigation_findings': 'Findings body.',
+                'allegations': ['First allegation'],
+                'deficiencies': [
+                    {
+                        'section_cited': '80000',
+                        'description': 'Deficiency description.',
+                        'plan_of_correction': 'Correct it.',
+                    }
+                ],
+            }
+        ], []]
+
+        parser = CaliforniaCCLParser(['123456789', '987654321'])
+        facilities = parser.scrape()
+
+        self.assertEqual(len(facilities), 1)
+
+        facility = facilities[0]
+        self.assertEqual(facility['facility_info']['facility_name'], 'Test Facility')
+        self.assertEqual(facility['facility_info']['program_name'], '123456789')
+        self.assertEqual(
+            facility['facility_info']['program_category'],
+            'Short Term Residential Therapeutic Program (STRTP)'
+        )
+        self.assertEqual(facility['facility_info']['bed_capacity'], '12')
+        self.assertEqual(facility['facility_info']['executive_director'], 'Jane Smith')
+
+        report = facility['reports'][0]
+        self.assertEqual(report['report_id'], '123456789-0')
+        self.assertEqual(report['report_date'], '01/15/2025')
+        self.assertEqual(report['summary'], 'Complaint Investigation - 1 deficiency - 1 allegation')
+        self.assertIn('Narrative:', report['raw_content'])
+        self.assertIn('Investigation Findings:', report['raw_content'])
+        self.assertEqual(report['categories']['report_type'], 'Complaint Investigation')
+        self.assertEqual(report['categories']['source_url'], f'{parser.base_url}?facNum=123456789')
+
+
 class TestWebScrapingFunctionality(unittest.TestCase):
     """Test web scraping functionality"""
     
