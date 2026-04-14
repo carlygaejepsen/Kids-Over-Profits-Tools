@@ -1,5 +1,9 @@
 {
   "permissions": {
+    "allow": [
+      "WebFetch(domain:fortress.wa.gov)",
+      "WebFetch(domain:wahelms.my.site.com)"
+    ],
     "additionalDirectories": [
       "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Kids-Over-Profits\\api",
       "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Kids-Over-Profits"
