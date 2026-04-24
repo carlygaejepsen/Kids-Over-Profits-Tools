@@ -100,7 +100,6 @@ OREGON_INLINE_STOP_PATTERNS = [
 OREGON_BLOCK_SECTION_LABELS = {
     "interview_summary": [r"Interview Summary"],
     "observations": [r"Observations"],
-    "corrective_actions": [r"Corrective Actions and Timeframes"],
     "previous_findings": [r"Previous Findings"],
     "new_findings": [r"New Findings from Site Visit Comments"],
 }
@@ -119,6 +118,10 @@ OREGON_BLOCK_SECTION_STOP_PATTERNS = [
     r"Changes that have occurred in the last two years",
     r"Lawsuits",
     r"Grievances and complaints filed in the last two years",
+    # Form-footer boilerplate that should never be captured as section content
+    r"Please submit the following",
+    r"Licensing Coordinator(?:'s)?\s+Signature",
+    r"Manager Review",
 ]
 
 OREGON_FINDINGS_SECTION_LABELS = [
@@ -152,7 +155,7 @@ def sharepoint_lookup_label(value: Optional[str]) -> str:
     if len(parts) >= 2 and parts[0].isdigit():
         return parts[1]
     if len(parts) == 1:
-        return parts[0]
+        return "" if parts[0].isdigit() else parts[0]
     if parts:
         return " | ".join(parts)
     return clean_text(value)
@@ -417,7 +420,6 @@ def parse_oregon_report_text(text: str) -> Dict[str, Any]:
             "grievances_and_complaints": "",
             "interview_summary": "",
             "observations": "",
-            "corrective_actions": "",
             "recommendations": "",
             "exceptions": "",
             "changes_in_license": "",
