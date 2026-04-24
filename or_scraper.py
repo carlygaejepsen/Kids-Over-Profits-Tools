@@ -723,7 +723,20 @@ class ORFacilityScraper:
                     entry["report_id"],
                 )
             )
-            facility_name = pick_most_common(entry["program_name"] for entry in grouped) or grouped[0]["agency_name"]
+            reports = [self._build_report(entry) for entry in grouped]
+
+            facility_name = pick_most_common(entry["program_name"] for entry in grouped)
+            if not facility_name:
+                # Try licensee extracted from the PDF text before falling back to
+                # the raw agency_name, which is often a city or county name.
+                for report in reversed(reports):
+                    licensee = (report.get("categories") or {}).get("licensee", "")
+                    if licensee:
+                        facility_name = licensee
+                        break
+            if not facility_name:
+                facility_name = grouped[0]["agency_name"]
+
             logger.info(
                 f"[{fac_idx}/{total_facilities}] {facility_name} "
                 f"— {len(grouped)} report(s)"
@@ -751,7 +764,6 @@ class ORFacilityScraper:
             if agency_website:
                 facility_info["website"] = agency_website
 
-            reports = [self._build_report(entry) for entry in grouped]
             facilities.append({
                 "facility_info": facility_info,
                 "reports": reports,
