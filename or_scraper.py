@@ -842,7 +842,6 @@ def main():
         action="store_true",
         help="Clear existing OR data from the database before inserting (use to fix stale names)",
     )
-    )
     args = parser.parse_args()
 
     scraper = ORFacilityScraper()
