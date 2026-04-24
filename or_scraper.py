@@ -263,8 +263,8 @@ def normalize_oregon_pdf_text(text: Optional[str]) -> str:
         "\u2019": "'",   # right single quotation mark / apostrophe
         "\u201c": '"',   # left double quotation mark
         "\u201d": '"',   # right double quotation mark
-        "\u2610": "",
-        "\u2611": "",
+        "\u2610": "[ ]",
+        "\u2611": "[x]",
         "\u25cf": "- ",
         "\u2022": "- ",
         "\u2013": "-",
@@ -695,6 +695,7 @@ class ORFacilityScraper:
         return {
             "report_id": entry["report_id"] or entry["report_unique_id"] or entry["file_name"],
             "report_date": entry["report_date"],
+            "pdf_url": entry["pdf_url"],
             "raw_content": raw_content,
             "content_length": len(raw_content),
             "summary": summary,
