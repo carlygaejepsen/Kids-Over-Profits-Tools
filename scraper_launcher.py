@@ -140,9 +140,12 @@ class ScraperLauncher:
         root.configure(bg=SAND)
         # Center on screen
         root.update_idletasks()
-        _w, _h = 960, 860
-        _x = max(0, (root.winfo_screenwidth() - _w) // 2)
-        _y = max(0, (root.winfo_screenheight() - _h) // 2)
+        screen_w = root.winfo_screenwidth()
+        screen_h = root.winfo_screenheight()
+        _w = min(960, screen_w - 20)
+        _h = min(860, screen_h - 80)   # leave room for taskbar + title bar
+        _x = max(0, (screen_w - _w) // 2)
+        _y = max(0, (screen_h - _h) // 2)
         root.geometry(f"{_w}x{_h}+{_x}+{_y}")
 
         self.state         = load_state()
@@ -388,7 +391,7 @@ class ScraperLauncher:
 
         try:
             proc = subprocess.Popen(
-                [sys.executable, "-u", str(script)],
+                [sys.executable, "-X", "utf8", "-u", str(script)],
                 cwd=str(cwd),
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
