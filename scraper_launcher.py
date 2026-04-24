@@ -112,11 +112,13 @@ class KopButton(tk.Button):
             "ghost":     {"bg": SAND,    "fg": MIDNIGHT, "ab": SPRING_YELLOW, "af": MIDNIGHT},
         }
         p = palettes.get(variant, palettes["primary"])
+        kw.setdefault("padx", 14)
+        kw.setdefault("pady", 6)
         super().__init__(
             parent, text=text, command=command,
             bg=p["bg"], fg=p["fg"],
             activebackground=p["ab"], activeforeground=p["af"],
-            bd=0, relief="flat", padx=14, pady=6,
+            bd=0, relief="flat",
             cursor="hand2",
             font=FONT_HEADER,
             **kw,
@@ -138,7 +140,7 @@ class ScraperLauncher:
         root.configure(bg=SAND)
         # Center on screen
         root.update_idletasks()
-        _w, _h = 900, 720
+        _w, _h = 960, 860
         _x = max(0, (root.winfo_screenwidth() - _w) // 2)
         _y = max(0, (root.winfo_screenheight() - _h) // 2)
         root.geometry(f"{_w}x{_h}+{_x}+{_y}")
@@ -163,15 +165,15 @@ class ScraperLauncher:
         header.pack(fill="x")
         tk.Label(header, text="KOP Scraper Launcher",
                  bg=MIDNIGHT, fg=WHITE, font=FONT_TITLE,
-                 padx=20).pack(anchor="w", pady=(14, 0))
+                 padx=20).pack(anchor="w", pady=(8, 0))
         tk.Label(header, text="Monthly inspection scraper control panel",
                  bg=MIDNIGHT, fg=POWDER_BLUE, font=FONT_SUBTITLE,
-                 padx=20).pack(anchor="w", pady=(0, 14))
+                 padx=20).pack(anchor="w", pady=(0, 8))
         # Chartreuse accent stripe under the header
         Divider(self.root, color=CHARTREUSE, height=3).pack(fill="x")
 
         # Body
-        body = tk.Frame(self.root, bg=SAND, padx=16, pady=16)
+        body = tk.Frame(self.root, bg=SAND, padx=16, pady=8)
         body.pack(fill="both", expand=True)
 
         # ── Scrapers card ─────────────────────────────────────────────
@@ -180,19 +182,19 @@ class ScraperLauncher:
         card.pack(fill="x")
 
         card_title = tk.Frame(card, bg=WHITE)
-        card_title.pack(fill="x", padx=14, pady=(12, 6))
+        card_title.pack(fill="x", padx=14, pady=(6, 3))
         tk.Label(card_title, text="Scrapers", bg=WHITE, fg=MIDNIGHT,
                  font=FONT_HEADER).pack(side="left")
         tk.Label(card_title, text=f"{len(SCRAPERS)} configured",
                  bg=WHITE, fg=TEAL, font=FONT_SUBTITLE).pack(side="right")
         Divider(card, color=MINT, height=1).pack(fill="x", padx=14)
 
-        list_frame = tk.Frame(card, bg=WHITE, padx=14, pady=8)
+        list_frame = tk.Frame(card, bg=WHITE, padx=14, pady=4)
         list_frame.pack(fill="x")
 
         # Column headers
         hdr = tk.Frame(list_frame, bg=WHITE)
-        hdr.pack(fill="x", pady=(2, 4))
+        hdr.pack(fill="x", pady=(1, 2))
         tk.Label(hdr, text="", bg=WHITE, width=3).pack(side="left")
         tk.Label(hdr, text="Scraper", bg=WHITE, fg=MIDNIGHT,
                  font=FONT_HEADER, width=18, anchor="w").pack(side="left")
@@ -203,7 +205,7 @@ class ScraperLauncher:
             self._build_row(list_frame, scraper)
 
         # ── Bulk actions bar ──────────────────────────────────────────
-        actions = tk.Frame(body, bg=SAND, pady=14)
+        actions = tk.Frame(body, bg=SAND, pady=6)
         actions.pack(fill="x")
 
         self.parallel_var = tk.BooleanVar(value=False)
@@ -262,7 +264,7 @@ class ScraperLauncher:
         """One checkbox + name + last-run + Run button row."""
         key = scraper["key"]
         row = tk.Frame(parent, bg=WHITE)
-        row.pack(fill="x", pady=3)
+        row.pack(fill="x", pady=1)
         self.row_frames[key] = row
 
         var = tk.BooleanVar()
@@ -281,9 +283,9 @@ class ScraperLauncher:
         self.status_labels[key] = status_lbl
 
         KopButton(row, "Results", lambda k=key: self._show_results(k),
-                  variant="ghost").pack(side="right", padx=(0, 4))
+                  variant="ghost", pady=3).pack(side="right", padx=(0, 4))
         KopButton(row, "Run", lambda s=scraper: self._run_one(s),
-                  variant="teal").pack(side="right")
+                  variant="teal", pady=3).pack(side="right")
 
     # ---------- Status / logging ----------
 
