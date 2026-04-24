@@ -1,0 +1,58 @@
+Conway Emergency Operations Center
+1111 Main Street Conway , AR 72032
+OFFICIAL USE ONLY
+DO NOT DISSEMINATE
+Call Taker CFS Report
+08 chumphrey CFS # - 25-0403339
+Base Information
+Call When 04/13/2025 09:39:44 Create When04/13/2025 09:40:59Close When 04/13/2025 10:34:10Disposition FIRE INCIDENT
+Priority PRIORITY 1 FIRE Alarm 3 Disciplines E,F,R Assigned Disciplines F Assigned Disciplines NP F
+CallType FIRE-FIRE ALARM EDL FDL LDL Primary Unit 286E1
+Location of Occurrence
+Address 161 SKUNK HOLLOW RD, FAULKNER COUNTY Zip 72032 County
+Landmark LITTLE CREEK BEHAVIORAL HEALTH ESN 316 Map Grid
+EMS/Rescue PAFFORD EMS Fire HWY 286 EAST FIRE Law FAULKNER COUNTY SHERIFF
+Area FCSO-Delta District EMS Tract 2 Fire Tract 316-B
+Grid Law Tract Report Tract Work Area
+Cross Street High BREWER RD Cross Street Low SOUTHERN OAKS RD
+From-To Directions
+Caller
+Address Landmark
+Name MONOTORING CENTER Caller Phone 8004321429 How Received PHONE
+Dispositions
+Disposition Assigned When User InActive While Closed
+FIRE INCIDENT 04/13/2025 10:34:10 chumphrey
+Call Types
+Call Type Assigned When User Assigned While Closed InActive
+FIRE-FIRE ALARM 04/13/2025 09:40:59 chumphrey
+Unit Times
+Unit Department When Status | Notes User
+286E1 VOL 04/13/2025 09:41:10 DISPATCHED chumphrey
+286E1 VOL 04/13/2025 09:44:02 ENROUTE chumphrey
+286E1 VOL 04/13/2025 09:49:47 ARRIVED chumphrey
+286E1 VOL 04/13/2025 10:34:10 CLEARED chumphrey
+Incident Locations
+Address: LITTLE CREEK BEHAVIORAL HEALTH | 161 SKUNK HOLLOW RD, FAULKNER COUNTY User: chumphrey
+When: 04/13/2025 09:40:59 Latitude: 35.0679479268981 Longitude: -92.3819024968872 Source:Landmark InActive:
+Caller Phones
+Caller Phone When User Caller Phone When User
+CAD Report 44 - tbutler Page 1 Of 2 04/17/2025 10:42
+
+Call Taker CFS Report
+08 chumphrey CFS # - 25-0403339
+8004321429 04/13/2025 09:40:59 chumphrey
+Caller Names
+Caller Name When User Caller Name When User
+MONOTORING CENTER 04/13/2025 09:40:59 chumphrey
+Comment 04/13/2025 09:40:59 04/13/2025 09:40:59
+FIRE ALARM /// BUILDING A RISER FLOW AT 33 /// KH AJ GUILD 501-800-0506
+Notes
+chumphrey 04/13/2025 09:51:16 E,F,L,R,O
+ALARM HAS BEEN SHUT OFF, FD OUT W/MAINTENANCE///CANCEL ANYOTHER UNIT NOT ON SCENE, NO FIRE
+chumphrey 04/13/2025 10:33:42 E,F,L,R,O
+286 ADVISED THAT THEY ARE WORKING ON THE ALARM AND IT MAY GO OFF AGAIN
+callen 04/13/2025 10:34:08 E,F,L,R,O
+SAME ALARM WENT OFF AT 10:34
+callen 04/13/2025 10:34:20 E,F,L,R,O
+ZONE 33 BUILDING A RISER FLOW
+CAD Report 44 - tbutler Page 2 Of 2 04/17/2025 10:42

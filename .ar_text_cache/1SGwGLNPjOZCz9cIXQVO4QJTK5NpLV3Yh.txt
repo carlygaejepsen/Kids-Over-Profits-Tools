@@ -1,0 +1,59 @@
+Call Details Report For CFS # 24-1200698
+
+CFS Number
+24-1200698
+
+Incident Type
+FIRE-FIRE ALARM
+
+Caller Name
+f828
+
+Location
+161 SKUNK HOLLOW RD, FAULKNER COUNTY
+
+Notes
+
+12/3/2024 7:23:46 PM by: mjackson
+aa building Ac/1 wing room at 76 smoke
+no contact with keyholder
+
+Megan Morris 5016976748
+
+AJ Glade 5018000506
+
+12/3/2024 7:26:15 PM by: jsturgeon
+FIRE INCIDENT - 286 ADV FALSE ALARM
+
+Unit Call Times
+
+Unit ID Date/Time
+
+286E1 12/3/2024 7:23:50 PM
+286E1 12/3/2024 7:24:53 PM
+286E1 12/3/2024 7:26:15 PM
+
+Dispositions Assigned to This Call
+
+Disposition When Assigned
+FIRE INCIDENT 12/3/2024 7:26:15 PM
+
+Date/Time
+12/3/2024 7:23 PM
+
+Primary Unit
+286E1
+
+Caller Phone
+1800432142
+
+Status
+DISPATCHED
+
+ENROUTE
+CLEARED
+
+Assigned By
+jsturgeon
+
+12/20/2024 9:50:29 AM

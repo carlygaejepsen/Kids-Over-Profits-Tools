@@ -1,0 +1,52 @@
+Conway Emergency Operations Center
+1111 Main Street Conway , AR 72032
+OFFICIAL USE ONLY
+DO NOT DISSEMINATE
+Call Taker CFS Report
+01 mperson-5067 CFS # - 25-0403974
+Base Information
+Call When 04/15/2025 13:51:50 Create When04/15/2025 13:52:23Close When 04/15/2025 13:56:21Disposition FIRE INCIDENT
+Priority PRIORITY 1 FIRE Alarm 3 Disciplines E,F,R Assigned Disciplines F Assigned Disciplines NP F
+CallType FIRE-FIRE ALARM EDL FDL LDL Primary Unit 286E1
+Location of Occurrence
+Address 161 SKUNK HOLLOW RD, FAULKNER COUNTY Zip 72032 County
+Landmark LITTLE CREEK BEHAVIORAL HEALTH ESN 316 Map Grid
+EMS/Rescue PAFFORD EMS Fire HWY 286 EAST FIRE Law FAULKNER COUNTY SHERIFF
+Area FCSO-Delta District EMS Tract 2 Fire Tract 316-B
+Grid Law Tract Report Tract Work Area
+Cross Street High BREWER RD Cross Street Low SOUTHERN OAKS RD
+From-To Directions
+Caller
+Address Landmark
+Name SUMMIT FIRE AND SEC - 326 Caller Phone 8004321429 How Received PHONE
+Dispositions
+Disposition Assigned When User InActive While Closed
+FIRE INCIDENT 04/15/2025 13:56:20 ljsmith
+Call Types
+Call Type Assigned When User Assigned While Closed InActive
+FIRE-FIRE ALARM 04/15/2025 13:52:23 mperson
+Unit Times
+Unit Department When Status | Notes User
+286E1 VOL 04/15/2025 13:53:13 DISPATCHED vrodriguez
+286E1 VOL 04/15/2025 13:56:20 CLEARED ljsmith
+Incident Locations
+Address: LITTLE CREEK BEHAVIORAL HEALTH | 161 SKUNK HOLLOW RD, FAULKNER COUNTY User: mperson
+AR
+When: 04/15/2025 13:52:23 Latitude: 35.0679479268981 Longitude: -92.3819024968872 Source:Landmark InActive:
+Caller Phones
+Caller Phone When User Caller Phone When User
+8004321429 04/15/2025 13:52:39 mperson
+CAD Report 44 - tbutler Page 1 Of 2 04/17/2025 10:41
+
+Call Taker CFS Report
+01 mperson-5067 CFS # - 25-0403974
+Caller Names
+Caller Name When User Caller Name When User
+SUMMIT FIRE AND SEC 04/15/2025 13:52:39 mperson
+- 326
+Comment 04/15/2025 13:52:23 04/15/2025 13:52:39
+ZONE 31 FIRE ALARM BLDG A-2 WING SMOKE BY MED ROOM AT 17
+Notes
+ljsmith 04/15/2025 13:56:20 E,F,L,R,O
+FIRE INCIDENT - 286 ADV ITS A FALSE ALARM // ADV THEY GOT WITH THE MAINTENANCE WHO ADV THEY COULD CANCEL
+CAD Report 44 - tbutler Page 2 Of 2 04/17/2025 10:41

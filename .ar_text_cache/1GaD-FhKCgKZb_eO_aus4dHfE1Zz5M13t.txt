@@ -1,0 +1,195 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 5
+Call Information
+Received Date: 05/24/2023 09:16 Dispatch Date: 05/24/2023 09:20 EnRotue Date: 05/24/2023 09:20
+Arrived Date: 05/24/2023 09:20 Completed Date: 05/24/2023 09:38 Call Canceled:
+Disposition: INC REPORT TAKEN
+CFS #: 707330 Case #: Priority:
+Nature: ABUSE - JUVENILE How Received:
+Initial Nature: Alarm:
+Call Taken By: BROWN, PAIGE Dispatched By: BROWN, PAIGE Fire Type:
+Completed By: BROWN, PAIGE ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+Business:
+Caller is with State Police Crimes Against Children. Needing to make a report.
+Incident Information
+Common Name: LITTLE CREEK BEHAVORIAL Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: FAULKNER COUNTY, AR Intersection: POWELL
+ESN: Lat/Lon:
+Caller Information
+Name: POWELL, LINDA Address:
+Phone #: (501) 804-2384 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+05/24/2023 09:34:27 BROWN, PAIGE
+Print Date: Jun 16 2023 - 14:08:38 Faulkner County Sheriffs Office, 707330
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 5
+Notes
+Entry Date Entry By Note Type Notes
+Print Date: Jun 16 2023 - 14:08:38 Faulkner County Sheriffs Office, 707330
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 3 of 5
+Notes
+Entry Date Entry By Note Type Notes
+05/24/2023 09:37:44 BROWN, PAIGE
+Print Date: Jun 16 2023 - 14:08:38 Faulkner County Sheriffs Office, 707330
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 4 of 5
+Notes
+Entry Date Entry By Note Type Notes
+Print Date: Jun 16 2023 - 14:08:38 Faulkner County Sheriffs Office, 707330
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 5 of 5
+Notes
+Entry Date Entry By Note Type Notes
+Total Notes: 2
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+F30 REEDER, AUSTIN FCSO 0 0 YES
+Dispatched Date: 05/24/2023 09:20 EnRoute Date: 05/24/2023 09:20 Arrived Date: 05/24/2023 09:20
+Transport Start: Transport End: Completed Date: 05/24/2023 09:38
+Disposition Date: Call Canceled: Back At Station:
+Total Units:1
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+05/24/2023 09:20 F30 REEDER, AUSTIN DISPATCHED
+05/24/2023 09:20 F30 REEDER, AUSTIN UNIT ENROUTE
+05/24/2023 09:20 F30 REEDER, AUSTIN ON SCENE
+05/24/2023 09:38 F30 REEDER, AUSTIN ASSIGNMENT FINISHED
+Complete all units.
+Total Radio Traffic:4
+Case Numbers
+Entry Date Case Number Department
+05/24/2023 09:20:53 23001655 FAULKNER COUNTY SO
+Print Date: Jun 16 2023 - 14:08:38 Faulkner County Sheriffs Office, 707330
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23001655 Case Status: ADMINISTRATIVELY
+CLOSED
+Page 1 of 3
+Case#: 23001655 Report Date: 05/24/2023 09:20
+Report By: Austin Reeder - (F30) Arrival Time: 09:20
+Case Type: SEX CRIME UNDER 18 Reporting Zone: D
+Business: LITTLE CREEK BEHAVORIAL Occurred From: 05/24/2023 09:20
+Address: 161 SKUNK HOLLOW RD Occurred Through: 05/24/2023 09:20
+Intersection: Reportable IBRS: Yes
+City/State/Zip: CONWAY, AR 72032 School:
+Lat/Long: Lat: 35.0682283 / Long: -92.3841968 Case Status: ADMINISTRATIVELY
+CLOSED
+Case Type: SEX CRIME UNDER 18 File / Cad ID:
+Assigned To: Assigned Date:
+Cleared By: Sgt. Chad Pruett - (Cd2) Cleared Date: 05/31/2023
+IBR Clear Code: Clery Related: NO
+UCR / Offenses
+UCR: Intimidation - [13C] Status:Completed
+Charge: INDECENT EXPOSURE
+Statute: Charge Code:5-14-112
+Description: PHOTO'S SHOWN TO JUVENILES
+Location: Hospital
+Weapon:
+Possibly Using: Not Applicable Criminal Activity:None/unknown
+Bias: None Method Of Entry:
+Gang Name: Home Invasion:
+Victims
+Victim Type: Individual
+Name: DOB: Race/Sex: W/F
+Address: 161 SKUNK HOLLOW Current Age:16 Height:
+City/State: CONWAY, AR 72032 Age:16 Weight:
+Email: Hair Color: Eyes:
+Home Phone: Work: Cell: DL#:
+Resident: RESIDENT Ethnicity:NOT HISPANIC OR LATINO
+Occupation: Military:
+Email: Narcan Dose: 0 SSN:
+Employer:
+Victim Type: Individual
+Name: DOB: Race/Sex: U/F
+Address: 161 SKUNK HOLLOW Current Age:17 Height:
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23001655 Case Status: ADMINISTRATIVELY
+CLOSED
+Page 2 of 3
+Victims
+City/State: CONWAY, AR 72032 Age:17 Weight:
+Email: Hair Color: Eyes:
+Home Phone: Work: Cell: DL#:
+Resident: RESIDENT Ethnicity:NOT HISPANIC OR LATINO
+Occupation: Military:
+Email: Narcan Dose: 0 SSN:
+Employer:
+Offender / Suspect
+Name DOB: Race/Sex: B/F
+Address: Current Age:31 Height:5 Ft. 02 In.
+City/State: Age:31 Weight:173
+Resident: NON-RESIDENT Hair Color:BRO Eyes: BRO
+Ethnicity: NOT HISPANIC OR LATINO Cell Phone: SSN:
+Home Phone: Work Phone: DL#:
+Occupation: Narcan Dose: 0
+Employer:
+Name DOB: Race/Sex: B/M
+Address: Current Age:26 Height:
+City/State: Age:26 Weight:145
+Resident: RESIDENT Hair Color:BLK Eyes: BRO
+Ethnicity: HISPANIC OR LATINO Cell Phone: SSN:
+Home Phone: Work Phone: DL#:
+Occupation: Narcan Dose: 0
+Employer:
+Name DOB: Race/Sex: B/F
+Address: Current Age:35 Height:
+City/State: Age:35 Weight:
+Resident: NON-RESIDENT Hair Color: Eyes:
+Ethnicity: NOT HISPANIC OR LATINO Cell Phone: SSN:
+Home Phone: Work Phone: DL#:
+Occupation: Narcan Dose: 0
+Employer:
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23001655 Case Status: ADMINISTRATIVELY
+CLOSED
+Page 3 of 3
+Complainant
+Name: POWELL, LINDA ASP DOB: Race/Sex: W/F
+Address: LOCUST ST Current Age: Height:
+City/State: CONWAY, AR 72032 Age: 0 Weight:
+Email: Hair Color: Eyes:
+Home: (501) 804-2384 Cell Phone: DL#:
+Occupation: Work Phone:
+Employer:
+Narrative
+On Wednesday May 24, 2023 at approximately 9:20 AM, I was dispatched to a call for service in reference to a
+juvenile case. I made contact with complainant Arkansas State Police Investigator Linda Powell via telephone.
+Ms. Powell stated that she got a report of staff members from Little Creek Behavioral showing inappropriate
+photo's to juveniles. Ms. Powell stated that (Offender 1) showed JV1 (Victim 1) a picture of a
+unknown staff member's private parts. Ms. Powell also stated that (Offender 2) and
+(Offender 3) showed JV2 (Victim 2) the same picture of the unknown staff member. Ms. Powell stated that
+she did not have any other information about the incident.
+I then requested a incident report number from dispatch and provided a copy to Ms. Powell.
+REEDER, AUSTIN 5/24/2023, 10:09:54 AM
+Reporting Officer Approved By Officer
+Austin Reeder - (F30) Sgt. Zachary Cooley - (F6)
+Reported On: 05/24/2023 09:20 Approved On: 06/07/2023 16:15
+FILED IN RECORDS
+Case Status: ADMINISTRATIVELY
+Administrative Use Only - IBRS Date
+CLOSED
+145914

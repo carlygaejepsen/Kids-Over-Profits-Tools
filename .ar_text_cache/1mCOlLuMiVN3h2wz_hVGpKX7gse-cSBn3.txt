@@ -1,0 +1,86 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 03/19/2024 14:04 Dispatch Date: 03/19/2024 15:08 EnRotue Date: 03/19/2024 16:00
+Arrived Date: 03/19/2024 16:04 Completed Date: 03/19/2024 16:04 Call Canceled:
+Disposition: INC REPORT TAKEN
+CFS #: 24032340 Case #: Priority: CALL FOR SERVICE
+Nature: ASSAULT How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: WIMBERLY, OLIVIA Dispatched By: ALARCON, PEARLY Fire Type:
+Completed By: STARK, CARRIE ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+Business:
+NEEDS TO MAKE A REPORT
+SOMEONE ON STAFF CHOKED A PATIENT
+THIS OCCURRED WEEK OF THE 4TH OF MARCH
+STAFFF MEMBERS NAME IS
+Incident Information
+Common Name: Zone: SOUTH
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection: POWELL
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: POWELL, LINDA Address:
+Phone #: CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+03/19/2024 14:53:23 ALARCON, PEARLY code 0
+03/19/2024 16:02:51 ALARCON, PEARLY Name:
+Race: BLACK OR AFRICAN AMERICAN / Sex: MALE / DOB:
+00:00:00
+DL State: ARKANSAS / DL Number:
+03/19/2024 16:03:21 ALARCON, PEARLY Name:
+Race: WHITE / Sex: FEMALE / DOB: 00:00:00
+DL State: TEXAS
+03/19/2024 16:04:24 STARK, CARRIE
+03/19/2024 16:04:36 STARK, CARRIE Complete all units.
+Total Notes: 5
+Print Date: Apr 18 2024 - 08:56:39 Faulkner County Sheriffs Office, 24032340
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+F36 WILCHMAN, JEFFREY FCSO 0 0 YES
+Dispatched Date: 03/19/2024 15:08 EnRoute Date: 03/19/2024 16:00 Arrived Date: 03/19/2024 16:04
+Transport Start: Transport End: Completed Date: 03/19/2024 16:04
+Disposition Date: Call Canceled: Back At Station:
+Total Units:1
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+03/19/2024 16:00 F36 WILCHMAN, JEFFREY UNIT ENROUTE
+03/19/2024 15:38 F36 WILCHMAN, JEFFREY BUSY
+Setting unit F36 location to FUEL @ 8 MILE / STILL ON CFS for .
+03/19/2024 15:38 F36 WILCHMAN, JEFFREY UNIT DISPATCHED
+re-dispatched to oldest call.
+03/19/2024 15:38 F36 WILCHMAN, JEFFREY UNIT DISPATCHED
+re-dispatched to oldest call.
+03/19/2024 15:08 F36 WILCHMAN, JEFFREY UNIT DISPATCHED
+Total Radio Traffic:5
+People Involved
+Name: DOB: SSN:
+Race: WHITE Sex: FEMALE Cell Phone: Work Phone:
+Address: Apartment: Home Phone:
+CSZ: Email:
+How Involved: Relationship:
+DL Number: TX/ Class: Expires On: Status:
+Name: DOB: SSN:
+Race: BLACK OR Sex: MALE Cell Phone: Work Phone:
+AFRICAN
+AMERICAN
+Address: Apartment: Home Phone:
+CSZ: Email:
+How Involved: Relationship:
+DL Number: Class: Expires On: Status:
+Total People: 2
+Case Numbers
+Entry Date Case Number Department
+03/19/2024 16:00:39 FAULKNER COUNTY SO
+03/19/2024 16:02:17 24000705 FAULKNER COUNTY SO
+Print Date: Apr 18 2024 - 08:56:39 Faulkner County Sheriffs Office, 24032340
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

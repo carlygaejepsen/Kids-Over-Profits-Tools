@@ -1,0 +1,59 @@
+Call Details Report For CFS # 25-0505556
+
+CFS Number
+25-0505556
+
+Incident Type
+FIRE-FIRE ALARM
+
+Caller Name
+SUMMITT FIRE
+
+Location
+161 SKUNK HOLLOW RD, FAULKNER COUNTY
+
+Initial Statement
+
+ZONE: STAFF BREAK ROOM
+BUILDING A ZONE 47 OR 46
+PREMISE 5015857698 NEG CONT
+
+Notes
+5/20/2025 11:51:26 PM by: ameurer
+
+Date/Time
+5/20/2025 11:41 PM
+
+Primary Unit
+286E1
+
+Caller Phone
+8004321429
+
+FIRE INCIDENT - MADE CONTACT W/ THE FACILITY & THEY ADV BURNT POPCORN ..
+
+FD UNITS CLEAR
+
+Unit Call Times
+
+Unit ID Date/Time
+
+286E1 5/20/2025 11:42:07 PM
+286E1 5/20/2025 11:43:36 PM
+286E1 5/20/2025 11:51:26 PM
+
+Dispositions Assigned to This Call
+
+Disposition When Assigned
+FIRE INCIDENT 5/20/2025 11:51:26 PM
+
+Status
+DISPATCHED
+
+ENROUTE
+CLEARED
+
+Assigned By
+ameurer
+
+6/17/2025 1:01:40 PM

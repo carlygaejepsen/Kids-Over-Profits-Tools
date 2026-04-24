@@ -1,0 +1,195 @@
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 1 of 3
+
+Call Information
+
+Received Date: 05/26/2024 19:14 Dispatch Date: 05/26/2024 19:17 EnRotue Date: 05/26/2024 19:17
+Arrived Date: 05/26/2024 19:22 Completed Date: 05/26/2024 19:41 Call Canceled:
+Disposition: PATIENT TRANSPORTED-MED CALL ONLY
+
+CFS #: 24053262 Case #: Priority:
+
+Nature: SUICIDE-ATTEMPT How Received: 911
+Initial Nature: Alarm:
+
+Call Taken By: HALL, KEALI Dispatched By: ALARCON, PEARLY Fire Type:
+
+Completed By: HALL, KEALI ReOpened By: ReOpened Reason:
+
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 05/26/2024 19:17 Permit #:
+
+Business:
+
+14 yof harming herself cutting her thighs unresponsive but she does have a pulse
+
+Incident Information
+
+Common Name: LITTLE CREEK BEHAVIORAL Zone:
+
+Address: 161 SKUNK HOLLOW RD SubDivision:
+
+CSZ: CONWAY, AR 72032 Intersection:
+
+ESN: 316 Lat/Lon: 35.0682371,
+
+Caller Information
+
+Name: » ANGELA Address:
+Phone #: (501) 514-8235 CSZ:
+Notes
+
+Entry Date Entry By Note Type Notes
+
+05/26/2024 19:17:01
+
+05/26/2024 19:17:24
+05/26/2024 19:17:44
+05/26/2024 19:19:08
+05/26/2024 19:20:58
+05/26/2024 19:22:40
+05/26/2024 19:23:15
+05/26/2024 19:25:27
+
+05/26/2024 19:25:45
+05/26/2024 19:30:39
+05/26/2024 19:33:03
+05/26/2024 19:35:16
+05/26/2024 19:37:09
+05/26/2024 19:40:15
+
+HALL, KEALI
+
+WIMBERLY, OLIVIA
+ALARCON, PEARLY
+ALARCON, PEARLY
+WIMBERLY, OLIVIA
+WIMBERLY, OLIVIA
+WIMBERLY, OLIVIA
+WIMBERLY, OLIVIA
+
+WIMBERLY, OLIVIA
+WIMBERLY, OLIVIA
+WIMBERLY, OLIVIA
+ALARCON, PEARLY
+ALARCON, PEARLY
+HALL, KEALI
+
+in the bathroom in the back of the unit
+caller adv to come to the side of the building
+
+PAFFORD NOTIFIED
+
+286E toned out.
+
+286E acknowledged toneout.
+DISPATCH COMMAND NOTIFIED
+
+F13 ADV TO SEND PAFFORD IN
+PAFF NOTIFIED TO GO IN
+
+JUV IS AWAKE AND CONSCIOUSNESS AND IS SITTING UP
+PAFF 97
+
+F11 ADV F13 TO ASK STAFF TO DO A HEAD COUNT
+
+F13 ADV THAT THE STAFF IS AWARE OF THE ISSUE
+
+juveniles that had left call card / 24053264
+
+05/26/2024 19:40:21
+05/26/2024 19:40:52
+
+05/26/2024 19:41:38
+
+HALL, KEALI
+HALL, KEALI
+
+HALL, KEALI
+
+Print Date: Jun 17 2024 - 10:14:48
+
+Powered by iSOMS(c) Driven by Values
+
+on scene time for 286 was roughly 8 mins after they were paged
+out
+
+Complete all units.
+
+Faulkner County Sheriffs Office, CFS: 24053262 10-74A
+CAD_ Details KASMUCK
+
+
+Faulkner County Sheriffs Office
+
+Call for Service Card
+
+Notes
+Entry Date Entry By Note Type Notes
+
+05/26/2024 19:41:38 HALL, KEALI
+05/26/2024 19:51:20 WIMBERLY, OLIVIA
+
+Complete all units.
+
+F13 ADV BEHAVIORAL STAFF AT THIS LOCATION DECLINED A
+
+Page 2 of
+
+REPORT
+Total Notes: 19
+Units
+Unit Number Unit Name Department Mileage Start_ Mileage End Primary Unit
+F13 COX, SKYLAR FCSO 0 0 YES
+Dispatched Date: 05/26/2024 19:17 EnRoute Date: 05/26/2024 19:17 Arrived Date: 05/26/2024 19:22
+Transport Start: Transport End: Completed Date: 05/26/2024 19:41
+Disposition Date: Call Canceled: Back At Station:
+286E1 286 E 1 286E 0 0 NO
+Dispatched Date: 05/26/2024 19:19 EnRoute Date: 05/26/2024 19:19 Arrived Date: 05/26/2024 19:40
+Transport Start: Transport End: Completed Date: 05/26/2024 19:40
+Disposition Date: Call Canceled: Back At Station:
+F411 EVERETT, TY FCSO 0 0 NO
+Dispatched Date: 05/26/2024 19:35 EnRoute Date: 05/26/2024 19:35 Arrived Date: 05/26/2024 19:35
+Transport Start: Transport End: Completed Date: 05/26/2024 19:41
+Disposition Date: Call Canceled: Back At Station:
+Total Units: 3
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+05/26/2024 19:17 F13 COX, SKYLAR UNIT ENROUTE
+05/26/2024 19:17 F13 COX, SKYLAR UNIT DISPATCHED
+05/26/2024 19:19 286E1 286 E 1 UNIT DISPATCHED
+05/26/2024 19:35 F11 EVERETT, TY UNIT DISPATCHED
+05/26/2024 19:35 F114 EVERETT, TY UNIT ENROUTE
+05/26/2024 19:19 286E1 286 E 1 UNIT ENROUTE
+05/26/2024 19:17 F13 COX, SKYLAR UNIT ENROUTE
+Total Radio Traffic: 7
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 05/26/2024 19:17 Toneout 2: 05/26/2024 19:17 Toneout 3:
+Ack. Date: 05/26/2024 19:19 Cancel Date: Toneout 1 By: ALARCON, PEARLY
+
+Total Toneouts: 1
+
+Print Date: Jun 17 2024 - 10:14:48
+Powered by iSOMS(c) Driven by Values
+
+Faulkner County Sheriffs Office, CFS: 24053262 10-74A
+CAD_ Details KASMUCK
+
+
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 3 of 3
+
+Case Numbers
+
+Entry Date Case Number Department
+05/26/2024 19:17:15 FAULKNER COUNTY SO
+05/26/2024 19:19:08 286 EAST FIRE DEPARTMENT
+Print Date: Jun 17 2024 - 10:14:48 Faulkner County Sheriffs Office, CFS: 24053262 10-74A
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

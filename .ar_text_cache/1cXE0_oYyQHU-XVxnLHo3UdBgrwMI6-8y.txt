@@ -1,0 +1,131 @@
+Faulkner County Sheriffs Office
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 24000790 Case Status: ADMINISTRATIVELY
+CLOSED
+Page 1 of 2
+Case#: 24000790 Report Date: 03/29/2024 09:42
+Report By: Deputy. Brandon Jones - (F12) Arrival Time:
+Case Type: HARRASSMENT Reporting Zone: D
+Business: Occurred From: 03/28/2024 17:00
+Address: 161 SKUNK HOLLOW RD Occurred Through: 03/29/2024 08:00
+Intersection: Reportable IBRS: No
+City/State/Zip: CONWAY, AR 72032 School:
+Lat/Long: Lat: 35.0682283 / Long: -92.3841968 Case Status: ADMINISTRATIVELY
+CLOSED
+Case Type: HARRASSMENT File / Cad ID:
+Assigned To: Assigned Date:
+Cleared By: Sergeant. Chad Pruett - (Cd2) Cleared Date: 04/05/2024
+How Cleared: MISDEMEANOR
+IBR Clear Code: Clery Related: NO
+UCR / Offenses
+UCR: All Other Offenses - [90Z] Status:Completed
+Charge: GENERAL INFORMATION REPORTS
+Statute: Charge Code:GEN INFO
+Business Involved
+Business Type: Business
+Business Name: LITTLE CREEK BEHAVIORAL HEALTH
+Address: 161 SKUNK HOLLOW
+City/State/Zip: CONWAY, AR 72032
+Phone: (501) 358-7484 Email:
+Offender / Suspect
+Name UNKNOWN, UNKNOWN DOB: Race/Sex: U/U
+Address: Current Age: Height:
+City/State: Age:0 Weight:
+Resident: UNKNOWN Hair Color: Eyes:
+Complainant
+Name: SHIVERS, ALLYSON RENEE DOB: 05/06/1979 Race/Sex: W/F
+Address: Current Age: 44 Height: 5 Ft. 07 In.
+City/State: Age: 44 Weight: 135
+Email: Hair Color: BLN Eyes: BRO
+Home: Cell Phone: DL#:
+Occupation: Work Phone:
+Print Date: Apr 18 2024 - 08:58:55 Faulkner County Sheriffs Office
+Powered by iSOMS(c) Driven by Values Incident_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 24000790 Case Status: ADMINISTRATIVELY
+CLOSED
+Page 2 of 2
+Complainant
+Employer:
+Narrative
+On March 29, 2024, at approximately 0928 hours, I was dispatched to make a call for service in reference to a
+terroristic threat.
+I spoke with Allyson Shivers (complainant) by cell phone. Ms. Shivers is the director of admissions for Little Creek
+Behavioral Health (victim business). Ms. Shivers stated an unknown male (offender) left a bizarre voicemail on their
+office phone. Ms. Shivers stated the voicemail was left sometime after business hours and she had a recording of it. I
+listened to the recording of the voicemail and could hear a male subject state "One day there is going to be a suicide
+or murder because you fucks can't answer the goddamn phone". Ms. Shivers stated she was unaware of who the
+male was but the number he called from was .
+Ms. Shivers provided me with the voicemail recording to be uploaded to the "patrol pics" folder. I advised Ms.
+Shivers I would be doing a report to document the incident. Ms. Shivers was given this report number and advised
+how to obtain a copy.
+JONES, BRANDON 3/29/2024, 4:47:55 PM
+Reporting Officer Approved By Officer
+Deputy. Brandon Jones - (F12) Sergeant. Zachary Cooley - (F6)
+Reported On: 03/29/2024 09:42 Approved On: 03/30/2024 16:29
+FILED IN RECORDS
+Case Status: ADMINISTRATIVELY
+Administrative Use Only - IBRS Date
+CLOSED
+141056
+Print Date: Apr 18 2024 - 08:58:55 Faulkner County Sheriffs Office
+Powered by iSOMS(c) Driven by Values Incident_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 03/29/2024 09:24 Dispatch Date: 03/29/2024 09:28 EnRotue Date: 03/29/2024 09:44
+Arrived Date: 03/29/2024 09:44 Completed Date: 03/29/2024 09:44 Call Canceled:
+Disposition: INC REPORT TAKEN
+CFS #: 24033461 Case #: Priority:
+Nature: TERRORISTIC THREAT How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: NORRIS, EMILY Dispatched By: NORRIS, EMILY Fire Type:
+Completed By: HALL, KEALI ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+Business:
+ph number
+this number called little creek behavioral last night and left a voicemail saying that if they didnt answer the phone there was going to be a murder.
+director of admissions allison shivers is calling to report it, she adv she has a copy of the recording but there is no identifying information other
+than it is definitely an adult.
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection: SHIVERS
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: SHIVERS, ALLISON Address:
+Phone #: CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+03/29/2024 09:27:32 NORRIS, EMILY she wants to make a report just in case
+03/29/2024 09:44:51 HALL, KEALI
+03/29/2024 09:44:57 HALL, KEALI Complete all units.
+Total Notes: 3
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+F12 JONES, BRANDON FCSO 0 0 YES
+Dispatched Date: 03/29/2024 09:28 EnRoute Date: 03/29/2024 09:44 Arrived Date: 03/29/2024 09:44
+Transport Start: Transport End: Completed Date: 03/29/2024 09:44
+Disposition Date: Call Canceled: Back At Station:
+Total Units:1
+Print Date: Apr 18 2024 - 08:54:29 Faulkner County Sheriffs Office, 24033461
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+03/29/2024 09:44 F12 JONES, BRANDON UNIT ENROUTE
+03/29/2024 09:28 F12 JONES, BRANDON UNIT DISPATCHED
+Total Radio Traffic:2
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+03/29/2024 09:41:46 24000790 FAULKNER COUNTY SO F12 No
+Print Date: Apr 18 2024 - 08:54:29 Faulkner County Sheriffs Office, 24033461
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

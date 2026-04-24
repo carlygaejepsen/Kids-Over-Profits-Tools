@@ -1,0 +1,84 @@
+FAULKNER COUNTY SHERIFFS OFFICE
+Call for Service Card
+Page 1 of 2
+
+Call Information
+
+Received Date: 11/06/2024 09:54 Dispatch Date: 11/06/2024 10:02 EnRoute Date: 11/06/2024 10:06
+Arrived Date: 11/06/2024 10:31 Completed Date: 11/06/2024 10:31 Call Canceled:
+
+Disposition: HANDLED BY OFFICER-NO REPORT
+
+CFS #: 24110570 Case #: Priority:
+
+Nature: WELFARE CHECK How Received: ADMIN LINE
+Initial Nature: Alarm:
+
+Call Taken By: BRABHA\M, DIXIE Dispatched By: RODRIGUEZ, VINCENT Fire Type:
+
+Completed By: BRABHA\M, DIXIE ReOpened By: ReOpened Reason:
+
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+
+Business Check: NO Toneout: Permit #:
+
+Business:
+
+CALLER WOULD LIKE US TO CHECK ON HER DAUGHTER THAT WAS COURT ORDERED TO BE THERE - FROM OHIO
+
+DAUGHTER IS Re. sHE's i
+
+CALLER ADVD THERE HAS BEEN CONFLICT BETWEEN HER AND THE FACILITY AND SHE IS NOT GETTING ANSWERS ON HER DAUGHTERS
+WELFARE
+
+Incident Information
+
+Common Name: LITTLE CREEK Zone: SOUTH
+Address: 161 SKUNK HOLLOW RD SubDivision:
+
+CSZ: CONWAY, AR 72032 Intersection: GREEN
+ESN: 316 Lat/Lon: 35.0682371,
+
+Caller Information
+
+Name: Address:
+Phone #: CSZ:
+
+Notes
+Entry Date Entry By Note Type Notes
+11/06/2024 10:31:00 BRABHAM, DIXIE
+11/06/2024 10:31:07 BRABHAM, DIXIE Complete all units.
+
+Total Notes: 2
+Units
+Unit Number Unit Name Department Mileage Start_ Mileage End Primary Unit
+F32 THOMAS, AUSTIN FCSO 0 0 YES
+Dispatched Date: 11/06/2024 10:02 EnRoute Date: 11/06/2024 10:06 Arrived Date: 11/06/2024 10:31
+Transport Start: Transport End: Completed Date: 11/06/2024 10:31
+Disposition Date: Call Canceled: Back At Station:
+
+Total Units: 1
+Print Date: Nov 19 2024 - 10:57:15 FAULKNER COUNTY SHERIFFS OFFICE, 24110570
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+
+FAULKNER COUNTY SHERIFFS OFFICE
+
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+11/06/2024 10:02 F32 THOMAS, AUSTIN UNIT DISPATCHED
+F32 THOMAS, AUSTIN UNIT ENROUTE
+Total Radio Traffic: 2
+
+11/06/2024 10:06
+
+FAULKNER COUNTY SHERIFFS OFFICE, 24110570
+KASMUCK
+
+Print Date: Nov 19 2024 - 10:57:15
+CAD_Details
+
+Powered by iSOMS(c) Driven by Values

@@ -1,0 +1,43 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 1
+Call Information
+Received Date: 01/05/2024 15:50 Dispatch Date: EnRotue Date:
+Arrived Date: Completed Date: Call Canceled: 01/05/2024 15:53
+Disposition: DISREGARD CALL
+CFS #: 24010510 Case #: Priority:
+Nature: FIRE ALARM How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: BEVER, BRITTANY Dispatched By: Fire Type:
+Completed By: ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 01/05/2024 15:52 Permit #:
+Business:
+NO CONTACT WITH KEYHOLDER; MATT WILSHIRE
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: , MARK WITH SUMMITT Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+01/05/2024 15:52:29 BEVER, BRITTANY 286E toned out.
+01/05/2024 15:52:36 BEVER, BRITTANY UPDATE TO CANCEL :
+01/05/2024 15:52:53 BEVER, BRITTANY THE ALARM COMPANY CALLED BACK AND ADVISED TO
+CANCEL
+01/05/2024 15:53:02 BEVER, BRITTANY 286E toneout canceled.
+01/05/2024 15:53:35 BEVER, BRITTANY Call cancelled. THE ALARM COMPANY CALLED BACK AND
+ADVISED THAT WE CAN CANCEL THE FIRE DEPARTMENT FOR
+THIS
+Total Notes: 5
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 01/05/2024 15:52 Toneout 2: 01/05/2024 15:52 Toneout 3:
+Ack. Date: Cancel Date: 01/05/2024 15:53 Toneout 1 By: BEVER, BRITTANY
+Total Toneouts: 1
+Print Date: Jan 19 2024 - 07:22:17 Faulkner County Sheriffs Office, 24010510
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

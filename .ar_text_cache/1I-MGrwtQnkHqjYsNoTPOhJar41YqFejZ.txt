@@ -1,0 +1,56 @@
+Call Details Report For CFS # 25-0406178
+
+CFS Number
+25-0406178
+
+Incident Type
+FIRE-FIRE ALARM
+
+Caller Name
+
+Location
+161 SKUNK HOLLOW RD, FAULKNER COUNTY
+
+Initial Statement
+
+AA- ZONE 40 POOL STATION AUDIBLE ALARM
+ZONE 52 - LOBBY POOL STATION
+
+NEG CONTACT WITH K/H
+
+Notes
+4/23/2025 9:03:57 AM by: vrodriguez
+FIRE INCIDENT - MAINTAINED MAN SET IT OFF
+
+Unit Call Times
+
+Unit ID Date/Time
+286E1 4/23/2025 9:02:14 AM
+286E1 4/23/2025 9:03:57 AM
+
+Dispositions Assigned to This Call
+
+When Assigned
+4/23/2025 9:03:57 AM
+
+Disposition
+FIRE INCIDENT
+
+Date/Time
+4/23/2025 9:02 AM
+
+Primary Unit
+286E1
+
+Caller Phone
+8002579425
+
+Status
+DISPATCHED
+
+CLEARED
+
+Assigned By
+vrodriguez
+
+5/22/2025 11:07:25 AM

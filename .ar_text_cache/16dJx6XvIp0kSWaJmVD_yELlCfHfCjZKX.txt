@@ -1,0 +1,84 @@
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 1 of 2
+
+Call Information
+
+Received Date: 04/19/2023 19:53 Dispatch Date: 04/19/2023 20:02 EnRotue Date: 04/19/2023 20:02
+Arrived Date: 04/19/2023 20:05 Completed Date: 04/19/2023 20:13 Call Canceled:
+Disposition: HANDLED BY OFFICER-NO REPORT
+
+CFS #: 703471 Case #: Priority:
+
+Nature: WELFARE CHECK How Received:
+
+Initial Nature: Alarm:
+
+Call Taken By: STARK, CARRIE Dispatched By: STARK, CARRIE Fire Type:
+
+Completed By: GILLIAM, KELLI ReOpened By: ReOpened Reason:
+
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+
+Business:
+
+HASN'T HEARD FROM HER DAUGHTER EEE IN OVER A WEEK AND SHE ISN'T ABLE TO GET ANYONE AT THE FACILITY TO
+ANSWER HER CALLS.
+
+1 CALLED LITTLE CREEK AND ATTEMPTED TO FORWARD THE MOTHER'S INFORMATION TO THEM SO THAT A NURSE COULD GIVE HER A
+CALL, BUT WAS GIVEN SEVERAL DIFFERENT REASONS WHY THEY COULD NOT CONTACT HER.
+
+THE MOTHER JUST WANTS TO KNOW THAT HER DAUGHTER IS OKAY
+
+Incident Information
+
+Common Name: LITTLE CREEK BEHAVIORAL Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: FAULKNER COUNTY, AR Intersection:
+ESN: Lat/Lon:
+
+Caller Information
+
+Name: SCHALCH, ASHLEY Address:
+Phone #: FP CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+04/19/2023 20:13:18 GILLIAM, KELLI F16 made contact with nurse janelle who will reach out to the
+mother
+Total Notes: 1
+Units
+Unit Number _ Unit Name Department Mileage Start_ Mileage End ___ Primary Unit
+F16 DALTON, ANDREW FCSO 0 0 YES
+Dispatched Date: 04/19/2023 20:02 EnRoute Date: 04/19/2023 20:02 Arrived Date: 04/19/2023 20:05
+Transport Start: Transport End: Completed Date: 04/19/2023 20:13
+Disposition Date: Call Canceled: Back At Station:
+Total Units: 1
+Print Date: May 17 2023 - 14:49:31 Faulkner County Sheriffs Office, 703471
+
+Powered by iSOMS(c) Driven by Values CAD_Details KAKILCREASE
+
+
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 2 of 2
+
+Radio Traffic
+
+Traffic Date Unit # Unit Name Traffic
+
+04/19/2023 20:05 F16 DALTON, ANDREW ON SCENE
+
+04/19/2023 20:13 F16 DALTON, ANDREW ASSIGNMENT FINISHED
+Complete all units.
+
+04/19/2023 20:02 F16 DALTON, ANDREW DISPATCHED
+
+04/19/2023 20:02 F16 DALTON, ANDREW UNIT ENROUTE
+
+Total Radio Traffic: 4
+
+Print Date: May 17 2023 - 14:49:31 Faulkner County Sheriffs Office, 703471
+Powered by iSOMS(c) Driven by Values CAD_Details KAKILCREASE

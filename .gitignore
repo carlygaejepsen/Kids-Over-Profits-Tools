@@ -3,3 +3,6 @@ settings.json
 .env
 .venv/
 __pycache__/
+
+# Scraper launcher local state (last-run timestamps)
+scraper_launcher_state.json

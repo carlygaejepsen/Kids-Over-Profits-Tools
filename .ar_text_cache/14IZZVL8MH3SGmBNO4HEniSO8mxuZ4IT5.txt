@@ -1,0 +1,73 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 12/25/2023 17:56 Dispatch Date: 12/25/2023 17:59 EnRotue Date: 12/25/2023 17:59
+Arrived Date: 12/25/2023 18:02 Completed Date: 12/25/2023 18:03 Call Canceled:
+Disposition: HANDLED BY FIRE DEPT
+CFS #: 23120849 Case #: Priority:
+Nature: How Received:
+Initial Nature: Alarm:
+Call Taken By: HUMPHREY, Dispatched By: HUMPHREY, CHRISTOPHER Fire Type:
+CHRISTOPHER
+Completed By: HUMPHREY, ReOpened By: ReOpened Reason:
+CHRISTOPHER
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 12/25/2023 17:57 Permit #:
+Business:
+MAIN RISER WATER FLOW / FIRE ALARM
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+12/25/2023 17:57:58 HUMPHREY, 286E toned out.
+CHRISTOPHER
+12/25/2023 17:59:38 HUMPHREY, LITTLE CREEK BEHAVIORAL HEALTH
+CHRISTOPHER
+12/25/2023 17:59:46 HUMPHREY, 286E acknowledged toneout.
+CHRISTOPHER
+12/25/2023 18:02:13 HUMPHREY, FIRE ALARM CAN CANCEL / FALSE ALARM WITH PROPER
+CHRISTOPHER CODE GIVEN
+12/25/2023 18:02:43 HUMPHREY,
+CHRISTOPHER
+12/25/2023 18:03:02 HUMPHREY, Complete all units. FALSE ALARM
+CHRISTOPHER
+Total Notes: 6
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+286E1 286 E 1 286E 0 0 YES
+Dispatched Date: 12/25/2023 17:59 EnRoute Date: 12/25/2023 17:59 Arrived Date: 12/25/2023 18:02
+Transport Start: Transport End: Completed Date: 12/25/2023 18:03
+Disposition Date: Call Canceled: Back At Station:
+Print Date: Jan 19 2024 - 07:17:01 Faulkner County Sheriffs Office, 23120849
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+Total Units:1
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+12/25/2023 17:59 286E1 286 E 1 UNIT DISPATCHED
+12/25/2023 17:59 286E1 286 E 1 UNIT ENROUTE
+Total Radio Traffic:2
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 12/25/2023 17:57 Toneout 2: 12/25/2023 17:57 Toneout 3:
+Ack. Date: 12/25/2023 17:59 Cancel Date: Toneout 1 By: HUMPHREY,
+CHRISTOPHER
+Total Toneouts: 1
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+12/25/2023 17:59:57 286 EAST FIRE DEPARTMENT 286E1 No
+Print Date: Jan 19 2024 - 07:17:01 Faulkner County Sheriffs Office, 23120849
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

@@ -1,0 +1,264 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 01/08/2023 19:31 Dispatch Date: 01/08/2023 19:38 EnRotue Date: 01/08/2023 19:38
+Arrived Date: 01/08/2023 19:48 Completed Date: 01/08/2023 22:15 Call Canceled:
+Disposition: INC REPORT TAKEN
+CFS #: 692572 Case #: Priority:
+Nature: WELFARE CHECK How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: BEVER, BRITTANY Dispatched By: BEVER, BRITTANY Fire Type:
+Completed By: HARGROVE, KYLIE ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+Business:
+THE FACILITY CALLED THE PARENTS AND ADVISED THAT THEIR DAUGTHER HAD BEEN SEXUALLY ASSAULTED:
+CALLER IS FROM COLORADO: DAUGHTERS NAME IS ....
+SPOKE TO ONE OF THE NURSES AT THE FACILITY. THEY ARE CLOSED AND NOT ANSWERING...
+CALLER HAS NOT TALKED TO THE DAUGHTER... CALLER IS GETTING A PLANE
+CALLER IS WANTING TO SPEAK TO HIS DAUGHTER
+THE PHONE NUMBER THAT CALLED THE CALLER IS
+CAN YOU PLEASE MAKE CONTACT WITH THE CALLER
+Incident Information
+Common Name: LITTLE CREEK BEHAVIORAL HEALTH Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: FAULKNER COUNTY, AR Intersection:
+ESN: Lat/Lon:
+Caller Information
+Name: Address:
+Phone #: CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+01/08/2023 19:36:12 BEVER, BRITTANY CALLER ADVISED THAT THE FEMALE HAD BEEN ASSAULTED
+AND HUNG UP.
+PER THE CALLER ADVISED THAT IF THE PATIENT IS CRYING
+THEY HAVE TO HANG UP THE PHONE FOR HER MENTAL
+HEALTH
+01/08/2023 19:56:47 ALARCON, PEARLY 10-50/4
+01/08/2023 20:10:48 BEVER, BRITTANY CO NTACT INFORMATION FOR LITTLE CREEK BEHAVIORAL
+HEALTH: COLEMAN JASMINE
+MARTIN
+01/08/2023 20:13:38 BEVER, BRITTANY I CALLED JASMINE AT :
+THERE IS A QUADRIAN COLEMAN IS GOING TO THE FRONT:
+WALKING TO THE FRONT OF THE BUILDING...
+Print Date: Jan 23 2023 - 08:29:33 Faulkner County Sheriffs Office, 692572
+Powered by iSOMS(c) Driven by Values CAD_Details KAKILCREASE
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Notes
+Entry Date Entry By Note Type Notes
+01/08/2023 20:44:56 BEVER, BRITTANY ALL UNITS 10-50
+Total Notes: 5
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+F57 GARDNER, JOSH FCSO 0 0 YES
+Dispatched Date: 01/08/2023 19:38 EnRoute Date: 01/08/2023 19:38 Arrived Date: 01/08/2023 19:48
+Transport Start: Transport End: Completed Date: 01/08/2023 22:15
+Disposition Date: Call Canceled: Back At Station:
+F10 HORTON, MATT FCSO 0 0 NO
+Dispatched Date: 01/08/2023 20:06 EnRoute Date: 01/08/2023 20:06 Arrived Date: 01/08/2023 20:11
+Transport Start: Transport End: Completed Date: 01/08/2023 21:05
+Disposition Date: Call Canceled: Back At Station:
+Total Units:2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+01/08/2023 20:11 F10 HORTON, MATT ON SCENE
+01/08/2023 19:48 F57 GARDNER, JOSH ON SCENE
+01/08/2023 20:06 F10 HORTON, MATT UNIT ENROUTE
+01/08/2023 20:06 F10 HORTON, MATT DISPATCHED
+01/08/2023 22:15 F57 GARDNER, JOSH ASSIGNMENT FINISHED
+Complete all units.
+01/08/2023 21:05 F10 HORTON, MATT ASSIGNMENT FINISHED
+01/08/2023 19:38 F57 GARDNER, JOSH UNIT ENROUTE
+01/08/2023 19:38 F57 GARDNER, JOSH DISPATCHED
+Total Radio Traffic:8
+Case Numbers
+Entry Date Case Number Department
+01/08/2023 22:08:55 23000071 FAULKNER COUNTY SO
+Print Date: Jan 23 2023 - 08:29:33 Faulkner County Sheriffs Office, 692572
+Powered by iSOMS(c) Driven by Values CAD_Details KAKILCREASE
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23000071 Case Status: CLOSED
+Page 1 of 4
+Case#: 23000071 Report Date: 01/08/2023 19:48
+Report By: Deputy Pt. Joshua Gardner - (F57) Arrival Time: 19:48
+Case Type: SEX CRIME UNDER 18 Reporting Zone: D
+Business: LITTLE CREEK BEHAVIORAL HEALTH Occurred From: 11/01/2022 00:00
+Address: 161 SKUNK HOLLOW RD Occurred Through: 01/08/2023 19:48
+Intersection: Reportable IBRS: Yes
+City/State/Zip: FAULKNER COUNTY, AR 72032 School:
+Lat/Long: Case Status: CLOSED
+Case Type: SEX CRIME UNDER 18 File / Cad ID:
+Assigned To: Inv. Brittany Harmon - (Cd7) Assigned Date: 01/09/2023
+Cleared By: Inv. Brittany Harmon - (Cd7) Cleared Date: 01/13/2023
+IBR Clear Code: Clery Related: NO
+UCR / Offenses
+UCR: Rape - [11A] Status:Completed
+Charge: RAPE-INTERCOURSE-UNDER 16-UNABLE TO CONS
+Statute: Charge Code:514103A-5
+Location: Hospital
+Weapon: None
+Possibly Using: Not Applicable Criminal Activity:None/unknown
+Bias: None Method Of Entry:
+Gang Name: Home Invasion:
+Victims
+Victim Type: Individual
+Name: Juvenile DOB: Race/Sex:
+Address: Current Age:Newborn 1-6 Days Old Height:
+City/State: Age:15 Weight:
+Email: Hair Color: AUB Eyes:
+Home Phone: Work: Cell: DL#:
+Resident: NON-RESIDENT Ethnicity:HISPANIC OR LATINO
+Occupation: Military:
+Email: Narcan Dose: 0 SSN:
+Employer:
+Offender / Suspect
+Name UNIDENTIFIED, UNIDENTIFIED DOB: Race/Sex: B/M
+Address: Current Age: Height:
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23000071 Case Status: CLOSED
+Page 2 of 4
+Offender / Suspect
+City/State: Age:0 Weight:
+Resident: UNKNOWN Hair Color: Eyes: BRO
+Ethnicity: UNKNOWN Cell Phone: SSN:
+Home Phone: Work Phone: DL#:
+Occupation: Narcan Dose: 0
+Employer:
+Others Involved
+Name: COLEMAN, QUINDARIEAN How Involved: EMPLOYEE
+Address: Home:
+City/State: Work:
+Race/Sex: Cell:
+DOB: DL#: /
+Email: Age At Report: 0
+Name: HARRIS-SPEED, TERRIKA How Involved: EMPLOYEE
+Address: Home:
+City/State: Work:
+Race/Sex: Cell:
+DOB: DL#: /
+Email: Age At Report: 0
+Name: JONES, NEDRA How Involved: ADMINISTRATOR
+Address: Home:
+City/State: Work:
+Race/Sex: Cell:
+DOB: DL#: /
+Email: Age At Report: 0
+Name: How Involved: PARENT
+Address: Home:
+City/State: Work:
+Race/Sex: Cell:
+DOB: DL#: /
+Email: Age At Report: 0
+Complainant
+Name: Juvenile DOB: Race/Sex:
+Address: Current Age: Height:
+City/State: Age: 0 Weight:
+Email: Hair Color: Eyes:
+Home: Cell Phone: DL#:
+Occupation: Work Phone:
+Employer:
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23000071 Case Status: CLOSED
+Page 3 of 4
+Complainant
+Narrative
+On 01/08/2023 at 1935 hours I, Deputy J. Gardner responded to 161 Skunk Hollow Road in reference to an alleged
+sexual assault of a juvenile (Victim). This information was received via telephone from , the
+juvenile victim’s brother due to a language barrier with the juvenile's mother, (Other Person). Mrs.
+stated that while on the phone with her daughter she was told about a sexual incident that had occurred with
+an unnamed male staff member (Offender).
+Upon arrival at the facility I attempted contact with employees at the front entrance, however it was approximately 10
+minutes before anyone came to the front reception area. I made contact with Quindariean Coleman (Other Person),
+an employee, who stated he had been told about the incident and knew the incident was being looked into by the
+directors and other staff members of the facility. Mr. Coleman stated the juvenile had not been clear on the details of
+the incident and that it had been looked into previously as well.
+I then made contact with Nedra Jones (Other Person), Director of Nursing, via telephone. Ms. Jones advised the staff
+had been informed of the incident on this date at approximately 1800 hours and had made all parties of the facility
+aware of the information. I advised Ms. Jones that an accusation needed to be reported as soon as safely possible to
+do so, to which she responded they were going to contact the Child Abuse Hotline in the morning. I advised Ms.
+Jones that the local law enforcement agency needed to be made aware of the accusation as well due to a possible
+criminal act having been committed. Ms. Jones said they had 24 hours in which to report the incident. I advised her
+that was incorrect information. Ms. Jones stated she and Jaylen Perkins, another employee, were going to be
+handling the situation. I made contact with Sergeant C. Pruett of the Faulkner County Sheriff’s Office Criminal
+Investigation Division and advised him of the situation. After gathering all information at the time Sergeant Pruett
+requested a written statement from the juvenile and the initial staff member who took the allegation information.
+At that time Corporal Horton, members of Pafford Emergency Medical Services, and I requested to speak with the
+juvenile. The juvenile was brought to a meeting area where Pafford medics were able to speak with and evaluate the
+juvenile. While speaking with the juvenile it was determined the incident had occurred previously and she did not
+feel unsafe due not seeing the staff member recently and being unsure if he still currently is employed there. The
+juvenile stated that she considered not telling anyone so she could "just forget about it". The juvenile stated that
+after thinking about it recently she felt that it was wrong and needed to tell someone. The juvenile stated that she had
+not felt safe to talk about it and that she was unsure if she wanted to hold the person accountable for their actions.
+The juvenile then gave a verbal statement of the encounter. The juvenile stated she had gone to the bathroom after
+her night time medications. The juvenile stated that upon exiting the bathroom she saw the male standing in the
+area, like he was waiting on her. The juvenile stated she and the male had a brief conversation and stated "I kinda
+came onto him". The juvenile stated that she then kissed him and he pushed her back against a counter in the area.
+The juvenile stated she lifted herself onto the counter and pulled down her pants. The juvenile stated the male then
+"fingered" her until she stated she was uncomfortable. The juvenile stated the male stopped and she pulled her
+pants back up. The juvenile stated the male then said "we still have time". The juvenile stated that she then left the
+area. The juvenile stated there was no further interactions with the male other than the male asking days later "Are
+we good?" to which she responded "Yeah, we good". The juvenile stated there had been no threats or been told not
+to talk about the incident. The juvenile stated the incident occurred before Christmas but is unsure of what day due
+to being "locked up" in the facility. The juvenile stated she did not know the male's name. The juvenile described the
+male as a black male in his 20s, height of 71 or 72 inches, a goatee, always wearing Bass Pro hats, and a jacket. The
+juvenile stated that for multiple days after the incident she would ask herself "Did it really happen?”. The juvenile
+provided a written statement to that effect.
+I spoke with Terrika Harris-Speed (Other Person) of Little Creek Behavioral Health Center, who stated at
+approximately 1715 hours on this date the juvenile asked to speak with her in private. Harris-Speed stated the
+
+Faulkner County Sheriffs Office ** Juvenile Involved **
+Incident Report Report Status: FILED IN RECORDS
+Case Number: 23000071 Case Status: CLOSED
+Page 4 of 4
+Narrative
+juvenile was unsure of how to tell her about the situation. Harris-Speed stated the juvenile then told her something
+sexual happened to her and that it was a staff member. Harris-Speed stated the juvenile refused to tell her which staff
+member it was. Harris-Speed stated the juvenile told her that she waited so long to tell so that the camera system
+would not have the recordings anymore. Harris-Speed stated she asked the juvenile again about what happened and
+the juvenile refused to talk about it and stated she was ready to go home. Harris-Speed said that she went and got a
+witness statement for the juvenile and then came back to speak with her. Harris-Speed stated she and Nurse Kierra
+were there talking with the juvenile explaining she would not get into trouble. Harris-Speed stated the juvenile told
+her she had woken up to use the bathroom and asked staff to open the door and upon coming out the male was
+standing in front of the door. Harris-Speed stated the juvenile then began asking her if she knew why she was in the
+facility. Harris-Speed stated the juvenile began telling her that she was promiscuous and liked messing with older
+men. Harris-Speed said the juvenile then resumed the story of the alleged assault by saying she went up to the male
+and kissed him and then pulled down her pants. Harris-Speed said she then asked the juvenile if there had been any
+penetration to which the juvenile responded, “only with his finger”. Harris-Speed stated the juvenile that it was
+consensual, and she allowed him to do it. Harris-Speed stated she told the juvenile that she was unable to give
+consent and it was not her fault this had happened. Harris-Speed stated she asked again, and the juvenile just stated
+she knows who it was. Harris-Speed stated the juvenile told her the incident occurred during Christmas break or just
+before. Harris-Speed stated that she then gave the juvenile a break and upon returning asked about when the
+incident occurred and was told that it happened in November but was unsure of the date. Harris-Speed stated that is
+when the juvenile began requesting a phone call with her mother. Harris-Speed stated the juvenile began telling her it
+was because of that incident her program went “down the drain” and that it triggered her due to an incident that
+occurred when she was 4 years old but waited approximately 10 years to tell anyone about what had occurred. Harris-
+Speed stated the juvenile then began telling her the whole situation was a blur and she did not remember who it was.
+Harris-Speed said that during the phone call she told her mother that someone had blocked the door, picked her up,
+put her on the counter, and fingered her. Harris-Speed stated that at that moment everyone began yelling and the
+phone call had to be ended. Harris-Speed provided a written statement to that effect.
+Staff members on scene were asked if the described individual matched any of the employees that would have been
+working between November of 2022 and this date. None of the staff members provided an identity for the individual.
+I contacted Sergeant Pruett and advised him of the information that had been gathered. I was advised to take all the
+information, contact the Crimes Against Children Division, and investigators would set up interview times on
+01/09/2023.
+I provided Little Creek Behavioral Health Center with the report number for this incident. I then contacted
+and advised her of the current situation. I provided her with the report number for this incident. A Crimes Against
+Children report was completed and submitted with number 2186625 assigned.
+GARDNER, JOSHUA 1/9/2023, 3:10:06 AM
+Reporting Officer Approved By Officer
+Deputy Pt. Joshua Gardner - (F57) Sgt. Zachary Cooley - (F6)
+Reported On: 01/08/2023 19:48 Approved On: 01/11/2023 09:57
+FILED IN RECORDS
+Case Status: CLOSED
+Administrative Use Only - IBRS Date
+143331

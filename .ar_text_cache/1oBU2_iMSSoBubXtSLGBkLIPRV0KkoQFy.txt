@@ -1,0 +1,54 @@
+Conway Emergency Operations Center
+1111 Main Street Conway , AR 72032
+OFFICIAL USE ONLY
+DO NOT DISSEMINATE
+Call Taker CFS Report
+03 vrodriguez CFS # - 25-0403685
+Base Information
+Call When 04/14/2025 13:31:15 Create When04/14/2025 13:33:23Close When 04/14/2025 14:01:40Disposition UTL - UNABLE TO LOCATE
+Priority JUST OCCURRED Alarm 1 Disciplines L Assigned Disciplines L Assigned Disciplines NP L
+CallType CHECK ON THE WELFARE EDL FDL LDL Primary Unit F26
+Location of Occurrence
+Address 161 SKUNK HOLLOW RD, FAULKNER COUNTY Zip 72032 County
+Landmark LITTLE CREEK BEHAVIORAL HEALTH ESN 316 Map Grid
+EMS/Rescue PAFFORD EMS Fire HWY 286 EAST FIRE Law FAULKNER COUNTY SHERIFF
+Area FCSO-Delta District EMS Tract 2 Fire Tract 316-B
+Grid Law Tract Report Tract Work Area
+Cross Street High BREWER RD Cross Street Low SOUTHERN OAKS RD
+From-To Directions
+Caller
+Address Landmark
+Name RANGO, LARRY Caller Phone 5015147308 How Received PHONE
+Dispositions
+Disposition Assigned When User InActive While Closed
+UTL - UNABLE TO LOCATE 04/14/2025 14:01:40 dbrabham
+Call Types
+Call Type Assigned When User Assigned While Closed InActive
+CHECK ON THE WELFARE 04/14/2025 13:33:23 vrodriguez
+Unit Times
+Unit Department When Status | Notes User
+F26 (RIVAS, JUAN) FCSO 04/14/2025 13:34:55 ENROUTE dbrabham
+F26 (RIVAS, JUAN) FCSO 04/14/2025 13:36:53 ARRIVED dbrabham
+F14 (MORGAN, CODY) FCSO 04/14/2025 13:38:57 ARRIVED dbrabham
+F14 (MORGAN, CODY) FCSO 04/14/2025 14:01:28 CLEARED dbrabham
+F26 (RIVAS, JUAN) FCSO 04/14/2025 14:01:40 CLEARED dbrabham
+Incident Locations
+Address: LITTLE CREEK BEHAVIORAL HEALTH | 161 SKUNK HOLLOW RD, FAULKNER COUNTY User: vrodriguez
+When: 04/14/2025 13:33:23 Latitude: 35.0679479268981 Longitude: -92.3819024968872 Source:Landmark InActive:
+CAD Report 44 - tbutler Page 1 Of 2 04/17/2025 10:42
+
+Call Taker CFS Report
+03 vrodriguez CFS # - 25-0403685
+Caller Phones
+Caller Phone When User Caller Phone When User
+5015147308 04/14/2025 13:33:23 vrodriguez
+Caller Names
+Caller Name When User Caller Name When User
+RANGO, LARRY 04/14/2025 13:33:23 vrodriguez
+Comment 04/14/2025 13:33:23 04/14/2025 13:33:23
+PR ADVD THAT HE SAW A YOUNG B/M WEARING BLACK SHORTS WHITE SHIRT WITH BLACK LETTERS/ COME OUT OF THE WOODS
+EB ON BREWER RD - PR THOUGHT HE MIGHT BE FROM THIS LOCATION
+Notes
+dbrabham 04/14/2025 13:49:55 E,F,L,R,O
+HAVE CHECKED THE AREA - ARE GOING TO LITTLE CREEK TO MAKE CONTACT WITH SOMEONE THERE ABOUT THIS
+CAD Report 44 - tbutler Page 2 Of 2 04/17/2025 10:42

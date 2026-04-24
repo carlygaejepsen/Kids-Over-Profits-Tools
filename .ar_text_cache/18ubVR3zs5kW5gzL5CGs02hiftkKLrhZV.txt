@@ -1,0 +1,76 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 02/07/2024 14:40 Dispatch Date: 02/07/2024 14:44 EnRotue Date: 02/07/2024 14:44
+Arrived Date: 02/07/2024 14:44 Completed Date: 02/07/2024 15:13 Call Canceled:
+Disposition: INC REPORT TAKEN
+CFS #: 24020642 Case #: Priority:
+Nature: REPORT-SUPPLEMENT How Received: AGENCY REQUESTED
+Initial Nature: Alarm:
+Call Taken By: ALARCON, PEARLY Dispatched By: ALARCON, PEARLY Fire Type:
+Completed By: ALARCON, PEARLY ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+Business:
+AN AGENCY IN TEXAS IS REPORTING AS MISSING, BUT WE HAD HIM AS REPORTED MISSING FROM LITTLE CREEK
+BEHAVIOURAL / 4/3/23, ORIGINAL REPORT: 23000141. H:501/W:187 HAIR:BLACK/EYES:BROWN, W/M
+MISC: SUBJ RAN AWAY FROM LITTLE CREEK BEHAVAIOURAL HOSPITAL
+PER CID1, NIC:M727323258 FOR THE MISSING PERSON ENTRY FOR CAN BE DELETED, THE AGENCY IN TEXAS WILL
+ENTER HIM. CD1 WILL NOTIFY LITTLE CREEK BEHAVIOURAL.
+THIS CALLCARD IS THE LOG FOR THE DELETION.
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: , CD1 Address:
+Phone #: CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+02/07/2024 14:44:24 ALARCON, PEARLY
+02/07/2024 14:49:11 ALARCON, PEARLY CHECK *** ATTACHMENT *** TAB FOR DELETION
+INFORMATION. IT HAS BEEN CLEARED FROM ACIC/NCIC. THE
+OTHER JUVENILE INVOLVED IN THIS REPORT NUMBER IS
+*STILL* ENTERED A MISSING.
+02/07/2024 15:00:39 ALARCON, PEARLY
+02/07/2024 15:00:46 ALARCON, PEARLY
+02/07/2024 15:13:31 ALARCON, PEARLY
+Total Notes: 5
+Print Date: Mar 05 2024 - 06:35:47 Faulkner County Sheriffs Office, 24020642
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+R2 ALARCON,PEARLY FCSO 0 0 NO
+Dispatched Date: 02/07/2024 14:44 EnRoute Date: 02/07/2024 14:44 Arrived Date: 02/07/2024 14:44
+Transport Start: Transport End: Completed Date: 02/07/2024 15:00
+Disposition Date: Call Canceled: Back At Station:
+F15 DEGOOD, CRAIG FCSO 0 0 YES
+Dispatched Date: 02/07/2024 14:55 EnRoute Date: 02/07/2024 14:55 Arrived Date: 02/07/2024 15:00
+Transport Start: Transport End: Completed Date: 02/07/2024 15:13
+Disposition Date: Call Canceled: Back At Station:
+Total Units:2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+02/07/2024 14:44 R2 ALARCON,PEARLY UNIT DISPATCHED
+02/07/2024 14:44 R2 ALARCON,PEARLY UNIT ENROUTE
+02/07/2024 14:55 F15 DEGOOD, CRAIG UNIT DISPATCHED
+02/07/2024 14:55 F15 DEGOOD, CRAIG BACKUP-TO-PRIMARY-TEN-CODE
+F15 made primary.
+02/07/2024 14:55 F15 DEGOOD, CRAIG UNIT ENROUTE
+Total Radio Traffic:5
+Attachments
+Entry Date Entry By Category SubCategory File Name
+02/07/2024 ALARCON, PEARLY IMG_0001.pdf
+Total Attachments: 1
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+02/07/2024 14:44:24 FAULKNER COUNTY SO R2 No
+02/07/2024 14:59:30 24000289 FAULKNER COUNTY SO F15 No
+Print Date: Mar 05 2024 - 06:35:47 Faulkner County Sheriffs Office, 24020642
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

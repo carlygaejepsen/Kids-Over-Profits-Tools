@@ -1,0 +1,58 @@
+Conway Emergency Operations Center
+1111 Main Street Conway , AR 72032
+OFFICIAL USE ONLY
+DO NOT DISSEMINATE
+Call Taker CFS Report
+05 mjackson CFS # - 25-0402942
+Base Information
+Call When 04/11/2025 19:23:04 Create When04/11/2025 19:25:38Close When 04/11/2025 19:58:23Disposition FIRE INCIDENT
+Priority PRIORITY 1 FIRE Alarm 3 Disciplines E,F,R Assigned Disciplines F Assigned Disciplines NP F
+CallType FIRE-FIRE ALARM EDL FDL LDL Primary Unit 286E1
+Location of Occurrence
+Address 161 SKUNK HOLLOW RD, FAULKNER COUNTY Zip 72032 County
+Landmark LITTLE CREEK BEHAVIORAL HEALTH ESN 316 Map Grid
+EMS/Rescue PAFFORD EMS Fire HWY 286 EAST FIRE Law FAULKNER COUNTY SHERIFF
+Area FCSO-Delta District EMS Tract 2 Fire Tract 316-B
+Grid Law Tract Report Tract DELTA Work Area FCSO-Delta
+Cross Street High BREWER RD Cross Street Low SOUTHERN OAKS RD
+From-To Directions
+Caller
+Address Landmark
+Name 681 Caller Phone 8004321429 How Received PHONE
+Dispositions
+Disposition Assigned When User InActive While Closed
+FIRE INCIDENT 04/11/2025 19:58:22 ameurer
+Call Types
+Call Type Assigned When User Assigned While Closed InActive
+FIRE-FIRE ALARM 04/11/2025 19:25:38 mjackson
+Unit Times
+Unit Department When Status | Notes User
+286E1 VOL 04/11/2025 19:25:46 DISPATCHED mjackson
+286E1 VOL 04/11/2025 19:27:27 ENROUTE ameurer
+286E1 VOL 04/11/2025 19:33:04 ARRIVED ameurer
+286E1 VOL 04/11/2025 19:58:22 CLEARED ameurer
+Incident Locations
+Address: LITTLE CREEK BEHAVIORAL HEALTH | 161 SKUNK HOLLOW RD, FAULKNER COUNTY User: mjackson
+When: 04/11/2025 19:25:38 Latitude: 35.0679479268981 Longitude: -92.3819024968872 Source:Landmark InActive:
+Caller Phones
+Caller Phone When User Caller Phone When User
+CAD Report 44 - tbutler Page 1 Of 2 04/17/2025 10:43
+
+Call Taker CFS Report
+05 mjackson CFS # - 25-0402942
+8004321429 04/11/2025 19:25:38 mjackson
+Caller Names
+Caller Name When User Caller Name When User
+681 04/11/2025 19:25:38 mjackson
+Comment 04/11/2025 19:25:38 04/11/2025 19:25:38
+AOA: BUILDING A, B WING PULLED BY NURSE STATION 30
+NO CONTACT HAS BEEN MADE WITH KEY HOLDER
+AJ GUILD 5018000506
+Notes
+ameurer 04/11/2025 19:34:29 E,F,L,R,O
+NO AUDIBLE ALARM .. WATER FLOW PRESENT .. FD OUT INVESTIGATING
+ameurer 04/11/2025 19:47:38 E,F,L,R,O
+286E FD ADV ALARM PANEL RESET .. WAITING ON MAINTENANCE
+ameurer 04/11/2025 19:58:22 E,F,L,R,O
+FIRE INCIDENT - 286E FD ADV TECHNICIAN IS THERE TO RESET THE SYSTEM .. ALL FD UNITS CLEAR
+CAD Report 44 - tbutler Page 2 Of 2 04/17/2025 10:43

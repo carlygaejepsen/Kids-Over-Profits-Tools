@@ -1,0 +1,62 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 03/06/2024 11:31 Dispatch Date: 03/06/2024 11:34 EnRotue Date: 03/06/2024 11:34
+Arrived Date: 03/06/2024 11:42 Completed Date: 03/06/2024 11:45 Call Canceled:
+Disposition: HANDLED BY FIRE DEPT
+CFS #: 24030679 Case #: Priority:
+Nature: FIRE ALARM How Received:
+Initial Nature: Alarm:
+Call Taken By: BUTLER, TWYLA Dispatched By: BUTLER, TWYLA Fire Type:
+Completed By: BUTLER, TWYLA ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 03/06/2024 11:33 Permit #:
+Business:
+KITCHEN SMOKE DETECTOR.
+MATT WILSHIRE. 501-249-7731
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: SUMMITT ALARMS, JAMES Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+03/06/2024 11:33:00 BUTLER, TWYLA 286E toned out.
+03/06/2024 11:34:20 BUTLER, TWYLA 286E acknowledged toneout.
+03/06/2024 11:42:43 STARK, CARRIE
+03/06/2024 11:45:00 BUTLER, TWYLA Complete all units. FALSE ALARM
+03/06/2024 12:18:04 STARK, CARRIE TIMES SENT
+Total Notes: 5
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+286E1 286 E 1 286E 0 0 YES
+Dispatched Date: 03/06/2024 11:34 EnRoute Date: 03/06/2024 11:34 Arrived Date: 03/06/2024 11:42
+Transport Start: Transport End: Completed Date: 03/06/2024 11:45
+Disposition Date: Call Canceled: Back At Station:
+Total Units:1
+Print Date: Mar 18 2024 - 15:49:30 Faulkner County Sheriffs Office, CFS: 24030679 10-67A
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+03/06/2024 11:34 286E1 286 E 1 UNIT DISPATCHED
+03/06/2024 11:34 286E1 286 E 1 UNIT ENROUTE
+Total Radio Traffic:2
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 03/06/2024 11:33 Toneout 2: 03/06/2024 11:33 Toneout 3:
+Ack. Date: 03/06/2024 11:34 Cancel Date: Toneout 1 By: BUTLER, TWYLA
+Total Toneouts: 1
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+03/06/2024 11:34:21 286 EAST FIRE DEPARTMENT 286E1 No
+Print Date: Mar 18 2024 - 15:49:30 Faulkner County Sheriffs Office, CFS: 24030679 10-67A
+Powered by iSOMS(c) Driven by Values CAD_Details CMHOPKINS

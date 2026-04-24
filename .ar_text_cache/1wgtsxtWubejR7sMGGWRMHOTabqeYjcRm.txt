@@ -1,0 +1,121 @@
+«
+
+&,
+
+KNER Co
+» Y
+
+2)
+% x“
+Pepi OF
+
+Call Information
+
+Received Date:
+Arrived Date:
+
+08/29/2024 13:56
+
+FAULKNER COUNTY SHERIFFS OFFICE
+
+Call for Service Card
+
+EnRoute Date:
+Call Canceled:
+
+Dispatch Date:
+Completed Date:
+
+Page 1 of 2
+
+08/29/2024 14:02
+
+Disposition: DISREGARD CALL
+CFS #: 24083646 Case #: Priority:
+Nature: FIRE ALARM How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: BRABHA\M, DIXIE Dispatched By: Fire Type:
+Completed By: ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 08/29/2024 14:00 Permit #:
+Business:
+
+AA: GYM FRONT DOOR PULL STATION
+
+KH: MATT WILKSHIRE 501-249-7731
+
+CONTACT WILL BE ATTEMPTED AFTER WE ARE NOTIFIED
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682371,
+Caller Information
+Name: , SUMMIT Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+08/29/2024 14:00:38 BRABHAM, DIXIE 286E toned out.
+08/29/2024 14:01:16 BRABHAM, DIXIE 286E acknowledged toneout.
+08/29/2024 14:02:35 BRABHAM, DIXIE Complete all units.
+08/29/2024 14:02:35 BRABHAM, DIXIE Call cancelled.
+
+Total Notes: 4
+
+Units
+Unit Number _ Unit Name Department Mileage Start_ Mileage End _ Primary Unit
+286E1 286 E 1 286E 0 0 NO
+Dispatched Date: 08/29/2024 14:00 EnRoute Date: 08/29/2024 14:00 Arrived Date:
+Transport Start: Transport End: Completed Date:
+
+Disposition Date:
+
+Print Date: Sep 19 2024 - 12:37:37
+Powered by iSOMS(c) Driven by Values
+
+Call Canceled: 08/29/2024 14:02 Back At Station:
+
+Total Units: 1
+
+FAULKNER COUNTY SHERIFFS OFFICE, 24083646
+
+CAD_ Details
+
+KASMUCK
+
+
+phheheoy, FAULKNER COUNTY SHERIFFS OFFICE
+
+Call for Service Card
+4y Page 2 of 2
+
+2)
+% x“
+Pepi OF
+
+&,
+
+Radio Traffic
+
+Traffic Date Unit # Unit Name Traffic
+
+08/29/2024 14:00 286E1 286 E 1 UNIT DISPATCHED
+@20240829T14:01:16
+
+08/29/2024 14:00 286E1 286 E 1 UNIT ENROUTE
+
+@20240829T14:01:16
+Total Radio Traffic: 2
+
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 08/29/2024 14:00 Toneout 2: 08/29/2024 14:00 Toneout 3:
+Ack. Date: 08/29/2024 14:00 Cancel Date: Toneout 1 By: BRABHAM, DIXIE
+Total Toneouts: 1
+Case Numbers
+Entry Date Case Number Department
+08/29/2024 14:01:16 286 EAST FIRE DEPARTMENT
+Print Date: Sep 19 2024 - 12:37:37 FAULKNER COUNTY SHERIFFS OFFICE, 24083646
+
+Powered by iSOMS(c) Driven by Values CAD_ Details KASMUCK

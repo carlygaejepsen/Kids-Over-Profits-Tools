@@ -1,0 +1,62 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 12/31/2023 19:43 Dispatch Date: EnRotue Date:
+Arrived Date: Completed Date: 12/31/2023 19:52 Call Canceled:
+Disposition: DISREGARD CALL
+CFS #: 23121524 Case #: Priority:
+Nature: FIRE ALARM How Received:
+Initial Nature: Alarm:
+Call Taken By: BROWN, PAIGE Dispatched By: Fire Type:
+Completed By: BROWN, PAIGE ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 12/31/2023 19:45 Permit #:
+Business:
+Fire alarm.
+Contact: Matt .
+No contact with anyone on scene.
+Incident Information
+Common Name: Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: SUMMIT FIRE PROTECTION, MIKE Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+12/31/2023 19:45:35 BROWN, PAIGE 286E toned out.
+12/31/2023 19:51:55 BROWN, PAIGE Mike called back and cancelled alarm.
+12/31/2023 19:52:17 BROWN, PAIGE 286E acknowledged toneout.
+12/31/2023 19:52:34 BROWN, PAIGE Complete all units.
+Total Notes: 4
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+286E1 286 E 1 286E 0 0 NO
+Dispatched Date: 12/31/2023 19:52 EnRoute Date: 12/31/2023 19:52 Arrived Date:
+Transport Start: Transport End: Completed Date:
+Disposition Date: Call Canceled: 12/31/2023 19:52 Back At Station:
+Total Units:1
+Print Date: Jan 19 2024 - 07:17:50 Faulkner County Sheriffs Office, 23121524
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+12/31/2023 19:52 286E1 286 E 1 UNIT DISPATCHED
+12/31/2023 19:52 286E1 286 E 1 UNIT ENROUTE
+Total Radio Traffic:2
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 12/31/2023 19:45 Toneout 2: 12/31/2023 19:45 Toneout 3:
+Ack. Date: 12/31/2023 19:52 Cancel Date: Toneout 1 By: BROWN, PAIGE
+Total Toneouts: 1
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+12/31/2023 19:52:17 286 EAST FIRE DEPARTMENT 286E1 No
+Print Date: Jan 19 2024 - 07:17:50 Faulkner County Sheriffs Office, 23121524
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

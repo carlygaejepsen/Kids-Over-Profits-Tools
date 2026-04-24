@@ -1,0 +1,65 @@
+Call Details Report For CFS # 25-0405372
+
+CFS Number
+25-0405372
+
+Incident Type
+FIRE-FIRE ALARM
+
+Caller Name
+
+SUMMIT FIRE AND SECURITY - OPER
+438
+
+Location
+161 SKUNK HOLLOW RD, FAULKNER COUNTY
+Initial Statement
+
+AA - BUILDING A - POOL STATION B WING ZONE 16
+K/H RESPONDING
+
+Notes
+4/20/2025 7:46:57 AM by: dbrabham
+
+HWY 286 ON SCENE - NO EVACTUATION - OUT INVESIGATING
+
+4/20/2025 7:48:00 AM by: dbrabham
+FIRE INCIDENT - FALSE ALARM
+
+Unit Call Times
+
+Unit ID Date/Time
+
+286E1 4/20/2025 7:32:20 AM
+286E1 4/20/2025 7:34:12 AM
+286E1 4/20/2025 7:46:26 AM
+286E1 4/20/2025 7:48:00 AM
+
+Dispositions Assigned to This Call
+
+When Assigned
+4/20/2025 7:48:00 AM
+
+Disposition
+FIRE INCIDENT
+
+Date/Time
+4/20/2025 7:31 AM
+
+Primary Unit
+286E1
+
+Caller Phone
+8004321429
+
+Status
+DISPATCHED
+
+ENROUTE
+ARRIVED
+CLEARED
+
+Assigned By
+dbrabham
+
+5/22/2025 11:06:34 AM

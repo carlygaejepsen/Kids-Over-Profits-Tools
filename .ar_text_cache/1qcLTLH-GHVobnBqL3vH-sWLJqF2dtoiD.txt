@@ -1,0 +1,70 @@
+Conway Emergency Operations Center
+1111 Main Street Conway , AR 72032
+
+OFFICIAL USE ONLY
+DO NOT DISSEMINATE
+
+Call Taker CFS Report
+05 callen CFS # - 25-0402786
+
+Base Information
+
+Call When 04/11/2025 11:03:19 Create When 04/11/2025 11:05:17 Close When 04/11/2025 11:31:21 Disposition HBO - HANDLED BY
+
+OFFICER
+Priority JUST OCCURRED Alarm 1 Disciplines L Assigned Disciplines L Assigned Disciplines NP L
+CallType CHECK ON THE WELFARE EDL FDL LDL Primary Unit F36
+Address 161 SKUNK HOLLOW RD, FAULKNER COUNTY Zip 72032 County
+Landmark LITTLE CREEK BEHAVIORAL HEALTH ESN 316 Map Grid
+EMS/Rescue PAFFORD EMS Fire HWY 286 EAST FIRE Law FAULKNER COUNTY SHERIFF
+Area FCSO-Delta District EMS Tract 2 Fire Tract 316-B
+Grid Law Tract Report Tract Work Area
+Cross Street High BREWER RD Cross Street Low SOUTHERN OAKS RD
+
+From-To Directions
+
+Address Landmark
+Name OWENS, KANETRA Caller Phone [x How Received PHONE
+
+Disposition Assigned When User InActive While Closed
+HBO - HANDLED BY OFFICER 04/11/2025 11:31:21 khall
+
+Call Type Assigned When User Assigned While Closed _InActive
+CHECK ON THE WELFARE 04/11/2025 11:05:17 callen
+
+Unit Department When Status | Notes User
+F36 (WILCHMAN, JEFFREY) FCSO 04/11/2025 11:05:47 DISPATCHED kssmith
+F36 (WILCHMAN, JEFFREY) FCSO 04/11/2025 11:06:28 ENROUTE kssmith
+F36 (WILCHMAN, JEFFREY) FCSO 04/11/2025 11:18:15 ARRIVED kssmith
+F36 (WILCHMAN, JEFFREY) FCSO 04/11/2025 11:31:21 CLEARED khall
+
+Incident Locations
+Address: LITTLE CREEK BEHAVIORAL HEALTH | 161 SKUNK HOLLOW RD, FAULKNER COUNTY User: callen
+When: 04/11/2025 11:05:17 _—_ Latitude: 35.0679479268981 Longitude: -92.3819024968872 Source:Landmark InActive:
+
+CAD Report 44 - tbutler Page 1 Of 2 04/17/2025 10:43
+
+
+CFS Report
+CFS # - 25-0402786
+
+Caller Phone When User Caller Phone When User
+04/11/2025 11:05:17 —_callen
+
+Caller Name When Caller Name
+
+OWENS, KANETRA 04/11/2025 11:05:17 callen
+
+PR NEEDS A CHECKED ON/ PR ADV THAT SHE WAS REPORTED AS A RUNAWAY IN 2024 BUT WAS PICKED
+UP// PR Ma csaceaien THAT THEY ARE TRYING TO GET HER REMOVED FROM ACIC
+
+callen 04/11/2025 11:06:15 E,F,L,R,O
+FORT WORTH POLICE DEPARTMENT 817.392.3211
+
+khall 04/11/2025 11:30:43 E,F,L,R,O
+
+£36 adv to message fort worth and tell them to remover her from acic
+£36 adv he made contact with her and he made contact with fort worth
+
+rw EET EE el
+CAD Report 44 - tbutler Page 2 Of 2 04/17/2025 10:43

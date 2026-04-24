@@ -571,6 +571,81 @@ class TestScraperPerformance(unittest.TestCase):
         self.assertEqual(len(processed_items), 100)
 
 
+class TestOregonScraper(unittest.TestCase):
+    """Test Oregon SharePoint row grouping and facility payload mapping."""
+
+    def test_oregon_infers_program_identity_within_agency_view(self):
+        from or_scraper import ORFacilityScraper
+
+        scraper = ORFacilityScraper()
+        entries = [
+            {
+                'agency_name': 'A Village for One (AVFO)',
+                'agency_website': 'https://example.org',
+                'program_name': "Anisa's Place",
+                'program_id': '255',
+                'program_type': '(RC) Residential Care Programs',
+                'report_type': 'License Renewals',
+                'report_date': '02/02/2023',
+                'report_id': '899',
+                'report_unique_id': '{GUID-899}',
+                'file_name': 'avfo-rc-lr-2023-02-02.pdf',
+                'pdf_url': 'https://www.oregon.gov/example-899.pdf',
+                'view_code': 'RC',
+                'source_page': 'https://www.oregon.gov/odhs/licensing/childrens-care-agencies/Pages/rc.aspx',
+                'meta': {},
+            },
+            {
+                'agency_name': 'A Village for One (AVFO)',
+                'agency_website': 'https://example.org',
+                'program_name': '',
+                'program_id': '',
+                'program_type': '(RC) Residential Care Programs',
+                'report_type': 'Unannounced',
+                'report_date': '10/12/2023',
+                'report_id': '1281',
+                'report_unique_id': '{GUID-1281}',
+                'file_name': 'avfo-rc-un-2023-10-12.pdf',
+                'pdf_url': 'https://www.oregon.gov/example-1281.pdf',
+                'view_code': 'RC',
+                'source_page': 'https://www.oregon.gov/odhs/licensing/childrens-care-agencies/Pages/rc.aspx',
+                'meta': {},
+            },
+        ]
+
+        scraper.infer_program_identity(entries)
+
+        with patch.object(
+            ORFacilityScraper,
+            '_build_report',
+            side_effect=lambda entry: {
+                'report_id': entry['report_id'],
+                'report_date': entry['report_date'],
+                'raw_content': entry['file_name'],
+                'content_length': len(entry['file_name']),
+                'summary': entry['report_type'],
+                'categories': {'pdf_url': entry['pdf_url']},
+            },
+        ):
+            facilities = scraper.build_facilities_from_entries(entries)
+
+        self.assertEqual(len(facilities), 1)
+        facility = facilities[0]
+        self.assertEqual(facility['facility_info']['facility_name'], "Anisa's Place")
+        self.assertEqual(facility['facility_info']['program_name'], '255')
+        self.assertEqual(
+            facility['facility_info']['program_category'],
+            '(RC) Residential Care Programs'
+        )
+        self.assertEqual(facility['facility_info']['agency_name'], 'A Village for One (AVFO)')
+        self.assertEqual(facility['facility_info']['website'], 'https://example.org')
+        self.assertEqual(len(facility['reports']), 2)
+        self.assertEqual(
+            [report['report_id'] for report in facility['reports']],
+            ['899', '1281']
+        )
+
+
 if __name__ == '__main__':
     # Run the test suite
     print("=== Kids Over Profits Python Scraper Unit Tests ===\n")

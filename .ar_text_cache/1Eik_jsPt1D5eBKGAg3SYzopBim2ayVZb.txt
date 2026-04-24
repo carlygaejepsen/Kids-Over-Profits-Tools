@@ -1,0 +1,105 @@
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 1 of 2
+
+Call Information
+
+Received Date: 05/26/2024 19:23 Dispatch Date: 05/26/2024 19:32 EnRotue Date: 05/26/2024 19:34
+Arrived Date: 05/26/2024 19:34 Completed Date: 05/26/2024 19:35 Call Canceled:
+Disposition: HANDLED BY OFFICER-NO REPORT
+
+CFS #: 24053264 Case #: Priority:
+
+Nature: SUSPICIOUS ACTIVITY How Received: 911
+Initial Nature: Alarm:
+
+Call Taken By: WIMBERLY, OLIVIA Dispatched By: ALARCON, PEARLY Fire Type:
+
+Completed By: ALARCON, PEARLY ReOpened By: ReOpened Reason:
+
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+
+Business:
+
+FEW MINUTES AGO 2 YOUNG LADIES CAME TO THE DOOR THINK THEY ARE FROM THE BEHAVIORAL PLACE THEY ASKED FOR A RIDE
+FROM THE CALLER AND HE STATED HE TOLD THEM NO AND THEN THEY HAVE LEFT/ THEY WALKED BACK DOWN TOWARDS SKUNK
+HOLLOW
+
+BLACK ANKLE BRACELT ON RIGHT LEG
+WHITE FEMALE / 5'2 / SHORT BLACK CURLY HAIR
+
+OTHER FEMALE WAS IN DARK CLOTHING/PANTS LONGER HAIR/
+
+Incident Information
+
+Common Name: Zone:
+
+Address: 3100 SOUTHERN OAKS RD SubDivision:
+
+CSZ: CONWAY, AR 72032 Intersection: 161 SKUNK HOLLOW RD
+ESN: 316 Lat/Lon: 35.0710327,
+
+Caller Information
+
+Name: Address:
+
+Phone #: (479) 857-0912 CSZ:
+
+Notes
+
+Entry Date Entry By Note Type Notes
+
+05/26/2024 19:32:21 ALARCON, PEARLY f13 advised of this / gen info / while on scene at cfs:24053262,
+
+adv that pafford is aware of this situation and have people out
+looking for them at 1930
+
+05/26/2024 19:34:18 ALARCON, PEARLY the two females have been found and brought back to the facility
+05/26/2024 19:34:29 ALARCON, PEARLY
+05/26/2024 19:34:49 ALARCON, PEARLY per f13, f11 adv, as he was in the area of southern oaks atl
+05/26/2024 19:35:05 ALARCON, PEARLY Complete all units.
+05/26/2024 19:35:05 ALARCON, PEARLY Complete all units.
+05/26/2024 19:35:06 WIMBERLY, OLIVIA DISPATCH COMMAND NOTIFIED
+Total Notes: 7
+Print Date: Jun 21 2024 - 16:23:27 Faulkner County Sheriffs Office, 24053264
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 2 of 2
+
+Units
+Unit Number Unit Name Department Mileage Start_ Mileage End Primary Unit
+F13 COX, SKYLAR FCSO 0 0 NO
+Dispatched Date: 05/26/2024 19:32 EnRoute Date: Arrived Date:
+Transport Start: Transport End: Completed Date:
+Disposition Date: Call Canceled: 05/26/2024 19:35 Back At Station:
+F411 EVERETT, TY FCSO 0 0 YES
+Dispatched Date: 05/26/2024 19:34 EnRoute Date: 05/26/2024 19:34 Arrived Date: 05/26/2024 19:34
+Transport Start: Transport End: Completed Date: 05/26/2024 19:35
+Disposition Date: Call Canceled: Back At Station:
+Total Units: 2
+
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+05/26/2024 19:34 F11 EVERETT, TY BACKUP-TO-PRIMARY-TEN-CODE
+
+F11 made primary.
+05/26/2024 19:34 F11 EVERETT, TY UNIT ENROUTE
+05/26/2024 19:34 F11 EVERETT, TY UNIT DISPATCHED
+05/26/2024 19:32 F13 COX, SKYLAR UNIT DISPATCHED
+
+Total Radio Traffic: 4
+
+Case Numbers
+
+Entry Date Case Number Department
+05/26/2024 19:34:29 FAULKNER COUNTY SO
+Print Date: Jun 21 2024 - 16:23:27 Faulkner County Sheriffs Office, 24053264
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
