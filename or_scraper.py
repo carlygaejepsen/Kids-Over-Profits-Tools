@@ -68,6 +68,8 @@ OREGON_INLINE_STOP_PATTERNS = [
     r"Date of Unannounced",
     r"Executive Director",
     r"Program Director(?:\(s\))?",
+    r"(?:Juvenile Services|Clinical|Assistant|Residential) Director",
+    r"Residential Manager",
     r"Board Chairperson",
     r"Licensing Coordinator",
     r"Other Regulatory or Accrediting Agencies",
@@ -438,7 +440,7 @@ def parse_oregon_report_text(text: str) -> Dict[str, Any]:
     parsed: Dict[str, Any] = {
         "report_title": report_title,
         "facility_type": facility_type,
-        "licensee": collapse_inline_whitespace(extract_labeled_block(normalized, [r"Licensee"])),
+        "licensee": collapse_inline_whitespace(extract_labeled_block(normalized, [r"Licensee", r"Licensed Agency", r"License Holder"])),
         "executive_director": collapse_inline_whitespace(extract_labeled_block(normalized, [r"Executive Director"])),
         "program_director": collapse_inline_whitespace(extract_labeled_block(normalized, [r"Program Director(?:\(s\))?"])),
         "board_chairperson": collapse_inline_whitespace(extract_labeled_block(normalized, [r"Board Chairperson"])),
@@ -725,17 +727,24 @@ class ORFacilityScraper:
             )
             reports = [self._build_report(entry) for entry in grouped]
 
-            facility_name = pick_most_common(entry["program_name"] for entry in grouped)
+            _BAD_PROGRAM_NAMES = {
+                "ays", "bend", "castle", "gap", "phoenix",
+                "residential adolescent sud", "residential program",
+                "sage", "youth residential treatment center (yrtc)",
+            }
+
+            facility_name = pick_most_common(
+                entry["program_name"] for entry in grouped
+                if entry["program_name"].lower().strip() not in _BAD_PROGRAM_NAMES
+            )
             if not facility_name:
-                # Try names extracted from the PDF text before falling back to
-                # the raw agency_name, which is often a city, county, or bare ID.
                 for report in reversed(reports):
-                    cats = report.get("categories") or {}
-                    pdf_name = cats.get("licensee") or cats.get("report_title")
-                    if pdf_name:
-                        facility_name = pdf_name
+                    licensee = (report.get("categories") or {}).get("licensee", "")
+                    if licensee:
+                        facility_name = licensee
                         break
             if not facility_name:
+                facility_name = grouped[0]["agency_name"]
                 facility_name = grouped[0]["agency_name"]
 
             logger.info(
