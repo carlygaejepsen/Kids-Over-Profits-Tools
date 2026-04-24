@@ -16,13 +16,17 @@ def build_payload(
     state: str,
     scraped_timestamp: str,
     facilities: List[Dict[str, Any]],
+    replace: bool = False,
 ) -> Dict[str, Any]:
-    return {
+    payload = {
         "api_key": api_key,
         "state": state,
         "scraped_timestamp": scraped_timestamp,
         "facilities": facilities,
     }
+    if replace:
+        payload["replace"] = True
+    return payload
 
 
 def estimate_payload_bytes(payload: Dict[str, Any]) -> int:
@@ -35,6 +39,7 @@ def chunk_facilities_by_size(
     scraped_timestamp: str,
     facilities: List[Dict[str, Any]],
     max_payload_bytes: int = DEFAULT_MAX_PAYLOAD_BYTES,
+    replace: bool = False,
 ) -> List[List[Dict[str, Any]]]:
     batches: List[List[Dict[str, Any]]] = []
     current_batch: List[Dict[str, Any]] = []
@@ -46,6 +51,7 @@ def chunk_facilities_by_size(
             state=state,
             scraped_timestamp=scraped_timestamp,
             facilities=candidate_batch,
+            replace=replace,
         )
 
         if current_batch and estimate_payload_bytes(candidate_payload) > max_payload_bytes:
@@ -120,12 +126,14 @@ def _post_batch(
     batch_label: str,
     info: Callable[[str], None],
     error: Callable[[str], None],
+    replace: bool = False,
 ) -> Dict[str, Any]:
     payload = build_payload(
         api_key=api_key,
         state=state,
         scraped_timestamp=scraped_timestamp,
         facilities=facilities,
+        replace=replace,
     )
     payload_bytes = estimate_payload_bytes(payload)
 
@@ -174,6 +182,7 @@ def _post_batch(
                 batch_label=f"{batch_label}a",
                 info=info,
                 error=error,
+                replace=replace,
             )
             if not left.get("success"):
                 return left
@@ -188,6 +197,7 @@ def _post_batch(
                 batch_label=f"{batch_label}b",
                 info=info,
                 error=error,
+                replace=False,  # only delete on the first batch
             )
             if not right.get("success"):
                 return right
@@ -265,6 +275,7 @@ def post_facilities_to_api(
     max_payload_bytes: int = DEFAULT_MAX_PAYLOAD_BYTES,
     info: Callable[[str], None] | None = None,
     error: Callable[[str], None] | None = None,
+    replace: bool = False,
 ) -> Dict[str, Any]:
     info = info or _noop
     error = error or _noop
@@ -279,6 +290,7 @@ def post_facilities_to_api(
         scraped_timestamp=scraped_timestamp,
         facilities=facilities,
         max_payload_bytes=max_payload_bytes,
+        replace=replace,
     )
 
     if len(batches) > 1:
@@ -301,6 +313,7 @@ def post_facilities_to_api(
             batch_label=f"{index}/{len(batches)}",
             info=info,
             error=error,
+            replace=replace and index == 1,  # only delete on the first batch
         )
         if not result.get("success"):
             return result

@@ -808,13 +808,14 @@ class ORFacilityScraper:
         return self.all_facilities
 
 
-def save_to_api(facilities: List[Dict]) -> bool:
+def save_to_api(facilities: List[Dict], replace: bool = False) -> bool:
     result = post_facilities_to_api(
         api_url=API_URL,
         api_key=API_KEY,
         state="OR",
         scraped_timestamp=datetime.now().isoformat(),
         facilities=facilities,
+        replace=replace,
         timeout=120,
         info=logger.info,
         error=logger.error,
@@ -836,6 +837,12 @@ def main():
         action="store_true",
         help="Scrape and cache PDFs without POSTing results to the inspections API",
     )
+    parser.add_argument(
+        "--replace",
+        action="store_true",
+        help="Clear existing OR data from the database before inserting (use to fix stale names)",
+    )
+    )
     args = parser.parse_args()
 
     scraper = ORFacilityScraper()
@@ -846,8 +853,10 @@ def main():
         if args.no_post:
             logger.info("Skipping API POST because --no-post was set")
             return
+        if args.replace:
+            logger.info("--replace set: existing OR data will be cleared before insert")
         logger.info("Posting Oregon data to API")
-        if save_to_api(facilities):
+        if save_to_api(facilities, replace=args.replace):
             logger.info("Data saved to database successfully!")
         else:
             logger.error("API save failed -- check logs above")
