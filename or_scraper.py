@@ -570,7 +570,7 @@ class ORFacilityScraper:
 
         agency_name = (
             strip_placeholder(sharepoint_lookup_label(row.get("ows_Agency0")))
-            or strip_placeholder(meta.get("Agency0"))
+            or strip_placeholder(sharepoint_lookup_label(meta.get("Agency0")))
         )
         report_type = (
             strip_placeholder(sharepoint_lookup_label(row.get("ows_Report_x002d_Type")))
@@ -727,12 +727,13 @@ class ORFacilityScraper:
 
             facility_name = pick_most_common(entry["program_name"] for entry in grouped)
             if not facility_name:
-                # Try licensee extracted from the PDF text before falling back to
-                # the raw agency_name, which is often a city or county name.
+                # Try names extracted from the PDF text before falling back to
+                # the raw agency_name, which is often a city, county, or bare ID.
                 for report in reversed(reports):
-                    licensee = (report.get("categories") or {}).get("licensee", "")
-                    if licensee:
-                        facility_name = licensee
+                    cats = report.get("categories") or {}
+                    pdf_name = cats.get("licensee") or cats.get("report_title")
+                    if pdf_name:
+                        facility_name = pdf_name
                         break
             if not facility_name:
                 facility_name = grouped[0]["agency_name"]
