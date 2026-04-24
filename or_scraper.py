@@ -338,6 +338,12 @@ def extract_findings(text: str) -> List[Dict[str, str]]:
     if not text:
         return []
 
+    # Detect checklist-style PDFs (Yes/No/N/A column format). In these
+    # documents every rule has an X mark regardless of compliance status, so
+    # we must only treat a rule as a finding when it carries a corrective
+    # action — which appears exclusively next to rules checked "No".
+    is_checklist = bool(re.search(r"Yes\s+No\s+N/A\s+Corrective", text, re.IGNORECASE))
+
     findings_scope_parts = [
         extract_named_block_section(text, [label])
         for label in OREGON_FINDINGS_SECTION_LABELS
@@ -366,6 +372,15 @@ def extract_findings(text: str) -> List[Dict[str, str]]:
         end = min(next_starts) if next_starts else len(findings_scope)
         snippet = clean_section_text(findings_scope[start:end])
         if not snippet:
+            continue
+
+        # In checklist-format reports, only rules with a corrective action are
+        # actual violations. Rules checked Yes or N/A have no corrective action.
+        if is_checklist and not re.search(r"CORRECTIVE\s+ACTION", snippet, re.IGNORECASE):
+            continue
+
+        # Skip items the report explicitly marks as not a finding.
+        if re.search(r"not\s+a\s+finding", snippet, re.IGNORECASE):
             continue
 
         rule = collapse_inline_whitespace(match.group(0))
