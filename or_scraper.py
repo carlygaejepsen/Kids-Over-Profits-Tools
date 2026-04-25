@@ -259,6 +259,88 @@ def extract_pdf_text(path: Path) -> str:
         return ""
 
 
+# How far (in PDF points) an "X" may sit from the "No" column centre and
+# still be counted as a No-column checkbox.  The No column is usually ~20 pt
+# wide; 12 pt gives comfortable clearance from the adjacent Yes / N/A columns.
+_NO_COL_TOLERANCE = 12
+
+
+def extract_no_column_rule_numbers(path: Path) -> Optional[set]:
+    """
+    Use pdfplumber word-coordinate data to determine which rule numbers had
+    their checkbox marked in the "No" column of an Oregon checklist PDF.
+
+    Returns a set of bare rule-number strings (e.g. {"419-400-0040",
+    "419-470-0080"}) when the PDF is in checklist format, or None when it is
+    not (so callers can fall back to the CORRECTIVE ACTION heuristic).
+    """
+    rule_word_re = re.compile(r"^\d{3}-\d{3}-\d{4}")
+    violated: set = set()
+    found_checklist = False
+
+    try:
+        with pdfplumber.open(path) as pdf:
+            for page in pdf.pages:
+                words = page.extract_words(
+                    keep_blank_chars=False,
+                    x_tolerance=3,
+                    y_tolerance=3,
+                )
+                if not words:
+                    continue
+
+                # Locate the "No" column centre from any "Yes  No  N/A" header
+                # row on this page.  All sections share the same column layout.
+                no_x: Optional[float] = None
+                for word in words:
+                    if word["text"] != "No":
+                        continue
+                    row_y = word["top"]
+                    row_texts = {
+                        w["text"]
+                        for w in words
+                        if abs(w["top"] - row_y) < 5
+                    }
+                    if "Yes" in row_texts and "N/A" in row_texts:
+                        no_x = (word["x0"] + word["x1"]) / 2
+                        found_checklist = True
+                        break
+
+                if no_x is None:
+                    continue
+
+                # Group words into rows by y-coordinate (within 4 pt).
+                rows: List[List[Dict]] = []
+                for w in sorted(words, key=lambda x: (x["top"], x["x0"])):
+                    if rows and abs(w["top"] - rows[-1][0]["top"]) < 4:
+                        rows[-1].append(w)
+                    else:
+                        rows.append([w])
+
+                # Walk rows top-to-bottom, tracking the most recent rule
+                # number.  When a row contains an X in the No column, record
+                # that rule number as violated.
+                last_rule: Optional[str] = None
+                for row in rows:
+                    for w in row:
+                        if rule_word_re.match(w["text"]):
+                            last_rule = w["text"].strip()
+                            break
+
+                    for w in row:
+                        if w["text"] == "X":
+                            wx = (w["x0"] + w["x1"]) / 2
+                            if abs(wx - no_x) <= _NO_COL_TOLERANCE and last_rule:
+                                violated.add(last_rule)
+                            break  # at most one X per row
+
+    except Exception as exc:
+        logger.warning(f"  Coordinate checkbox parsing failed for {path.name}: {exc}")
+        return None
+
+    return violated if found_checklist else None
+
+
 def normalize_oregon_pdf_text(text: Optional[str]) -> str:
     normalized = (text or "").replace("\r", "\n").replace("\xa0", " ")
     replacements = {
@@ -334,7 +416,7 @@ def extract_named_block_section(text: str, labels: List[str]) -> str:
     return ""
 
 
-def extract_findings(text: str) -> List[Dict[str, str]]:
+def extract_findings(text: str, no_column_rules: Optional[set] = None) -> List[Dict[str, str]]:
     if not text:
         return []
 
@@ -344,24 +426,31 @@ def extract_findings(text: str) -> List[Dict[str, str]]:
     # action — which appears exclusively next to rules checked "No".
     is_checklist = bool(re.search(r"Yes\s+No\s+N/A\s+Corrective", text, re.IGNORECASE))
 
-    findings_scope_parts = [
-        extract_named_block_section(text, [label])
-        for label in OREGON_FINDINGS_SECTION_LABELS
-    ]
-    findings_scope = "\n\n".join(part for part in findings_scope_parts if part)
-    if not findings_scope:
-        return []
+    # For checklist PDFs where we have coordinate data, search the full
+    # normalised text so that observation comments (which live in the main
+    # checklist body, not necessarily in the summary section) are captured in
+    # the excerpt.  For all other cases use only the named findings sections.
+    if is_checklist and no_column_rules is not None:
+        search_text = text
+    else:
+        findings_scope_parts = [
+            extract_named_block_section(text, [label])
+            for label in OREGON_FINDINGS_SECTION_LABELS
+        ]
+        search_text = "\n\n".join(part for part in findings_scope_parts if part)
+        if not search_text:
+            return []
 
     heading_positions = [
         match.start()
         for pattern in OREGON_BLOCK_SECTION_STOP_PATTERNS
-        for match in re.finditer(rf"(?im)^(?:{pattern})\b", findings_scope)
+        for match in re.finditer(rf"(?im)^(?:{pattern})\b", search_text)
     ]
     findings: List[Dict[str, str]] = []
     matches = list(
         re.finditer(
             r"\b\d{3}-\d{3}-\d{4}(?:\([^)]+\))?(?:\s*&\s*\([^)]+\))*(?:\s*\([^)]+\))*",
-            findings_scope,
+            search_text,
         )
     )
 
@@ -369,23 +458,39 @@ def extract_findings(text: str) -> List[Dict[str, str]]:
         start = match.start()
         next_starts = [m.start() for m in matches[idx + 1 : idx + 2]]
         next_starts.extend(pos for pos in heading_positions if pos > start)
-        end = min(next_starts) if next_starts else len(findings_scope)
-        snippet = clean_section_text(findings_scope[start:end])
+        end = min(next_starts) if next_starts else len(search_text)
+        snippet = clean_section_text(search_text[start:end])
         if not snippet:
             continue
 
-        # In checklist-format reports, only rules with a corrective action are
-        # actual violations. Rules checked Yes or N/A have no corrective action.
-        if is_checklist and not re.search(r"CORRECTIVE\s+ACTION", snippet, re.IGNORECASE):
-            continue
+        rule = collapse_inline_whitespace(match.group(0))
+        rule_base_m = re.match(r"\d{3}-\d{3}-\d{4}", rule)
+
+        # In checklist-format reports only rules with a No-column checkbox are
+        # violations.  Use coordinate data when available; fall back to the
+        # CORRECTIVE ACTION: heuristic when coordinate parsing was not possible.
+        if is_checklist:
+            if no_column_rules is not None:
+                # Coordinate-based: trust the column position.
+                if not rule_base_m or rule_base_m.group(0) not in no_column_rules:
+                    continue
+            elif not re.search(r"CORRECTIVE\s+ACTION\s*:", snippet, re.IGNORECASE):
+                # Text heuristic fallback.
+                continue
 
         # Skip items the report explicitly marks as not a finding.
         if re.search(r"not\s+a\s+finding", snippet, re.IGNORECASE):
             continue
 
-        rule = collapse_inline_whitespace(match.group(0))
         snippet = re.sub(r"(?im)^\s*Repeat\s+Comments\b.*$", "", snippet)
         snippet = re.sub(r"\bYes\?\s*No\?\b", "", snippet)
+        # Strip "Yes No N/A Corrective Actions/Comments" column header lines.
+        snippet = re.sub(r"(?im)^Yes\s+No\s+N/A\b.*$", "", snippet)
+        # Strip standalone checkbox X marks (not part of a word or rule code).
+        snippet = re.sub(r"(?<![A-Za-z0-9])X(?![A-Za-z0-9])", "", snippet)
+        # Strip compliant sub-rule lines: lines that are now empty or whitespace-only
+        # after X removal (they had nothing but the checkbox mark).
+        snippet = re.sub(r"\n[ \t]*\n", "\n", snippet)
         snippet = re.sub(r"\s{2,}", " ", snippet).strip()
         if not snippet:
             continue
@@ -405,7 +510,7 @@ def extract_findings(text: str) -> List[Dict[str, str]]:
     return deduped
 
 
-def parse_oregon_report_text(text: str) -> Dict[str, Any]:
+def parse_oregon_report_text(text: str, no_column_rules: Optional[set] = None) -> Dict[str, Any]:
     normalized = normalize_oregon_pdf_text(text)
     if not normalized:
         return {
@@ -487,7 +592,7 @@ def parse_oregon_report_text(text: str) -> Dict[str, Any]:
     for key, labels in OREGON_BLOCK_SECTION_LABELS.items():
         parsed[key] = extract_named_block_section(normalized, labels)
 
-    parsed["findings"] = extract_findings(normalized)
+    parsed["findings"] = extract_findings(normalized, no_column_rules=no_column_rules)
     parsed["finding_count"] = len(parsed["findings"])
     return parsed
 
@@ -665,6 +770,7 @@ class ORFacilityScraper:
     def _build_report(self, entry: Dict) -> Dict:
         pdf_path = self.download_pdf(entry["pdf_url"])
         extracted_text = extract_pdf_text(pdf_path) if pdf_path else ""
+        no_column_rules = extract_no_column_rule_numbers(pdf_path) if pdf_path else None
         if extracted_text:
             raw_content = extracted_text
         else:
@@ -678,7 +784,7 @@ class ORFacilityScraper:
             ]
             raw_content = "\n".join(line for line in fallback_lines if line.strip())
 
-        parsed = parse_oregon_report_text(raw_content)
+        parsed = parse_oregon_report_text(raw_content, no_column_rules=no_column_rules)
         findings = parsed.get("findings") or []
         parsed_report_type = best_nonempty([
             parsed.get("report_title", ""),
@@ -722,6 +828,15 @@ class ORFacilityScraper:
         }
 
     def build_facilities_from_entries(self, entries: List[Dict]) -> List[Dict]:
+        def _norm_key(name: str) -> str:
+            """Collapse punctuation/spacing differences for grouping only."""
+            n = name.lower().strip()
+            n = re.sub(r"\s*[-–—]\s*", " ", n)   # "Adapt - Deer Creek" → "adapt deer creek"
+            n = re.sub(r"\s*&\s*", " and ", n)    # "Child & Family" → "child and family"
+            n = re.sub(r"[^\w\s]", "", n)          # drop remaining punctuation
+            n = re.sub(r"\s+", " ", n)
+            return n
+
         grouped_entries: Dict[tuple, List[Dict]] = defaultdict(list)
         for entry in entries:
             identity = (
@@ -729,7 +844,12 @@ class ORFacilityScraper:
                 or entry["program_name"]
                 or entry["agency_name"]
             )
-            grouped_entries[(entry["agency_name"], entry["view_code"], identity)].append(entry)
+            group_key = (
+                _norm_key(entry["agency_name"]),
+                entry["view_code"],
+                _norm_key(identity),
+            )
+            grouped_entries[group_key].append(entry)
 
         facilities: List[Dict] = []
         total_facilities = len(grouped_entries)
