@@ -266,18 +266,54 @@ def extract_checklist_findings(path: Path) -> Optional[List[Dict[str, str]]]:
     — rather than guessing column positions from flattened text.
 
     Returns a list of {rule, excerpt} dicts for every row where the 'No' column
-    is checked, or None when the PDF is not in checklist format (so callers can
-    fall back to the narrative-text path).
+    is checked (or where the comment contains a CORRECTIVE ACTION), or None when
+    the PDF is not in checklist format.
+
+    Structural challenges handled:
+    - Rule numbers appear in column 1 (standalone header row) OR column 0 (combined).
+    - Tables span page breaks: the continuation table on the next page has no
+      header row.  Column indices are persisted and reused for headerless tables.
+    - Some tables have data rows BEFORE their header row (rows from the previous
+      section that didn't fit on the prior page).  All rows are processed, not
+      just rows after the header.
+    - "Not a finding" notes sometimes appear in the same comment cell as a real
+      corrective action.  Only the "not a finding" paragraph is stripped.
     """
     RULE_RE = re.compile(r"\b\d{3}-\d{3}-\d{4}")
     found_checklist = False
     current_rule: Optional[str] = None
     raw_findings: List[Dict[str, str]] = []
 
+    # Persist column config across tables so continuation tables (no header row)
+    # can still be processed.
+    active_no_col: Optional[int] = None
+    active_comment_col: Optional[int] = None
+
     def _cell(row: list, idx: Optional[int]) -> str:
         if idx is None or idx >= len(row):
             return ""
         return str(row[idx] or "").strip()
+
+    def _clean_comment(text: str) -> str:
+        """Remove 'not a finding' paragraphs (and their preceding context paragraph)
+        from a comment cell while preserving genuine corrective action text."""
+        if not text:
+            return ""
+        if not re.search(r"not\s+a\s+finding", text, re.IGNORECASE):
+            return text
+        parts = re.split(r"\*{3,}", text)
+        kept: List[str] = []
+        for part in parts:
+            part = part.strip()
+            if not part:
+                continue
+            if re.search(r"not\s+a\s+finding", part, re.IGNORECASE):
+                # Also remove the preceding context paragraph that this note refers to.
+                if kept:
+                    kept.pop()
+                continue
+            kept.append(part)
+        return "\n".join(kept)
 
     try:
         with pdfplumber.open(path) as pdf:
@@ -286,54 +322,99 @@ def extract_checklist_findings(path: Path) -> Optional[List[Dict[str, str]]]:
                     if not table:
                         continue
 
-                    # Locate the Yes / No / N/A header row to learn column indices.
-                    no_col = yes_col = na_col = comment_col = None
-                    data_start = 0
+                    # PASS 1: scan the entire table for a Yes / No / N/A header row.
+                    # (The header may appear after some data rows when the previous
+                    # section spilled onto this page without a new header.)
+                    header_idx: Optional[int] = None
+                    no_col = comment_col = None
                     for row_idx, row in enumerate(table):
                         cells = [str(c or "").strip() for c in row]
                         if "Yes" in cells and "No" in cells and "N/A" in cells:
-                            yes_col     = cells.index("Yes")
-                            no_col      = cells.index("No")
-                            na_col      = cells.index("N/A")
-                            # Comments column: look for "Corrective" or take last.
+                            no_col = cells.index("No")
                             for j, c in enumerate(cells):
                                 if "corrective" in c.lower() or "comment" in c.lower():
                                     comment_col = j
                                     break
                             if comment_col is None:
                                 comment_col = len(cells) - 1
+                            header_idx = row_idx
                             found_checklist = True
-                            data_start = row_idx + 1
+                            active_no_col = no_col
+                            active_comment_col = comment_col
                             break
 
+                    # No header found — reuse the persisted config from the previous
+                    # table (continuation table that crosses a page break).
                     if no_col is None:
-                        continue
+                        if (active_no_col is not None
+                                and table[0]
+                                and len(table[0]) > active_no_col):
+                            no_col = active_no_col
+                            comment_col = active_comment_col
+                        else:
+                            continue  # No usable config yet; skip.
 
-                    for row in table[data_start:]:
-                        if not row:
+                    # PASS 2: process every row (including rows before the header).
+                    for row_idx, row in enumerate(table):
+                        if row_idx == header_idx or not row:
                             continue
 
-                        rule_text    = _cell(row, 0)
-                        no_val       = _cell(row, no_col)
-                        comment_text = _cell(row, comment_col)
-
-                        # Carry the most recent rule number forward across rows.
-                        m = RULE_RE.search(rule_text)
-                        if m:
-                            current_rule = m.group(0)
-
-                        # Only violations: X in the No column.
-                        if no_val.upper() != "X" or not current_rule:
+                        # Skip internal section-separator rows that repeat the
+                        # Yes / No / N/A header label mid-table.
+                        cells = [str(c or "").strip() for c in row]
+                        if "Yes" in cells and "No" in cells and "N/A" in cells:
                             continue
 
-                        # Build excerpt: rule description text + comment.
-                        desc = re.sub(r"^\d{3}-\d{3}-\d{4}\s*\n?", "", rule_text).strip()
-                        parts = [p for p in (desc, comment_text) if p]
-                        excerpt = " ".join(parts).strip()
-                        if not excerpt:
+                        col0 = _cell(row, 0)
+                        col1 = _cell(row, 1)
+                        no_val = _cell(row, no_col)
+                        raw_comment = _cell(row, comment_col)
+
+                        # Rule numbers appear in col 0 (combined rule+description)
+                        # or in col 1 (standalone rule-number row, description in col 0
+                        # of subsequent rows).
+                        m0 = RULE_RE.search(col0) if col0 else None
+                        m1 = RULE_RE.search(col1) if col1 else None
+
+                        if m1 and not m0:
+                            # Standalone rule-number row — update tracker, no checkbox.
+                            current_rule = m1.group(0)
+                            continue
+                        if m0:
+                            current_rule = m0.group(0)
+
+                        # Continuation row: no description, no checkbox, but has a
+                        # comment.  Append the comment text to the last finding so
+                        # multi-row corrective actions are not lost.
+                        if not col0 and no_val == "" and raw_comment and raw_findings:
+                            comment_clean = _clean_comment(raw_comment)
+                            if comment_clean:
+                                last = raw_findings[-1]
+                                if comment_clean[:40] not in last["excerpt"]:
+                                    last["excerpt"] = (
+                                        last["excerpt"] + " " + comment_clean
+                                    ).strip()
                             continue
 
-                        raw_findings.append({"rule": current_rule, "excerpt": excerpt})
+                        # Require an explicit colon to distinguish "CORRECTIVE ACTION:"
+                        # in cell content from the column header "Corrective Actions/Comments".
+                        has_corrective = bool(
+                            re.search(r"CORRECTIVE\s+ACTION\s*:", raw_comment, re.IGNORECASE)
+                        )
+                        is_no_checked = no_val.upper() == "X"
+
+                        if (is_no_checked or has_corrective) and current_rule:
+                            comment_clean = _clean_comment(raw_comment)
+                            # Skip rows whose entire comment is a "not a finding" note.
+                            if not comment_clean and re.search(
+                                r"not\s+a\s+finding", raw_comment, re.IGNORECASE
+                            ):
+                                continue
+                            desc = re.sub(r"^\d{3}-\d{3}-\d{4}\S*\s*", "", col0).strip()
+                            parts = [p for p in (desc, comment_clean) if p]
+                            excerpt = " ".join(parts).strip()
+                            if excerpt:
+                                raw_findings.append({"rule": current_rule, "excerpt": excerpt})
 
     except Exception as exc:
         logger.warning(f"  Table checklist parsing failed for {path.name}: {exc}")
@@ -749,9 +830,17 @@ class ORFacilityScraper:
 
     @staticmethod
     def infer_program_identity(entries: List[Dict]) -> None:
+        def _norm(s: str) -> str:
+            n = s.lower().strip()
+            n = re.sub(r"\s*[-–—]\s*", " ", n)
+            n = re.sub(r"\s*&\s*", " and ", n)
+            n = re.sub(r"[^\w\s]", "", n)
+            return re.sub(r"\s+", " ", n)
+
+        # Group by normalised agency name so name variants share a bucket.
         grouped: Dict[tuple, List[Dict]] = defaultdict(list)
         for entry in entries:
-            grouped[(entry["agency_name"], entry["view_code"])].append(entry)
+            grouped[(_norm(entry["agency_name"]), entry["view_code"])].append(entry)
 
         for group_entries in grouped.values():
             unique_program_ids = {entry["program_id"] for entry in group_entries if entry["program_id"]}
@@ -865,11 +954,15 @@ class ORFacilityScraper:
                 or entry["program_name"]
                 or entry["agency_name"]
             )
-            group_key = (
-                _norm_key(entry["agency_name"]),
-                entry["view_code"],
-                _norm_key(identity),
-            )
+            agency_norm   = _norm_key(entry["agency_name"])
+            identity_norm = _norm_key(identity)
+            # Only use identity as a distinguishing key when it adds real
+            # information — i.e. it's not purely numeric (a bare SharePoint ID)
+            # and it's not just a re-statement of the agency name.
+            if re.match(r"^\d+$", identity.strip()) or identity_norm == agency_norm:
+                group_key = (agency_norm, entry["view_code"])
+            else:
+                group_key = (agency_norm, entry["view_code"], identity_norm)
             grouped_entries[group_key].append(entry)
 
         facilities: List[Dict] = []
