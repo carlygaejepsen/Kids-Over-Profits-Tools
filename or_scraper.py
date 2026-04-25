@@ -259,86 +259,98 @@ def extract_pdf_text(path: Path) -> str:
         return ""
 
 
-# How far (in PDF points) an "X" may sit from the "No" column centre and
-# still be counted as a No-column checkbox.  The No column is usually ~20 pt
-# wide; 12 pt gives comfortable clearance from the adjacent Yes / N/A columns.
-_NO_COL_TOLERANCE = 12
-
-
-def extract_no_column_rule_numbers(path: Path) -> Optional[set]:
+def extract_checklist_findings(path: Path) -> Optional[List[Dict[str, str]]]:
     """
-    Use pdfplumber word-coordinate data to determine which rule numbers had
-    their checkbox marked in the "No" column of an Oregon checklist PDF.
+    Parse Oregon checklist PDFs using pdfplumber's table extractor so we read
+    the actual column grid — Rule | Yes | No | N/A | Corrective Actions/Comments
+    — rather than guessing column positions from flattened text.
 
-    Returns a set of bare rule-number strings (e.g. {"419-400-0040",
-    "419-470-0080"}) when the PDF is in checklist format, or None when it is
-    not (so callers can fall back to the CORRECTIVE ACTION heuristic).
+    Returns a list of {rule, excerpt} dicts for every row where the 'No' column
+    is checked, or None when the PDF is not in checklist format (so callers can
+    fall back to the narrative-text path).
     """
-    rule_word_re = re.compile(r"^\d{3}-\d{3}-\d{4}")
-    violated: set = set()
+    RULE_RE = re.compile(r"\b\d{3}-\d{3}-\d{4}")
     found_checklist = False
+    current_rule: Optional[str] = None
+    raw_findings: List[Dict[str, str]] = []
+
+    def _cell(row: list, idx: Optional[int]) -> str:
+        if idx is None or idx >= len(row):
+            return ""
+        return str(row[idx] or "").strip()
 
     try:
         with pdfplumber.open(path) as pdf:
             for page in pdf.pages:
-                words = page.extract_words(
-                    keep_blank_chars=False,
-                    x_tolerance=3,
-                    y_tolerance=3,
-                )
-                if not words:
-                    continue
-
-                # Locate the "No" column centre from any "Yes  No  N/A" header
-                # row on this page.  All sections share the same column layout.
-                no_x: Optional[float] = None
-                for word in words:
-                    if word["text"] != "No":
+                for table in (page.extract_tables() or []):
+                    if not table:
                         continue
-                    row_y = word["top"]
-                    row_texts = {
-                        w["text"]
-                        for w in words
-                        if abs(w["top"] - row_y) < 5
-                    }
-                    if "Yes" in row_texts and "N/A" in row_texts:
-                        no_x = (word["x0"] + word["x1"]) / 2
-                        found_checklist = True
-                        break
 
-                if no_x is None:
-                    continue
-
-                # Group words into rows by y-coordinate (within 4 pt).
-                rows: List[List[Dict]] = []
-                for w in sorted(words, key=lambda x: (x["top"], x["x0"])):
-                    if rows and abs(w["top"] - rows[-1][0]["top"]) < 4:
-                        rows[-1].append(w)
-                    else:
-                        rows.append([w])
-
-                # Walk rows top-to-bottom, tracking the most recent rule
-                # number.  When a row contains an X in the No column, record
-                # that rule number as violated.
-                last_rule: Optional[str] = None
-                for row in rows:
-                    for w in row:
-                        if rule_word_re.match(w["text"]):
-                            last_rule = w["text"].strip()
+                    # Locate the Yes / No / N/A header row to learn column indices.
+                    no_col = yes_col = na_col = comment_col = None
+                    data_start = 0
+                    for row_idx, row in enumerate(table):
+                        cells = [str(c or "").strip() for c in row]
+                        if "Yes" in cells and "No" in cells and "N/A" in cells:
+                            yes_col     = cells.index("Yes")
+                            no_col      = cells.index("No")
+                            na_col      = cells.index("N/A")
+                            # Comments column: look for "Corrective" or take last.
+                            for j, c in enumerate(cells):
+                                if "corrective" in c.lower() or "comment" in c.lower():
+                                    comment_col = j
+                                    break
+                            if comment_col is None:
+                                comment_col = len(cells) - 1
+                            found_checklist = True
+                            data_start = row_idx + 1
                             break
 
-                    for w in row:
-                        if w["text"] == "X":
-                            wx = (w["x0"] + w["x1"]) / 2
-                            if abs(wx - no_x) <= _NO_COL_TOLERANCE and last_rule:
-                                violated.add(last_rule)
-                            break  # at most one X per row
+                    if no_col is None:
+                        continue
+
+                    for row in table[data_start:]:
+                        if not row:
+                            continue
+
+                        rule_text    = _cell(row, 0)
+                        no_val       = _cell(row, no_col)
+                        comment_text = _cell(row, comment_col)
+
+                        # Carry the most recent rule number forward across rows.
+                        m = RULE_RE.search(rule_text)
+                        if m:
+                            current_rule = m.group(0)
+
+                        # Only violations: X in the No column.
+                        if no_val.upper() != "X" or not current_rule:
+                            continue
+
+                        # Build excerpt: rule description text + comment.
+                        desc = re.sub(r"^\d{3}-\d{3}-\d{4}\s*\n?", "", rule_text).strip()
+                        parts = [p for p in (desc, comment_text) if p]
+                        excerpt = " ".join(parts).strip()
+                        if not excerpt:
+                            continue
+
+                        raw_findings.append({"rule": current_rule, "excerpt": excerpt})
 
     except Exception as exc:
-        logger.warning(f"  Coordinate checkbox parsing failed for {path.name}: {exc}")
+        logger.warning(f"  Table checklist parsing failed for {path.name}: {exc}")
         return None
 
-    return violated if found_checklist else None
+    if not found_checklist:
+        return None
+
+    # Deduplicate while preserving order.
+    seen: set = set()
+    deduped: List[Dict[str, str]] = []
+    for f in raw_findings:
+        key = (f["rule"], f["excerpt"][:160])
+        if key not in seen:
+            seen.add(key)
+            deduped.append(f)
+    return deduped
 
 
 def normalize_oregon_pdf_text(text: Optional[str]) -> str:
@@ -510,7 +522,11 @@ def extract_findings(text: str, no_column_rules: Optional[set] = None) -> List[D
     return deduped
 
 
-def parse_oregon_report_text(text: str, no_column_rules: Optional[set] = None) -> Dict[str, Any]:
+def parse_oregon_report_text(
+    text: str,
+    no_column_rules: Optional[set] = None,
+    checklist_findings: Optional[List[Dict[str, str]]] = None,
+) -> Dict[str, Any]:
     normalized = normalize_oregon_pdf_text(text)
     if not normalized:
         return {
@@ -592,7 +608,11 @@ def parse_oregon_report_text(text: str, no_column_rules: Optional[set] = None) -
     for key, labels in OREGON_BLOCK_SECTION_LABELS.items():
         parsed[key] = extract_named_block_section(normalized, labels)
 
-    parsed["findings"] = extract_findings(normalized, no_column_rules=no_column_rules)
+    if checklist_findings is not None:
+        # Table-based extraction already produced clean, column-aware findings.
+        parsed["findings"] = checklist_findings
+    else:
+        parsed["findings"] = extract_findings(normalized, no_column_rules=no_column_rules)
     parsed["finding_count"] = len(parsed["findings"])
     return parsed
 
@@ -770,7 +790,8 @@ class ORFacilityScraper:
     def _build_report(self, entry: Dict) -> Dict:
         pdf_path = self.download_pdf(entry["pdf_url"])
         extracted_text = extract_pdf_text(pdf_path) if pdf_path else ""
-        no_column_rules = extract_no_column_rule_numbers(pdf_path) if pdf_path else None
+        # Try table-based extraction first; returns None for non-checklist PDFs.
+        checklist_findings = extract_checklist_findings(pdf_path) if pdf_path else None
         if extracted_text:
             raw_content = extracted_text
         else:
@@ -784,7 +805,7 @@ class ORFacilityScraper:
             ]
             raw_content = "\n".join(line for line in fallback_lines if line.strip())
 
-        parsed = parse_oregon_report_text(raw_content, no_column_rules=no_column_rules)
+        parsed = parse_oregon_report_text(raw_content, checklist_findings=checklist_findings)
         findings = parsed.get("findings") or []
         parsed_report_type = best_nonempty([
             parsed.get("report_title", ""),
