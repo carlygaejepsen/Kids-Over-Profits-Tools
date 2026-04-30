@@ -486,7 +486,7 @@ def extract_labeled_block(
 
     for label in labels:
         pattern = re.compile(
-            rf"(?is)(?:^|\n|\s){label}\s*:\s*(.+?)(?=(?:\n|\s)(?:{stop_re})\s*:?|\Z)"
+            rf"(?is)(?:^|\n|\s){label}\s*:\s*(.+?)(?=\n(?:{stop_re})\s*:?|\Z)"
         )
         match = pattern.search(text)
         if match:
@@ -771,22 +771,45 @@ class ORFacilityScraper:
         return websites
 
     def _fetch_view_rows(self, view: Dict) -> List[Dict]:
-        xml_bytes = self._post_soap(
-            service_name="Lists",
-            action_name="GetListItems",
-            inner_xml=(
-                f"<listName>{REPORT_LIBRARY_NAME}</listName>"
-                f"<viewName>{view['view_id']}</viewName>"
-                "<queryOptions><QueryOptions>"
-                "<IncludeAttachmentUrls>TRUE</IncludeAttachmentUrls>"
-                "</QueryOptions></queryOptions>"
-            ),
-            referer_path=view["page_path"],
-        )
-        root = ET.fromstring(xml_bytes)
-        rows = [dict(elem.attrib) for elem in root.iter() if elem.tag.endswith("row")]
-        logger.info(f"{view['code']}: fetched {len(rows)} report rows")
-        return rows
+        all_rows: List[Dict] = []
+        next_page_token: Optional[str] = None
+
+        while True:
+            paging = (
+                f'<Paging ListItemCollectionPositionNext="{html.escape(next_page_token)}" />'
+                if next_page_token else ""
+            )
+            xml_bytes = self._post_soap(
+                service_name="Lists",
+                action_name="GetListItems",
+                inner_xml=(
+                    f"<listName>{REPORT_LIBRARY_NAME}</listName>"
+                    f"<viewName>{view['view_id']}</viewName>"
+                    "<rowLimit>500</rowLimit>"
+                    "<queryOptions><QueryOptions>"
+                    "<IncludeAttachmentUrls>TRUE</IncludeAttachmentUrls>"
+                    f"{paging}"
+                    "</QueryOptions></queryOptions>"
+                ),
+                referer_path=view["page_path"],
+            )
+            root = ET.fromstring(xml_bytes)
+            rows = [dict(elem.attrib) for elem in root.iter() if elem.tag.endswith("row")]
+            all_rows.extend(rows)
+
+            # Check for next page
+            data_elem = next(
+                (elem for elem in root.iter() if elem.tag.endswith("data")), None
+            )
+            next_page_token = (
+                data_elem.attrib.get("ListItemCollectionPositionNext")
+                if data_elem is not None else None
+            )
+            if not next_page_token:
+                break
+
+        logger.info(f"{view['code']}: fetched {len(all_rows)} report rows")
+        return all_rows
 
     def _enrich_row(self, row: Dict, view: Dict, agency_websites: Dict[str, str]) -> Dict:
         meta = parse_meta_info(row.get("ows_MetaInfo"))
@@ -844,9 +867,21 @@ class ORFacilityScraper:
 
         for group_entries in grouped.values():
             unique_program_ids = {entry["program_id"] for entry in group_entries if entry["program_id"]}
-            unique_program_names = {entry["program_name"] for entry in group_entries if entry["program_name"]}
             inferred_id = next(iter(unique_program_ids)) if len(unique_program_ids) == 1 else ""
-            inferred_name = next(iter(unique_program_names)) if len(unique_program_names) == 1 else ""
+
+            # Normalise names for uniqueness check so "Adapt Deer Creek" and
+            # "Adapt - Deer Creek" count as the same name.
+            names_with_norm = [
+                (e["program_name"], _norm(e["program_name"]))
+                for e in group_entries if e["program_name"]
+            ]
+            unique_norm_names = {norm for _, norm in names_with_norm}
+            if len(unique_norm_names) == 1:
+                name_counter: Counter = Counter(name for name, _ in names_with_norm)
+                inferred_name = name_counter.most_common(1)[0][0] if name_counter else ""
+            else:
+                inferred_name = ""
+
             for entry in group_entries:
                 if not entry["program_id"] and inferred_id:
                     entry["program_id"] = inferred_id
@@ -950,8 +985,8 @@ class ORFacilityScraper:
         grouped_entries: Dict[tuple, List[Dict]] = defaultdict(list)
         for entry in entries:
             identity = (
-                entry["program_id"]
-                or entry["program_name"]
+                entry["program_name"]   # prefer human-readable name over bare numeric ID
+                or entry["program_id"]
                 or entry["agency_name"]
             )
             agency_norm   = _norm_key(entry["agency_name"])
