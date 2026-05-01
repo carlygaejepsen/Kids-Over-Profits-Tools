@@ -1,0 +1,293 @@
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:11
+Agency #: AR0720200
+General Information
+Case Number: 2024-00072992 Reporting 5970 - Strong, Marcus Reported 11/09/2024 17:28
+Officer: Date/Time:
+Location 2466 S 48TH ST B,
+Location PERIMETER OF THE OZARKS County: Washington
+Formatted: SPRINGDALE, 72762
+Common Name:
+Status: Closed Disposition: Inactive
+Status Date: 11/14/2024
+Disposition Date: 11/14/2024 Occurred From 11/09/2024 17:28
+Occurred Incident Assault - Simple
+Date/Time:
+Occurred To 11/09/2024 17:28 Type:
+Significant Event:
+Date/Time:
+Scene Processed
+Campus Code: By: Exceptional
+Clearance Date:
+Exceptional
+Clearance:
+Assigned Personnel
+Assigned Personnel: 10 - Baker, David Assigned By: 76 - Hammontree, Robert
+Assignment Type: Lead Investigator Assignment 11/14/2024 10:00
+Date/Time:
+Assignment End
+Date/Time: Assignment Notes:
+Solvability Factors
+Solvability Factor: Total Solvability
+Factor:
+Modus Operandi
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 State 13A - Aggravated 5-13-203a(3) BATTERY - 3RD DEGREE / NEGLIGENTLY 11/09/2024
+Assault CAUSES INJURY USING A DEADLY
+WEAPON
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Suspect 2466 48th ST, Springdale, AR Unknow Female
+72764 n
+2 Suspect 2466 S 48TH ST, SPRINGDALE, White Female
+AR 72764
+3 Suspect Unknow Female
+n
+4 Suspect 2466 S 48th, Springdale, AR Unknow Female
+72764 n
+5 Victim 2644 48th ST, Springdale, AR White Female
+72764
+Properties
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:11
+Agency #: AR0720200
+Contributing Officers
+Officer: 5970 - Strong, Marcus Supervisor: 146 - Pena, Jared Report 11/14/2024 09:46
+Date/Time:
+Report Type: Primary Approving User: fabiolama
+Evidence
+Status History
+Case Status: In Field Status Date: 11/10/2024 Changed By: System
+Date/Time 11/10/2024 16:16
+Changed:
+Case Status: Open Status Date: 11/10/2024 Changed By: fabiolama
+Date/Time 11/14/2024 09:48
+Changed:
+Case Status: Closed Status Date: 11/14/2024 Changed By: davidba
+Date/Time 11/14/2024 15:46
+Changed:
+Disposition History
+Disposition: Inactive Disposition Date: 11/14/2024 Disposition davidba
+Changed By:
+Date/Time 11/14/2024 15:46
+Changed:
+Supplemental Information
+Action Taken: Reasons For No Purge Type:
+Arrest:
+Purge Date: Non-Fatal
+Purge Review Shooting:
+Date:
+Associated Arrest Records
+Summary Narrative
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:11
+Agency #: AR0720200
+Report Narratives
+Name: Narrative Author: 5970 - Strong, Marcus Supervisor: 146 - Pena, Jared Date Created: 11/10/2024 16:16
+Description:
+On 11/10/2024 at approximately 1728 hours I responded to a disturbance at 2644 S 48th st.
+dispatch advised that a 13 yoa female was kicked in the stomach and was spitting up blood.
+Upon arrival I met with Kris Teel who advised the blue pod was fighting. I went
+back into the pod and the staff had multiple juvinile females in holds on the ground. No staff was
+able to tell me what had happened.
+After the pod had calmed down I sat down with Mr. Teel the RN in charge at the time and he
+advised me that some of the girls in the pod were talking about each other and a fight broke out.
+Mr. Teel was unable to tell me who started it and who all was involved.
+Mr. Teel stated that he does not believe there was blood being spat up but that the Victim who I
+identifed as had eaten hotdogs for diner just a few moments
+earlier had mashed them up and spit them up pretending it was blood. but it was unconfirmed.
+was transported to childrens hospital for evaluation.
+Axon Camera Activated.
+Ms 411
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:11
+Agency #: AR0720200
+Name: Contact with Perimeter of Author: 10 - Baker, David Supervisor: 76 - Hammontree, Date Created: 11/14/2024 15:46
+the Ozarks/Case status Robert
+Description:
+On Thursday, November 14, 2024 at approximately 3:30pm I made contact with one of the staff members at Perimeter of the Ozarks named John, by
+phone call. Upon contact, I explained to John who I was and why I was calling. I explained to John there wasn't enough information in the original report
+narrative to explain what exactly had happened. John said he could provide any information on the incident but was familiar with the persons involved.
+John said there hadn't been any other issues since the incident occurred. I asked John if Kris Teel was working, and he replied, no. I explained to John
+that I would be closing the case and showing inactive due to lack of information needed for prosecution and to completely understand what took place.
+John said he understood.
+At this time, I will be showing the case closed and inactive awaiting supervisor approval. No further information at this time.
+End DB318
+Login Id: SPRD\baileyjo Page 4 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:12
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00072993 Incident Type: Supplemental Call Date/Time: 11/09/2024 17:56
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Originating Call
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: Not In Progress Priority: 3
+Source: Admin Phone Line
+Units/Personnel
+Unit: 390 Primary Unit: No Call Date/Time: 11/09/2024 17:57
+Personnel: 189 - Thoele, Samuel Primary: Yes
+Unit: 411 Primary Unit: Yes Call Date/Time: 11/09/2024 17:56
+Personnel: 5970 - Strong, Marcus Primary: Yes
+Vehicles
+Subjects
+Disposition
+Disposition: Complaint Only Count: 1 Unit:
+Date/Time: 11/09/2024 18:32
+Evidence
+Call Log
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Supplemental, Status:
+Not In Progress, Priority: 3
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Unit Location
+Description: Unit 411 Secondary Location:
+Secondary Location Cleared
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00072993
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 11/09/2024 17:56 User: jessicaar Action: Unit Status Action
+Description: Unit 411 Responding
+User: jessicaar Action: Address Verified
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:12
+Agency #: AR0720200
+Date/Time: 11/09/2024 17:57
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 11/09/2024 17:57 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE, B
+(PERIMETER OF THE OZARKS)
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE /
+SPRINGHOUSE DR
+Date/Time: 11/09/2024 17:57 User: samueltho Action: Unit Status Action
+Description: Unit 390 Dispatched
+Date/Time: 11/09/2024 17:57 User: samueltho Action: Unit Location
+Description: Unit 390 Secondary Location:
+Secondary Location Cleared
+Performed by Mobile Unit
+390
+Date/Time: 11/09/2024 17:57 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Unit Status Action
+Description: Unit 390 Responding
+Date/Time: 11/09/2024 17:57 User: jessicaar Action: Narrative Added
+Description: 411/SHOW ME BACK IN
+ROUTE TO PERIMETER OF
+THE OZARKS
+Date/Time: 11/09/2024 18:07 User: samueltho Action: Narrative Added
+Description: 390/out at ACH
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:12
+Agency #: AR0720200
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Unit Status Action
+Description: Unit 390 On Scene
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Unit Status Action
+Description: Unit 411 On Scene
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Disposition Changed
+Description: Added: Complaint Only
+Count 1
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Unit Status Action
+Description: Unit 390 Available
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Unit Status Action
+Description: Unit 411 Available
+Date/Time: 11/09/2024 18:32 User: jasminepe Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 11/09/2024 17:56 Unit Number: 411 Action: Unit Status Change
+Description: Dispatched Call Number:
+583, Assigned Location:
+<UNKNOWN>, Call Type:
+Supplemental
+Date/Time: 11/09/2024 17:56 Unit Number: 411 Action: Unit Status Change
+Description: Responding
+Date/Time: 11/09/2024 17:56 Unit Number: 411 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 11/09/2024 17:57 Unit Number: 411 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 11/09/2024 17:57 Unit Number: 411 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST B, SPRINGDALE
+Date/Time: 11/09/2024 17:57 Unit Number: 390 Action: Unit Status Change
+Description: Dispatched Call Number:
+583, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Supplemental
+Performed by Mobile Unit
+390
+Date/Time: 11/09/2024 17:57 Unit Number: 390 Action: Unit Location
+Description: Secondary Location Cleared
+Performed by Mobile Unit
+390
+Date/Time: 11/09/2024 17:57 Unit Number: 390 Action: Unit Status Change
+Description: Responding
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 11/18/2024 11:12
+Agency #: AR0720200
+Date/Time: 11/09/2024 18:32 Unit Number: 390 Action: Unit Status Change
+Description: On Scene
+Date/Time: 11/09/2024 18:32 Unit Number: 411 Action: Unit Status Change
+Description: On Scene
+Date/Time: 11/09/2024 18:32 Unit Number: 411 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 11/09/2024 18:32 Unit Number: 411 Action: Unit Status Change
+Description: Available
+Date/Time: 11/09/2024 18:32 Unit Number: 390 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 11/09/2024 18:32 Unit Number: 390 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: jessicaar Date Entered: 11/09/2024 17:57
+411/SHOW ME BACK IN ROUTE TO PERIMETER OF THE OZARKS
+Entered By: samueltho Date Entered: 11/09/2024 18:07
+390/out at ACH
+Login Id: SPRD\baileyjo Page 4 of 4

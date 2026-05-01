@@ -1,0 +1,91 @@
+CFS - Command Log Printed an August 25, 2023
+
+CFS # CFS2330813
+
+Call Taker NATALIE SPAIN
+
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL
+CENTER)
+
+Location Details
+
+Primary Incident Code ALRE : Fire Alarm
+
+Additional Incident Code(s) RUNAWAY : Runaway
+
+Mod Emergency Fire/Medical
+
+Priority 5
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 07/26/23 17:44:15
+
+Completed Time 07/26/23 17:48:57
+
+| Reporters
+
+1191 (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 07/26/23 17:44:15
+How Reported Phone
+
+From Phone = (866) 858-8950
+Contact Phone
+
+Comments
+
+_ Other Names
+Vehicles
+
+Responders
+CALL1 (Primary) — ; FCFD (Primary)
+_ Response Times
+Assigned 07/26/23 17:44:45
+Enroute 07/26/23 17:48:57 *
+Arrived 07/26/23 17:48:57 *
+Leaving
+Arrived At
+Completed 07/26/23 17:48:57
+
+' IR / External Agency Numbers
+
+Officer Addenda
+
+| Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+07/26/23 17:44:15 | SPAIN, NATALIE|NewCFS
+07/26/23 17:44:45 | SPAIN, NATALIE | CALL1 | Assign
+
+Page 1 of 2
+
+
+07/26/23 17:45:17 | SPAIN, NATALIE | NURSE 1 HALL AND GENERAL MOTION
+
+07/26/23 17:46:39 | SPAIN, NATALIE | 3 KIDS RAN AWAY FROM THE FACILITY
+
+07/26/23 17:48:34 | SPAIN, NATALIE | ALARM COMPANY ADVISED THE FIRE DEPARTMENT COULD 10.22
+07/26/23 17:48:57 | SPAIN, NATALIE | CALL1 | Complete
+
+/CLQ
+Requested At
+Sent To
+Status
+Received At
+
+Location ‘
+Accuracy
+
+Page 2 of 2

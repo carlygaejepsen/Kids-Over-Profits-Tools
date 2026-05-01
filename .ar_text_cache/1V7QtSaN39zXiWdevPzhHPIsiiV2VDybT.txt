@@ -1,0 +1,406 @@
+CFS - Command Log Printed on November 1, 2023
+hw NOV ET LEV CO
+
+CFS # CFS2343855
+Call Taker TALECIA CHAMBER
+Location 603 KITTLE RD
+
+Location Details
+Primary Incident Code ASSAULT : Assault/Battery
+
+Mod Emergency Fire/Medical
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 10/12/23 21:08:21
+
+Completed Time 10/12/23 21:41:04
+Reporters
+
+KIMBERLY MCCOY (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time = 10/12/23 21:08:21
+How Reported
+
+From Phone
+
+Contact Phone (870) 530-5907
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+540 540 - THOMAS, MICHAEL —_FCPD (Primary)
+543 (Primary) 543 - MITLEFF, DALTON FCPD (Primary)
+545 545 - ALBERT, TANESHA — FCPD (Primary)
+
+Response Times
+
+Assigned 10/12/23 21:15:37
+Enroute 10/12/23 21:15:46
+Arrived 10/12/23 21:18:26
+Leaving
+
+Arrived At
+
+Completed 10/12/23 21:41:04
+
+_IR/ External Agency Numbers
+FCPD202310922
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+10/12/23 21:08:21 | CHAMBER, TALECIA | New CFS
+oo eSeSeSeSSSSSSSSSSSSSSSSSSSSeSee
+Page 1 of 2
+
+
+10/12/23 21:10:46 | CHAMBER, TALECIA | CALLER ADVISE MALE RESIDENT ATTACKING STAFF MEMBERS
+10/12/23 21:13:45 | CHAMBER, TALECIA | THE STAFF THEN ADVISE TO HOLD OFF ON SENDING AN OFFICER
+THEY HAD TO NOTIFY SOMEONE ELSE BEFORE CALLING THE POLICE
+
+10/12/23 21:15:33 | CHAMBER, TALECIA | MOMENTS LATER THEY CALLED BACK NEEDING AN OFFICER EN
+ROUTE
+
+10/12/23 21:15:37 | CHAMBER, TALECIA | 543 | Assign
+
+10/12/23 21:15:46 | CHAMBER, TALECIA | 543, 545 | Enroute
+
+10/12/23 21:18:26 | CHAMBER, TALECIA | 540, 543, 545 | On Scene
+
+10/12/23 21:23:39 | CHAMBER, TALECIA | 540 | Clear Alarms
+
+10/12/23 21:23:43 | CHAMBER, TALECIA | 543 | Clear Alarms
+
+10/12/23 21:23:46 | CHAMBER, TALECIA | 545 | Clear Alarms
+
+10/12/23 21:41:04 | CHAMBER, TALECIA | 540, 543, 545 | Complete
+
+10/12/23 22:41:00 | CHAMBER, TALECIA | EVENT#: 2310120018
+
+10/12/23 22:41:04 | CHAMBER, TALECIA | Complete
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location (
+Accuracy
+
+eee
+
+Page 2 of 2
+
+
+CES - Unit Response Times Printed on November 1, 2023
+—_— te 0 November 1, 2023
+
+CFS # CFS2343855
+Call Taker TALECIA CHAMBER
+Location 603 KITTLE RD
+
+Location Details
+Primary Incident Code ASSAULT : Assault/Battery
+
+Mod Emergency Fire/Medical
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 10/12/23 21:08:21
+Completed Time 10/12/23 21:41:04
+Reporters |
+KIMBERLY MCCOY (Initial Reporter)
+Sex
+DOB
+Address
+Report Time 10/12/23 21:08:21
+How Reported
+From Phone
+Contact Phone (870) 530-5907
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+540 540 - THOMAS, MICHAEL FCPD (Primary)
+543 (Primary) 543 - MITLEFF, DALTON FCPD (Primary)
+545 545 - ALBERT, TANESHA — FCPD (Primary)
+
+Response Times
+
+Assigned 10/12/23 21:15:37
+Enroute = 10/12/23 21:15:46
+Arrived 10/12/23 21:18:26
+Leaving
+
+Arrived At
+
+Completed 10/12/23 21:41:04
+
+IR / External Agency Numbers
+FCPD202310922 —
+
+Officer Addenda
+
+| Unit Response Times
+
+Non Unit Specific Times
+90
+
+Page 1 of 2
+
+
+10/12/23 21:08:21 | New CFS
+
+10/12/23 21:10:46 | CALLER ADVISE MALE RESIDENT ATTACKING STAFF MEMBERS
+
+10/12/23 21:13:45 | THE STAFF THEN ADVISE TO HOLD OFF ON SENDING AN OFFICER, THEY HAD TO NOTIFY
+SOMEONE ELSE BEFORE CALLING THE POLICE
+
+10/12/23 21:15:33 | MOMENTS LATER THEY CALLED BACK NEEDING AN OFFICER EN ROUTE
+
+10/12/23 22:41:00 | EVENT#: 2310120018
+
+10/12/23 22:41:04 | Complete
+
+540
+10/12/23 21:23:39 | Clear Alarms
+
+540, 543, 545
+
+10/12/23 21:18:26 | On Scene
+
+10/12/23 21:41:04 | Complete
+
+543
+10/12/23 21:15:37 | Assign —
+
+10/12/23 21:23:43 | Clear Alarms
+
+543, 545
+10/12/23 21:15:46 | Enroute
+
+545
+
+10/12/23 21:23:46 | Clear Alarms
+
+eee
+
+Page 2 of 2
+
+
+FORREST CITY
+POLICE DEPARTMENT Detail Page
+
+225 N. ROSSER ST
+
+Address
+
+City FO
+
+CAD EVENT
+
+Call
+
+Description
+
+Disposition
+
+A
+
+Comments
+
+Unit ID Unit Stat
+
+FORREST CITY, AR.
+
+Type 56
+
+is Status Time
+
+Location KITTLE RD
+RREST CITY
+
+CAD Event
+
+Event # Print Date
+2310120018 01/05/2024
+
+County ST FRA State AR
+
+CALL ACTIVE
+
+REPORTING PARTY INFORMATION
+
+CALL DETAILS
+PATROL ACTIVITIES
+
+Comment / Location Officer #1/2 Vehicle!D Dispatch ID
+
+560 D 10/12/2023 22:27:45 461
+KITTLE RD
+560 A 10/12/2023 22:27:51 461
+KITTLE RD
+Printed By/On: 412 / 01/05/2024 11:27:03
+
+CrimeStar® Computer Aided Di:
+
+ich System
+
+Licensed to: FORREST CITY AR|POLICE DEPARTMENT
+
+
+
+FORREST GITY rx 14 Incident
+POLICE DEPARTMENT
+
+Incident #
+
+2310120018
+Type Seq
+
+Atternpt
+10/12/2023 | 22:27
+
+225 N. ROSSER ST].
+FORREST CITY, AR. 72335
+
+Crime / Incident (Prima
+5-13-203 BATTERY
+
+Rpt Dist
+1
+
+1
+
+, Secondary, Tertiary)
+BRD DEGREE
+
+Ou
+
+1012/2023 |__|
+CL] 10/12/2023 T
+
+Day
+Thu
+Thu
+
+hu
+
+Location of Incident 1521 ALBERT, FORREST CITY, AR
+
+LE RD
+
+Cross Street K/
+
+"RP" = Reporting Party “W" = Witness "S$" = Suspect “O" = Other
+Last, First, Middle [Firm if Business) [sex T Age THT [wr | Hair | Eyes _| Home Phone
+
+City, State, Zip Code SSN Local ID # State # FBI # Cell Phone
+FORREST CITY CITY AR 72335 Pe
+Last, First, Middie|(Firm if Business) Race Sex Age HT WT Hair Eyes Home Phone
+16 (870)
+Address DOB DL Number State | Work Phone
+a AR | (870)
+City, State, Zip Code SSN Local ID # State # FBI# Cell Phone
+FORREST CITY AR 72335 0
+Address DOB DL Number Work Phone
+City, State, Zip Code SSN Local ID # FBI # Cell Phone
+
+Synopsis
+
+Address
+
+5
+
+bes)
+
+5
+
+Continuation PropertyList
+Attached L | attached  [_]| ProvertyDamage$ $0.00
+Press Domestic Violence
+Gang Related N Victim Senior Citizen |
+Force Used [| Child Abuse [__]
+Solvabili : sal
+Report Complete/Ready for Review CADICFS Event # 2310120018
+
+Assigned To Date
+
+oO Reviewed By Approved Date
+ficerID ALBERY, TANESHA 560 Lt. Michael Thomas 10/13/2023
+
+<H-r-w><r OH
+
+222222222222
+
+Printed By/On: 412 / 01/01/2024 09;05:;39
+CrimeStar® Law Enforcement Records Management System
+Licensed to: FORREST CITY AR POLICE DEPARTMENT
+
+
+FORREST CITY Page 2 Incident cont'd
+POLICE DEPARTMENT Narrative
+
+Crime / Incident (Primary Attempt | Type Seq
+5-13-203 BATTERY 3RD DEGREE C 1
+
+On October 12), 2023, Officer Albert was dispatched to 1521 Albert Street (a
+behavioral Facility) in reference to one of the residents assaulting a staff
+member. Upon jarrival I made contact with the 16-year-old child
+who advised that he was advised that he had to be moved to another hallway and
+he wasn't moving as fast as the staff member wanted so the staff member
+started to throw his things and he got upset. He advised that the
+
+grabbed him, and he defended himself. He says he complied with all of
+his staff's drders and the staff was aggressive with him.
+
+I also made contact with the staff member who was assaulted (xD
+who advised He told 16-year-old that he had to move to another hall
+when he brushed them off by moving slowly. He says he walked into other
+residents' rdom waking them up shaking their hands and moving at his own pace.
+He says he wasn't compliant and became aggressive and he attempted to put
+
+in a restraint, and he assaulted him.
+
+HS had red marks on his nose and a scratch on his throat area on the left
+
+side. eS b=: a red mark on his nose, a scratch on the left side of his
+head and multiple scratches on the left side of his neck. The facility was
+
+advised of the affidavit process.
+
+Reviewed By Approved Date
+Officer 1D ALBERT, TANESHA Lt. Michael Thomas 10/13/2023
+Printed By/On: 412 / 01/01/2024 09:05:39
+
+CrimeStar® Law Enforcement Records Management System
+Licensed to; FORREST CITY AR POLICE DEPARTMENT
+
+|
+
+WM

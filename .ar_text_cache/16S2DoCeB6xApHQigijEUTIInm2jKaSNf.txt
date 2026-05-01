@@ -1,0 +1,102 @@
+CFS - Command Log Printed on March 28, 2023
+
+CFS # CFS2310098
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code RUNAWAY : Runaway
+
+Mod Report Needed
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 03/25/23 08:35:05
+
+Completed Time 03/25/23 10:44:55
+Reporters
+
+WOODRIDGE (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 03/25/23 08:35:05
+
+How Reported
+
+From Phone
+
+Contact Phone
+
+Comments
+
+| Other Names
+
+Vehicles
+Responders
+542 542 - HAWKINS, FCPD (Primary)
+NATHANIEL
+543 (Primary) 543 - MITLEFF, DALTON FCPD (Primary)
+544 544 - DIXON, CORBIN FCPD (Primary)
+
+Response Times
+Assigned 03/25/23 08:35:48 *
+Enroute 03/25/23 08:35:48 *
+Arrived 03/25/23 08:35:48
+Leaving
+Arrived At
+Completed 03/25/23 10:44:55
+
+| IR / External Agency Numbers
+FCPD202302356 ~
+
+Officer Addenda
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+Page 1 of 2
+
+
+03/25/23 08:35:05 | HOWTON, KILEY | New CFS
+
+03/25/23 08:35:34 | HOWTON, KILEY | ADVISED 3 SUBJECTS HAVE RAN OFF FROM PROPERTY
+03/25/23 08:35:48 | HOWTON, KILEY | 543 | On Scene
+
+03/25/23 08:36:52 | HOWTON, KILEY | ADVISED THEY ARE ALL W/M WEARING SHORTS
+03/25/23 08:41:30 | HOWTON, KILEY | 542 | On Scene
+
+03/25/23 08:46:08 | HOWTON, KILEY | IN AREA ATL
+
+03/25/23 08:49:32 | LAWS, ALLISON | 544 | Enroute
+
+03/25/23 09:18:36 | HOWTON, KILEY | BACK OUT AT WOODRIDGE
+
+03/25/23 10:02:36 | LAWS, ALLISON | 544 | Available (Location: In Service)
+
+ileal ||ONTON. KILEY a es «> A
+ENTERED INTO ACIC
+
+03/25/23 10:44:55 | HOWTON, KILEY | 542, 543 | Complete
+
+CLQ
+
+Requested At
+Sent To
+Status
+Received At
+Location
+Accuracy
+
+a
+Page 2 of 2

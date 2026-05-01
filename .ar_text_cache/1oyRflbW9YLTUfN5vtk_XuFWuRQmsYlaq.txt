@@ -1,0 +1,120 @@
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 1 of 2
+
+Call Information
+
+Received Date: 06/30/2024 16:41 Dispatch Date: 06/30/2024 16:48 EnRotue Date: 06/30/2024 16:48
+
+Arrived Date: 06/30/2024 16:54 Completed Date: 06/30/2024 17:41 Call Canceled:
+Disposition: HANDLED BY OFFICER-NO REPORT
+
+CFS #: 24063671 Case #: Priority:
+
+Nature: SUSPICIOUS PERSON How Received:
+
+Initial Nature: Alarm:
+
+Call Taken By: GILLIAM, KELLI Dispatched By: WIMBERLY, OLIVIA Fire Type:
+
+Completed By: WIMBERLY, OLIVIA ReOpened By: ReOpened Reason:
+
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: Permit #:
+
+Business:
+
+male claiming to be a pt guardian and wanting to see a child / the childs caseworker is adv caller to not allow him to see the child / male is
+refusing to leave / staff believes it is the patients "pimp" / he is the lobby acting flustered
+
+marquez byers from illinois / 6'1" b/m black polo grey pants and black sandals / something in his right front pocket but cant tell what it is
+
+Incident Information
+Common Name: LITTLE CREEK BEHAVIORAL Zone:
+
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682371,
+
+Caller Information
+Name: SCEIFRES, KAYLA Address:
+
+Phone #: (479) 692-1680 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+
+06/30/2024 16:54:00 WIMBERLY, OLIVIA
+06/30/2024 16:54:29 WIMBERLY, OLIVIA
+
+06/30/2024 17:18:56 GILLIAM, KELLI MR BYERS IS ACTUALLY WITH DCFS / SHOWED EMAILS TO
+F14 TO PROVE SO
+
+06/30/2024 17:40:53. WIMBERLY, OLIVIA
+
+06/30/2024 17:41:16 WIMBERLY, OLIVIA Complete all units.
+Total Notes: 5
+
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+F14 MORGAN, CODY FCSO 0 0 YES
+Dispatched Date: 06/30/2024 16:48 EnRoute Date: 06/30/2024 16:48 Arrived Date: 06/30/2024 16:54
+Transport Start: Transport End: Completed Date: 06/30/2024 17:40
+Disposition Date: Call Canceled: Back At Station:
+
+Print Date: Jul 17 2024 - 13:05:07 Faulkner County Sheriffs Office, 24063671
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+
+Faulkner County Sheriffs Office
+
+Call for Service Card
+Page 2 of 2
+
+Units
+Unit Number Unit Name Department Mileage Start_ Mileage End Primary Unit
+F32 THOMAS, AUSTIN FCSO 0 0 NO
+Dispatched Date: 06/30/2024 16:48 EnRoute Date: 06/30/2024 16:48 Arrived Date: 06/30/2024 16:54
+Transport Start: Transport End: Completed Date: 06/30/2024 17:41
+Disposition Date: Call Canceled: Back At Station:
+Total Units: 2
+
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+06/30/2024 17:03 F14 MORGAN, CODY SUSPICIOUS PERSON
+
+Name: BYERS, MARQUISE D
+
+Race: BLACK OR AFRICAN AMERICAN / Sex: MALE / DOB: 11/02/1975 00:00:00
+
+Hair Color: BLACK / Eye Color: BROWN
+
+DL State: ILLINOIS / DL Number: B62054475312 / DL Expires: 11/02/2023
+06/30/2024 16:48 F32 THOMAS, AUSTIN UNIT ENROUTE
+06/30/2024 16:48 F32 THOMAS, AUSTIN UNIT DISPATCHED
+06/30/2024 16:48 F14 MORGAN, CODY UNIT ENROUTE
+06/30/2024 16:48 F14 MORGAN, CODY UNIT DISPATCHED
+
+Total Radio Traffic: 5
+
+People Involved
+
+Name: BYERS, MARQUISE D DOB: 11/02/1975 SSN:
+Race: BLACKOR~ Sex: MALE Cell Phone: Work Phone:
+AFRICAN
+AMERICAN
+Address: Apartment: Home Phone:
+CSZz: Email:
+How Involved: Relationship:
+DL Number: IL/B62054475312 Class: Expires On: 11/02/2023 Status:
+
+Total People: 1
+
+Case Numbers
+
+Entry Date Case Number Department
+06/30/2024 16:48:39 FAULKNER COUNTY SO
+Print Date: Jul 17 2024 - 13:05:07 Faulkner County Sheriffs Office, 24063671
+
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

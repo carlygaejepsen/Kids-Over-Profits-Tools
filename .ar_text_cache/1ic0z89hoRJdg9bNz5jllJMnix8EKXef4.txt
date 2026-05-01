@@ -1,0 +1,178 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:40
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00037707 Incident Type: Hangup Call Date/Time: 06/09/2025 12:34
+Location 2466 S 48TH ST, Location Originating Call (479) 725-5081
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 361 Primary Unit: Yes Call Date/Time: 06/09/2025 12:35
+Personnel: 101 - Johnson, Matthew Primary: Yes
+Unit: 340 Primary Unit: No Call Date/Time: 06/09/2025 12:35
+Personnel: 112 - Lawrence, John Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 725-5081 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 06/09/2025 12:44
+Evidence
+Call Log
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Login Id: SPRD\fabiolara Page 1 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:40
+Agency #: AR0720200
+Date/Time: 06/09/2025 12:34 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 06/09/2025 12:34 User: stefanyca Action: Narrative Added
+Description: IMMEDIATE DISCONNECT
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Narrative Added
+Description: CAME FROM A LANDLINE
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Narrative Added
+Description: ON CALLBACK STAYED ON
+THE LINE FOR A FEW
+SECOND AND
+DISCONNECTED
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Call Updated
+Description: Caller Phone Changed to
+(479) 725-5081
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Status Action
+Description: Unit 361 Dispatched
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Location
+Description: Unit 361 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/09/2025 12:35 User: karlago Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00037707
+Date/Time: 06/09/2025 12:35 User: karlago Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Location
+Description: Unit 340 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Status Action
+Description: Unit 340 Dispatched
+Login Id: SPRD\fabiolara Page 2 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:40
+Agency #: AR0720200
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 06/09/2025 12:35 User: stefanyca Action: Narrative Added
+Description: NO SOUNDS OF DISTRESS
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Status Action
+Description: Unit 361 Responding
+Date/Time: 06/09/2025 12:35 User: karlago Action: Unit Status Action
+Description: Unit 340 Responding
+Date/Time: 06/09/2025 12:43 User: karlago Action: Unit Status Action
+Description: Unit 340 On Scene
+Date/Time: 06/09/2025 12:44 User: karlago Action: Unit Status Action
+Description: Unit 361 On Scene
+Date/Time: 06/09/2025 12:44 User: karlago Action: Narrative Added
+Description: 340/ WAS A CHILD T98 F2
+Date/Time: 06/09/2025 12:44 User: karlago Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 06/09/2025 12:44 User: karlago Action: Unit Status Action
+Description: Unit 361 Available
+Date/Time: 06/09/2025 12:44 User: karlago Action: Unit Status Action
+Description: Unit 340 Available
+Date/Time: 06/09/2025 12:44 User: karlago Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 06/09/2025 12:35 Unit Number: 361 Action: Unit Status Change
+Description: Dispatched Call Number:
+925, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/09/2025 12:35 Unit Number: 361 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/09/2025 12:35 Unit Number: 340 Action: Unit Status Change
+Description: Dispatched Call Number:
+925, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/09/2025 12:35 Unit Number: 340 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/09/2025 12:35 Unit Number: 361 Action: Unit Status Change
+Description: Responding
+Login Id: SPRD\fabiolara Page 3 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:40
+Agency #: AR0720200
+Date/Time: 06/09/2025 12:35 Unit Number: 340 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/09/2025 12:43 Unit Number: 340 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/09/2025 12:44 Unit Number: 361 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/09/2025 12:44 Unit Number: 361 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/09/2025 12:44 Unit Number: 361 Action: Unit Status Change
+Description: Available
+Date/Time: 06/09/2025 12:44 Unit Number: 340 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/09/2025 12:44 Unit Number: 340 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: stefanyca Date Entered: 06/09/2025 12:34
+IMMEDIATE DISCONNECT
+Entered By: stefanyca Date Entered: 06/09/2025 12:35
+CAME FROM A LANDLINE
+Entered By: stefanyca Date Entered: 06/09/2025 12:35
+ON CALLBACK STAYED ON THE LINE FOR A FEW SECOND AND DISCONNECTED
+Entered By: stefanyca Date Entered: 06/09/2025 12:35
+NO SOUNDS OF DISTRESS
+Entered By: karlago Date Entered: 06/09/2025 12:44
+340/ WAS A CHILD T98 F2
+Login Id: SPRD\fabiolara Page 4 of 4

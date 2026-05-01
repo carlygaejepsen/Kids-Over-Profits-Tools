@@ -1,0 +1,65 @@
+Incident Report
+Print Date/Time: 12/20/2023 10:48 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2023-00076868
+Incident Date/Time: 11/15/2023 1:24:11 PM Incident Type: SUICIDE THREAT
+Location: 2805 E ZION RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (850)377-6977 Source: 911
+Report Required: No Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+480 480-PERALEZ
+495 495-PAYNE
+508 508-GARCIA
+382-CALVILLO
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+2 Caller DISPATCH ASSIGNED (850)377-6977
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:495
+Disposition Count Date/Time
+03NORPT 1 11/15/2023 13:43
+Unit:508
+Disposition Count Date/Time
+03NORPT 1 11/15/2023 13:44
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+11/15/2023:13:38:30adunlapNarrative:495/OTHERUNITCANDOWNGRADE
+11/15/2023:13:33:58bwhiteNarrative:TRANSFEROFCARE
+11/15/2023:13:29:01fcarterNarrative:STAFFHASTHEGLASSSHEUSED
+11/15/2023:13:28:41fcarterNarrative:PTIS UNKDOB
+11/15/2023:13:28:16fcarterNarrative:PTISINTHEGYM,JUSTTHROUGHTHEFRONTDOORSOFADMINOFFICE
+11/15/2023:13:28:06fcarterNarrative:CONFIRMEDADMINBLDG
+11/15/2023:13:27:16fcarterNarrative:STAFFWILLMEETATMAINENTRANCE
+11/15/2023:13:27:13fcarterNarrative:COMETHROUGHMAINENTRANCE
+11/15/2023:13:27:00fcarterNarrative:ACTIVELYTRYINGTOHURTHERSELF
+11/15/2023:13:26:55fcarterNarrative:ISCURRENTLYINAPHYSICALRESTRAINT
+11/15/2023:13:26:34fcarterNarrative:NOSHOCKSYMPTOMS
+11/15/2023:13:26:28fcarterNarrative:UNABLETOCONTROLTHEBLEEDING
+11/15/2023:13:26:25fcarterNarrative:ATTHETREATMENTCENTER
+11/15/2023:13:26:13fcarterNarrative:ISBEINGCOMBATIVE
+11/15/2023:13:26:10fcarterNarrative:BROKEOPENANAILPOLISHGLASSBOTTLEANDUSEDTHEGLASSTOCUTHER
+WRISTS
+11/15/2023:13:25:55fcarterNarrative:AWAKEANDBREATHING
+11/15/2023:13:25:51fcarterNarrative: FEMALEPT
+11/15/2023:13:25:49fcarterNarrative:BLEEDINGISSERIOUS
+11/15/2023:13:25:41fcarterNarrative:FEMALECUTHERWRISTS
+Page: 2 of 2
+
+Public Records Exemptions
+Enclosed please find a copy of the response documents for your public
+records request. The following information is provided to explain the
+process employed to review and produce the response documents.
+Reason Description Pages
+2
+1 of 1

@@ -1,0 +1,14 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+Total Radio Traffic:3
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 01/09/2023 10:42 Toneout 2: 01/09/2023 10:42 Toneout 3:
+Ack. Date: 01/09/2023 10:42 Cancel Date: Toneout 1 By: FEDDER, STORM
+Total Toneouts: 1
+Print Date: Jan 23 2023 - 08:28:53 Faulkner County Sheriffs Office, 692614
+Powered by iSOMS(c) Driven by Values CAD_Details KAKILCREASE

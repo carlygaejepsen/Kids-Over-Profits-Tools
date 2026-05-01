@@ -1,0 +1,141 @@
+Fayetteville Police Department
+Summary
+Print Date/Time: 10/27/2023 12:34 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Case Number: 2023-00062524
+Case
+Case Number: 2023-00062524 Incident Type: Missing Person
+Location: 4253 N CROSSOVER RD Occurred From: 09/19/2023 13:07
+FAYETTEVILLE, AR 72703 Occurred Thru: 09/19/2023 13:20
+Reporting Officer ID: 504 - STONE Disposition: Inactive
+Disposition Date: 09/20/2023
+Reported Date: 09/19/2023 13:07 Tuesday
+Offenses
+No. Group/ORI Crime Code Statute Description Counts
+Subjects
+Type No.Name Address Phone Race Sex DOB/Age
+Reporting Person 1 CHERUIYOTJO, RICHARD 4253 N CROSSOVER RD Unknown Male
+FAYETTEVILLE, AR 72703 42
+Arrests
+Arrest No. Name Address Date/Time Type Age
+Property
+Date Code Type Make Model Description Tag No.Item No.
+Vehicles
+No. Role Vehicle Type Year Make Model Color License Plate State
+Routing:
+Page: 1 of 3
+Page: 1 of 1
+
+OfficerID: SSTONE, S Stone/Case Narrative 2023-62524
+Officer S Stone #504
+Missing Persons
+Case #2023-62524
+Case Narrative
+On September 19, 2023, at approximately 1:07 P.M., I was dispatched to 4253 N.
+Crossover Rd. for a missing person report. Upon arrival, I contacted the caller,
+Richard Cheruiyot, , an employee at Piney Ridge. Richard stated that
+the two boys, and , were
+in the back outside area and jumped the fence. Richard also noted no one saw the
+boys run towards the front of the building. Richard stated has
+kidney issues but is not given medication for the condition. It should also be known
+that another employee at Piney Ridge said one of the other patients told them
+and had been planning to run away from Piney Ridge.
+After speaking with Richard, I drove to multiple houses south in the surrounding area
+of Piney Ridge. Corporal Peace #321 then radioed he had seen and run
+into some brush off of E. Zion Rd. just east of my position. Multiple employees of
+Piney Ridge and I walked through the woods on the North side of E. Zion and
+searched for and . After searching for a little over an hour, Washington
+County Sheriff's Officer had a Deputy come to our location and use a drone to try and
+locate the two subjects. After the Deputy searched the area with the drone,
+and could still not be found.
+and was last seen wearing a gray t-shirt,
+blue jeans, and red shoes. and was
+last seen wearing a green t-shirt with blue jeans.
+I contacted Central Dispatch to issue a be on the lookout (BOLO) for and
+. Central Dispatch also entered both juveniles into ACIC/NCIC as missing.
+This incident was recorded on my Axon body-worn camera and my Axon MVR.
+Processed by A Reznicek
+Page: 2 of 3
+
+OfficerID: LSAMUELS, L. Samuels/ Case Supplement #2023-62524
+Corporal L. Samuels #347
+Recovery
+Case #2023-62524
+Case Supplement
+On September 19, 2023, I responded to 3427 S Thompson in Springdale to recover
+two missing juveniles. and had run away from Piney
+Ridge earlier in the day. Springdale Police Department had contacted them after they
+went to the business to turn themselves in. I transported both juveniles back to Piney
+Ridge, and they were given to staff.
+Processed by K. Frazier
+Page: 3 of 3
+
+Incident Report
+Print Date/Time: 10/27/2023 12:33 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2023-00062524
+Incident Date/Time: 9/19/2023 1:07:29 PM Incident Type: MISSING PERSON
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (479)587-1408 Source: Phone
+Report Required: Yes Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: 2023-00062524 Nature of Call:
+Unit/Personnel
+Unit Personnel
+296 296-KOSCHESKI
+321 321-PEACE
+504 504-STONE
+453-BARNETT
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller CHERUIYOTJO, 4253 N CROSSOVER RD Unknown Male
+RICHARD
+FAYETTEVILLE AR 72703
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count
+02GONEONARRIVAL 2
+01RPT 1
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+09/19/2023:14:54:37sstoneNarrative:BOLOFOR
+LSWGRYSHIRTBLUJEANSREDSHOESAND
+LSWGRNTSHIRTLBLUJEANS.BOTHFLEDPINEYRIDGEATAPPROXIMATELY1300HOURSON09/19/2023.THEY
+WERELASTSEENINTHEAREAOFN.OLDMISSOURIRD.ANDE.ZIONRD.NEITHERJUVENILEHAVEFAMILYIN
+THEAREAORAMODEOFTRANSPORTATION.
+09/19/2023:14:45:40mtheriaultNarrative:296D2ATBOTANICALGARDENS
+09/19/2023:14:31:06mtheriaultNarrative:296HELPINGONTHETRAIL
+09/19/2023:14:30:36mtheriaultNarrative:504WAS1012WITHCOUNTYNOTTHEJUVENILES
+09/19/2023:14:19:23mtheriaultNarrative:5041012
+09/19/2023:14:18:16lusmithNarrative:WCSOADVTHEYHAVEANOFFICERWITHADRONENEARBYIFNEEDED
+09/19/2023:13:44:21mtheriaultNarrative:321LOSTSIGHT
+09/19/2023:13:43:36mtheriaultNarrative:STAFFNOTIFIED
+09/19/2023:13:42:16mtheriaultNarrative:321advSUBJECTSHEADINGSOUTHBACKTOZIONFROM321PLOT
+09/19/2023:13:37:31mtheriaultNarrative:321ADVSUBJECTSNBFROMZIONTHROUGHBRUSHHEADEDTOLAKEFAY
+TRL
+09/19/2023:13:16:35kfosterNarrative:CALLERCANGETPICTURESFROMPARENTSIFNEEDED
+09/19/2023:13:15:08kfosterNarrative:ADVCALLERTOMEETOFFICERSATSOUTHENTRANCE.
+09/19/2023:13:14:56mtheriaultNarrative:504GOINGTOTHESOUTHENTRANCE
+09/19/2023:13:14:47kfosterNarrative:AREHEREDUETOBEHAVIOR,PARENTSARENOTAWAREATTHISTIME.
+09/19/2023:13:14:09kfosterNarrative:DENIEDC10FORBOTHSUBJECTS,
+09/19/2023:13:13:06kfosterNarrative: :NOSMTS.NOMENTALORPHYSICALDISABILITIES.NOBELONGINGS.
+PRIMARYLANGISENGLISH.NOPETSWITHHIM.NOCELLPHONE.
+09/19/2023:13:12:43kfosterNarrative: :NOSMTS.NOMENTALORPHYSICALDISABILITIES.NOBELONGINGS.
+PRIMARYLANGISENGLISH.NOPETSWITHHIM.NOCELLPHONE.
+09/19/2023:13:11:48mtheriaultNarrative:34510-4
+09/19/2023:13:11:31kfosterNarrative:NOC1,NOTC2.
+09/19/2023:13:11:23kfosterNarrative:NOFRIENDSORFAMILYINTHEAREA,ARENOTFROMHERE.
+09/19/2023:13:11:04kfosterNarrative:LASTSEENHEADEDWESTBOUNDTOWARDVALLEYLAKEONFOOT
+09/19/2023:13:10:41kfosterNarrative: LSWGRYSHIRT
+BLUJEANSREDSHOES
+09/19/2023:13:09:35kfosterNarrative: HASAKIDNEYCONDITION,DOESNOTTAKEMEDSFORIT.
+09/19/2023:13:09:13kfosterNarrative: LSWGRN
+TSHIRTLBLUJEANS
+09/19/2023:13:08:00kfosterNarrative:TWO13YOJUSTRANAWAY
+Page: 2 of 2

@@ -1,0 +1,462 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00058598 Incident Type: Missing Call Date/Time: 09/01/2025 11:37
+Location 2601 HABBERTON RD, Location YELLOW ROCK BEHAVORIAL Originating Call (479) 587-1408
+Formatted: SPRINGDALE, 72764 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 354 Primary Unit: Yes Call Date/Time: 09/01/2025 11:40
+Personnel: 95 - Jackson, Justin Primary: Yes
+Unit: 366 Primary Unit: No Call Date/Time: 09/01/2025 11:41
+Personnel: 208 - Wills, Kirby Primary: Yes
+Unit: 375 Primary Unit: No Call Date/Time: 09/01/2025 11:46
+Personnel: 2470 - Strode, Elizabeth Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, STEPHANIE Location
+Formatted:
+Primary Contact (479) 396-4700 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 09/01/2025 11:59
+Evidence
+Call Log
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+User: katemo Action: Location
+Login Id: SPRD\baileyjo Page 1 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:37
+Description: Call Location Changed from
+<UNKNOWN> to 2601
+HABBERTON RD,
+SPRINGDALE (YELLOW ROCK
+BEHAVORIAL)
+Date/Time: 09/01/2025 11:37 User: katemo Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 09/01/2025 11:37 User: katemo Action: Location
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 09/01/2025 11:37 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Caller Phone Changed to
+(479) 396-4700
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 09/01/2025 11:37 User: katemo Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Missing, Status: Not In
+Progress, Priority: 3
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Caller Phone Changed from
+(479) 396-4700 to (479) 587-
+1408
+Date/Time: 09/01/2025 11:37 User: katemo Action: Call Updated
+Description: Caller Updated: Name
+Changed from to ,
+STEPHANIE
+Login Id: SPRD\baileyjo Page 2 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:38 User: katemo Action: Narrative Added
+Description: YELLOW ROCK BEHAVIORAL
+AT 2601 HABBERTON
+ADVISED THEY HAD A
+RESIDENT ELOPE
+Date/Time: 09/01/2025 11:38 User: katemo Action: Narrative Added
+Description:
+H/M
+Date/Time: 09/01/2025 11:38 User: katemo Action: Narrative Added
+Description: HE LEFT TOWARDS THE
+SOUTH
+Date/Time: 09/01/2025 11:38 User: katemo Action: Narrative Added
+Description: WITH IN THE LAST 5 MINS
+Date/Time: 09/01/2025 11:38 User: katemo Action: Narrative Added
+Description: THEY NORMALLY GO TO THE
+WALMART NEIGHBORHOOD
+MARKET
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: THEY ARE IN CONTACT
+WITH SOMEONE WHO HAS
+EYES ON HIM. (ANOTHER
+EMPLOYEE)
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: HE IS NEAR OR BEHIND
+SOME CONSTRUCTION
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: HE IS E/B
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: RUNNING
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: WEARING BLK TSHIRT AND
+BLK PANTS DARK SHOES
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: HAS A BOWL HAIRCUT
+Date/Time: 09/01/2025 11:39 User: katemo Action: Narrative Added
+Description: IS BEHIND THE CHURCH
+WITH THE RED ROOF
+Date/Time: 09/01/2025 11:40 User: katemo Action: Narrative Added
+Description: HE IS STILL RUNNING
+Date/Time: 09/01/2025 11:40 User: katemo Action: Narrative Added
+Description: HE IS STILL E/B
+User: katemo Action: Narrative Added
+Login Id: SPRD\baileyjo Page 3 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:40
+Description: RUNNING ACROSS THE
+FIELD
+Date/Time: 09/01/2025 11:40 User: jasminne Action: Unit Status Action
+Description: Unit 354 Dispatched
+Date/Time: 09/01/2025 11:40 User: jasminne Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 09/01/2025 11:40 User: jasminne Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00058598
+Date/Time: 09/01/2025 11:40 User: jasminne Action: Unit Location
+Description: Unit 354 Secondary Location:
+Secondary Location Cleared
+Date/Time: 09/01/2025 11:41 User: katemo Action: Narrative Added
+Description: THEY ARE NEXT TO HWY 412
+Date/Time: 09/01/2025 11:41 User: jasminne Action: Unit Location
+Description: Unit 366 Secondary Location
+Updated: Secondary Location
+Cleared
+Date/Time: 09/01/2025 11:41 User: jasminne Action: Unit Status Action
+Description: Unit 366 Dispatched
+Date/Time: 09/01/2025 11:41 User: katemo Action: Narrative Added
+Description: BY THE CHURCH AND A TIN
+BLDG
+Date/Time: 09/01/2025 11:41 User: jasminne Action: Unit Status Action
+Description: Unit 354 Responding
+Date/Time: 09/01/2025 11:41 User: jasminne Action: Unit Status Action
+Description: Unit 366 Responding
+Date/Time: 09/01/2025 11:42 User: katemo Action: Narrative Added
+Description: HE IS FROM
+Date/Time: 09/01/2025 11:42 User: katemo Action: Narrative Added
+Description: THEY WANT HIM BROUGHT
+BACK TO YELLOW ROCK
+Date/Time: 09/01/2025 11:42 User: katemo Action: Narrative Added
+Description: HE IS GOING INTO THE
+WOODS NOW
+Date/Time: 09/01/2025 11:42 User: katemo Action: Narrative Added
+Description: STILL ON THE SOUTH SIDE
+OF HWY 412
+User: katemo Action: Narrative Added
+Login Id: SPRD\baileyjo Page 4 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:43
+Description: NO FRIENDS OR FAMILY IN
+THE AREA.
+Date/Time: 09/01/2025 11:43 User: katemo Action: Narrative Added
+Description: THEY HAVE REACHED A
+GRAVEL ROAD
+Date/Time: 09/01/2025 11:44 User: katemo Action: Narrative Added
+Description: CORRECTION THEY ARE AT
+2701 EUPIL
+Date/Time: 09/01/2025 11:44 User: katemo Action: Narrative Added
+Description: STILL RUNNING TO THE
+EAST
+Date/Time: 09/01/2025 11:44 User: katemo Action: Narrative Added
+Description: WALKING NOW
+Date/Time: 09/01/2025 11:45 User: katemo Action: Narrative Added
+Description: THE STAFF MEMBER
+FOLLOWING HIM IS
+ELIZABETH EDWARDS SHE IS
+ALSO WEARING ALL BLACK
+AND HAS LONG REDDISH
+BRO PONYTAIL
+Date/Time: 09/01/2025 11:45 User: jasminne Action: Narrative Added
+Description: 643/CONTACT WCSO, THEY
+HAVE A UNIT IN THE AREA
+THAT IS GOING TO CHECK
+THAT AREA
+Date/Time: 09/01/2025 11:46 User: katemo Action: Narrative Added
+Description: THEY ARE TURNED BACK
+NORTH AND GETTING
+CLOSE TO ROBINSON
+Date/Time: 09/01/2025 11:46 User: katemo Action: Narrative Added
+Description: HE IS RUNNING TOWARDS
+ROBINSON
+Date/Time: 09/01/2025 11:46 User: jasminne Action: Unit Location
+Description: Unit 375 Secondary Location:
+Secondary Location Cleared
+Date/Time: 09/01/2025 11:46 User: jasminne Action: Unit Status Action
+Description: Unit 375 On Scene
+Date/Time: 09/01/2025 11:47 User: katemo Action: Narrative Added
+Description: THE OFFICER PAST THEM
+Date/Time: 09/01/2025 11:47 User: katemo Action: Narrative Added
+Description: THEY ARE WALKING ALONG
+412 NOW
+User: katemo Action: Narrative Added
+Login Id: SPRD\baileyjo Page 5 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:47
+Description: GOING E/B
+Date/Time: 09/01/2025 11:48 User: jasminne Action: Unit Status Action
+Description: Unit 375 T12
+Date/Time: 09/01/2025 11:48 User: jasminne Action: Narrative Added
+Description: 375/I HAVE EYES ON BOTH
+Date/Time: 09/01/2025 11:48 User: katemo Action: Narrative Added
+Description: CROSSING ROBINSON
+Date/Time: 09/01/2025 11:48 User: jasminne Action: Narrative Added
+Description: 375/HE JUST WALKED
+ACROSS HWY 412
+Date/Time: 09/01/2025 11:49 User: jasminne Action: Narrative Added
+Description: 375/LOG WCSO ON SCENE
+Date/Time: 09/01/2025 11:51 User: jasminne Action: Unit Status Action
+Description: Unit 354 On Scene
+Date/Time: 09/01/2025 11:51 User: jasminne Action: Unit Status Action
+Description: Unit 366 On Scene
+Date/Time: 09/01/2025 11:52 User: jasminne Action: Unit Status Action
+Description: Unit 354 T12
+Date/Time: 09/01/2025 11:52 User: jasminne Action: Unit Status Action
+Description: Unit 354 Responding 2nd
+Date/Time: 09/01/2025 11:52 User: jasminne Action: Unit Status Action
+Description: Unit 366 Responding 2nd
+Date/Time: 09/01/2025 11:54 User: jasminne Action: Unit Status Action
+Description: Unit 354 On Scene 2nd
+Date/Time: 09/01/2025 11:54 User: jasminne Action: Unit Status Action
+Description: Unit 366 On Scene 2nd
+Date/Time: 09/01/2025 11:59 User: briannasa Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 09/01/2025 11:59 User: briannasa Action: Narrative Added
+Description: 354/ JUV RETURNED TO
+FACILITY
+Date/Time: 09/01/2025 11:59 User: briannasa Action: Unit Status Action
+Description: Unit 375 Available
+Date/Time: 09/01/2025 11:59 User: briannasa Action: Unit Status Action
+Description: Unit 366 Available
+Date/Time: 09/01/2025 11:59 User: briannasa Action: Unit Status Action
+Description: Unit 354 Available
+User: briannasa Action: Call Cleared
+Login Id: SPRD\baileyjo Page 6 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:59
+Description: Close Call
+Unit Log
+Date/Time: 09/01/2025 11:40 Unit Number: 354 Action: Unit Status Change
+Description: Dispatched Call Number: 37,
+Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Missing
+Date/Time: 09/01/2025 11:40 Unit Number: 354 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 09/01/2025 11:41 Unit Number: 366 Action: Unit Status Change
+Description: Dispatched Call Number: 37,
+Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Missing
+Date/Time: 09/01/2025 11:41 Unit Number: 366 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 09/01/2025 11:41 Unit Number: 354 Action: Unit Status Change
+Description: Responding
+Date/Time: 09/01/2025 11:41 Unit Number: 366 Action: Unit Status Change
+Description: Responding
+Date/Time: 09/01/2025 11:46 Unit Number: 375 Action: Unit Status Change
+Description: Dispatched Call Number: 37,
+Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Missing
+Date/Time: 09/01/2025 11:46 Unit Number: 375 Action: Unit Status Change
+Description: On Scene
+Date/Time: 09/01/2025 11:46 Unit Number: 375 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 09/01/2025 11:48 Unit Number: 375 Action: Unit Status Change
+Description: T12
+Date/Time: 09/01/2025 11:51 Unit Number: 354 Action: Unit Status Change
+Description: On Scene
+Date/Time: 09/01/2025 11:51 Unit Number: 366 Action: Unit Status Change
+Description: On Scene
+Date/Time: 09/01/2025 11:52 Unit Number: 354 Action: Unit Status Change
+Description: T12
+Unit Number: 354 Action: Unit Status Change
+Login Id: SPRD\baileyjo Page 7 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Date/Time: 09/01/2025 11:52
+Description: Responding 2nd
+Date/Time: 09/01/2025 11:52 Unit Number: 366 Action: Unit Status Change
+Description: Responding 2nd
+Date/Time: 09/01/2025 11:54 Unit Number: 354 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 09/01/2025 11:54 Unit Number: 366 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 09/01/2025 11:59 Unit Number: 366 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 09/01/2025 11:59 Unit Number: 366 Action: Unit Status Change
+Description: Available
+Date/Time: 09/01/2025 11:59 Unit Number: 354 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 09/01/2025 11:59 Unit Number: 354 Action: Unit Status Change
+Description: Available
+Date/Time: 09/01/2025 11:59 Unit Number: 375 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 09/01/2025 11:59 Unit Number: 375 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: katemo Date Entered: 09/01/2025 11:38
+YELLOW ROCK BEHAVIORAL AT 2601 HABBERTON ADVISED THEY HAD A RESIDENT ELOPE
+Entered By: katemo Date Entered: 09/01/2025 11:38
+Entered By: katemo Date Entered: 09/01/2025 11:38
+HE LEFT TOWARDS THE SOUTH
+Entered By: katemo Date Entered: 09/01/2025 11:38
+WITH IN THE LAST 5 MINS
+Entered By: katemo Date Entered: 09/01/2025 11:38
+THEY NORMALLY GO TO THE WALMART NEIGHBORHOOD MARKET
+Entered By: katemo Date Entered: 09/01/2025 11:39
+THEY ARE IN CONTACT WITH SOMEONE WHO HAS EYES ON HIM. (ANOTHER EMPLOYEE)
+Login Id: SPRD\baileyjo Page 8 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Narratives
+Entered By: katemo Date Entered: 09/01/2025 11:39
+HE IS NEAR OR BEHIND SOME CONSTRUCTION
+Entered By: katemo Date Entered: 09/01/2025 11:39
+HE IS E/B
+Entered By: katemo Date Entered: 09/01/2025 11:39
+RUNNING
+Entered By: katemo Date Entered: 09/01/2025 11:39
+WEARING BLK TSHIRT AND BLK PANTS DARK SHOES
+Entered By: katemo Date Entered: 09/01/2025 11:39
+HAS A BOWL HAIRCUT
+Entered By: katemo Date Entered: 09/01/2025 11:39
+IS BEHIND THE CHURCH WITH THE RED ROOF
+Entered By: katemo Date Entered: 09/01/2025 11:40
+HE IS STILL RUNNING
+Entered By: katemo Date Entered: 09/01/2025 11:40
+HE IS STILL E/B
+Entered By: katemo Date Entered: 09/01/2025 11:40
+RUNNING ACROSS THE FIELD
+Entered By: katemo Date Entered: 09/01/2025 11:41
+THEY ARE NEXT TO HWY 412
+Entered By: katemo Date Entered: 09/01/2025 11:41
+BY THE CHURCH AND A TIN BLDG
+Entered By: katemo Date Entered: 09/01/2025 11:42
+HE IS FROM TEXAS
+Entered By: katemo Date Entered: 09/01/2025 11:42
+THEY WANT HIM BROUGHT BACK TO YELLOW ROCK
+Entered By: katemo Date Entered: 09/01/2025 11:42
+HE IS GOING INTO THE WOODS NOW
+Entered By: katemo Date Entered: 09/01/2025 11:42
+STILL ON THE SOUTH SIDE OF HWY 412
+Login Id: SPRD\baileyjo Page 9 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Narratives
+Entered By: katemo Date Entered: 09/01/2025 11:43
+NO FRIENDS OR FAMILY IN THE AREA.
+Entered By: katemo Date Entered: 09/01/2025 11:43
+THEY HAVE REACHED A GRAVEL ROAD
+Entered By: katemo Date Entered: 09/01/2025 11:44
+CORRECTION THEY ARE AT 2701 EUPIL
+Entered By: katemo Date Entered: 09/01/2025 11:44
+STILL RUNNING TO THE EAST
+Entered By: katemo Date Entered: 09/01/2025 11:44
+WALKING NOW
+Entered By: katemo Date Entered: 09/01/2025 11:45
+THE STAFF MEMBER FOLLOWING HIM IS ELIZABETH EDWARDS SHE IS ALSO WEARING ALL BLACK AND HAS LONG REDDISH BRO
+PONYTAIL
+Entered By: jasminne Date Entered: 09/01/2025 11:45
+643/CONTACT WCSO, THEY HAVE A UNIT IN THE AREA THAT IS GOING TO CHECK THAT AREA
+Entered By: katemo Date Entered: 09/01/2025 11:46
+THEY ARE TURNED BACK NORTH AND GETTING CLOSE TO ROBINSON
+Entered By: katemo Date Entered: 09/01/2025 11:46
+HE IS RUNNING TOWARDS ROBINSON
+Entered By: katemo Date Entered: 09/01/2025 11:47
+THE OFFICER PAST THEM
+Entered By: katemo Date Entered: 09/01/2025 11:47
+THEY ARE WALKING ALONG 412 NOW
+Entered By: katemo Date Entered: 09/01/2025 11:47
+GOING E/B
+Entered By: jasminne Date Entered: 09/01/2025 11:48
+375/I HAVE EYES ON BOTH
+Entered By: katemo Date Entered: 09/01/2025 11:48
+CROSSING ROBINSON
+Entered By: jasminne Date Entered: 09/01/2025 11:48
+375/HE JUST WALKED ACROSS HWY 412
+Login Id: SPRD\baileyjo Page 10 of 11
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:27
+Agency #: AR0720200
+Narratives
+Entered By: jasminne Date Entered: 09/01/2025 11:49
+375/LOG WCSO ON SCENE
+Entered By: briannasa Date Entered: 09/01/2025 11:59
+354/ JUV RETURNED TO FACILITY
+Login Id: SPRD\baileyjo Page 11 of 11

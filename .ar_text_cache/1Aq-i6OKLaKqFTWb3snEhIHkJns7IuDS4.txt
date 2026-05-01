@@ -1,0 +1,179 @@
+CES - Unit Response Times Printed on March 15, 2023
+
+49
+
+CFS # CFS2303838
+Call Taker SYDNEY MORGAN
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ESCAPE : Escape
+
+Mod In Progress
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/02/23 13:27:39
+
+Compieted Time 02/02/23 13:47:09
+Reporters
+
+PERIMETER HEALTH CARE (Initial Reporter)
+
+Sex
+
+DOB
+
+Address 1521 ALBERT ST
+
+FORREST CITY, AR 72335
+Report Time 02/02/23 13:27:39
+How Reported
+From Phone
+Contact Phone (870) 970-3475
+Comments
+
+Other Names
+Vehicles
+
+Responders
+581 (Primary) 581 - CALLAHAN, STEVEN FCPD (Primary)
+
+Response Times
+
+Assigned 02/02/23 13:27:39
+Enroute 02/02/23 13:47:09 *
+Arrived 02/02/23 13:47:09 *
+Leaving
+
+Arrived At
+
+Completed 02/02/23 13:47:09
+
+IR / External Agency Numbers
+Officer Addenda
+
+Unit Response Times
+
+Non Unit Specific Times
+02/02/23 13:32:13 | WALKED OFF FROM FACILITY HE WILL BE WEARING A GREEN
+| |
+
+JACKET TYE DYE GREEN AND BEIGE PANTS 5'7 120LBS
+
+Page 1 of 2
+
+
+
+02/02/23 13:33:30 | 542 IN THE AREA WITH 581
+02/02/23 13:45:17 | 581 OUT AT THE FACILITY
+02/02/23 13:46:59 | 581 ADVISED MALE SUBJECT BACK AT FACILITY
+
+581
+
+02/02/23 13:27:39 | New CFS
+
+02/02/23 13:47:09 | Complete
+
+Page 2 of 2
+
+
+
+CFS - Command Log Printed on March 15, #023
+
+CFS # CFS2303838
+Call Taker SYDNEY MORGAN
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ESCAPE : Escape
+
+Mod In Progress
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/02/23 13:27:39
+
+Completed Time 02/02/23 13:47:09
+Reporters
+
+PERIMETER HEALTH CARE (Initial Reporter)
+
+Sex
+
+DOB
+
+Address 1521 ALBERT ST
+
+FORREST CITY, AR 72335
+Report Time 02/02/23 13:27:39
+How Reported
+From Phone
+Contact Phone (870) 970-3475
+Comments
+
+Other Names
+Vehicles
+
+Responders
+581 (Primary) 581 - CALLAHAN, STEVEN FCPD (Primary)
+
+Response Times
+
+Assigned 02/02/23 13:27:39
+Enroute 02/02/23 13:47:09 *
+Arrived 02/02/23 13:47:09 *
+Leaving
+
+Arrived At
+
+Completed 02/02/23 13:47:09
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+02/02/23 13:27:39 | MORGAN, SYDNEY | 581 | New CF |
+02/02/23 13:32:13 | MORGAN, SYDNEY WALKED OFF FROM FACILITY HE WILL BE
+WEARING A GREEN JACKET TYE DYE AND BEIGE PANTS 5'7 120LBS
+
+Page lof 2
+
+
+
+02/02/23 13:33:30 | MORGAN, SYDNEY | 542 IN THE AREA WITH 581
+02/02/23 13:45:17 | MORGAN, SYDNEY | 581 OUT AT THE FACILITY
+
+02/02/23 13:46:59 | MORGAN, SYDNEY | 581 ADVISED MALE SUBJECT BACK AT FACILITY
+02/02/23 13:47:09 | MORGAN, SYDNEY | 581 | Complete
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location ‘
+Accuracy
+
+Page 2
+
+of 2

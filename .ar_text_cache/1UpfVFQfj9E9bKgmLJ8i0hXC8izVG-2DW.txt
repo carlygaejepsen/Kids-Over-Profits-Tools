@@ -1,0 +1,176 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00013801 Incident Type: Hangup Call Date/Time: 03/06/2025 10:52
+Location 2466 S 48TH ST, Location OZARK GUIDANCE CENTER Originating Call (479) 725-5312
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 347 Primary Unit: Yes Call Date/Time: 03/06/2025 10:53
+Personnel: 127 - Mesinar, Chandler Primary: Yes
+Unit: 390 Primary Unit: No Call Date/Time: 03/06/2025 10:54
+Personnel: 189 - Thoele, Samuel Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 725-5312 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 03/06/2025 11:05
+Evidence
+Call Log
+Date/Time: 03/06/2025 10:52 User: katemo Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 03/06/2025 10:52 User: katemo Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 03/06/2025 10:52 User: katemo Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Date/Time: 03/06/2025 10:52 User: katemo Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 03/06/2025 10:52 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 03/06/2025 10:52 User: katemo Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 03/06/2025 10:52 User: katemo Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 03/06/2025 10:52 User: katemo Action: Call Updated
+Description: Caller Phone Changed to
+(479) 725-5312
+Date/Time: 03/06/2025 10:52 User: katemo Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 03/06/2025 10:52 User: katemo Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE (OZARK
+GUIDANCE CENTER)
+Date/Time: 03/06/2025 10:52 User: katemo Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 03/06/2025 10:52 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 03/06/2025 10:52 User: katemo Action: Narrative Added
+Description: 911 ABANDONED CALL
+FROM THE LAND LINE AT
+2466 S 48TH SHOWED IT
+WAS THE TDT MIDDLE
+SCHOOL
+User: katemo Action: Narrative Added
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Date/Time: 03/06/2025 10:53
+Description: ON CALL BACK THE PHONE
+GAVE A MESSAGE THAT
+SAID THE PERSON I WAS
+TRYING TO REACH WAS NOT
+AVAILABLE AND
+DISCONNECTED
+Date/Time: 03/06/2025 10:53 User: tristenbo Action: Unit Status Action
+Description: Unit 347 Dispatched
+Date/Time: 03/06/2025 10:53 User: tristenbo Action: Unit Location
+Description: Unit 347 Secondary Location:
+Secondary Location Cleared
+Date/Time: 03/06/2025 10:53 User: tristenbo Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00013801
+Date/Time: 03/06/2025 10:53 User: tristenbo Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 03/06/2025 10:54 User: tristenbo Action: Unit Location
+Description: Unit 390 Secondary Location:
+Secondary Location Cleared
+Date/Time: 03/06/2025 10:54 User: tristenbo Action: Unit Status Action
+Description: Unit 390 Dispatched
+Date/Time: 03/06/2025 10:54 User: tristenbo Action: Unit Status Action
+Description: Unit 390 Available
+Date/Time: 03/06/2025 10:54 User: tristenbo Action: Unit Status Action
+Description: Unit 347 Responding
+Date/Time: 03/06/2025 11:02 User: tristenbo Action: Unit Status Action
+Description: Unit 347 On Scene
+Date/Time: 03/06/2025 11:05 User: tristenbo Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 03/06/2025 11:05 User: tristenbo Action: Unit Status Action
+Description: Unit 347 Available
+Date/Time: 03/06/2025 11:05 User: tristenbo Action: Call Cleared
+Description: Close Call
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Unit Log
+Date/Time: 03/06/2025 10:53 Unit Number: 347 Action: Unit Status Change
+Description: Dispatched Call Number:
+104, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 03/06/2025 10:53 Unit Number: 347 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 03/06/2025 10:54 Unit Number: 390 Action: Unit Status Change
+Description: Dispatched Call Number:
+104, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 03/06/2025 10:54 Unit Number: 390 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 03/06/2025 10:54 Unit Number: 390 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 03/06/2025 10:54 Unit Number: 390 Action: Unit Status Change
+Description: Available
+Date/Time: 03/06/2025 10:54 Unit Number: 347 Action: Unit Status Change
+Description: Responding
+Date/Time: 03/06/2025 11:02 Unit Number: 347 Action: Unit Status Change
+Description: On Scene
+Date/Time: 03/06/2025 11:05 Unit Number: 347 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 03/06/2025 11:05 Unit Number: 347 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: katemo Date Entered: 03/06/2025 10:52
+911 ABANDONED CALL FROM THE LAND LINE AT 2466 S 48TH SHOWED IT WAS THE TDT MIDDLE SCHOOL
+Entered By: katemo Date Entered: 03/06/2025 10:53
+ON CALL BACK THE PHONE GAVE A MESSAGE THAT SAID THE PERSON I WAS TRYING TO REACH WAS NOT AVAILABLE AND
+DISCONNECTED
+Login Id: SPRD\baileyjo Page 4 of 4

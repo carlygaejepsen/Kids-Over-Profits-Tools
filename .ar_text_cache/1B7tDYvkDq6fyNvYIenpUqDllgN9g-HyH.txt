@@ -1,0 +1,203 @@
+CFS - Unit Response Times Printed on March 15, 3
+
+CFS # CFS2304841
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ALRF : Fire Alarm
+
+Mod Emergency Fire/Medical
+Priority 5
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/11/23 08:17:43
+Completed Time 02/11/23 08:38:01
+
+Reporters
+OLD ARKANSAS ALARM (Initial Reporter)
+Sex -
+DOB
+Address
+
+Report Time 02/11/23 08:17:43
+How Reported Phone
+
+From Phone
+
+Contact Phone (866) 588-8950
+Comments
+
+Other Names
+
+Vehicles
+‘1 eee
+Responders
+CALL1 FCFD (Primary)
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+544 (Primary) 544 - DIXON, CORBIN FCPD
+
+Response Times
+
+Assigned 02/11/23 08:20:05
+Enroute 02/11/23 08:26:06 *
+Arrived 02/11/23 08:26:06
+Leaving
+
+Arrived At
+
+Completed 02/11/23 08:38:01
+
+IR / External Agency Numbers
+FCFD 202300189
+
+Officer Addenda
+
+Unit Response Times
+
+Non Unit Specific Times
+
+Page 1 of 2
+
+
+
+02/11/23 08:17:43 | New CFS
+02/11/23 08:20:32 | SPOKE TO KEYHOLDER WHO ADVISED CHILD HAS PULLED THE FIRE ALARM NEEDS FIRE
+TO TURN ALARM OFF.
+
+02/11/23 08:25:25 | BAHAVIOR HEALTH CALLED BACK ADVISING THERE WAS A B/M THAT HAS RAN OFF
+FROM PROPERTY IN GRAY SHIRT AND BLACK/GRAY PAJAMA PANTS
+
+02/11/23 08:25:47 | 544 OUT WITH MALE ON LINDAUER
+
+02/11/23 08:26:27
+
+02/11/23 08:28:51
+
+02/11/23 08:30:20 | GIVING JUV RIDE BEG MIL 16290
+
+02/11/23 08:31:21 | 544 10-97
+
+02/11/23 08:37:51 | BACK IN SERVICE
+
+544
+
+02/11/23 08:28:00 | On Scene
+
+544, CALL1, FCE1
+02/11/23 08:38:01 | Complete
+
+CALL1
+
+02/11/23 08:20:05 | Assign
+
+FCE1
+
+02/11/23 08:26:06 | On Scene
+
+Page 2 of 2
+
+
+
+CFS - Command Log Printed on March 15, 7023
+
+|
+
+CFS # CFS2304841
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ALRF : Fire Alarm
+
+Mod Emergency Fire/Medical
+Priority 5
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/11/23 08:17:43
+Completed Time 02/11/23 08:38:01
+
+Reporters
+OLD ARKANSAS ALARM (Initial Reporter) |
+Sex
+DOB
+Address
+
+Report Time 02/11/23 08:17:43
+How Reported Phone
+
+From Phone
+
+Contact Phone (866) 588-8950
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 FCFD (Primary)
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+544 (Primary) 544 - DIXON, CORBIN FCPD
+
+Response Times
+
+Assigned 02/11/23 08:20:05
+Enroute 02/11/23 08:26:06 *
+Arrived 02/11/23 08:26:06
+Leaving
+
+Arrived At
+
+Completed 02/11/23 08:38:01
+
+IR / External Agency Numbers
+FCFD 202300189 ti
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+02/11/23 08:17:43 | HOWTON, KILEY | New CFS
+
+a eS
+Page lLiof 2
+
+
+
+02/11/23 08:20:05 | HOWTON, KILEY | CALL1 | Assign
+02/11/23 08:20:32 | HOWTON, KILEY | SPOKE TO KEYHOLDER WHO ADVISED CHILD HAS PULLED THE FIRE
+ALARM NEEDS FIRE TO TURN ALARM OFF.
+02/11/23 08:25:25 | HOWTON, KILEY | BAHAVIOR HEALTH CALLED BACK ADVISING THERE WAS A B/M THAT
+HAS RAN OFF FROM PROPERTY IN GRAY SHIRT AND BLACK/GRAY PAJAMA PANTS
+02/11/23 08:25:47 | HOWTON, KILEY | 544 OUT WITH MALE ON LINDAUER
+
+02/11/23 08:26:06 | HOWTON, KILEY | FCE1 | On Scene
+
+02/11/23 08:26:27 | HOWTON, KILEY | 543 OUT WITH 544
+
+02/11/23 08:28:00 | HOWTON, KILEY | 544 | On
+
+02/11/23 08:28:51 | HOWTON, KILEY |
+
+02/11/23 08:30:20 | HOWTON, KILEY | GIVING JUV RIDE BEG MIL 16290
+
+02/11/23 08:31:21 | HOWTON, KILEY | 544 10-97
+
+02/11/23 08:37:51 | MORGAN, SYDNEY | BACK IN SERVICE
+
+02/11/23 08:38:01 | MORGAN, SYDNEY | 544, CALL1, FCE1 | Complete
+
+CLQ
+
+Requested At
+Sent To
+Status
+Received At
+Location
+Accuracy
+
+Page 2 of 2

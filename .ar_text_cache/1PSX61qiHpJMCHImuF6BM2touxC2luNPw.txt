@@ -1,0 +1,291 @@
+CFS - Unit Response Times
+
+Printed on January 5, 2024
+
+CFS # CFS2400100
+Call Taker KATELYN JACKSON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Detajls
+Primary Incident Code MED : Medical Call
+
+Mod
+Priority 1
+Use Caution No
+Primary Dispasition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 01/01/24 09:36:47
+Completed Time 01/01/24 09:38:34
+Reporters
+
+UNK 911 (Initial Reporter)
+Sex
+
+DOB
+Address
+Report Time | 01/01/24 09:36:47
+How Reported
+From Phone | (870) 970-3500
+Contact Phone
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+
+CALL1 FCFD (Primary)
+FCBAT1 FCEFD, Battalion Chief FCFD (Primary)
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+
+Response Times
+Assigned oboiza 09:45:57
+
+Enroute 01/01/24 09:47:55
+Arrived 01/01/24 09:50:18
+Leaving
+
+Arrived At
+Completed 0/1/01/24 09:38:34
+
+IR/ External Agency Numbers
+FCFD 202400003
+
+Officer Addenda
+
+Unit Response Times
+
+Non Unit Spécific Times
+Page 1 of 2
+
+
+
+01/01/24 09:36
+01/01/24 09:37
+01/01/24 09:38
+SAID SHE WO
+01/01/24 09:38
+01/01/24 09:45
+01/01/24 09:47
+
+CALL1
+
+47 | New CFS
+
+43 | MALE FAINTED - ADV HE WAS UNRESPONSIVE
+
+a | FEMALE ADV THE MALE WAS RESPONDING AND TO DISREGARD EMS AND FIRE - SHE
+LD CALL BACK IF THEY NEEDED TO GET EMS ON SCENE
+
+334 | Complete
+
+453 | CALLED BACK - MALE FAINTED AND IS UNRESPONSIVE - HR 70 BP 114/78
+305 | EMS ENROUTE
+
+01/01/24 09:45157 | Assign
+
+01/01/24 10:10
+FCBAT1
+
+350 | Complete
+
+01/01/24 09:48104 | Enroute
+
+01/01/24 09:50
+01/01/24 09:55
+01/01/24 10:07
+
+FCE1
+
+333 | On Scene
+45 | Clear Alarms
+30 | Available
+
+01/01/24 09:47155 | Enroute
+
+01/01/24 09:50
+01/01/24 09:55
+01/01/24 10:10
+
+18 | On Scene
+31 | Clear Alarms
+02 | Available
+
+—__— > —oAvW SSS
+
+Page 2 of 2
+
+
+
+CES - Command Log Printed on January 5, 2024
+
+CFS #
+Call Taker
+Location
+
+Location Detajls
+
+CFS2400100
+KATELYN JACKSON
+1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Primary Incident Code MED : Medical Call
+
+Mod
+Priority
+Use Caution
+
+Primary Dispasition
+
+Beat
+Zone
+Call Time
+
+Completed Time
+
+Reporters
+
+a
+No
+Handled By Officer / Deputy
+
+Forrest City Police Department
+01/01/24 09:36:47
+01/01/24 09:38:34
+
+UNK 911 (Initial Reporter)
+
+Sex
+
+DOB
+Address
+Report Time
+
+How Reported
+
+From Phone
+
+Contact Phone
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+
+CALL1
+FCBAT1
+
+FCE1 (Primary)
+
+Response T
+
+01/01/24 09:36:47
+
+(870) 970-3500
+
+FCFD (Primary)
+FCFD (Primary)
+FCFD (Primary)
+
+FCFD, Battalion Chief
+FCFD, Engine CO 1
+
+mes
+
+Enroute 0
+
+01/24 09:47:55
+
+Assigned ooze 09:45:57
+i
+i
+
+Arrived
+Leaving
+Arrived At
+
+0
+
+(01/24 09:50:18
+
+Completed 0/1/01/24 09:38:34
+
+IR / aoa
+FCFD 202409003
+
+Agency Numbers
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+01/01/24 09:36:47 | JACKSON, KATELYN | New CFS
+
+Page 1 of 2
+
+
+
+01/01/24 09:3
+
+7143 | JACKSON, KATELYN | MALE FAINTED - ADV HE WAS UNRESPONSIVE
+
+01/01/24 09:38)21 | JACKSON, KATELYN | FEMALE ADV THE MALE WAS RESPONDING AND TO DISREGARD
+
+EMS AND FIR
+
+01/01/24 09:3
+
+8/34 | JACKSON, KATELYN | Complete
+
+- SHE SAID SHE WOULD CALL BACK IF THEY NEEDED TO GET EMS ON SCENE
+
+01/01/24 09:45|}53 | JACKSON, KATELYN | CALLED BACK - MALE FAINTED AND IS UNRESPONSIVE - HR 70 BP
+
+114/78
+01/01/24 09:4
+01/01/24 09:4
+01/01/24 09:4
+
+01/01/24 09:48
+
+01/01/24 09:5
+
+5157 | JACKSON, KATELYN | CALL1 | Assign
+7105 | JACKSON, KATELYN | EMS ENROUTE
+dee | FCFD, Engine CO 1 | FCE1 | Enroute
+
+04 | FCFD, Battalion Chief | FCBAT1 | Enroute
+O18 | FCFD, Engine CO 1| FCE1| On Scene
+
+01/01/24 09:50:33 | FCFD, Battalion Chief | FCBAT1 | On Scene
+
+01/01/24 09:5
+01/01/24 09:5:
+01/01/24 10:0
+01/01/24 10:1
+01/01/24 10:1
+
+CLQ
+
+Requested A
+Sent To
+Status
+Received At
+Location
+Accuracy
+
+5:31 | JACKSON, KATELYN | FCE1 | Clear Alarms
+:45 | JACKSON, KATELYN | FCBAT1 | Clear Alarms
+:30 | FCFD, Battalion Chief | FCBAT1 | Available
+9:02 | FCFD, Engine CO 1| FCE1 | Available
+
+G:50 | JACKSON, KATELYN | CALL1 | Complete
+
+t
+
+Page 2 of 2

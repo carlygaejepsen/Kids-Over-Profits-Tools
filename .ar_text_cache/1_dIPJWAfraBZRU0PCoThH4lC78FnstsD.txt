@@ -1,0 +1,75 @@
+Incident Report
+Print Date/Time: 07/17/2024 15:09 Fayetteville Police Department
+Login ID: bjenkins ORI Number: AR0720100
+Incident: 2024-00045969
+Incident Date/Time: 7/3/2024 3:10:18 PM Incident Type: MISSING PERSON
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (479)587-1408 Source: Phone
+Report Required: Yes Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: 2024-00045969 Nature of Call:
+Unit/Personnel
+Unit Personnel
+347 347-SAMUELS
+351 351-JEHL
+470 470-WHITLEY
+477 477-MURRIN
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller WOODS, SAMANTHE JO 21320 KIRKSY RD (479)670-8305 White Female 06/21/1977
+ELKINS AR 72727
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:347
+Disposition Count Date/Time
+03NORPT 1 07/03/2024 15:51
+Unit:351
+Disposition Count Date/Time
+03NORPT 1 07/03/2024 15:53
+Unit:470
+Disposition Count Date/Time
+01RPT 1 07/03/2024 15:55
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+07/03/2024:16:32:14jcurryNarrative:RECORDSENTERINGSUBJASMISSING
+07/03/2024:16:32:00jcurryNarrative:BOLOFOR
+07/03/2024:15:28:20cadlerNarrative:
+07/03/2024:15:25:26cadlerNarrative:CALLERWANTSTOCAUTIONPOLICETOBE"ONGUARD"WITH //
+07/03/2024:15:24:46cadlerNarrative:NOPETWITH
+07/03/2024:15:23:41cadlerNarrative:
+07/03/2024:15:23:14cadlerNarrative:PRIMARYLANGUAGEISENGLISH
+07/03/2024:15:23:07cadlerNarrative:NOPERSONALBELONGINGSON
+07/03/2024:15:22:58cadlerNarrative:NOWEAPONSKNOWN
+07/03/2024:15:22:44cadlerNarrative:UNKMEDICALORPHYSCIALDISABILITIES
+07/03/2024:15:20:55cadlerNarrative:
+07/03/2024:15:19:53cadlerNarrative: DIDNOTHAVEABAG//NOCELLPHONEEITHER
+07/03/2024:15:19:10cadlerNarrative:NOENVIRONMENTALCONCERNSBESIDESHEAT
+07/03/2024:15:18:47mtheriaultNarrative:36510-4
+07/03/2024:15:18:44cadlerNarrative: JUSTARRIVEDATTHEFACILITYFROM //NOKNOWNFRIENDSOR
+FAMILYHERE
+07/03/2024:15:17:58cadlerNarrative:CORR**HADANATTITUDEPERCALLER,NOTVIOLENT
+07/03/2024:15:17:31cadlerNarrative:
+07/03/2024:15:17:01cadlerNarrative:NOSTAFFFOLLOWING
+07/03/2024:15:14:14cadlerNarrative:UNKNOWNDESTINATION
+07/03/2024:15:14:03cadlerNarrative:
+07/03/2024:15:13:39cadlerNarrative:
+07/03/2024:15:13:27cadlerNarrative:LASTSEENNBTOWARDSATHLETICCENTER
+07/03/2024:15:12:56cadlerNarrative:NODELAYINCALL
+07/03/2024:15:12:52cadlerNarrative:
+07/03/2024:15:12:08cadlerNarrative:
+Page: 2 of 2
+
+Public Records Exemptions
+Enclosed please find a copy of the response documents for your public
+records request. The following information is provided to explain the
+process employed to review and produce the response documents.
+Reason Description Pages
+2
+1 of 1

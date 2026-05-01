@@ -1,0 +1,278 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00036644 Incident Type: Hangup Call Date/Time: 06/05/2025 12:33
+Location 2466 S 48TH ST, Location OZARK GUIDANCE CENTER Originating Call (911) 710-1835
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 368 Primary Unit: No Call Date/Time: 06/05/2025 12:35
+Personnel: 9474 - Reyes, Erick Primary: Yes
+Unit: 354 Primary Unit: No Call Date/Time: 06/05/2025 12:35
+Personnel: 95 - Jackson, Justin Primary: Yes
+Unit: 338 Primary Unit: Yes Call Date/Time: 06/05/2025 12:35
+Personnel: 108 - King, Adam Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (911) 710-1835 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 06/05/2025 12:40
+Evidence
+Call Log
+Date/Time: 06/05/2025 12:33 User: katemo Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 06/05/2025 12:33 User: katemo Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+User: katemo Action: Location
+Login Id: SPRD\fabiolara Page 1 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+Date/Time: 06/05/2025 12:33
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/05/2025 12:33 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 06/05/2025 12:33 User: katemo Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 06/05/2025 12:33 User: katemo Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 06/05/2025 12:33 User: katemo Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 06/05/2025 12:33 User: katemo Action: Call Updated
+Description: Caller Phone Changed to
+(911) 710-1835
+Date/Time: 06/05/2025 12:33 User: katemo Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 06/05/2025 12:34 User: katemo Action: Narrative Added
+Description: 911 CALL FROM CELL PHONE
+THAT IS A DEACTIVATED
+PHONE THAT PLOTS AT 2466
+S 48TH WITH IN 25 METERS
+Date/Time: 06/05/2025 12:34 User: katemo Action: Narrative Added
+Description: NO SOUNDS OF DISTRESS.
+Date/Time: 06/05/2025 12:34 User: katemo Action: Narrative Added
+Description: MALE ON THE LINE SAID IT
+WAS A POCKET DIAL.
+Date/Time: 06/05/2025 12:34 User: katemo Action: Narrative Added
+Description: INITIALLY THE PLOT WAS
+WITH IN 1709 METERS BUT
+ONCE HE DISCONNECTED
+THE PLOT UPDATED TO 48TH
+ST
+Date/Time: 06/05/2025 12:34 User: katemo Action: Narrative Added
+Description: HE SAID HE DIDN'T KNOW
+WHERE HE WAS IN
+SPRINGDALE THAT HE WAS
+WORKING.
+Login Id: SPRD\fabiolara Page 2 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+Date/Time: 06/05/2025 12:35 User: katemo Action: Narrative Added
+Description: THE SUBJECT
+DISCONNECTED BEFORE I
+COULD GET A NAME.
+Date/Time: 06/05/2025 12:35 User: katemo Action: Narrative Added
+Description: NO WAY TO CALL BACK
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Location
+Description: Unit 338 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Status Action
+Description: Unit 338 Dispatched
+Date/Time: 06/05/2025 12:35 User: katemo Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 06/05/2025 12:35 User: katemo Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00036644
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Status Action
+Description: Unit 368 Dispatched
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Location
+Description: Unit 368 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Location
+Description: Unit 354 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Status Action
+Description: Unit 354 Dispatched
+Date/Time: 06/05/2025 12:35 User: katemo Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE (OZARK
+GUIDANCE CENTER)
+Date/Time: 06/05/2025 12:35 User: katemo Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 06/05/2025 12:35 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+User: katemo Action: Unit Status Action
+Login Id: SPRD\fabiolara Page 3 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+Date/Time: 06/05/2025 12:35
+Description: Unit 338 Responding
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Status Action
+Description: Unit 368 Responding
+Date/Time: 06/05/2025 12:35 User: katemo Action: Unit Status Action
+Description: Unit 354 Responding
+Date/Time: 06/05/2025 12:36 User: katemo Action: Narrative Added
+Description: NO HX ON THE NUMBER
+Date/Time: 06/05/2025 12:37 User: katemo Action: Unit Status Action
+Description: Unit 338 On Scene
+Date/Time: 06/05/2025 12:38 User: katemo Action: Narrative Added
+Description: 338 DUE TO THE HX AT THIS
+LOCATION CAN WE CALL
+INSIDE AND SEE IF
+EVERYTHING IS OKAY
+Date/Time: 06/05/2025 12:38 User: katemo Action: Narrative Added
+Description: 608...I TRIED TO CALL THE
+NUMBER FOR OGC AND THE
+AUTOMATED SYSTEM HUNG
+UP ON ME
+Date/Time: 06/05/2025 12:40 User: katemo Action: Narrative Added
+Description: 338 EVERYTHING HERE IS 10
+-4, THEY ARE CHECKING THE
+AREA AS WELL. F2
+Date/Time: 06/05/2025 12:40 User: katemo Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 06/05/2025 12:40 User: katemo Action: Unit Status Action
+Description: Unit 368 Available
+Date/Time: 06/05/2025 12:40 User: katemo Action: Unit Status Action
+Description: Unit 354 Available
+Date/Time: 06/05/2025 12:40 User: katemo Action: Unit Status Action
+Description: Unit 338 Available
+Date/Time: 06/05/2025 12:40 User: katemo Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 06/05/2025 12:35 Unit Number: 338 Action: Unit Status Change
+Description: Dispatched Call Number:
+608, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Unit Number: 338 Action: Unit Location
+Login Id: SPRD\fabiolara Page 4 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+Date/Time: 06/05/2025 12:35
+Description: Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 Unit Number: 368 Action: Unit Status Change
+Description: Dispatched Call Number:
+608, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/05/2025 12:35 Unit Number: 368 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 Unit Number: 354 Action: Unit Status Change
+Description: Dispatched Call Number:
+608, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/05/2025 12:35 Unit Number: 354 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/05/2025 12:35 Unit Number: 354 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/05/2025 12:35 Unit Number: 368 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/05/2025 12:35 Unit Number: 338 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/05/2025 12:35 Unit Number: 338 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/05/2025 12:35 Unit Number: 368 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/05/2025 12:35 Unit Number: 354 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/05/2025 12:37 Unit Number: 338 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/05/2025 12:40 Unit Number: 338 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/05/2025 12:40 Unit Number: 338 Action: Unit Status Change
+Description: Available
+Date/Time: 06/05/2025 12:40 Unit Number: 354 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/05/2025 12:40 Unit Number: 354 Action: Unit Status Change
+Description: Available
+Login Id: SPRD\fabiolara Page 5 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:39
+Agency #: AR0720200
+Date/Time: 06/05/2025 12:40 Unit Number: 368 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/05/2025 12:40 Unit Number: 368 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: katemo Date Entered: 06/05/2025 12:34
+911 CALL FROM CELL PHONE THAT IS A DEACTIVATED PHONE THAT PLOTS AT 2466 S 48TH WITH IN 25 METERS
+Entered By: katemo Date Entered: 06/05/2025 12:34
+NO SOUNDS OF DISTRESS.
+Entered By: katemo Date Entered: 06/05/2025 12:34
+MALE ON THE LINE SAID IT WAS A POCKET DIAL.
+Entered By: katemo Date Entered: 06/05/2025 12:34
+INITIALLY THE PLOT WAS WITH IN 1709 METERS BUT ONCE HE DISCONNECTED THE PLOT UPDATED TO 48TH ST
+Entered By: katemo Date Entered: 06/05/2025 12:34
+HE SAID HE DIDN'T KNOW WHERE HE WAS IN SPRINGDALE THAT HE WAS WORKING.
+Entered By: katemo Date Entered: 06/05/2025 12:35
+THE SUBJECT DISCONNECTED BEFORE I COULD GET A NAME.
+Entered By: katemo Date Entered: 06/05/2025 12:35
+NO WAY TO CALL BACK
+Entered By: katemo Date Entered: 06/05/2025 12:36
+NO HX ON THE NUMBER
+Entered By: katemo Date Entered: 06/05/2025 12:38
+338 DUE TO THE HX AT THIS LOCATION CAN WE CALL INSIDE AND SEE IF EVERYTHING IS OKAY
+Entered By: katemo Date Entered: 06/05/2025 12:38
+608...I TRIED TO CALL THE NUMBER FOR OGC AND THE AUTOMATED SYSTEM HUNG UP ON ME
+Entered By: katemo Date Entered: 06/05/2025 12:40
+338 EVERYTHING HERE IS 10-4, THEY ARE CHECKING THE AREA AS WELL. F2
+Login Id: SPRD\fabiolara Page 6 of 6

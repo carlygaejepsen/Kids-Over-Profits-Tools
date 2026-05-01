@@ -1,0 +1,95 @@
+CFS - Command Log Printed on November 1, 2023
+—[—S— Nove CT Le ES
+
+CFS # CFS2338436
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code INFO : Info
+
+Mod Transfer Non Emergency
+
+Priority 4
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 09/10/23 17:14:02
+
+Completed Time 09/10/23 17:55:26
+Reporters
+
+TONY PARRY (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 09/10/23 17:14:02
+
+How Reported
+
+From Phone
+
+Contact Phone (501) 409-5580
+
+Comments
+
+Other Names
+Vehicles
+
+Responders
+545 (Primary) 545 - ALBERT, TANESHA —_FCPD (Primary)
+
+Response Times
+
+Assigned 09/10/23 17:16:23 *
+Enroute 09/10/23 17:16:23
+Arrived 09/10/23 17:21:07
+Leaving
+
+Arrived At
+
+Completed 09/10/23 17:55:26
+
+IR | External Agency Numbers
+FCPD202309916
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+09/10/23 17:14:02 | HOWTON, KILEY | New CFS
+09/10/23 17:16:23 | HOWTON, KILEY | 545 | Enroute
+09/10/23 17:21:07 | HOWTON, KILEY | 545 | On Scene
+eee
+Page 1 of 2
+
+
+09/10/23 17:55:26 | MORGAN, SYDNEY | 545 | Available
+
+09/10/23 18:03:14 | HOWTON, KILEY | CALLER ADVISED PERIMETER WOULD NOT LET HIM HAVE HIS SON
+09/10/23 18:04:19 | HOWTON, KILEY | Complete
+
+09/10/23 18:04:19 | HOWTON, KILEY | \
+
+/CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location ,
+Accuracy
+
+Se
+
+Page 2 of 2

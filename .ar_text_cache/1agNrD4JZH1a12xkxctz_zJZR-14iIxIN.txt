@@ -1,0 +1,37 @@
+Call Details Report For CFS # 25-0303279
+
+CFS Number Date/Time
+25-0303279 3/13/2025 9:24 AM
+Incident Type Primary Unit
+FIRE-FIRE ALARM 286E1
+Caller Name Caller Phone
+SUMMIT FIRE AND SECURITY 8004321429
+Location
+
+161 SKUNK HOLLOW RD, FAULKNER COUNTY
+
+Initial Statement
+
+AA: BLDG C ADMIN WATER FLOW AT 36
+KH: AJ GUILD 501-800-0506
+
+NEG CONTACT ~ DISPATCH FIRST
+
+Notes
+3/13/2025 9:30:55 AM by: dbrabham
+FIRE INCIDENT ~- FIRE DEPT IS TESTING
+
+tthe renee represen
+
+Unit Call Times
+
+Unit ID Date/Time Status
+286E1 3/13/2025 9:24:56 AM DISPATCHED
+286E1 3/13/2025 9:30:55 AM CLEARED
+
+Dispositions Assigned to This Call
+
+Disposition When Assigned Assigned By
+FIRE INCIDENT 3/13/2025 9:30:55 AM dbrabham
+
+3/17/2025 3:16:02 PM

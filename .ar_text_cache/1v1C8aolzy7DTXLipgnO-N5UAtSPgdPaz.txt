@@ -1,0 +1,79 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 06/19/2024 12:25
+Agency #: AR0720200
+General Information
+Incident #: 2024-00033855 Incident Type: GNFO Call Date/Time: 05/29/2024 09:55
+Location: 2466 S 48TH ST, SPRINGDALE, 72762 Status: Not In Progress Priority: 4
+Primary Caller: Unknown, - Caller Caller Contact #: (479) 725-5218 Originating Call #: (479) 725-5218
+Case Number: Nature of Call: Source: Admin Phone Line
+Units/Personnel
+Unit # Unit Type Personnel Time on Call
+656 Dispatch 285 - Scoggins, Ashley 05/29/2024 10:32
+Vehicles
+Role Type Year Make Model Color License State VIN
+Subjects
+Role Name Address Contact Information Race Sex DOB
+Caller Unknown (479) 725-5218
+Disposition
+Disposition Count Unit Date/Time
+Complaint Only 1 05/29/2024 10:32
+Evidence
+Counter Evidence Type Codes Description Current Location Received Date Make/Model
+Report Narratives
+Narratives
+Entered By: jessicaar Date Entered: 05/29/2024 09:55
+THEY ARE DOING A FIRE DRILL
+Entered By: ashleysc Date Entered: 05/29/2024 10:32
+THEY ARE DONE
+Call Log
+Date/Time User Action Description
+05/29/2024 09:55 jessicaar Call Created New call created. Call Type: >New Call<, Location:
+<UNKNOWN>
+05/29/2024 09:55 jessicaar Address Verified Call Location Changed from Unverified To Verified
+05/29/2024 09:55 jessicaar Location Call Location Changed from <UNKNOWN> to 2466 S 48TH
+ST, SPRINGDALE
+05/29/2024 09:55 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 48TH ST
+Login Id: sprd\baileyjo Page 1 of 2
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 06/19/2024 12:25
+Agency #: AR0720200
+Call Log
+Date/Time User Action Description
+05/29/2024 09:55 jessicaar Location Cross streets updated, SPRINGHOUSE DR / PRIVATE DR,
+ATCHISON AVE
+05/29/2024 09:55 jessicaar Location Call Location Changed from 2466 S 48TH ST, SPRINGDALE
+to 2466 S 48TH ST, SPRINGDALE (OZARK GUIDANCE
+CENTER)
+05/29/2024 09:55 jessicaar Location Cross streets updated, SPRINGHOUSE DR / PRIVATE DR,
+ATCHISON AVE
+05/29/2024 09:55 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 48TH ST
+05/29/2024 09:55 jessicaar Agency Context Added Police Call Type Added. Call Type: GNFO, Status: Not In
+Progress, Priority: 4
+05/29/2024 09:55 jessicaar Narrative Added THEY ARE DOING A FIRE DRILL
+05/29/2024 09:55 jessicaar Call Updated Caller Phone Changed to (479) 725-5218
+05/29/2024 09:55 jessicaar Call Updated Caller Added: Role - Caller;
+05/29/2024 10:32 ashleysc Narrative Added THEY ARE DONE
+05/29/2024 10:32 ashleysc Call Ready for Dispatch Call marked ready for dispatch
+05/29/2024 10:32 ashleysc Incident Created Added Incident Number, ORI: AR0720200, Number: 2024-
+00033855
+05/29/2024 10:32 ashleysc Unit Status Action Unit 656 On Scene
+05/29/2024 10:32 ashleysc Unit Location Unit 656 Secondary Location: Secondary Location Cleared
+05/29/2024 10:32 ashleysc Disposition Changed Added: Complaint Only Count 1
+05/29/2024 10:32 ashleysc Unit Status Action Unit 656 Available
+05/29/2024 10:32 ashleysc Call Cleared Close Call
+Unit Log
+Date/Time Unit Number Action Description
+05/29/2024 10:32 656 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+05/29/2024 10:32 656 Unit Location 2466 S 48TH ST, SPRINGDALE
+05/29/2024 10:32 656 Unit Status Change Dispatched Call Number: 43, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: GNFO
+05/29/2024 10:32 656 Unit Status Change On Scene
+05/29/2024 10:32 656 Unit Location Secondary Location Cleared
+05/29/2024 10:32 656 Unit Cleared Unit Cleared From Call
+05/29/2024 10:32 656 Unit Status Change Available
+Contributing Officers
+Officer Supervisor Report Date/Time Report Type Approving User
+Login Id: sprd\baileyjo Page 2 of 2

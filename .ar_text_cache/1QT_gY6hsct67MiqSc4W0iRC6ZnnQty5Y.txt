@@ -1,0 +1,65 @@
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 1 of 2
+Call Information
+Received Date: 01/05/2024 12:52 Dispatch Date: 01/05/2024 12:55 EnRotue Date: 01/05/2024 12:55
+Arrived Date: 01/05/2024 12:57 Completed Date: 01/05/2024 12:58 Call Canceled:
+Disposition: HANDLED BY FIRE DEPT
+CFS #: 24010491 Case #: Priority:
+Nature: FIRE ALARM How Received: ADMIN LINE
+Initial Nature: Alarm:
+Call Taken By: BEVER, BRITTANY Dispatched By: MILLER, ROBYN Fire Type:
+Completed By: BEVER, BRITTANY ReOpened By: ReOpened Reason:
+Site Dangers: NO K9 Used: NO Bill For Call: NO
+Business Check: NO Toneout: 01/05/2024 12:54 Permit #:
+Business:
+KEYHOLDER: MATT WILSHIRE // NO CONTACT MADE:
+Incident Information
+Common Name: LKITTLE CREEK BEHAVIOR Zone:
+Address: 161 SKUNK HOLLOW RD SubDivision:
+CSZ: CONWAY, AR 72032 Intersection:
+ESN: 316 Lat/Lon: 35.0682283,
+Caller Information
+Name: , MIKE W SUMMITT FIRE Address:
+Phone #: (800) 687-0668 CSZ:
+Notes
+Entry Date Entry By Note Type Notes
+01/05/2024 12:54:42 BEVER, BRITTANY 286E toned out.
+01/05/2024 12:55:23 MILLER, ROBYN 286E acknowledged toneout.
+01/05/2024 12:57:11 MILLER, ROBYN caller called back - can cancel - made contact / late with code
+01/05/2024 12:57:27 BEVER, BRITTANY
+01/05/2024 12:58:10 BEVER, BRITTANY Complete all units. PER NOTES
+Total Notes: 5
+Units
+Unit Number Unit Name Department Mileage Start Mileage End Primary Unit
+286E1 286 E 1 286E 0 0 YES
+Dispatched Date: 01/05/2024 12:55 EnRoute Date: 01/05/2024 12:55 Arrived Date: 01/05/2024 12:57
+Transport Start: Transport End: Completed Date: 01/05/2024 12:58
+Disposition Date: Call Canceled: Back At Station:
+Total Units:1
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+01/05/2024 12:55 286E1 286 E 1 UNIT DISPATCHED
+6
+Print Date: Jan 19 2024 - 07:21:46 Faulkner County Sheriffs Office, 24010491
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK
+
+Faulkner County Sheriffs Office
+Call for Service Card
+Page 2 of 2
+Radio Traffic
+Traffic Date Unit # Unit Name Traffic
+01/05/2024 12:55 286E1 286 E 1 UNIT ENROUTE
+6
+Total Radio Traffic:2
+Toneouts
+Dispatched Date Unit # Unit Name Department
+286E
+Toneout 1: 01/05/2024 12:54 Toneout 2: 01/05/2024 12:54 Toneout 3:
+Ack. Date: 01/05/2024 12:55 Cancel Date: Toneout 1 By: BEVER, BRITTANY
+Total Toneouts: 1
+Case Numbers
+Entry Date Case Number Department Unit Narcan Used
+01/05/2024 12:55:36 286 EAST FIRE DEPARTMENT 286E1 No
+Print Date: Jan 19 2024 - 07:21:46 Faulkner County Sheriffs Office, 24010491
+Powered by iSOMS(c) Driven by Values CAD_Details KASMUCK

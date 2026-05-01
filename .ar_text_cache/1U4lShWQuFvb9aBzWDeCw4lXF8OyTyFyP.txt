@@ -1,0 +1,225 @@
+CFS - Command Log Printed on January 24, 2024
+
+CFS # CFS2403652
+Call Taker KATELYN JACKSON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code MED : Medical Call
+
+Mod
+Priority a
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 01/24/24 09:21:22
+Completed Time 01/24/24 09:43:46
+Reporters
+
+FEMALE ON 911 (Initial Reporter)
+Sex
+
+DOB
+
+Address
+
+Report Time 01/24/24 09:21:22
+How Reported
+
+From Phone = (870) 970-3475
+Contact Phone
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 FCFD (Primary)
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+530 530 - HIVELY, VIRGINIA FCPD
+532 (Primary) 532 - POWERS, JAKE FCPD
+
+Response Times
+
+Assigned 01/24/24 09:21:44
+Enroute 01/24/24 09:23:19
+Arrived 01/24/24 09:27:09
+Leaving
+
+Arrived At
+
+Completed 01/24/24 09:43:46
+
+IR / External Agency Numbers
+FCFD 202400138
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+ee
+
+Page 1 of 2
+
+
+01/24/24 09:21:22 | JACKSON, KATELYN | New CFS
+
+01/24/24 09:21:37 | JACKSON, KATELYN | UNRESPONSIVE CHILD ON SCENE
+01/24/24 09:21:44 | JACKSON, KATELYN | CALL1 | Assign
+
+01/24/24 09:23:06 | JACKSON, KATELYN | EMSA NOTIFIED AND ENROUTE
+01/24/24 09:23:19 | FCFD, Engine CO 1 | FCE1 | Enroute
+
+01/24/24 09:23:50 | SHUMATE, DONIYA | 532 | Enroute
+
+01/24/24 09:24:07 | SHUMATE, DONIYA | 530 | Enroute
+
+01/24/24 09:26:42 | JACKSON, KATELYN | ENGINE 1 ADV ON SCENE
+
+01/24/24 09:27:09 | JACKSON, KATELYN | 532 | On Scene
+
+01/24/24 09:27:16 | JACKSON, KATELYN | 530 | On Scene
+
+01/24/24 09:31:40 | JACKSON, KATELYN | 532 | Available
+
+01/24/24 09:32:30 | JACKSON, KATELYN | 530 | Clear Alarms
+
+01/24/24 09:43:38 | JACKSON, KATELYN | PATIENT TRANSPORTED BY EMSA
+01/24/24 09:43:39 | FCFD, Engine CO 1 | FCE1 | Available
+
+01/24/24 09:43:42 | JACKSON, KATELYN | FIRE BACK IN
+
+01/24/24 09:43:46 | JACKSON, KATELYN | 530, CALL1 | Complete
+
+01/24/24 09:52:30 | SHUMATE, DONIYA | 252 SFC 251
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location j
+Accuracy
+
+oo
+Page 2 of 2
+
+
+CFS - Unit Response Times
+
+Printed on January 24, 2024
+
+CFS # CFS2403652
+Call Taker KATELYN JACKSON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+
+Primary Incident Code MED : Medical Call
+
+Mod
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 01/24/24 09:21:22
+Completed Time 01/24/24 09:43:46
+
+Reporters
+
+FEMALE ON 911 (initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 01/24/24 09:21:22
+How Reported
+
+From Phone (870) 970-3475
+Contact Phone
+
+Comments
+
+Other Names
+
+Vehicles
+Responders
+CALL1 OO a
+FCE1 (Primary) FCFD, Engine CO 1
+530 530 - HIVELY, VIRGINIA
+532 (Primary) 532 - POWERS, JAKE
+
+Response Times
+Assigned 01/24/24 09:21:44
+Enroute 01/24/24 09:23:19
+Arrived 01/24/24 09:27:09
+Leaving
+Arrived At
+Completed 01/24/24 09:43:46
+
+IR / External Agency Numbers
+FCFD 202400138
+
+Officer Addenda
+
+Unit Response Times
+
+FCFD (Primary)
+FCPD
+FCPD
+
+Page 1 of 2
+
+
+Non Unit Specific Times
+
+01/24/24 09:21:22 | New CFS
+
+01/24/24 09:21:37 | UNRESPONSIVE CHILD ON SCENE
+01/24/24 09:23:06 | EMSA NOTIFIED AND ENROUTE
+01/24/24 09:26:42 | ENGINE 1 ADV ON SCENE
+
+01/24/24 09:43:38 | PATIENT TRANSPORTED BY EMSA
+01/24/24 09:43:42 | FIRE BACK IN
+
+01/24/24 09:52:30 | 252 SFC 251
+
+530
+01/24/24 09:24:07 | Enroute
+
+01/24/24 09:27:16 | On Scene
+01/24/24 09:32:30 | Clear Alarms
+
+530, CALL1
+01/24/24 09:43:46 | Complete
+
+532
+01/24/24 09:23:50 | Enroute
+
+01/24/24 09:27:09 | On Scene
+01/24/24 09:31:40 | Available
+
+CALL1
+01/24/24 09:21:44 | Assign
+
+FCE1
+01/24/24 09:23:19 | Enroute
+
+01/24/24 09:43:39 | Available
+
+eee
+
+Page 2 of 2

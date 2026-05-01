@@ -1,0 +1,182 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:08
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00058810 Incident Type: Drugs Call Date/Time: 09/02/2025 11:00
+Location 2466 S 48TH ST, Location WOODRIDGE BEHAVIORAL Originating Call (479) 651-5287
+Formatted: SPRINGDALE, 72762 Common Name: CARE LLC Number:
+Nature Of Call: Status: Not In Progress Priority: 3
+Source: Admin Phone Line
+Units/Personnel
+Unit: 350 Primary Unit: Yes Call Date/Time: 09/02/2025 11:11
+Personnel: 1805 - Tartaglia, Joseph Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: STEWART, HAILEY Location
+Formatted:
+Primary Contact (479) 651-5287 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 09/02/2025 12:18
+Evidence
+Call Log
+Date/Time: 09/02/2025 11:00 User: monicade Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 09/02/2025 11:00 User: monicade Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 09/02/2025 11:00 User: monicade Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+User: monicade Action: Location
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:08
+Agency #: AR0720200
+Date/Time: 09/02/2025 11:00
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 09/02/2025 11:00 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 09/02/2025 11:00 User: monicade Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE
+(WOODRIDGE BEHAVIORAL
+CARE LLC)
+Date/Time: 09/02/2025 11:00 User: monicade Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 09/02/2025 11:00 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 09/02/2025 11:00 User: monicade Action: Call Updated
+Description: Caller Phone Changed to
+(479) 651-5287
+Date/Time: 09/02/2025 11:00 User: monicade Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 09/02/2025 11:00 User: monicade Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Drugs, Status: Not In
+Progress, Priority: 3
+Date/Time: 09/02/2025 11:01 User: monicade Action: Call Updated
+Description: Caller Updated: Name
+Changed from to STEWART,
+HAILEY
+Date/Time: 09/02/2025 11:01 User: monicade Action: Narrative Added
+Description: CONTACT HAILEY STEWART
+ABOUT A
+STUDENT THERE THAT HAD
+A THC VAPE ON THEM
+Date/Time: 09/02/2025 11:01 User: monicade Action: Narrative Added
+Description: ADV THAT THEY ARE
+NEEDING AN OFFICER TO
+COME PICK IT UP
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:08
+Agency #: AR0720200
+Date/Time: 09/02/2025 11:02 User: monicade Action: Narrative Added
+Description: OFFICER CAN COME IN THE
+ENTRANCE AT THE FRONT
+WITH THE CIRCLE DRIVE
+Date/Time: 09/02/2025 11:11 User: katemo Action: Unit Location
+Description: Unit 350 Secondary Location:
+Secondary Location Cleared
+Date/Time: 09/02/2025 11:11 User: katemo Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00058810
+Date/Time: 09/02/2025 11:11 User: katemo Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 09/02/2025 11:11 User: katemo Action: Unit Status Action
+Description: Unit 350 Dispatched
+Date/Time: 09/02/2025 11:11 User: katemo Action: Unit Status Action
+Description: Unit 350 Responding
+Date/Time: 09/02/2025 11:20 User: katemo Action: Unit Status Action
+Description: Unit 350 On Scene
+Date/Time: 09/02/2025 11:50 User: katemo Action: Unit Status Action
+Description: Unit 350 T19
+Date/Time: 09/02/2025 11:51 User: katemo Action: Narrative Added
+Description: 350 10-19 FOR EVIDENCE
+Date/Time: 09/02/2025 12:03 User: katemo Action: Unit Status Action
+Description: Unit 350 T81
+Date/Time: 09/02/2025 12:18 User: katemo Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 09/02/2025 12:18 User: katemo Action: Narrative Added
+Description: 350 F2
+Date/Time: 09/02/2025 12:18 User: katemo Action: Unit Status Action
+Description: Unit 350 Available
+Date/Time: 09/02/2025 12:18 User: katemo Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 09/02/2025 11:11 Unit Number: 350 Action: Unit Status Change
+Description: Dispatched Call Number:
+283, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Drugs
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:08
+Agency #: AR0720200
+Date/Time: 09/02/2025 11:11 Unit Number: 350 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 09/02/2025 11:11 Unit Number: 350 Action: Unit Status Change
+Description: Responding
+Date/Time: 09/02/2025 11:20 Unit Number: 350 Action: Unit Status Change
+Description: On Scene
+Date/Time: 09/02/2025 11:50 Unit Number: 350 Action: Unit Status Change
+Description: T19
+Date/Time: 09/02/2025 12:03 Unit Number: 350 Action: Unit Status Change
+Description: T81
+Date/Time: 09/02/2025 12:06 Unit Number: 350 Action: Update Unit
+Description: Added Device: Computer -
+Tartaglia, Joseph;
+Date/Time: 09/02/2025 12:18 Unit Number: 350 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 09/02/2025 12:18 Unit Number: 350 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: monicade Date Entered: 09/02/2025 11:01
+CONTACT HAILEY STEWART ABOUT A STUDENT THERE THAT HAD A THC VAPE ON THEM
+Entered By: monicade Date Entered: 09/02/2025 11:01
+ADV THAT THEY ARE NEEDING AN OFFICER TO COME PICK IT UP
+Entered By: monicade Date Entered: 09/02/2025 11:02
+OFFICER CAN COME IN THE ENTRANCE AT THE FRONT WITH THE CIRCLE DRIVE
+Entered By: katemo Date Entered: 09/02/2025 11:51
+350 10-19 FOR EVIDENCE
+Entered By: katemo Date Entered: 09/02/2025 12:18
+350 F2
+Login Id: SPRD\baileyjo Page 4 of 4

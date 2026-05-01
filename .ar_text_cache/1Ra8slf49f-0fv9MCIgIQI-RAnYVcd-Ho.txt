@@ -1,0 +1,232 @@
+CFS - Unit Response Times Printed on January 5, 2024
+
+CFS #
+
+Call Taker
+Location
+Location Deta
+Primary Incid
+Mod
+
+Priority
+
+Use Caution
+
+Primary Dispasition
+
+Beat
+Zone
+Call Time
+
+Completed Time
+
+Reporters
+
+Sex
+
+DOB
+Address
+Report Time
+How Reported
+From Phone
+
+CFS2400611
+ALENA BAILEY
+
+1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+Is
+
+nt Code DISTURBANCE : Disturbance
+Report Needed
+2
+
+No
+Handled By Officer / Deputy
+
+Forrest City Police Department
+01/03/24 15:44:23
+01/03/24 16:07:46
+
+DAVIS, MARCUS (Initial Reporter)
+
+01/03/24 15:44:23
+
+Contact Phone (312) 286-0965
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+543 (Primary)
+
+Response Tim
+
+543 - ALBERT, TANESHA — FCPD (Primary)
+
+es
+
+Assigned 01/03/24 15:46:16 *
+
+Enroute
+Arrived
+Leaving
+Arrived At
+
+01/03/24 15:46:16
+01/03/24 15:51:33
+
+Completed 01/03/24 16:07:46
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Unit Response Times
+
+Non Unit Speaine Times
+01/03/24 15:44123 | New CFS
+
+01/03/24 15:45+52 | CALLER ADVISED THAT HE NEEDS TO MAKE A REPORT ON ONE OF THE RESIDENCE
+
+01/03/24 16:07
+
+40 | EVENT #2401030010
+
+Page 1 of 2
+
+
+01/04/24 17:20:20 | Complete
+543
+
+01/03/24 15:44:16 | Enroute
+01/03/24 15:51:33 | On Scene
+01/03/24 16:07:46 | Complete
+
+eo
+Page 2 of 2
+
+
+
+CFS - Command Log ; Printed on January 5, 2024
+CFS # CFS2400611
+
+Call Taker ALENA BAILEY
+
+Location
+
+Location Detajls
+
+1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Primary Incident Code DISTURBANCE : Disturbance
+
+Mod
+Priority
+Use Caution
+
+Primary Dispasition
+
+Beat
+Zone
+Call Time
+
+Completed Time
+
+Reporters
+
+Report Needed
+
+2
+
+No
+
+Handled By Officer / Deputy
+
+Forrest City Police Department
+01/03/24 15:44:23
+01/03/24 16:07:46
+
+DAVIS, MARCUS (Initial Reporter)
+
+Sex
+
+DOB
+Address
+Report Time
+
+How Reported
+
+From Phone
+
+01/03/24 15:44:23
+
+Contact Phone (312) 286-0965
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders,
+543 (Primary)
+
+543 - ALBERT, TANESHA —_FCPD (Primary)
+
+Response Times
+
+Assigned 0
+fe)
+fe)
+
+Enroute
+Arrived
+Leaving
+Arrived At
+
+(03/24 15:46:16
+
+oar 15:46:16 *
+103/24 15:51:33
+
+Completed 0/1/03/24 16:07:46
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+01/03/24 15:
+01/03/24 15:
+RESIDENCE
+
+4:23 | BAILEY, ALENA | New CFS
+5:52 | BAILEY, ALENA | CALLER ADVISED THAT HE NEEDS TO MAKE A REPORT ON ONE OF THE
+
+01/03/24 15:46:16 | BAILEY, ALENA | 543 | Enroute
+
+Page 1 of 2
+
+
+
+01/03/24 15:51:33 | BAILEY, ALENA | 543 | On Scene
+01/03/24 16:07:40 | BAILEY, ALENA | EVENT #2401030010
+01/03/24 16:07:46 | BAILEY, ALENA | 543 | Complete
+01/04/24 17:20:20 | BAILEY, ALENA | Complete
+
+CLQ
+
+Requested At
+Sent To
+Status
+Received At
+Location ;
+Accuracy
+
+-_
+
+Page 2 of 2

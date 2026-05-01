@@ -1,0 +1,28 @@
+Dispatch Call Detail
+Call #: C689778 - Medical
+Received Date/Time: 02/22/2024 17:42:00 Taken By: Rogers, Ashely
+Initial Call Type: Medical Caller Name Amb Run#: AM24-00953
+Cleared Date/Time: 02/22/2024 23:04:31 Phone: (901) 326 - 9516
+Cleared By: Warren, Mandi Caller Loc.: 1 MCCAIN BLVD ,WEST MEMPHIS, AR
+Location: PERIMETER BEHAVIORIAL HEALTH, 600 N 7Th ST
+West Memphis, AR 72301
+Units Dispatched
+Dispatched Enroute Arrived Transport Trans Dest Cleared At Station Mileage Trns To
+CR106 - CR106 (Crittenden EMS ) 02/22/2024 02/22/2024 02/22/2024 02/22/2024
+17:44:57 17:45:01 17:47:48 23:04:31
+Narrative
+Date/Time Dispatcher Narrative
+02/22/2024 17:42:23 Rogers, Ashely --- CURRENTLY HAVING A SIEZURE --- MX OF
+GRAND MAL SEIZURES
+Dispositions
+Incident Report,
+Association
+911 Call
+Date Name Phone Address PD FD EMS
+02/22/2024 17:42 AT&T MOBILITY (901) 326-9516 1 MCCAIN BLVD - NE Sector WEST REQUEST VERIFY TRANSFER
+MEMPHIS AR CALLERS LOCATION TO PROPER
+NUMBER AGENCY
+02/22/2024 17:42 AT&T MOBILITY (901) 326-9516 1 MCCAIN BLVD - NE Sector WEST REQUEST VERIFY TRANSFER
+MEMPHIS AR CALLERS LOCATION TO PROPER
+NUMBER AGENCY
+Copyright Relativity Inc.© - RPS(Relativity Public Safety) 1 of 1

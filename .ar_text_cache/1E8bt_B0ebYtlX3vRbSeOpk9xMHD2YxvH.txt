@@ -1,0 +1,107 @@
+CFS - Command Log
+
+Printed on August 25, 2023
+
+CFS# CFS2330818
+Call Taker ANN GRAVES
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code RUNAWAY : Runaway
+
+Mod Report Needed
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+Beat
+
+Zone Forrest City Police Department
+Call Time 07/26/23 18:09:02
+Completed Time 07/26/23 18:20:14
+
+| Reporters
+
+SPENCERI521 (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 07/26/23 18:09:02
+How Reported
+
+From Phone
+
+Contact Phone
+
+Comments
+
+Other Names
+
+_ Vehicles
+
+Responders
+
+504 504-GRACEY, PRESTON FCPD (Primary)
+506 506 - FORBES, JAMIE FCPD (Primary)
+519 519 - ARCENEAUX, PAUL FCPD (Primary)
+521 (Primary) 521 - SPENCER, BILLY FCPD (Primary)
+522 522 - HALLMARK, FCPD (Primary)
+
+BRIANNA
+525 525 - DIXON, CORBIN FCPD (Primary)
+
+» Response Times
+Assigned 07/26/23 18:09:26
+Enroute 07/26/23 18:09:31
+Arrived 07/26/23 18:12:03
+Leaving
+
+Arrived At
+
+Completed 07/26/23 18:20:14
+
+-IR/ External Agency Numbers
+FCPD202307963 a
+
+| Officer Addenda
+
+Page 1 of 2
+
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+07/26/23 18:09:02 | GRAVES, ANN | New CFS
+07/26/23 18:09:26 | GRAVES, ANN | 521, 522, 525 | Assign
+07/26/23 18:09:31 | GRAVES, ANN | 521, 522, 525 | Enroute
+07/26/23 18:11:03 | GRAVES, ANN | 521 ADV THEY JUST HAD ANOTHER ONE RUN FROM THE FACILITY IT ISA
+BM WEARING LIGHT BLUE SHORTS GREY SHIRT HE IS RUNNING TOWARD KITTLE
+07/26/23 18:11:10 | GRAVES, ANN | 504, 506 | Assign - IN AREA
+07/26/23 18:11:47 | GRAVES, ANN | 521 ADV THEY HAVE THE SUBJECT AT ALBERT AND KITTLE
+07/26/23 18:11:56 | GRAVES, ANN | 519 WILL BE ENROUTE BACK TO THE FACILITY WITH THE JUVENILE
+07/26/23 18:12:03 | GRAVES, ANN | 519 | On Scene
+07/26/23 18:12:42 | GRAVES, ANN | 522 | On Scene
+07/26/23 18:13:09 | GRAVES, ANN | 519 ENROUTE BM AND EM 5501 06:12PM
+07/26/23 18:13:20 | GRAVES, ANN | 504, 506, 521, 525 | Available
+07/26/23 18:17:14 | MCCLINTOCK, VICTORIA | 519 | Clear Alarms
+07/26/23 18:17:51 | MCCLINTOCK, VICTORIA | 522 | Clear Alarms
+07/26/23 18:20:14 | GRAVES, ANN | 519, 522 | Complete
+
+‘CLQ
+Requested At
+
+Sent To
+
+Status
+
+Received At
+Location ,
+Accuracy
+
+EEE
+
+Page 2 of 2

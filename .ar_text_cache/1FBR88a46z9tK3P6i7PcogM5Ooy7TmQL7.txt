@@ -1,0 +1,252 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00024615 Incident Type: Hangup Call Date/Time: 04/21/2025 12:10
+Location 2601 HABBERTON RD, Location YELLOW ROCK BEHAVORIAL Originating Call (479) 379-6792
+Formatted: SPRINGDALE, 72764 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 362 Primary Unit: No Call Date/Time: 04/21/2025 12:16
+Personnel: 56 - Faubus, Timothy Primary: Yes
+Unit: 347 Primary Unit: No Call Date/Time: 04/21/2025 12:23
+Personnel: 127 - Mesinar, Chandler Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 379-6792 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 04/21/2025 12:29
+Evidence
+Call Log
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+User: stefanyca Action: Location
+Login Id: SPRD\baileyjo Page 1 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+Date/Time: 04/21/2025 12:10
+Description: Call Location Changed from
+<UNKNOWN> to 2601
+HABBERTON RD,
+SPRINGDALE
+Date/Time: 04/21/2025 12:10 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Location
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Location
+Description: Call Location Changed from
+2601 HABBERTON RD,
+SPRINGDALE to 2601
+HABBERTON RD,
+SPRINGDALE (YELLOW ROCK
+BEHAVORIAL)
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Location
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 04/21/2025 12:10 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Call Updated
+Description: Caller Phone Changed to
+(479) 379-6792
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 04/21/2025 12:10 User: stefanyca Action: Narrative Added
+Description: CHILD ON THE LINE
+Date/Time: 04/21/2025 12:11 User: stefanyca Action: Narrative Added
+Description: CALLING FROM A LANDLINE
+AT BEHAVIORAL HEALTH
+User: stefanyca Action: Narrative Added
+Login Id: SPRD\baileyjo Page 2 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+Date/Time: 04/21/2025 12:11
+Description: CONFIRMED LOCATION
+Date/Time: 04/21/2025 12:11 User: stefanyca Action: Narrative Added
+Description: SAID "YOUR MOMMA SUCKS
+D*CK"
+Date/Time: 04/21/2025 12:11 User: stefanyca Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 04/21/2025 12:12 User: stefanyca Action: Narrative Added
+Description: NO SOUNDS OF DISTRESS
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Status Action
+Description: Unit 347 Dispatched
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00024615
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Location
+Description: Unit 347 Secondary Location:
+Secondary Location Cleared
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Mileage Tracking
+Description: Mileage: 362.00, Unit: 347
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Location
+Description: Unit 362 Secondary Location:
+Secondary Location Cleared
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Status Action
+Description: Unit 362 Dispatched
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Status Action
+Description: Unit 347 Responding
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Unit Status Action
+Description: Unit 362 Available
+Date/Time: 04/21/2025 12:12 User: jessicaar Action: Narrative Added
+Description: 347/ILL BE T4
+Date/Time: 04/21/2025 12:16 User: jessicaar Action: Call Stack
+Description: Call placed on unit 347's
+stack
+Date/Time: 04/21/2025 12:16 User: jessicaar Action: Unit Status Action
+Description: Unit 347 rerouted to call 289
+User: jessicaar Action: Unit Location
+Login Id: SPRD\baileyjo Page 3 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+Date/Time: 04/21/2025 12:16
+Description: Unit 362 Secondary Location:
+Secondary Location Cleared
+Date/Time: 04/21/2025 12:16 User: jessicaar Action: Unit Status Action
+Description: Unit 362 Responding
+Date/Time: 04/21/2025 12:23 User: gingerev Action: Unit Status Action
+Description: Unit 347 Dispatched
+Date/Time: 04/21/2025 12:23 User: jessicaar Action: Unit Status Action
+Description: Unit 347 Available
+Date/Time: 04/21/2025 12:25 User: timfa Action: Unit Status Action
+Description: Unit 362 On Scene
+Date/Time: 04/21/2025 12:29 User: jessicaar Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 04/21/2025 12:29 User: jessicaar Action: Unit Status Action
+Description: Unit 362 Available
+Date/Time: 04/21/2025 12:29 User: jessicaar Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 04/21/2025 12:12 Unit Number: 347 Action: Unit Status Change
+Description: Dispatched Call Number:
+288, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Hangup
+Date/Time: 04/21/2025 12:12 Unit Number: 347 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 04/21/2025 12:12 Unit Number: 347 Action: Mileage Tracking
+Description: Mileage: 362.00, Unit: 347
+Date/Time: 04/21/2025 12:12 Unit Number: 362 Action: Unit Status Change
+Description: Dispatched Call Number:
+288, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Hangup
+Date/Time: 04/21/2025 12:12 Unit Number: 362 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 04/21/2025 12:12 Unit Number: 347 Action: Unit Status Change
+Description: Responding
+Date/Time: 04/21/2025 12:12 Unit Number: 362 Action: Unit Cleared
+Description: Unit Cleared From Call
+Login Id: SPRD\baileyjo Page 4 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+Date/Time: 04/21/2025 12:12 Unit Number: 362 Action: Unit Status Change
+Description: Available
+Date/Time: 04/21/2025 12:16 Unit Number: 347 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 04/21/2025 12:16 Unit Number: 347 Action: Call Stack
+Description: Call number 288 placed on
+stack
+Date/Time: 04/21/2025 12:16 Unit Number: 362 Action: Unit Status Change
+Description: Dispatched Call Number:
+288, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Hangup
+Date/Time: 04/21/2025 12:16 Unit Number: 362 Action: Unit Status Change
+Description: Responding
+Date/Time: 04/21/2025 12:16 Unit Number: 362 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 04/21/2025 12:23 Unit Number: 347 Action: Unit Status Change
+Description: Dispatched Call Number:
+288, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Hangup
+Date/Time: 04/21/2025 12:23 Unit Number: 347 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 04/21/2025 12:23 Unit Number: 347 Action: Unit Status Change
+Description: Available
+Date/Time: 04/21/2025 12:25 Unit Number: 362 Action: Unit Status Change
+Description: On Scene
+Date/Time: 04/21/2025 12:29 Unit Number: 362 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 04/21/2025 12:29 Unit Number: 362 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: stefanyca Date Entered: 04/21/2025 12:10
+CHILD ON THE LINE
+Login Id: SPRD\baileyjo Page 5 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 11:01
+Agency #: AR0720200
+Narratives
+Entered By: stefanyca Date Entered: 04/21/2025 12:11
+CALLING FROM A LANDLINE AT BEHAVIORAL HEALTH
+Entered By: stefanyca Date Entered: 04/21/2025 12:11
+CONFIRMED LOCATION
+Entered By: stefanyca Date Entered: 04/21/2025 12:11
+SAID "YOUR MOMMA SUCKS D*CK"
+Entered By: stefanyca Date Entered: 04/21/2025 12:12
+NO SOUNDS OF DISTRESS
+Entered By: jessicaar Date Entered: 04/21/2025 12:12
+347/ILL BE T4
+Login Id: SPRD\baileyjo Page 6 of 6

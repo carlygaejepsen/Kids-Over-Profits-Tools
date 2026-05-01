@@ -1,0 +1,82 @@
+CFS - Command Log Printed on March 28, 2023
+
+CFS# CFS2308607
+Call Taker ALLISON LAWS
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+Location Details
+Primary Incident Code RUNAWAY : Runaway
+Mod Report Needed
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 03/15/23 08:48:08
+Completed Time 03/15/23 09:00:30
+Reporters
+
+Unknown (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 03/15/23 08:48:08
+How Reported
+
+From Phone
+
+Contact Phone
+
+Comments
+
+Other Names
+Vehicles
+
+Responders
+543 (Primary) 543 - MITLEFF, DALTON FCPD (Primary)
+
+_ Response Times
+
+Assigned 03/15/23 08:51:49 *
+Enroute 03/15/23 08:51:49 *
+Arrived 03/15/23 08:51:49
+Leaving
+
+Arrived At
+
+Completed 03/15/23 09:00:30
+
+IR / External Agency Numbers
+FCPD202301998
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+03/15/23 08:48:08 | LAWS, ALLISON | New CFS
+03/15/23 08:51:49 | HOWTON, KILEY | 543 | On Scene
+03/15/23 08:52:00 | HOWTON, KILEY | OUT WITH SUBJECT ON KITTLE ROAD
+
+Page 1 of 2
+
+
+03/15/23 08:53:00 | HOWTON, KILEY | 10-19 14308 BEG MIL
+
+03/15/23 08:53:11 | LAWS, ALLISON | B/M WEARING BLACK HOODIE, RIPPED JEANS AND WHITE CROCS
+03/15/23 08:54:02 | HOWTON, KILEY | 10-97
+
+03/15/23 09:00:30 | HOWTON, KILEY | 543 | Complete
+
+CLQ
+Requested At
+Sent To
+Status
+Received At
+
+Location
+Accuracy
+
+Page 2 of 2

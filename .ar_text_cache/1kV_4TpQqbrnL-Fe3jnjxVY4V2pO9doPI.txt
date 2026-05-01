@@ -1,0 +1,29 @@
+Dispatch Call Detail
+Call #: C691051 - Disturbance
+Received Date/Time: 03/03/2024 15:00:37 Taken By: Babski, Susan
+Initial Call Type: Disturbance Caller Name
+Cleared Date/Time: 03/03/2024 15:13:00 Phone: (870) 822 - 0336
+Cleared By: Babski, Susan Caller Loc.:
+Location: 600 N 7Th ST
+West Memphis, AR 72301
+Units Dispatched
+Dispatched Enroute Arrived Transport Trans Dest Cleared At Station Mileage Trns To
+235 - Peoples, Mason - 2265 03/03/2024 03/03/2024 03/03/2024 03/03/2024
+(WMPD) 15:03:03 15:03:16 15:06:43 15:13:00
+295 - Coburn, Terrance - 2277 03/03/2024 03/03/2024 03/03/2024 03/03/2024
+(WMPD) 15:03:09 15:03:15 15:06:48 15:13:00
+242 - Banks, Ladayshia - 2277 03/03/2024 03/03/2024 03/03/2024 03/03/2024
+(WMPD) 15:03:10 15:03:13 15:06:46 15:13:00
+229 - Mckee, Matthew - 2183 03/03/2024 03/03/2024 03/03/2024 03/03/2024
+(WMPD) 15:12:30 15:12:32 15:12:32 15:13:00
+Narrative
+Date/Time Dispatcher Narrative
+03/03/2024 15:01:03 Babski, Susan PERIMETER--- MAKE CONT WITH EMPLOYEE TERRY IN REF TO A JUV
+THREATENING HER,, CALLER ADV SHE HAD HELP COMING BUT DISPATCH COULD
+HEAR THE YELLING AND THREATENED TO KILL HER IN THE BACK
+GROUND
+03/03/2024 15:12:33 Babski, Susan 229- WE MADE CONT WITH THE CALLER, THEYVE GOT THE PATIENT UNDER
+CONTROL AND DONT NEED ASSISTANCE ANYMORE
+Dispositions
+No Action Taken,
+Copyright Relativity Inc.© - RPS(Relativity Public Safety) 1 of 1

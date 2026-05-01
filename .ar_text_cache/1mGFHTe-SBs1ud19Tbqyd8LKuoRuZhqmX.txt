@@ -1,0 +1,371 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00079982 Incident Type: Missing Call Date/Time: 12/11/2024 11:30
+Location 2466 S 48TH ST, Location OZARK GUIDANCE CENTER Originating Call (479) 595-1538
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 114 Primary Unit: No Call Date/Time: 12/11/2024 11:37
+Personnel: 99 - Johnson, Bryan Primary: Yes
+Unit: 308 Primary Unit: No Call Date/Time: 12/11/2024 11:32
+Personnel: 116 - Lipscomb, John Primary: Yes
+Unit: 312 Primary Unit: Yes Call Date/Time: 12/11/2024 11:32
+Personnel: 29 - Buffington, Richard Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, ROMAN Location
+Formatted:
+Primary Contact (479) 595-1538 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 12/11/2024 11:55
+Evidence
+Call Log
+Date/Time: 12/11/2024 11:30 User: monicade Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 12/11/2024 11:30 User: monicade Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+User: monicade Action: Address Verified
+Login Id: SPRD\jaquelinema Page 1 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:30
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 12/11/2024 11:30 User: monicade Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 12/11/2024 11:31 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 12/11/2024 11:31 User: monicade Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE (OZARK
+GUIDANCE CENTER)
+Date/Time: 12/11/2024 11:31 User: monicade Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 12/11/2024 11:31 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 12/11/2024 11:31 User: monicade Action: Call Updated
+Description: Caller Phone Changed to
+(479) 595-1538
+Date/Time: 12/11/2024 11:31 User: monicade Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 12/11/2024 11:31 User: monicade Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Missing, Status: Not In
+Progress, Priority: 3
+Date/Time: 12/11/2024 11:31 User: monicade Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 12/11/2024 11:31 User: monicade Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 12/11/2024 11:31 User: monicade Action: Narrative Added
+Description: PT THAT ESCAPED AND RAN
+DOWN THE SIDE
+Login Id: SPRD\jaquelinema Page 2 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:32 User: monicade Action: Narrative Added
+Description: LSW BLK TSHIRT AND PINK
+PAJAMA PANTS B/F 14 YOA
+FEMALE
+Date/Time: 12/11/2024 11:32 User: monicade Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 12/11/2024 11:32 User: monicade Action: Narrative Added
+Description: DID NOT TAKE ANYTHING
+WITH HER
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Unit Status Action
+Description: Unit 312 Dispatched
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00079982
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Unit Location
+Description: Unit 312 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Unit Location
+Description: Unit 308 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/11/2024 11:32 User: jessicaar Action: Unit Status Action
+Description: Unit 308 Dispatched
+Date/Time: 12/11/2024 11:32 User: monicade Action: Narrative Added
+Description: LEFT TOWARDS JOHN
+BROWN UNIVERSITY
+Date/Time: 12/11/2024 11:33 User: monicade Action: Narrative Added
+Description: THERE IS A PICTURE OF HER
+Date/Time: 12/11/2024 11:33 User: jessicaar Action: Unit Status Action
+Description: Unit 312 Responding
+Date/Time: 12/11/2024 11:33 User: jessicaar Action: Unit Status Action
+Description: Unit 308 Responding
+Date/Time: 12/11/2024 11:33 User: monicade Action: Narrative Added
+Description: ON THE SIDE OF 49
+RUNNING
+Date/Time: 12/11/2024 11:33 User: monicade Action: Narrative Added
+Description: HAS A SORE ON THE LEFT
+SIDE OF BOTTOM LIP
+Login Id: SPRD\jaquelinema Page 3 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:33 User: monicade Action: Narrative Added
+Description: CALLER IS FOLLOWING HER
+Date/Time: 12/11/2024 11:33 User: monicade Action: Narrative Added
+Description: ON FOOT
+Date/Time: 12/11/2024 11:34 User: monicade Action: Narrative Added
+Description: ADV THAT SHE RAN ACROSS
+THE HIGHWAY
+Date/Time: 12/11/2024 11:34 User: monicade Action: Narrative Added
+Description: RAN TOWARDS THE
+CHURCH
+Date/Time: 12/11/2024 11:34 User: monicade Action: Narrative Added
+Description: NOW ON THE SIDE OF THE
+WEST SIDE OF 49
+Date/Time: 12/11/2024 11:35 User: stefanyca Action: Narrative Added
+Description: RUNNING DOWN THE SIDE
+OF 149 LOOKED LIKE SHE
+WAS TRYING TO CROSS THE
+HIGHWAY
+Date/Time: 12/11/2024 11:35 User: monicade Action: Call Updated
+Description: Caller Updated: Name
+Changed from to , ROMAN
+Date/Time: 12/11/2024 11:36 User: monicade Action: Narrative Added
+Description: GOING N/B ON THE S/B SIDE
+OF THE HIGHWAY AT THIS
+TIME
+Date/Time: 12/11/2024 11:37 User: stefanyca Action: Narrative Added
+Description: RUNNING N/B IN PINK
+PANTS AND DARK SHIRT
+AND BAREFOOT
+Date/Time: 12/11/2024 11:37 User: jessicaar Action: Unit Location
+Description: Unit 114 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/11/2024 11:37 User: jessicaar Action: Unit Status Action
+Description: Unit 114 On Scene
+Date/Time: 12/11/2024 11:37 User: monicade Action: Narrative Added
+Description:
+Date/Time: 12/11/2024 11:37 User: jessicaar Action: Unit Status Action
+Description: Unit 308 On Scene
+Date/Time: 12/11/2024 11:37 User: jessicaar Action: Unit Status Action
+Description: Unit 312 On Scene
+User: jessicaar Action: Narrative Added
+Login Id: SPRD\jaquelinema Page 4 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:38
+Description: 312/THEY ARE WALKING
+BACK NOW
+Date/Time: 12/11/2024 11:38 User: monicade Action: Narrative Added
+Description: CALLER IS BY THE SIGN THAT
+SAYS JOHN BROWN
+UNIVERSITY ON THE
+HIGHWAY ON THE EAST
+SIDE OF THE ROAD
+Date/Time: 12/11/2024 11:38 User: jessicaar Action: Narrative Added
+Description: 312/SHE IS COMING UP
+FROM THE RAMP
+Date/Time: 12/11/2024 11:39 User: jessicaar Action: Narrative Added
+Description: 308/I GOT EYES ON HER
+Date/Time: 12/11/2024 11:41 User: jessicaar Action: Narrative Added
+Description: 308/I GOT HER IN THE BACK
+OF MY CAR
+Date/Time: 12/11/2024 11:43 User: stefanyca Action: Narrative Added
+Description: 312/ T12 WITH 2 BACK EN
+ROUTE TO OGC
+Date/Time: 12/11/2024 11:43 User: stefanyca Action: Unit Status Action
+Description: Unit 312 Responding 2nd
+Date/Time: 12/11/2024 11:43 User: stefanyca Action: Unit Location
+Description: Unit 312 Secondary Location:
+OGC
+Date/Time: 12/11/2024 11:43 User: jessicaar Action: Narrative Added
+Description: 308/IM GOING TO TAKE HER
+BACK SHE THREW UP IN THE
+BACK OF MY CAR
+Date/Time: 12/11/2024 11:43 User: jessicaar Action: Narrative Added
+Description: 114/SEND A SQUAD FOR
+WHEN 308 GETS THER E
+Date/Time: 12/11/2024 11:44 User: jessicaar Action: Unit Status Action
+Description: Unit 114 Available
+Date/Time: 12/11/2024 11:45 User: jessicaar Action: Unit Status Action
+Description: Unit 312 On Scene 2nd
+Date/Time: 12/11/2024 11:48 User: jessicaar Action: Unit Status Action
+Description: Unit 308 Responding 2nd
+Date/Time: 12/11/2024 11:48 User: jessicaar Action: Unit Status Action
+Description: Unit 308 On Scene 2nd
+User: jessicaar Action: Disposition Changed
+Login Id: SPRD\jaquelinema Page 5 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:55
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 12/11/2024 11:55 User: jessicaar Action: Unit Status Action
+Description: Unit 312 Available
+Date/Time: 12/11/2024 11:55 User: jessicaar Action: Unit Status Action
+Description: Unit 308 Available
+Date/Time: 12/11/2024 11:55 User: jessicaar Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 12/11/2024 11:32 Unit Number: 312 Action: Unit Status Change
+Description: Dispatched Call Number:
+555, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Missing
+Date/Time: 12/11/2024 11:32 Unit Number: 312 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/11/2024 11:32 Unit Number: 308 Action: Unit Status Change
+Description: Dispatched Call Number:
+555, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Missing
+Date/Time: 12/11/2024 11:32 Unit Number: 308 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/11/2024 11:33 Unit Number: 312 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/11/2024 11:33 Unit Number: 308 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/11/2024 11:37 Unit Number: 114 Action: Unit Status Change
+Description: Dispatched Call Number:
+555, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Missing
+Date/Time: 12/11/2024 11:37 Unit Number: 114 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/11/2024 11:37 Unit Number: 114 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/11/2024 11:37 Unit Number: 308 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/11/2024 11:37 Unit Number: 312 Action: Unit Status Change
+Description: On Scene
+Login Id: SPRD\jaquelinema Page 6 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Date/Time: 12/11/2024 11:43 Unit Number: 312 Action: Unit Status Change
+Description: Responding 2nd
+Date/Time: 12/11/2024 11:43 Unit Number: 312 Action: Unit Location
+Description: OGC
+Date/Time: 12/11/2024 11:44 Unit Number: 114 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/11/2024 11:44 Unit Number: 114 Action: Unit Status Change
+Description: Available
+Date/Time: 12/11/2024 11:45 Unit Number: 312 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 12/11/2024 11:48 Unit Number: 308 Action: Unit Status Change
+Description: Responding 2nd
+Date/Time: 12/11/2024 11:48 Unit Number: 308 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 12/11/2024 11:55 Unit Number: 308 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/11/2024 11:55 Unit Number: 308 Action: Unit Status Change
+Description: Available
+Date/Time: 12/11/2024 11:55 Unit Number: 312 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/11/2024 11:55 Unit Number: 312 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: monicade Date Entered: 12/11/2024 11:31
+PT THAT ESCAPED AND RAN DOWN THE SIDE
+Entered By: monicade Date Entered: 12/11/2024 11:32
+LSW BLK TSHIRT AND PINK PAJAMA PANTS B/F 14 YOA FEMALE
+Entered By: monicade Date Entered: 12/11/2024 11:32
+DID NOT TAKE ANYTHING WITH HER
+Entered By: monicade Date Entered: 12/11/2024 11:32
+LEFT TOWARDS JOHN BROWN UNIVERSITY
+Entered By: monicade Date Entered: 12/11/2024 11:33
+THERE IS A PICTURE OF HER
+Login Id: SPRD\jaquelinema Page 7 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Narratives
+Entered By: monicade Date Entered: 12/11/2024 11:33
+ON THE SIDE OF 49 RUNNING
+Entered By: monicade Date Entered: 12/11/2024 11:33
+HAS A SORE ON THE LEFT SIDE OF BOTTOM LIP
+Entered By: monicade Date Entered: 12/11/2024 11:33
+CALLER IS FOLLOWING HER
+Entered By: monicade Date Entered: 12/11/2024 11:33
+ON FOOT
+Entered By: monicade Date Entered: 12/11/2024 11:34
+ADV THAT SHE RAN ACROSS THE HIGHWAY
+Entered By: monicade Date Entered: 12/11/2024 11:34
+RAN TOWARDS THE CHURCH
+Entered By: monicade Date Entered: 12/11/2024 11:34
+NOW ON THE SIDE OF THE WEST SIDE OF 49
+Entered By: stefanyca Date Entered: 12/11/2024 11:35
+RUNNING DOWN THE SIDE OF 149 LOOKED LIKE SHE WAS TRYING TO CROSS THE HIGHWAY
+Entered By: monicade Date Entered: 12/11/2024 11:36
+GOING N/B ON THE S/B SIDE OF THE HIGHWAY AT THIS TIME
+Entered By: stefanyca Date Entered: 12/11/2024 11:37
+RUNNING N/B IN PINK PANTS AND DARK SHIRT AND BAREFOOT
+Entered By: monicade Date Entered: 12/11/2024 11:37
+Entered By: jessicaar Date Entered: 12/11/2024 11:38
+312/THEY ARE WALKING BACK NOW
+Entered By: monicade Date Entered: 12/11/2024 11:38
+CALLER IS BY THE SIGN THAT SAYS JOHN BROWN UNIVERSITY ON THE HIGHWAY ON THE EAST SIDE OF THE ROAD
+Entered By: jessicaar Date Entered: 12/11/2024 11:38
+312/SHE IS COMING UP FROM THE RAMP
+Entered By: jessicaar Date Entered: 12/11/2024 11:39
+308/I GOT EYES ON HER
+Login Id: SPRD\jaquelinema Page 8 of 9
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 12/17/2024 10:44
+Agency #: AR0720200
+Narratives
+Entered By: jessicaar Date Entered: 12/11/2024 11:41
+308/I GOT HER IN THE BACK OF MY CAR
+Entered By: stefanyca Date Entered: 12/11/2024 11:43
+312/ T12 WITH 2 BACK EN ROUTE TO OGC
+Entered By: jessicaar Date Entered: 12/11/2024 11:43
+308/IM GOING TO TAKE HER BACK SHE THREW UP IN THE BACK OF MY CAR
+Entered By: jessicaar Date Entered: 12/11/2024 11:43
+114/SEND A SQUAD FOR WHEN 308 GETS THER E
+Login Id: SPRD\jaquelinema Page 9 of 9

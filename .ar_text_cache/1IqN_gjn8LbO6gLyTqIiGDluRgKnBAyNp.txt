@@ -1,0 +1,193 @@
+LRP2402230531 3/7/2024 8:46:24 AM (B)(13) Page 1 of 4
+Incident Detailed Report
+Incident #: LRP2402230531
+Summary
+Location: 6501 W 12TH ST
+Loc Name: CENTER FOR YOUTH & FAMILIES
+City: LR
+Description:
+Building: Subdiv:
+Floor: Apt/Unit: 2
+Status: Closed Created: 23:05:44 2/23/2024
+Inc Type: ASTMED Agency Type: L
+Mod Circ: Priority: 2
+Agency ID: LRP Area: NW
+Sector: 4 Beat: 61
+Report #: LRP24022820
+Disposition: R (LRP/3X61)
+Dispatch
+Unit(s): LRP/3X71 (Officers: LRP/Christopher Brian) (Primary), LRP/3X61 (Officers: LRP/Larry
+Kylan), LRP/3X70 (Officers: LRP/Ellington Terrance)
+Comments
+23:14:25 2/23/2024 (B)(13) P3
+MEMS ADV SCENE SEC VIA CITY COMM
+23:14:12 2/23/2024 (B)(13) P1
+3X61 SCENE SECURE
+23:06:19 2/23/2024 (B)(13) C7
+MEMS ADV TO CALL NUMBER SO SOMEONE CAN OPEN DOOR
+23:05:44 2/23/2024 (B)(13) C7
+MEMS REQ PD TO SECURE SCENE FOR A 17 YOA FEMALE THREATING TO KILL PEOPLE ONS
+Persons
+Name: , Role: INITIAL CALLER
+Address: Apt/Unit:
+City:
+Phone: (501) 350-2975 Contact?:
+Gender: DOB:
+Race: Ethnicity:
+Age:
+Height: Bldg:
+Hair: Weight:
+Eyes: License #:
+Misc:
+Vehicles
+Premise Hazard
+Previous Incidents
+Note: The number of previous incidents printed was limited to 1. There were additional previous
+incidents not printed. Incomplete Printout (IncNum:1/99 ):
+
+LRP2402230531 3/7/2024 8:46:25 AM (B)(13) Page 2 of 4
+Location Inc Type Incident # Status Date
+6501 W 12TH ST, LR TERTHR LRP2402150487 Closed 18:12:55 2/15/2024
+Associated Incidents
+Attachments
+History
+Time/Date Trans Type User ID Console ID
+23:26:16 2/23/2024 UNIT MGMT LRP/(B)(13) LRP/(B)(13)
+Unit Location Unit ID: LRP/3X70
+Location: NULL (6501 W 12TH ST) Loc Name: NULL (CENTER FOR YOUTH &&
+FAMILIES) City: NULL (LR)
+Apartment: NULL (2) Zip Code: NULL (72204)
+23:26:16 2/23/2024 FREE UNIT LRP/(B)(13) LRP/(B)(13)
+Unit Freed Unit ID: LRP/3X70
+23:26:16 2/23/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/3X70
+Status: AV (ONS)
+23:26:16 2/23/2024 INC STAT LRP/(B)(13) LRP/(B)(13)
+Incident Status Status: Closed (Active)
+23:26:12 2/23/2024 TIMEOUT System System
+Unit Timeout Unit ID: LRP/3X70
+23:26:06 2/23/2024 UNIT MGMT LRP/(B)(13) LRP/(B)(13)
+Unit Location Unit ID: LRP/3X61
+Location: NULL (6501 W 12TH ST) Loc Name: NULL (CENTER FOR YOUTH &&
+FAMILIES) City: NULL (LR)
+Apartment: NULL (2) Zip Code: NULL (72204)
+23:26:06 2/23/2024 FREE UNIT LRP/(B)(13) LRP/(B)(13)
+Unit Freed Unit ID: LRP/3X61
+23:26:06 2/23/2024 INC UPDT LRP/(B)(13) LRP/(B)(13)
+Disposition Dispo: R
+Unit ID: LRP/3X61
+23:26:06 2/23/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/3X61
+Status: AV (ENR)
+23:14:25 2/23/2024 CMNTS (B)(13) P3
+Comments
+MEMS ADV SCENE SEC VIA CITY COMM
+23:14:12 2/23/2024 CMNTS (B)(13) P1
+Comments
+3X61 SCENE SECURE
+23:11:11 2/23/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/3X70
+Status: ONS (ENR) Submitted: 23:11:10 2/23/2024
+23:09:08 2/23/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/3X61
+Status: ENR (DSP) Submitted: 23:09:07 2/23/2024
+23:09:08 2/23/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/3X71
+Location: NULL (6501 W 12TH ST) Loc Name: NULL (CENTER FOR YOUTH &&
+FAMILIES) City: NULL (LR)
+Apartment: NULL (2) Zip Code: NULL (72204)
+23:09:08 2/23/2024 FREE UNIT (B)(13) P1
+Unit Freed Unit ID: LRP/3X71
+23:09:08 2/23/2024 UNIT STAT (B)(13) P1
+
+LRP2402230531 3/7/2024 8:46:25 AM (B)(13) Page 3 of 4
+Time/Date Trans Type User ID Console ID
+Unit Status Unit ID: LRP/3X71
+Status: AV (ENR)
+23:09:02 2/23/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/3X61
+Location: 6501 W 12TH ST Loc Name: CENTER FOR YOUTH && FAMILIES
+City: LR Apartment: 2
+Zip Code: 72204
+23:09:02 2/23/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/3X61
+Status: DSP (AV)
+23:09:02 2/23/2024 DPTCH (B)(13) P1
+Dispatch Assigned Unit: LRP/3X61 (Officers: LRP/Larry Kylan)
+23:09:02 2/23/2024 REC (B)(13) P1
+Not Requested Recommendations not requested
+23:08:38 2/23/2024 UNIT STAT LRP/(B)(13) LRP/20C636
+Unit Status Unit ID: LRP/3X71
+Status: ENR (DSP) Submitted: 23:08:36 2/23/2024
+23:07:41 2/23/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/3X70
+Status: ENR (DSP) Submitted: 23:07:39 2/23/2024
+23:07:24 2/23/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/3X70
+Location: 6501 W 12TH ST Loc Name: CENTER FOR YOUTH && FAMILIES
+City: LR Apartment: 2
+Zip Code: 72204
+23:07:24 2/23/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/3X71
+Location: 6501 W 12TH ST Loc Name: CENTER FOR YOUTH && FAMILIES
+City: LR Apartment: 2
+Zip Code: 72204
+23:07:24 2/23/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/3X70
+Status: DSP (AV)
+23:07:24 2/23/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/3X71
+Status: DSP (AV)
+23:07:24 2/23/2024 INC STAT (B)(13) P1
+Incident Status Status: Active (Pending)
+23:07:24 2/23/2024 RPT NUM (B)(13) P1
+Report Number Assigned Rprt Num: LRP24022820
+23:07:24 2/23/2024 PRIM UNIT (B)(13) P1
+Primary Unit Primary: LRP/3X71
+23:07:24 2/23/2024 DPTCH (B)(13) P1
+Dispatch Assigned Unit: LRP/3X70 (Officers: LRP/Ellington
+Terrance)
+23:07:24 2/23/2024 DPTCH (B)(13) P1
+Dispatch Assigned Unit: LRP/3X71 (Officers: LRP/Christopher
+Brian)
+23:07:24 2/23/2024 REC (B)(13) P1
+Preferred Rec: [PATROL] 3X55 (2:42), 1L34 (2:54)
+Add'l: [PATROL] 3X41 (3:41), 3X53 (4:03)
+Missing: (None)
+23:07:24 2/23/2024 REC (B)(13) P1
+
+LRP2402230531 3/7/2024 8:46:26 AM (B)(13) Page 4 of 4
+Time/Date Trans Type User ID Console ID
+Fixed (Run Card Set: A) Rec: [PATROL] 3X55, 3X50
+Add'l: [PATROL] 3X53, 3X40
+Missing: (None)
+23:07:05 2/23/2024 ACK (B)(13) P1
+Priority Ack'd Priority Update: 23:06:56 2/23/2024
+23:07:02 2/23/2024 ACK (B)(13) P3
+Priority Ack'd Priority Update: 23:06:56 2/23/2024
+23:06:56 2/23/2024 TIMEOUT (B)(13) C7
+Incident Timeout Reset Timeout Value: 5
+23:06:56 2/23/2024 INC UPDT (B)(13) C7
+Incident Updated Priority: 2 (4)
+Incid Type: ASTMED (DIS) Mod Circum: NULL (IP)
+23:06:19 2/23/2024 CMNTS (B)(13) C7
+Comments
+MEMS ADV TO CALL NUMBER SO SOMEONE CAN OPEN DOOR
+23:05:44 2/23/2024 CMNTS (B)(13) C7
+Comments
+MEMS REQ PD TO SECURE SCENE FOR A 17 YOA FEMALE THREATING TO KILL PEOPLE ONS
+23:05:44 2/23/2024 PER INFO (B)(13) C7
+Person 1 Added Role: INITIAL CALLER
+Phone: (501) 350-2975 Is Property Seized: No
+23:05:44 2/23/2024 INC CREATE (B)(13) C7
+Jurisdiction Area: NW
+Sector: 4 Beat: 61
+23:05:44 2/23/2024 INC CREATE (B)(13) C7
+Incident Created Started: 23:03:52 2/23/2024
+Details to Follow: None Location: 6501 W 12TH ST
+Loc Name: CENTER FOR YOUTH && FAMILIES Latitude: 34.740397
+Longitude: -92.348335 City: LR
+Apt/Unit: 2 Cross Strs: 1100 S HUGHES ST / 1 FAY CT
+Source: ADMIN Incid Type: DIS
+Mod Circum: IP Priority: 4
+Zip Code: 72204 Validation Level: Premise Lvl

@@ -1,0 +1,99 @@
+• Medication Administration Policy
+• Medication Error Policy
+• Medication Errors for the previous three months
+• Quality Assurance Meeting Minutes
+• Incident Reporting Policy
+• Chart Audit Policy
+• Chart Audit Tool
+Summary of Findings and Resolution:
+Below are findings based on a review of the facility’s policies, procedures, and documents and an extensive
+conversation with the Corporate Compliance Specialist and a telephone conversation with the Nurse Manager. No
+deficiencies were noted during the reviews.
+• Medication Errors are reported to the Nurse Manager via a medication error form. That information is
+then submitted to be reviewed at each quarter’s Quality Assurance Meeting.
+• Upon review of the Quality Assurance Meeting Minutes for the prior year it was determined that there
+has only been one medication error in the last year on November 29, 2023, at 11:00 a.m.
+was ordered by the
+physician. The nurse accepting the order did not transcribe the medication orders to the Medication
+Administration Record, so the client did not receive either medication for a total of twenty-seven doses.
+• The following is the process verbalized by the Nurse Manager that the nursing staff follow with all new
+physician orders:
+o The physician gives the new order to the staff via verbal order, telephone order, or by email. The
+physician does not enter any of their orders in the electronic health record. The nurse manager
+states that the physician must sign the orders within 48 hours of the original order time which is
+per the Documentation of Time Frames Policy.
+o The nursing staff have a nursing group email that is utilized to share the physician orders as well
+as any other information regarding the clients’ care and behaviors. If the order is not received by
+email from the physician, the nurse will email the order in a nursing group email which includes
+the Nurse Manager as well as the staff nurses. There was an agency nurse working on one of the
+units who AFMC staff spoke to regarding this process. They stated they did not have access to
+this nursing group email therefore, they rely on another nurse to give them the updates regarding
+each client.
+o The nurse who receives the order or a nurse who has access to the nursing group email enters the
+order into the electronic health record system.
+o If the order includes a medication that is new, changed, or discontinued the order is entered into
+a different computer system that houses the Medication Administration Record. The Medication
+Administration Record is printed for each day and the nursing staff document on the printed
+Medication Administration Record when administering medications. If medication orders are
+received after the Medication Administration Record is printed, then all new medication orders
+are handwritten on the Medication Administration Record.
+o After the orders are transcribed onto the Medication Administration Record the outsource
+Pharmacy (Omnicare) is called by the nurse and those orders are relayed to the pharmacist to fill
+for each client. AFMC staff asked if the orders were only called via telephone or were they also
+faxed since the order that is entered into the computer can be printed. The Nurse Manager stated
+that they only “call in” the medication orders to the pharmacy. Omnicare fills the medication
+order in a 30-day blister pack for each single medication with the client’s information as well as
+the prescribed medication information labeled on each blister pack. If the medications are
+discontinued before the 30-day blister pack is completed, then the pack is disposed.
+o Once the client is discharged, the Medication Administration Records are scanned into the actual
+health record.
+o The above steps are not reflected in the facility’s Medication Administration Policy.
+United Methodist Children’s Home – Little Rock, AR – IOC Report 2 | P ag e
+
+• AFMC staff asked the Nurse Manager how the staff verified that each medication order was completed.
+The Nurse Manager stated that they have a 1530 Form that is completed on the 15th and 30th of each month
+and they have implemented a chart audit process that is done every 30 days on each chart.
+o Upon review of the 1530 Form, AFMC noted this is a medication reconciliation form. This form
+is utilized to suffice Regulation CFR 42 456.610(b)(1) which states the attending physician
+reviews prescribed medications at least every 30 days in psychiatric facilities.
+o Upon review of the new chart audit process, AFMC staff were informed that this process has a
+form that is placed in the front of each chart. The Nurse Manager stated that chart audit tool also
+has instructions for completion in the front of each chart. AFMC staff were unable to find the
+instructions for the chart audit tool. Facility staff emailed the instructions the following day to
+AFMC staff.
+o AFMC staff reviewed several active client charts for this form and found that the Nurse Manager
+is the one who is completing the chart audit process monthly. This form is a checklist to ensure
+that the chart contains all the required forms upon admission as well as documentation is
+completed as per the regulation requirements. There is one check box that states “Orders” and the
+instructions state to “verify that orders in the computer have been noted properly.”
+o AFMC staff asked the Nurse Manager and nursing staff that were on duty the day of the IOC if
+there were any type of audits that were occurring every shift or every 24 hours to verify that all
+orders were completed and all nursing staff answered that there were no other checks and balances
+completed on charts to verify that all orders are completed, and all medications are given as
+ordered.
+Summary of Findings and Resolution:
+• AFMC staff discussed with the facility’s Corporate Compliance Specialist the lack of evidence of any
+type of daily chart check to ensure that all orders received from the physician were completed each day.
+Daily chart checks are not only a nursing standard of care but considered the best practice. These chart
+checks should be performed daily and noted in the chart once each chart check is completed. Auditing
+charts daily ensure that all orders have been completed correctly and will prevent medication errors
+from not only occurring but also continuing for days and even weeks before being found.
+• Prevention of medication errors should include double check/triple check procedures. Nurses must
+ensure that not only are the orders reviewed every shift but also communicate new orders to incoming
+shift staff.
+• Unsafe medication practices and errors are the leading cause of injury and avoidable harm in the health
+care system. Safe medication administration involves the implementation of safe medication procedures
+to bridge critical communication gaps from the time the order is given until the order is carried out. The
+facility is encouraged to review all steps of the medication administration process and bridge any gaps
+in their process of ordering, transcribing, dispensing, administering, and monitoring medications for
+their clients.
+• The more steps in prescribing medications will equal more risk of error. Ensuring the five rights of
+medications as well as institutional policies related to medication transcription are followed will help
+prevent medication errors. This facility is encouraged to review all steps they are currently utilizing for
+medication administration and update their policy to reflect their current practice.
+Respectfully,
+Inspection of Care Team
+InspectionTeam@afmc.org
+1020 W. 4TH ST., SUITE 300
+LITTLE ROCK, AR 72201 • afmc.org
+United Methodist Children’s Home – Little Rock, AR – IOC Report 3 | P ag e

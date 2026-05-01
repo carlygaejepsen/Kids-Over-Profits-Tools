@@ -1,0 +1,174 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:07
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00038588 Incident Type: Hangup Call Date/Time: 06/18/2024 12:52
+Location 2466 S 48TH ST, Location Originating Call (479) 957-9857
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: Admin Phone Line
+Units/Personnel
+Unit: 368 Primary Unit: No Call Date/Time: 06/18/2024 12:55
+Personnel: 178 - Shirrel, Christopher Primary: Yes
+Unit: 336 Primary Unit: Yes Call Date/Time: 06/18/2024 12:55
+Personnel: 4853 - Jackson, Ryler Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 957-9857 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: Complaint Only Count: 1 Unit:
+Date/Time: 06/18/2024 13:11
+Evidence
+Call Log
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+User: testing, cad - system Action: Alerts Retrieval
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:07
+Agency #: AR0720200
+Date/Time: 06/18/2024 12:52
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Call Updated
+Description: Caller Phone Changed to
+(479) 957-9857
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 06/18/2024 12:52 User: briannapr Action: Narrative Added
+Description: ABANDONED CALL
+PLOTTING AT PERIMETER
+HEALTH
+Date/Time: 06/18/2024 12:53 User: briannapr Action: Narrative Added
+Description: NO ANSWER ON CALL BACK
+Date/Time: 06/18/2024 12:53 User: briannapr Action: Narrative Added
+Description: CAME FROM LANDLINE
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Unit Status Action
+Description: Unit 336 Dispatched
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Unit Location
+Description: Unit 336 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00038588
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Unit Location
+Description: Unit 368 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Unit Status Action
+Description: Unit 368 Dispatched
+User: stacyel Action: Unit Status Action
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:07
+Agency #: AR0720200
+Date/Time: 06/18/2024 12:55
+Description: Unit 336 Responding
+Date/Time: 06/18/2024 12:55 User: stacyel Action: Unit Status Action
+Description: Unit 368 Responding
+Date/Time: 06/18/2024 12:56 User: stacyel Action: Unit Status Action
+Description: Unit 368 Available
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Unit Status Action
+Description: Unit 336 On Scene
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Narrative Added
+Description: 336/ NO SIGNS OF DISTRES
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Disposition Changed
+Description: Added: Complaint Only
+Count 1
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Narrative Added
+Description: 336
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Unit Status Action
+Description: Unit 336 Available
+Date/Time: 06/18/2024 13:11 User: stacyel Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 06/18/2024 12:55 Unit Number: 336 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/18/2024 12:55 Unit Number: 336 Action: Unit Status Change
+Description: Dispatched Call Number:
+977, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/18/2024 12:55 Unit Number: 336 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/18/2024 12:55 Unit Number: 368 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/18/2024 12:55 Unit Number: 368 Action: Unit Status Change
+Description: Dispatched Call Number:
+977, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 06/18/2024 12:55 Unit Number: 368 Action: Unit Location
+Description: Secondary Location Cleared
+Unit Number: 336 Action: Unit Status Change
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:07
+Agency #: AR0720200
+Date/Time: 06/18/2024 12:55
+Description: Responding
+Date/Time: 06/18/2024 12:55 Unit Number: 368 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/18/2024 12:56 Unit Number: 368 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/18/2024 12:56 Unit Number: 368 Action: Unit Status Change
+Description: Available
+Date/Time: 06/18/2024 13:11 Unit Number: 336 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/18/2024 13:11 Unit Number: 336 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/18/2024 13:11 Unit Number: 336 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: briannapr Date Entered: 06/18/2024 12:52
+ABANDONED CALL PLOTTING AT PERIMETER HEALTH
+Entered By: briannapr Date Entered: 06/18/2024 12:53
+NO ANSWER ON CALL BACK
+Entered By: briannapr Date Entered: 06/18/2024 12:53
+CAME FROM LANDLINE
+Entered By: stacyel Date Entered: 06/18/2024 13:11
+336/ NO SIGNS OF DISTRES
+Entered By: stacyel Date Entered: 06/18/2024 13:11
+336
+Login Id: SPRD\baileyjo Page 4 of 4

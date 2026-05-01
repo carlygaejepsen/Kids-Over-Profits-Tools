@@ -1,0 +1,41 @@
+Incident Report
+Print Date/Time: 03/18/2025 13:12 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2025-00015110
+Incident Date/Time: 3/7/2025 8:34:14 AM Incident Type: ASSIST AGENCY
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (352)661-8191 Source: Phone
+Report Required: No Priority: 3-Low
+Prior Hazards: No Status: Not In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+409 409-JENEY
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller PETERSON, KAYLA (352)661-8191 Female 01/01/2001
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:409
+Disposition Count Date/Time
+02GONEONARRIVAL 1 03/07/2025 08:45
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 2
+
+CAD Narrative
+03/07/2025:08:44:19gabbickNarrative:409ADVPINEYRIDGEISNOWYELLOWROCKBEHAVORIALHEALTHAT2601
+HABERTONRDSPRINGDALE
+03/07/2025:08:38:08llangNarrative:REQCALLBACKFROMOFCR
+03/07/2025:08:38:03llangNarrative:CALLERJUSTNEEDINGTOVERIFYTHATHEISHERE
+03/07/2025:08:37:16llangNarrative:KP10375ISCALLER'SBADGENUMBER
+03/07/2025:08:36:59llangNarrative:2025-080402ISCALLER'SCASENUMBER
+03/07/2025:08:36:43llangNarrative:HEISLISTEDASASUSPECTACASECALLERRECREGARDINGSEXUALCONTACT/
+CHILD-ON-CHILDCASE
+03/07/2025:08:36:07llangNarrative:CALLERNEEDINGTOVERIFYTHATHE'SACTUALLYHEREANDWELL
+03/07/2025:08:35:36llangNarrative:ATC
+03/07/2025:08:35:09llangNarrative:CALLERWORKSW/DEPTOFCHILDRENANDFAMILIESINFLORIDA
+Page: 2 of 2

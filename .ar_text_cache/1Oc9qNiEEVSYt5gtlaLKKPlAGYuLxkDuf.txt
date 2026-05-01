@@ -1,0 +1,208 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:24
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00064444 Incident Type: Disorderly Conduct Call Date/Time: 10/05/2024 16:33
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Originating Call (817) 680-5929
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: Just Occurred Priority: 3
+Source: 911
+Units/Personnel
+Unit: 333 Primary Unit: Yes Call Date/Time: 10/05/2024 16:41
+Personnel: 62 - Flores, Daniela Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, SABRINA Location
+Formatted:
+Primary Contact (817) 680-5929 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: Complaint Only Count: 1 Unit:
+Date/Time: 10/05/2024 16:58
+Evidence
+Call Log
+Date/Time: 10/05/2024 16:33 User: katemo Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 10/05/2024 16:33 User: katemo Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 10/05/2024 16:33 User: katemo Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+User: katemo Action: Location
+Login Id: SPRD\baileyjo Page 1 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:24
+Agency #: AR0720200
+Date/Time: 10/05/2024 16:33
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 10/05/2024 16:33 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 10/05/2024 16:33 User: katemo Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE, B
+(PERIMETER OF THE
+OZARKS)
+Date/Time: 10/05/2024 16:33 User: katemo Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE
+/ SPRINGHOUSE DR
+Date/Time: 10/05/2024 16:33 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 10/05/2024 16:33 User: katemo Action: Call Updated
+Description: Caller Phone Changed to
+(817) 680-5929
+Date/Time: 10/05/2024 16:33 User: katemo Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 10/05/2024 16:33 User: katemo Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 10/05/2024 16:34 User: katemo Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Disorderly Conduct,
+Status: Not In Progress,
+Priority: 3
+Date/Time: 10/05/2024 16:34 User: katemo Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to Just
+Occurred
+User: katemo Action: Narrative Added
+Login Id: SPRD\baileyjo Page 2 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:24
+Agency #: AR0720200
+Date/Time: 10/05/2024 16:34
+Description: CALLER IS AN EMPLOYEE OF
+PERIMETER OF THE OZARKS
+AND IS ADVISING THAT
+THEY HAVE A JUVENILE
+THAT IS ACTING OUT AND
+THEY ARE HAVING ISSUES
+WITH HER AND THEY
+CURRENTLY HAVE HER
+RESTRAINED.
+Date/Time: 10/05/2024 16:35 User: katemo Action: Narrative Added
+Description: SHE CALLED 911 AND IS
+TELLING ME THAT SHE
+DOESN'T NEED AN OFFICER
+TO RESPOND BUT WANTS
+THIS DOCUMENTED.
+Date/Time: 10/05/2024 16:35 User: katemo Action: Call Updated
+Description: Caller Updated: Name
+Changed from to , SABRINA
+Date/Time: 10/05/2024 16:37 User: katemo Action: Narrative Added
+Description: SHE SAID THAT THEY MAY
+NEED POLICE EVENTUALLY
+BUT NOT RIGHT NOW.
+Date/Time: 10/05/2024 16:37 User: katemo Action: Narrative Added
+Description: THERE WERE AT 2 TIMES
+WHAT SOUNDED LIKE A
+JUVENILE SCREAMING IN
+THE BACKGROUND OF THE
+CALL.
+Date/Time: 10/05/2024 16:37 User: katemo Action: Narrative Added
+Description: I TOLD THE CALLER I WOULD
+HAVE AN OFFICER CALL HER
+TO "DOCUMENT THE
+INCIDENT" AND EXPLAIN
+WHAT CAN BE DONE ABOUT
+THE SITUATION.
+Date/Time: 10/05/2024 16:41 User: roxxanaan Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00064444
+Date/Time: 10/05/2024 16:41 User: roxxanaan Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 10/05/2024 16:41 User: roxxanaan Action: Unit Status Action
+Description: Unit 333 On Scene
+User: roxxanaan Action: Unit Location
+Login Id: SPRD\baileyjo Page 3 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:24
+Agency #: AR0720200
+Date/Time: 10/05/2024 16:41
+Description: Unit 333 Secondary Location:
+Secondary Location Cleared
+Date/Time: 10/05/2024 16:57 User: danielfl Action: Narrative Added
+Description: 333/ spoke to sabrina, she
+informed me a resident just
+arrived back from JDC and
+was starting to cause some
+issues but is fine now.
+Sabrina stated me the judge
+advised them to contact
+police when she got out of
+hand so it could be
+documented.
+DF333
+Date/Time: 10/05/2024 16:58 User: gingerev Action: Disposition Changed
+Description: Added: Complaint Only
+Count 1
+Date/Time: 10/05/2024 16:58 User: gingerev Action: Unit Status Action
+Description: Unit 333 Available
+Date/Time: 10/05/2024 16:58 User: gingerev Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 10/05/2024 16:41 Unit Number: 333 Action: Unit Status Change
+Description: Dispatched Call Number:
+684, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Disorderly Conduct
+Date/Time: 10/05/2024 16:41 Unit Number: 333 Action: Unit Status Change
+Description: On Scene
+Date/Time: 10/05/2024 16:41 Unit Number: 333 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 10/05/2024 16:58 Unit Number: 333 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 10/05/2024 16:58 Unit Number: 333 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Login Id: SPRD\baileyjo Page 4 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:24
+Agency #: AR0720200
+Narratives
+Entered By: katemo Date Entered: 10/05/2024 16:34
+CALLER IS AN EMPLOYEE OF PERIMETER OF THE OZARKS AND IS ADVISING THAT THEY HAVE A JUVENILE THAT IS ACTING OUT AND
+THEY ARE HAVING ISSUES WITH HER AND THEY CURRENTLY HAVE HER RESTRAINED.
+Entered By: katemo Date Entered: 10/05/2024 16:35
+SHE CALLED 911 AND IS TELLING ME THAT SHE DOESN'T NEED AN OFFICER TO RESPOND BUT WANTS THIS DOCUMENTED.
+Entered By: katemo Date Entered: 10/05/2024 16:37
+SHE SAID THAT THEY MAY NEED POLICE EVENTUALLY BUT NOT RIGHT NOW.
+Entered By: katemo Date Entered: 10/05/2024 16:37
+THERE WERE AT 2 TIMES WHAT SOUNDED LIKE A JUVENILE SCREAMING IN THE BACKGROUND OF THE CALL.
+Entered By: katemo Date Entered: 10/05/2024 16:37
+I TOLD THE CALLER I WOULD HAVE AN OFFICER CALL HER TO "DOCUMENT THE INCIDENT" AND EXPLAIN WHAT CAN BE DONE ABOUT
+THE SITUATION.
+Entered By: danielfl Date Entered: 10/05/2024 16:57
+333/ spoke to sabrina, she informed me a resident just arrived back from JDC and was starting to cause some issues but is fine now.
+Sabrina stated me the judge advised them to contact police when she got out of hand so it could be documented.
+DF333
+Login Id: SPRD\baileyjo Page 5 of 5

@@ -1,0 +1,94 @@
+CFS - Unit Response Times Printed on April 29, 2024
+
+CFS # CFS2416481
+Call Taker KATELYN JACKSON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code ALRF : Fire Alarm
+
+Mod Emergency Fire/Medical
+Priority 5
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 04/18/24 11:36:22
+Completed Time 04/18/24 11:45:27
+
+Reporters
+
+Unknown (Initial Reporter)
+Sex
+
+DOB
+
+Address
+
+Report Time 04/18/24 11:36:22
+How Reported Phone
+
+From Phone
+
+Contact Phone
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 : FCFD (Primary) | -
+FCMARSHALL (Primary) FD - Sharp, Jeremy FCFD (Primary)
+
+Response Times
+
+Assigned 04/18/24 11:38:24
+Enroute 04/18/24 11:38:33
+Arrived 04/18/24 11:40:33
+Leaving 04/18/24 11:42:07
+Arrived At
+
+Completed 04/18/24 11:45:27
+
+IR / External Agency Numbers
+FCFD 202400477 _ a i
+
+Officer Addenda :
+
+Unit Response Times
+
+Non Unit Specific Times
+04/18/24 11:36:22 | New CFS
+
+SSS
+
+Page 1 of 2
+
+
+04/18/24 11:37:21 | COMMERCIAL FIRE ALARM. PERIMETER BEHAVIORAL HEALTH. KH NUMBER IS 870-633-
+3200.
+
+04/18/24 11:38:10 | NOTIFIED FIRE, ADVISED TRYING TO CONTACT PREMISES AT THIS TIME
+04/18/24 11:39:02 | TRIED CALLING 870-633-3200 AND IT WAS NO ANSWER
+
+04/18/24 11:41:58 | FD1 ADV FALSE ALARM
+
+04/18/24 11:49:15 | 2404180007
+
+CALL1
+04/18/24 11:38:24 | Assign
+
+CALL1, FCMARSHALL
+04/18/24 11:45:27 | Complete
+
+FCMARSHALL
+
+04/18/24 11:38:33 | Enroute
+04/18/24 11:40:33 | On Scene
+04/18/24 11:42:07 | Leaving Scene
+
+—_]A eeeeSSSSSSSSSSSSSSSSSSSFFFFesee
+
+Page 2 of 2

@@ -1,0 +1,240 @@
+CFS - Command Log Printed on March 15, g 023
+|
+
+CFS # CFS2304788
+Call Taker HALEY MILLS
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code MED : MEDICAL CALL
+
+Mod
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/10/23 18:59:50
+
+Completed Time 02/10/23 19:53:07
+Reporters
+
+CNA AT BEHAVIORIAL HEALTH (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time —_ 02/10/23 18:59:50
+
+How Reported
+
+From Phone
+
+Contact Phone (870) 970-3500
+
+Comments
+
+Other Names
+
+Vehicles
+Responders
+511 511 - TODD, ADRIAN FCPD rd]
+512 512-MANSEL, STEVEN FCPD
+513 (Primary) 513 - POWERS, JAKE FCPD
+613 (Primary) 613 - HALLMARK, DAVID _SFSD (Primary)
+
+Response Times
+
+Assigned 02/10/23 19:18:15 *
+Enroute 02/10/23 19:18:15
+Arrived 02/10/23 19:23:44
+Leaving
+
+Arrived At
+
+Completed 02/10/23 19:53:07
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+02/10/23 18:59:50 | MILLS, HALEY | New CFS
+
+Page 1 f 2
+
+
+
+02/10/23 19:01:14 | MILLS, HALEY | CALLER ADVISED THAT THERE IS A BOY THAT SWALLOWED GLASS, 117YO
+MALE
+
+02/10/23 19:01:55 | MILLS, HALEY | GO INTO THE DOOR ON THE SIDE CLOSEST TO NURSING HOME
+02/10/23 19:02:27 | MILLS, HALEY | EMS EN ROUTE
+
+02/10/23 19:09:49 | MILLS, HALEY | EMS ON SCENE
+
+02/10/23 19:17:27 | MILLS, HALEY | EMS REQUESTING AN OFFICER
+
+02/10/23 19:18:15 | MILLS, HALEY | 613 | Enroute
+
+02/10/23 19:18:28 | MILLS, HALEY | 613 | Available
+
+02/10/23 19:18:33 | MILLS, HALEY | 513 | Enroute
+
+02/10/23 19:19:09 | MILLS, HALEY | 613 WAS NEVER EN ROUTE, ACCIDENTALLY PUT IN
+
+02/10/23 19:19:25 | MILLS, HALEY | 512 | Enroute
+02/10/23 19:20:56 | MILLS, HALEY | EMS ADVISED THEY ARE HAVING TO WRESTLE GLASS AWAY FROM THE
+JUVENILE
+
+02/10/23 19:21:08 | MILLS, HALEY | SAME JUVENILE THAT 513 DEALT WITH EARLIER
+02/10/23 19:23:44 | MILLS, HALEY | 513 | On Scene
+
+02/10/23 19:24:37 | MILLS, HALEY | 512 | On Scene
+
+02/10/23 19:25:26 | MILLS, HALEY | 511 | Enroute
+02/10/23 19:26:31 | MILLS, HALEY | 511 | On Scene
+02/10/23 19:27:02 | MILLS, HALEY | 512 AND 513 FOLLOWING EMS TO HOSPITAL
+02/10/23 19:27:07 | MILLS, HALEY | EMS TRANSPORTING ONE
+02/10/23 19:28:56 | MILLS, HALEY | 513 | Clear Alarms
+
+02/10/23 19:29:45 | MILLS, HALEY | 512 | Clear Alarms
+
+02/10/23 19:31:43 | MILLS, HALEY | 511 | Clear Alarms
+
+02/10/23 19:32:20 | MILLS, HALEY | 512 AND 513 AT ER
+02/10/23 19:53:07 | MILLS, HALEY | 511, 512, 513 | Complete
+
+CLQ
+
+Requested At
+Sent To
+Status
+Received At
+Location
+Accuracy
+
+Page 2 of 2
+
+
+
+CES - Unit Response Times Printed on March 15, 2023
+|
+
+CFS # CFS2304788 |
+Call Taker HALEY MILLS
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code MED : MEDICAL CALL
+
+Mod
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/10/23 18:59:50
+Completed Time 02/10/23 19:53:07
+Reporters |
+CNA AT BEHAVIORIAL HEALTH (Initial Reporter) |
+Sex
+DOB
+Address
+Report Time 02/10/23 18:59:50
+How Reported
+From Phone
+Contact Phone (870) 970-3500
+Comments
+
+Other Names
+
+Vehicles
+Responders
+511 511 - TODD, ADRIAN FCPD
+512 512 - MANSEL, STEVEN FCPD
+513 (Primary) 513 - POWERS, JAKE FCPD
+613 (Primary) 613 - HALLMARK, DAVID —__SFSD (Primary)
+
+Response Times
+
+Assigned 02/10/23 19:18:15 * |
+Enroute 02/10/23 19:18:15
+Arrived 02/10/23 19:23:44
+Leaving
+
+Arrived At
+
+Completed 02/10/23 19:53:07
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Unit Response Times
+
+1}
+
+Non Unit Specific Times
+Page 1 Cr 2
+
+
+
+02/10/23 18:59:50 | New CFS
+
+02/10/23 19:01:14 | CALLER ADVISED THAT THERE IS A BOY THAT SWALLOWED GLASS, 17YO MALE
+02/10/23 19:01:55 | GO INTO THE DOOR ON THE SIDE CLOSEST TO NURSING HOME
+
+02/10/23 19:02:27 | EMS EN ROUTE
+
+02/10/23 19:09:49 | EMS ON SCENE
+
+02/10/23 19:17:27 | EMS REQUESTING AN OFFICER
+
+02/10/23 19:19:09 | 613 WAS NEVER EN ROUTE, ACCIDENTALLY PUT IN
+
+02/10/23 19:20:56 | EMS ADVISED THEY ARE HAVING TO WRESTLE GLASS AWAY FROM THE JUVENILE
+02/10/23 19:21:08 | SAME JUVENILE THAT 513 DEALT WITH EARLIER
+
+02/10/23 19:27:02 | 512 AND 513 FOLLOWING EMS TO HOSPITAL
+
+02/10/23 19:27:07 | EMS TRANSPORTING ONE
+
+02/10/23 19:32:20 | 512 AND 513 AT ER
+
+511
+02/10/23 19:25:26 | Enroute |
+
+02/10/23 19:26:31 | On Scene
+02/10/23 19:31:43 | Clear Alarms
+
+511, 512, 513
+02/10/23 19:53:07 | Complete
+
+512 |
+02/10/23 19:19:25 | Enroute |
+
+02/10/23 19:24:37 | On Scene
+02/10/23 19:29:45 | Clear Alarms
+
+513 R
+02/10/23 19:18:33 | Enroute
+
+02/10/23 19:23:44 | On Scene
+02/10/23 19:28:56 | Clear Alarms
+
+613
+02/10/23 19:18:15 | Enroute |
+
+02/10/23 19:18:28 | Available
+
+Page 2)of 2

@@ -1,0 +1,226 @@
+CFS - Unit Response Times Printed on March 15, 2023
+]
+
+CFS # CFS2304194
+Call Taker ANN GRAVES
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code FUNK : Fire Unknown
+
+Mod Emergency Fire/Medical
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/05/23 10:36:27
+Completed Time 02/05/23 10:55:24
+
+Reporters
+AR ALARMS (Initial Reporter) |
+Sex
+DOB
+Address
+
+Report Time 02/05/23 10:36:27
+How Reported
+
+From Phone
+
+Contact Phone (866) 858-8950
+Comments
+
+Other Names
+
+Vehicles |
+Responders
+
+CALL1 FCFD (Primary)
+
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+
+FCE2 FCFD, Engine Co 2 FCFD (Primary)
+
+532 (Primary) 532 - MARLOW, JOHN FCPD
+
+Response Times
+
+Assigned 02/05/23 10:36:40
+Enroute 02/05/23 10:38:04
+Arrived 02/05/23 10:41:34
+Leaving
+
+Arrived At
+
+Completed 02/05/23 10:55:24
+
+IR / External Agency Numbers
+
+FCFD 202300148
+FCPD202300950
+
+Officer Addenda
+
+Unit Response Times
+a |
+
+Page 1 of 2
+
+
+
+Non Unit Specific Times |
+02/05/23 10:36:27 | New CFS
+02/05/23 10:39:43 | RECEIVING A FIRE ALARM COMING FROM ZONE 581 THE GYM STORAGE UPSTAIRS AND
+ZONE 583 FOR GYM LIGHT SMOKE
+
+02/05/23 10:41:19 | THE ALARM COMPANY CALLED BACK AND STATED THAT THEY MADE CONTACT
+8706333220 AND THEY SAID SHE HAD MAINTANCE THERE CHECKING IT OUT BUT IM GOING TO LET THE
+FIRE DEPARTMENT CHECK IT OUT TO MAKE SURE
+
+02/05/23 10:43:14 | NOTHING SHOWING AT THIS TIME
+02/05/23 10:55:11 | EVERYTHING IS GOING TO BE 10-4
+
+532
+02/05/23 10:39:50 | Assign
+
+02/05/23 10:39:53 | Enroute
+02/05/23 10:41:34 | On Scene
+02/05/23 10:53:22 | Available
+
+CALL1 |
+02/05/23 10:36:40 | Assign
+
+CALL1, FCE1, FCE2
+
+02/05/23 10:55:24 | Complete
+
+FCE1 |
+02/05/23 10:38:04 | Enroute
+
+FCE2 |
+02/05/23 10:39:36 | Enroute |
+
+02/05/23 10:44:36 | On Scene |
+
+Page 2 of 2
+
+
+
+CFS - Command Log Printed on March 15, 2023
+
+CFS # CFS2304194
+Call Taker ANN GRAVES
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code FUNK : Fire Unknown
+
+Mod Emergency Fire/Medical
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/05/23 10:36:27
+
+Completed Time 02/05/23 10:55:24
+Reporters
+
+AR ALARMS (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 02/05/23 10:36:27
+
+How Reported
+
+From Phone
+
+Contact Phone (866) 858-8950
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 FCFD (Primary)
+FCE1 (Primary) FCFD, Engine CO 1 FCFD (Primary)
+FCE2 FCFD, Engine Co 2 FCFD (Primary)
+532 (Primary) 532 - MARLOW, JOHN FCPD
+
+Response Times
+
+Assigned 02/05/23 10:36:40
+Enroute 02/05/23 10:38:04
+Arrived 02/05/23 10:41:34
+Leaving
+
+Arrived At
+
+Completed 02/05/23 10:55:24
+
+IR / External Agency Numbers
+
+FCFD 202300148
+FCPD202300950
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+Page 1jof 2
+
+
+
+02/05/23 10:36:27 | GRAVES, ANN | New CFS
+02/05/23 10:36:40 | GRAVES, ANN | CALL1 | Assign
+
+02/05/23 10:38:04 | FCFD, Engine CO 1| FCE1 | Enroute
+02/05/23 10:39:36 | FCFD, Engine Co 2 | FCE2 | Enroute
+
+02/05/23 10:39:43 | GRAVES, ANN | RECEIVING A FIRE ALARM COMING FROM ZONE 581 THE GYM STORAGE
+
+UPSTAIRS AND ZONE 583 FOR GYM LIGHT SMOKE
+02/05/23 10:39:50 | GRAVES, ANN | 532 | Assign
+
+02/05/23 10:39:53 | GRAVES, ANN | 532 | Enroute |
+02/05/23 10:41:19 | GRAVES, ANN | THE ALARM COMPANY CALLED BACK AND STATED THAT THEY MADE
+
+CONTACT 8706333220 AND THEY SAID SHE HAD MAINTANCE THERE CHECKING IT OUT BUT IM GOING TO
+
+LET THE FIRE DEPARTMENT CHECK IT OUT TO MAKE SURE
+
+02/05/23 10:41:34 | GRAVES, ANN | 532 | On Scene
+
+02/05/23 10:43:14 | GRAVES, ANN | NOTHING SHOWING AT THIS TIME
+02/05/23 10:44:36 | FCFD, Engine Co 2 | FCE2 | On Scene
+
+02/05/23 10:53:22 | GRAVES, ANN | 532 | Available
+
+02/05/23 10:55:11 | GRAVES, ANN | EVERYTHING IS GOING TO BE 10-4
+02/05/23 10:55:24 | GRAVES, ANN | CALL1, FCE1, FCE2 | Complete
+
+cLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location ‘
+Accuracy
+
+of 2

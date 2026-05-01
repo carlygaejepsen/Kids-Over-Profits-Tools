@@ -1,0 +1,37 @@
+Dispatch Call Detail
+Call #: C670863 - Juvenile Complaint
+Received Date/Time: 09/04/2023 16:10:48 Taken By: Warren, Mandi
+Initial Call Type: Juvenile Complaint Caller Name
+Cleared Date/Time: 09/04/2023 16:38:06 Phone: (901) 659 - 8277
+Cleared By: Johnson, Centerial Caller Loc.:
+Location: 600 N 7Th ST
+West Memphis, AR 72301
+Units Dispatched
+Dispatched Enroute Arrived Transport Trans Dest Cleared At Station Mileage Trns To
+262 - Shaw, Reginald - 2237 09/04/2023 09/04/2023 09/04/2023 09/04/2023
+(WMPD) 16:12:38 16:13:14 16:18:24 16:23:48
+221 - Forthman, Blake - 2290 09/04/2023 09/04/2023 09/04/2023 09/04/2023
+(WMPD) 16:13:23 16:13:31 16:14:21 16:38:06
+271 - Kimbrough, Amber - 2265 09/04/2023 09/04/2023 09/04/2023 09/04/2023 09/04/2023 71.0-71.0 COURTESY
+(WMPD) 16:18:19 16:18:29 16:21:24 16:22:50 16:33:32 TRANSPORT
+Narrative
+Date/Time Dispatcher Narrative
+09/04/2023 16:10:57 Warren, Mandi PERIMETER HEALTH----MAKE CONT LATASHA DAVIS IN RF TO A JUVENILE
+BLACK SHIRT AND GRAY JOGGING PANTS ESCAPED FROM FACILITIES.
+POSSIBLY IN THE WOODS....CALLER NO LONGER HAS EYES ON HIM
+09/04/2023 16:12:06 Rogers, Ashely CALLER STATED THEY ARE CURRENTLY WALKING SB ON N 6TH ST.
+09/04/2023 16:13:06 Rogers, Ashely CALLER STATED IS WALKING THROUGH THE OLD XFINITY PARKING LOT
+TOWARD THE TRAIN TRACKS.
+09/04/2023 16:16:24 Warren, Mandi 251---JUST TOOK OFF PANTS BLUE SHORTS AND WHITE SHIRT
+09/04/2023 16:17:00 Johnson, Centerial 251--I'VE GOT ...305 N 5TH
+09/04/2023 16:17:17 Johnson, Centerial 251--WE'RE GOING TO RELOCATE TO THE FACILITY.
+09/04/2023 16:20:54 Johnson, Centerial 271--I'M GOING TO BE TRANSPORTING THAT BACK TO PERIMETER. 071
+09/04/2023 16:21:43 Johnson, Centerial 251--IM ENROUTE TO PERIMETER
+09/04/2023 16:33:41 Johnson, Centerial 271--IM GOING TO BE BACK IN. 251 WILL BE OUT A LITTLE LONGER.
+09/04/2023 16:37:51 Johnson, Centerial 251--BACK IN WI A REPORT
+Dispositions
+Incident Report,
+Incidents
+Agency Incident Officer
+WMPD 23-03425 Forthman, Blake
+Copyright Relativity Inc.© - RPS(Relativity Public Safety) 1 of 1

@@ -1,0 +1,244 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00055237 Incident Type: Assault/Battery Call Date/Time: 08/18/2025 15:14
+Location 2601 HABBERTON RD, Location Originating Call (515) 601-9430
+Formatted: SPRINGDALE, 72764 Common Name: Number:
+Nature Of Call: Status: Not In Progress Priority: 3
+Source: Admin Phone Line
+Units/Personnel
+Unit: 350 Primary Unit: Yes Call Date/Time: 08/18/2025 15:26
+Personnel: 1805 - Tartaglia, Joseph Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: HEINRICH, SARAH Location
+Formatted:
+Primary Contact (515) 601-9430 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 08/18/2025 16:38
+Evidence
+Call Log
+Date/Time: 08/18/2025 15:14 User: jasminne Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 08/18/2025 15:14 User: jasminne Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 08/18/2025 15:14 User: jasminne Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2601
+HABBERTON RD,
+SPRINGDALE
+User: jasminne Action: Location
+Login Id: SPRD\baileyjo Page 1 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+Date/Time: 08/18/2025 15:14
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 08/18/2025 15:14 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 08/18/2025 15:14 User: jasminne Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 08/18/2025 15:14 User: jasminne Action: Call Updated
+Description: Caller Phone Changed to
+(515) 601-9430
+Date/Time: 08/18/2025 15:15 User: jasminne Action: Call Updated
+Description: Caller Updated: Name
+Changed from to HEINRICH,
+SARAH
+Date/Time: 08/18/2025 15:16 User: jasminne Action: Narrative Added
+Description: SARAH WITH IOWA DEPT OF
+HEALTH AND HUMAN
+SERVICES IS CALLING TO
+REPORT THAT HER CLIENT
+HAS BEEN ASSAULTED ON
+MORE THAN ONE
+OCCASION BY ONE OF HER
+PEERS AT THE TREATMENT
+CENTER
+Date/Time: 08/18/2025 15:16 User: jasminne Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Assault/Battery, Status:
+Not In Progress, Priority: 3
+Date/Time: 08/18/2025 15:16 User: jasminne Action: Narrative Added
+Description: SHE HAS NOT FILED IT WITH
+PD BEFORE
+Date/Time: 08/18/2025 15:16 User: jasminne Action: Narrative Added
+Description: MOST RECENT INCIDENT
+WOULD HAPPENED IN JULY
+Date/Time: 08/18/2025 15:18 User: jasminne Action: Narrative Added
+Description: NO TOOLS/WEAPONS
+INVOLVED
+Date/Time: 08/18/2025 15:18 User: jasminne Action: Narrative Added
+Description: ADV SHE HAD A BRUISE LEFT
+UNDER EYE
+User: jasminne Action: Narrative Added
+Login Id: SPRD\baileyjo Page 2 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+Date/Time: 08/18/2025 15:18
+Description: FROM BEING SLAMMED
+INTO A WINDOW AND WALL
+AND HAVING HER HAIR
+PULLED
+Date/Time: 08/18/2025 15:18 User: jasminne Action: Narrative Added
+Description: NOT INJURED CURRENTLY
+Date/Time: 08/18/2025 15:19 User: jasminne Action: Narrative Added
+Description: THE "INSTIGATOR" IS
+UNK
+RACE, 17YOA, TURNS 18 IN
+OCTOBER
+Date/Time: 08/18/2025 15:20 User: jasminne Action: Narrative Added
+Description: VICTIM IS
+Date/Time: 08/18/2025 15:20 User: jasminne Action: Narrative Added
+Description: CLIENT IS 15YOA
+Date/Time: 08/18/2025 15:20 User: jasminne Action: Narrative Added
+Description: CLR ADV THAT OFFICERS
+CAN CONTACT HER VIA 21
+FOR THE REPORT
+Date/Time: 08/18/2025 15:21 User: jasminne Action: Narrative Added
+Description: ADV SHE WOULD TRY TO
+CONNECT THEM TO THE
+TREATMENT CENTER AS
+WELL, THEY WOULD HAVE
+FURTHER INFO
+Date/Time: 08/18/2025 15:21 User: jasminne Action: Narrative Added
+Description: SUSPECT IS STILL ON SCENE,
+IS A CLIENT THERE STILL,
+THEY ARE SEPARATED, UNK
+FOR HOW LONG
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Unit Location
+Description: Unit 350 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00055237
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Unit Status Action
+Description: Unit 350 Dispatched
+Login Id: SPRD\baileyjo Page 3 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Unit Status Action
+Description: Unit 350 Responding
+Date/Time: 08/18/2025 15:26 User: briannasa Action: Unit Status Action
+Description: Unit 350 On Scene
+Date/Time: 08/18/2025 15:46 User: briannasa Action: Narrative Added
+Description: 350/ EN ROUTE TO 2601
+HABBERTON
+Date/Time: 08/18/2025 15:46 User: briannasa Action: Unit Status Action
+Description: Unit 350 Responding 2nd
+Date/Time: 08/18/2025 15:46 User: briannasa Action: Unit Location
+Description: Unit 350 Secondary Location:
+2601 HABBERTON
+Date/Time: 08/18/2025 16:03 User: briannasa Action: Unit Status Action
+Description: Unit 350 On Scene 2nd
+Date/Time: 08/18/2025 16:38 User: briannasa Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 08/18/2025 16:38 User: briannasa Action: Unit Status Action
+Description: Unit 350 Available
+Date/Time: 08/18/2025 16:38 User: briannasa Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 08/18/2025 15:26 Unit Number: 350 Action: Unit Status Change
+Description: Dispatched Call Number:
+878, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Assault/Battery
+Date/Time: 08/18/2025 15:26 Unit Number: 350 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/18/2025 15:26 Unit Number: 350 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/18/2025 15:26 Unit Number: 350 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/18/2025 15:46 Unit Number: 350 Action: Unit Status Change
+Description: Responding 2nd
+Date/Time: 08/18/2025 15:46 Unit Number: 350 Action: Unit Location
+Description: 2601 HABBERTON
+Date/Time: 08/18/2025 16:03 Unit Number: 350 Action: Unit Status Change
+Description: On Scene 2nd
+Login Id: SPRD\baileyjo Page 4 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+Date/Time: 08/18/2025 16:38 Unit Number: 350 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/18/2025 16:38 Unit Number: 350 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: jasminne Date Entered: 08/18/2025 15:16
+SARAH WITH IOWA DEPT OF HEALTH AND HUMAN SERVICES IS CALLING TO REPORT THAT HER CLIENT HAS BEEN ASSAULTED ON
+MORE THAN ONE OCCASION BY ONE OF HER PEERS AT THE TREATMENT CENTER
+Entered By: jasminne Date Entered: 08/18/2025 15:16
+SHE HAS NOT FILED IT WITH PD BEFORE
+Entered By: jasminne Date Entered: 08/18/2025 15:16
+MOST RECENT INCIDENT WOULD HAPPENED IN JULY
+Entered By: jasminne Date Entered: 08/18/2025 15:18
+NO TOOLS/WEAPONS INVOLVED
+Entered By: jasminne Date Entered: 08/18/2025 15:18
+ADV SHE HAD A BRUISE LEFT UNDER EYE
+Entered By: jasminne Date Entered: 08/18/2025 15:18
+FROM BEING SLAMMED INTO A WINDOW AND WALL AND HAVING HER HAIR PULLED
+Entered By: jasminne Date Entered: 08/18/2025 15:18
+NOT INJURED CURRENTLY
+Entered By: jasminne Date Entered: 08/18/2025 15:19
+THE "INSTIGATOR" IS 17YOA, TURNS 18 IN OCTOBER
+Entered By: jasminne Date Entered: 08/18/2025 15:20
+VICTIM IS
+Entered By: jasminne Date Entered: 08/18/2025 15:20
+CLIENT IS 15YOA
+Entered By: jasminne Date Entered: 08/18/2025 15:20
+CLR ADV THAT OFFICERS CAN CONTACT HER VIA 21 FOR THE REPORT
+Entered By: jasminne Date Entered: 08/18/2025 15:21
+ADV SHE WOULD TRY TO CONNECT THEM TO THE TREATMENT CENTER AS WELL, THEY WOULD HAVE FURTHER INFO
+Login Id: SPRD\baileyjo Page 5 of 6
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 09/19/2025 12:26
+Agency #: AR0720200
+Narratives
+Entered By: jasminne Date Entered: 08/18/2025 15:21
+SUSPECT IS STILL ON SCENE, IS A CLIENT THERE STILL, THEY ARE SEPARATED, UNK FOR HOW LONG
+Entered By: briannasa Date Entered: 08/18/2025 15:46
+350/ EN ROUTE TO 2601 HABBERTON
+Login Id: SPRD\baileyjo Page 6 of 6

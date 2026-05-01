@@ -1,0 +1,851 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00054660 Incident Type: Missing Call Date/Time: 08/15/2025 19:48
+Location 2601 HABBERTON RD, Location YELLOW ROCK BEHAVORIAL Originating Call (479) 236-8568
+Formatted: SPRINGDALE, 72764 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 412 Primary Unit: No Call Date/Time: 08/15/2025 19:54
+Personnel: 0013 - Green, Joshua Primary: Yes
+Unit: 307 Primary Unit: No Call Date/Time: 08/15/2025 19:54
+Personnel: 276 - Solis, Mark Primary: Yes
+Unit: 337 Primary Unit: No Call Date/Time: 08/15/2025 19:53
+Personnel: 23 - Bowen, Austin Primary: Yes
+Unit: 334 Primary Unit: No Call Date/Time: 08/15/2025 19:54
+Personnel: 159 - Rojo-Gonzalez, Ricardo Primary: Yes
+Unit: 419 Primary Unit: No Call Date/Time: 08/15/2025 19:57
+Personnel: 203 - Wagner, Lane Primary: Yes
+Unit: 392 Primary Unit: No Call Date/Time: 08/15/2025 19:57
+Personnel: 1641 - Machado-Moriarty, Primary: Yes
+Lucas
+Unit: 401 Primary Unit: Yes Call Date/Time: 08/15/2025 19:53
+Personnel: 2556 - Cox, Braden Primary: Yes
+Unit: 367 Primary Unit: No Call Date/Time: 08/15/2025 19:53
+Personnel: 260 - French, Leland Primary: Yes
+Unit: 397 Primary Unit: No Call Date/Time: 08/15/2025 19:53
+Personnel: 5272 - Moore, Jacob Primary: Yes
+Unit: 421 Primary Unit: No Call Date/Time: 08/15/2025 19:54
+Personnel: 87 - Howard, Austin Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: MOORE, ANA Location
+Formatted:
+Primary Contact (479) 236-8568 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Login Id: SPRD\dianamo Page 1 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Role: Caller Primary Caller: No Non-Disclosure: No
+Subject Type: Adult Name Formatted: DODSON, ERICKA Location
+Formatted:
+Primary Contact (479) 871-8932 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Role: Caller Primary Caller: No Non-Disclosure: No
+Subject Type: Adult Name Formatted: RAMSEY, KACYN Location
+Formatted:
+Primary Contact Date of Birth: 11/11/2010
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Male Hair Color:
+Eye Color:
+Role: Caller Primary Caller: No Non-Disclosure: No
+Subject Type: Adult Name Formatted: BLACKBURN, ANTHONY Location
+Formatted:
+Primary Contact Date of Birth: 11/30/2008
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Male Hair Color:
+Eye Color:
+Role: Caller Primary Caller: No Non-Disclosure: No
+Subject Type: Adult Name Formatted: OWEN, CASEY Location
+Formatted:
+Primary Contact Date of Birth: 01/14/2010
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Male Hair Color:
+Eye Color:
+Disposition
+Disposition: Misdemeanor OR TRAFFIC Count: 1 Unit:
+VIOLATION
+Date/Time: 08/15/2025 21:09
+Evidence
+Login Id: SPRD\dianamo Page 2 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Call Log
+Date/Time: 08/15/2025 19:48 User: jamileth Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 08/15/2025 19:48 User: jamileth Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 08/15/2025 19:48 User: jamileth Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2601
+HABBERTON RD,
+SPRINGDALE (YELLOW ROCK
+BEHAVORIAL)
+Date/Time: 08/15/2025 19:48 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 08/15/2025 19:48 User: jamileth Action: Location
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 08/15/2025 19:49 User: jamileth Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Disorderly Conduct,
+Status: Not In Progress,
+Priority: 3
+Date/Time: 08/15/2025 19:49 User: jamileth Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 08/15/2025 19:49 User: jamileth Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 08/15/2025 19:49 User: jamileth Action: Narrative Added
+Description: CALLER ADV 3 PTS CLIMBED
+OVER THE FENCE AND
+ESCAPED
+Date/Time: 08/15/2025 19:49 User: jamileth Action: Narrative Added
+Description: THEY CAN NO LONGER SEE
+THEM
+Date/Time: 08/15/2025 19:50 User: jamileth Action: Narrative Added
+Description: 667/ PLACED THEM ON
+HOLD DUE TO MORE 911
+Login Id: SPRD\dianamo Page 3 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:50 User: jamileth Action: Narrative Added
+Description: UNK WHAT THEY WERE LAST
+WEARING
+Date/Time: 08/15/2025 19:50 User: jamileth Action: Narrative Added
+Description: W/M, H/M, OTHER MALE
+UNK RACE
+Date/Time: 08/15/2025 19:51 User: jamileth Action: Narrative Added
+Description: CALLER ADV THEY WERE
+SEEN CLOSE TO AUTO ZONE
+ON ROBINSON
+Date/Time: 08/15/2025 19:51 User: jamileth Action: Narrative Added
+Description: POSS W ON ROBINSON
+Date/Time: 08/15/2025 19:51 User: jamileth Action: Narrative Added
+Description: ON FOOT
+Date/Time: 08/15/2025 19:52 User: jamileth Action: Narrative Added
+Description: UNK DOT OTHER THAN
+POSS W ON ROBINSON
+Date/Time: 08/15/2025 19:52 User: jamileth Action: Call Updated
+Description: Caller Added: Last Name -
+MOORE; First Name - ANA;
+Role - Caller;
+Date/Time: 08/15/2025 19:52 User: jamileth Action: Call Updated
+Description: Caller Phone Changed to
+(479) 236-8568
+Date/Time: 08/15/2025 19:52 User: jamileth Action: Narrative Added
+Description: UNK IF THEY HAD ANY
+WEAPONS
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Status Action
+Description: Unit 401 Responding
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Location
+Description: Unit 401 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00054660
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Location
+Description: Unit 397 Secondary Location:
+Secondary Location Cleared
+User: jamileth Action: Unit Status Action
+Login Id: SPRD\dianamo Page 4 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:53
+Description: Unit 397 Responding
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Narrative Added
+Description: THEY MIGHT BE VIOLENT
+WITH OFFICERS
+Date/Time: 08/15/2025 19:53 User: lelandfr Action: Unit Location
+Description: Unit 367 Secondary Location:
+Secondary Location Cleared
+Performed by Mobile Unit
+367
+Date/Time: 08/15/2025 19:53 User: lelandfr Action: Unit Status Action
+Description: Unit 367 Dispatched
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Status Action
+Description: Unit 337 Responding
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Location
+Description: Unit 337 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:53 User: lelandfr Action: Unit Status Action
+Description: Unit 367 Responding
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Status Action
+Description: Unit 337 C3
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Unit Status Action
+Description: Unit 401 C3
+Date/Time: 08/15/2025 19:53 User: jamileth Action: Narrative Added
+Description: 337/C3
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 421 Responding
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Location
+Description: Unit 421 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Location
+Description: Unit 307 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 307 Responding
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 421 C3
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 307 C3
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 397 C3
+Login Id: SPRD\dianamo Page 5 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 334 Responding
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Location
+Description: Unit 334 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Location
+Description: Unit 412 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 412 Responding
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 334 C3
+Date/Time: 08/15/2025 19:54 User: jamileth Action: Unit Status Action
+Description: Unit 412 C3
+Date/Time: 08/15/2025 19:55 User: tristenbo Action: Associated Calls
+Description: Call Number 153 was
+Associated, Call Type: Citizen
+Assistance, Location: E
+ROBINSON AVE /
+BUTTERFIELD COACH RD,
+SPRINGDALE, Caller Phone:
+(479) 871-8932, Name:
+DODSON, ERICKA
+Date/Time: 08/15/2025 19:55 User: tristenbo Action: Narrative Added
+Description: CLR ADVISED SOME KIDS
+RAN AWAY FROM VANTAGE
+POINT POSSIBLY, LOOKS LIKE
+POSSIBLY STAFF FOLLOWING
+THEM; THEY ARE HEADING
+BEHIND WALMART GOING
+INTO THE VINEYARDS; 3
+TOTAL; W/M H/M; 620/ HAD
+TO HANGUP DUE TO 911
+VOLUME
+Date/Time: 08/15/2025 19:55 User: tristenbo Action: Person Added
+Description: Name: DODSON, ERICKA ,
+Contact Phone: (479) 871-
+8932
+Date/Time: 08/15/2025 19:55 User: jamileth Action: Call Type
+Description: Police Call Type Changed
+From Disorderly Conduct To
+Call Type: Missing, Status:
+Not In Progress, Priority: 3
+User: testing, cad - system Action: Incident Type
+Login Id: SPRD\dianamo Page 6 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:55
+Description: Incident Type changed from
+Disorderly Conduct to
+Missing for AR0720200
+Incident Number 2025-
+00054660
+Date/Time: 08/15/2025 19:55 User: jamileth Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 08/15/2025 19:55 User: jamileth Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 08/15/2025 19:55 User: jamileth Action: Unit Status Action
+Description: Unit 397 On Scene
+Date/Time: 08/15/2025 19:56 User: jamileth Action: Narrative Added
+Description: 397/ OS BFC/ROBINSON
+Date/Time: 08/15/2025 19:56 User: jamileth Action: Narrative Added
+Description: 401/ OS IN THE ARE
+Date/Time: 08/15/2025 19:56 User: jamileth Action: Narrative Added
+Description: AREA
+Date/Time: 08/15/2025 19:56 User: jamileth Action: Unit Status Action
+Description: Unit 401 On Scene
+Date/Time: 08/15/2025 19:56 User: jamileth Action: Narrative Added
+Description: 401/ I GOT THEM BEHIND
+LEGACY BANK
+Date/Time: 08/15/2025 19:56 User: andreawa Action: Narrative Added
+Description: CLR BACK ADV THEY RAN
+BEHIND WALMART INTO THE
+APPLE TREES
+Date/Time: 08/15/2025 19:56 User: lelandfr Action: Unit Status Action
+Description: Unit 367 On Scene
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description: CLR STATES ONE POSS HAS
+A BLACK BEANIE AND
+ANOTHER HAS CURLY HAIR
+Date/Time: 08/15/2025 19:57 User: jamileth Action: Narrative Added
+Description: 397/ RUNNING TOWARDS
+ARVEST BANK
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description: BLACK BEANIE HAS A
+BANDAGE ON THE FINGER
+User: jamileth Action: Narrative Added
+Login Id: SPRD\dianamo Page 7 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:57
+Description: 667/T63
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description: WHI AND HIS MALES
+Date/Time: 08/15/2025 19:57 User: tristenbo Action: Unit Status Action
+Description: Unit 419 On Scene
+Date/Time: 08/15/2025 19:57 User: tristenbo Action: Unit Location
+Description: Unit 419 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:57 User: tristenbo Action: Unit Status Action
+Description: Unit 307 On Scene
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description:
+Date/Time: 08/15/2025 19:57 User: jamileth Action: Narrative Added
+Description: 367/ON DETAINED
+Date/Time: 08/15/2025 19:57 User: jamileth Action: Narrative Added
+Description: ONE*
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description:
+Date/Time: 08/15/2025 19:57 User: tristenbo Action: Unit Location
+Description: Unit 392 Secondary Location:
+Secondary Location Cleared
+Date/Time: 08/15/2025 19:57 User: tristenbo Action: Unit Status Action
+Description: Unit 392 On Scene
+Date/Time: 08/15/2025 19:57 User: andreawa Action: Narrative Added
+Description:
+Date/Time: 08/15/2025 19:58 User: jamileth Action: Narrative Added
+Description: 397/ RED SHIRT, BACK
+BEHIND THE BANK
+Date/Time: 08/15/2025 19:58 User: andreawa Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 08/15/2025 19:58 User: jamileth Action: Unit Status Action
+Description: Unit 421 On Scene
+Date/Time: 08/15/2025 19:58 User: andreawa Action: Narrative Added
+Description: RAN OFF APPROX 740 IS
+WHAT THE CLR ADVISED
+Date/Time: 08/15/2025 19:58 User: tristenbo Action: Unit Status Action
+Description: Unit 337 On Scene
+User: jamileth Action: Narrative Added
+Login Id: SPRD\dianamo Page 8 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:58
+Description: 307/ OS WITH MALE BEHIND
+ARVEST
+Date/Time: 08/15/2025 19:58 User: jamileth Action: Unit Status Action
+Description: Unit 412 On Scene
+Date/Time: 08/15/2025 19:58 User: jamileth Action: Unit Status Action
+Description: Unit 334 On Scene
+Date/Time: 08/15/2025 19:59 User: jamileth Action: Narrative Added
+Description: 421 41/ T20?
+Date/Time: 08/15/2025 19:59 User: jamileth Action: Narrative Added
+Description: 401/ LEGACY BANK?
+Date/Time: 08/15/2025 19:59 User: tristenbo Action: Unit Status Action
+Description: Unit 419 Available
+Date/Time: 08/15/2025 19:59 User: jamileth Action: Narrative Added
+Description: LEGACY BANK*
+Date/Time: 08/15/2025 19:59 User: tristenbo Action: Unit Status Action
+Description: Unit 392 Available
+Date/Time: 08/15/2025 19:59 User: jamileth Action: Narrative Added
+Description: 401/ RELEASE \
+Date/Time: 08/15/2025 19:59 User: jamileth Action: Narrative Added
+Description: 667/ T64
+Date/Time: 08/15/2025 20:00 User: jamileth Action: Unit Status Action
+Description: Unit 412 Available
+Date/Time: 08/15/2025 20:00 User: jamileth Action: Unit Status Action
+Description: Unit 334 Available
+Date/Time: 08/15/2025 20:00 User: jamileth Action: Narrative Added
+Description: 401/ ALL OF THEM
+DETAINED
+Date/Time: 08/15/2025 20:01 User: jamileth Action: Narrative Added
+Description: 421/ MAKE CONTACT WITH
+WALMART AT
+NEIGHBORHOOD MARKET,
+THEY ALLEGEDLY MADE
+SHOPLIFTED FROM
+WALMART
+Date/Time: 08/15/2025 20:04 User: jamileth Action: Narrative Added
+Description: 421/
+BEHIND
+LEGACY BANK ON
+ROBINSON
+User: jamileth Action: Unit Status Action
+Login Id: SPRD\dianamo Page 9 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 20:05
+Description: Unit 337 Available
+Date/Time: 08/15/2025 20:06 User: tristenbo Action: Person Added
+Description:
+Date/Time: 08/15/2025 20:06 User: tristenbo Action: Person Added
+Description: -
+Date/Time: 08/15/2025 20:08 User: jamileth Action: Narrative Added
+Description:
+Date/Time: 08/15/2025 20:14 User: jamileth Action: Unit Status Action
+Description: Unit 367 Available
+Date/Time: 08/15/2025 20:16 User: tristenbo Action: Person Added
+Description:
+Date/Time: 08/15/2025 20:17 User: tristenbo Action: Person Updated
+Description:
+Date/Time: 08/15/2025 20:17 User: tristenbo Action: Unit Status Action
+Description: Unit 397 T15
+Date/Time: 08/15/2025 20:25 User: tristenbo Action: Narrative Added
+Description:
+Date/Time: 08/15/2025 20:25 User: tristenbo Action: Unit Status Action
+Description: Unit 401 T12
+Date/Time: 08/15/2025 20:25 User: tristenbo Action: Unit Status Action
+Description: Unit 401 Responding
+Date/Time: 08/15/2025 20:27 User: gingerev Action: Unit Status Action
+Description: Unit 401 On Scene
+Date/Time: 08/15/2025 20:29 User: gingerev Action: Unit Status Action
+Description: Unit 421 Available
+User: jamileth Action: Disposition Changed
+Login Id: SPRD\dianamo Page 10 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 21:09
+Description: Added: Misdemeanor OR
+TRAFFIC VIOLATION Count 1
+Date/Time: 08/15/2025 21:09 User: jamileth Action: Unit Status Action
+Description: Unit 397 Available
+Date/Time: 08/15/2025 21:09 User: jamileth Action: Unit Status Action
+Description: Unit 401 Available
+Date/Time: 08/15/2025 21:09 User: jamileth Action: Unit Status Action
+Description: Unit 307 Available
+Date/Time: 08/15/2025 21:09 User: jamileth Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 08/15/2025 19:53 Unit Number: 401 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:53 Unit Number: 401 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:53 Unit Number: 401 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:53 Unit Number: 397 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:53 Unit Number: 397 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:53 Unit Number: 397 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:53 Unit Number: 367 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Performed by Mobile Unit
+367
+Unit Number: 367 Action: Unit Location
+Login Id: SPRD\dianamo Page 11 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:53
+Description: Secondary Location Cleared
+Performed by Mobile Unit
+367
+Date/Time: 08/15/2025 19:53 Unit Number: 337 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:53 Unit Number: 337 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:53 Unit Number: 337 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:53 Unit Number: 367 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:53 Unit Number: 337 Action: Unit Status Change
+Description: C3
+Date/Time: 08/15/2025 19:53 Unit Number: 401 Action: Unit Status Change
+Description: C3
+Date/Time: 08/15/2025 19:54 Unit Number: 421 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:54 Unit Number: 421 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:54 Unit Number: 421 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 Unit Number: 307 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:54 Unit Number: 307 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:54 Unit Number: 307 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 Unit Number: 421 Action: Unit Status Change
+Description: C3
+Unit Number: 307 Action: Unit Status Change
+Login Id: SPRD\dianamo Page 12 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:54
+Description: C3
+Date/Time: 08/15/2025 19:54 Unit Number: 397 Action: Unit Status Change
+Description: C3
+Date/Time: 08/15/2025 19:54 Unit Number: 334 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:54 Unit Number: 334 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:54 Unit Number: 334 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 Unit Number: 412 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Disorderly Conduct
+Date/Time: 08/15/2025 19:54 Unit Number: 412 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 19:54 Unit Number: 412 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:54 Unit Number: 334 Action: Unit Status Change
+Description: C3
+Date/Time: 08/15/2025 19:54 Unit Number: 412 Action: Unit Status Change
+Description: C3
+Date/Time: 08/15/2025 19:55 Unit Number: 397 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:56 Unit Number: 401 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:56 Unit Number: 367 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:57 Unit Number: 419 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Missing
+Date/Time: 08/15/2025 19:57 Unit Number: 419 Action: Unit Status Change
+Description: On Scene
+Login Id: SPRD\dianamo Page 13 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 19:57 Unit Number: 419 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:57 Unit Number: 307 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:57 Unit Number: 392 Action: Unit Location
+Description: 2601 HABBERTON RD,
+SPRINGDALE
+Date/Time: 08/15/2025 19:57 Unit Number: 392 Action: Unit Status Change
+Description: Dispatched Call Number:
+154, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Missing
+Date/Time: 08/15/2025 19:57 Unit Number: 392 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:57 Unit Number: 392 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 08/15/2025 19:58 Unit Number: 421 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:58 Unit Number: 337 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:58 Unit Number: 412 Action: Unit Location
+Description: 2601 HABBERTON RD,
+SPRINGDALE
+Date/Time: 08/15/2025 19:58 Unit Number: 412 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:58 Unit Number: 334 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 19:59 Unit Number: 419 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 19:59 Unit Number: 419 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 19:59 Unit Number: 392 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 19:59 Unit Number: 392 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 20:00 Unit Number: 334 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 20:00 Unit Number: 334 Action: Unit Status Change
+Description: Available
+Unit Number: 412 Action: Unit Cleared
+Login Id: SPRD\dianamo Page 14 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 20:00
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 20:00 Unit Number: 412 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 20:05 Unit Number: 337 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 20:05 Unit Number: 337 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 20:06 Unit Number: 401 Action:
+Description:
+Date/Time: 08/15/2025 20:06 Unit Number: 401 Action:
+Description:
+Date/Time: 08/15/2025 20:14 Unit Number: 367 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 20:14 Unit Number: 367 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 20:16 Unit Number: 401 Action:
+Description:
+Date/Time: 08/15/2025 20:17 Unit Number: 401 Action:
+Description:
+Unit Number: 397 Action: Unit Status Change
+Login Id: SPRD\dianamo Page 15 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Date/Time: 08/15/2025 20:17
+Description: T15
+Date/Time: 08/15/2025 20:25 Unit Number: 401 Action: Unit Status Change
+Description: T12
+Date/Time: 08/15/2025 20:25 Unit Number: 401 Action: Unit Status Change
+Description: Responding
+Date/Time: 08/15/2025 20:27 Unit Number: 401 Action: Unit Status Change
+Description: On Scene
+Date/Time: 08/15/2025 20:29 Unit Number: 421 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 20:29 Unit Number: 421 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 20:51 Unit Number: 307 Action: Update Unit
+Description: Added Device: Computer -
+Solis, Mark;
+Date/Time: 08/15/2025 21:09 Unit Number: 307 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 21:09 Unit Number: 307 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 21:09 Unit Number: 401 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 21:09 Unit Number: 401 Action: Unit Status Change
+Description: Available
+Date/Time: 08/15/2025 21:09 Unit Number: 397 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 08/15/2025 21:09 Unit Number: 397 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: tristenbo Date Entered: 08/15/2025 19:49
+Narrative added from associated Call #: 153 - CLR ADVISED RAN AWAY FROM VANTAGE POINT POSSIBLY, LOOKS LIKE
+POSSIBLY STAFF FOLLOWING THEM
+Entered By: tristenbo Date Entered: 08/15/2025 19:49
+Narrative added from associated Call #: 153 - THEY ARE HEADING BEHIND WALMART GOING INTO THE VINEYARDS
+Entered By: tristenbo Date Entered: 08/15/2025 19:49
+Narrative added from associated Call #: 153 - 3 TOTAL
+Login Id: SPRD\dianamo Page 16 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Narratives
+Entered By: jamileth Date Entered: 08/15/2025 19:49
+CALLER ADV 3 PTS CLIMBED OVER THE FENCE AND ESCAPED
+Entered By: tristenbo Date Entered: 08/15/2025 19:49
+Narrative added from associated Call #: 153 - W/M H/M
+Entered By: jamileth Date Entered: 08/15/2025 19:49
+THEY CAN NO LONGER SEE THEM
+Entered By: jamileth Date Entered: 08/15/2025 19:50
+667/ PLACED THEM ON HOLD DUE TO MORE 911
+Entered By: tristenbo Date Entered: 08/15/2025 19:50
+Narrative added from associated Call #: 153 - 620/ HAD TO HANGUP DUE TO 911 VOLUME
+Entered By: jamileth Date Entered: 08/15/2025 19:50
+UNK WHAT THEY WERE LAST WEARING
+Entered By: jamileth Date Entered: 08/15/2025 19:50
+W/M, H/M, OTHER MALE UNK RACE
+Entered By: jamileth Date Entered: 08/15/2025 19:51
+CALLER ADV THEY WERE SEEN CLOSE TO AUTO ZONE ON ROBINSON
+Entered By: jamileth Date Entered: 08/15/2025 19:51
+POSS W ON ROBINSON
+Entered By: jamileth Date Entered: 08/15/2025 19:51
+ON FOOT
+Entered By: jamileth Date Entered: 08/15/2025 19:52
+UNK DOT OTHER THAN POSS W ON ROBINSON
+Entered By: jamileth Date Entered: 08/15/2025 19:52
+UNK IF THEY HAD ANY WEAPONS
+Entered By: jamileth Date Entered: 08/15/2025 19:53
+THEY MIGHT BE VIOLENT WITH OFFICERS
+Entered By: jamileth Date Entered: 08/15/2025 19:53
+337/C3
+Entered By: jamileth Date Entered: 08/15/2025 19:56
+397/ OS BFC/ROBINSON
+Login Id: SPRD\dianamo Page 17 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Narratives
+Entered By: jamileth Date Entered: 08/15/2025 19:56
+401/ OS IN THE ARE
+Entered By: jamileth Date Entered: 08/15/2025 19:56
+AREA
+Entered By: jamileth Date Entered: 08/15/2025 19:56
+401/ I GOT THEM BEHIND LEGACY BANK
+Entered By: andreawa Date Entered: 08/15/2025 19:56
+CLR BACK ADV THEY RAN BEHIND WALMART INTO THE APPLE TREES
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+CLR STATES ONE POSS HAS A BLACK BEANIE AND ANOTHER HAS CURLY HAIR
+Entered By: jamileth Date Entered: 08/15/2025 19:57
+397/ RUNNING TOWARDS ARVEST BANK
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+BLACK BEANIE HAS A BANDAGE ON THE FINGER
+Entered By: jamileth Date Entered: 08/15/2025 19:57
+667/T63
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+WHI AND HIS MALES
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+Entered By: jamileth Date Entered: 08/15/2025 19:57
+367/ON DETAINED
+Entered By: jamileth Date Entered: 08/15/2025 19:57
+ONE*
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+Entered By: andreawa Date Entered: 08/15/2025 19:57
+Entered By: jamileth Date Entered: 08/15/2025 19:58
+397/ RED SHIRT, BACK BEHIND THE BANK
+Login Id: SPRD\dianamo Page 18 of 19
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 08/18/2025 12:18
+Agency #: AR0720200
+Narratives
+Entered By: andreawa Date Entered: 08/15/2025 19:58
+RAN OFF APPROX 740 IS WHAT THE CLR ADVISED
+Entered By: jamileth Date Entered: 08/15/2025 19:58
+307/ OS WITH MALE BEHIND ARVEST
+Entered By: jamileth Date Entered: 08/15/2025 19:59
+421 41/ T20?
+Entered By: jamileth Date Entered: 08/15/2025 19:59
+401/ LEGACY BANK?
+Entered By: jamileth Date Entered: 08/15/2025 19:59
+LEGACY BANK*
+Entered By: jamileth Date Entered: 08/15/2025 19:59
+401/ RELEASE \
+Entered By: jamileth Date Entered: 08/15/2025 19:59
+667/ T64
+Entered By: jamileth Date Entered: 08/15/2025 20:00
+401/ ALL OF THEM DETAINED
+Entered By: jamileth Date Entered: 08/15/2025 20:01
+421/ MAKE CONTACT WITH WALMART AT NEIGHBORHOOD MARKET, THEY ALLEGEDLY MADE SHOPLIFTED FROM WALMART
+Entered By: jamileth Date Entered: 08/15/2025 20:04
+421/
+Entered By: jamileth Date Entered: 08/15/2025 20:08
+421/
+Entered By: tristenbo Date Entered: 08/15/2025 20:25
+401
+Login Id: SPRD\dianamo Page 19 of 19

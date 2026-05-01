@@ -1,0 +1,244 @@
+Incident Report
+Print Date/Time: 05/17/2023 13:14 Fayetteville Police Department
+Login ID: wnewman ORI Number: AR0720100
+Incident: 2023-00031754
+Incident Date/Time: 5/11/2023 6:13:19 PM Incident Type: DISTURBANCE
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (817)680-5929 Source: 911
+Report Required: No Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+440 440-MCRAE
+453 453-BARNETT
+460 460-BAILEY
+493 493-ESPINAL
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller MCCLELLAND, SABRINA Female
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count
+12SUPPF 1
+07FARREST 2
+01RPTF 1
+03NORPT 1
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+05/11/2023 : 19:10:17 lusmith Narrative: EM 52595
+05/11/2023 : 19:00:22 lusmith Narrative: BM 52589
+05/11/2023 : 18:44:25 lusmith Narrative: 460 10-15
+05/11/2023 : 18:39:20 lusmith Narrative: 440 97 AT PINEY RIDGE
+05/11/2023 : 18:35:42 lusmith Narrative: PLOTTING IN CIRCLE K GAS STATION AT ZION / CROSSOVER
+05/11/2023 : 18:35:11 lusmith Narrative: 440 ADV THEY WERE FLAGGED DOWN
+05/11/2023 : 18:21:15 tkelley Narrative: CALLER WILL BE WAITING FOR PD OUTSIDE
+05/11/2023 : 18:19:19 tkelley Narrative: C1 SUBJ HAS SCREW SAYING IS GOING TO STAB SOMEONE WITH IT
+05/11/2023 : 18:18:59 tkelley Narrative: SUBJ IS SEPARATED FROM OTHER PTS, STAFF ARE PRESENT IN THE DAY ROOM
+WITH HIM TO MONITOR HIM
+05/11/2023 : 18:17:56 tkelley Narrative: HAS TAKEN ALL OF MEDS FOR MENTAL HEALTH CONDITION, INCLUDING
+EMERGENCY MEDICATIONS AND NONE ARE WORKING
+05/11/2023 : 18:17:24 tkelley Narrative: IS IN THE DAY ROOM RIGHT NOW PUNCHING THE WALL
+05/11/2023 : 18:17:16 tkelley Narrative: IS BREAKING CAMERAS, STABBED A STAFF MEMBER WITH A PENCIL, TRYING
+TO SETOFF THE SPRINKLER SYSTEMS
+05/11/2023 : 18:16:50 tkelley Narrative: CALLER ADV THAT HAS INJURED OTHER PATIENTS, NO C10 NEEDED
+05/11/2023 : 18:16:06 tkelley Narrative: CALLER ADV THAT WHEN OFFICERS GET HERE GO TO THE RESIDENTIAL
+BUILDING, CALLER WILL HAVE TO KEY THEM IN
+05/11/2023 : 18:15:29 tkelley Narrative: AVERAGE BUILD BRO HAIR RED SHIRT AND BLU
+JEANS
+05/11/2023 : 18:14:27 tkelley Narrative: PT HERE IS CAUSING A DISTURBANCE,
+05/11/2023 : 18:14:06 tkelley Narrative: SUBJ ON THE NORTH UNIT
+Page: 2 of 2
+
+Fayetteville Police Department
+Summary
+Print Date/Time: 07/14/2023 10:24 Fayetteville Police Department
+Login ID: ttannehill ORI Number:AR0720100
+Case Number: 2023-00031754
+Case
+Case Number: 2023-00031754 Incident Type: Battery
+Location: 4253 N CROSSOVER RD Occurred From: 05/11/2023 18:13
+FAYETTEVILLE, AR 72703 Occurred Thru: 05/11/2023 18:13
+Reporting Officer ID: 460 - BAILEY Disposition: Arrest - Juvenile
+Disposition Date: 05/11/2023
+Reported Date: 05/11/2023 18:13 Thursday
+Offenses
+No. Group/ORI Crime Code Statute Description Counts
+1 State 13A 5-13-202 BATTERY II 3
+2 State 290 5-38-203(b) Criminal Mischief 1st Degree (Felony) 1
+Subjects
+Type No.Name Address Phone Race Sex DOB/Age
+Suspect 1 4253 N CROSSOVER RD White Male
+FAYETTEVILLE, AR 72703
+Victim 1 MCCLELLAND, SABRINA White Female
+Victim 2 DODSON, KIMBERLY White Female
+Victim 3 MALDONADO, OSCAR Hispanic Male
+Victim 4 PINEY RIDGE YOUTH CENTER 4253 N CROSSOVER RD (479)442-3974
+FAYETTEVILLE, AR 72703
+Arrests
+Arrest No. Name Address Date/Time Type Age
+20230097 J 4253 N CROSSOVER RD 05/11/2023 18:44 On-View Arrest 15
+FAYETTEVILLE, AR 72703
+Property
+Date Code Type Make Model Description Tag No.Item No.
+05/11/2023 Destroyed/Damaged Medical/Medical MEDICAL EQUIPMENT, SEE
+/Vandalized (4) Lab Equip (70) NARRATIVE
+Vehicles
+No. Role Vehicle Type Year Make Model Color License Plate State
+Routing:
+Page: 1 of 8
+Page: 1 of 1
+
+Case, Officer: JMBAILEY, Supervisor: MMILLER, Merged By: areznicek
+2023-00031754
+05/11/2023 18:13 Battery
+4253 N CROSSOVER RD
+05/11/2023 18:13 05/11/2023 18:13
+FAYETTEVILLE, AR
+5-13-202
+01 3 Commit
+BATTERY II
+5-38-203(b)
+02 1 Commit
+Criminal Mischief 1st Degree (Felony)
+Juvenile Suspect
+4253 N CROSSOVER RD FAYETTEVILLE, AR 72703
+White Male Brown Brown
+Adult Victim MCCLELLAND, SABRINA
+23
+White Female Blonde
+Adult Victim DODSON, KIMBERLY
+43
+White Female
+460 BAILEY 05/11/2023 MILLER, MICHELE ANN 05/20/2023
+Case 2023-00031754 Page 1 OF 5
+Page: 2 of 8
+
+2023-00031754
+Adult Victim MALDONADO, OSCAR
+38
+Hispanic Male
+Business Victim PINEY RIDGE TREATMENT CENTER,
+4253 N CROSSOVER RD FAYETTEVILLE, AR 72703
+(844)973-4018
+460 BAILEY 05/11/2023 MILLER, MICHELE ANN 05/20/2023
+Case 2023-00031754 Page 2 OF 5
+Page: 3 of 8
+
+2023-00031754
+Destroyed/Damaged/Vandalized (4) $1200.00
+1 / Each Medical/Medical Lab Equip (70)
+MEDICAL EQUIPMENT, SEE NARRATIVE
+460 BAILEY 05/11/2023 MILLER, MICHELE ANN 05/20/2023
+Case 2023-00031754 Page 3 OF 5
+Page: 4 of 8
+
+2023-00031754
+Officer J.M. Bailey #460
+Juvenile Arrest of for Battery 2nd x3 and Criminal Mischief 1st (F)
+Case #2023-31754
+Case Narrative
+On May 11, 2023, at approximately 6:13 p.m., I was dispatched to 4253 N Crossover
+Road, Piney Ridge, for the report of a disturbance. The caller, Sabrina McClelland
+( w/f), who is a nurse at Piney Ridge called stating that
+w/m), who is a patient at Piney Ridge was on scene causing a disturbance. Sabrina stated
+assaulted several nurses and stabbed another nurse with a pencil.
+I arrived on scene, along with Officer Barnett #453 and Officer McCrae #440 and
+spoke with Sabrina. I asked her to explain what happened. Sabrina stated took his
+medication but for an unknown reason, they were not working. He became increasingly
+angry and began striking Sabrina. He threw Sabrina and kicked her in the head causing her
+to feel like she might lose consciousness. then kicked Sabrina in the leg. Several
+nurses began trying to assist Sabrina. was able to get away and began punching and
+kicking Oscar Maldonado ( h/m), several times causing complaint of pain and
+injury. Once broke away from Oscar he then walked past Nurse Kimberly Dodson
+w/f). Kimberly attempted to restrain but pulled a pencil from his
+pocket and stabbed Kimberly in the right arm with the pencil and struck her in the chest and
+stomach. It should be noted Sabrina walked with a noticeable limp due to being kicked by
+and when I felt the back of her head where she was kicked, I could feel swelling, and
+she was sensitive to me touching the area. Photographs were taken and those will be added
+to this case file.
+Staff was able to get into a central room and locked the doors keeping him
+from wandering the facility and causing more damage. Once locked inside that room,
+began ripping up multiple chairs located in the room and destroying items. He began
+ripping cameras from the wall and smashing them as well as a dry erase board totaling
+approximately $1200.00 in damages.
+After I finished speaking with Sabrina, she walked myself and the other officers to
+where was located. I walked into the room, and was seated in a chair with a
+pencil in his hand. I asked him to put the pencil down, but he did not. I removed the pencil
+from his hand, and he was placed under arrest. I placed in my patrol vehicle and
+began speaking with Kimberly about her injuries while Officer Barnett spoke with Oscar.
+See Officer Barnett’s report for further details on his interactions.
+I asked Kimberly if she could explain what happened. Kimberly stated she was
+460 BAILEY 05/11/2023 MILLER, MICHELE ANN 05/20/2023
+Case 2023-00031754 Page 4 OF 5
+Page: 5 of 8
+
+2023-00031754
+attempting to help restrain when he kicked and punched her multiple times. Kimberly
+stated she then back off and began walking around and as he walked past her he
+stabbed her in her upper right arm with a pencil. Kimberly showed me where she was
+stabbed and there was a wound with what looked like pieces of lead from a pencil inside. I
+photographed Kimberly and those will be added to this case file.
+I was able to contact father, , via phone and
+inform him of what was happening. stated he understood and did not know what else
+to do with and putting him in Piney Ridge was already what a felt like a last resort. I
+explained there would be a court date he would need to attempt to attend but he stated he
+would likely not be able to because he lives in . He was advised of the
+ongoing process and to contact the Police Department if he had further questions.
+I then transported to the Fayetteville Police Department for juvenile
+processing and to complete a preliminary report. I placed in interview room number 1
+while I completed the preliminary report and monitored him via the camera system. I then
+transported to the Juvenile detention center with no other issues.
+For the aforementioned, was charged with Battery 2nd Degree x3 for knowingly
+and without legal justification, caused physical injury to a person knew to be an
+employee of a correctional facility as well as a certified health care provider in performance
+of their duties. As well as Criminal Mischief 1st degree for purposely and without legal
+justification destroyed and caused damage to over $1200.00 worth of equipment inside the
+Piney Ridge Facility.
+Processed by A. Diaz
+460 BAILEY 05/11/2023 MILLER, MICHELE ANN 05/20/2023
+Case 2023-00031754 Page 5 OF 5
+Page: 6 of 8
+
+Case Supp, Officer: JBARNETT, Supervisor: SALLEN, Merged By: JTULGETSKE
+2023-00031754
+05/11/2023 18:13
+4253 N CROSSOVER RD
+FAYETTEVILLE, AR
+453 BARNETT 05/11/2023 ALLEN, SHAWN CHRISTOPHER 05/23/2023
+Case Supp 2023-00031754 Page 1 OF 2
+Page: 7 of 8
+
+2023-00031754
+Officer J Barnett #453
+Case #2023-31754
+Case Supplement
+On 05-11-2023, at approximately 1800 hours, I responded to 4253 N. Crossover Rd. (Piney
+Ridge) for a report of a disturbance. When I arrived, I met with Officer J. Bailey #460. Officer
+Bailey was speaking with a staff member. Officer Bailey stated he had determined there
+were charges to arrest We entered Piney Ridge and made
+contact with was acting calm and went into custody without issue.
+After was placed into the rear of Officer Bailey's patrol vehicle, I spoke with Oscar
+Maldonado (W/M ). Maldonado is a Behavioral Health Technician with Piney
+Ridge. Maldonado stated this situation started the night before. had destroyed some
+drywall and pulled an outlet out of the wall. Maldonado stated on 5-11 was not
+allowed to play and have fun after last night's incident so he became upset. According to
+Maldonado, began punching the wall and destroying property. When Staff attempted
+to restrain he began to fight with them. Maldonado attempted to take to the
+ground and was striking him in the leg.
+ended up destroying three cameras, a dry-erase board, and several chairs. The
+approximate cost of repair for the cameras was $300 each. The dry-erase board cost $150.
+The chairs approximately cost $150. Photos were not able to be collected of the damages to
+the property due to Piney Ridge police. They asked, after the arrest, us to exit the building
+and finalize taking the report so other patients could continue to use the building.
+This incident was recorded on my Axon body-worn camera.
+Processed by E Jones
+453 BARNETT 05/11/2023 ALLEN, SHAWN CHRISTOPHER 05/23/2023
+Case Supp 2023-00031754 Page 2 OF 2
+Page: 8 of 8

@@ -1,0 +1,218 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:38
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00031853 Incident Type: Hangup Call Date/Time: 05/17/2025 19:20
+Location 2466 S 48TH ST, Location OZARK GUIDANCE CENTER Originating Call (210) 819-3020
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 408 Primary Unit: Yes Call Date/Time: 05/17/2025 19:22
+Personnel: 670077 - Huwa, Justin Primary: Yes
+Unit: Primary Unit: No Call Date/Time: 05/17/2025 19:22
+Personnel: Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, RUBEN Location
+Formatted:
+Primary Contact (210) 819-3020 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TEST OR NO ACTION Count: 1 Unit:
+Date/Time: 05/17/2025 19:30
+Evidence
+Call Log
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+User: testing, cad - system Action: Alerts Retrieval
+Login Id: SPRD\fabiolara Page 1 of 5
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:38
+Agency #: AR0720200
+Date/Time: 05/17/2025 19:20
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE
+(WOODRIDGE BEHAVIORAL
+CARE LLC)
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE (OZARK
+GUIDANCE CENTER)
+Date/Time: 05/17/2025 19:20 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 05/17/2025 19:20 User: andreawa Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 05/17/2025 19:20 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 05/17/2025 19:21 User: andreawa Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 05/17/2025 19:21 User: andreawa Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+User: andreawa Action: Call Updated
+Login Id: SPRD\fabiolara Page 2 of 5
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:38
+Agency #: AR0720200
+Date/Time: 05/17/2025 19:21
+Description: Caller Added: First Name -
+RUBEN; Role - Caller;
+Date/Time: 05/17/2025 19:21 User: andreawa Action: Call Updated
+Description: Caller Phone Changed to
+(210) 819-3020
+Date/Time: 05/17/2025 19:21 User: andreawa Action: Narrative Added
+Description: EMPLOYEE FROM OZARK
+HEALTH STATING THEY
+BROKE A PHONE AND IT
+KEEPS CALLING 911
+Date/Time: 05/17/2025 19:21 User: andreawa Action: Narrative Added
+Description: NO EMERGENCY
+Date/Time: 05/17/2025 19:22 User: andreawa Action: Narrative Added
+Description: VERIFIED THE LOCATION
+AND PROVIDED THE NAME
+Date/Time: 05/17/2025 19:22 User: andreawa Action: Narrative Added
+Description: UNABLE TO CHECK HIX AT
+THIS TIME
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Unit Status Action
+Description: Unit 408 Dispatched
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00031853
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Unit Location
+Description: Unit 408 Secondary Location:
+Secondary Location Cleared
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Unit Status Action
+Description: Unit Dispatched
+Date/Time: 05/17/2025 19:22 User: tristenbo Action: Unit Location
+Description: Unit Secondary Location:
+Secondary Location Cleared
+Date/Time: 05/17/2025 19:22 User: andreawa Action: Narrative Added
+Description: CALL PLOTTED CORRECTLY
+WITHIN 24 METERS
+Date/Time: 05/17/2025 19:23 User: tristenbo Action: Unit Status Action
+Description: Unit Responding
+User: tristenbo Action: Unit Status Action
+Login Id: SPRD\fabiolara Page 3 of 5
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:38
+Agency #: AR0720200
+Date/Time: 05/17/2025 19:23
+Description: Unit 408 Responding
+Date/Time: 05/17/2025 19:28 User: tristenbo Action: Unit Status Action
+Description: Unit 408 On Scene
+Date/Time: 05/17/2025 19:30 User: tristenbo Action: Disposition Changed
+Description: Added: TEST OR NO ACTION
+Count 1
+Date/Time: 05/17/2025 19:30 User: tristenbo Action: Unit Status Action
+Description: Unit 408 Available
+Date/Time: 05/17/2025 19:30 User: tristenbo Action: Unit Status Action
+Description: Unit Available
+Date/Time: 05/17/2025 19:30 User: tristenbo Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 05/17/2025 19:22 Unit Number: 408 Action: Unit Status Change
+Description: Dispatched Call Number:
+421, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 05/17/2025 19:22 Unit Number: 408 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 05/17/2025 19:22 Unit Number: Action: Unit Status Change
+Description: Dispatched Call Number:
+421, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Hangup
+Date/Time: 05/17/2025 19:22 Unit Number: Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 05/17/2025 19:23 Unit Number: Action: Unit Status Change
+Description: Responding
+Date/Time: 05/17/2025 19:23 Unit Number: 408 Action: Unit Status Change
+Description: Responding
+Date/Time: 05/17/2025 19:25 Unit Number: Action: Update Unit
+Description: Added Device: Computer -
+;
+Date/Time: 05/17/2025 19:28 Unit Number: 408 Action: Unit Status Change
+Description: On Scene
+Date/Time: 05/17/2025 19:30 Unit Number: 408 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 05/17/2025 19:30 Unit Number: 408 Action: Unit Status Change
+Description: Available
+Login Id: SPRD\fabiolara Page 4 of 5
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 09:38
+Agency #: AR0720200
+Date/Time: 05/17/2025 19:30 Unit Number: Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 05/17/2025 19:30 Unit Number: Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: andreawa Date Entered: 05/17/2025 19:21
+EMPLOYEE FROM OZARK HEALTH STATING THEY BROKE A PHONE AND IT KEEPS CALLING 911
+Entered By: andreawa Date Entered: 05/17/2025 19:21
+NO EMERGENCY
+Entered By: andreawa Date Entered: 05/17/2025 19:22
+VERIFIED THE LOCATION AND PROVIDED THE NAME
+Entered By: andreawa Date Entered: 05/17/2025 19:22
+UNABLE TO CHECK HIX AT THIS TIME
+Entered By: andreawa Date Entered: 05/17/2025 19:22
+CALL PLOTTED CORRECTLY WITHIN 24 METERS
+Login Id: SPRD\fabiolara Page 5 of 5

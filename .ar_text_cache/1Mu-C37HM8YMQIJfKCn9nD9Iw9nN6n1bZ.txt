@@ -1,0 +1,265 @@
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+General Information
+Case Number: 2025-00025132 Reporting 45 - Decipulo, Daniel Reported 04/23/2025 08:31
+Officer: Date/Time:
+Location 2466 S 48TH ST B,
+Location PERIMETER OF THE OZARKS County: Washington
+Formatted: SPRINGDALE, 72762
+Common Name:
+Status: Closed Disposition: Inactive
+Status Date: 05/07/2025
+Disposition Date: 05/07/2025 Occurred From 04/22/2025 21:50
+Occurred Incident Assault - Simple
+Date/Time:
+Occurred To 04/22/2025 22:30 Type:
+Exceptional
+Date/Time:
+Significant Event:
+Clearance:
+Exceptional
+Clearance Date:
+Assigned Personnel
+Assigned Personnel: 46 - Whitaker, Elizabeth Assigned By: 76 - Hammontree, Robert
+Assignment Type: Lead Investigator Assignment 04/28/2025 12:51
+Date/Time:
+Assignment End
+Date/Time: Assignment Notes:
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 State 13A - Aggravated 5-13-202 BATTERY - 2ND DEGREE 04/22/2025
+Assault
+Offense #1
+Offense #1 - General
+Offense Date: 04/22/2025 Location/Scene 1: Drug Store/Dr Office/Hosp Bias Motivation: No Bias
+Attempt/Commit: Completed Counts: 1 Statute/Violation: 5-13-202
+Statute Crime 13A - Aggravated Assault Statute BATTERY - 2ND DEGREE Statute Type: Felony
+Code: Description:
+Offense #1 - Criminal Drug Activity
+Criminal Activity Drug Related: Drug Type:
+Types:
+Offense #1 - Burglary/Larceny/Counterfeit Information
+Method of Entry: Point of Entry: Number Of
+Premises Entered:
+Larceny Type: Counterfeit Type:
+Counterfeit
+Counterfeit Cash Cargo Theft:
+Status:
+Amount:
+Offense #1 - Case Offense Circumstance
+Domestic Special Offender No
+Circumstance: Circumstances: Suspected of
+Using Alcohol:
+Offender No Offender No
+Suspected of Suspected of Victim Suspected
+Using Drugs: Using Computer: of Using Alcohol:
+Victim Suspected
+of Using Drugs:
+Login Id: SPRD\baileyjo Page 1 of 6
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+Offense #1 - Supplemental Information
+Arson Code: Gang Related: No
+Offense #1 - Weapons
+Type: Unarmed Feature: Caliber:
+Length: Gauge: Finish:
+Action: Gun Type: Make:
+Model: Serial Number: Knife Type:
+Offense #1 - Assault/Homicide
+Primary Primary Secondary
+Assault/Homicide Assault/Homicide Assault/Homicide
+Circumstance: Circumstance Circumstance:
+Comments:
+Secondary Justifiable
+Assault/Homicide Justifiable Homicide Code:
+Circumstance Homicide
+Comments: Circumstance:
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Suspect White Female
+2 Victim Velez-Ortiz, Luis Orlando White Male
+Subject #1
+Subject #1 Suspect - General
+Subject Type: Suspect Witness Sub- Suspect Primary: No
+Type:
+Resident Type: Global Subject Juvenile
+Resident Status: Type:
+Name Formatted:
+Location Primary Contact:
+Date Of Birth:
+Formatted:
+License Number:
+License State:
+Social Security
+Age:
+Height: Number:
+Race:
+Sex: Female License Expiration
+Hair Color: Date: Eye Color:
+Weight:
+Ethnic Origin:
+Subject #1 Suspect - Injury Information
+Injury Types: Condition: Medical
+Treatment:
+Hospital: Transported By:
+Extent of Injury:
+Degree of Sexual
+Assault:
+Login Id: SPRD\baileyjo Page 2 of 6
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+Subject #1 Suspect - Related Offenses
+Crime Code: 13A - Aggravated Assault Statute: 5-13-202 Description: BATTERY - 2ND DEGREE
+Counts: Attempt/Commit: Completed
+Subject #1 Suspect - Related Weapons
+Subject #2
+Subject #2 Victim - General
+Subject Type: Victim Witness Sub- Individual Primary: No
+Type:
+Resident Type: Global Subject Adult
+Resident Status: Non-Resident Type:
+Name Formatted: Velez-Ortiz, Luis Orlando
+Location Primary Contact:
+Date Of Birth:
+Formatted:
+License Number:
+License State:
+Social Security
+Age:
+Height: Number:
+Race:
+Sex: Male License Expiration
+Hair Color: Date: Eye Color:
+Weight:
+Ethnic Origin:
+Subject #2 Victim - Injury Information
+Injury Types: Apparent Minor Injury Condition: Medical
+Treatment:
+Hospital: Transported By:
+Extent of Injury:
+Degree of Sexual
+Assault:
+Subject # 2 Victim - Victim Information
+Action Taken: Complainant:
+Victim Circumstance: Other Circumstances Justifiable Homicide
+Circumstance:
+Subject # 2 Victim - Victim/Offender Relationship
+Suspect: Relationship Relationship Unknown
+Type:
+Subject #2 Victim - Related Offenses
+Crime Code: 13A - Aggravated Assault Statute: 5-13-202 Description: BATTERY - 2ND DEGREE
+Counts: Attempt/Commit: Completed
+Subject #2 Victim - Related Weapons
+Subject #2 Victim - LEOKA
+LEOKA Incident Officer Activity Officer
+Type: Type: Assignment Type:
+Officer Other ORI: Assault Weapon: Status:
+Officer Wearing Offender Used
+Body Armor: Officer Weapon:
+Properties
+Login Id: SPRD\baileyjo Page 3 of 6
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Contributing Officers
+Officer: 45 - Decipulo, Daniel Supervisor: 84 - Hignite, Darrel Report 04/28/2025 11:16
+Date/Time:
+Report Type: Primary Approving User: fabiolama
+Status History
+Case Status: In Field Status Date: 04/23/2025 Changed By: System
+Date/Time 04/23/2025 11:00
+Changed:
+Case Status: Open Status Date: 04/23/2025 Changed By: fabiolama
+Date/Time 04/28/2025 12:46
+Changed:
+Case Status: Closed Status Date: 05/07/2025 Changed By: elizabethw
+Date/Time 05/07/2025 12:43
+Changed:
+Disposition History
+Disposition: Active Disposition Date: 04/28/2025 Disposition fabiolama
+Changed By:
+Date/Time 04/28/2025 12:46
+Changed:
+Disposition: Inactive Disposition Date: 05/07/2025 Disposition elizabethw
+Changed By:
+Date/Time 05/07/2025 12:43
+Changed:
+Associated Arrest Records
+Login Id: SPRD\baileyjo Page 4 of 6
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+Report Narratives
+Name: Narrative Author: 45 - Decipulo, Daniel Supervisor: 84 - Hignite, Darrel Date Created: 04/23/2025 09:17
+Description:
+*** BWC Active ***
+On 04/23/2025 at approximately 0839 hours, I (Officer Decipulo #313) responded to 201 Spring St for a
+battery report that occurred at 2466 S 48th St (Perimeter of the Ozarks) around 2205 hours on 04/22/2025.
+Upon arrival, I met with Luis Velez-Ortiz , who wanted to report that a patient punched
+him. According to Velez-Ortiz, a patient was being disruptive in another resident’s room, so he went to
+separate her. This patient was identified as , hereby referred to as
+.
+When separating from the other resident to mvoe her back into "Unit Blue", Velez-Ortiz said punched
+him on the left side of his face three times and once on the right side of his stomach. Velez-Ortiz said his face
+still hurt and was a 3 on a scale from 1-10, while his stomach was at a 5. While speaking with Velez-Ortiz, I did
+not observe any physical injuries on his face.
+It should be noted Velez-Ortiz was nonchalant about the incident and this sort of thing happens all the time.
+Velez-Ortiz alluded to knowing he would be attacked while doing this course of work. Velez-Ortiz also added
+that he was merely filing a report because his work requested he do so. Moreover, Velez-Ortiz also said his
+work wanted him to pursue charges for the incident.
+Prior to concluding contact, I provided Velez-Ortiz with the incident number as well as my name and badge
+number. I informed him to contact the police department if he had any further information he wanted to add.
+End of narrative. DD313.
+Name: 393 Attempted Contact Author: 46 - Whitaker, Elizabeth Supervisor: Date Created: 04/28/2025 15:11
+W/Victim
+Description:
+On April 28, 2025, at approximately 3:09 PM, I (Detective Whitaker #393) attempted to contact Luis Velez-Ortiz via the phone number provided in
+reference to case 25-25132. I left a message requesting contact.
+**EW393**
+Login Id: SPRD\baileyjo Page 5 of 6
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 05/23/2025 10:57
+Agency #: AR0720200
+Name: 393 2nd Attempted Contact Author: 46 - Whitaker, Elizabeth Supervisor: Date Created: 05/01/2025 09:48
+Description:
+On May 1, 2025 at approximately 9:45 AM, I (Detective Whitaker #393) attempted to contact Luis Velez-Ortiz (DOB: 1/26/95) in reference to case 25-
+25132. I left a message requesting contact.
+**EW393**
+Name: 393 Contact W/Perimeter Author: 46 - Whitaker, Elizabeth Supervisor: Date Created: 05/05/2025 13:59
+Description:
+On May 5, 2025, at approximately 1:55 PM, I (Detective Whitaker #393) contacted Perimeter Behavior of the Ozarks (479-957-9857) in reference to
+case 25-25132 and spoke with Roman, who advised that Luis worked night shift and might be in tonight. I asked him to leave a message for Luis asking
+him to contact me, and Roman advised he would.
+**EW393**
+Name: 393 Follow Up Author: 46 - Whitaker, Elizabeth Supervisor: Date Created: 05/07/2025 12:42
+Description:
+On May 7, 2025, at approximately 9:00 AM, I (Detective Whitaker #393) conducted a follow-up at in reference to
+case 25-25132. I attempted contact at the door, but no one answered. I left an SPD flyer requesting that Luis contact me.
+**EW393**
+Name: 393 Case Status Author: 46 - Whitaker, Elizabeth Supervisor: 139 - Niccum, Chad Date Created: 05/07/2025 12:43
+Description:
+On May 7, 2025, at approximately 12:45 PM, I (Detective Whitaker #393) reviewed case 25-25132. At this time, I have not been able to make
+contact with the victim, therefore, I am forwarding this case to be reviewed to be closed.
+**EW393**
+Name: 393 Contact W/Victim Author: 46 - Whitaker, Elizabeth Supervisor: Date Created: 05/07/2025 15:25
+Description:
+On May 7, 2025, at approximately 3:24 PM, I (Detective Whitaker #393) received a phone call from Luis who advised he didn't want to
+pursue charges at this time. Therefore, I am forwarding this case as being closed.
+**EW393**
+Login Id: SPRD\baileyjo Page 6 of 6

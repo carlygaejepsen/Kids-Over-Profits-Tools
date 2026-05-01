@@ -1,0 +1,189 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+General Information
+Incident #: 2024-00022811 Incident Type: Disturbance Call Date/Time: 04/15/2024 13:45
+Location: 2466 S 48TH ST, SPRINGDALE, 72762 Status: In Progress Priority: 1
+Primary Caller: Unknown, - Caller Caller Contact #: (817) 680-5929 Originating Call #: (817) 680-5929
+Case Number: Nature of Call: Source: 911
+Units/Personnel
+Unit # Unit Type Personnel Time on Call
+332 Patrol 206 - Whorton, Jake 04/15/2024 13:46
+340 Patrol 112 - Lawrence, John 04/15/2024 13:46
+107 Sergeant 64 - Frisby, Richard 04/15/2024 13:47
+Vehicles
+Role Type Year Make Model Color License State VIN
+Subjects
+Role Name Address Contact Information Race Sex DOB
+Caller Unknown (817) 680-5929
+Disposition
+Disposition Count Unit Date/Time
+Complaint Only 1 04/15/2024 13:56
+Evidence
+Counter Evidence Type Codes Description Current Location Received Date Make/Model
+Report Narratives
+Narratives
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+SCREAMING
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+CALLER SAID A KID JUMPED A FENCE
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+CALLER IS NOT TALKING TO ME ANYMORE
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+SCREAMING
+Login Id: sprd\baileyjo Page 1 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+Narratives
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+"HE IS AROUND THE CORNER|
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+W/M
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+W/F
+Entered By: jessicaar Date Entered: 04/15/2024 13:46
+**W/F** NOT MALE
+Entered By: jessicaar Date Entered: 04/15/2024 13:47
+WEARING WHITE SHIRT
+Entered By: jessicaar Date Entered: 04/15/2024 13:47
+NOT INTOX OR DRUGS
+Entered By: jessicaar Date Entered: 04/15/2024 13:47
+NO WEAPONS
+Entered By: jessicaar Date Entered: 04/15/2024 13:47
+"WE FOUND HER"
+Entered By: jessicaar Date Entered: 04/15/2024 13:47
+"WE GOT HER"
+Entered By: stacyel Date Entered: 04/15/2024 13:48
+107/ I THINK I'VE GOT A PERSON SCREAMING HERE, NE ON THE S/W END HERRE
+Login Id: sprd\baileyjo Page 2 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+Narratives
+Entered By: stacyel Date Entered: 04/15/2024 13:49
+107/ W/F IN A PLE SHIRT, HEADED TOWARDS I49, STAFF IS NOT BEING VERY HELPFUL
+Entered By: stacyel Date Entered: 04/15/2024 13:53
+340/ CHECKING N/B ON I49
+Entered By: stacyel Date Entered: 04/15/2024 13:53
+107...340/ DON'T KNOW MUCH OTHER THAN A HEAVY SET FEMALE, JUST WENT THRU A HOLD IN THE FENCE
+Entered By: stacyel Date Entered: 04/15/2024 13:55
+340/ ALL JUVS HAVE BEEN RECOVERED, BE T98 COMPLAINT ONLY
+Entered By: stacyel Date Entered: 04/15/2024 13:56
+107/ JUST LOG THAT THE MISSING JUV HAD ALREADY WALKED HERSELF BACK INSIDE THE BUILDING, THE STAFF AT OGC WAS NOT
+AWARE
+Entered By: stacyel Date Entered: 04/15/2024 13:56
+3400
+Call Log
+Date/Time User Action Description
+04/15/2024 13:45 jessicaar Call Created New call created. Call Type: >New Call<, Location:
+<UNKNOWN>
+04/15/2024 13:45 jessicaar Location Call Location Changed from <UNKNOWN> to 2466 S 43RD
+ST, SPRINGDALE
+04/15/2024 13:45 jessicaar Address Verified Call Location Changed from Unverified To Verified
+04/15/2024 13:45 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 43RD ST
+04/15/2024 13:45 jessicaar Location Cross streets updated, KENDRA AVE / CHAPMAN AVE
+04/15/2024 13:45 jessicaar Location Call Location Changed from 2466 S 43RD ST, SPRINGDALE
+to 2466 S 48TH ST, SPRINGDALE
+04/15/2024 13:45 jessicaar Location Cross streets updated, SPRINGHOUSE DR / PRIVATE DR,
+ATCHISON AVE
+04/15/2024 13:45 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 48TH ST
+04/15/2024 13:45 jessicaar Agency Context Added Police Call Type Added. Call Type: Disturbance, Status: In
+Progress, Priority: 1
+Login Id: sprd\baileyjo Page 3 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+Call Log
+Date/Time User Action Description
+04/15/2024 13:46 jessicaar Narrative Added SCREAMING
+04/15/2024 13:46 jessicaar Narrative Added CALLER SAID A KID JUMPED A FENCE
+04/15/2024 13:46 jessicaar Narrative Added CALLER IS NOT TALKING TO ME ANYMORE
+04/15/2024 13:46 jessicaar Narrative Added SCREAMING
+04/15/2024 13:46 jessicaar Narrative Added "HE IS AROUND THE CORNER|
+04/15/2024 13:46 stacyel Call Ready for Dispatch Call marked ready for dispatch
+04/15/2024 13:46 stacyel Incident Created Added Incident Number, ORI: AR0720200, Number: 2024-
+00022811
+04/15/2024 13:46 stacyel Unit Location Unit 340 Secondary Location: Secondary Location Cleared
+04/15/2024 13:46 stacyel Unit Status Action Unit 340 Dispatched
+04/15/2024 13:46 stacyel Unit Location Unit 332 Secondary Location: Secondary Location Cleared
+04/15/2024 13:46 stacyel Unit Status Action Unit 332 Dispatched
+04/15/2024 13:46 jessicaar Narrative Added W/M
+04/15/2024 13:46 jessicaar Narrative Added W/F
+04/15/2024 13:46 jessicaar Narrative Added **W/F** NOT MALE
+04/15/2024 13:47 briannapr Call Updated Call Source Changed From Admin Phone Line To 911
+04/15/2024 13:47 stacyel Unit Status Action Unit 340 Responding
+04/15/2024 13:47 stacyel Unit Status Action Unit 332 Responding
+04/15/2024 13:47 jessicaar Narrative Added WEARING WHITE SHIRT
+04/15/2024 13:47 jessicaar Narrative Added NOT INTOX OR DRUGS
+04/15/2024 13:47 stacyel Unit Status Action Unit 107 Dispatched
+04/15/2024 13:47 stacyel Unit Location Unit 107 Secondary Location: Secondary Location Cleared
+04/15/2024 13:47 jessicaar Narrative Added NO WEAPONS
+04/15/2024 13:47 stacyel Unit Status Action Unit 107 On Scene
+04/15/2024 13:47 jessicaar Narrative Added "WE FOUND HER"
+04/15/2024 13:47 jessicaar Narrative Added "WE GOT HER"
+04/15/2024 13:48 jessicaar Call Updated Caller Phone Changed to (817) 680-5929
+04/15/2024 13:48 jessicaar Call Updated Caller Added: Role - Caller;
+04/15/2024 13:48 stacyel Narrative Added 107/ I THINK I'VE GOT A PERSON SCREAMING HERE, NE
+ON THE S/W END HERRE
+04/15/2024 13:49 stacyel Narrative Added 107/ W/F IN A PLE SHIRT, HEADED TOWARDS I49, STAFF IS
+NOT BEING VERY HELPFUL
+04/15/2024 13:52 stacyel Unit Status Action Unit 340 On Scene
+04/15/2024 13:53 stacyel Narrative Added 340/ CHECKING N/B ON I49
+04/15/2024 13:53 stacyel Narrative Added 107...340/ DON'T KNOW MUCH OTHER THAN A HEAVY SET
+FEMALE, JUST WENT THRU A HOLD IN THE FENCE
+Login Id: sprd\baileyjo Page 4 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+Call Log
+Date/Time User Action Description
+04/15/2024 13:55 stacyel Narrative Added 340/ ALL JUVS HAVE BEEN RECOVERED, BE T98
+COMPLAINT ONLY
+04/15/2024 13:56 stacyel Narrative Added 107/ JUST LOG THAT THE MISSING JUV HAD ALREADY
+WALKED HERSELF BACK INSIDE THE BUILDING, THE STAFF
+AT OGC WAS NOT AWARE
+04/15/2024 13:56 stacyel Disposition Changed Added: Complaint Only Count 1
+04/15/2024 13:56 stacyel Narrative Added 3400
+04/15/2024 13:56 stacyel Unit Status Action Unit 107 Available
+04/15/2024 13:56 stacyel Unit Status Action Unit 340 Available
+04/15/2024 13:56 stacyel Unit Status Action Unit 332 Available
+04/15/2024 13:56 stacyel Call Cleared Close Call
+Unit Log
+Date/Time Unit Number Action Description
+04/15/2024 13:46 340 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+04/15/2024 13:46 340 Unit Status Change Dispatched Call Number: 211, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: Disturbance
+04/15/2024 13:46 340 Unit Location Secondary Location Cleared
+04/15/2024 13:46 332 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+04/15/2024 13:46 332 Unit Status Change Dispatched Call Number: 211, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: Disturbance
+04/15/2024 13:46 332 Unit Location Secondary Location Cleared
+04/15/2024 13:47 340 Unit Status Change Responding
+04/15/2024 13:47 332 Unit Status Change Responding
+04/15/2024 13:47 107 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+04/15/2024 13:47 107 Unit Status Change Dispatched Call Number: 211, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: Disturbance
+04/15/2024 13:47 107 Unit Location Secondary Location Cleared
+04/15/2024 13:47 107 Unit Status Change On Scene
+04/15/2024 13:52 340 Unit Status Change On Scene
+04/15/2024 13:56 340 Unit Cleared Unit Cleared From Call
+04/15/2024 13:56 340 Unit Status Change Available
+04/15/2024 13:56 332 Unit Cleared Unit Cleared From Call
+04/15/2024 13:56 332 Unit Status Change Available
+04/15/2024 13:56 107 Unit Cleared Unit Cleared From Call
+04/15/2024 13:56 107 Unit Status Change Available
+Contributing Officers
+Login Id: sprd\baileyjo Page 5 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 05/24/2024 08:31
+Agency #: AR0720200
+Officer Supervisor Report Date/Time Report Type Approving User
+Login Id: sprd\baileyjo Page 6 of 6

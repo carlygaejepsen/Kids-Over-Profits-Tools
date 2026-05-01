@@ -1,0 +1,292 @@
+CFS - Comm
+
+CFS #
+Call Taker
+Location
+Location Detdi
+
+and Log Printed on September 20, 2023
+
+CFS2338092
+SYDNEY MORGAN
+
+1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+ils
+
+Primary Incident Code ASSAULT : Assault/Battery
+
+Mod
+Priority
+Use Caution
+
+Primary Disposition
+
+Beat
+Zone
+Call Time
+Completed Ti
+
+me
+
+Emergency Fire/Medical
+
+1
+
+No
+
+Handled By Officer / Deputy
+
+Forrest City Police Department
+09/08/23 09:50:34
+09/08/23 10:58:21
+
+Reporters
+
+SHERITA (Initial Reporter)
+
+Sex
+DOB
+Address
+
+Report Time
+
+How Reported
+
+From Phone
+
+1521 ALBERT ST
+FORREST CITY, AR 72335
+09/08/23 09:50:34
+
+Contact Phone (870) 633-3200
+
+Comments
+
+_ Other Names
+
+Vehicles
+
+| Responders|
+a5 ‘se
+
+545 (Primary)
+
+Response Tjmes
+
+Assigned 0
+Enroute 0
+Arrived 0
+Leaving
+Arrived At
+
+Completed 0p/08/23 10:58:21
+
+|
+
+_IR/ External Agency Numbers
+
+FCPD2023098.
+
+~ 542 - HAWKINS,
+NATHANIEL
+545 - ALBERT, TANESHA
+
+~~ FCPD (Primary)
+
+FCPD (Primary)
+
+108/23 09:50:34
+108/23 09:53:25 *
+108/23 09:53:25
+
+35
+
+Officer Addenda
+
+Command Lpg Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+-—-— OT SSS
+
+Page 1 of 2
+
+
+09/08/23 09:50:34 | MORGAN, SYDNEY | 542 | New CFS
+
+09/08/23 09:52:33 | MORGAN, SYDNEY | NEEDS INCIDENT REPORT
+
+09/08/23 09:53:25 | HENDERSON, CALANDRA | 545 | On Scene
+
+09/08/23 09:54:28 | HENDERSON, CALANDRA | 542 | On Scene
+
+09/08/23 09:54:55 | MORGAN, SYDNEY | PATIENT ASSAULTED STAFF MEMBER
+09/08/23 10:09:16 | HENDERSON, CALANDRA | EVENT#2309080009
+
+09/08/23 10:10:37 | HENDERSON, CALANDRA | 545 | Clear Alarms
+
+09/08/23 10:19:40 | HENDERSON, CALANDRA | 542 | Clear Alarms
+
+09/08/23 10:58:21 | HENDERSON, CALANDRA | 542, 545 | Complete
+
+| CLQ
+
+Requested At
+Sent To
+Status
+Received At
+Location ,
+Accuracy
+
+DSSS
+
+Page 2 of 2
+
+
+
+FORREST CITY
+POLICE DEPARTMENT
+
+225 N. ROSSER ST.
+FORREST CITY, AR. 72335
+
+Crime / Incident (Primaty, Secondary, Tertiary)
+5-13-207 ASSAULT|3RD
+
+Location of Incident 75)
+
+Cross Street WOODRIDGE
+
+Dispo "Vv" = Vict "RP" = Reporting Party
+
+Last, First, Middie|(Firm if Business)
+V | JONES, LUKE
+
+Address
+
+City, State, Zip Code
+
+Last, First, Middle |(Firm if Business)
+
+City, State, Zip Code
+FORREST CITY AR 72335
+
+sa Last, First, Middle|(Firm if Business)
+
+City, State, Zip Code
+FORREST CITY AR 72335
+
+4 Last, First, Middlel(Firm if Business)
+
+Synopsis
+
+<H-r-wr<cron
+
+Officer ID OFFICER NATHAN HAWKINS
+
+Printed By/On: 412 / 09/21/2043 08:12:38
+CrimeStar® Law Enforcement Records Management System
+Licensed to; FORREST CITY AR POLICE DEPARTMENT
+
+21 ALBERT ST, FORREST CITY, AR
+
+Address DOB DL Number State
+™
+Address DO DL Number Sta ork Phone
+1521 ALBERT ST re TX | (870)
+0
+
+City, State, Zip Code
+
+Pse 1 |ncident
+
+Incident #
+
+2309080009
+
+O
+O
+O
+
+County
+em |
+(870)
+
+Work Phone
+
+Cell Phone
+0
+
+Home Phone
+
+(870)
+Work Phone
+em |
+Cell Phone
+Ene
+
+Home Phone
+(870)
+
+"W" = Witness "§" = Suspect "O" = Other
+
+Sex Age HT Hair Eyes
+M 17
+
+5
+
+wo
+
+ean
+~
+
+—_ “ ey
+
+Continuation PropertyList
+attached L_] | attached  [_]| ProvertyDamages $0.00
+Press Domestic Violence
+at ee
+
+Gang Related N Victim Senior Citizen |
+cee
+Solvability County i
+Ss CT
+Report Complete/Ready for Review CAD/CFS Event # 2309080009
+
+Assigned To Date
+
+Reviewed By Approved Date
+550 Sgt. Adrian Todd 09/19/2023
+
+ZZ2Z2ZZ222222222
+
+TATA
+
+
+FORREST CITY Page 2 Incident conta
+
+POLICE DEPARTMENT Narrative necent# 2309080009
+Crime / Incident (Prima Attempt | Type Seq
+519207 ASSAULT 980 al ES ies
+
+On 9/08/23 I] Ptl Hawkins was dispatched to 1521 Albert Street, Perimeter
+Behavior Center, in reference to an assault. Upon my arrival I came in contact
+with the victim Luke Jones ae . Mr Jones advised that he was assaulted by
+
+two juveniles who attents the Behavior Center. Luke Jones stated that
+and [EE 2 tacked him during
+transitioning to the restroom. Mr Jones advised that he suffered injuries to his
+
+right shoulder, back area, and hands. It is unknown why the juveniles attacked
+Mr Jones.
+
+>
+
+Reviewed By aah Date
+Officer ID OFFICER|INATHAN HAWKINS 550 Sgt. Adrian Todd YES 09/19/2023
+
+ST
+
+Printed By/On: 412 / 09/21/2023
+
+; D8:12:38
+CrimeStar® Law Enforcement Records Management System
+Licensed to: FORREST CITY AR|POLICE DEPARTMENT

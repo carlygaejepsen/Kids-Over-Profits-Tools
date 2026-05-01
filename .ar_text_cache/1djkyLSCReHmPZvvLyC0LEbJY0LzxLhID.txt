@@ -1,0 +1,1106 @@
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+General Information
+Case Number: 2025-00021345 Reporting 203 - Wagner, Lane Reported 04/08/2025 17:42
+Officer: Date/Time:
+Location 2466 S 48TH ST B,
+Location PERIMETER OF THE OZARKS County: Washington
+Formatted: SPRINGDALE, 72762
+Common Name:
+Status: Closed Disposition: Cleared by Arrest
+Status Date: 04/13/2025
+Disposition Date: 04/13/2025 Occurred From 04/08/2025 17:42
+Occurred Incident Juvenile Delinquency
+Date/Time:
+Occurred To 04/08/2025 17:42 Type:
+Significant Event:
+Date/Time:
+Scene Processed
+Campus Code: By: Exceptional
+Clearance Date:
+Exceptional
+Clearance:
+Assigned Personnel
+Solvability Factors
+Solvability Factor: Total Solvability
+Factor:
+Modus Operandi
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 State 90C - Disorderly 5-71-203 INCITING RIOT 04/08/2025
+Conduct
+2 State 13A - Aggravated 5-13-202 BATTERY - 2ND DEGREE 04/08/2025
+Assault
+3 State 13C - Intimidation 5-13-301(b) TERRORISTIC THREATENING - 2ND 04/08/2025
+DEGREE
+4 State 13C - Intimidation 5-13-207 ASSAULT - 3RD DEGREE / CREATES 04/08/2025
+APPREHENSION OF IMMINENT INJURY
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Suspect 2466 S 48TH ST B, Black Female
+SPRINGDALE, AR 72762
+2 Victim Bohannon, Keith White Male
+3 Victim McLellan, Sabrina White Female
+4 Suspect 2466 S 48TH ST B, White Female
+SPRINGDALE, AR 72762
+5 Other White Female
+6 Suspect 2466 S 48TH ST B, White Female
+SPRINGDALE, AR 72762
+7 Victim STONE, DEZMON White Male
+ARIAHCHARLES
+Login Id: SPRD\baileyjo Page 1 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+8 Suspect 2466 S 48TH ST B, White Female
+SPRINGDALE, AR 72762
+9 Victim Young, Derek Black Male
+10 Suspect White Female
+11 Victim Roper, Nicholas White Male
+Properties
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Contributing Officers
+Officer: 203 - Wagner, Lane Supervisor: 144 - Patton, Ross Report 04/11/2025 23:28
+Date/Time:
+Report Type: Primary Approving User: TaylorJo
+Officer: 265 - Springston, Alyshia Supervisor: 144 - Patton, Ross Report 04/11/2025 23:29
+Date/Time:
+Report Type: Supplement Approving User: TaylorJo
+Officer: 4853 - Jackson, Ryler Supervisor: 144 - Patton, Ross Report 04/11/2025 23:30
+Date/Time:
+Report Type: Supplement Approving User: TaylorJo
+Officer: 260 - French, Leland Supervisor: 144 - Patton, Ross Report 04/11/2025 23:31
+Date/Time:
+Report Type: Supplement Approving User: TaylorJo
+Officer: 276 - Solis, Mark Supervisor: 144 - Patton, Ross Report 04/11/2025 23:31
+Date/Time:
+Report Type: Supplement Approving User: TaylorJo
+Officer: 186 - Tabor, Amanda Supervisor: 47 - Drake, Joshua Report 04/13/2025 11:29
+Date/Time:
+Report Type: Supplement Approving User: TaylorJo
+Evidence
+Status History
+Case Status: In Field Status Date: 04/09/2025 Changed By: System
+Date/Time 04/09/2025 02:38
+Changed:
+Case Status: Closed Status Date: 04/09/2025 Changed By: TaylorJo
+Date/Time 04/14/2025 09:42
+Changed:
+Case Status: Closed Status Date: 04/08/2025 Changed By: TaylorJo
+Date/Time 04/14/2025 09:42
+Changed:
+Case Status: Closed Status Date: 04/09/2025 Changed By: TaylorJo
+Date/Time 04/14/2025 09:42
+Changed:
+Case Status: Closed Status Date: 04/13/2025 Changed By: TaylorJo
+Date/Time 04/14/2025 09:43
+Changed:
+Login Id: SPRD\baileyjo Page 2 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Disposition History
+Disposition: Cleared by Arrest Disposition Date: 04/11/2025 Disposition TaylorJo
+Changed By:
+Date/Time 04/14/2025 09:42
+Changed:
+Disposition: Cleared by Arrest Disposition Date: 04/09/2025 Disposition TaylorJo
+Changed By:
+Date/Time 04/14/2025 09:42
+Changed:
+Disposition: Cleared by Arrest Disposition Date: 04/11/2025 Disposition TaylorJo
+Changed By:
+Date/Time 04/14/2025 09:42
+Changed:
+Disposition: Cleared by Arrest Disposition Date: 04/13/2025 Disposition TaylorJo
+Changed By:
+Date/Time 04/14/2025 09:43
+Changed:
+Supplemental Information
+Action Taken: Reasons For No Purge Type:
+Arrest:
+Purge Date: Non-Fatal
+Purge Review Shooting:
+Date:
+Associated Arrest Records
+Arrest Information
+General Information
+Arrest Number: 3194 Case Number: 2025-00021345 Arrest Type: On-View Arrest
+Location 2466 S 48TH ST, Location Arrest Status: Approved by Supervisor
+Formatted: SPRINGDALE, 72762 Common Name:
+Arrest Date/Time: 04/08/2025 18:15
+Status Date/Time: 04/08/2025 00:00 Age at Arrest: 12
+Basis for Caution:
+Arrest Result Of: Resisted Arrest:
+Arresting Officer
+Multiple Count Arrest Arresting Officer: 260 - French, Leland Assignment:
+Clearance
+Arrestee Subject Juvenile Arrestee Name
+Indicator:
+Type: Formatted:
+School Response No
+Arrestee Primary Arrestee Date Of
+Officer:
+Contact: Birth:
+Arrestee Location 2466 S 48TH ST B,
+Arrestee License Arrestee License
+Formatted: SPRINGDALE, AR 72762
+Number: State:
+Arrestee Local Id
+Arrestee Age: 12 Arrestee Height:
+Number:
+Arrestee Race: White Arrestee Sex: Female
+Arrestee License
+Expiration Date: Arrestee Eye Arrestee Hair
+Color: Color:
+Arrestee Weight:
+Arrestee Ethnic Non Hispanic
+Origin:
+Login Id: SPRD\baileyjo Page 3 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Additional Arrest Information
+Statement Taken Officer Who Read Miranda
+By: Miranda: Date/Time:
+Fingerprinted By: Fingerprint Date: Statement Type:
+Resident Type: City Resident Status: Resident Alcohol Influence:
+Breath Analyzer Drug Influence: Clears Case:
+Result:
+School Name: Campus Code:
+ID Procedure:
+Juvenile Referred to Other
+Disposition:
+Arresting Officers
+Primary: Yes Arresting Officer: 260 - French, Leland Assignment:
+School Response No
+Officer:
+Charges
+Offense/Charge 04/08/2025 18:15 Statute Group: State Statute/Violation: 5-13-202
+Date/Time:
+Statute BATTERY - 2ND DEGREE Counts: 1
+Statute Crime 13A - Aggravated Assault Description:
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date: 04/08/2025
+Larceny Code:
+Disposition: Handled Within Depart
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Weapons
+Weapon: Unarmed Feature:
+Injury Information
+Injury Types: None Hospital: Extent Of Injury:
+Transported By: Medical Condition:
+Treatment:
+Login Id: SPRD\baileyjo Page 4 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Narratives
+Entered By: 260 - French, Leland Date Entered: 04/09/2025 01:40
+***SPD CASE 2025-21345
+***Body Camera Activated
+On April 8, 2025 at approximately 1815 hours, I (PFC French 367) along with other officers responded code
+three to a physical fight at 2466 South 48th Street. The caller is a staff member for Perimeter of the Ozarks
+and stated two to three girls are attacking the staff members.
+Upon arrival, I made contact with one of the staff members who was attacked. I identified the victim as
+Dezmon Stone Adult . Dezmon stated several girls in the facility started fighting with
+each other and when he intervenes, he was punched in the face twice and bitten on his arm by a
+Dezmon stated he attempted to restrain but she was able to get away from him. Dezmon stated she
+reached back and punched him once in the upper lip causing it to bleed and once on the left side of his face. I
+observed Dezmon had a small cut on the inside of his top lip. I also observed he had redness and swelling on
+the side of his left eyebrow. Dezmon went on to say he was finally able to restrain on the ground. While
+struggling to get control of Dezmon stated she was able to get loose again and turned her body and bite
+him on his left arm. I observed Dezmon had teeth marks on the indie of his left arm, just below his elbow.
+Dezmon is an employee of Perimeter of the Ozarks and he works as a mental health technician.
+U developed probable cause for Battery 2nd degree. I contacted mother; . I requested
+she meet me at the location. I contacted Ashley bush from Washington county JDC and provided my probable
+cause. Ashley requested I transport to JDC to be detained. Ashley provided me with a Court date of April
+10th 2025 at 0810 hours. I provided the court details to and she stated she understood.
+I transported to the Springdale juvenile holding cell. A felony prelim was done and approved. I
+transported to Washington County JDC where she was released to the custody of the jailers. End
+narrative. 367.
+Login Id: SPRD\baileyjo Page 5 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Arrest Information
+General Information
+Arrest Number: 3195 Case Number: 2025-00021345 Arrest Type: Summoned/Cited
+Location 2466 S 48TH ST B, Location Arrest Status: Approved by Supervisor
+Formatted: SPRINGDALE, 72762 Common Name:
+Arrest Date/Time: 04/08/2025 20:00
+Status Date/Time: 04/08/2025 00:00 Age at Arrest: 12
+Basis for Caution:
+Arrest Result Of: Resisted Arrest:
+Arresting Officer
+Multiple Count Arrest Arresting Officer: 276 - Solis, Mark Assignment:
+Clearance
+Arrestee Subject Juvenile Arrestee Name
+Indicator:
+Type: Formatted:
+School Response No
+Arrestee Primary Arrestee Date Of
+Officer:
+Contact: Birth:
+Arrestee Location 2466 S 48TH ST B,
+Arrestee License Arrestee License
+Formatted: SPRINGDALE, AR 72762
+Number: State:
+Arrestee Local Id
+Arrestee Age: 12 Arrestee Height:
+Number:
+Arrestee Race: White Arrestee Sex: Female
+Arrestee License
+Expiration Date: Arrestee Eye Arrestee Hair
+Color: Color:
+Arrestee Weight:
+Arrestee Ethnic Non Hispanic
+Origin:
+Additional Arrest Information
+Statement Taken Officer Who Read Miranda
+By: Miranda: Date/Time:
+Fingerprinted By: Fingerprint Date: Statement Type:
+Resident Type: City Resident Status: Unknown Alcohol Influence:
+Breath Analyzer Drug Influence: Clears Case:
+Result:
+School Name: Campus Code:
+ID Procedure:
+Juvenile Referred to Other
+Disposition:
+Arresting Officers
+Primary: Yes Arresting Officer: 276 - Solis, Mark Assignment:
+School Response No
+Officer:
+Login Id: SPRD\baileyjo Page 6 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Charges
+Offense/Charge 04/08/2025 20:00 Statute Group: State Statute/Violation: 5-13-202
+Date/Time:
+Statute BATTERY - 2ND DEGREE Counts: 1
+Statute Crime 13A - Aggravated Assault Description:
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date: 04/09/2025
+Larceny Code:
+Disposition: Referred to Other Auth
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Weapons
+Weapon: Unarmed Feature:
+Injury Information
+Injury Types: Hospital: Extent Of Injury:
+Transported By: Medical Condition:
+Treatment:
+Login Id: SPRD\baileyjo Page 7 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Narratives
+Entered By: 276 - Solis, Mark Date Entered: 04/09/2025 03:16
+On 4/8/2025 at approximately 5:42pm dispatch advised that there were 2 or 3 juveniles that were attacking
+staff at the perimeter of the Ozarks located at 2466 S 48th st B. I checked en route at which point dispatch
+advised that the altercation is still physical so I provided an upgraded response. I arrived on scene at 6:01pm
+and was allowed entry into the facility by staff. Once I entered I witnessed several staff members surrounding
+the nurses station and several other staff members restraining a female behind the desk, I approached the two
+females and began to speak with them, I addressed one of the females and Officer Springston #386 spoke
+with the other. The female I spoke with was identified as
+advised that she did not attack anyone but was simply fed up with being at the facility and was attempting to
+commit suicide, I asked her how and she explained that she was going to try and swallow several monopoly
+pieces.
+I spoke with the charge nurse, and informed her of the statements made by and she advised that
+the facility would be able to handle it as they had their own protocol and direct access to her medical care
+providers. It was at this point that I left to let other officers into the building at which point I caught them up on
+the situation and began to check with other officers to see if any subjects had charges, as I was doing so, we
+were advised of a fight that had broken out between other residents and staff that was involved. Officers
+entered the room and began to assist as the residents were still actively being combative. I assisted In
+separating several individuals and when I noticed officers were placing a female I handcuffs I began to assist
+them. When I was assisting officers with that female I looked over and saw another female that was then being
+combative and I went over there to begin to assist. When we had gotten several combative females under
+control we were then advised of several other fights that had broken out, myself and several other officers
+attempted to separate the females and then assist with the other fights as they occurred. As more fights
+continued officers then began to bring females out of the facility into their patrol vehicle as there were no other
+places to isolate them to prevent more fights from happening.
+When I walked a female out to my vehicle who had been combative she was then identified as
+was placed in the back of my vehicle and I stood by with her to
+maintain supervision be wait further as to her role in the several different altercations. As I stood by I was then
+advised that was identified by a staff member as the resident that had attacked him and caused him
+injury, the staff member was identified as Derek Young( Young provided officers with a
+written statement in which he stated that he was attacked by a resident and received several “blows to the
+head and chest area causing him soreness, I spoke with Young and he confirmed that is the female that
+attacked him. mother was notified of the circumstance and charges of Battery 2nd, she along with the
+facility agreed the facility would maintain custody of , after contacting Washington County Juvenile
+detention center she was provided with a court date and released back to the facility, no further at this time.
+***End of Narrative MS307***
+Login Id: SPRD\baileyjo Page 8 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Arrest Information
+General Information
+Arrest Number: 3196 Case Number: 2025-00021345 Arrest Type: On-View Arrest
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Arrest Status: Approved by Supervisor
+Formatted: SPRINGDALE, 72762 Common Name:
+Arrest Date/Time: 04/08/2025 17:42
+Status Date/Time: 04/11/2025 00:00 Age at Arrest: 17
+Basis for Caution:
+Arrest Result Of: Resisted Arrest:
+Arresting Officer
+Multiple Count Arrest Arresting Officer: 203 - Wagner, Lane Assignment:
+Clearance
+Arrestee Subject Juvenile Arrestee Name
+Indicator:
+Type: Formatted:
+School Response No
+Arrestee Primary Arrestee Date Of
+Officer:
+Contact: Birth:
+Arrestee Location 2466 S 48TH ST B,
+Arrestee License Arrestee License
+Formatted: SPRINGDALE, AR 72762
+Number: State:
+Arrestee Local Id
+Arrestee Age: 17 Arrestee Height:
+Number:
+Arrestee Race: Black Arrestee Sex: Female
+Arrestee License
+Expiration Date: Arrestee Eye Arrestee Hair
+Color: Color:
+Arrestee Weight:
+Arrestee Ethnic Non Hispanic
+Origin:
+Additional Arrest Information
+Statement Taken Officer Who Read Miranda
+By: Miranda: Date/Time:
+Fingerprinted By: Fingerprint Date: Statement Type:
+Resident Type: City Resident Status: Resident Alcohol Influence:
+Breath Analyzer Drug Influence: Clears Case:
+Result:
+School Name: Campus Code:
+ID Procedure:
+Juvenile Referred to Other
+Disposition:
+Arresting Officers
+Primary: Yes Arresting Officer: 203 - Wagner, Lane Assignment:
+School Response No
+Officer:
+Login Id: SPRD\baileyjo Page 9 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Charges
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-71-203
+Date/Time:
+Statute INCITING RIOT Counts: 1
+Statute Crime 90C - Disorderly Conduct Description:
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date:
+Larceny Code:
+Disposition:
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-13-202
+Date/Time:
+Statute BATTERY - 2ND DEGREE Counts: 1
+Statute Crime 13A - Aggravated Assault Description:
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date:
+Larceny Code:
+Disposition:
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-13-301(b)
+Date/Time:
+Statute TERRORISTIC THREATENING Counts: 1
+Statute Crime 13C - Intimidation Description: - 2ND DEGREE
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date:
+Larceny Code:
+Disposition:
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Statute/Violation: 5-13-207
+Counts: 1
+Domestic Code:
+Submit Offense: Yes
+Disposition Date:
+Aiding/Abetting:
+Drug Info Entries: 0
+Login Id: SPRD\baileyjo Page 10 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Offense/Charge 04/08/2025 17:42 Statute Group: State
+Date/Time:
+Statute ASSAULT - 3RD DEGREE /
+Statute Crime 13C - Intimidation Description: CREATES APPREHENSION OF
+Code: IMMINENT INJURY
+NCIC Code: Attempt/Commit: Completed
+Larceny Code: Plea:
+Other Agency: No Disposition:
+Scene Code: Clery Location:
+Multiple Reason To
+Clearance Commit:
+Indicator:
+Weapons
+Weapon: Unarmed Feature:
+Injury Information
+Injury Types: Hospital: Extent Of Injury:
+Transported By: Medical Condition:
+Treatment:
+Narratives
+Entered By: 203 - Wagner, Lane Date Entered: 04/09/2025 03:33
+On Tuesday, April 8, 2025 at approximately 1754 hours I (PFC L. Wagner #419) was dispatched to the
+Perimeter of the Ozarks Behavioral Facility at 2466 S 48th St B in reference to a Disturbance call. The caller
+advised dispatch that 2 or 3 juveniles were physically attacking the staff.
+Upon my arrival I made contact with several of the facility staff members and several of the suspects at the
+nurse's station. One suspect, was sitting behind the nurse's
+station. I spoke with three staff members, Sabrina McLellan Keith Bohannon
+, and Derek, about the actions of
+Sabrina and Keith both explained that got out of her unit and jumped over the nurse's station into a
+restricted area. then sat down because she is aware that the staff cannot restrain her if she is in a
+seated position. then began threatening the staff, saying that she was going to hit anyone that tried
+to intervene. Keith and Sabrina both advised that threatened to hit them if they tried to restrain her.
+began throwing things at staff members and yelling and screaming, causing the other juveniles to
+act in a similar manner. then opened a drawer and pulled out a pair of scissors and threatened to
+cut Keith and other staff members with the scissors. Keith, an RN, and other staff members attempted to
+retrieve the scissors from struggled with Keith and the other staff members and in the
+struggle, cut Keith several times with the scissors. I observed the lacerations to Keith's hands from
+the scissors. Keith explained that then became more escalated and threatened to hit Keith, saying
+that she was going to "rock my shit" to Keith and raised a fist at him. Keith explained that he believed
+would further injure him or herself given her behavior at the time when she raised her fist at him.
+was then placed in an isolated room where I stood by with her for the majority of the time.
+Due to actions, her yelling, disregarding instructions from staff, throwing things at staff and
+threatening them, and physically fighting with them, six other juveniles began to conduct themselves in a
+Login Id: SPRD\baileyjo Page 11 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+similar behavior, creating a dangerous situation that resulted in the injury of several other staff members of the
+facility. Of these six, several were charged with Battery 2nd (Felony) along with other charges.
+While myself and others Officers continued to try and deescalate the situation and figure out who was being
+charged with what, multiple juveniles had to be restrained, either in handcuffs or with hand control, to keep
+them from hurting themselves, or staff, or Officers.
+I contacted the Washington County Juvenile Detention Center and spoke with Intake Officer Ashley Bush. I
+explained to Ashley that I would have charges for Inciting Riot (Felony), Battery 2nd Degree (Felony),
+Terroristic Threatening 2nd Degree, and Assault 3rd Degree for Ashley advised that they would
+detain and provided a court date of 4/10/2025 at 0815 hours in Division 8 at 123 N College Ave.
+I then transported to the Springdale Jail where I completed a juvenile prelim and then transported
+her to JDC where she was turned over to their staff. I have no further information at this time. See other
+Officer’s narratives for further.
+**Body Worn Camera Activated**
+End of narrative. LW419
+Login Id: SPRD\baileyjo Page 12 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Arrest Information
+General Information
+Arrest Number: 3197 Case Number: 2025-00021345 Arrest Type: On-View Arrest
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Arrest Status: Approved by Supervisor
+Formatted: SPRINGDALE, 72762 Common Name:
+Arrest Date/Time: 04/08/2025 17:42
+Status Date/Time: 04/08/2025 00:00 Age at Arrest: 16
+Basis for Caution:
+Arrest Result Of: Resisted Arrest:
+Arresting Officer
+Multiple Count Arrest Arresting Officer: 265 - Springston, Alyshia Assignment:
+Clearance
+Arrestee Subject Juvenile Arrestee Name
+Indicator:
+Type: Formatted:
+School Response No
+Arrestee Primary Arrestee Date Of
+Officer:
+Contact: Birth:
+Arrestee Location 2466 S 48TH ST B,
+Arrestee License Arrestee License
+Formatted: SPRINGDALE, AR 72762
+Number: State:
+Arrestee Local Id
+Arrestee Age: 16 Arrestee Height:
+Number:
+Arrestee Race: White Arrestee Sex: Female
+Arrestee License
+Expiration Date: Arrestee Eye Arrestee Hair
+Color: Color:
+Arrestee Weight:
+Arrestee Ethnic Non Hispanic
+Origin:
+Additional Arrest Information
+Statement Taken Officer Who Read Miranda
+By: Miranda: Date/Time:
+Fingerprinted By: Fingerprint Date: Statement Type:
+Resident Type: City Resident Status: Resident Alcohol Influence:
+Breath Analyzer Drug Influence: Clears Case:
+Result:
+School Name: Campus Code:
+ID Procedure:
+Juvenile Referred to Other
+Disposition:
+Arresting Officers
+Primary: Yes Arresting Officer: 265 - Springston, Alyshia Assignment:
+School Response No
+Officer:
+Login Id: SPRD\baileyjo Page 13 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Charges
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-13-301(b)
+Date/Time:
+Statute TERRORISTIC THREATENING Counts: 1
+Statute Crime 13C - Intimidation Description: - 2ND DEGREE
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date:
+Larceny Code:
+Disposition:
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-13-207
+Date/Time:
+Statute ASSAULT - 3RD DEGREE / Counts: 1
+Statute Crime 13C - Intimidation Description: CREATES APPREHENSION OF
+Domestic Code:
+Code: IMMINENT INJURY
+Submit Offense: Yes
+NCIC Code: Attempt/Commit: Completed
+Disposition Date:
+Larceny Code: Plea:
+Aiding/Abetting:
+Other Agency: No Disposition:
+Drug Info Entries: 0
+Scene Code: Clery Location:
+Multiple Reason To
+Clearance Commit:
+Indicator:
+Offense/Charge 04/08/2025 17:42 Statute Group: State Statute/Violation: 5-13-202
+Date/Time:
+Statute BATTERY - 2ND DEGREE Counts: 1
+Statute Crime 13A - Aggravated Assault Description:
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date:
+Larceny Code:
+Disposition:
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Statute Group: State Statute/Violation: 5-71-203
+Statute INCITING RIOT Counts: 1
+Description:
+Domestic Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+Plea:
+Disposition Date:
+Disposition:
+Aiding/Abetting:
+Clery Location:
+Drug Info Entries: 0
+Reason To
+Commit:
+Login Id: SPRD\baileyjo Page 14 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Offense/Charge 04/08/2025 17:42
+Date/Time:
+Statute Crime 90C - Disorderly Conduct
+Code:
+NCIC Code:
+Larceny Code:
+Other Agency: No
+Scene Code:
+Multiple
+Clearance
+Indicator:
+Weapons
+Weapon: Unarmed Feature:
+Injury Information
+Injury Types: Hospital: Extent Of Injury:
+Transported By: Medical Condition:
+Treatment:
+Login Id: SPRD\baileyjo Page 15 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Narratives
+Entered By: 265 - Springston, Alyshia Date Entered: 04/09/2025 05:08
+On 04/08/2025 I, Officer Springston 386, responded to 2466 S. 48th Street (Perimeter of the
+Ozarks) for a disturbance. Caller was an employee stating there was a riot that was occurring
+with multiple female juveniles involved and it was currently physical.
+Upon arrival officers located multiple juveniles that were in physical altercations with the staff
+and the other juveniles in the facility.
+Contact was made with a staff member, who is a nurse at the facility (Nicholas Roper
+), and he stated that was standing on chairs and
+attempting to break the lights on the ceiling. Nicholas and another staff member were
+attempting to diffuse the situation and kept taking the chairs away from While
+Nicholas was grabbing a chair away from her, she struck him on the left side of his head then
+proceeded to grab his head and bash it into the wall. The other staff member grabbed
+and placed her in restraints. Nicholas stated that after this, was bragging to another
+juvenile stating, “Decked Mr. Nick upside the head and made his head bounce.”
+Nicholas was complaining of head pain and issues with his vision being blurry and was
+unable to provide a written statement at that time due to this. While speaking to Nicholas it
+was evident, he was struggling to speak clearly and seemed to not be able to think clearly as
+well. Springdale EMS was called and Nicholas was transported to North West Medical
+Center to be evaluated. It was later discovered that due to bashing his head into the
+wall and punching him, he suffered a mild concussion according to the doctors at North West
+Medical Center and was directed to six days off of work. There was visible injury to his face
+and head from the altercation and pictures were taken
+Login Id: SPRD\baileyjo Page 16 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Arrest Information
+General Information
+Arrest Number: 3208 Case Number: 2025-00021345 Arrest Type: Summoned/Cited
+Location 2466 S 48TH ST, Location Arrest Status: Approved by Supervisor
+Formatted: SPRINGDALE, 72762 Common Name:
+Arrest Date/Time: 04/08/2025 16:00
+Status Date/Time: 04/13/2025 00:00 Age at Arrest: 11
+Basis for Caution:
+Arrest Result Of: Resisted Arrest:
+Arresting Officer
+Multiple Count Arrest Arresting Officer: 186 - Tabor, Amanda Assignment:
+Clearance
+Arrestee Subject Juvenile Arrestee Name
+Indicator:
+Type: Formatted:
+School Response No
+Arrestee Primary Arrestee Date Of
+Officer:
+Contact: Birth:
+Arrestee Location 3309 N 49th ST, Fort Smith,
+Arrestee License Arrestee License
+Formatted: AR 72904
+Number: State:
+Arrestee Local Id
+Arrestee Age: 11 Arrestee Height:
+Number:
+Arrestee Race: White Arrestee Sex: Female
+Arrestee License
+Expiration Date: Arrestee Eye Arrestee Hair
+Color: Color:
+Arrestee Weight:
+Arrestee Ethnic Non Hispanic
+Origin:
+Additional Arrest Information
+Statement Taken Officer Who Read Miranda
+By: Miranda: Date/Time:
+Fingerprinted By: Fingerprint Date: Statement Type:
+Resident Type: City Resident Status: Unknown Alcohol Influence:
+Breath Analyzer Drug Influence: Clears Case:
+Result:
+School Name: Campus Code:
+ID Procedure:
+Juvenile Referred to Other
+Disposition:
+Arresting Officers
+Primary: Yes Arresting Officer: 186 - Tabor, Amanda Assignment:
+School Response No
+Officer:
+Login Id: SPRD\baileyjo Page 17 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Charges
+Offense/Charge 04/08/2025 16:00 Statute Group: State Statute/Violation: 5-13-301(b)
+Date/Time:
+Statute TERRORISTIC THREATENING Counts: 1
+Statute Crime 13C - Intimidation Description: - 2ND DEGREE
+Domestic Code:
+Code:
+Attempt/Commit: Completed
+Submit Offense: Yes
+NCIC Code:
+Plea:
+Disposition Date: 04/13/2025
+Larceny Code:
+Disposition: Referred to Other Auth
+Aiding/Abetting:
+Other Agency: No
+Clery Location:
+Drug Info Entries: 0
+Scene Code:
+Reason To
+Multiple Commit:
+Clearance
+Indicator:
+Weapons
+Weapon: Unarmed Feature:
+Injury Information
+Injury Types: Hospital: Extent Of Injury:
+Transported By: Medical Condition:
+Treatment:
+Narratives
+Entered By: 186 - Tabor, Amanda Date Entered: 04/13/2025 08:34
+On 04/08/2025 at approximately 1742 I was dispatched to 2466 S 48th street Perimeter of the Ozarks for
+a physical disturbance.
+The caller stated that there were 2-3 juveniles that were attacking staff.
+Upon arrival the staff had one female detained on ground and the other two females were sitting behind
+the nursed station.
+I placed handcuffs on the female that was being held on the ground, she was later identified as
+became mostly compliant after she was placed under arrest.
+Other Officers arrived on scene to assist. As we were speaking with staff another fight broke out in one of
+Login Id: SPRD\baileyjo Page 18 of 28
+
+
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Summary Narrative
+Report Narratives
+Name: Narrative Author: 265 - Springston, Supervisor: 144 - Patton, Ross Date Created: 04/08/2025 23:54
+Alyshia
+Description:
+On 04/08/2025 I, Officer Springston 386, responded to 2466 S. 48th Street (Perimeter of the
+Ozarks) for a disturbance. Caller was an employee stating there was a riot that was occurring
+with multiple female juveniles involved and it was currently physical.
+Multiple individuals were placed in handcuffs due to erratic behavior and a riot was ensuing.
+Upon arrival officers located multiple juveniles that were in physical altercations with the staff
+and the other juveniles in the facility.
+Contact was made with a staff member, who is a nurse at the facility (Nicholas Roper
+), and he stated that was standing on chairs and
+attempting to break the lights on the ceiling. Nicholas and another staff member were
+attempting to diffuse the situation and kept taking the chairs away from While
+Nicholas was grabbing a chair away from her, she struck him on the left side of his head then
+proceeded to grab his head and bash it into the wall. The other staff member grabbed
+and placed her in restraints. Nicholas stated that after this, was bragging to another
+juvenile stating, “Decked Mr. Nick upside the head and made his head bounce.”
+Nicholas was complaining of head pain and issues with his vision being blurry and was
+unable to provide a written statement at that time due to this. While speaking to Nicholas it
+was evident, he was struggling to speak clearly and seemed to not be able to think clearly as
+well. Springdale EMS was called and Nicholas was transported to North West Medical
+Center to be evaluated. It was later discovered that due to bashing his head into the
+wall and punching him, he suffered a mild concussion according to the doctors at North West
+Medical Center and was directed to six days off of work. There was visible injury to his face
+and head from the altercation and pictures were taken by Officer Tabor (391).
+Login Id: SPRD\baileyjo Page 20 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Witness statement was later obtained by Officer Solis (307).
+JDC advised they could not get ahold of her DHS worker to inform them of the situation and
+they advised they would attempt to contact later.
+A. Springston 386
+Login Id: SPRD\baileyjo Page 21 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Name: Narrative Author: 4853 - Jackson, Ryler Supervisor: 144 - Patton, Ross Date Created: 04/09/2025 00:08
+Description:
+On Tuesday, April 8, 2025, at approximately 18:15pm, Officer A. Tabor #391 advised that they needed
+more units at Perimeter of the Ozarks (2466 S 48th St. B). Officers were on scene for a disturbance call
+involving two to three juveniles physically attacking staff.
+Upon arrival, I made contact with one of the staff members at one of the doors. The staff member
+escorted officers to where the other officers were. Once officers made it back to where the disturbance was
+occurring, I noticed officers had several juvenile females detained and there was lots of yelling and screaming.
+Officer L. French #367 and I were asked to stay inside one of the “wings” to try and keep the juveniles from
+starting another disturbance. Officer French and I were advised that there was a female that was detained on
+the ground that needed to be transported to a patrol unit outside. Officer French and I escorted the female,
+later identified as to my patrol car. I checked her handcuffs for fit and
+made sure they were double-locked before placing her inside my car. A short time later, Officer French and
+another officer brought another female juvenile outside and sat her inside his patrol car. She was identified as
+I watched both of these juveniles while officers continued dealing with
+other juveniles inside. A short time later, Officers brought another female juvenile outside and placed her in
+the back of another patrol car. This juvenile was identified as I witnessed
+repeatedly kick the rear passenger side door inside. I asked her to stop, but that didn’t keep her from
+continuing to kick the door from the inside. I watched all three females until officers figured out who was being
+detained further and who was being released back to the staff.
+I was advised to release back to Perimeter of the Ozarks’ custody. Myself and Officer M.
+Dickerson #415 escorted inside and removed her handcuffs. I asked if she was injured or had any
+injuries, and she said she did not. was handed over to a staff member. Officers advised that they had
+things under control. No further information at this time.
+***Axon Activated***
+***End of Narrative RJ336***
+Name: Narrative Author: 260 - French, Leland Supervisor: 144 - Patton, Ross Date Created: 04/09/2025 01:35
+Description:
+Login Id: SPRD\baileyjo Page 22 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+***SPD CASE 2025-21345
+***Body Camera Activated
+On April 8, 2025 at approximately 1815 hours, I (PFC French 367) along with other officers responded
+code three to a physical fight at 2466 South 48th Street. The caller is a staff member for Perimeter of the
+Ozarks and stated two to three girls are attacking the staff members.
+Upon arrival, I made contact with one of the staff members who was attacked. I identified the victim as
+Dezmon Stone Adult W/M Dezmon stated several girls in the facility started fighting with
+each other and when he intervenes, he was punched in the face twice and bitten on his arm by a
+Juvenile .
+Dezmon stated he attempted to restrain but she was able to get away from him. Dezmon stated
+she reached back and punched him once in the upper lip causing it to bleed and once on the left side of his
+face. I observed Dezmon had a small cut on the inside of his top lip. I also observed he had redness and
+swelling on the side of his left eyebrow. Dezmon went on to say he was finally able to restrain on the
+ground. While struggling to get control of Dezmon stated she was able to get loose again and turned
+her body and bite him on his left arm. I observed Dezmon had teeth marks on the indie of his left arm, just
+below his elbow. Dezmon is an employee of Perimeter of the Ozarks and he works as a mental health
+technician.
+I developed probable cause for Battery 2nd degree. I contacted mother; . I
+requested she meet me at the location. I contacted Ashley bush from Washington county JDC and provided
+my probable cause. Ashley requested I transport to JDC to be detained. Ashley provided me with a
+Court date of April 10th 2025 at 0810 hours. I provided the court details to and she stated she
+understood.
+I transported to the Springdale juvenile holding cell. A felony prelim was done and approved. I
+transported to Washington County JDC where she was released to the custody of the jailers. End
+narrative. 367.
+Login Id: SPRD\baileyjo Page 23 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Name: Narrative Author: 203 - Wagner, Lane Supervisor: 144 - Patton, Ross Date Created: 04/09/2025 02:38
+Description:
+On Tuesday, April 8, 2025 at approximately 1754 hours I (PFC L. Wagner #419) was dispatched to the
+Perimeter of the Ozarks Behavioral Facility at 2466 S 48th St B in reference to a Disturbance call. The caller
+advised dispatch that 2 or 3 juveniles were physically attacking the staff.
+Upon my arrival I made contact with several of the facility staff members and several of the suspects at the
+nurse's station. One suspect, was sitting behind the nurse's
+station. I spoke with three staff members, Sabrina McLellan Keith Bohannon
+, and Derek, about the actions of
+Sabrina and Keith both explained that got out of her unit and jumped over the nurse's station into a
+restricted area. then sat down because she is aware that the staff cannot restrain her if she is in a
+seated position. then began threatening the staff, saying that she was going to hit anyone that tried
+to intervene. Keith and Sabrina both advised that threatened to hit them if they tried to restrain her.
+began throwing things at staff members and yelling and screaming, causing the other juveniles to
+act in a similar manner. then opened a drawer and pulled out a pair of scissors and threatened to
+cut Keith and other staff members with the scissors. Keith, an RN, and other staff members attempted to
+retrieve the scissors from struggled with Keith and the other staff members and in the
+struggle, cut Keith several times with the scissors. I observed the lacerations to Keith's hands from
+the scissors. Keith explained that then became more escalated and threatened to hit Keith, saying
+that she was going to "rock my shit" to Keith and raised a fist at him. Keith explained that he believed
+would further injure him or herself given her behavior at the time when she raised her fist at him.
+was then placed in an isolated room where I stood by with her for the majority of the time.
+Due to actions, her yelling, disregarding instructions from staff, throwing things at staff and
+threatening them, and physically fighting with them, six other juveniles began to conduct themselves in a
+similar behavior, creating a dangerous situation that resulted in the injury of several other staff members of the
+facility. Of these six, several were charged with Battery 2nd (Felony) along with other charges.
+While myself and others Officers continued to try and deescalate the situation and figure out who was being
+charged with what, multiple juveniles had to be restrained, either in handcuffs or with hand control, to keep
+them from hurting themselves, or staff, or Officers.
+I contacted the Washington County Juvenile Detention Center and spoke with Intake Officer Ashley Bush. I
+explained to Ashley that I would have charges for Inciting Riot (Felony), Battery 2nd Degree (Felony),
+Terroristic Threatening 2nd Degree, and Assault 3rd Degree for . Ashley advised that they would
+detain and provided a court date of 4/10/2025 at 0815 hours in Division 8 at 123 N College Ave.
+I then transported to the Springdale Jail where I completed a juvenile prelim and then transported
+her to JDC where she was turned over to their staff. I have no further information at this time. See other
+Officer’s narratives for further.
+**Body Worn Camera Activated**
+End of narrative. LW419
+Login Id: SPRD\baileyjo Page 24 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Login Id: SPRD\baileyjo Page 25 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+Name: Narrative Author: 276 - Solis, Mark Supervisor: 144 - Patton, Ross Date Created: 04/09/2025 03:13
+Description:
+On 4/8/2025 at approximately 5:42pm dispatch advised that there were 2 or 3 juveniles that were
+attacking staff at the perimeter of the Ozarks located at 2466 S 48th st B. I checked en route at which point
+dispatch advised that the altercation is still physical so I provided an upgraded response. I arrived on scene at
+6:01pm and was allowed entry into the facility by staff. Once I entered I witnessed several staff members
+surrounding the nurses station and several other staff members restraining a female behind the desk, I
+approached the two females and began to speak with them, I addressed one of the females and Officer
+Springston #386 spoke with the other. The female I spoke with was identified as
+that she did not attack anyone but was simply fed up with being at the
+facility and was attempting to commit suicide, I asked her how and she explained that she was going to try
+and swallow several monopoly pieces.
+I spoke with the charge nurse, and informed her of the statements made by and she
+advised that the facility would be able to handle it as they had their own protocol and direct access to her
+medical care providers. It was at this point that I left to let other officers into the building at which point I caught
+them up on the situation and began to check with other officers to see if any subjects had charges, as I was
+doing so, we were advised of a fight that had broken out between other residents and staff that was involved.
+Officers entered the room and began to assist as the residents were still actively being combative. I assisted
+In separating several individuals and when I noticed officers were placing a female I handcuffs I began to
+assist them. When I was assisting officers with that female I looked over and saw another female that was
+then being combative and I went over there to begin to assist. When we had gotten several combative females
+under control we were then advised of several other fights that had broken out, myself and several other
+officers attempted to separate the females and then assist with the other fights as they occurred. As more
+fights continued officers then began to bring females out of the facility into their patrol vehicle as there were no
+other places to isolate them to prevent more fights from happening.
+When I walked a female out to my vehicle who had been combative she was then identified as
+was placed in the back of my vehicle and I stood by with her to
+maintain supervision be wait further as to her role in the several different altercations. As I stood by I was then
+advised that was identified by a staff member as the resident that had attacked him and caused him
+injury, the staff member was identified as Derek Young provided officers with a
+written statement in which he stated that he was attacked by a resident and received several “blows to the
+head and chest area causing him soreness, I spoke with Young and he confirmed that is the female that
+attacked him. mother was notified of the circumstance and charges of Battery 2nd, she along with the
+facility agreed the facility would maintain custody of after contacting Washington County Juvenile
+detention center she was provided with a court date and released back to the facility, no further at this time.
+***End of Narrative MS307***
+Name: Narrative Author: 186 - Tabor, Amanda Supervisor: 47 - Drake, Joshua Date Created: 04/13/2025 08:32
+Description:
+Login Id: SPRD\baileyjo Page 26 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+On 04/08/2025 at approximately 1742 I was dispatched to 2466 S 48th street Perimeter of the Ozarks for
+a physical disturbance.
+The caller stated that there were 2-3 juveniles that were attacking staff.
+Upon arrival the staff had one female detained on ground and the other two females were sitting behind
+the nursed station.
+I placed handcuffs on the female that was being held on the ground, she was later identified as
+became mostly compliant after she was placed under arrest.
+Other Officers arrived on scene to assist. As we were speaking with staff another fight broke out in one of
+the living quarters. Staff and other officers ran in to break up the fight. One staff member was thrown into
+a wall and punched in the face.
+More fights broke out in other pods as well as classrooms. several female juveniles were placed under
+arrest for violent crimes.
+As I was assisting staff in a classroom a juvenile female who was later identified as
+was throwing desks and attempting to break classroom property. was also
+screaming profanities and threatening staff members.
+I placed into handcuffs and sat her in the hallway away from everyone.
+was screaming and cursing at me, kicking me and attempted to bite me. was screaming threats
+at a staff member named Sabrina McLellan told Sabrina that she was going
+to "beat her ass" once she was released.
+I placed into the back of my patrol car, continued to yell and curse, she attempted to kick my back
+Login Id: SPRD\baileyjo Page 27 of 28
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 04/18/2025 09:50
+Agency #: AR0720200
+window out of my patrol car, her legs were then placed into leg shackles.
+was charged with terroristic threatening 2nd degree and released to her parents. was issued a
+court date with JDC for 05/16/2025 at 10:30am.
+End/ALT 391
+Login Id: SPRD\baileyjo Page 28 of 28

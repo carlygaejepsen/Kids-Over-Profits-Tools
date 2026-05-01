@@ -1,0 +1,261 @@
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 11:40
+Agency #: AR0720200
+General Information
+Case Number: 2024-00081476 Reporting 2470 - Strode, Elizabeth Reported 12/18/2024 10:00
+Officer: Date/Time:
+Location 2466 S 48TH ST B,
+Location PERIMETER OF THE OZARKS County: Washington
+Formatted: SPRINGDALE, 72762
+Common Name:
+Status: Open Disposition: Active
+Status Date: 12/18/2024
+Disposition Date: 12/24/2024 Occurred From 12/18/2024 10:00
+Occurred Incident Assault - Simple
+Date/Time:
+Occurred To 12/18/2024 10:00 Type:
+Significant Event:
+Date/Time:
+Scene Processed
+Campus Code: By: Exceptional
+Clearance Date:
+Exceptional
+Clearance:
+Assigned Personnel
+Assigned Personnel: 74 - Group, Philip Assigned By: 139 - Niccum, Chad
+Assignment Type: Lead Investigator Assignment 12/27/2024 13:17
+Date/Time:
+Assignment End
+Date/Time: Assignment Notes: no calls from staff? No statements from staff??
+Solvability Factors
+Solvability Factor: Total Solvability
+Factor:
+Modus Operandi
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 State 13C - Intimidation 5-13-206 ASSAULT - 2ND DEGREE/ RECKLESS 12/18/2024
+CONDUCT CREATES RISK OF PHYSICAL
+INJURY
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Suspect 2466 S 48th ST B, Springdale, White Female
+AR 72764
+2 Victim 2466 S 48th ST B, Springdale, White Female
+AR 72764
+3 Reporting Person Cell Phone - White Female
+Properties
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Contributing Officers
+Officer: 2470 - Strode, Elizabeth Supervisor: 84 - Hignite, Darrel Report 12/24/2024 11:09
+Date/Time:
+Report Type: Primary Approving User: TaylorJo
+Evidence
+Login Id: sprd\lindake Page 1 of 4
+
+
+
+
+
+
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:50
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00081476 Incident Type: Assault/Battery Call Date/Time: 12/18/2024 10:00
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Originating Call (918) 320-3447
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: Not In Progress Priority: 3
+Source: Admin Phone Line
+Units/Personnel
+Unit: 375 Primary Unit: Yes Call Date/Time: 12/18/2024 10:07
+Personnel: 2470 - Strode, Elizabeth Primary: Yes
+Vehicles
+Subjects
+Role: Complainant Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Location
+Formatted:
+Primary Contact Cell Phone - ( Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race: White
+Ethnic Origin: Non Hispanic
+Sex: Female Hair Color:
+Eye Color:
+Role: Victim Primary Caller: No Non-Disclosure: No
+Subject Type: Juvenile Name Formatted: Location 2466 S 48th ST B, Springdale,
+Formatted: AR 72764
+Primary Contact Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race: White
+Ethnic Origin: Non Hispanic
+Sex: Female Hair Color: BRO
+Eye Color: BRO
+Role: Suspect Primary Caller: No Non-Disclosure: No
+Subject Type: Juvenile Name Formatted: Location 2466 S 48th ST B, Springdale,
+Formatted: AR 72764
+Primary Contact Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race: White
+Ethnic Origin: Non Hispanic
+Sex: Female Hair Color: BRO
+Eye Color: BRO
+Login Id: sprd\lindake Page 1 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:50
+Agency #: AR0720200
+Disposition
+Disposition: Misdemeanor OR TRAFFIC Count: 1 Unit: 375
+VIOLATION
+Date/Time: 12/18/2024 11:07
+Evidence
+Call Log
+Date/Time: 12/18/2024 10:00 User: briannasa Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 12/18/2024 10:00 User: briannasa Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 12/18/2024 10:00 User: briannasa Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE, B
+(PERIMETER OF THE OZARKS)
+Date/Time: 12/18/2024 10:00 User: briannasa Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE /
+SPRINGHOUSE DR
+Date/Time: 12/18/2024 10:00 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 12/18/2024 10:01 User: briannasa Action: Narrative Added
+Description: SAID HER DAUGHTER IS AT
+PERIMETER AND WAS
+ASSAULTED LAST NIGHT -
+CLR WAS NOTIFIED
+YESTERDAY
+Date/Time: 12/18/2024 10:02 User: briannasa Action: Narrative Added
+Description: SAID HER DAUGHTER WAS
+IN AN ARGUMENT WITH
+ANOTHER GIRL AND GOT
+ATTACKED BY THE OTHER
+GIRL
+Date/Time: 12/18/2024 10:02 User: briannasa Action: Call Updated
+Description: Caller Added: Last Name -
+First Name -
+Role - Caller;
+User: briannasa Action: Call Updated
+Login Id: sprd\lindake Page 2 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:50
+Agency #: AR0720200
+Date/Time: 12/18/2024 10:02
+Description: Caller Phone Changed to
+Date/Time: 12/18/2024 10:02 User: briannasa Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Assault/Battery, Status:
+Not In Progress, Priority: 3
+Date/Time: 12/18/2024 10:03 User: briannasa Action: Narrative Added
+Description: SAID HER CHILD IS THE ONE
+WHO NOTIFIED HER OF THE
+ASSAULT
+Date/Time: 12/18/2024 10:03 User: briannasa Action: Narrative Added
+Description: DAUGHTER IS
+Date/Time: 12/18/2024 10:04 User: briannasa Action: Narrative Added
+Description: CLRS DAUGHTER IS YOA
+AND THE SUSP IS YOA
+FEMALE UNK NAME
+Date/Time: 12/18/2024 10:04 User: briannasa Action: Narrative Added
+Description: WANTS OFFICERS TO TAKE
+PICTURES OF HER
+DAUGHTER AFTER THE
+INCIDENT SAID HER FACE IS
+SCRATCHED UP
+Date/Time: 12/18/2024 10:05 User: briannasa Action: Narrative Added
+Description: CLR LIVES IN SILOAM
+SPRINGS
+Date/Time: 12/18/2024 10:07 User: katemo Action: Unit Status Action
+Description: Unit 375 Dispatched
+Date/Time: 12/18/2024 10:07 User: katemo Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00081476
+Date/Time: 12/18/2024 10:07 User: katemo Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 12/18/2024 10:07 User: katemo Action: Unit Location
+Description: Unit 375 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/18/2024 10:18 User: katemo Action: Unit Status Action
+Description: Unit 375 On Scene
+Date/Time: 12/18/2024 11:07 User: elizabethst Action: Unit Status Action
+Description: Unit 375 Available
+User: elizabethst Action: Call Cleared
+Login Id: sprd\lindake Page 3 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:50
+Agency #: AR0720200
+Date/Time: 12/18/2024 11:07
+Description: Close Call
+Unit Log
+Date/Time: 12/18/2024 10:07 Unit Number: 375 Action: Unit Status Change
+Description: Dispatched Call Number:
+499, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Assault/Battery
+Date/Time: 12/18/2024 10:07 Unit Number: 375 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/18/2024 10:18 Unit Number: 375 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/18/2024 11:07 Unit Number: 375 Action: Disposition Added
+Description: Added: Misdemeanor OR
+TRAFFIC VIOLATION Count 1
+Date/Time: 12/18/2024 11:07 Unit Number: 375 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/18/2024 11:07 Unit Number: 375 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: briannasa Date Entered: 12/18/2024 10:01
+SAID HER DAUGHTER IS AT PERIMETER AND WAS ASSAULTED LAST NIGHT - CLR WAS NOTIFIED YESTERDAY
+Entered By: briannasa Date Entered: 12/18/2024 10:02
+SAID HER DAUGHTER WAS IN AN ARGUMENT WITH ANOTHER GIRL AND GOT ATTACKED BY THE OTHER GIRL
+Entered By: briannasa Date Entered: 12/18/2024 10:03
+SAID HER CHILD IS THE ONE WHO NOTIFIED HER OF THE ASSAULT
+Entered By: briannasa Date Entered: 12/18/2024 10:03
+DAUGHTER IS
+Entered By: briannasa Date Entered: 12/18/2024 10:04
+CLRS DAUGHTER IS YOA AND THE SUSP IS FEMALE UNK NAME
+Entered By: briannasa Date Entered: 12/18/2024 10:04
+WANTS OFFICERS TO TAKE PICTURES OF HER DAUGHTER AFTER THE INCIDENT SAID HER FACE IS SCRATCHED UP
+Login Id: sprd\lindake Page 4 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:50
+Agency #: AR0720200
+Narratives
+Entered By: briannasa Date Entered: 12/18/2024 10:05
+CLR LIVES IN SILOAM SPRINGS
+Login Id: sprd\lindake Page 5 of 5

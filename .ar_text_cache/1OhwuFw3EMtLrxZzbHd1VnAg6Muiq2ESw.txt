@@ -1,0 +1,88 @@
+CFS - Command Log Printed on November 1, 2023
+———— eee US
+
+CFS # CFS2341791
+Call Taker KATHERINE WILSON
+Location 1601 NEWCASTLE RD, FORREST CITY (FORREST CITY MEDICAL CENTER)
+
+Location Details
+Primary Incident Code ASREPORT : Assault Report No Weapon
+
+Mod
+
+Priority 4
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 09/30/23 22:50:29
+
+Completed Time 09/30/23 23:51:36
+Reporters
+
+KATELYN DILLIER (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 09/30/23 22:50:29
+How Reported Phone
+
+From Phone = (870) 816-6332
+Contact Phone
+
+Comments
+
+Other Names
+Vehicles
+
+Responders
+535 (Primary) 535 - RICE, JAMES FCPD (Primary)
+
+Response Times
+
+Assigned 09/30/23 22:50:55 *
+Enroute 09/30/23 22:50:55
+Arrived 09/30/23 23:11:08
+Leaving
+
+Arrived At
+
+Completed 09/30/23 23:51:36
+
+| IR/ External Agency Numbers
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+09/30/23 22:50:29 | WILSON, KATHERINE | New CFS
+09/30/23 22:50:55 | WILSON, KATHERINE | 535 | Enroute
+09/30/23 23:11:08 | LANOS, JASMINE | 535 | On Scene
+09/30/23 23:51:36 | LANOS, JASMINE | 535 | Complete
+
+Se
+Page 1 of 2
+
+
+10/01/23 00:16:14 | WILSON, KATHERINE | EVENT#2310010001
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location ;
+Accuracy
+
+nee eee
+Page 2 of 2

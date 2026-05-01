@@ -1,0 +1,48 @@
+Incident Report
+Print Date/Time: 12/17/2024 10:43 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2024-00083606
+Incident Date/Time: 11/28/2024 7:25:25 AM Incident Type: 911 HANGUP
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (918)568-0799 Source: 911
+Report Required: No Priority: 2-Medium
+Prior Hazards: No Status: Not In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+487 487-HAWLEY
+519 519-SANDERS
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller E911 (918)568-0799
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:487
+Disposition Count Date/Time
+03NORPT 1 11/28/2024 07:45
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+11/28/2024:07:44:49adunlapNarrative:SMARTCHATSHOWINGTOHAVEBEENSENTINSPANISH
+11/28/2024:07:44:29adunlapNarrative:SMARTCHATRESPONSE
+ThisisFayetteville911,yourcellphonecalled911.Doyouhaveanemergency?
+16minsAshleyD.
+No
+Now
+11/28/2024:07:34:45fcarterNarrative:STILLNOANSWERONCALLBACKATTEMPTS
+11/28/2024:07:29:38adunlapNarrative:RAPIDMAPSHOWSPLOTATTHEBUILDINGIMMEDIATELYWESTOFVANTAGE
+POINT,NOTQUITEATVALLEYLAKEAPTS
+11/28/2024:07:27:40adunlapNarrative:https://w3w.co/motorboat.daisies.chief
+11/28/2024:07:27:29adunlapNarrative:SMARTCHATSENTVIARAPIDDEPLOY
+11/28/2024:07:26:46adunlapNarrative:NOANSWERONCALLBACKX2,LEFTVM
+11/28/2024:07:26:38adunlapNarrative:NORETURNWTRLOGS
+11/28/2024:07:26:31adunlapNarrative:NOHXW/88
+11/28/2024:07:26:19gabbickNarrative:NOSOUNDSOFDISTRESS
+11/28/2024:07:25:46adunlapNarrative:21MPLOT
+Page: 2 of 2

@@ -1,0 +1,60 @@
+Incident Report
+Print Date/Time: 01/17/2025 09:24 Fayetteville Police Department
+Login ID: adiaz ORI Number: AR0720100
+Incident: 2024-00089182
+Incident Date/Time: 12/22/2024 6:05:27 PM Incident Type: 911 HANGUP
+Location: 2805 E ZION RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (479)396-4059 Source: 911
+Report Required: No Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+473 473-ALGEO
+478 478-VEGA
+480 480-PERALEZ
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller E911 (479)396-4059
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:473
+Disposition Count Date/Time
+03NORPT 1 12/22/2024 18:32
+Unit:478
+Disposition Count Date/Time
+03NORPT 1 12/22/2024 18:11
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+12/22/2024:18:31:54salgeoNarrative:MADECONTACTWITHSOMEONEATTHENURSESSTATI0N.
+12/22/2024:18:22:07cadlerNarrative:NOANSWERX3
+12/22/2024:18:20:15cadlerNarrative:NOANSWERX2
+12/22/2024:18:19:28cadlerNarrative:NOANSWERX1
+12/22/2024:18:18:47cadlerNarrative:473REQCONTACTBUISNESSTOBELETINATADMINOFC
+12/22/2024:18:10:12tkelleyNarrative:MADECONTACTWITHCHARGENURSE,SHEADVEVERYTHINGWAS10-4WOULD
+CALL911IFSOMETHINGCHANGES
+12/22/2024:18:09:28tkelleyNarrative:VOIPCALLERIDADVCOMPUTERLAB
+12/22/2024:18:08:20cadlerNarrative:CALLERCALLEDBACKIN2NDTIME//ADVTOGETOFFICERSTO4281
+(UNINTELLIGABLESTRTNAME)IMMEDIATELY,THENTHECALLERSCREAMEDANDDISCONNECTED
+12/22/2024:18:08:16tkelleyNarrative:--ATCPINEYRIDGE
+12/22/2024:18:07:29tkelleyNarrative:HUNGUP
+12/22/2024:18:06:51tkelleyNarrative:CALLERBACKONLINE
+12/22/2024:18:06:39tkelleyNarrative:ISVOIPPHONE,MAYHAVECOMEFROMPINEYRIDGEHOSPITAL,
+12/22/2024:18:06:04tkelleyNarrative:FEMALESAIDHELLOTHENHUNGUP
+12/22/2024:18:05:55tkelleyNarrative:SOUNDSOFDISTURBANCE
+Page: 2 of 2
+
+Public Records Exemptions
+Enclosed please find a copy of the response documents for your public
+records request. The following information is provided to explain the
+process employed to review and produce the response documents.
+Reason Description Pages
+2
+1 of 1

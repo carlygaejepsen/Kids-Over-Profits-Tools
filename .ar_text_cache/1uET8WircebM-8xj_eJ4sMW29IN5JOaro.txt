@@ -1,0 +1,381 @@
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+General Information
+Case Number: 2025-00024834 Reporting 279 - Baker, Jaida Reported 04/22/2025 08:13
+Officer: Date/Time:
+Location 2601 HABBERTON RD,
+Location County: Benton
+Formatted: SPRINGDALE, 72764
+Common Name:
+Status: Closed Disposition: Inactive
+Status Date: 05/23/2025
+Disposition Date: 05/23/2025 Occurred From 04/22/2025 08:13
+Occurred Incident Sex Offenses
+Date/Time:
+Occurred To 04/22/2025 08:13 Type:
+Exceptional
+Date/Time:
+Significant Event:
+Clearance:
+Exceptional
+Clearance Date:
+Assigned Personnel
+Assigned Personnel: 166 - Samuelson, Scott Assigned By: 139 - Niccum, Chad
+Assignment Type: Lead Investigator Assignment 04/22/2025 14:43
+Date/Time:
+Assignment End
+Date/Time: Assignment Notes:
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 State 11B - Forcible Sodomy 5-14-125(a)(1) SEXUAL ASSAULT 2ND / ORAL OR ANAL 04/22/2025
+INTERCOURSE FORCIBLE
+Offense #1
+Offense #1 - General
+Offense Date: 04/22/2025 Location/Scene 1: Daycare Facility - Child/Adult Bias Motivation: No Bias
+Attempt/Commit: Completed Counts: 1 Statute/Violation: 5-14-125(a)(1)
+Statute Crime 11B - Forcible Sodomy Statute SEXUAL ASSAULT 2ND / Statute Type: Felony
+Code: Description: ORAL OR ANAL
+INTERCOURSE FORCIBLE
+Offense #1 - Criminal Drug Activity
+Criminal Activity Drug Related: Drug Type:
+Types:
+Offense #1 - Burglary/Larceny/Counterfeit Information
+Method of Entry: Point of Entry: Number Of
+Premises Entered:
+Larceny Type: Counterfeit Type:
+Counterfeit
+Counterfeit Cash Cargo Theft:
+Status:
+Amount:
+Offense #1 - Case Offense Circumstance
+Domestic Special Offender No
+Circumstance: Circumstances: Suspected of
+Using Alcohol:
+Offender No Offender No
+Suspected of Suspected of Victim Suspected
+Using Drugs: Using Computer: of Using Alcohol:
+Victim Suspected
+of Using Drugs:
+Login Id: SPRD\baileyjo Page 1 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Offense #1 - Supplemental Information
+Arson Code: Gang Related: No
+Offense #1 - Weapons
+Type: Personal Weapons Feature: Caliber:
+Length: Gauge: Finish:
+Action: Gun Type: Make:
+Model: Serial Number: Knife Type:
+Offense #1 - Assault/Homicide
+Primary Primary Secondary
+Assault/Homicide Assault/Homicide Assault/Homicide
+Circumstance: Circumstance Circumstance:
+Comments:
+Secondary Justifiable
+Assault/Homicide Justifiable Homicide Code:
+Circumstance Homicide
+Comments: Circumstance:
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Suspect 2601 HABBERTON RD, Black Male
+SPRINGDALE, AR 72764
+2 Victim 2601 HABBERTON RD, Black Male
+SPRINGDALE, AR 72764
+Subject #1
+Subject #1 Suspect - General
+Subject Type: Suspect Witness Sub- Suspect Primary: No
+Type:
+Resident Type: Global Subject Juvenile
+Resident Status: Type:
+Name Formatted:
+Location 2601 HABBERTON RD, Primary Contact:
+Date Of Birth:
+Formatted: SPRINGDALE, AR 72764
+License Number:
+License State:
+Social Security
+Age:
+Height: Number:
+Race: Black
+Sex: Male License Expiration
+Hair Color: Date: Eye Color:
+Weight:
+Ethnic Origin: Non Hispanic
+Subject #1 Suspect - Injury Information
+Injury Types: Condition: Medical
+Treatment:
+Hospital: Transported By:
+Extent of Injury:
+Degree of Sexual
+Assault:
+Login Id: SPRD\baileyjo Page 2 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Subject #1 Suspect - Related Offenses
+Crime Code: 11B - Forcible Sodomy Statute: 5-14-125(a)(1) Description: SEXUAL ASSAULT 2ND /
+ORAL OR ANAL
+Counts: Attempt/Commit: Completed
+INTERCOURSE FORCIBLE
+Subject #1 Suspect - Related Weapons
+Subject #2
+Subject #2 Victim - General
+Subject Type: Victim Witness Sub- Individual Primary: No
+Type:
+Resident Type: Global Subject Juvenile
+Resident Status: Type:
+Name Formatted:
+Location 2601 HABBERTON RD, Primary Contact:
+Date Of Birth:
+Formatted: SPRINGDALE, AR 72764
+License Number:
+License State:
+Social Security
+Age:
+Height: Number:
+Race: Black
+Sex: Male License Expiration
+Hair Color: Date: Eye Color:
+Weight:
+Ethnic Origin: Non Hispanic
+Subject #2 Victim - Injury Information
+Injury Types: None Condition: Medical
+Treatment:
+Hospital: Transported By:
+Extent of Injury:
+Degree of Sexual
+Assault:
+Subject # 2 Victim - Victim Information
+Action Taken: Complainant:
+Victim Circumstance: Justifiable Homicide
+Circumstance:
+Subject # 2 Victim - Victim/Offender Relationship
+Suspect: Relationship Acquaintance
+Type:
+Subject #2 Victim - Related Offenses
+Crime Code: 11B - Forcible Sodomy Statute: 5-14-125(a)(1) Description: SEXUAL ASSAULT 2ND /
+ORAL OR ANAL
+Counts: Attempt/Commit: Completed
+INTERCOURSE FORCIBLE
+Subject #2 Victim - Related Weapons
+Subject #2 Victim - LEOKA
+LEOKA Incident Officer Activity Officer
+Type: Type: Assignment Type:
+Officer Other ORI: Assault Weapon: Status:
+Officer Wearing Offender Used
+Body Armor: Officer Weapon:
+Login Id: SPRD\baileyjo Page 3 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Properties
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Contributing Officers
+Officer: 279 - Baker, Jaida Supervisor: 139 - Niccum, Chad Report 04/22/2025 12:50
+Date/Time:
+Report Type: Primary Approving User: fabiolama
+Status History
+Case Status: In Field Status Date: 04/22/2025 Changed By: System
+Date/Time 04/22/2025 08:22
+Changed:
+Case Status: Open Status Date: 04/22/2025 Changed By: fabiolama
+Date/Time 04/22/2025 13:37
+Changed:
+Case Status: Closed Status Date: 05/23/2025 Changed By: scottsa
+Date/Time 05/23/2025 12:58
+Changed:
+Disposition History
+Disposition: Inactive Disposition Date: 05/23/2025 Disposition scottsa
+Changed By:
+Date/Time 05/23/2025 12:58
+Changed:
+Associated Arrest Records
+Login Id: SPRD\baileyjo Page 4 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Report Narratives
+Name: Narrative Author: 279 - Baker, Jaida Supervisor: 139 - Niccum, Chad Date Created: 04/22/2025 08:22
+Description:
+**Reported Hotline**
+On 04/22/25 a Child Abuse report was received from the Arkansas State Police Investigator, Carley Criswell,
+in regards to a new report. Referral # 2341326.
+The DHS snapshot was reviewed and the following is a summary of the report:
+Both AV and AJO are current residents at the Yellow Rock Behavior Health facility.
+Accepted for sexual abuse. AV stated that AJO made him give him oral sex because they were dating. He
+said that there was verbal force, and AJO stated :You have to do it." AV stated that he was scared, so he gave
+AJO oral sex.
+The Alleged Victim is , and the Alleged Juvenile Offender is
+. and are current residents at the Yellow Rock Behavior Health facility. It was reported
+that the boys were caught in the bathroom together, and was seen performing oral sex on
+stated that made him give him oral sex. said it was verbally forced. also
+mentioned that made him do it because they were dating. He also stated that said, “You need to
+do it.” then reported that he was scared, so he performed oral sex on When was
+confronted with the incident, he said that he did not force him to do it. This is when the staff intervened, and
+the incident was stopped. was moved into a different part of the facility from Their classes will
+also be separated, so they should not be in contact with one another from now on. However, they still reside in
+the Yellow Rock Behavior Health Facility together, so there is a chance that they will have contact with one
+another again.
+Original hotline has been uploaded to the documents. No further information at this time.
+**END JB633**
+Name: Interview Author: 166 - Samuelson, Scott Supervisor: Date Created: 04/25/2025 08:07
+Description:
+Login Id: SPRD\baileyjo Page 5 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+I was notified of hotline on the evening of 19 April 2025. It was after 10:00 P.M., parties were separated. Myself and investigator C. Criswell with
+Arkansas State Police Crimes Against Children's Division (CACD) arranged to meet to interview the victim,
+at the facility.
+The audio of the interview was recorded and uploaded to Axon. This narrative is not a transcription but a summary of statements. It was only the three
+of us in the room.
+At 10 minutes and 20 seconds was asked why we were there today. He said "because of yesterday." He began describing an event that occurred
+with another resident. came out of the bathroom, and the door wasn't locked. said he had diarrhea for three days. He said
+is another resident. went to the bathroom and needed to go really bad, so he shut the door and didn't lock it. He said if he stopped to
+lock the door it would have been too late for him to make it to the toilet. walked in, told him to leave. pulled down his pants and
+"started forcing me into give um head and all of that." started to "freak out".
+When it happened, came back to the bathroom looking for She knocked on the door and asked who was in there. He said
+She came and asked twice if anyone else was in there, he replied to her both times no despite being in the bathroom. was "shocked and
+didn't really know what to do." He didn't feel comfortable in that situation. He was continuing to poop while was doing it to him.
+confirmed walked out of the bathroom, and went in after him and didn't lock the door. He was asked what time this happened.
+He said it was right after they came back from dinner. People were settling down. watched go into the bathroom after
+was asked to describe the bathroom. He said there is a door, toilet, sink, and shower in it. He drew a picture of the bathroom.
+said he walked into the bathroom to the toilet, and walked in without knocking. was shocked. He was asked to clarify if was
+standing or kneeling or something else, and he replied that was "started making me give him head."
+said he and are dating.
+described his feelings as shocked, embarrassed, and disgusted.
+Login Id: SPRD\baileyjo Page 6 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+He was asked if said anything. He said no, but he started kissing him. He also said hid behind a curtain so he couldn't be seen when
+came in.
+was asked to explain the kissing. He said he had never been kissed before, and this one doesn't count as a first kiss because it was unexpected.
+kept going, and then pulled down his pants. was kissing on the lips. He didn't want to, so forced his lips closed. used
+his tongue to open his lips told to get out as soon as he came in. had locked the bathroom door.
+When was kissing him, his hands were holding back. was trying to wiggle his hands off of his back. The hands were over his shirt.
+stopped kissing when said "I don't really like this right now." hands moved from his stomach to try to push away.
+After they stopped kissing, pulled down his pants and underwear. said "his is little" and then said "I don't care" as if he was talking to
+himself. told to leave him alone. pushed "it into my mouth, and pushed my head down" and it his back, stomach, and legs started
+hurting. It was hurting that his top body to be pushed down.
+reference his dick when he said it's small. confirmed that "dick" or peepee reference a penis.
+was wearing tan jeans and black shirt. The shirt had different color stripes.
+When was done he wiped, and tried to pull up his pants. pushed his pants back down and tried to "insert it", said no and turned
+around and pushed away. walked to the sink and washed his hands, pushed away from the door before he could exit.
+said "I'm not going to allow you to come out of the bathroom without giving me"..., did not finish the sentence. said he didn't want that,
+and sat back on the toilet. walked to the door and was wandering where and were. saw go into the
+bathroom and follow him.
+said he was wearing the same clothes then as he did yesterday, which were black shorts and black shirt.
+was asked to clarify the statement he put his dick in his mouth. was sitting. He said dick was in his mouth for maybe two
+minutes. hands were on head, trying to push his dead down. was trying not to let his down go down, but couldn't. That is why
+his back, stomach, and legs were hurting. It stopped when knocked on the door.
+Login Id: SPRD\baileyjo Page 7 of 14
+
+
+
+
+
+
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Name: Case Note Author: 166 - Samuelson, Scott Supervisor: Date Created: 05/02/2025 14:08
+Description:
+of Yellow Rock Behavioral Health informed they need a legal request to release video or reports. I e-mailed a subpoena to Yellow Rock
+on 25 April 2025 to request video and staff statements.
+She replied that times were needed in the request for the video to be released, she provided the times to add for the video. I wrote a new request and
+e-mailed it to on 7 May 2025.
+At 10:00 A.M. on 23 May 2025 I met at the Yellow Rock facility where she provided the requested documents and a video on a flash drive. She
+also gave a tour of the facility and showed me the bathrooms.
+The bathrooms are single occupant. There is a toilet, sink, and shower in there. The doors does not automatically close on its own. Staff have to use a
+key to unlock the bathroom for residents. Sometimes a resident will leave the door open for another resident. Currently, when the bathroom door shuts
+it automatically locks, and there is a second dead bolt lock inside. I asked if the bathroom door would have locked the day the incident occurred. She
+said she doesn't know, there have been problems with the doors and they keep trying different locking mechanisms.
+SS372
+Name: Facility Statements Author: 166 - Samuelson, Scott Supervisor: Date Created: 05/23/2025 12:15
+Description:
+Written statements were provided by and who are staff. There were also written statements by a signature that appears to
+be and . statement was written by using his own words.
+statement was written on 21 April 2025, two days after he was interviewed. His written statement was consistent with the interview.
+statement is dated 22 April 2025, the day before he was interviewed by Det. Thompson. said he went to the bathroom and then saw
+behind the door. When was looking for sat on the toilet to look like he was using it. said tried to
+touch him, but he pushed him away.
+statement was written 21 April 2025. He said told him is in the bathroom and "I going to follow him." He heard
+Login Id: SPRD\baileyjo Page 11 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+ask X twice if someone was in the bathroom with him. came out and stayed in the bathroom a little longer.
+statement is dated 24 April 2025. He writes that he was doing paperwork when he saw go into the bathroom. A couple minutes later
+they knocked on the door and answered. He only saw go in, so he checked the rooms and got the nurse to check the hallways for
+After knocking on the bathroom door two more times, came out. and were "pointing fingers at each other."
+' statement is dated 24 April 2025. Her statemed startes with "asked to use the bathroom to PSS." It was noticed was missing.
+She had get the nurse and help look for him. She knocked on the bathrooms, was in the #2. She asked if was in there and "he said
+no!" After they kept looking, she tells to open the bathroom door or she will open it. opens the door and comes out, had his
+boxers halfway down sitting on the toilet.
+told staff pulled him in and covers his mouth so he could not get out. said he went in a forgot to lock the door. later told
+staff he was waiting for the bathroom door so he could go and went in there." He said told him to go to the bathroom so they could
+"finger each other." also said he was dating He later told staff he was dating
+SS372
+Login Id: SPRD\baileyjo Page 12 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Name: Video Author: 166 - Samuelson, Scott Supervisor: Date Created: 05/23/2025 12:48
+Description:
+If the video is downloaded from Axon, I can only open it with VLC media player. I requested video from 19:07 to 19:10, and 19:09 to 19:24. The video
+feed provided is dated 4/19/2025 starting at 19:09:35 and ends at 19:21:46. The video shows the common room for the pod, the bathroom door, and
+can see into some of the residents rooms.
+is wearing black shoes, black socks, black shorts, and black T-shirt. he is standing by a round table when the video starts and walks to a residents
+room, throws something in, and walks back to the round table.
+The bathroom door is cracked. speaks to who is wearing Khaki colored pants and white T-shirt. He points to the bathroom door. A
+resident walks out and walks toward it. He looks in the direction of staff, who apperas to be looking in another direction. then ducks
+down and jobs into the bathroom. He stands in the doorway, holds the door open, and looks a . The toilet seat is visible walks into the
+bathroom, and shuts the door. When he walks in, there is no one sitting on the toilet. The door shuts with both residents in the bathroom at 19:10:10.
+The staff member, assuming to be knocks on the bathroom door at 19:16:41. She knocks again at 19:17:30. A resident knocks on the door
+at 19:19:21 with staff standing behind him. then walks about, and appears to begin yelling at both staff members. is seated on the toilet
+with his pants down. pulls the door shut.
+walks out of the bathroom at 19:22:18, he is arguing with other residents and seeming to demonstrate the door not shutting.
+SS372
+Login Id: SPRD\baileyjo Page 13 of 14
+
+Springdale Police Department
+Case Report
+Agency: Springdale Police Department Print Date/Time: 07/18/2025 09:41
+Agency #: AR0720200
+Name: Case Status Author: 166 - Samuelson, Scott Supervisor: 139 - Niccum, Chad Date Created: 05/23/2025 12:55
+Description:
+Investigation Criswell attempted to interview other residents as witnesses, they said the didn't see or hear anything.
+Both juveniles stated oral sex occurred. said it was consensual, said it was not. There are inconsistencies with statements from both
+juveniles.
+From the video, speaks to before going to the bathroom, and he points to it. appears to purposely avoid detection from staff as
+he goes in. He holds the door open and looks out as walks to the bathroom, and leaves the door open as directly approaches. This is
+inconsistent with written statement and verbal statement during the interview. claimed he was in a hurry to sit on the toilet and didn't
+have time to lock the door. When enters the bathroom on the video, the toilet is partially visible and is not seated on it.
+Based off he video, it appears the residents planned to meet in the bathroom. Video does not match the statements given by either resident. Due to the
+inconsistencies, I do not find probable cause to charge with a crime.
+I am forwarding this case for supervisor review.
+SS372
+Login Id: SPRD\baileyjo Page 14 of 14

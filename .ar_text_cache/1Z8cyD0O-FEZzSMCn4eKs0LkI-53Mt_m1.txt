@@ -1,0 +1,148 @@
+Fayetteville Police Department
+Summary
+Print Date/Time: 06/17/2024 14:58 Fayetteville Police Department
+Login ID: bjenkins ORI Number: AR0720100
+Case Number: 2024-00038361
+Case
+Case Number: 2024-00038361 Incident Type: Missing Person
+Location: 4253 N CROSSOVER RD Occurred From: 06/03/2024 19:07
+FAYETTEVILLE, AR 72703 Occurred Thru: 06/03/2024 19:07
+Reporting Officer ID: 462 - TOLE Disposition: Inactive
+Disposition Date: 06/03/2024
+Reported Date: 06/03/2024 19:07 Monday
+Offenses
+No. Group/ORI Crime Code Statute Description Counts
+Subjects
+Type No.Name Address Phone Race Sex DOB/Age
+Informational 1 VASINA, STEPHANIE 4253 N CROSSOVER RD Unknown Female 01/20/1977
+FAYETTEVILLE, AR 72703 47
+Arrests
+Arrest No. Name Address Date/Time Type Age
+Property
+Date Code Type Make Model Description Tag No.Item No.
+Vehicles
+No. Role Vehicle Type Year Make Model Color License Plate State
+Routing:
+Page: 1 of 2
+Page: 1 of 1
+
+OfficerID: stole, S. Tole/Case Narrative #2024-38361
+Officer S. Tole #462
+Missing Person
+Case #2024-38361
+Case Narrative
+On June 3rd, 2024, at approximately 19:07, I responded to 4253 N. Crossover Road
+(Piney Ridge) for the report of a missing person. Employee Stephanie Vasina
+reported had been seen jumping the fence and running westbound on
+E. Zion Road.
+reported missing and entered in ACIC/NCIC as such. Cpl. Mills #422 and I checked
+the area where the last seen but were unable to locate
+At approximately, 20:45 Cpl. Bailey #267 was patrolling on E. Zion Road and located
+walking along the sidewalk. Cpl. Harris #418 and I transported the
+back to Piney Ridge. The returned without incident
+and removed as missing.
+Processed by: A. Du Quesne
+Page: 2 of 2
+
+Public Records Exemptions
+Enclosed please find a copy of the response documents for your public
+records request. The following information is provided to explain the
+process employed to review and produce the response documents.
+Reason Description Pages
+1-2
+1 of 1
+
+Incident Report
+Print Date/Time: 06/17/2024 14:53 Fayetteville Police Department
+Login ID: bjenkins ORI Number: AR0720100
+Incident: 2024-00038361
+Incident Date/Time: 6/3/2024 7:07:00 PM Incident Type: MISSING PERSON
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (316)303-4040 Source: Phone
+Report Required: Yes Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: 2024-00038361 Nature of Call:
+Unit/Personnel
+Unit Personnel
+422 422-MILLS
+462 462-TOLE
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+FAYETTEVILLE AR 72703
+4 Caller VASINA, STEPHANIE 4253 N CROSSOVER RD Unknown Female 01/20/1977
+FAYETTEVILLE AR 72703
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:422
+Disposition Count Date/Time
+02GONEONARRIVAL 1 06/03/2024 19:45
+Unit:462
+Disposition Count Date/Time
+01RPT 1 06/03/2024 19:44
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 1
+Page: 1 of 2
+
+CAD Narrative
+06/03/2024:19:45:02hmillsNarrative:Checkedarea.d2
+06/03/2024:19:32:27mtheriaultNarrative:ALNOTIFIEDTOENTERALL3JUVENILESPER462REQ
+06/03/2024:19:28:03mortizNarrative:NOALTERNATEMODEOFTRAVEL
+06/03/2024:19:27:37mortizNarrative:NONOTESAYING GOINGTORUNAWAY
+06/03/2024:19:27:23mortizNarrative:NOCELLPHONESNOTRACKABLEDEVICES
+06/03/2024:19:27:05mortizNarrative:NOPETS
+06/03/2024:19:26:56mortizNarrative:THEREAREPICS
+06/03/2024:19:26:48mortizNarrative:PRIMARYLANGUAGEENGLISH
+06/03/2024:19:26:27mortizNarrative:NOPERSONALBELONGINGSTAKEN
+06/03/2024:19:26:15mortizNarrative:CALLERATOLDMISSOURI/CINNAMON
+06/03/2024:19:24:33mortizNarrative:DOESNOTTHINK AREC1
+06/03/2024:19:24:10mortizNarrative:NOTINJURED
+06/03/2024:19:24:02mortizNarrative:CALLERISINASILKIASUVDRIVINGAROUNDLOOKINGFORSUBJS
+06/03/2024:19:22:51mortizNarrative:
+06/03/2024:19:22:33mortizNarrative:
+06/03/2024:19:22:26mortizNarrative:
+06/03/2024:19:21:46mortizNarrative:
+06/03/2024:19:21:19mortizNarrative:
+06/03/2024:19:20:55mortizNarrative:
+06/03/2024:19:20:43mortizNarrative:LOTSOFWOODEDAREAIFTHEYWENTWB
+06/03/2024:19:20:30mortizNarrative:
+06/03/2024:19:20:10mortizNarrative:NOBACKPACKS
+06/03/2024:19:20:01mortizNarrative:
+06/03/2024:19:19:40mortizNarrative:
+06/03/2024:19:18:59mortizNarrative:LASTSEENBYLOTSOFPEOPLE
+06/03/2024:19:18:30mortizNarrative:NOSPECIALCONSIDERATIONSLASTTIME INTHEWOODS
+06/03/2024:19:17:42mortizNarrative:PURPOSELYRANAWAY
+06/03/2024:19:17:26mortizNarrative:
+06/03/2024:19:16:34mortizNarrative:NOCELLPHONES
+06/03/2024:19:15:23mortizNarrative:LASTSEEN10MINSAGO
+06/03/2024:19:15:00mortizNarrative:NOC1NOTC2
+06/03/2024:19:14:58mortizNarrative:NOTCARRYINGANYTHINGASFARASCALLERKNOWS
+06/03/2024:19:14:20mortizNarrative:JUMPEDOVERFENCEUNKIF MADEITTOTHERDORNOT
+06/03/2024:19:14:03mortizNarrative:LASTSEENGOINGWB
+06/03/2024:19:13:40mortizNarrative:CALLERHELPING
+06/03/2024:19:13:20mortizNarrative:
+06/03/2024:19:12:24mortizNarrative:
+06/03/2024:19:12:15mortizNarrative:
+06/03/2024:19:11:24mortizNarrative:CALLERTELLINGMETOHANGON
+06/03/2024:19:11:09mortizNarrative:
+06/03/2024:19:10:54mortizNarrative:
+06/03/2024:19:09:45mortizNarrative:
+06/03/2024:19:09:31mortizNarrative:CALLERGETTINGBACKTOCOMPUTERFORDESCRIPTIONS
+06/03/2024:19:09:19mortizNarrative:
+06/03/2024:19:08:53mortizNarrative:
+06/03/2024:19:08:28mortizNarrative:
+06/03/2024:19:08:20jcurryNarrative:33110-4
+06/03/2024:19:07:40mortizNarrative:CALLERISEMPLOYEE
+06/03/2024:19:07:34mortizNarrative:
+Page: 2 of 2
+
+Public Records Exemptions
+Enclosed please find a copy of the response documents for your public
+records request. The following information is provided to explain the
+process employed to review and produce the response documents.
+Reason Description Pages
+1-2
+1 of 1

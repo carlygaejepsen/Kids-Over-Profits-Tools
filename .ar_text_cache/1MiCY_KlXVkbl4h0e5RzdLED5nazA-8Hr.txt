@@ -1,0 +1,227 @@
+CES - Command Log Printed on March 15, 2023
+
+CFS # CFS2303235
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ALRF : Fire Alarm
+
+Mod Emergency Fire/Medical
+
+Priority 5
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Madison Police Department
+
+Call Time 01/28/23 09:30:15
+
+Completed Time 01/28/23 09:43:05
+Reporters
+
+OLD ARKANSAS ALARMS (Initial Reporter)
+
+Sex |
+
+DOB
+
+Address
+
+Report Time 01/28/23 09:30:15
+How Reported Phone
+
+From Phone
+
+Contact Phone (866) 858-8950
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 FCFD (Primary)
+FCBAT1 FCFD, Battalion Chief FCFD (Primary)
+FCE1 FCFD, Engine CO 1 FCFD (Primary)
+FCE2 (Primary) FCFD, Engine Co 2 FCFD (Primary)
+543 (Primary) 543 - MITLEFF, DALTON FCPD
+
+Response Times
+
+Assigned 01/28/23 09:31:46
+Enroute 01/28/23 09:32:40
+Arrived 01/28/23 09:34:19
+Leaving
+
+Arrived At
+
+Completed 01/28/23 09:43:05
+
+IR / External Agency Numbers
+FCFD 202300100
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+Page 1 of 2
+
+
+
+01/28/23 09:30:15 | HOWTON, KILEY | New CFS
+
+01/28/23 09:31:46 | HOWTON, KILEY | CALL1 | Assign
+01/28/23 09:32:02 | HOWTON, KILEY | 543 | Assign
+
+01/28/23 09:32:40 | FCFD, Engine Co 2 | FCE2 | Enroute
+01/28/23 09:33:20 | FCFD, Battalion Chief | FCBAT1 | Enroute
+01/28/23 09:33:25 | HOWTON, KILEY | MOTION IS ROOM 301 SMOKE DETECTOR
+01/28/23 09:34:19 | LAWS, ALLISON | 543 | On Scene
+
+01/28/23 09:36:33 | FCFD, Battalion Chief | FCBAT1 | On Scene
+
+01/28/23 09:37:12 | FCFD, Engine CO 1| FCE1 | On Scene
+
+01/28/23 09:37:41 | FCFD, Engine Co 2 | FCE2 | Available
+
+01/28/23 09:42:06 | HOWTON, KILEY | 543 | Available - ADVISED EVERYTHING 104-
+01/28/23 09:42:14 | HOWTON, KILEY | 10-4
+
+01/28/23 09:42:28 | FCFD, Battalion Chief | FCBAT1 | Message - smoke detector is broken, maintenance is on scene
+
+to get it repaired or call alarm company if its beyond their skill.
+01/28/23 09:42:39 | FCFD, Battalion Chief | FCBAT1 | Available
+01/28/23 09:43:05 | HOWTON, KILEY | CALL1, FCE1 | Complete
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location ‘
+Accuracy
+
+of 2
+
+
+
+CFS - Unit Response Times Printed on March 15, 2023
+
+CFS # CFS2303235
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ALREF : Fire Alarm
+
+Mod Emergency Fire/Medical
+
+Priority 5
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Madison Police Department
+
+Call Time 01/28/23 09:30:15
+
+Completed Time 01/28/23 09:43:05
+Reporters
+
+OLD ARKANSAS ALARMS (Initial Reporter) |
+
+Sex
+
+DOB
+
+Address
+
+Report Time 01/28/23 09:30:15
+How Reported Phone
+
+From Phone
+
+Contact Phone (866) 858-8950
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+CALL1 FCFD (Primary)
+FCBAT1 FCFD, Battalion Chief FCFD (Primary)
+FCE1 FCFD, Engine CO 1 FCFD (Primary)
+FCE2 (Primary) FCFD, Engine Co 2 FCFD (Primary)
+543 (Primary) 543 - MITLEFF, DALTON FCPD
+
+Response Times
+
+Assigned 01/28/23 09:31:46
+Enroute 01/28/23 09:32:40
+Arrived 01/28/23 09:34:19
+Leaving
+
+Arrived At
+
+Completed 01/28/23 09:43:05
+
+IR / External Agency Numbers
+FCFD 202300100
+
+Officer Addenda
+
+Unit Response Times |
+aS || ee
+Page 1 of 2
+
+
+
+Non Unit Specific Times
+
+01/28/23 09:30:15 | New CFS
+
+01/28/23 09:33:25 | MOTION IS ROOM 301 SMOKE DETECTOR
+01/28/23 09:42:14 | 10-4
+
+543
+01/28/23 09:32:02 | Assign
+01/28/23 09:34:19 | On Scene
+
+01/28/23 09:42:06 | Available - ADVISED EVERYTHING 104-
+
+CALL1
+
+01/28/23 09:31:46 | Assign
+
+CALL1, FCE1
+
+01/28/23 09:43:05 | Complete
+
+FCBAT1 |
+01/28/23 09:33:20 | Enroute
+
+01/28/23 09:36:33 | On Scene |
+01/28/23 09:42:28 | Message - smoke detector is broken, maintenance is on scene to get it repaired or call alarm
+company if its beyond their skill.
+01/28/23 09:42:39 | Available
+
+FCE1 |
+01/28/23 09:37:12 | On Scene
+
+FCE2
+01/28/23 09:32:40 | Enroute
+
+01/28/23 09:37:41 | Available |
+
+Page 2 of 2

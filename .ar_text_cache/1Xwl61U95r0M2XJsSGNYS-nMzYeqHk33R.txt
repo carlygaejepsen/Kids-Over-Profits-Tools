@@ -1,0 +1,184 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 02/24/2025 11:38
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00009030 Incident Type: Hangup Call Date/Time: 02/11/2025 13:54
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Originating Call (479) 957-9857
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: Admin Phone Line
+Units/Personnel
+Unit: 363 Primary Unit: No Call Date/Time: 02/11/2025 13:56
+Personnel: 14 - Barnett, Benjamin Primary: Yes
+Unit: 365 Primary Unit: Yes Call Date/Time: 02/11/2025 13:56
+Personnel: 353 - Jorgenson, Gauge Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 957-9857 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 02/11/2025 14:15
+Evidence
+Call Log
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Login Id: SPRD\baileyjo Page 1 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 02/24/2025 11:38
+Agency #: AR0720200
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 02/11/2025 13:54 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE, B
+(PERIMETER OF THE
+OZARKS)
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE
+/ SPRINGHOUSE DR
+Date/Time: 02/11/2025 13:54 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Call Updated
+Description: Caller Phone Changed to
+(479) 957-9857
+Date/Time: 02/11/2025 13:54 User: naomifl Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Narrative Added
+Description: ABANDONED CALL
+PLOTTING AT 2466 S 48TH
+ST UN0
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Narrative Added
+Description: PERIMETER BEHAVIOR OF
+OZARKS
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Narrative Added
+Description: HAS A TREE LINE FOR
+OPTIONS
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Narrative Added
+Description: ON CALL BACK
+Login Id: SPRD\baileyjo Page 2 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 02/24/2025 11:38
+Agency #: AR0720200
+Date/Time: 02/11/2025 13:55 User: naomifl Action: Narrative Added
+Description: NO ANSWER ON CALL BACK
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Status Action
+Description: Unit 365 Dispatched
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Location
+Description: Unit 365 Secondary Location:
+Secondary Location Cleared
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00009030
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Status Action
+Description: Unit 363 Dispatched
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Location
+Description: Unit 363 Secondary Location:
+Secondary Location Cleared
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Status Action
+Description: Unit 365 Responding
+Date/Time: 02/11/2025 13:56 User: jamileth Action: Unit Status Action
+Description: Unit 363 Available
+Date/Time: 02/11/2025 14:11 User: jamileth Action: Unit Status Action
+Description: Unit 365 On Scene
+Date/Time: 02/11/2025 14:15 User: jamileth Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 02/11/2025 14:15 User: jamileth Action: Narrative Added
+Description: 365/EVERYTHING SEEMS
+NORMAL F2
+Date/Time: 02/11/2025 14:15 User: jamileth Action: Unit Status Action
+Description: Unit 365 Available
+Date/Time: 02/11/2025 14:15 User: jamileth Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 02/11/2025 13:56 Unit Number: 365 Action: Unit Status Change
+Description: Dispatched Call Number:
+721, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Hangup
+Login Id: SPRD\baileyjo Page 3 of 4
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 02/24/2025 11:38
+Agency #: AR0720200
+Date/Time: 02/11/2025 13:56 Unit Number: 365 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 02/11/2025 13:56 Unit Number: 363 Action: Unit Status Change
+Description: Dispatched Call Number:
+721, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Hangup
+Date/Time: 02/11/2025 13:56 Unit Number: 363 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 02/11/2025 13:56 Unit Number: 365 Action: Unit Status Change
+Description: Responding
+Date/Time: 02/11/2025 13:56 Unit Number: 363 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 02/11/2025 13:56 Unit Number: 363 Action: Unit Status Change
+Description: Available
+Date/Time: 02/11/2025 14:11 Unit Number: 365 Action: Unit Status Change
+Description: On Scene
+Date/Time: 02/11/2025 14:15 Unit Number: 365 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 02/11/2025 14:15 Unit Number: 365 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: naomifl Date Entered: 02/11/2025 13:55
+ABANDONED CALL PLOTTING AT 2466 S 48TH ST UN0
+Entered By: naomifl Date Entered: 02/11/2025 13:55
+PERIMETER BEHAVIOR OF OZARKS
+Entered By: naomifl Date Entered: 02/11/2025 13:55
+HAS A TREE LINE FOR OPTIONS
+Entered By: naomifl Date Entered: 02/11/2025 13:55
+ON CALL BACK
+Entered By: naomifl Date Entered: 02/11/2025 13:55
+NO ANSWER ON CALL BACK
+Entered By: jamileth Date Entered: 02/11/2025 14:15
+365/EVERYTHING SEEMS NORMAL F2
+Login Id: SPRD\baileyjo Page 4 of 4

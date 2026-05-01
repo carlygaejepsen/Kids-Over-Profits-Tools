@@ -1,0 +1,150 @@
+Fayetteville Police Department
+Summary
+Print Date/Time: 09/18/2024 14:31 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Case Number: 2024-00058460
+Case
+Case Number: 2024-00058460 Incident Type: Missing Person
+Location: 4253 N CROSSOVER RD Occurred From: 08/22/2024 19:25
+FAYETTEVILLE, AR 72703 Occurred Thru: 08/22/2024 19:25
+Reporting Officer ID: 520 - WYATT Disposition: Investigation Complete
+Disposition Date: 08/22/2024
+Reported Date: 08/22/2024 19:29 Thursday
+Offenses
+No. Group/ORI Crime Code Statute Description Counts
+Subjects
+Type No.Name Address Phone Race Sex DOB/Age
+Missing Person 1
+FAYETTEVILLE, AR 72703 14
+Missing Person 2
+16
+Reporting Person 1 ROPER, NICHOLAS VON
+SPRINGDALE, AR 72764 24
+Arrests
+Arrest No. Name Address Date/Time Type Age
+Property
+Date Code Type Make Model Description Tag No.Item No.
+Vehicles
+No. Role Vehicle Type Year Make Model Color License Plate State
+Routing:
+Page: 1 of 2
+
+OfficerID: AWYATT, A Wyatt / Case Narrative #2024-58460
+Officer A. Wyatt #520
+Missing Person (Recovery)
+Case #2024-58460
+Case Narrative
+On August 22, 2024 at approximately 1930 hours I, Officer Alex Wyatt, was
+dispatched to Piney Ridge 4253 N Crossover rd for a missing person call. Upon
+arrival I met with Nicholas Roper ( He stated that two
+juveniles, ) and
+, had escaped their facility.
+Mr. Roper informed me of the physical description of each juvenile and gave a
+history to his knowledge of them. and approximately 150 pounds. He
+was last seen wearing a black shirt, black shorts, and black shoes. He has brown hair
+and brown eyes. and approximately 160 pounds. He was last seen with
+blue and black puma branded shirt and shorts with red and black Jordan shoes. He
+has brown hair and brown eyes. Mr. Roper stated that had been at their
+facility for a few months and they have not had any trouble with him during his time
+there. had only been there a month. Neither of them have ran away before and
+have no known contacts in Fayetteville. Mr. Roper informed me that earlier in the day
+the two had gotten into trouble for harassing another kid there. They did not like that
+they were in trouble and got angry with the staff. The two juveniles then jumped the
+fence that borders vantage point and took off on foot in an unknown direction. That
+is when he contacted 911 to report them. Mr. Roper had only recently got on shift and
+had this limited information.
+While speaking with Mr. Roper Cpl. McAbee #411 was patrolling the area looking for
+the missing juveniles. I gave Mr. Roper a contact card with my information and case
+number for their records. He validated his phone number and gave me the phone
+number for the charge nurse in case we needed to contact the facility after his shift
+was over at 0700 the next day. I then put the two juvenile’s information into a report
+and notified dispatch to mark them as missing persons and to put a BOLO out for
+them.
+On August 22, 2024 at approximately 2120 hours, I was dispatched to Piney Ridge for
+a recovery report. Upon arrival I made contact with Mr. Roper who stated that the
+juveniles had returned just prior to him calling 911 for a new report. He told me that
+the juveniles had just walked up and down the road before coming back. I put eyes
+on but was in the shower. Both juveniles were safe and in custody of
+the facility.
+Processed by A. Diaz / A. Remick
+Page: 2 of 2
+
+Incident Report
+Print Date/Time: 09/18/2024 14:30 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2024-00058460
+Incident Date/Time: 8/22/2024 7:29:52 PM Incident Type: MISSING PERSON
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (870)329-6232 Source: Phone
+Report Required: Yes Priority: 1-High
+Prior Hazards: No Status: In Progress
+LE Case Number: 2024-00058460 Nature of Call:
+Unit/Personnel
+Unit Personnel
+411 411-MCABEE
+520 520-WYATT
+438-CONWELL
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Missing Person Black Male
+2 Missing Person Black Male 0
+FAYETTEVILLE AR 72703
+3 Caller ROPER, NICHOLAS VON
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:411
+Disposition Count Date/Time
+02GONEONARRIVAL 1 08/22/2024 20:14
+Unit:520
+Disposition Count Date/Time
+01RPT 1 08/22/2024 20:25
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 2
+
+
+
+Incident Report
+Print Date/Time: 09/18/2024 14:29 Fayetteville Police Department
+Login ID: aarcher ORI Number: AR0720100
+Incident: 2024-00058483
+Incident Date/Time: 8/22/2024 9:21:33 PM Incident Type: FOLLOW UP
+Location: 4253 N CROSSOVER RD Venue: FAYETTEVILLE
+FAYETTEVILLE AR 72703
+Phone Number: (870)754-8409 Source: Phone
+Report Required: No Priority: 3-Low
+Prior Hazards: No Status: Not In Progress
+LE Case Number: Nature of Call:
+Unit/Personnel
+Unit Personnel
+441 441-IBARRA
+520 520-WYATT
+438-CONWELL
+Person(s)
+No. Role Name Address Phone Race Sex DOB
+1 Caller RAYLEIGH, NURSE (870)754-8409
+Vehicle(s)
+Role Type Year Make Model Color License State
+Disposition(s)
+Disposition Count Date/Time
+Unit:441
+Disposition Count Date/Time
+03NORPT 1 08/22/2024 21:24
+Unit:520
+Disposition Count Date/Time
+03NORPT 1 08/22/2024 21:48
+Property
+Date Code Type Make Model Description Tag No. Item No.
+Page: 1 of 2
+
+CAD Narrative
+08/22/2024:21:48:29awyattNarrative:INREFERENCETO2024-58460.D3
+08/22/2024:21:39:36tkelleyNarrative:5201012WITHSUBJ
+08/22/2024:21:23:56tkelleyNarrative:33410-4
+08/22/2024:21:23:12tkelleyNarrative:24-58460
+08/22/2024:21:22:06tkelleyNarrative:SUBJSARE10-4,JUMPEDTHEFENCEANDCAMEBACK
+08/22/2024:21:21:47tkelleyNarrative:ADVSUBJSAREBACK
+Page: 2 of 2

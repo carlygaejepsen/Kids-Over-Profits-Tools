@@ -1,0 +1,699 @@
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 11:39
+Agency #: AR0720200
+General Information
+Case Number: 2024-00083320 Reporting 126 - Mercado, Walter Reported 12/27/2024 12:40
+Officer: Date/Time:
+Location 2466 S 48TH ST B,
+Location PERIMETER OF THE OZARKS County: Washington
+Formatted: SPRINGDALE, 72762
+Common Name:
+Status: Closed Disposition: Inactive
+Status Date: 12/27/2024
+Disposition Date: 12/28/2024 Occurred From 12/27/2024 12:30
+Occurred Incident Runaway
+Date/Time:
+Occurred To 12/27/2024 12:40 Type:
+Significant Event:
+Date/Time:
+Scene Processed
+Campus Code: By: Exceptional
+Clearance Date:
+Exceptional
+Clearance:
+Assigned Personnel
+Solvability Factors
+Solvability Factor: Total Solvability
+Factor:
+Modus Operandi
+Offenses
+# Statute Group Group Agency Crime Code Statute Description Offense Date
+1 Local AR0720200 90I - Runaway RUNAWAY RUNAWAY 12/27/2024
+Subjects
+Number Type Name Address Contact Information Race Sex DOB
+1 Missing Person 2466 S 48TH ST B, Business - (479) 957- America Female
+SPRINGDALE, AR 72762 9857 n Indian
+or
+Alaska
+Native
+2 Complainant Vanburnt, Hunter James Business - (479) 957- White Male
+9857
+Properties
+# Date Type Property Loss Type Description Name Subject Role
+Vehicles
+Contributing Officers
+Officer: 126 - Mercado, Walter Supervisor: 84 - Hignite, Darrel Report 12/28/2024 15:30
+Date/Time:
+Report Type: Primary Approving User: lucyes
+Evidence
+Status History
+Case Status: In Field Status Date: 12/27/2024 Changed By: System
+Date/Time 12/27/2024 14:11
+Changed:
+Status Date: 12/27/2024 Changed By: lucyes
+Login Id: sprd\lindake Page 1 of 3
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 11:39
+Agency #: AR0720200
+Case Status: Closed
+Date/Time 12/31/2024 16:13
+Changed:
+Disposition History
+Disposition: Inactive Disposition Date: 12/28/2024 Disposition lucyes
+Changed By:
+Date/Time 12/31/2024 16:13
+Changed:
+Supplemental Information
+Action Taken: Reasons For No Purge Type:
+Arrest:
+Purge Date: Non-Fatal
+Purge Review Shooting:
+Date:
+Associated Arrest Records
+Summary Narrative
+Login Id: sprd\lindake Page 2 of 3
+
+Case Report
+Detail
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 11:39
+Agency #: AR0720200
+Report Narratives
+Name: Narrative Author: 126 - Mercado, Walter Supervisor: 84 - Hignite, Darrel Date Created: 12/27/2024 14:10
+Description:
+DOCUMENTATION ONLY
+On Friday, December 27, 2024, at approximately 12:58pm, I responded to Perimeter or the Ozarks located at
+2466 S 48th St for a runaway call.
+Upon my arrival, I made contact with one of the nurses, identified as Hunter Vanburnt DOB
+and I asked him what happened. He stated that one of the patients there, identified as DOB
+ran away at approximately 12:38pm. He stated that staff last saw her jumping the fence and walking
+southbound from the specialty care facility. Hunter stated was brought her from South Dakota and she
+had to be escorted because she was an escape risk. He stated that she is also possibly suicidal and may have
+violent tendencies towards law enforcement.
+I then asked him to describe her and he stated that she is an American Indian female, but she looks
+He stated
+that she had on a black or dark gray sweatshirt and what he thought were Winnie the Pooh pants, which were
+later found out to be Hello Kitty pants. Hunter also stated that would have scars on both of her forearms
+from previous self-harm incidents. He stated that . He stated she
+also takes . Hunter stated that she may have social media accounts, but the patients there
+have limited access to any social media. He stated that parents did tell them that she had a very light
+footprint on social media, though. Hunter also stated that she was transferred here from South Dakota on
+so she isn’t too familiar with the area and it is unsure of where she would go.
+While I was speaking with Hunter and gathering information, dispatch advised that another person
+called in and advised that was at the Walmart Neighborhood Market down the road from the facility.
+Other officers responded to the market and were able to locate They then brought her back to the
+facility and I advised Hunter that I would file a documentation report for this incident. A photograph of
+was taken from body camera footage and uploaded to the server in the event that runs away in the
+future. WIM 359
+Login Id: sprd\lindake Page 3 of 3
+
+
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Role: Missing Non-Disclosure: No
+Subject Type: Juvenile Location 2466 S 48TH ST B,
+Formatted: SPRINGDALE, AR 72762
+Primary Contact Business - (479) 957-9857
+Information: Local Id Number:
+License Number: License Expiration
+Date:
+Height Range
+Lower: Race: American Indian or Alaska
+Native
+Sex: Female
+Hair Color: BLK
+Eye Color: BRO
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 12/27/2024 13:35
+Evidence
+Call Log
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE, B
+(PERIMETER OF THE OZARKS)
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE /
+SPRINGHOUSE DR
+Date/Time: 12/27/2024 12:40 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 12/27/2024 12:40 User: brandibu Action: Call Updated
+Description: Caller Phone Changed to
+(479) 225-1275
+User: brandibu Action: Agency Context Added
+Login Id: sprd\lindake Page 2 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 12:40
+Description: Police Call Type Added. Call
+Type: Missing, Status: Not In
+Progress, Priority: 3
+Date/Time: 12/27/2024 12:41 User: brandibu Action: Narrative Added
+Description: PT WITH THE CENTER JUST
+RAN AWAY AND THEY ARE
+NEEDING HELP
+Date/Time: 12/27/2024 12:41 User: brandibu Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 12/27/2024 12:41 User: brandibu Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 12/27/2024 12:41 User: brandibu Action: Narrative Added
+Description: HOPPED THE FENCE
+TOWARD THE INTERSTATE
+AND HEADED TOWARD
+WATKINS AVE
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00083320
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Unit Location
+Description: Unit 359 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Unit Status Action
+Description: Unit 359 Dispatched
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Unit Status Action
+Description: Unit 382 Dispatched
+Date/Time: 12/27/2024 12:41 User: gingerev Action: Unit Location
+Description: Unit 382 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 12:42 User: gingerev Action: Unit Status Action
+Description: Unit 359 Responding
+Date/Time: 12/27/2024 12:42 User: gingerev Action: Unit Status Action
+Description: Unit 382 Responding
+User: brandibu Action: Narrative Added
+Login Id: sprd\lindake Page 3 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 12:42
+Description: RUNAWAY IS
+W/F SOME
+AMERICAN INDIAN, HAIR IN
+A PONYTAIL, NLK HAIR,
+WINNIE THE POOH PANTS
+AND THE SHIRT WAS BLK OR
+NAVY BLU SWEATER
+Date/Time: 12/27/2024 12:42 User: brandibu Action: Narrative Added
+Description: DIDNT TAKE ANYTHING
+WITH HER
+Date/Time: 12/27/2024 12:42 User: brandibu Action: Narrative Added
+Description: HAPPENED A FEW MINUTES
+AGO
+Date/Time: 12/27/2024 12:42 User: brandibu Action: Narrative Added
+Description:
+Date/Time: 12/27/2024 12:42 User: brandibu Action: Call Updated
+Description: Caller Updated: Name
+Changed from to
+VANBRUNT, HUNTER
+Date/Time: 12/27/2024 12:42 User: gingerev Action: Unit Location
+Description: Unit 313 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 12:42 User: gingerev Action: Unit Status Action
+Description: Unit 313 Responding
+Date/Time: 12/27/2024 12:43 User: gingerev Action: Narrative Added
+Description: 313/ ENRT WITH DRONE
+Date/Time: 12/27/2024 12:43 User: brandibu Action: Narrative Added
+Description: THEY CAN NO LONGER SEE
+HER, AND NO ONE HAS
+SIGHT OF HER
+Date/Time: 12/27/2024 12:43 User: brandibu Action: Narrative Added
+Description: UNK WHERE SHE MAY BE
+GOING SHE IS FROM SOUTH
+DAKOTA
+Date/Time: 12/27/2024 12:43 User: gingerev Action: Unit Location
+Description: Unit 107 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 12:43 User: gingerev Action: Unit Status Action
+Description: Unit 107 On Scene
+Date/Time: 12/27/2024 12:43 User: brandibu Action: Narrative Added
+Description:
+OR SO
+User: gingerev Action: Unit Status Action
+Login Id: sprd\lindake Page 4 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 12:47
+Description: Unit 382 On Scene
+Date/Time: 12/27/2024 12:51 User: stefanyca Action: Narrative Added
+Description: 107/ IS A SUICIDAL
+THAT IS ALL I COULD
+GET FROM THE NURSE
+HUNTER
+Date/Time: 12/27/2024 12:51 User: gingerev Action: Narrative Added
+Description: 107/ THERE IS NO MORE
+INFORMATION TO GATHER
+AT PERIMETER, WE WILL BE
+OUT CHECKING
+Date/Time: 12/27/2024 12:58 User: gingerev Action: Unit Status Action
+Description: Unit 359 On Scene
+Date/Time: 12/27/2024 13:00 User: gingerev Action: Unit Status Action
+Description: Unit 313 On Scene
+Date/Time: 12/27/2024 13:04 User: jamileth Action: Narrative Added
+Description: 382/ T8 UTL
+Date/Time: 12/27/2024 13:04 User: jamileth Action: Unit Status Action
+Description: Unit 382 Available
+User: stefanyca Action: Narrative Added
+Description:
+Date/Time: 12/27/2024 13:05 User: jamileth Action: Unit Status Action
+Description: Unit 107 T19
+Date/Time: 12/27/2024 13:05 User: jamileth Action: Unit Status Action
+Description: Unit 107 Available
+Date/Time: 12/27/2024 13:08 User: stefanyca Action: Narrative Added
+Description: 671/ NOTIFIED STATE POLICE
+Date/Time: 12/27/2024 13:12 User: katemo Action: Narrative Added
+Description: CALLER IS STATING SHE
+FOUND A JUVENILE FEMALE
+AT THE DOG PARK AND SHE
+GAVE HER A RIDE TO THE
+WALMART NEIGHBORHOOD
+MARKET ON JENNIFER
+Date/Time: 12/27/2024 13:12 User: katemo Action: Narrative Added
+Description: THE FEMALE WAS WEARING
+PAJAMAS BUT THE CALLER
+GAVE HER CLOTHES
+User: brandibu Action: Unit Location
+Login Id: sprd\lindake Page 5 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:12
+Description: Unit 313 Secondary Location:
+WALMART NEIGHBORHOOD
+MARKET
+Date/Time: 12/27/2024 13:12 User: brandibu Action: Unit Status Action
+Description: Unit 313 Responding 2nd
+Date/Time: 12/27/2024 13:12 User: katemo Action: Narrative Added
+Description: THE CALLER SAID SHE IS
+CHANGING INTO BLU HELLO
+KITTY PAJAMA PANTS AND
+THEN A BLK HOODIE
+Date/Time: 12/27/2024 13:13 User: brandibu Action: Unit Status Action
+Description: Unit 382 Responding
+Date/Time: 12/27/2024 13:13 User: brandibu Action: Unit Location
+Description: Unit 382 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 13:13 User: katemo Action: Narrative Added
+Description: SHE HAD HER PARENT SENT
+HER TO SCHOOL HERE IN
+SPRINGDALE AND THAT SHE
+WAS FROM SOUTH DAKOTA
+AND TO NOT SNITCH ON
+HER
+Date/Time: 12/27/2024 13:13 User: brandibu Action: Unit Location
+Description: Unit 361 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 13:13 User: brandibu Action: Unit Status Action
+Description: Unit 361 Responding
+Date/Time: 12/27/2024 13:14 User: katemo Action: Narrative Added
+Description: SHE HAS BLOOD ON HER
+ANKLE
+Date/Time: 12/27/2024 13:14 User: brandibu Action: Unit Status Action
+Description: Unit 382 Available
+Date/Time: 12/27/2024 13:14 User: katemo Action: Narrative Added
+Description: SHE IS IN THE ACTUAL
+STORE OF THE
+NEIGHBORHOOD MARKET
+Date/Time: 12/27/2024 13:14 User: katemo Action: Narrative Added
+Description: THE CALLER SAID THAT THEY
+WERE AT THE DOG PARK AT
+THE ROTARY PARK AND
+THEY PICKED HER UP AND
+GAVE HER A RIDE TO THE
+STORE
+Login Id: sprd\lindake Page 6 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:14 User: katemo Action: Narrative Added
+Description: SHE TOLD THEM SHE WAS
+GOING TO CATCH A BUS
+Date/Time: 12/27/2024 13:15 User: katemo Action: Narrative Added
+Description: THE CALLER SAID SHE TOLD
+HER SHE WAS GOING TO
+MEET UP WITH HER COUSIN
+IN SOUTH DAKOTA
+Date/Time: 12/27/2024 13:15 User: katemo Action: Narrative Added
+Description: SHE IS A W/F AND HAD HER
+LIGHT BRO HAIR IN BUNS
+ON HER HEAD.
+Date/Time: 12/27/2024 13:16 User: katemo Action: Narrative Added
+Description: CALLER IS JOSELIN
+ALMANZA HER # IS
+Date/Time: 12/27/2024 13:16 User: katemo Action: Narrative Added
+Description: THE CALLER STILL HASN'T
+SEEN HER COME OUT OF
+THE STORE.
+Date/Time: 12/27/2024 13:17 User: jamileth Action: Unit Status Action
+Description: Unit 313 On Scene 2nd
+Date/Time: 12/27/2024 13:17 User: katemo Action: Narrative Added
+Description: CALLER SAID SHE DIDN'T
+APPEAR TO BE INTOX OR ON
+DRUGS SHE APPEARED
+SCARED SHE WAS SHAKY
+Date/Time: 12/27/2024 13:18 User: katemo Action: Narrative Added
+Description: THE CALLER IS IN A GRY
+NISS ALTI CLOSE TO THE BUS
+STOP IN FRONT OF THE PICK
+UP WHERE IT SAYS
+PHARMACY DRIVE THRU
+Date/Time: 12/27/2024 13:20 User: katemo Action: Critical Narrative Added
+Description: 2ND CALLER WOULD LIKE
+THE OFFICER TO STOP AND
+SPEAK WITH HER
+Date/Time: 12/27/2024 13:21 User: jamileth Action: Unit Status Action
+Description: Unit 357 On Scene
+Date/Time: 12/27/2024 13:21 User: jamileth Action: Unit Location
+Description: Unit 357 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 13:21 User: jamileth Action: Unit Status Action
+Description: Unit 361 On Scene
+Login Id: sprd\lindake Page 7 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:22 User: gingerev Action: Unit Location
+Description: Unit 357 Secondary Location:
+WALMART JENNIFER
+Date/Time: 12/27/2024 13:22 User: gingerev Action: Unit Location
+Description: Unit 361 Secondary Location:
+WALMART JENNIFER
+Date/Time: 12/27/2024 13:23 User: jamileth Action: Unit Status Action
+Description: Unit 313 T12
+Date/Time: 12/27/2024 13:23 User: jamileth Action: Narrative Added
+Description: 313/T12
+Date/Time: 12/27/2024 13:25 User: jamileth Action: Unit Location
+Description: Unit 409 Secondary Location:
+Secondary Location Cleared
+Date/Time: 12/27/2024 13:25 User: jamileth Action: Unit Status Action
+Description: Unit 409 Dispatched
+Date/Time: 12/27/2024 13:25 User: jamileth Action: Unit Status Action
+Description: Unit 409 Available
+Date/Time: 12/27/2024 13:29 User: jamileth Action: Narrative Added
+Description: 313/ SHOWS US BACK ENRT
+PERIMETER OF THE OZARKS
+Date/Time: 12/27/2024 13:29 User: jamileth Action: Unit Status Action
+Description: Unit 359 Responding 2nd
+Date/Time: 12/27/2024 13:29 User: jamileth Action: Unit Status Action
+Description: Unit 359 On Scene 2nd
+Date/Time: 12/27/2024 13:29 User: jamileth Action: Unit Status Action
+Description: Unit 313 Responding
+Date/Time: 12/27/2024 13:29 User: jamileth Action: Unit Location
+Description: Unit 313 Secondary Location
+Removed
+Date/Time: 12/27/2024 13:30 User: jamileth Action: Unit Status Action
+Description: Unit 357 Available
+Date/Time: 12/27/2024 13:30 User: jamileth Action: Unit Status Action
+Description: Unit 361 Available
+Date/Time: 12/27/2024 13:30 User: jamileth Action: Narrative Added
+Description: 361/ANSWERED CALLERS
+QUESTIONS
+Date/Time: 12/27/2024 13:31 User: jamileth Action: Unit Status Action
+Description: Unit 313 On Scene
+Date/Time: 12/27/2024 13:35 User: jamileth Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Login Id: sprd\lindake Page 8 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:35 User: jamileth Action: Narrative Added
+Description: 359/PT HAS BEEN
+RETURNED, REPORT FILED
+Date/Time: 12/27/2024 13:35 User: jamileth Action: Unit Status Action
+Description: Unit 313 Available
+Date/Time: 12/27/2024 13:35 User: jamileth Action: Unit Status Action
+Description: Unit 359 Available
+Date/Time: 12/27/2024 13:35 User: jamileth Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 12/27/2024 12:41 Unit Number: 359 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 12:41 Unit Number: 359 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 12:41 Unit Number: 382 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 12:41 Unit Number: 382 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 12:42 Unit Number: 359 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/27/2024 12:42 Unit Number: 382 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/27/2024 12:42 Unit Number: 313 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 12:42 Unit Number: 313 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/27/2024 12:42 Unit Number: 313 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 12:43 Unit Number: 107 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Login Id: sprd\lindake Page 9 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 12:43 Unit Number: 107 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 12:43 Unit Number: 107 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 12:47 Unit Number: 382 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 12:58 Unit Number: 359 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 13:00 Unit Number: 313 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 13:04 Unit Number: 382 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:04 Unit Number: 382 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:05 Unit Number: 107 Action: Unit Status Change
+Description: T19
+Date/Time: 12/27/2024 13:05 Unit Number: 107 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:05 Unit Number: 107 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:12 Unit Number: 313 Action: Unit Location
+Description: WALMART NEIGHBORHOOD
+MARKET
+Date/Time: 12/27/2024 13:12 Unit Number: 313 Action: Unit Status Change
+Description: Responding 2nd
+Date/Time: 12/27/2024 13:13 Unit Number: 382 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 13:13 Unit Number: 382 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/27/2024 13:13 Unit Number: 382 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 13:13 Unit Number: 361 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 13:13 Unit Number: 361 Action: Unit Status Change
+Description: Responding
+Login Id: sprd\lindake Page 10 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:13 Unit Number: 361 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 13:14 Unit Number: 382 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:14 Unit Number: 382 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:17 Unit Number: 313 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 12/27/2024 13:21 Unit Number: 357 Action: Unit Location
+Description: 2466 S 48TH ST B,
+SPRINGDALE
+Date/Time: 12/27/2024 13:21 Unit Number: 357 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 13:21 Unit Number: 357 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 13:21 Unit Number: 357 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 13:21 Unit Number: 361 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 13:22 Unit Number: 357 Action: Unit Location
+Description: WALMART JENNIFER
+Date/Time: 12/27/2024 13:22 Unit Number: 361 Action: Unit Location
+Description: WALMART JENNIFER
+Date/Time: 12/27/2024 13:23 Unit Number: 313 Action: Unit Status Change
+Description: T12
+Date/Time: 12/27/2024 13:25 Unit Number: 409 Action: Unit Status Change
+Description: Dispatched Call Number:
+937, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Missing
+Date/Time: 12/27/2024 13:25 Unit Number: 409 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 13:25 Unit Number: 409 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:25 Unit Number: 409 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:29 Unit Number: 359 Action: Unit Status Change
+Description: Responding 2nd
+Login Id: sprd\lindake Page 11 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Date/Time: 12/27/2024 13:29 Unit Number: 359 Action: Unit Status Change
+Description: On Scene 2nd
+Date/Time: 12/27/2024 13:29 Unit Number: 313 Action: Unit Status Change
+Description: Responding
+Date/Time: 12/27/2024 13:29 Unit Number: 313 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 12/27/2024 13:30 Unit Number: 357 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:30 Unit Number: 357 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:30 Unit Number: 361 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:30 Unit Number: 361 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:31 Unit Number: 313 Action: Unit Status Change
+Description: On Scene
+Date/Time: 12/27/2024 13:35 Unit Number: 313 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:35 Unit Number: 313 Action: Unit Status Change
+Description: Available
+Date/Time: 12/27/2024 13:35 Unit Number: 359 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 12/27/2024 13:35 Unit Number: 359 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: brandibu Date Entered: 12/27/2024 12:41
+PT WITH THE CENTER JUST RAN AWAY AND THEY ARE NEEDING HELP
+Entered By: brandibu Date Entered: 12/27/2024 12:41
+HOPPED THE FENCE TOWARD THE INTERSTATE AND HEADED TOWARD WATKINS AVE
+Entered By: brandibu Date Entered: 12/27/2024 12:42
+RUNAWAY IS W/F SOME AMERICAN INDIAN, HAIR IN A PONYTAIL, NLK HAIR, WINNIE THE POOH PANTS AND
+THE SHIRT WAS BLK OR NAVY BLU SWEATER
+Entered By: brandibu Date Entered: 12/27/2024 12:42
+DIDNT TAKE ANYTHING WITH HER
+Login Id: sprd\lindake Page 12 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Narratives
+Entered By: brandibu Date Entered: 12/27/2024 12:42
+HAPPENED A FEW MINUTES AGO
+Entered By: brandibu Date Entered: 12/27/2024 12:42
+Entered By: gingerev Date Entered: 12/27/2024 12:43
+313/ ENRT WITH DRONE
+Entered By: brandibu Date Entered: 12/27/2024 12:43
+THEY CAN NO LONGER SEE HER, AND NO ONE HAS SIGHT OF HER
+Entered By: brandibu Date Entered: 12/27/2024 12:43
+UNK WHERE SHE MAY BE GOING SHE IS FROM SOUTH DAKOTA
+Entered By: brandibu Date Entered: 12/27/2024 12:43
+SO
+Entered By: stefanyca Date Entered: 12/27/2024 12:51
+107/ YOA THAT IS ALL I COULD GET FROM THE NURSE HUNTER
+Entered By: gingerev Date Entered: 12/27/2024 12:51
+107/ THERE IS NO MORE INFORMATION TO GATHER AT PERIMETER, WE WILL BE OUT CHECKING
+Entered By: jamileth Date Entered: 12/27/2024 13:04
+382/ T8 UTL
+Entered By: stefanyca Date Entered: 12/27/2024 13:04
+Entered By: stefanyca Date Entered: 12/27/2024 13:08
+671/ NOTIFIED STATE POLICE
+Entered By: katemo Date Entered: 12/27/2024 13:12
+CALLER IS STATING SHE FOUND A JUVENILE FEMALE AT THE DOG PARK AND SHE GAVE HER A RIDE TO THE WALMART NEIGHBORHOOD
+MARKET ON JENNIFER
+Entered By: katemo Date Entered: 12/27/2024 13:12
+THE FEMALE WAS WEARING PAJAMAS BUT THE CALLER GAVE HER CLOTHES
+Entered By: katemo Date Entered: 12/27/2024 13:12
+THE CALLER SAID SHE IS CHANGING INTO BLU HELLO KITTY PAJAMA PANTS AND THEN A BLK HOODIE
+Entered By: katemo Date Entered: 12/27/2024 13:13
+SHE HAD HER PARENT SENT HER TO SCHOOL HERE IN SPRINGDALE AND THAT SHE WAS FROM SOUTH DAKOTA AND TO NOT SNITCH
+ON HER
+Login Id: sprd\lindake Page 13 of 14
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 01/17/2025 10:49
+Agency #: AR0720200
+Narratives
+Entered By: katemo Date Entered: 12/27/2024 13:14
+SHE HAS BLOOD ON HER ANKLE
+Entered By: katemo Date Entered: 12/27/2024 13:14
+SHE IS IN THE ACTUAL STORE OF THE NEIGHBORHOOD MARKET
+Entered By: katemo Date Entered: 12/27/2024 13:14
+THE CALLER SAID THAT THEY WERE AT THE DOG PARK AT THE ROTARY PARK AND THEY PICKED HER UP AND GAVE HER A RIDE TO THE
+STORE
+Entered By: katemo Date Entered: 12/27/2024 13:14
+SHE TOLD THEM SHE WAS GOING TO CATCH A BUS
+Entered By: katemo Date Entered: 12/27/2024 13:15
+THE CALLER SAID SHE TOLD HER SHE WAS GOING TO MEET UP WITH HER COUSIN IN SOUTH DAKOTA
+Entered By: katemo Date Entered: 12/27/2024 13:15
+SHE IS A W/F AND HAD HER LIGHT BRO HAIR IN BUNS ON HER HEAD.
+Entered By: katemo Date Entered: 12/27/2024 13:16
+CALLER IS JOSELIN ALMANZA HER #
+Entered By: katemo Date Entered: 12/27/2024 13:16
+THE CALLER STILL HASN'T SEEN HER COME OUT OF THE STORE.
+Entered By: katemo Date Entered: 12/27/2024 13:17
+CALLER SAID SHE DIDN'T APPEAR TO BE INTOX OR ON DRUGS SHE APPEARED SCARED SHE WAS SHAKY
+Entered By: katemo Date Entered: 12/27/2024 13:18
+THE CALLER IS IN A GRY NISS ALTI CLOSE TO THE BUS STOP IN FRONT OF THE PICK UP WHERE IT SAYS PHARMACY DRIVE THRU
+Entered By: katemo Date Entered: 12/27/2024 13:20
+2ND CALLER WOULD LIKE THE OFFICER TO STOP AND SPEAK WITH HER
+Entered By: jamileth Date Entered: 12/27/2024 13:23
+313/T12
+Entered By: jamileth Date Entered: 12/27/2024 13:29
+313/ SHOWS US BACK ENRT PERIMETER OF THE OZARKS
+Entered By: jamileth Date Entered: 12/27/2024 13:30
+361/ANSWERED CALLERS QUESTIONS
+Entered By: jamileth Date Entered: 12/27/2024 13:35
+359/PT HAS BEEN RETURNED, REPORT FILED
+Login Id: sprd\lindake Page 14 of 14

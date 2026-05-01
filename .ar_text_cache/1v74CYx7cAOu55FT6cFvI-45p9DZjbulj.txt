@@ -1,0 +1,20 @@
+Dispatch Call Detail
+Call #: C687713 - Medical
+Received Date/Time: 02/06/2024 08:44:47 Taken By: Burnett, Amiyah
+Initial Call Type: Medical Caller Name Amb Run#: AM24-00653
+Cleared Date/Time: 02/06/2024 12:36:49 Phone:
+Cleared By: Barber, Kaya Caller Loc.:
+Location: 600 N 7Th ST
+West Memphis, AR 72301
+Units Dispatched
+Dispatched Enroute Arrived Transport Trans Dest Cleared At Station Mileage Trns To
+CR106 - CR106 (Crittenden EMS ) 02/06/2024 02/06/2024 02/06/2024 02/06/2024 02/06/2024 BAPTIST
+08:46:33 08:53:33 09:20:23 09:24:22 09:34:15 CRITTENDEN
+Narrative
+Date/Time Dispatcher Narrative
+02/06/2024 08:44:54 Burnett, Amiyah ANAPHYLACTIC REACTION.. TONGUE SWOLLEN FROM MEDICATION
+02/06/2024 08:46:37 Burnett, Amiyah CREMS ADV 106 WILL BE RESPONDING
+02/06/2024 08:47:18 Burnett, Amiyah PATIENT IN Q2- EMS COME IN AT BACK DOOR
+Dispositions
+Transported,
+Copyright Relativity Inc.© - RPS(Relativity Public Safety) 1 of 1

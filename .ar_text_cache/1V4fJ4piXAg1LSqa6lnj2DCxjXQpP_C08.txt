@@ -1,0 +1,200 @@
+CFS - Command Log Printed on March 20, 2024
+_—_ ite on Maric 20, 2024
+
+CFS # CFS2408038
+Call Taker ALENA BAILEY
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code CITIZEN COMPLAINT : CComplaint
+
+Mod
+
+Priority 4
+
+Use Caution No
+
+Primary Disposition _ Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/23/24 14:52:44
+
+Completed Time 02/23/24 15:13:44
+Reporters
+
+NORRIS, IMMANUEL (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 02/23/24 14:52:44
+
+How Reported
+
+From Phone
+
+Contact Phone (870) 633-3200
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+
+542 542-MITLEFF,DALTON — FCPD (Primary)
+544 (Primary) 544 - COTTRELL, MARCUS FCPD (Primary)
+545 545 - Mitchell, Trenton FCPD (Primary)
+
+Response Times
+
+Assigned 02/23/24 14:55:47 *
+Enroute 02/23/24 14:55:47
+Arrived 02/23/24 15:00:42
+Leaving
+
+Arrived At
+
+Completed 02/23/24 15:13:44
+
+IR / External Agency Numbers
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+02/23/24 14:52:44 | BAILEY, ALENA | New CFS
+02/23/24 14:54:04 | BAILEY, ALENA | CALLER ADVISED THAT HE HAS A RESIDENT THAT THEY HAVE FOUND
+
+AE
+
+Page 1 of 2
+
+
+DRUGS ON
+02/23/24 14:55:47 | BAILEY, ALENA | 544 | Enroute
+02/23/24 15:00:42 | BAILEY, ALENA | 544 | On Scene
+02/23/24 15:03:23 | BAILEY, ALENA | 545 | On Scene
+02/23/24 15:03:58 | BAILEY, ALENA | 542 | On Scene
+02/23/24 15:12:52 | MORGAN, SYDNEY | 544 | Available
+02/23/24 15:12:57 | MORGAN, SYDNEY | 545 | Available
+02/23/24 15:13:44 | MORGAN, SYDNEY | 542 | Complete
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location '
+Accuracy
+
+eee
+
+Page 2 of 2
+
+
+CES - Unit Response Times Printed on March 20, 2024
+on Mac 2, 2024
+
+CFS # CFS2408038
+Call Taker ALENA BAILEY
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (WOODRIDGE BEHAVIORAL CENTER)
+
+Location Details
+Primary Incident Code CITIZEN COMPLAINT : CComplaint
+
+Mod
+
+Priority 4
+
+Use Caution No
+
+Primary Disposition Handled By Officer / Deputy
+
+Beat
+
+Zone Forrest City Police Department
+
+Call Time 02/23/24 14:52:44
+
+Completed Time 02/23/24 15:13:44
+Reporters
+
+NORRIS, IMMANUEL (Initial Reporter)
+
+Sex
+
+DOB
+
+Address
+
+Report Time 02/23/24 14:52:44
+
+How Reported
+
+From Phone
+
+Contact Phone (870) 633-3200
+
+Comments
+
+Other Names
+
+Vehicles
+
+Responders
+542 542-MITLEFF,DALTON — FCPD (Primary)
+544 (Primary) 544 - COTTRELL, MARCUS FCPD (Primary)
+545 545 - Mitchell, Trenton FCPD (Primary)
+
+Response Times
+
+Assigned 02/23/24 14:55:47 *
+Enroute 02/23/24 14:55:47
+Arrived 02/23/24 15:00:42
+Leaving
+
+Arrived At
+
+Completed 02/23/24 15:13:44
+
+IR / External Agency Numbers
+Officer Addenda
+
+Unit Response Times
+
+Non Unit Specific Times
+02/23/24 14:52:44 | New CFS
+
+Page 1 of 2
+
+
+02/23/24 14:54:04 | CALLER ADVISED THAT HE HAS A RESIDENT THAT THEY HAVE FOUND DRUGS ON
+
+542
+02/23/24 15:03:58 | On Scene
+
+02/23/24 15:13:44 | Complete
+
+544
+02/23/24 14:55:47 | Enroute
+
+02/23/24 15:00:42 | On Scene
+02/23/24 15:12:52 | Available
+
+545
+02/23/24 15:03:23 | On Scene
+
+02/23/24 15:12:57 | Available
+
+eee
+
+Page 2 of 2

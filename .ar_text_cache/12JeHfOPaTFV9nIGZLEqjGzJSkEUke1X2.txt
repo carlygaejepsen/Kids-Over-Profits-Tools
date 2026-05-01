@@ -1,0 +1,150 @@
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 10:18
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00037226 Incident Type: Hangup Call Date/Time: 06/07/2025 11:25
+Location 2601 HABBERTON RD, Location Originating Call (479) 396-6951
+Formatted: SPRINGDALE, 72764 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: 911
+Units/Personnel
+Unit: 353 Primary Unit: Yes Call Date/Time: 06/07/2025 11:26
+Personnel: 21 - Booth, Donald Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown Location
+Formatted:
+Primary Contact (479) 396-6951 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 06/07/2025 11:42
+Evidence
+Call Log
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2601
+HABBERTON RD,
+SPRINGDALE
+User: testing, cad - system Action: Alerts Retrieval
+Login Id: SPRD\fabiolara Page 1 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 10:18
+Agency #: AR0720200
+Date/Time: 06/07/2025 11:25
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2601 HABBERTON
+RD
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Location
+Description: Cross streets updated, E
+ROBINSON AVE / E DON
+TYSON PKY
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Hangup, Status: In
+Progress, Priority: 2
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Call Updated
+Description: Caller Phone Changed to
+(479) 396-6951
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Call Updated
+Description: Call Source Changed From
+Admin Phone Line To 911
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Narrative Added
+Description: 15 meters
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Narrative Added
+Description: CALLED BACK NO ANSWER
+Date/Time: 06/07/2025 11:25 User: jessicaar Action: Narrative Added
+Description: THEY CALLED 911 AND
+HUNG UP RIGHT AWAY
+Date/Time: 06/07/2025 11:26 User: karlago Action: Unit Status Action
+Description: Unit 353 Responding
+Date/Time: 06/07/2025 11:26 User: karlago Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00037226
+Date/Time: 06/07/2025 11:26 User: karlago Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 06/07/2025 11:26 User: karlago Action: Unit Location
+Description: Unit 353 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/07/2025 11:32 User: karlago Action: Unit Status Action
+Description: Unit 353 On Scene
+User: karlago Action: Narrative Added
+Login Id: SPRD\fabiolara Page 2 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 10:18
+Agency #: AR0720200
+Date/Time: 06/07/2025 11:42
+Description: 353/ CONFIRMED
+ACCIDENTAL T98 F2 NO
+EMERGENCY
+Date/Time: 06/07/2025 11:42 User: karlago Action: Disposition Changed
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 06/07/2025 11:42 User: karlago Action: Unit Status Action
+Description: Unit 353 Available
+Date/Time: 06/07/2025 11:42 User: karlago Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 06/07/2025 11:26 Unit Number: 353 Action: Unit Status Change
+Description: Dispatched Call Number:
+328, Assigned Location: 2601
+HABBERTON RD,
+SPRINGDALE, Call Type:
+Hangup
+Date/Time: 06/07/2025 11:26 Unit Number: 353 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/07/2025 11:26 Unit Number: 353 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/07/2025 11:32 Unit Number: 353 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/07/2025 11:42 Unit Number: 353 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/07/2025 11:42 Unit Number: 353 Action: Unit Status Change
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: jessicaar Date Entered: 06/07/2025 11:25
+15 meters
+Entered By: jessicaar Date Entered: 06/07/2025 11:25
+CALLED BACK NO ANSWER
+Entered By: jessicaar Date Entered: 06/07/2025 11:25
+THEY CALLED 911 AND HUNG UP RIGHT AWAY
+Login Id: SPRD\fabiolara Page 3 of 4
+
+Springdale Police Department
+Incident Report
+Agency: Springdale Police Department Print Date/Time: 06/18/2025 10:18
+Agency #: AR0720200
+Narratives
+Entered By: karlago Date Entered: 06/07/2025 11:42
+353/ CONFIRMED ACCIDENTAL T98 F2 NO EMERGENCY
+Login Id: SPRD\fabiolara Page 4 of 4

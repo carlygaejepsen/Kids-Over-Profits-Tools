@@ -1,0 +1,255 @@
+CES - Command Log
+
+CFS # CFS2318930
+
+Call Taker CALANDRA HENDERSON
+Location
+Location Details
+Primary Incident Code RUNAWAY : Runaway
+
+Mod Report Needed
+
+Priority 1
+
+Use Caution No
+
+Primary Disposition | Handled By Officer / Deputy
+Beat
+
+Zone Forrest City Police Department
+Call Time 05/21/23 11:35:11
+
+Completed Time 05/21/23 11:55:03
+
+Reporters
+
+EMPLOYEE (Initial Reporter
+Sex
+
+DOB
+Address
+Report Time
+How Reported
+From Phone
+Contact Phone (870) 633-3200
+Comments
+
+05/21/23 11:35:11
+
+Other Names
+
+Vehicles
+
+Responders
+
+514 (Primary) 514 - FRYER, TAMEKA
+515 515 - KEYS, PHILLIP
+
+Response Times
+Assigned 05/21/23 11:36:22 *
+
+Enroute 09/21/23 11:36:22
+Arrived 05/21/23 11:40:10
+Leaving
+
+Arrived At
+
+Completed 05/21/23 11:55:03
+
+IR / External Agency Numbers
+FCPD2023048p6
+
+Officer Addenda
+
+Printed on June 20, 2023
+
+1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+FCPD (Primary)
+FCPD (Primary)
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+05/21/23 11:35)11 | HENDERSON, CALANDRA | New CFS
+
+05/21/23 11:36|22 | HENDERSON, CALANDRA | 514, 515 | Enroute
+
+Page 1 of 2
+
+
+05/21/23 11:37:38 | HENDERSON, CALANDRA | CALLER ADVISED THAT ONE OF THEIR JUVENILES RAN
+AWAY .ADVISED THAT SUBJECT RAN INTO WOODS.W/M WEARING BLUE SWEATSHIRT/BLUE SHORTS
+05/21/23 11:40:10 | HENDERSON, CALANDRA | 514 | On Scene
+
+05/21/23 11:42:23 | MORGAN, SYDNEY | 515 | On Scene
+
+05/21/23 11:45:34 | MORGAN, SYDNEY | 514 | Clear Alarms
+
+05/21/23 11:49:25 | MORGAN, SYDNEY | 515 | Clear Alarms
+
+05/21/23 11:50:36 | HENDERSON, CALANDRA | 515 | On Scene
+
+05/21/23 11:54:23 | HENDERSON, CALANDRA | EVENT#2305210015
+
+05/21/23 11:55:03 | HENDERSON, CALANDRA | 514, 515 | Complete
+
+Received At
+Location ;
+Accuracy
+
+Page 2 of 2
+
+
+CES - Command Log Printed on June 20, 2023
+
+CFS # CFS2318933
+Call Taker CALANDRA HENDERSON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+
+Primary Incident Code PATROL : Patrol Activities
+Mod Non Emergency Fire/Medical
+Priority 3
+
+Use Caution No
+
+Primary Disppsition — Handled By Officer / Deputy
+Beat
+
+Zone Forrest City Police Department
+Call Time 05/21/23 12:06:05
+
+Completed Time 05/21/23 13:00:56
+
+Reporters
+
+FCED (Initial Reporter
+
+Sex
+
+DOB
+
+Address
+
+Report Time | 05/21/23 12:06:05
+How Reported
+
+From Phone
+
+Contact Phone
+
+Comments
+
+Other Names|
+
+Vehicles
+
+Responders
+FCE1 (Primary) — FCFD, Engine CO 1 FCFD (Primary)
+FCE2 FCFD, Engine Co 2 FCFD (Primary)
+513 (Primary) 513 - WILLIAMS, JERRY FCPD
+
+Response Times
+
+Assigned 05/21/23 12:06:16 *
+Enroute 05/P1/23 12:06:16
+Arrived 05/21/23 12:08:06
+Leaving
+
+Arrived At
+
+Completed 05/21/23 13:00:56
+
+IR / External Agency Numbers
+FCFD 202300648
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+05/21/23 12:06:d5 | HENDERSON, CALANDRA | New CFS
+
+Page 1 of 2
+
+
+05/21/23 12:06:16 | FCFD, Engine Co 1 | FCE21 | Enroute
+
+05/21/23 12:46:38 | HENDERSON, CALANDRA | SETTING UP DRONE FOR RUNAWAY JUVENILE
+05/21/23 12:07:10 | HENDERSON, CALANDRA | 513 | Enroute
+
+05/21/23 12:48:06 | FCFD, Engine CO 1| FCE1 | On Scene
+
+05/21/23 12:98:31 | HENDERSON, CALANDRA | FCFD ADVISED THAT THEY WILL BE SETTING UP BY CHURCH
+
+05/21/23 12:
+05/21/23 12:
+
+Received At
+Location
+Accuracy
+
+‘35 | HENDERSON, CALANDRA | 513 | On Scene
+
+:31 | FCFD, Engine Co 2 | FCE2 | Enroute
+
+:28 | MORGAN, SYDNEY | FCE1 | Clear Alarms
+
+59 | MORGAN, SYDNEY | 513 | Clear Alarms
+
+22 | HENDERSON, CALANDRA | FCFD ADVISED SUBJECT WAS WALKING NORTH ON KITTLE
+
+:24 | HENDERSON, CALANDRA | FCFD ADVISED GLENGERRY/KITTLE RD
+:15 | HENDERSON, CALANDRA | 513 ADVISED HAVE JUVENILE IN CUSTODY
+:21 | HENDERSON, CALANDRA | B/M 12754
+
+‘40 | HENDERSON, CALANDRA | E/M 12755@1245
+
+:29 | MORGAN, SYDNEY | 513 | Clear Alarms
+
+:46 | HENDERSON, CALANDRA | ENTRY REVISED - E/M 12755@1245
+
+:48 | FCFD, Engine CO 1 | FCE1 | Available
+
+‘56 | HENDERSON, CALANDRA | 513, FCE2 | Complete
+
+Page 2 of 2
+
+
+FORREST CITY Call For Service
+
+PARTMENT Event Detail Page
+
+Event #
+
+Print Date
+2305210017 06/20/2023
+
+County ST FRA State AR
+
+REPORTING PARTY INFORMATION
+ut QFFICER WILLIAMS 556
+Pe Se ee
+
+RESPONSE INFORMATION
+
+Total Consumed
+
+Minutes of all
+one | otic SSSOSC~*& és t
+
+Dispatch Ti
+
+a
+CALL DETAILS
+
+| Call Type 46 FIELD INTERVIEW CONTACTS Priority
+
+Description :
+JUVENILE
+
+Disposition © CALL CLEARED EMD Code
+Comments
+
+is
+
+in mon UT

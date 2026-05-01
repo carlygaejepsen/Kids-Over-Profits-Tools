@@ -1,0 +1,214 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+General Information
+Incident Number: 2025-00014995 Incident Type: Missing Call Date/Time: 03/11/2025 13:29
+Location 2466 S 48TH ST, Location Originating Call (903) 277-2160
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 2
+Source: Admin Phone Line
+Units/Personnel
+Unit: 365 Primary Unit: Yes Call Date/Time: 03/11/2025 13:30
+Personnel: 353 - Jorgenson, Gauge Primary: Yes
+Unit: 347 Primary Unit: No Call Date/Time: 03/11/2025 13:30
+Personnel: 127 - Mesinar, Chandler Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, BRUCE Location
+Formatted:
+Primary Contact (903) 277-2160 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: TRAFFIC STOP OR CITIZEN Count: 1 Unit:
+CONTACT
+Date/Time: 03/11/2025 13:51
+Evidence
+Call Log
+Date/Time: 03/11/2025 13:29 User: monicade Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 03/11/2025 13:29 User: monicade Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 03/11/2025 13:29 User: monicade Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Login Id: SPRD\baileyjo Page 1 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Date/Time: 03/11/2025 13:29 User: monicade Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 03/11/2025 13:29 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 03/11/2025 13:29 User: monicade Action: Call Updated
+Description: Caller Phone Changed to
+(903) 277-2160
+Date/Time: 03/11/2025 13:29 User: monicade Action: Call Updated
+Description: Caller Added: Role - Caller;
+Date/Time: 03/11/2025 13:29 User: monicade Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Missing, Status: Not In
+Progress, Priority: 3
+Date/Time: 03/11/2025 13:29 User: monicade Action: Call Updated
+Description: Police Priority changed from
+3 to 2
+Date/Time: 03/11/2025 13:29 User: monicade Action: Call Updated
+Description: Police Call Status Changed
+from Not In Progress to In
+Progress
+Date/Time: 03/11/2025 13:29 User: monicade Action: Narrative Added
+Description: CALLER DV THAT ONE OF
+THE OLDER KIDS IS LEAVING
+AND WALKING OUT OF THE
+BUILDING
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2025-
+00014995
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Unit Location
+Description: Unit 365 Secondary Location:
+Secondary Location Cleared
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Unit Status Action
+Description: Unit 365 Dispatched
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Unit Status Action
+Description: Unit 347 Dispatched
+User: stefanyca Action: Unit Location
+Login Id: SPRD\baileyjo Page 2 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Date/Time: 03/11/2025 13:30
+Description: Unit 347 Secondary Location:
+Secondary Location Cleared
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Unit Status Action
+Description: Unit 365 Responding
+Date/Time: 03/11/2025 13:30 User: stefanyca Action: Unit Status Action
+Description: Unit 347 Responding
+Date/Time: 03/11/2025 13:31 User: brandibu Action: Narrative Added
+Description: FEMALE IS
+LSW BLUE SHIRT
+Date/Time: 03/11/2025 13:31 User: brandibu Action: Narrative Added
+Description: W/F
+Date/Time: 03/11/2025 13:31 User: brandibu Action: Narrative Added
+Description: IS NOW SITTING IN THE
+GRASS
+Date/Time: 03/11/2025 13:32 User: brandibu Action: Narrative Added
+Description: WAS TRYING TO JUMP IN
+FRONT OF TRAFFIC EARLIER
+TO HURT HERSELF AS WELL
+Date/Time: 03/11/2025 13:32 User: brandibu Action: Narrative Added
+Description: IS NO LONGER TRYING TO
+RUN AWAY BUT THEY DO
+STILL WANT OFFICERS TO
+COME OUT
+Date/Time: 03/11/2025 13:32 User: brandibu Action: Call Updated
+Description: Caller Updated: Name
+Changed from to , BRUCE
+Date/Time: 03/11/2025 13:34 User: stefanyca Action: Unit Status Action
+Description: Unit 347 On Scene
+Date/Time: 03/11/2025 13:41 User: stefanyca Action: Narrative Added
+Description: 347/ 15 YOA CONX
+BREATHING SUICIDAL
+IDEATIONS
+Date/Time: 03/11/2025 13:43 User: stefanyca Action: Narrative Added
+Description: 347/ INSIDE THE BUILDING
+Date/Time: 03/11/2025 13:43 User: stefanyca Action: Unit Status Action
+Description: Unit 365 On Scene
+Date/Time: 03/11/2025 13:51 User: stefanyca Action: Narrative Added
+Description: 365/ BEING TRANSPORTED
+TO CHILDREN, T98 F2
+User: stefanyca Action: Disposition Changed
+Login Id: SPRD\baileyjo Page 3 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Date/Time: 03/11/2025 13:51
+Description: Added: TRAFFIC STOP OR
+CITIZEN CONTACT Count 1
+Date/Time: 03/11/2025 13:51 User: stefanyca Action: Unit Status Action
+Description: Unit 365 Available
+Date/Time: 03/11/2025 13:51 User: stefanyca Action: Unit Status Action
+Description: Unit 347 Available
+Date/Time: 03/11/2025 13:51 User: stefanyca Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 03/11/2025 13:30 Unit Number: 365 Action: Unit Status Change
+Description: Dispatched Call Number:
+617, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Missing
+Date/Time: 03/11/2025 13:30 Unit Number: 365 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 03/11/2025 13:30 Unit Number: 347 Action: Unit Status Change
+Description: Dispatched Call Number:
+617, Assigned Location: 2466
+S 48TH ST, SPRINGDALE, Call
+Type: Missing
+Date/Time: 03/11/2025 13:30 Unit Number: 347 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 03/11/2025 13:30 Unit Number: 365 Action: Unit Status Change
+Description: Responding
+Date/Time: 03/11/2025 13:30 Unit Number: 347 Action: Unit Status Change
+Description: Responding
+Date/Time: 03/11/2025 13:34 Unit Number: 347 Action: Unit Status Change
+Description: On Scene
+Date/Time: 03/11/2025 13:43 Unit Number: 365 Action: Unit Status Change
+Description: On Scene
+Date/Time: 03/11/2025 13:51 Unit Number: 365 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 03/11/2025 13:51 Unit Number: 365 Action: Unit Status Change
+Description: Available
+Date/Time: 03/11/2025 13:51 Unit Number: 347 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 03/11/2025 13:51 Unit Number: 347 Action: Unit Status Change
+Description: Available
+Login Id: SPRD\baileyjo Page 4 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 03/18/2025 09:21
+Agency #: AR0720200
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: monicade Date Entered: 03/11/2025 13:29
+CALLER DV THAT ONE OF THE OLDER KIDS IS LEAVING AND WALKING OUT OF THE BUILDING
+Entered By: brandibu Date Entered: 03/11/2025 13:31
+FEMALE IS LSW BLUE SHIRT
+Entered By: brandibu Date Entered: 03/11/2025 13:31
+W/F
+Entered By: brandibu Date Entered: 03/11/2025 13:31
+IS NOW SITTING IN THE GRASS
+Entered By: brandibu Date Entered: 03/11/2025 13:32
+WAS TRYING TO JUMP IN FRONT OF TRAFFIC EARLIER TO HURT HERSELF AS WELL
+Entered By: brandibu Date Entered: 03/11/2025 13:32
+IS NO LONGER TRYING TO RUN AWAY BUT THEY DO STILL WANT OFFICERS TO COME OUT
+Entered By: stefanyca Date Entered: 03/11/2025 13:41
+347/ 15 YOA CONX BREATHING SUICIDAL IDEATIONS
+Entered By: stefanyca Date Entered: 03/11/2025 13:43
+347/ INSIDE THE BUILDING
+Entered By: stefanyca Date Entered: 03/11/2025 13:51
+365/ BEING TRANSPORTED TO CHILDREN, T98 F2
+Login Id: SPRD\baileyjo Page 5 of 5

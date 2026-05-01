@@ -1,0 +1,27 @@
+Dispatch Call Detail
+Call #: C661579 - EMS Assist
+Received Date/Time: 06/21/2023 11:56:32 Taken By: Jeffords, Sarah
+Initial Call Type: EMS Assist Caller Name Amb Run#: AM23-02966
+Cleared Date/Time: 06/21/2023 15:47:16 Phone: Fire Run#: FM23-01089
+Cleared By: Warren, Mandi Caller Loc.:
+Controlled:
+Location: 600 N 7Th ST
+West Memphis, AR 72301
+Units Dispatched
+Dispatched Enroute Arrived Transport Trans Dest Cleared At Station Mileage Trns To
+L1 - Ladder 1 (West Memphis Fire 06/21/2023 06/21/2023 06/21/2023 06/21/2023
+Dept) 11:59:39 12:01:42 12:03:30 12:14:00
+U13 - Unit 13 (West Memphis Fire 06/21/2023 06/21/2023 06/21/2023 06/21/2023 06/21/2023 06/21/2023 0.1-9.4 LEBONHEUR
+Dept Medical) 11:59:47 12:01:33 12:07:12 12:15:29 12:30:12 15:45:59
+Narrative
+Date/Time Dispatcher Narrative
+06/21/2023 11:56:48 Jeffords, Sarah ADV DRUNK BLEACH. CURRENTLY RESTRAINED.
+06/21/2023 12:20:32 Jeffords, Sarah U13 BEBOUT/ WOOSLEY
+LADDER 1 BAILEY/HOLLOWAY/ SHARP
+06/21/2023 12:24:20 Johnson, Kymara U13 ADV THE PATIENT IS ATTEMPTING TO OPEN THE DOOR ON THE BRIDGE... ADV
+TO CONTACT LEBONHEUR TO HAVE THEM ON STANDBY
+06/21/2023 12:24:53 Johnson, Kymara U13 DECLINED PD, ADV THEY CAN MAKE IT TO THE HOSPITAL
+06/21/2023 12:25:30 Johnson, Kymara LEBONHEUR HAS BEEN NOTIFIED
+Dispositions
+Incident Report, Transported,
+Copyright Relativity Inc.© - RPS(Relativity Public Safety) 1 of 1

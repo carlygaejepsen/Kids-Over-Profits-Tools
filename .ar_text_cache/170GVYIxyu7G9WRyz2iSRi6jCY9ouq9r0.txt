@@ -1,0 +1,256 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00039594 Incident Type: Disturbance Call Date/Time: 06/22/2024 13:13
+Location 2466 S 48TH ST B, Location PERIMETER OF THE OZARKS Originating Call (479) 644-0711
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 1
+Source: Admin Phone Line
+Units/Personnel
+Unit: 368 Primary Unit: No Call Date/Time: 06/22/2024 13:16
+Personnel: 178 - Shirrel, Christopher Primary: Yes
+Unit: 318 Primary Unit: No Call Date/Time: 06/22/2024 13:14
+Personnel: 10 - Baker, David Primary: Yes
+Unit: 402 Primary Unit: Yes Call Date/Time: 06/22/2024 13:14
+Personnel: 11 - Baker, Ricky Primary: No
+Unit: 402 Primary Unit: Yes Call Date/Time: 06/22/2024 13:14
+Personnel: 9713 - Townley, Anthony Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: Yes Non-Disclosure: No
+Subject Type: Adult Name Formatted: Unknown, RENEE Location
+Formatted:
+Primary Contact (479) 644-0711 Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Hair Color:
+Eye Color:
+Disposition
+Disposition: Complaint Only Count: 1 Unit:
+Date/Time: 06/22/2024 13:58
+Evidence
+Call Log
+Date/Time: 06/22/2024 13:13 User: monicade Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 06/22/2024 13:13 User: monicade Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Login Id: SPRD\baileyjo Page 1 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+Date/Time: 06/22/2024 13:13 User: monicade Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+Date/Time: 06/22/2024 13:13 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 06/22/2024 13:13 User: monicade Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 06/22/2024 13:13 User: monicade Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE, B
+(PERIMETER OF THE OZARKS)
+Date/Time: 06/22/2024 13:13 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 06/22/2024 13:13 User: monicade Action: Location
+Description: Cross streets updated,
+PRIVATE DR, ATCHISON AVE /
+SPRINGHOUSE DR
+Date/Time: 06/22/2024 13:13 User: monicade Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Disturbance, Status: In
+Progress, Priority: 1
+Date/Time: 06/22/2024 13:14 User: monicade Action: Narrative Added
+Description: ADV THAT THE SAME
+FEMALE FROM EARLIER WAS
+ASSAULTING EVERYONE
+PHYSICALLY
+Date/Time: 06/22/2024 13:14 User: monicade Action: Narrative Added
+Description: HAVE HER IN THE
+SECLUSION ROOM
+Date/Time: 06/22/2024 13:14 User: monicade Action: Call Updated
+Description: Caller Added: First Name -
+RENEE; Role - Caller;
+Date/Time: 06/22/2024 13:14 User: monicade Action: Narrative Added
+Description: NO LONGER PHYSICALL
+User: gingerev Action: Call Ready for Dispatch
+Login Id: SPRD\baileyjo Page 2 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+Date/Time: 06/22/2024 13:14
+Description: Call marked ready for
+dispatch
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00039594
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Status Action
+Description: Unit 402 Dispatched
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Location
+Description: Unit 402 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/22/2024 13:14 User: monicade Action: Call Updated
+Description: Caller Phone Changed to
+(479) 644-0711
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Location
+Description: Unit 318 Secondary Location:
+Secondary Location Cleared
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Status Action
+Description: Unit 318 Dispatched
+Date/Time: 06/22/2024 13:14 User: monicade Action: Narrative Added
+Description: ADV THAT OFFICERS JUST
+LEFT AND SHE STARTED
+AGAIN
+Date/Time: 06/22/2024 13:14 User: monicade Action: Narrative Added
+Description: NO ONE INJURED
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Status Action
+Description: Unit 402 Responding
+Date/Time: 06/22/2024 13:14 User: gingerev Action: Unit Status Action
+Description: Unit 318 Responding
+Date/Time: 06/22/2024 13:15 User: monicade Action: Narrative Added
+Description: WAS TOLD TO CALL BACK
+AND OFFICERS COULD TAKE
+HER TO JDC IF SHE DID IT
+AGAIN
+Date/Time: 06/22/2024 13:16 User: gingerev Action: Unit Status Action
+Description: Unit 318 exchanged with 368
+Date/Time: 06/22/2024 13:16 User: gingerev Action: Unit Status Action
+Description: Unit 368 Dispatched
+Date/Time: 06/22/2024 13:16 User: gingerev Action: Unit Status Action
+Description: Unit 318 Available
+User: gingerev Action: Unit Status Action
+Login Id: SPRD\baileyjo Page 3 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+Date/Time: 06/22/2024 13:16
+Description: Unit 368 Responding
+Date/Time: 06/22/2024 13:27 User: gingerev Action: Unit Status Action
+Description: Unit 402 On Scene
+Date/Time: 06/22/2024 13:30 User: gingerev Action: Unit Status Action
+Description: Unit 368 On Scene
+Date/Time: 06/22/2024 13:45 User: gingerev Action: Unit Status Action
+Description: Unit 402 T15
+Date/Time: 06/22/2024 13:45 User: gingerev Action: Unit Status Action
+Description: Unit 402 T19
+Date/Time: 06/22/2024 13:46 User: gingerev Action: Narrative Added
+Description: 402/ T15 T19 WITH XRAY JUV
+Date/Time: 06/22/2024 13:46 User: gingerev Action: Unit Status Action
+Description: Unit 368 Available
+Date/Time: 06/22/2024 13:58 User: roxxanaan Action: Unit Status Action
+Description: Unit 402 T81
+Date/Time: 06/22/2024 13:58 User: gingerev Action: Unit Status Action
+Description: Unit 402 Available
+Date/Time: 06/22/2024 13:58 User: gingerev Action: Disposition Changed
+Description: Added: Complaint Only
+Count 1
+Date/Time: 06/22/2024 13:58 User: gingerev Action: Call Cleared
+Description: Close Call
+Unit Log
+Date/Time: 06/22/2024 13:14 Unit Number: 402 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST B, SPRINGDALE
+Date/Time: 06/22/2024 13:14 Unit Number: 402 Action: Unit Status Change
+Description: Dispatched Call Number:
+260, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Disturbance
+Date/Time: 06/22/2024 13:14 Unit Number: 402 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/22/2024 13:14 Unit Number: 318 Action: Unit Location
+Description: Assigned Location: 2466 S
+48TH ST B, SPRINGDALE
+Unit Number: 318 Action: Unit Status Change
+Login Id: SPRD\baileyjo Page 4 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+Date/Time: 06/22/2024 13:14
+Description: Dispatched Call Number:
+260, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Disturbance
+Date/Time: 06/22/2024 13:14 Unit Number: 318 Action: Unit Location
+Description: Secondary Location Cleared
+Date/Time: 06/22/2024 13:14 Unit Number: 402 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/22/2024 13:14 Unit Number: 318 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/22/2024 13:16 Unit Number: 318 Action: Exchanged Units
+Description: 368
+Date/Time: 06/22/2024 13:16 Unit Number: 318 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/22/2024 13:16 Unit Number: 318 Action: Unit Status Change
+Description: Available
+Date/Time: 06/22/2024 13:16 Unit Number: 368 Action: Unit Status Change
+Description: Dispatched Call Number:
+260, Assigned Location: 2466
+S 48TH ST B, SPRINGDALE,
+Call Type: Disturbance
+Date/Time: 06/22/2024 13:16 Unit Number: 368 Action: Unit Status Change
+Description: Responding
+Date/Time: 06/22/2024 13:27 Unit Number: 402 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/22/2024 13:30 Unit Number: 368 Action: Unit Status Change
+Description: On Scene
+Date/Time: 06/22/2024 13:45 Unit Number: 402 Action: Unit Status Change
+Description: T15
+Date/Time: 06/22/2024 13:45 Unit Number: 402 Action: Unit Status Change
+Description: T19
+Date/Time: 06/22/2024 13:46 Unit Number: 368 Action: Unit Cleared
+Description: Unit Cleared From Call
+Date/Time: 06/22/2024 13:46 Unit Number: 368 Action: Unit Status Change
+Description: Available
+Date/Time: 06/22/2024 13:58 Unit Number: 402 Action: Unit Status Change
+Description: T81
+Date/Time: 06/22/2024 13:58 Unit Number: 402 Action: Unit Cleared
+Description: Unit Cleared From Call
+Unit Number: 402 Action: Unit Status Change
+Login Id: SPRD\baileyjo Page 5 of 6
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 08/02/2024 10:45
+Agency #: AR0720200
+Date/Time: 06/22/2024 13:58
+Description: Available
+Contributing Officers
+Report Narratives
+Narratives
+Entered By: monicade Date Entered: 06/22/2024 13:14
+ADV THAT THE SAME FEMALE FROM EARLIER WAS ASSAULTING EVERYONE PHYSICALLY
+Entered By: monicade Date Entered: 06/22/2024 13:14
+HAVE HER IN THE SECLUSION ROOM
+Entered By: monicade Date Entered: 06/22/2024 13:14
+NO LONGER PHYSICALL
+Entered By: monicade Date Entered: 06/22/2024 13:14
+ADV THAT OFFICERS JUST LEFT AND SHE STARTED AGAIN
+Entered By: monicade Date Entered: 06/22/2024 13:14
+NO ONE INJURED
+Entered By: monicade Date Entered: 06/22/2024 13:15
+WAS TOLD TO CALL BACK AND OFFICERS COULD TAKE HER TO JDC IF SHE DID IT AGAIN
+Entered By: gingerev Date Entered: 06/22/2024 13:46
+402/ T15 T19 WITH XRAY JUV
+Login Id: SPRD\baileyjo Page 6 of 6

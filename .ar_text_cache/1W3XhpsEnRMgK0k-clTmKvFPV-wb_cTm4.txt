@@ -1,0 +1,462 @@
+INTER
+STATUS:
+a (A) Active
+
+INCIDENT
+
+EXCEPTIONAL
+CLEARANCE STATUS:
+(1 (A) Death of the Offender
+
+(11 (CA) Closed by Arrest Gy (8) Prosecution Declined
+DD (CE) Closed by Exception (7) {C) Extradition Denied
+C7 (CO) Closed by Other Means | [7] (D) Victim Ref. to Cooperate
+
+ORINUMBER
+| [amosoco
+INCIDENT NUMBER INCIDENT REPORT
+
+2024-2389 UNAPPROVED
+
+DATE(S) OF INCIDENT "| AGENCY NAME
+08/12/2024 Saline County Sheriff's Office .
+TIME(S) OF INCIDENT DAY(S) OF INCIDENT 1 (inactive D €€) Juvenile, No Custody
+08:36 Monday 1 ) Unfounded Bil (N) Not Applicable
+DISPATCHER TIME RECEIVED | TIMEARRIVED | REPORTING AREA EXCEPT. CLEAR. DATE
+kaylee.smoke - SMOKE, KAYLEE 8:36 8:36
+
+UCRCODE | OFFENSE STATUS: OFFENDER USED: Hl (N)Not Applicable | Burglary (220) Location 14819: FORCED ENTRY?
+
+1A CD AjAttempted ggg (C)Completed |] (A)Alcoho! [7] (C)Cptr. Equip. [1] (D) Drugs } # PREMISES ENTERED? O Yes [J No
+
+STATUTE OFFENSE DESCRIPTION ADDRESS OF OFFENSE
+§-14-125 Sexual Assault in the Second Degree 15000 TIMBER RIDGE LN, Timber Ridge, Benton, AR 72019
+
+ARKANSAS
+
+INCIDENT
+
+LOCATION (Enter 1) 1 (17) Liquor Store TD (46) Farm Facility WEAPON FORCE: (Max. 3)
+0 (01) Air/Bus/Train Terminal 1 (18) Parking LovDrop LotiGarage [] (47)Gambling Facility/Casino/Race _| {For 11-15, place “A” in space next to box
+
+CO (02) Bank/Savings & Loan (C1 (19) Rental/Storage Facility Track if weapon was an Automatic.)
+
+1 (03} BarfNight Club Hl (20) Residence/Home DO (48) Industrial Site __ 00 (14) Firearm (Type not stated) [7] (90) Other
+CD (04) Church/Synagogue/Temple/Mosque ((] (21) Restaurant GB (49) Military Installation
+E (05) Commercial/Office Building LI (23) Service/Gas Station LD (50) ParkiPlayground — C112) Handgun CZ (85) Unknown
+ty] C1 (08) Construction site I (24) Specialty Store DD 61) Rest Area — 0 (13) Rifle C1 (88) None
+G| C1 (07) Convenience Store (0 (25) Other/Unknown 1 (52) School - CollegeMniversity ___ TD (14) Shotgun
+Zz. 1] (08) Department/Discount Store (0 (37) Abandoned/Condemned 1 (53) School - Elementary/Secondary (0 (15) Other Firearm
+[xj] 21 (09) Drug Store/Doctor's Office/Hospital Structure (C1 (54) Shetter - Mission‘Homeless ~~ | .
+fe) 2 (10) Field Woods (1 (38) Amusement Park (0 665) Shopping Mall C1 @20) Knife/Cutting instru. (Ax, etc.)
+faa] (2) (11) Government/Public Building (1 (39) Arena/StadiunvFairgrounds/ = [) (56) Tribal Lands LD (30) Blunt Object (Club, etc.)
+©] Ci (12)Grocery!supermarket Coliseum D. 657) Community Center 7 (85) Motor Vehicle (As weapon)
+C1 (13) Highway/RoadiAlley/Street/Sidewalk [] (40) ATM Separate From Bank
+Cy (14) HotevMotelEtc. Ly (41) Auto Dealership New/Used Hi (40) Personal Weapons (Hands, etc.)
+{0 (45) Jail’Prison/Penitentiary/Corrections [[] (42) Camp/Campground LD {60} Poison
+Facility CO (44) Daycare Facility
+
+C1 (60) Explosives
+
+DO (65) Fire/incendiary Device
+
+1 (70) Narcotics/Drugs/
+Sleeping Pills
+
+L (85) Asphyxiation
+
+BIAS MOTIVATED CRIME:
+None (No Bias)
+
+poe Seen pats cen ——— DR. Lt STATE | DATE OF BIRTH
+
+RELATIONSHIP OF THIS VICTIM TO OFFENDERS
+(check relationship under appropriate offender number):
+
+DD (16) Lake/Waterway/Beach
+TYPE CRIMINAL ACTIVITY:
+
+O (8) Buying LD (0) Operating/Promoting/Assisting
+CO (C) Cuttivate/Manufacture/Publish DO (P) Possessing/Concealing
+
+DB (D) Distributing/Selling 0 (1) Transport/Transmit/lmport
+
+DD €) Exploiting Children DO () Using/Consuming
+
+VICTIM #
+1
+RESIDENT ADDRESS:
+
+0 (45) DockWhartiFreight/Modal Terminal
+
+(Max. 3) TYPE ACTNITY: (Max. 3)
+
+DO (G) Other Gang
+OF J) Juvenile Gang
+LT (N) None/Unknown
+
+Last,
+
+Street
+
+toceipaTion #1 #2 #3 84 #5 #6 #7 #8 «#9 #10 «© VICTIM WAS:
+
+{SE} Spouse
+- i (CS} Common-Law Spouse
+
+EMPLOYMENT PHONE SEX: (PA) Parent
+WH (M) Male CO (F) Female 1 (U) Unknown cy ening
+
+ETHNIC: AGE: (GP) Grandparent
+
+CO @)Hispanic == (N) Nonhispanic D W) unknown ExactAge _413__ ie) Grandchid
+
+“a
+RACE: Range __/__ (SP) Stepparent
+
+fi (W) White D) (I) American Indian DD ) Unknown 17 (NN) Under 24 Hrs. Old (SC) Stepchild
+
+D1 )Slack =] (A) Asian/Pacific slander Ly (NB) 1-6 Days Old (SS) Stepsibling
+=| RES. STATUS: (om over 88 Yee. Old (OF) Other Family Member
+
+(AQ) Acquaintance
+
+(FR) Friend
+
+(NE) Neighbor
+
+{BE) Babysittee (baby)
+
+(BG) Boyfriend/Girlfriend
+
+(CF) Child of Boyfriend/Girifriend
+(HR} Homosexual Relationship
+(XS) Ex-Spouse
+
+(EE) Employee
+
+(ER) Employer
+
+(OK) Otherwise Known
+
+(RU} Relationship Unknown
+
+= [i (R)Resident MM (N)Nonresident == 7] (U) Unknown 1 (00) Unknown
+VICTIM TYPE: Wl () Individual [J (6) Business [() (F) Financial Institution {[] (U) Unknown
+DD ©)Government [] (R) Religious [[] (S)Society/Public [} (0) Other
+VICTIM INJURY: (Max. 5} C1] (M) Apparent Minor Injury
+
+Wi (N) None a
+(B) Apparent Broken Bones 5 (0) Other Major Injury
+
+pe
+
+THIS VICTIM RELATED
+TO WHICH OFFENSES?
+
+BH OM OF #0
+(I) Possible Intemal Injury (T) Loss of Teeth
+[_] (L} Severe Laceration (U) Unconsciousness
+
+f #2 | #5 £1 #8 others:
+Os #6 (#9
+AGGRAVATED ASSAULT/HOMICIDE CIRCUMSTANCES
+Aggravated Assault/Murder, (max. 2) Negligent Manslaughter: (enter 1)
+
+(01) Argument (30) Child Playing With Weapon (ST) Stranger
+(02) Assault On Law Enf. Officer (31) Gun-Cleaning Accident (VO) Victim was Offender
+(03) Drug Dealing 0 (32) Hunting Accident .
+H pa Gangland, C1 (3) Other Negligent Weapon Handling (A) Criminal Attacked Police Ooer
+juvenile Gang ; (B) Criminal Atta Fellow Pol icer
+Gs) Lovers avarre CO (34) Other Negligent Killings ES eeee ©) Criniaal Attacked Civilian nach
+(08) Other Felony Involved stifiable Homicide: (enter 1) CIRC: fe Criminal Killed n Commission ofa Crime
+{09) Other Circumstances CO (20) Criminal Killed by Private Citizen (enter 4) (F) Criminal Resisted Arrest
+1 (10) Unknown Circumstances DB (21) Criminal Killed by Police Officer i. (G) Unable to Determine/Not Enough Information
+
+REPORT DATE DAY | TIME (Military) REPORTING OFFICER CODE# | APPROVING SUPERVISOR DATE APPROVED
+08/12/2024 Mon 8:36 Detective Joseph Amundson! 2633
+
+
+
+INCIDENT REPORT
+DATE INCIDENT NUMBER OR# ("B") REPORTING OFFICER CODE# | VICTIM NAME
+08/12/2024 | 2024-2389 AR0630000 | Detective Joseph Amundson 2633
+Ol RESIDENT ADDRESS = Straat City State Zip DATE OF BIRTH
+72455
+
+FFENDER #
+1 .
+RESIDENT PHONE _ i EMPLOYMENTISCHOOL PHONE [pabesnetes DR. Ll. STATE
+ARREST LOCATION OCCUPATION PLACE OF EMPLOYMENT ARREST TYPE: [J (0)On View Arrest
+D0 (S)SummonsiCited [[] (T) Taken Into Cust.
+WEAPONS AT ARREST:
+
+SEX. (Male —L) (F)Female J (U)Unk. MULT. ARREST INDIC.: CO (M) Multiple
+EZHNI: LJ (H)Hispanic [J (N)Nonhisp. ig (U) Unk. Co (C) Count Arrestee [1] (N) NA
+
+, ; AGE RANGE: __to ___ | DISPOSITION OF JUVENILE:
+RACE [J (W)White [1] (6)Black [[] (1) American Indian LO (8) Over 88 Yrs. Old (H) Handled within Department.
+CO (A) Asian/Pacific slander) (U) Unknown 0 (00) Unknown (R) Referred outside Department
+CO (14) Shotgun Blackjack /
+
+RES. STATUS: [] (R)Resident | UCR ARR. CODE ARREST DATE | ARREST TRANSACT.
+I (N)Nonres. [J (U) Unknown # CO (15) Other Firearm Brass Kn.
+WEIGHT | BUILD HAIR STYLE HAIR LENGTH EYE COLOR SKIN TONE
+
+NAME Last, First, Middle,
+
+|
+
+(Max. 2) (Place "A" in blank if automatic)
+0 (01}Unarmed [J (16) Illegal
+CO (11) Firearm Cutting
+EB (12) Handgun instr.
+
+OF (13) Rife = (17)Club/
+
+AGE:
+EXACT AGE __13__
+
+OFFENDER / ARRESTEE |AD
+
+DD A)Asian/Pacific Islander = [] (U) Unknown DD (00) Unknown (R) Referred outside Department CO (13) Rifle OF (17) clubs
+
+RES. STATUS: [J (R)Resident | UCR ARR. CODE ARREST DATE | ARREST TRANSACT. CO (14) Shotgun Blackjack /
+(0 (NjNonres. ([(] (U) Unknown # 1 (15) Other Firearm Brass Kn.
+
+||
+
+fal OFFENDER# | RESIDENTADDRESS Street City State aa DATE OF BIRTH
+
+4 RESIDENT PHONE EMPLOYMENT/SCHOOL PHONE DRIVER'S LICENSE DR. LI. STATE sy
+%
+
+(2) ARREST LOCATION OCCUPATION PLACE OF EMPLOYMENT ARREST TYPE: [1] (0) On View Arrest
+
+<i C1 (S)SummonsiCited [] (T) Taken Into Cust.
+
+~~] SEX: D (M) Male (F) Female (U)Unk. AGE: MULT. ARREST INDIC.: CD (M) Muttiple WEAPONS AT ARREST: j
+ft T AGE (Max. 2) (Place "A” in blank if automatic)
+PET ETHNIC: C] Hispanic C] W)Nontisn. C1 (0) Unk — (1 (C) Count Arrestee [1] (N) NIA (O (1) Unarmed [] (16) legal
+Go| RACE) (W)White [] (G) Black} (American Indian ee. “ab Vee Gur | DISPOSITION OF JUVENILE: I (11) Firearm = Cutting
+7 C7 (9) Over 98 Yrs. (H) Handled within Department. CO (12) Handgun Instr.
+
+tal
+
+cs
+
+(aa
+
+lo)
+
+SUBJECT DESCRIPTORS
+
+
+INCIDENT REPORT
+DATE INCIDENT # REPORTING OFFICER CODE #
+08/12/2024 | 2024-2389 Detective Joseph Amundson 2633
+La
+TOP/SOLID COLOR SECOND COLOR DISPOSITION OF RECOVERY:
+0 (impounded [[] (R) Released To Owner
+TOPISOLID COLOR SECOND COLOR DISPOSITION OF RECOVERY:
+DO (impounded [] (R) Released To Owner
+
+{TEM VALUE RECOV. DATE
+
+VICTIM NAME
+
+LICENSE NUMBER
+
+RQ
+Ez
+i=)
+Py
+Qo
+2
+3
+o
+=z
+=
+2
+FI
+£
+3
+E
+3
+g
+2
+z
+FA
+2
+Py
+3
+
+TOTAL NUMBER VEHICLES STOLEN: TOTAL NUMBER VEHICLES RECOVERED: TOTAL VALUE STOLEN: TOTAL VALUE RECOVERED:
+
+PROPERTY LOSS: (1)None (2})Burned (3)Counterfeited/Forged (4) Damaged/Destroyed/Vandalized (5)Recovered (6)Seized —_(7) Stolen, etc. {8) Unk.
+
+RM
+B PROPERTY DE HETION: {14) Gambiing Equipment (27) Recordings-Audio/Visual (42) Artistic Supplies/Accessories (68) Lawn/Yard/Garden Equipment
+
+(01) Aircraft (15) Heavy ConstructionIndustrial (28) Recreational Vehicles (43) Building Materials {69} Logging Equipment
+fo) (02) Alcohol Equipment (29) Structures-Single Occupancy (44) Camping/Hunting Fishing (70) Medical’Medical Lab Equipment
+if) (03) Automobiles (16) Household Goods {30) Structures-Other Dwellings Equipment/Supplies (71) Metals, Non-Precious
+
+(04) Bicycles (17) Jewelry!Precious Metals/Gems {31) Structures-CommercialBusiness (45) Chemicals (72) Musical Instruments
+> (05) Buses (18) Livestock (32) Structures-IndustriavManutacturing (46) Collections/Collectibles (73) Pets
+fm] (08) ClothsiFurs (19) Merchandise (33) Structures-Public/Community (47) Crops (74) Photographic/Optical Equipment
+[a (07} Computer Hardware/Software (20) Money (34) Structures-Storage (48) DocumentsiPersonal or Business (75) Portable Electronic Communications
+[ea {08} Consumable Goods (21) Negotiable Instruments. (35) Structures-Other (48) Explosives (76) Recreational’Sports Equipment
+A {09) CreditiDebit Cards (22) Nonnegotiable Instruments (36) Tools (59) Firearm Accessories (77) Other
+
+(10) Drugs/Narcotics (23) Office-Type Equipment (37) Trucks {64} Fuel {78} Trailers
+jo) (11) CrugiNarcotic Equipment (24) Other Motor Vehicles (38) Vehicle Parts/Accessories (65) Identity Documents (79) Watercraft Equipment/Parte/Accessories
+[a (12) Farm Equipment (25) Pursas/Handbags/Wallets (39) Watercraft (66) identity - Intangible (80) Weapons - Other
+fa} (13) Firearms (26) Radios/TVsIVCRs/DVD Players (41) Aircraft PartelAccessories (67) Law Enforcement Equipment (88) Pending Inventory (of Property)
+
+DRUG TYPE WHOLE DRUG QUANTITY FRACTIONAL DRUG QUANTITY DRUG MEASUREMENT TYPE DRUG MEASUREMENT:
+WEIGHT
+(GM) Gram
+es es eae
+© (OZ) Ounce
+fore {LB) Pound
+(ML) Milliliter
+iS (LT) Liter
+4 {FO) Fluid Ounce
+a (A) “Crack” Cocaine (F) Morphine {K} Other Hallucinogens {0} Other Depressants {GL) Gallon
+(B) Cocaine (G) Opium rm) Amphetamin es! (P) Other Drugs
+(C) Hashish {H) Other Nargotics Methamphetamines (U) Unknown Type Drug UNITS _
+(D) Heroin (DLSD (a) Other Stimulants (X) Over 3 Drug Types (DU) Dosage Unit (Pills, etc.)
+
+(J} PSP (N) Barbiturates (NP) Number of Plants
+
+(E) Marijuana
+
+Middle SEX:
+0 (M) Male AGE: RACE:
+CO (F) Female 1 W) White
+CO wyunk. CO (00) Unknown Ty (@) Black
+
+RESIDENT ADDRESS: Street BB @) American Indian
+C1 (A) Asian/Pacific Islander
+
+OD () Unknown
+
+COMPLNT.
+
+RESIDENT PHONE | EMPLOY'T, PHONE
+
+
+
+INCIDENT REPORT
+
+RACE: C W)Unk.
+CD Mite C (8) Black
+CO () American indian
+
+L @) Asian/Pacific
+
+Hiren PHONE EMPL. PHONE
+islander
+DATE OF BIRTH | OCCUPATION PLACE OF EMPLOYMENT
+
+RESIDENT ADDRESS: Street City State
+
+SEX: D W)unk | A RACE: 0 (U) Unk.
+
+T) (M) Mal (W) White EJ (B) Black
+=} (F) Female Coo) Ueinowm GB i inetcaaien
+
+State RESIDENT PHONE EMPL. PHONE LO (A) AsianiPacific
+klander
+DATE OF BIRTH OCCUPATION PLACE OF EMPLOYMENT
+NARRATIVE:
+
+On August 9, 2024,
+
+RESIDENT ADDRESS: Street City
+
+“a ay a
+
+I, received a referral from the Arkansas Child Abuse
+
+Detective J. Amundson,
+
+Hotline.
+
+See supplement for further.
+
+SUPPLEMENT #1 Detective Joseph Amundson - 2633 08/12/2024 :
+
+The referral read as follows:
+
+“AV is 13 y/o . AO is an unknown (approx. 10 y/o at the time of the incident).
+
+The AO is out of home and reported to be another resident that was admitted into the Timber Ridge
+
+facility. The AO was lOyrs old at the time of the incident. . and ire the AV’s
+On 08/07/2024,
+During the MAYSI-2
+
+parents and PRFCs. a FINs officer met with the AV and his FINS intake
+
+family for a
+
+interview. Questionnaire, . was asked if he has ever been raped or been in
+
+danger of being raped. He responded with a simple "yes". was asked if he was raped or if he
+
+was in a situation where he could have been raped, and he responded by saying "I was raped."
+
+was asked how long ago he was raped, and he responded by saying "When I was in Timber
+
+Ridge." s parents were asked if they were
+
+They were then asked if it was ever reported.
+
+is/was a Staff member at the facility but “nothing was ever done about it." The family
+
+aware of this allegation, and they said "
+
+stated that she reported it to "Mr. Mims" who
+
+was asked
+
+stated he “couldn't remember if it
+
+if the incident was reported to DHS or DCFS.
+
+reported to DHS.” On 08/08/2024, FINs officer
+
+(over the phone with mother present) the spoke with
+
+AV to clarify allegations. said, "I don't want to say what happen." The officer
+
+with his mother present if they were able to ask yes or no questions.
+if the AO touched him. HE esponded "no.”™
+
+e officer asked if the AO made touch the Ao. responded "yes."
+
+agreed. With
+
+mother’s permission, the officer asked
+
+was asked if
+
+was asked if AO made him touch
+
+touched the AO’s
+
+AO made him touch anyone else. . cesponded "no,"
+
+AO’s privates. responded "yes." The officer then asked if
+
+privates with his hand. responded "yes." was asked if the AO made him touch the AO’sS
+
+privates with any other part of his body. responded "no." was asked if the AC
+touched anyone else. AV responded "no." This incident is reported to have happen when
+
+an inpatient resident at Timber Ridge Neuro Restorative Residential Facility in Benton,
+
+(approx, in 2021-2022)
+O_o eee

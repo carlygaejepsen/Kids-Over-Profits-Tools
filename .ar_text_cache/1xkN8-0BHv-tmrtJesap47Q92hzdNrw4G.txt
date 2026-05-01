@@ -1,0 +1,103 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 04/23/2024 15:19
+Agency #: AR0720200
+General Information
+Incident #: 2024-00018437 Incident Type: Hangup Call Date/Time: 03/27/2024 13:54
+Location: 2466 S 48TH ST, SPRINGDALE, 72762 Status: In Progress Priority: 2
+Primary Caller: Unknown, - Caller Caller Contact #: (479) 725-5193 Originating Call #: (479) 725-5193
+Case Number: Nature of Call: Source: Admin Phone Line
+Units/Personnel
+Unit # Unit Type Personnel Time on Call
+332 Patrol 206 - Whorton, Jake 03/27/2024 13:56
+313 Patrol 45 - Decipulo, Daniel 03/27/2024 13:56
+Vehicles
+Role Type Year Make Model Color License State VIN
+Subjects
+Role Name Address Contact Information Race Sex DOB
+Caller Unknown (479) 725-5193
+Disposition
+Disposition Count Unit Date/Time
+Complaint Only 1 03/27/2024 13:59
+Evidence
+Counter Evidence Type Codes Description Current Location Received Date Make/Model
+Report Narratives
+Narratives
+Entered By: roxxanaan Date Entered: 03/27/2024 13:54
+911 HANG UP AT 2466 S 48TH ST
+Entered By: roxxanaan Date Entered: 03/27/2024 13:55
+NO ANSWER ON CALL BACK
+Entered By: roxxanaan Date Entered: 03/27/2024 13:55
+NO SOUNDS OF DISTRESS
+Entered By: STEPHANIESE Date Entered: 03/27/2024 13:59
+332/ACCIDENTAL T98
+Login Id: sprd\baileyjo Page 1 of 3
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 04/23/2024 15:19
+Agency #: AR0720200
+Call Log
+Date/Time User Action Description
+03/27/2024 13:54 roxxanaan Call Created New call created. Call Type: >New Call<, Location:
+<UNKNOWN>
+03/27/2024 13:54 roxxanaan Location Call Location Changed from <UNKNOWN> to 2466 S 48TH
+ST, SPRINGDALE
+03/27/2024 13:54 roxxanaan Address Verified Call Location Changed from Unverified To Verified
+03/27/2024 13:54 roxxanaan Location Cross streets updated, SPRINGHOUSE DR / PRIVATE DR,
+ATCHISON AVE
+03/27/2024 13:54 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 48TH ST
+03/27/2024 13:54 roxxanaan Agency Context Added Police Call Type Added. Call Type: Hangup, Status: In
+Progress, Priority: 2
+03/27/2024 13:54 roxxanaan Narrative Added 911 HANG UP AT 2466 S 48TH ST
+03/27/2024 13:54 roxxanaan Location Call Location Changed from 2466 S 48TH ST, SPRINGDALE
+to 2466 S 48TH ST, SPRINGDALE (OZARK GUIDANCE
+CENTER)
+03/27/2024 13:54 testing, cad - system Alerts Retrieval Alerts Were Successfully Gathered For Location At Address
+2466 S 48TH ST
+03/27/2024 13:54 roxxanaan Location Cross streets updated, SPRINGHOUSE DR / PRIVATE DR,
+ATCHISON AVE
+03/27/2024 13:55 roxxanaan Narrative Added NO ANSWER ON CALL BACK
+03/27/2024 13:55 roxxanaan Narrative Added NO SOUNDS OF DISTRESS
+03/27/2024 13:55 roxxanaan Call Updated Caller Phone Changed to (479) 725-5193
+03/27/2024 13:55 roxxanaan Call Updated Caller Added: Role - Caller;
+03/27/2024 13:56 STEPHANIESE Unit Location Unit 332 Secondary Location: Secondary Location Cleared
+03/27/2024 13:56 STEPHANIESE Incident Created Added Incident Number, ORI: AR0720200, Number: 2024-
+00018437
+03/27/2024 13:56 STEPHANIESE Call Ready for Dispatch Call marked ready for dispatch
+03/27/2024 13:56 STEPHANIESE Unit Status Action Unit 332 Dispatched
+03/27/2024 13:56 STEPHANIESE Unit Status Action Unit 313 Dispatched
+03/27/2024 13:56 STEPHANIESE Unit Location Unit 313 Secondary Location: Secondary Location Cleared
+03/27/2024 13:56 STEPHANIESE Unit Status Action Unit 332 Responding
+03/27/2024 13:56 STEPHANIESE Unit Status Action Unit 313 Responding
+03/27/2024 13:56 STEPHANIESE Unit Status Action Unit 313 Available
+03/27/2024 13:56 jakewo Unit Status Action Unit 332 On Scene
+03/27/2024 13:59 STEPHANIESE Disposition Changed Added: Complaint Only Count 1
+03/27/2024 13:59 STEPHANIESE Narrative Added 332/ACCIDENTAL T98
+03/27/2024 13:59 STEPHANIESE Unit Status Action Unit 332 Available
+03/27/2024 13:59 STEPHANIESE Call Cleared Close Call
+Login Id: sprd\baileyjo Page 2 of 3
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 04/23/2024 15:19
+Agency #: AR0720200
+Unit Log
+Date/Time Unit Number Action Description
+03/27/2024 13:56 332 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+03/27/2024 13:56 332 Unit Status Change Dispatched Call Number: 721, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: Hangup
+03/27/2024 13:56 332 Unit Location Secondary Location Cleared
+03/27/2024 13:56 313 Unit Location Assigned Location: 2466 S 48TH ST, SPRINGDALE
+03/27/2024 13:56 313 Unit Status Change Dispatched Call Number: 721, Assigned Location: 2466 S
+48TH ST, SPRINGDALE, Call Type: Hangup
+03/27/2024 13:56 313 Unit Location Secondary Location Cleared
+03/27/2024 13:56 332 Unit Status Change Responding
+03/27/2024 13:56 313 Unit Status Change Responding
+03/27/2024 13:56 313 Unit Cleared Unit Cleared From Call
+03/27/2024 13:56 313 Unit Status Change Available
+03/27/2024 13:56 332 Unit Location 2466 S 48TH ST, SPRINGDALE
+03/27/2024 13:56 332 Unit Status Change On Scene
+03/27/2024 13:59 332 Unit Cleared Unit Cleared From Call
+03/27/2024 13:59 332 Unit Status Change Available
+Contributing Officers
+Officer Supervisor Report Date/Time Report Type Approving User
+Login Id: sprd\baileyjo Page 3 of 3

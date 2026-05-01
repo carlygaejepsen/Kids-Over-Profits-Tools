@@ -1,0 +1,156 @@
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:21
+Agency #: AR0720200
+General Information
+Incident Number: 2024-00062866 Incident Type: Fired Call Date/Time: 09/29/2024 01:11
+Location 2466 S 48TH ST, Location OZARK GUIDANCE CENTER Originating Call
+Formatted: SPRINGDALE, 72762 Common Name: Number:
+Nature Of Call: Status: In Progress Priority: 3
+Source: Admin Phone Line
+Units/Personnel
+Unit: 415 Primary Unit: No Call Date/Time: 09/29/2024 01:13
+Personnel: 218 - Dickerson, Michael Primary: Yes
+Unit: 386 Primary Unit: Yes Call Date/Time: 09/29/2024 01:13
+Personnel: 265 - Springston, Alyshia Primary: Yes
+Vehicles
+Subjects
+Role: Caller Primary Caller: No Non-Disclosure: No
+Subject Type: Adult Name Formatted: Location
+Formatted:
+Primary Contact Date of Birth:
+Information: Local Id Number:
+License State:
+License Number: License Expiration
+Weight Range
+Date:
+Height Range Lower:
+Lower: Race:
+Ethnic Origin:
+Sex: Female Hair Color:
+Eye Color:
+Disposition
+Disposition: Complaint Only Count: 1 Unit:
+Date/Time: 09/29/2024 01:30
+Evidence
+Call Log
+Date/Time: 09/29/2024 01:11 User: andreawa Action: Call Created
+Description: New call created. Call Type:
+>New Call<, Location:
+<UNKNOWN>
+Date/Time: 09/29/2024 01:12 User: andreawa Action: Address Verified
+Description: Call Location Changed from
+Unverified To Verified
+Date/Time: 09/29/2024 01:12 User: andreawa Action: Location
+Description: Call Location Changed from
+<UNKNOWN> to 2466 S
+48TH ST, SPRINGDALE
+User: andreawa Action: Location
+Login Id: SPRD\baileyjo Page 1 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:21
+Agency #: AR0720200
+Date/Time: 09/29/2024 01:12
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 09/29/2024 01:12 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 09/29/2024 01:12 User: andreawa Action: Agency Context Added
+Description: Police Call Type Added. Call
+Type: Suicide, Status: Not In
+Progress, Priority: 2
+Date/Time: 09/29/2024 01:12 User: andreawa Action: Call Type
+Description: Police Call Type Changed
+From Suicide To Call Type:
+Fired, Status: In Progress,
+Priority: 3
+Date/Time: 09/29/2024 01:13 User: andreawa Action: Location
+Description: Call Location Changed from
+2466 S 48TH ST,
+SPRINGDALE to 2466 S 48TH
+ST, SPRINGDALE (OZARK
+GUIDANCE CENTER)
+Date/Time: 09/29/2024 01:13 User: andreawa Action: Location
+Description: Cross streets updated,
+SPRINGHOUSE DR / PRIVATE
+DR, ATCHISON AVE
+Date/Time: 09/29/2024 01:13 User: testing, cad - system Action: Alerts Retrieval
+Description: Alerts Were Successfully
+Gathered For Location At
+Address 2466 S 48TH ST
+Date/Time: 09/29/2024 01:13 User: andreawa Action: Narrative Added
+Description: FD ASSIST FOR A FEMALE
+WHO HAD CUT HERSELF
+WITH A PIECE OF WOOD AT
+THE FACILITY
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Unit Status Action
+Description: Unit 386 Dispatched
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Unit Location
+Description: Unit 386 Secondary Location:
+Secondary Location Cleared
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Incident Created
+Description: Added Incident Number, ORI:
+AR0720200, Number: 2024-
+00062866
+Login Id: SPRD\baileyjo Page 2 of 5
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:21
+Agency #: AR0720200
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Call Ready for Dispatch
+Description: Call marked ready for
+dispatch
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Unit Location
+Description: Unit 415 Secondary Location:
+Secondary Location Cleared
+Date/Time: 09/29/2024 01:13 User: karlaes Action: Unit Status Action
+Description: Unit 415 Dispatched
+Date/Time: 09/29/2024 01:13 User: andreawa Action: Narrative Added
+Description: FEMALE CUT TO THE
+ARM NO BLEEDING NOW
+Date/Time: 09/29/2024 01:14 User: karlaes Action: Unit Status Action
+Description: Unit 386 Responding
+Date/Time: 09/29/2024 01:14 User: karlaes Action: Unit Status Action
+Description: Unit 415 Responding
+Date/Time: 09/29/2024 01:19 User: karlaes Action: Unit Status Action
+Description: Unit 415 On Scene
+Date/Time: 09/29/2024 01:23 User: karlaes Action: Unit Status Action
+Description: Unit 386 On Scene
+Date/Time: 09/29/2024 01:30 User: jasminne Action: Person Added
+Description: Person Added: Last Name -
+Date/Time: 09/29/2024 01:30 User: jasminne Action: Narrative Added
+Description: 415/
+WAS TRANSPORTED TO ACH
+WITH NON LIFE
+THREATENING INJURIES
+Date/Time: 09/29/2024 01:30 User: karlaes Action: Disposition Changed
+Description: Added: Complaint Only
+Count 1
+Date/Time: 09/29/2024 01:30 User: karlaes Action: Narrative Added
+Description: 415/T98 DISPO ON 2
+Date/Time: 09/29/2024 01:30 User: karlaes Action: Unit Status Action
+Description: Unit 415 Available
+Date/Time: 09/29/2024 01:30 User: karlaes Action: Unit Status Action
+Description: Unit 386 Available
+Date/Time: 09/29/2024 01:30 User: karlaes Action: Call Cleared
+Description: Close Call
+Login Id: SPRD\baileyjo Page 3 of 5
+
+
+
+Incident Details
+Agency: Springdale Police Department Print Date/Time: 10/22/2024 10:21
+Agency #: AR0720200
+Narratives
+Entered By: andreawa Date Entered: 09/29/2024 01:13
+FD ASSIST FOR A FEMALE WHO HAD CUT HERSELF WITH A PIECE OF WOOD AT THE FACILITY
+Entered By: andreawa Date Entered: 09/29/2024 01:13
+FEMALE CUT TO THE ARM NO BLEEDING NOW
+Entered By: jasminne Date Entered: 09/29/2024 01:30
+WAS TRANSPORTED TO ACH WITH NON LIFE THREATENING INJURIES
+Entered By: karlaes Date Entered: 09/29/2024 01:30
+415/T98 DISPO ON 2
+Login Id: SPRD\baileyjo Page 5 of 5

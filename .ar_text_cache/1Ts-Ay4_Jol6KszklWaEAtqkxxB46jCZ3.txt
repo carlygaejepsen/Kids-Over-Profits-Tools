@@ -1,0 +1,176 @@
+CFS - Unit Response Times
+
+Printed on March 15,
+
+CFS # CFS2304854
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ESCAPE : Escape
+
+Mod In Progress
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/11/23 12:53:56
+Completed Time 02/11/23 13:01:08
+Reporters
+Unknown (Initial Reporter)
+Sex
+DOB
+Address
+Report Time 02/11/23 12:53:56
+How Reported
+From Phone
+Contact Phone (870) 970-4500
+Comments
+
+Other Names
+
+Vehicles
+Responders
+540 540 - THOMAS, MICHAEL FCPD (Primary)
+542 542 - HAWKINS, FCPD (Primary)
+NATHANIEL
+544 (Primary) 544 - DIXON, CORBIN FCPD (Primary)
+
+Response Times
+
+Assigned 02/11/23 12:57:03 *
+Enroute 02/11/23 12:57:03 *
+Arrived 02/11/23 12:57:03
+Leaving
+
+Arrived At
+
+Completed 02/11/23 13:01:08
+
+IR / External Agency Numbers
+FCPD202301121
+
+Officer Addenda
+
+Unit Response Times
+
+Page 1 of 2
+
+
+
+Non Unit Specific Times
+02/11/23 12:53:56 | New CFS |
+02/11/23 12:55:24 | WORKER AT BEHAVIORAL CENTER ADVISED HAD ONE ESCAPE. NAME IS
+
+ILL BE IN BLACK PANTS AND BURGUNDY SHIRT/GRAY HOODIE. WENT TOWARDS NURSING
+HOME
+
+02/11/23 13:01:02 | 544 ADVISED 10-22 SUBJECT BACK AT BAHAVIORAL CENTER
+02/11/23 13:14:03 | Complete
+
+540
+02/11/23 12:57:14 | On Scene
+
+540, 542, 544
+
+02/11/23 13:01:08 | Complete
+
+542
+02/11/23 12:57:20 | On Scene
+
+544
+02/11/23 12:57:03 | On Scene
+
+Page 2\of 2
+
+
+
+CFS - Command Log Printed on March 15, 2023
+
+CFS # CFS2304854
+Call Taker KILEY HOWTON
+Location 1521 ALBERT ST, FORREST CITY, AR 72335 (Woodridge Behavioral Center)
+
+Location Details
+Primary Incident Code ESCAPE : Escape
+
+Mod In Progress
+Priority 1
+Use Caution No
+Primary Disposition Handled By Officer / Deputy
+Beat
+Zone Forrest City Police Department
+Call Time 02/11/23 12:53:56
+Completed Time 02/11/23 13:01:08
+Reporters
+Unknown (Initial Reporter)
+Sex
+DOB
+Address
+Report Time 02/11/23 12:53:56
+How Reported
+From Phone
+Contact Phone (870) 970-4500
+Comments
+
+Other Names
+
+Vehicles
+Responders
+540 540 - THOMAS, MICHAEL —-FCPD (Primary)
+542 542 - HAWKINS, FCPD (Primary)
+NATHANIEL
+544 (Primary) 544 - DIXON, CORBIN FCPD (Primary)
+
+Response Times
+
+Assigned 02/11/23 12:57:03 *
+Enroute 02/11/23 12:57:03 *
+Arrived 02/11/23 12:57:03
+Leaving
+
+Arrived At
+
+Completed 02/11/23 13:01:08
+
+IR / External Agency Numbers
+FCPD202301121
+
+Officer Addenda
+
+Command Log Filter: All Commands | Details: Hidden | Units: All Units | Revised Entries: Shown
+
+a
+Page Uof 2
+
+
+
+02/11/23 12:53:56 | HOWTON, KILEY | New CFS
+
+02/11/23 12:55:24 HOWTON, KILEY | WORKER AT BEHAVIORAL CENTER ADVISED HAD ONE ESCAPE. NAME
+IS WILL BE IN BLACK PANTS AND BURGUNDY SHIRT/GRAY HOODIE. WENT TOWARDS
+NURSING HOME
+
+02/11/23 12:57:03 | HOWTON, KILEY | 544 | On Scene
+
+02/11/23 12:57:14 | HOWTON, KILEY | 540 | On Scene
+
+02/11/23 12:57:20 | HOWTON, KILEY | 542 | On Scene
+
+02/11/23 13:01:02 | HOWTON, KILEY | 544 ADVISED 10-22 SUBJECT BACK AT BAHAVIORAL CENTER
+02/11/23 13:01:08 | HOWTON, KILEY | 540, 542, 544 | Complete
+
+02/11/23 13:14:03 | HOWTON, KILEY | Complete
+
+CLQ
+
+Requested At
+Sent To
+
+Status
+Received At
+Location '
+Accuracy
+
+Page 2 of 2
