@@ -9,15 +9,18 @@ No browser automation needed — uses requests against the same API
 endpoints that the childcare.hhs.texas.gov React app calls.
 """
 
+import argparse
 import logging
 import os
 import re
 from datetime import datetime
-from typing import Dict, List, Optional
+from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
 
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
     level=logging.INFO,
@@ -31,6 +34,8 @@ API_URL = os.getenv(
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
 API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+
+STATE_FILE = Path(os.getenv("TX_STATE_FILE", ".tx_state.json"))
 
 # ── TX HHS endpoints ────────────────────────────────────────────────
 TX_BASE = "https://childcare.hhs.texas.gov/__endpoint"
@@ -267,9 +272,18 @@ class TXFacilityScraper:
 
         return reports
 
-    def scrape(self, operation_ids: Optional[List[str]] = None) -> List[Dict]:
-        """Scrape all operations and return the collected facility list."""
+    def scrape(self, operation_ids: Optional[List[str]] = None,
+               seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[List[Dict], Dict[str, List[str]]]:
+        """Scrape operations, dropping deficiencies whose report_id is already in `seen`.
+
+        State is keyed by op_id. Filtering happens after fetch (the history API
+        returns all deficiencies in one call, so we can't skip the fetch
+        itself), but it does prevent re-posting already-seen deficiencies.
+        """
         ids = operation_ids or OPERATION_IDS
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
         logger.info(f"Starting TX scrape for {len(ids)} operations")
 
         self._get_token()
@@ -277,7 +291,6 @@ class TXFacilityScraper:
         for i, op_id in enumerate(ids):
             logger.info(f"[{i+1}/{len(ids)}] Operation {op_id}")
             try:
-                # Step 1: Search for the provider to get providerId + facility info
                 provider = self._search_provider(op_id)
                 if not provider:
                     logger.warning(f"  No provider found for operation {op_id}")
@@ -287,19 +300,26 @@ class TXFacilityScraper:
                 facility_info = self._build_facility_info(provider)
                 logger.info(f"  Found: {facility_info['facility_name']} (id={provider_id})")
 
-                # Step 2: Get compliance history with deficiency details
                 history = self._get_compliance_history(provider_id)
                 reports = self._build_reports(op_id, history)
-                logger.info(f"  {len(reports)} deficiencies")
+                seen_for_op = seen.get(op_id, set())
+                new_reports = [r for r in reports if r["report_id"] and r["report_id"] not in seen_for_op]
+                if seen_for_op:
+                    logger.info(f"  {len(new_reports)} new of {len(reports)} deficiencies")
+                else:
+                    logger.info(f"  {len(reports)} deficiencies")
+
+                if not new_reports:
+                    continue
 
                 self.all_facilities.append({
                     "facility_info": facility_info,
-                    "reports": reports,
+                    "reports": new_reports,
                 })
+                new_ids[op_id] = [r["report_id"] for r in new_reports]
 
             except requests.exceptions.RequestException as e:
                 logger.error(f"  HTTP error on {op_id}: {e}")
-                # Re-auth in case the token expired
                 try:
                     self._get_token()
                 except Exception:
@@ -310,7 +330,7 @@ class TXFacilityScraper:
                 continue
 
         logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities
+        return self.all_facilities, new_ids
 
 
 # ── API posting ──────────────────────────────────────────────────────
@@ -331,17 +351,28 @@ def save_to_api(facilities: List[Dict]) -> bool:
 
 
 def main():
-    scraper = TXFacilityScraper()
-    facilities = scraper.scrape()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-post all deficiencies")
+    args = ap.parse_args()
 
-    if facilities:
-        logger.info(f"Scraped {len(facilities)} facilities — posting to API")
-        if save_to_api(facilities):
-            logger.info("Data saved to database successfully!")
-        else:
-            logger.error("API save failed — check logs above")
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
+
+    scraper = TXFacilityScraper()
+    facilities, new_ids = scraper.scrape(seen=seen)
+
+    if not facilities:
+        logger.info("No new deficiencies since last run")
+        return
+
+    logger.info(f"Posting {len(facilities)} facilities with new deficiencies to API")
+    if save_to_api(facilities):
+        logger.info("Data saved to database successfully!")
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
     else:
-        logger.warning("No facilities scraped")
+        logger.error("API save failed — state not advanced")
 
 
 if __name__ == "__main__":

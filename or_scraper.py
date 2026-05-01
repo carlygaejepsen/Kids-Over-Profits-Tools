@@ -22,13 +22,14 @@ import time
 from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 from xml.etree import ElementTree as ET
 
 import pdfplumber
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
     level=logging.INFO,
@@ -46,6 +47,7 @@ BASE_URL = "https://www.oregon.gov/odhs/licensing/childrens-care-agencies"
 REPORT_LIBRARY_NAME = "reports"
 AGENCY_LIST_NAME = "agencies"
 PDF_CACHE_DIR = Path(__file__).parent / "or_pdfs"
+STATE_FILE = Path(os.getenv("OR_STATE_FILE", ".or_state.json"))
 
 VIEWS = [
     {
@@ -1065,11 +1067,31 @@ class ORFacilityScraper:
 
         return facilities
 
-    def scrape(self, view_codes: Optional[List[str]] = None) -> List[Dict]:
+    @staticmethod
+    def _entry_report_id(entry: Dict) -> str:
+        """Same fallback chain that _build_report uses for report_id."""
+        return (entry.get("report_id")
+                or entry.get("report_unique_id")
+                or entry.get("file_name")
+                or "")
+
+    def scrape(self, view_codes: Optional[List[str]] = None,
+               seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[List[Dict], Dict[str, List[str]]]:
+        """Scrape OR, skipping entries whose report_id is already in `seen`.
+
+        State is keyed by agency_name (the most stable per-row field; multiple
+        SharePoint views can share an agency). Filtering happens before PDF
+        download/parse, so already-seen reports cost nothing.
+        """
         selected_codes = view_codes or [view["code"] for view in VIEWS]
         selected_views = [VIEWS_BY_CODE[code] for code in selected_codes if code in VIEWS_BY_CODE]
         if not selected_views:
             raise ValueError(f"No valid Oregon view codes requested: {view_codes}")
+
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
+        skipped = 0
 
         logger.info("Starting OR scrape")
         logger.info(f"Views: {', '.join(view['code'] for view in selected_views)}")
@@ -1082,14 +1104,25 @@ class ORFacilityScraper:
             for row in rows:
                 if not build_pdf_url(row.get("ows_FileRef")).lower().endswith(".pdf"):
                     continue
-                all_entries.append(self._enrich_row(row, view, agency_websites))
+                entry = self._enrich_row(row, view, agency_websites)
+                report_id = self._entry_report_id(entry)
+                agency = entry.get("agency_name", "")
+                if report_id and report_id in seen.get(agency, set()):
+                    skipped += 1
+                    continue
+                all_entries.append(entry)
+                if report_id:
+                    new_ids.setdefault(agency, []).append(report_id)
+
+        if skipped:
+            logger.info(f"Skipped {skipped} reports already seen in state")
 
         self.infer_program_identity(all_entries)
         self.all_facilities = self.build_facilities_from_entries(all_entries)
         logger.info(
-            f"Scraping complete: {len(self.all_facilities)} facilities, {len(all_entries)} reports"
+            f"Scraping complete: {len(self.all_facilities)} facilities, {len(all_entries)} new reports"
         )
-        return self.all_facilities
+        return self.all_facilities, new_ids
 
 
 def save_to_api(facilities: List[Dict], replace: bool = False) -> bool:
@@ -1124,27 +1157,45 @@ def main():
     parser.add_argument(
         "--replace",
         action="store_true",
-        help="Clear existing OR data from the database before inserting (use to fix stale names)",
+        help="Clear existing OR data from the database before inserting (use to fix stale names). Implies --full.",
+    )
+    parser.add_argument(
+        "--full",
+        action="store_true",
+        help=f"Ignore {STATE_FILE} and re-scan all reports",
     )
     args = parser.parse_args()
 
-    scraper = ORFacilityScraper()
-    facilities = scraper.scrape(view_codes=args.views)
+    state = load_state(STATE_FILE)
+    # --replace wipes the DB before insert, so it must repost everything; combining
+    # it with a stateful filter would erase older reports we'd otherwise leave alone.
+    full = args.full or args.replace
+    seen = {} if full else seen_from_state(state)
 
-    if facilities:
-        logger.info(f"Scraped {len(facilities)} facilities")
-        if args.no_post:
-            logger.info("Skipping API POST because --no-post was set")
-            return
+    scraper = ORFacilityScraper()
+    facilities, new_ids = scraper.scrape(view_codes=args.views, seen=seen)
+
+    facilities_to_post = [f for f in facilities if f["reports"]]
+    if not facilities_to_post:
+        logger.info("No new reports since last run")
+        return
+
+    logger.info(f"Posting {len(facilities_to_post)} facilities with new reports")
+    if args.no_post:
+        logger.info("Skipping API POST because --no-post was set; state not advanced")
+        return
+    if args.replace:
+        logger.info("--replace set: existing OR data will be cleared before insert")
+    if save_to_api(facilities_to_post, replace=args.replace):
+        logger.info("Data saved to database successfully!")
         if args.replace:
-            logger.info("--replace set: existing OR data will be cleared before insert")
-        logger.info("Posting Oregon data to API")
-        if save_to_api(facilities, replace=args.replace):
-            logger.info("Data saved to database successfully!")
-        else:
-            logger.error("API save failed -- check logs above")
+            # --replace wiped the DB and reposted everything, so the post-state
+            # is exactly the IDs we just sent. Drop any stale entries.
+            state["seen"] = {}
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
     else:
-        logger.warning("No facilities scraped")
+        logger.error("API save failed -- state not advanced")
 
 
 if __name__ == "__main__":

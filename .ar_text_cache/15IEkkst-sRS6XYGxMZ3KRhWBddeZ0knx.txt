@@ -1,0 +1,168 @@
+LRP2402290345 3/7/2024 8:49:19 AM (B)(13) Page 1 of 4
+Incident Detailed Report
+Incident #: LRP2402290345
+Summary
+Location: 6425 W 12TH ST
+Loc Name: YOUTH EMERGENCY SHELTER
+City: LR
+Description:
+Building: Subdiv:
+Floor: Apt/Unit:
+Status: Closed Created: 15:36:20 2/29/2024
+Inc Type: UNK Agency Type: L
+Mod Circ: Priority: 2
+Agency ID: LRP Area: NW
+Sector: 4 Beat: 61
+Report #: LRP24025693
+Disposition: R (LRP/2X60)
+Dispatch
+Unit(s): LRP/2X60 (Officers: LRP/Stone James) (Primary), LRP/2X61 (Officers: LRP/Buzzitta
+Anthony)
+Comments
+15:36:20 2/29/2024 (B)(13) C1
+SCREAMING OVER LANDLINE PHONE, SOMEONE PICKED UP AND SAID IT WAS KIDS PLAYING ON
+THE PHONE BUT CALL TAKER COULD STILL HEAR SCREAMING. CHECK TO SATISFACTION
+Persons
+Name: , Centers for Youth and Families
+Role: INITIAL CALLER
+Address: 6425 W 12TH ST 6425-6601 W. 12TH ST
+Apt/Unit:
+City:
+Phone: (501) 666-8686 Contact?:
+Gender: DOB:
+Race: Ethnicity:
+Age:
+Height: Bldg:
+Hair: Weight:
+Eyes: License #:
+Misc:
+Vehicles
+Premise Hazard
+Previous Incidents
+Note: The number of previous incidents printed was limited to 1. There were additional previous
+incidents not printed. Incomplete Printout (IncNum:1/80 PerNum: 1/16):
+Location Inc Type Incident # Status Date
+6425 W 12TH ST, LR UNK LRP2402280444 Closed 19:48:55 2/28/2024
+
+LRP2402290345 3/7/2024 8:49:20 AM (B)(13) Page 2 of 4
+Name Address Inc Type Incident # Date
+Centers for Youth and 6425 W 12TH ST, LR UNK LRP24022804 19:48:55 2/28/2024
+Families 44
+Associated Incidents
+Attachments
+History
+Time/Date Trans Type User ID Console ID
+16:18:23 2/29/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/2X60
+Location: NULL (6425 W 12TH ST) Loc Name: NULL (YOUTH EMERGENCY SHELTER)
+City: NULL (LR) Zip Code: NULL (72204)
+16:18:23 2/29/2024 FREE UNIT (B)(13) P1
+Unit Freed Unit ID: LRP/2X60
+16:18:23 2/29/2024 INC UPDT (B)(13) P1
+Disposition Dispo: R
+Unit ID: LRP/2X60
+16:18:23 2/29/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/2X60
+Status: AV (ONS)
+16:18:23 2/29/2024 INC STAT (B)(13) P1
+Incident Status Status: Closed (Active)
+16:06:13 2/29/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/2X60
+Status: ONS (ENR) Submitted: 16:06:12 2/29/2024
+15:57:55 2/29/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/2X60
+Status: ENR (DSP) Submitted: 15:57:53 2/29/2024
+15:57:44 2/29/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/2X60
+Status: DSP (AV)
+15:57:44 2/29/2024 INC STAT (B)(13) P1
+Incident Status Status: Active (Stacked)
+15:57:44 2/29/2024 PRIM UNIT (B)(13) P1
+Primary Unit Primary: LRP/2X60 (LRP/2X61)
+15:57:33 2/29/2024 TIMEOUT (B)(13) P1
+Incident Timeout Reset Timeout Value: Never
+15:57:33 2/29/2024 INC STAT (B)(13) P1
+Incident Status Status: Stacked (Pending)
+15:57:33 2/29/2024 DPTCH (B)(13) P1
+Dispatch (Pre-assigned) Assigned Unit: LRP/2X60 (Officers: LRP/Stone James)
+15:57:33 2/29/2024 REC (B)(13) P1
+Preferred Rec: [PATROL] 1L32 (2:39), 2X50 (3:25)
+Add'l: [PATROL] 2Y40 (3:54), 2X52 (3:55)
+Missing: (None)
+15:57:33 2/29/2024 REC (B)(13) P1
+Fixed (Run Card Set: A) Rec: [PATROL] 2X50, 2Y40
+Add'l: [PATROL] 2Y52, 2X52
+Missing: (None)
+15:42:57 2/29/2024 TIMEOUT System System
+Incident Timeout
+15:37:56 2/29/2024 TIMEOUT (B)(13) P1
+Incident Timeout Reset Timeout Value: 5
+15:37:56 2/29/2024 UNIT MGMT (B)(13) P1
+
+LRP2402290345 3/7/2024 8:49:20 AM (B)(13) Page 3 of 4
+Time/Date Trans Type User ID Console ID
+Unit Location Unit ID: LRP/2X61
+Location: NULL (6425 W 12TH ST) Loc Name: NULL (YOUTH EMERGENCY SHELTER)
+City: NULL (LR) Zip Code: NULL (72204)
+15:37:56 2/29/2024 FREE UNIT (B)(13) P1
+Unit Freed Unit ID: LRP/2X61
+15:37:56 2/29/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/2X61
+Status: AV (ENR)
+15:37:56 2/29/2024 INC STAT (B)(13) P1
+Incident Status Status: Pending (Active)
+15:37:27 2/29/2024 UNIT STAT LRP/(B)(13) LRP/(B)(13)
+Unit Status Unit ID: LRP/2X61
+Status: ENR (DSP) Submitted: 15:37:25 2/29/2024
+15:37:15 2/29/2024 UNIT MGMT (B)(13) P1
+Unit Location Unit ID: LRP/2X61
+Location: 6425 W 12TH ST Loc Name: YOUTH EMERGENCY SHELTER
+City: LR Zip Code: 72204
+15:37:15 2/29/2024 UNIT STAT (B)(13) P1
+Unit Status Unit ID: LRP/2X61
+Status: DSP (AV)
+15:37:15 2/29/2024 INC STAT (B)(13) P1
+Incident Status Status: Active (Pending)
+15:37:15 2/29/2024 RPT NUM (B)(13) P1
+Report Number Assigned Rprt Num: LRP24025693
+15:37:15 2/29/2024 PRIM UNIT (B)(13) P1
+Primary Unit Primary: LRP/2X61
+15:37:15 2/29/2024 DPTCH (B)(13) P1
+Dispatch Assigned Unit: LRP/2X61 (Officers: LRP/Buzzitta
+Anthony)
+15:37:15 2/29/2024 REC (B)(13) P1
+Preferred Rec: [PATROL] 1L32 (2:39), 2X61 (3:53)
+Add'l: [PATROL] 2X93 (4:36), 2X50 (5:17)
+Missing: (None)
+15:37:15 2/29/2024 REC (B)(13) P1
+Fixed (Run Card Set: A) Rec: [PATROL] 2X61, 2X93
+Add'l: [PATROL] 2X50, 2X80
+Missing: (None)
+15:36:20 2/29/2024 CMNTS (B)(13) C1
+Comments
+SCREAMING OVER LANDLINE PHONE, SOMEONE PICKED UP AND SAID IT WAS KIDS PLAYING ON
+THE PHONE BUT CALL TAKER COULD STILL HEAR SCREAMING. CHECK TO SATISFACTION
+15:36:20 2/29/2024 PER INFO (B)(13) C1
+Person 1 Added Role: INITIAL CALLER
+First: Centers for Youth and Families Phone: (501) 666-8686
+Address: 6425 W 12TH ST 6425-6601 W. 12TH ST Is Property Seized: No
+15:36:20 2/29/2024 INC CREATE (B)(13) C1
+Jurisdiction Area: NW
+Sector: 4 Beat: 61
+15:36:20 2/29/2024 INC CREATE (B)(13) C1
+Incident Created Started: 15:35:05 2/29/2024
+Details to Follow: None Location: 6425 W 12TH ST
+Loc Name: YOUTH EMERGENCY SHELTER Latitude: 34.741185
+Longitude: -92.348059 City: LR
+
+LRP2402290345 3/7/2024 8:49:21 AM (B)(13) Page 4 of 4
+Time/Date Trans Type User ID Console ID
+Cross Strs: 1100 GILES ST / 1200 LEISURE PL Source: 911
+Incid Type: UNK Priority: 2
+Zip Code: 72204 Validation Level: Premise Lvl
+15:35:04 2/29/2024 ANI/ALI (B)(13) C1
+911 Call Ani/Ali Populate Time: 15:35:04 2/29/2024
+E911 Phone Call Status: Completed Incoming: Yes
+Mobile: Yes Time Offered: 15:35:04 2/29/2024
+Time Completed: 15:35:37 2/29/2024 Time Received at Switch: 15:35:04 2/29/2024
+Total Time on Hold: 0 Total Time in Conference: 0

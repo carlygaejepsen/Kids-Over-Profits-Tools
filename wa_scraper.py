@@ -10,19 +10,21 @@ Source: https://doh.wa.gov/licenses-permits-and-certificates/facilities-z/
         (facility type = Residential Treatment Facility License, id=2879)
 """
 
+import argparse
 import logging
 import os
 import re
 import time
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 
 import pdfplumber
 import requests
 from bs4 import BeautifulSoup
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
     level=logging.INFO,
@@ -51,6 +53,7 @@ FACILITY_TYPES = [
 ]
 
 PDF_CACHE_DIR = Path(__file__).parent / "wa_pdfs"
+STATE_FILE = Path(os.getenv("WA_STATE_FILE", ".wa_state.json"))
 
 # KOP programs that are DOH-licensed (RTF or BHA). Juvenile detentions,
 # CSD community facilities (Canyon View, Oakridge, etc.), and JR/JJR
@@ -387,7 +390,16 @@ class WAInspectionScraper:
             },
         }
 
-    def scrape(self) -> List[Dict]:
+    def scrape(self, seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[List[Dict], Dict[str, List[str]]]:
+        """Scrape WA DOH, skipping reports whose report_num is in `seen`.
+
+        State is keyed by facility_name. The PDF download and parse only run
+        for reports we haven't seen — but reports listed without a report_num
+        in the HTML always download (we'd have to read the PDF stem to know).
+        """
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
         logger.info("Starting WA DOH scrape")
         all_rows: List[Dict] = []
 
@@ -412,7 +424,6 @@ class WAInspectionScraper:
                 time.sleep(1)
             logger.info(f"  total {label}: {collected}")
 
-        # Filter to KOP programs only
         filtered: List[Dict] = []
         for r in all_rows:
             match = matches_kop_program(r["facility_name"])
@@ -431,14 +442,27 @@ class WAInspectionScraper:
 
         for i, row in enumerate(filtered, start=1):
             name = row["facility_name"]
+            seen_for_facility = seen.get(name, set())
             logger.info(f"[{i}/{len(filtered)}] {name} ({row['license_number']})")
 
             reports: List[Dict] = []
+            ids_for_facility: List[str] = []
+            skipped = 0
             for category, links in row["reports_by_category"].items():
                 for report_num, url in links:
+                    if report_num and report_num in seen_for_facility:
+                        skipped += 1
+                        continue
                     report = self.build_report(report_num, url, category)
                     if report:
                         reports.append(report)
+                        if report.get("report_id"):
+                            ids_for_facility.append(report["report_id"])
+
+            if not reports:
+                if skipped:
+                    logger.info(f"  no new reports ({skipped} already seen)")
+                continue
 
             administrator = ""
             for r in reports:
@@ -464,10 +488,13 @@ class WAInspectionScraper:
                 "facility_info": facility_info,
                 "reports": reports,
             })
-            logger.info(f"  {len(reports)} reports")
+            if ids_for_facility:
+                new_ids[name] = ids_for_facility
+            extra = f" ({skipped} already seen)" if skipped else ""
+            logger.info(f"  {len(reports)} new reports{extra}")
 
         logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities
+        return self.all_facilities, new_ids
 
 
 # ── API posting ─────────────────────────────────────────────────────
@@ -487,22 +514,32 @@ def save_to_api(facilities: List[Dict]) -> bool:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-process all PDFs")
+    args = ap.parse_args()
+
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
+
     scraper = WAInspectionScraper()
-    facilities = scraper.scrape()
+    facilities, new_ids = scraper.scrape(seen=seen)
 
     if not facilities:
-        logger.warning("No facilities scraped")
+        logger.info("No new reports since last run")
         return
 
     total_reports = sum(len(f["reports"]) for f in facilities)
     logger.info(
-        f"Scraped {len(facilities)} facilities, {total_reports} reports "
+        f"Scraped {len(facilities)} facilities, {total_reports} new reports "
         "— posting to API"
     )
     if save_to_api(facilities):
         logger.info("Data saved to database successfully!")
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
     else:
-        logger.error("API save failed — check logs above")
+        logger.error("API save failed — state not advanced")
 
 
 if __name__ == "__main__":

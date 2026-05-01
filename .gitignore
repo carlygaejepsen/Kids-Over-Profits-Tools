@@ -6,3 +6,13 @@ __pycache__/
 
 # Scraper launcher local state (last-run timestamps)
 scraper_launcher_state.json
+
+# Per-scraper incremental-scrape cursors
+.ar_state.json
+.az_state.json
+.ca_state.json
+.ct_state.json
+.or_state.json
+.tx_state.json
+.utah_state.json
+.wa_state.json

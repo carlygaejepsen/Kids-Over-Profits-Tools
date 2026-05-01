@@ -167,7 +167,7 @@ class TestCaliforniaApiIntegration(unittest.TestCase):
         ], []]
 
         parser = CaliforniaCCLParser(['123456789', '987654321'])
-        facilities = parser.scrape()
+        facilities, _ = parser.scrape()
 
         self.assertEqual(len(facilities), 1)
 

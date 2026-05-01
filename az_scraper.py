@@ -7,16 +7,19 @@ Salesforce Aura API, then POSTs to the inspections API for MySQL storage.
 No browser needed — calls the public Salesforce Apex endpoints directly.
 """
 
+import argparse
 import html
 import logging
 import os
 import re
 from datetime import datetime
-from typing import Dict, List, Optional
+from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
 
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
     level=logging.INFO,
@@ -30,6 +33,8 @@ API_URL = os.getenv(
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
 API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+
+STATE_FILE = Path(os.getenv("AZ_STATE_FILE", ".az_state.json"))
 
 # ── AZ Care Check Salesforce Aura endpoints ─────────────────────────
 AURA_URL = "https://azcarecheck.azdhs.gov/s/sfsites/aura"
@@ -269,26 +274,52 @@ class AZFacilityScraper:
 
         return reports
 
-    def scrape(self, facility_ids: Optional[List[str]] = None) -> List[Dict]:
-        """Scrape all facilities and return the collected list."""
+    @staticmethod
+    def _inspection_report_id(insp: Dict) -> str:
+        """Compute the same report_id that _build_reports will assign."""
+        return (insp.get("inspectionName")
+                or insp.get("inspectionId")
+                or insp.get("Id")
+                or "")
+
+    def scrape(self, facility_ids: Optional[List[str]] = None,
+               seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[List[Dict], Dict[str, List[str]]]:
+        """Scrape facilities, skipping inspections already in `seen`.
+
+        Returns (facilities, new_ids) where new_ids maps facility_id -> list of
+        report_ids encountered this run. Caller is responsible for merging
+        new_ids into state only after a successful API post.
+        """
         ids = facility_ids or FACILITY_IDS
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
         logger.info(f"Starting AZ scrape for {len(ids)} facilities")
 
         for i, fid in enumerate(ids):
             logger.info(f"[{i+1}/{len(ids)}] Facility {fid}")
             try:
-                # Step 1: Get facility details
                 details = self._get_facility_details(fid)
                 facility_info = self._build_facility_info(details)
                 logger.info(f"  {facility_info['facility_name']}")
 
-                # Step 2: Get inspection list
                 inspections = self._get_inspections(fid)
-                logger.info(f"  {len(inspections)} inspections")
+                already_seen = seen.get(fid, set())
+                new_inspections = [
+                    insp for insp in inspections
+                    if self._inspection_report_id(insp) not in already_seen
+                ]
+                if already_seen:
+                    logger.info(f"  {len(new_inspections)} new of {len(inspections)} inspections "
+                                f"({len(inspections) - len(new_inspections)} already posted)")
+                else:
+                    logger.info(f"  {len(new_inspections)} inspections")
 
-                # Step 3: Get deficiency items for each inspection
+                if not new_inspections:
+                    continue
+
                 items_by_inspection: Dict[str, List[Dict]] = {}
-                for insp in inspections:
+                for insp in new_inspections:
                     insp_id = insp.get("inspectionId") or insp.get("Id") or ""
                     if not insp_id:
                         continue
@@ -298,8 +329,7 @@ class AZFacilityScraper:
                     except Exception as e:
                         logger.warning(f"    Could not get items for {insp_id}: {e}")
 
-                # Step 4: Build reports
-                reports = self._build_reports(inspections, items_by_inspection)
+                reports = self._build_reports(new_inspections, items_by_inspection)
                 total_deficiencies = sum(
                     len(r["categories"].get("deficiencies", []))
                     for r in reports
@@ -310,6 +340,9 @@ class AZFacilityScraper:
                     "facility_info": facility_info,
                     "reports": reports,
                 })
+                ids_for_facility = [r["report_id"] for r in reports if r["report_id"]]
+                if ids_for_facility:
+                    new_ids[fid] = ids_for_facility
 
             except requests.exceptions.RequestException as e:
                 logger.error(f"  HTTP error on {fid}: {e}")
@@ -319,7 +352,7 @@ class AZFacilityScraper:
                 continue
 
         logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities
+        return self.all_facilities, new_ids
 
 
 # ── API posting ──────────────────────────────────────────────────────
@@ -340,17 +373,29 @@ def save_to_api(facilities: List[Dict]) -> bool:
 
 
 def main():
-    scraper = AZFacilityScraper()
-    facilities = scraper.scrape()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-scan all inspections")
+    args = ap.parse_args()
 
-    if facilities:
-        logger.info(f"Scraped {len(facilities)} facilities — posting to API")
-        if save_to_api(facilities):
-            logger.info("Data saved to database successfully!")
-        else:
-            logger.error("API save failed — check logs above")
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
+
+    scraper = AZFacilityScraper()
+    facilities, new_ids = scraper.scrape(seen=seen)
+
+    facilities_to_post = [f for f in facilities if f["reports"]]
+    if not facilities_to_post:
+        logger.info("No new inspections since last run")
+        return
+
+    logger.info(f"Posting {len(facilities_to_post)} facilities with new reports to API")
+    if save_to_api(facilities_to_post):
+        logger.info("Data saved to database successfully!")
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
     else:
-        logger.warning("No facilities scraped")
+        logger.error("API save failed — state not advanced")
 
 
 if __name__ == "__main__":

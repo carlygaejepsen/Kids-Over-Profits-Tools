@@ -3,6 +3,7 @@ California Community Care Licensing Report Parser
 Complete version with all continuation logic properly integrated
 """
 
+import argparse
 import re
 import json
 import time
@@ -10,10 +11,12 @@ import logging
 import os
 import requests
 from datetime import datetime
+from pathlib import Path
 from bs4 import BeautifulSoup
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Set, Tuple
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
     level=logging.INFO,
@@ -26,6 +29,9 @@ API_URL = os.getenv(
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
 API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+
+STATE_FILE = Path(os.getenv("CA_STATE_FILE", ".ca_state.json"))
+
 
 def smart_title_case(text):
     """Convert text to title case while preserving acronyms and handling exceptions"""
@@ -131,22 +137,35 @@ class CaliforniaCCLParser:
         self.base_url = "https://www.ccld.dss.ca.gov/transparencyapi/api/FacilityReports"
         self.all_facilities: List[Dict[str, Any]] = []
     
-    def fetch_reports(self, facility_id: str, max_reports: int = 50) -> List[Dict[str, Any]]:
-        """Fetch all reports for a facility using index pagination"""
+    def fetch_reports(self, facility_id: str, max_reports: int = 50,
+                      seen: Optional[Set[str]] = None) -> List[Dict[str, Any]]:
+        """Fetch all reports for a facility using index pagination.
+
+        If `seen` is provided, indices whose report_id ({facility_id}-{index})
+        is already in `seen` are skipped without an HTTP call. This assumes
+        index→content is stable across runs (chronological/oldest-first order).
+        Use --full periodically if reports may be added at index 0.
+        """
+        seen = seen or set()
         reports = []
         index = 0
         consecutive_errors = 0
-        
+        skipped = 0
+
         print(f"Starting to fetch reports for facility {facility_id}")
-        
+
         while index < max_reports and consecutive_errors < 3:
+            if f"{facility_id}-{index}" in seen:
+                skipped += 1
+                index += 1
+                continue
             try:
                 url = f"{self.base_url}?facNum={facility_id}&inx={index}"
                 response = requests.get(url, timeout=30)
-                
+
                 if response.status_code == 404 or not response.text.strip():
                     break
-                
+
                 if response.status_code == 200:
                     parsed = self.parse_report(response.text)
                     if parsed and parsed.get('facility_number'):
@@ -161,16 +180,19 @@ class CaliforniaCCLParser:
                 else:
                     consecutive_errors += 1
                     index += 1
-                        
+
             except Exception as e:
                 print(f"  Exception at index {index}: {e}")
                 consecutive_errors += 1
                 index += 1
-                
+
                 if consecutive_errors >= 3:
                     break
-        
-        print(f"  Found {len(reports)} reports")
+
+        msg = f"  Found {len(reports)} reports"
+        if skipped:
+            msg += f" ({skipped} indices skipped — already seen)"
+        print(msg)
         return reports
     
     # Helper methods for continuation handling
@@ -910,9 +932,16 @@ class CaliforniaCCLParser:
             "categories": self._build_categories(report),
         }
 
-    def scrape(self) -> List[Dict[str, Any]]:
-        """Scrape California facilities and return the shared inspection API payload."""
+    def scrape(self, seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
+        """Scrape California facilities, skipping reports already in `seen`.
+
+        Returns (facilities, new_ids) where new_ids maps facility_id -> list of
+        report_ids encountered this run.
+        """
         self.all_facilities = []
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
         total = len(self.facility_ids)
 
         logger.info(f"Starting CA scrape for {total} facilities")
@@ -922,9 +951,9 @@ class CaliforniaCCLParser:
             logger.info(f"[{i}/{total}] Facility {fac_id}")
 
             try:
-                reports = self.fetch_reports(fac_id)
+                reports = self.fetch_reports(fac_id, seen=seen.get(fac_id))
                 if not reports:
-                    logger.info("  No reports found")
+                    logger.info("  No new reports")
                     continue
 
                 for report in reports:
@@ -937,6 +966,9 @@ class CaliforniaCCLParser:
                     "facility_info": facility_info,
                     "reports": api_reports,
                 })
+                ids_for_facility = [r["report_id"] for r in api_reports if r["report_id"]]
+                if ids_for_facility:
+                    new_ids[fac_id] = ids_for_facility
 
                 logger.info(
                     f"  {facility_info.get('facility_name', fac_id)} - {len(api_reports)} reports"
@@ -950,11 +982,12 @@ class CaliforniaCCLParser:
                 continue
 
         logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities
+        return self.all_facilities, new_ids
     
     def process_all_facilities(self) -> List[Dict[str, Any]]:
         """Backward-compatible wrapper for callers that still use the old method name."""
-        return self.scrape()
+        facilities, _ = self.scrape()
+        return facilities
     
     def save_json(self, data: List[Dict], filename: str = "ccl_reports.json"):
         """Save results as JSON with error handling"""
@@ -3054,17 +3087,29 @@ FACILITY_IDS = ["547207220",
     ]
 
 def main():
-    parser = CaliforniaCCLParser(FACILITY_IDS)
-    facilities = parser.scrape()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-scan all reports")
+    args = ap.parse_args()
 
-    if facilities:
-        logger.info(f"Scraped {len(facilities)} facilities -- posting to API")
-        if save_to_api(facilities):
-            logger.info("Data saved to database successfully!")
-        else:
-            logger.error("API save failed -- check logs above")
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
+
+    parser = CaliforniaCCLParser(FACILITY_IDS)
+    facilities, new_ids = parser.scrape(seen=seen)
+
+    facilities_to_post = [f for f in facilities if f["reports"]]
+    if not facilities_to_post:
+        logger.info("No new reports since last run")
+        return
+
+    logger.info(f"Posting {len(facilities_to_post)} facilities with new reports to API")
+    if save_to_api(facilities_to_post):
+        logger.info("Data saved to database successfully!")
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
     else:
-        logger.warning("No facilities scraped")
+        logger.error("API save failed -- state not advanced")
 
 
 if __name__ == "__main__":

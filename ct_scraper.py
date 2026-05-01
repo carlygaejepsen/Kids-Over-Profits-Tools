@@ -1,12 +1,17 @@
+import argparse
 import requests
 import re
 import os
 from bs4 import BeautifulSoup
 import logging
-from typing import Dict, List, Optional
+from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
 from datetime import datetime
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
+
+STATE_FILE = Path(os.getenv("CT_STATE_FILE", ".ct_state.json"))
 
 # Set up logging for better debugging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -709,42 +714,60 @@ class DCFFacilityScraper:
         
         return '\n'.join(cleaned_lines)
     
-    def scrape(self) -> Optional[Dict]:
+    def scrape(self, seen: Optional[Dict[str, Set[str]]] = None
+               ) -> Tuple[Optional[Dict], Dict[str, List[str]]]:
+        """Scrape DCF facilities, dropping reports already in `seen`.
+
+        Returns (data, new_ids). data["facilities"] only contains facilities
+        with at least one new report; facilities whose reports were all
+        previously seen are omitted. new_ids maps facility_name -> list of
+        report_ids encountered this run.
         """
-        Main scraping method
-        """
+        seen = seen or {}
+        new_ids: Dict[str, List[str]] = {}
         logger.info("Starting DCF facility scraping")
-        
-        # Fetch page
+
         html_content = self.fetch_page()
         if not html_content:
-            return None
-        
-        # Parse HTML
+            return None, new_ids
+
         soup = self.parse_html(html_content)
         if not soup:
-            return None
-        
-        # Extract data
-        facilities = self.extract_table_data(soup)
-        
-        if not facilities:
+            return None, new_ids
+
+        all_facilities = self.extract_table_data(soup)
+        if not all_facilities:
             logger.error("No facilities found")
-            return None
-        
+            return None, new_ids
+
+        filtered: List[Dict] = []
+        for fac in all_facilities:
+            fac_name = fac["facility_info"].get("facility_name", "")
+            seen_for_fac = seen.get(fac_name, set())
+            new_reports = [
+                r for r in fac.get("reports", [])
+                if r.get("report_id") and r["report_id"] not in seen_for_fac
+            ]
+            if not new_reports:
+                continue
+            filtered.append({"facility_info": fac["facility_info"], "reports": new_reports})
+            new_ids[fac_name] = [r["report_id"] for r in new_reports]
+
         result = {
-            "total_facilities": len(facilities),
+            "total_facilities": len(filtered),
             "scraped_timestamp": datetime.now().isoformat(),
             "source_url": self.url,
             "scraping_notes": {
                 "parser": "BeautifulSoup HTML table parsing",
-                "total_reports": sum(len(f.get("reports", [])) for f in facilities)
+                "total_reports": sum(len(f.get("reports", [])) for f in filtered),
             },
-            "facilities": facilities
+            "facilities": filtered,
         }
-        
-        logger.info(f"Scraping completed: {len(facilities)} facilities, {result['scraping_notes']['total_reports']} total reports")
-        return result
+
+        logger.info(f"Scraping completed: {len(all_facilities)} facilities scanned, "
+                    f"{len(filtered)} with new reports, "
+                    f"{result['scraping_notes']['total_reports']} new reports total")
+        return result, new_ids
 
 API_URL = os.getenv(
     "INSPECTIONS_API_URL",
@@ -773,17 +796,34 @@ def main():
     """
     Main execution function
     """
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-post all reports")
+    args = ap.parse_args()
+
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
+
     scraper = DCFFacilityScraper()
-    
-    data = scraper.scrape()
-    
+
+    data, new_ids = scraper.scrape(seen=seen)
+
+    if not data or not data.get("facilities"):
+        logger.info("No new reports since last run")
+        return
+
     if data:
-        print(f"\nSuccessfully scraped {data['total_facilities']} facilities")
-        print(f"Total reports found: {data['scraping_notes']['total_reports']}")
-        
+        print(f"\nSuccessfully scraped {data['total_facilities']} facilities with new reports")
+        print(f"New reports to post: {data['scraping_notes']['total_reports']}")
+
         # Save to live database via API
-        if save_to_api(data, state="CT"):
+        posted_ok = save_to_api(data, state="CT")
+        if posted_ok:
             print("Data saved to live database successfully!")
+            merge_new_ids(state, new_ids)
+            save_state(STATE_FILE, state)
+        else:
+            logger.error("API save failed -- state not advanced")
         
         # Show detailed sample
         if data['facilities']:

@@ -19,6 +19,7 @@ from typing import Dict, List, Optional, Tuple
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from scraper_state import load_state, save_state
 
 try:
     import pdfplumber
@@ -56,6 +57,7 @@ API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
 DRA_BASE = "https://disabilityrightsar.org/wp-json/wp/v2"
 PDF_CACHE_DIR = Path(os.getenv("AR_PDF_CACHE", ".ar_pdf_cache"))
 TEXT_CACHE_DIR = Path(os.getenv("AR_TEXT_CACHE", ".ar_text_cache"))
+STATE_FILE = Path(os.getenv("AR_STATE_FILE", ".ar_state.json"))
 
 # Map DRA category slug -> display facility name. The REST term names are short
 # ("Centers Little Rock") so we expand them here for the public-facing UI.
@@ -142,15 +144,16 @@ class DRAScraper:
             page += 1
         logger.info(f"Loaded {len(self.tag_cache)} doc_tags")
 
-    def _list_documents(self, category_id: int) -> List[Dict]:
+    def _list_documents(self, category_id: int,
+                        modified_after: Optional[str] = None) -> List[Dict]:
         docs: List[Dict] = []
         page = 1
         while True:
-            r = self._get(
-                f"{DRA_BASE}/dlp_document",
-                params={"doc_categories": category_id, "per_page": 100,
-                        "page": page, "_embed": "false"},
-            )
+            params = {"doc_categories": category_id, "per_page": 100,
+                      "page": page, "_embed": "false"}
+            if modified_after:
+                params["modified_after"] = modified_after
+            r = self._get(f"{DRA_BASE}/dlp_document", params=params)
             batch = r.json()
             if not batch:
                 break
@@ -296,23 +299,37 @@ class DRAScraper:
             "reports": reports,
         }
 
-    def scrape(self, slugs: Optional[List[str]] = None) -> List[Dict]:
+    def scrape(self, slugs: Optional[List[str]] = None,
+               last_run: Optional[Dict[str, str]] = None
+               ) -> Tuple[List[Dict], Dict[str, str]]:
         self._load_tags()
         categories = self._list_categories()
         if slugs:
             categories = [c for c in categories if c["slug"] in slugs]
 
+        last_run = last_run or {}
+        new_cursors: Dict[str, str] = {}
+
         results: List[Dict] = []
         for i, cat in enumerate(categories, 1):
             slug = cat["slug"]
-            logger.info(f"[{i}/{len(categories)}] {slug} ({cat.get('count', '?')} docs)")
-            docs = self._list_documents(cat["id"])
+            cursor = last_run.get(slug)
+            if cursor:
+                logger.info(f"[{i}/{len(categories)}] {slug} (since {cursor})")
+            else:
+                logger.info(f"[{i}/{len(categories)}] {slug} "
+                            f"({cat.get('count', '?')} docs, full)")
+            docs = self._list_documents(cat["id"], modified_after=cursor)
             logger.info(f"  fetched {len(docs)} documents")
             facility = self._build_facility(slug, cat["name"], docs)
             results.append(facility)
+            if docs:
+                max_mod = max((d.get("modified", "") for d in docs), default="")
+                if max_mod:
+                    new_cursors[slug] = max_mod
             text_extracted = sum(1 for r in facility["reports"] if r["content_length"] > 0)
             logger.info(f"  extracted text from {text_extracted}/{len(facility['reports'])} PDFs")
-        return results
+        return results, new_cursors
 
 
 def save_to_api(facilities: List[Dict]) -> bool:
@@ -338,30 +355,46 @@ def main():
                     help="Skip OCR fallback for image-only PDFs")
     ap.add_argument("--no-post", action="store_true",
                     help="Skip posting to API (dry run)")
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-scan all documents")
     args = ap.parse_args()
 
     if not pdfplumber and not args.no_pdfs:
         logger.warning("pdfplumber not installed — PDF text will be empty. "
                        "Install with: pip install pdfplumber")
 
+    state = load_state(STATE_FILE)
+    last_run = {} if args.full else state.get("last_run", {})
+
     scraper = DRAScraper(download_pdfs=not args.no_pdfs, ocr=not args.no_ocr)
-    facilities = scraper.scrape(slugs=args.slugs)
+    facilities, new_cursors = scraper.scrape(slugs=args.slugs, last_run=last_run)
 
     if not facilities:
         logger.warning("No facilities scraped")
         return
 
     total_reports = sum(len(f["reports"]) for f in facilities)
-    logger.info(f"Scraped {len(facilities)} facilities, {total_reports} reports")
+    facilities_to_post = [f for f in facilities if f["reports"]]
+    logger.info(f"Scraped {len(facilities)} facilities, "
+                f"{total_reports} new/changed reports")
 
-    if args.no_post:
-        logger.info("Dry run — not posting to API")
+    if not facilities_to_post:
+        logger.info("No new or changed documents since last run")
+        if new_cursors and not args.no_post:
+            state.setdefault("last_run", {}).update(new_cursors)
+            save_state(STATE_FILE, state)
         return
 
-    if save_to_api(facilities):
+    if args.no_post:
+        logger.info("Dry run — not posting to API; state not advanced")
+        return
+
+    if save_to_api(facilities_to_post):
         logger.info("Data saved to database successfully!")
+        state.setdefault("last_run", {}).update(new_cursors)
+        save_state(STATE_FILE, state)
     else:
-        logger.error("API save failed — check logs above")
+        logger.error("API save failed — state not advanced")
 
 
 if __name__ == "__main__":
