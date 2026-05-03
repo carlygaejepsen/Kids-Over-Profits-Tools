@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import logging
+import os
 import re
 import time
 from datetime import datetime
@@ -14,6 +16,8 @@ from typing import Any, Dict, List, Optional
 
 import pdfplumber
 import requests
+
+from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
@@ -36,6 +40,7 @@ CHECKLIST_DIR.mkdir(exist_ok=True)
 
 OUTPUT_JSON = OUTPUT_DIR / "ut_reports_with_ocr.json"
 OUTPUT_CSV = OUTPUT_DIR / f"utah_citations_{datetime.now().strftime('%m-%d-%Y')}.csv"
+STATE_FILE = Path(os.getenv("UTAH_STATE_FILE", ".utah_state.json"))
 
 # Configuration
 DEBUG_EXTRACTION = True  # Set to True to see detailed extraction debug info
@@ -706,6 +711,11 @@ def build_checklist_summary(checklists: List[ChecklistResult]) -> str:
     return " | ".join(summaries)
 
 
+def inspection_state_id(inspection: Dict[str, Any]) -> str:
+    """Return the incremental-state identifier for a Utah inspection."""
+    return str(inspection.get("inspectionDate", "") or "").strip()
+
+
 def write_csv_output(facilities_data: List[FacilityRecord]) -> None:
     """Write a flattened CSV summary for easy spreadsheet review."""
 
@@ -768,15 +778,39 @@ def write_csv_output(facilities_data: List[FacilityRecord]) -> None:
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--full", action="store_true",
+                    help=f"Ignore {STATE_FILE} and re-process all inspections")
+    args = ap.parse_args()
+
     facility_list = FACILITY_IDS[:3] if TEST_MODE else FACILITY_IDS
     mode_str = " (TEST MODE - first 3 facilities only)" if TEST_MODE else ""
     print(f"🚀 Starting data export with OCR fallback ({len(facility_list)} facilities){mode_str}")
 
+    state = load_state(STATE_FILE)
+    seen = {} if args.full else seen_from_state(state)
     facilities_data: List[FacilityRecord] = []
+    new_ids: Dict[str, List[str]] = {}
+    facilities_skipped = 0
+    inspections_exported = 0
 
     for facility_id in facility_list:
         data = fetch_facility_data(facility_id)
         if not data:
+            continue
+
+        fid_key = str(facility_id)
+        seen_inspections = seen.get(fid_key, set())
+        all_inspections = data.get("inspections", [])
+        new_inspections = [
+            inspection for inspection in all_inspections
+            if (not inspection_state_id(inspection))
+            or inspection_state_id(inspection) not in seen_inspections
+        ][:MAX_INSPECTIONS]
+
+        if not new_inspections:
+            facilities_skipped += 1
+            time.sleep(REQUEST_DELAY)
             continue
 
         facility_record: FacilityRecord = {
@@ -789,7 +823,8 @@ def main() -> None:
             "inspections": [],
         }
 
-        inspections = data.get("inspections", [])[:MAX_INSPECTIONS]
+        inspections = new_inspections
+        print(f"  Processing {len(inspections)} new inspection(s)")
         for inspection in inspections:
             findings = [
                 {
@@ -844,14 +879,24 @@ def main() -> None:
             facility_record["inspections"].append(inspection_record)
 
         facilities_data.append(facility_record)
+        new_ids[fid_key] = [inspection_id for inspection in inspections
+                            if (inspection_id := inspection_state_id(inspection))]
+        inspections_exported += len(inspections)
         time.sleep(REQUEST_DELAY)
+
+    if not facilities_data:
+        print(f"\nNo new inspections since last run ({facilities_skipped} facilities skipped)")
+        return
 
     OUTPUT_JSON.write_text(json.dumps(facilities_data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\n🎉 Done! Data saved to {OUTPUT_JSON}")
-    print(f"📊 Exported {len(facilities_data)} facilities")
+    print(f"📊 Exported {len(facilities_data)} facilities with {inspections_exported} new inspection(s)")
 
     write_csv_output(facilities_data)
     print(f"📑 CSV summary saved to {OUTPUT_CSV}")
+    merge_new_ids(state, new_ids)
+    save_state(STATE_FILE, state)
+    print(f"💾 State updated: {STATE_FILE}")
     print("💡 Pro tip: Use a JSON viewer or 'python -m json.tool' for pretty printing")
 
 

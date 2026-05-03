@@ -190,11 +190,11 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Scraper:** `wa_scraper.py` -- collects DOH search rows for residential treatment and behavioral health facility types, filters to KOP programs, then builds reports from linked PDFs
 - **Key detail:** Incremental state is keyed by facility name and report number. Reports missing a report number in the HTML cannot be skipped cheaply and still require PDF inspection.
 
-### UT (Utah CSV export)
+### UT (Utah OCR/CSV export)
 - **Source:** Utah facility JSON endpoint at `ccl.utah.gov`
 - **Method:** `requests` JSON fetches plus CSV export
-- **Script:** `utah_citation_scraper.v2.py` -- writes one CSV row per facility with up to `MAX_INSPECTIONS` new inspections
-- **Key detail:** This script is not part of the WordPress inspections API pipeline, but it now uses the same seen-ID state pattern so reruns only write newly observed inspection dates unless `--full` is used.
+- **Script:** `utah_citation_scraper.py` -- writes OCR-enhanced checklist data to JSON plus a flattened CSV export for newly observed inspections
+- **Key detail:** This script is not part of the WordPress inspections API pipeline, but it uses the same seen-ID state pattern keyed by facility ID and inspection date, so reruns only process newly observed inspections unless `--full` is used.
 
 ## Adding a New State
 

@@ -31,16 +31,26 @@ STATE_FILE = THIS_DIR / "scraper_launcher_state.json"
 
 TOOLS_DIR = THIS_DIR
 KOP_DIR   = Path(r"C:\Users\daniu\OneDrive\Documents\GitHub\Kids-Over-Profits")
+LOCAL_APPDATA_DIR = Path(os.environ.get("LOCALAPPDATA", str(THIS_DIR)))
+MN_BROWSER_PROFILE = LOCAL_APPDATA_DIR / "KidsOverProfits" / "mn-browser-profile"
 
 SCRAPERS = [
     {"name": "Arkansas",    "key": "AR", "script": TOOLS_DIR / "ar_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Arizona",     "key": "AZ", "script": TOOLS_DIR / "az_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "California",  "key": "CA", "script": TOOLS_DIR / "ca_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Connecticut", "key": "CT", "script": TOOLS_DIR / "ct_scraper.py",               "cwd": TOOLS_DIR},
-    {"name": "Minnesota",   "key": "MN", "script": KOP_DIR / "scripts" / "mn_scraper.py",     "cwd": KOP_DIR},
+    {
+        "name": "Minnesota",
+        "key": "MN",
+        "script": KOP_DIR / "scripts" / "mn_scraper.py",
+        "cwd": KOP_DIR,
+        # Keep Playwright's persistent profile out of the synced repo to avoid
+        # OneDrive/lock-file interference during Chromium startup.
+        "env_defaults": {"MN_BROWSER_PROFILE": str(MN_BROWSER_PROFILE)},
+    },
     {"name": "Oregon",      "key": "OR", "script": TOOLS_DIR / "or_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Texas",       "key": "TX", "script": TOOLS_DIR / "tx_scraper.py",               "cwd": TOOLS_DIR},
-    {"name": "Utah",        "key": "UT", "script": TOOLS_DIR / "utah_citation_scraper.v2.py", "cwd": TOOLS_DIR},
+    {"name": "Utah",        "key": "UT", "script": TOOLS_DIR / "utah_citation_scraper.py",    "cwd": TOOLS_DIR},
     {"name": "Washington",  "key": "WA", "script": TOOLS_DIR / "wa_scraper.py",               "cwd": TOOLS_DIR},
 ]
 
@@ -491,6 +501,10 @@ class ScraperLauncher:
         key    = scraper["key"]
         script = Path(scraper["script"])
         cwd    = Path(scraper["cwd"])
+        env    = os.environ.copy()
+
+        for env_key, env_value in scraper.get("env_defaults", {}).items():
+            env.setdefault(env_key, env_value)
 
         if not script.exists():
             self._log(key, f"ERROR: script not found — {script}", tag="err")
@@ -514,6 +528,7 @@ class ScraperLauncher:
                 encoding="utf-8",
                 errors="replace",
                 creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+                env=env,
             )
             self.processes[key] = proc
             if proc.stdout is None:

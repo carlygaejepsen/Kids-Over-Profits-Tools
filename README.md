@@ -16,8 +16,8 @@ Most active state scrapers now run incrementally by default. Each scraper keeps 
 - Use `--full` to ignore the saved state and force a complete re-scan/re-post.
 - `ar_scraper.py` uses a per-category `last_run` cursor and the upstream WordPress `modified_after` filter.
 - `az_scraper.py`, `ca_scraper.py`, `ct_scraper.py`, `or_scraper.py`, `tx_scraper.py`, and `wa_scraper.py` track previously posted report IDs.
-- `utah_citation_scraper.v2.py` uses the same pattern for CSV exports, keyed by facility ID and inspection date.
-- `or_scraper.py --replace` implies a full repost because it clears existing Oregon rows before inserting.
+- `utah_citation_scraper.py` now uses the same pattern for OCR-enhanced Utah exports, keyed by facility ID and inspection date.
+- `or_scraper.py` is incremental-only; use `--full` to re-scan Oregon reports without clearing existing rows.
 
 ## Local artifacts
 
