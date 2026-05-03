@@ -1125,14 +1125,13 @@ class ORFacilityScraper:
         return self.all_facilities, new_ids
 
 
-def save_to_api(facilities: List[Dict], replace: bool = False) -> bool:
+def save_to_api(facilities: List[Dict]) -> bool:
     result = post_facilities_to_api(
         api_url=API_URL,
         api_key=API_KEY,
         state="OR",
         scraped_timestamp=datetime.now().isoformat(),
         facilities=facilities,
-        replace=replace,
         timeout=120,
         info=logger.info,
         error=logger.error,
@@ -1157,7 +1156,7 @@ def main():
     parser.add_argument(
         "--replace",
         action="store_true",
-        help="Clear existing OR data from the database before inserting (use to fix stale names). Implies --full.",
+        help=argparse.SUPPRESS,
     )
     parser.add_argument(
         "--full",
@@ -1167,9 +1166,12 @@ def main():
     args = parser.parse_args()
 
     state = load_state(STATE_FILE)
-    # --replace wipes the DB before insert, so it must repost everything; combining
-    # it with a stateful filter would erase older reports we'd otherwise leave alone.
-    full = args.full or args.replace
+    if args.replace:
+        logger.warning(
+            "--replace is deprecated and ignored; Oregon now posts incrementally "
+            "without clearing existing database rows."
+        )
+    full = args.full
     seen = {} if full else seen_from_state(state)
 
     scraper = ORFacilityScraper()
@@ -1184,14 +1186,8 @@ def main():
     if args.no_post:
         logger.info("Skipping API POST because --no-post was set; state not advanced")
         return
-    if args.replace:
-        logger.info("--replace set: existing OR data will be cleared before insert")
-    if save_to_api(facilities_to_post, replace=args.replace):
+    if save_to_api(facilities_to_post):
         logger.info("Data saved to database successfully!")
-        if args.replace:
-            # --replace wiped the DB and reposted everything, so the post-state
-            # is exactly the IDs we just sent. Drop any stale entries.
-            state["seen"] = {}
         merge_new_ids(state, new_ids)
         save_state(STATE_FILE, state)
     else:

@@ -182,7 +182,7 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Source:** Public Oregon ODHS SharePoint-backed report pages for RC and TBS programs
 - **Method:** `requests` against the anonymous SharePoint SOAP endpoint, then PDF download/text extraction
 - **Scraper:** `or_scraper.py` -- reads SharePoint rows directly, groups reports by agency/program, and posts the resulting facility payloads
-- **Key detail:** Incremental state is keyed by `agency_name`, and filtering happens before PDF download/parse, so already-seen reports cost almost nothing on reruns. `--replace` implies a full repost because it clears existing OR data before insert.
+- **Key detail:** Incremental state is keyed by `agency_name`, and filtering happens before PDF download/parse, so already-seen reports cost almost nothing on reruns. Oregon no longer supports destructive replace mode; use `--full` only when you intentionally want to re-scan all reports without clearing existing database rows.
 
 ### WA (Washington)
 - **Source:** WA DOH facility inspections and investigations search

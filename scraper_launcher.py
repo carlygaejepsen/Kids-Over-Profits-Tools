@@ -12,8 +12,10 @@ navy/midnight/teal on sand, with orange/chartreuse/coral accents.
 """
 
 import json
+import os
 import queue
 import re
+import signal
 import subprocess
 import sys
 import threading
@@ -67,6 +69,48 @@ FONT_SUBTITLE= ("Segoe UI",          10)
 FONT_HEADER  = ("Segoe UI Semibold", 10)
 FONT_BODY    = ("Segoe UI",          10)
 FONT_MONO    = ("Consolas",          9)
+
+
+if sys.platform == "win32":
+    import ctypes
+    from ctypes import wintypes
+
+    PROCESS_SUSPEND_RESUME = 0x0800
+    _kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    _ntdll = ctypes.WinDLL("ntdll", use_last_error=True)
+
+    _OpenProcess = _kernel32.OpenProcess
+    _OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
+    _OpenProcess.restype = wintypes.HANDLE
+
+    _CloseHandle = _kernel32.CloseHandle
+    _CloseHandle.argtypes = [wintypes.HANDLE]
+    _CloseHandle.restype = wintypes.BOOL
+
+    _NtSuspendProcess = _ntdll.NtSuspendProcess
+    _NtSuspendProcess.argtypes = [wintypes.HANDLE]
+    _NtSuspendProcess.restype = wintypes.DWORD
+
+    _NtResumeProcess = _ntdll.NtResumeProcess
+    _NtResumeProcess.argtypes = [wintypes.HANDLE]
+    _NtResumeProcess.restype = wintypes.DWORD
+
+
+def set_process_paused(pid: int, paused: bool) -> None:
+    if sys.platform == "win32":
+        handle = _OpenProcess(PROCESS_SUSPEND_RESUME, False, pid)
+        if not handle:
+            raise OSError(ctypes.get_last_error(), f"OpenProcess failed for pid {pid}")
+        try:
+            status = _NtSuspendProcess(handle) if paused else _NtResumeProcess(handle)
+            if status != 0:
+                verb = "pause" if paused else "resume"
+                raise OSError(f"Could not {verb} pid {pid} (NTSTATUS 0x{status:08X})")
+        finally:
+            _CloseHandle(handle)
+        return
+
+    os.kill(pid, signal.SIGSTOP if paused else signal.SIGCONT)
 
 
 # ── Persistence ───────────────────────────────────────────────────────────────
@@ -152,7 +196,10 @@ class ScraperLauncher:
         self.check_vars    = {}
         self.status_labels = {}
         self.row_frames    = {}
+        self.pause_buttons = {}
         self.running       = set()
+        self.paused        = set()
+        self.processes: dict = {}
         self.log_queue     = queue.Queue()
         self.output_buffers: dict = {}  # key -> list of output lines from last run
 
@@ -264,7 +311,7 @@ class ScraperLauncher:
                  bg=SAND, fg="#888", font=FONT_SUBTITLE).pack(side="right")
 
     def _build_row(self, parent, scraper):
-        """One checkbox + name + last-run + Run button row."""
+        """One checkbox + name + last-run + action buttons row."""
         key = scraper["key"]
         row = tk.Frame(parent, bg=WHITE)
         row.pack(fill="x", pady=1)
@@ -287,6 +334,10 @@ class ScraperLauncher:
 
         KopButton(row, "Results", lambda k=key: self._show_results(k),
                   variant="ghost", pady=3).pack(side="right", padx=(0, 4))
+        pause_btn = KopButton(row, "Pause", lambda k=key: self._toggle_pause(k),
+                              variant="accent", pady=3)
+        pause_btn.pack(side="right", padx=(0, 4))
+        self.pause_buttons[key] = pause_btn
         KopButton(row, "Run", lambda s=scraper: self._run_one(s),
                   variant="teal", pady=3).pack(side="right")
 
@@ -297,6 +348,7 @@ class ScraperLauncher:
             key = scraper["key"]
             lbl = self.status_labels[key]
             row = self.row_frames[key]
+            pause_btn = self.pause_buttons[key]
             if key in self.running:
                 lbl.configure(text="Running…", fg=ORANGE)
                 row.configure(bg=SOFT_YELLOW)
@@ -306,6 +358,17 @@ class ScraperLauncher:
                             child.configure(bg=SOFT_YELLOW)
                         except tk.TclError:
                             pass
+                pause_btn.configure(text="Pause")
+                if key in self.paused:
+                    lbl.configure(text="Paused", fg=NAVY)
+                    row.configure(bg=POWDER_BLUE)
+                    pause_btn.configure(text="Resume")
+                    for child in row.winfo_children():
+                        if isinstance(child, (tk.Label, tk.Checkbutton)):
+                            try:
+                                child.configure(bg=POWDER_BLUE)
+                            except tk.TclError:
+                                pass
             else:
                 entry = self.state.get(key)
                 text  = format_last_run(entry)
@@ -314,6 +377,7 @@ class ScraperLauncher:
                     color = SUCCESS_TEXT if entry.get("success") else ERROR_TEXT
                 lbl.configure(text=text, fg=color)
                 row.configure(bg=WHITE)
+                pause_btn.configure(text="Pause")
                 for child in row.winfo_children():
                     if isinstance(child, (tk.Label, tk.Checkbutton)):
                         try:
@@ -351,6 +415,56 @@ class ScraperLauncher:
             self._log(scraper["key"], "Already running — skipping.", tag="system")
             return
         threading.Thread(target=self._execute, args=(scraper,), daemon=True).start()
+
+    def _active_process(self, key):
+        proc = self.processes.get(key)
+        if not proc:
+            return None
+        if proc.poll() is not None:
+            self.processes.pop(key, None)
+            self.paused.discard(key)
+            return None
+        return proc
+
+    def _toggle_pause(self, key):
+        if key in self.paused:
+            self._resume_one(key)
+        else:
+            self._pause_one(key)
+
+    def _pause_one(self, key):
+        proc = self._active_process(key)
+        if not proc:
+            self._log(key, "Nothing running to pause.", tag="system")
+            return
+        if key in self.paused:
+            self._log(key, "Already paused.", tag="system")
+            return
+        try:
+            set_process_paused(proc.pid, True)
+        except Exception as exc:
+            self._log(key, f"ERROR: could not pause process: {exc}", tag="err")
+            return
+        self.paused.add(key)
+        self._refresh_statuses()
+        self._log(key, f"Paused (pid {proc.pid})", tag="system")
+
+    def _resume_one(self, key):
+        proc = self._active_process(key)
+        if not proc:
+            self._log(key, "Nothing paused to resume.", tag="system")
+            return
+        if key not in self.paused:
+            self._log(key, "Scraper is not paused.", tag="system")
+            return
+        try:
+            set_process_paused(proc.pid, False)
+        except Exception as exc:
+            self._log(key, f"ERROR: could not resume process: {exc}", tag="err")
+            return
+        self.paused.discard(key)
+        self._refresh_statuses()
+        self._log(key, f"Resumed (pid {proc.pid})", tag="system")
 
     def _run_selected(self):
         selected = [s for s in SCRAPERS if self.check_vars[s["key"]].get()]
@@ -401,6 +515,9 @@ class ScraperLauncher:
                 errors="replace",
                 creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
             )
+            self.processes[key] = proc
+            if proc.stdout is None:
+                raise RuntimeError("Could not capture scraper output stream")
             for line in proc.stdout:
                 stripped = line.rstrip()
                 buffer.append(stripped)
@@ -416,6 +533,8 @@ class ScraperLauncher:
             self._log(key, f"ERROR: {e}", tag="err")
             self._mark_done(key, False)
         finally:
+            self.processes.pop(key, None)
+            self.paused.discard(key)
             self.running.discard(key)
             self.root.after(0, self._refresh_statuses)
 
