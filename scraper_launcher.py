@@ -150,8 +150,17 @@ def fit_window_to_screen(window, desired_width: int, desired_height: int,
                          margin: int = 12) -> None:
     window.update_idletasks()
     left, top, work_width, work_height = get_work_area(window)
-    available_width = max(320, work_width - (margin * 2))
-    available_height = max(320, work_height - (margin * 2))
+    frame_width = 0
+    titlebar_height = 0
+
+    if window.winfo_ismapped():
+        frame_width = max(0, window.winfo_rootx() - window.winfo_x())
+        titlebar_height = max(0, window.winfo_rooty() - window.winfo_y())
+
+    decoration_width = frame_width * 2
+    decoration_height = titlebar_height + frame_width
+    available_width = max(320, work_width - decoration_width - (margin * 2))
+    available_height = max(320, work_height - decoration_height - (margin * 2))
 
     min_width = min(max(320, min_width), available_width)
     min_height = min(max(320, min_height), available_height)
@@ -160,13 +169,15 @@ def fit_window_to_screen(window, desired_width: int, desired_height: int,
     width = min(max(int(desired_width), int(min_width)), available_width)
     height = min(max(int(desired_height), int(min_height)), available_height)
 
+    outer_width = width + decoration_width
+    outer_height = height + decoration_height
     min_x = left + margin
     min_y = top + margin
-    max_x = left + work_width - width - margin
-    max_y = top + work_height - height - margin
+    max_x = left + work_width - outer_width - margin
+    max_y = top + work_height - outer_height - margin
 
-    x = left + max(margin, (work_width - width) // 2)
-    y = top + max(margin, (work_height - height) // 2)
+    x = left + max(margin, (work_width - outer_width) // 2)
+    y = top + max(margin, (work_height - outer_height) // 2)
     x = min(max(min_x, x), max_x)
     y = min(max(min_y, y), max_y)
     window.geometry(f"{width}x{height}+{x}+{y}")
