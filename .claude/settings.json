@@ -2,7 +2,20 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:fortress.wa.gov)",
-      "WebFetch(domain:wahelms.my.site.com)"
+      "WebFetch(domain:wahelms.my.site.com)",
+      "Bash(curl -sS \"https://ccl.utah.gov/assets/index-D6YmPM8_.js\" -o ./_utah_spa.js)",
+      "Bash(grep -oE 'new-cclapi\\\\.utah\\\\.gov/api[^\"'\\\\'',`\\)]*' ./_utah_spa.js)",
+      "Bash(grep -oE '`[^`]*\\\\$\\\\{[^}]*\\\\}[^`]*`|\"/api/[^\"]+\"|\"\\\\/[a-zA-Z][a-zA-Z0-9/_.-]*\"' ./_utah_spa.js)",
+      "Bash(curl -sS -o /dev/null -w \"find-a-provider: %{http_code}\\\\n\" \"https://find-a-provider.dlbc.utah.gov/\")",
+      "Bash(curl -sS -o /dev/null -w \"ccl-public: %{http_code}\\\\n\" \"https://ccl-public.utah.gov/\")",
+      "Bash(curl -sS -o /dev/null -w \"old endpoint base: %{http_code} %{content_type}\\\\n\" \"https://ccl.utah.gov/ccl/public/facilities/\")",
+      "Bash(curl -sS \"https://dlbc.utah.gov/\" -o ./_dlbc.html -w \"dlbc home: %{http_code}\\\\n\")",
+      "Bash(curl -sSL \"https://dlbc.utah.gov/find-a-facility\" -o ./_find.html)",
+      "Bash(curl -sSL \"https://dlbc.utah.gov/information-for-the-public/find-a-facility/\" -o ./_findfac.html)",
+      "Bash(grep -ioE '\\(facility[ -]?\\(search|lookup|finder|directory\\)|search[ -]?\\(for|a\\)?[ -]?facility|find[ -]?a[ -]?facility|child care lookup|provider lookup|public[ -]?\\(directory|portal|search\\)\\)[^<>\"]{0,80}' ./_findfac.html)",
+      "Bash(curl -sS -w \"\\\\n%{http_code} %{content_type}\\\\n\" \"https://new-cclapi.utah.gov/api/view-facility/96697\")",
+      "Bash(curl -sS -w \"\\\\n%{http_code} %{content_type}\\\\n\" \"https://new-cclapi.utah.gov/api/facility-menu-list?facilityId=96697\")",
+      "Bash(curl -sS -w \"\\\\n%{http_code} %{content_type}\\\\n\" \"https://new-cclapi.utah.gov/api/\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Kids-Over-Profits\\api",

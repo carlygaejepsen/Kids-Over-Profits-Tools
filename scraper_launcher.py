@@ -638,11 +638,23 @@ class ScraperLauncher:
     @staticmethod
     def _parse_stats(output: list) -> dict:
         facilities, reports = 0, 0
+        # MN scraper prints per-facility "  -> N new report(s) saved" lines;
+        # sum them to get the this-run count (matches the "saved" semantics).
+        mn_new_reports = sum(
+            int(m.group(1))
+            for line in output
+            for m in [re.search(r"->\s*(\d+)\s+new report\(s\)\s+saved", line)]
+            if m
+        )
         for line in reversed(output):
             # "API saved 45 facilities, 171 reports"
             m = re.search(r"API saved (\d+) facilit\w+,\s*(\d+) report", line)
             if m:
                 return {"facilities_saved": int(m.group(1)), "reports_saved": int(m.group(2))}
+            # MN: "Complete: 50 facilities, 200 reports total"
+            m = re.search(r"Complete:\s*(\d+)\s+facilit\w+,\s*(\d+)\s+report", line)
+            if m:
+                return {"facilities_saved": int(m.group(1)), "reports_saved": mn_new_reports}
             # "Scraped 45 facilities, 171 reports"
             m = re.search(r"Scraped (\d+) facilit\w+.*?(\d+) report", line)
             if m:

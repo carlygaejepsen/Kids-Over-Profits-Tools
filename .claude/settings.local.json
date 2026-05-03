@@ -10,7 +10,15 @@
       "Bash(\".venv/Scripts/python.exe\" -c \"import undetected_chromedriver as uc; print(''Import successful!'')\")",
       "Bash(\".venv/Scripts/python.exe\" mt_dl.py)",
       "Bash(timeout 300 python:*)",
-      "Bash(new_inspection_ids.csv)"
+      "Bash(new_inspection_ids.csv)",
+      "Bash(curl -sS \"https://web.archive.org/web/20260420000000*/ccl.utah.gov/ccl/public/facilities\")",
+      "Bash(curl -sS \"https://web.archive.org/web/timemap/link/https://ccl.utah.gov/ccl/public/facilities/96697.json\")",
+      "Bash(curl -sS \"https://web.archive.org/web/timemap/link/https://ccl.utah.gov/ccl/public/facilities/\")",
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public/facilities/96697.json&timestamp=20260420\")",
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public/facilities/96697.json&timestamp=20260424\")",
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public/facilities/96697.json\")",
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov&timestamp=20260420\")",
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public&timestamp=20260424\")"
     ],
     "deny": [],
     "ask": []

@@ -660,11 +660,17 @@ def fetch_facility_data(facility_id: int) -> Optional[Dict[str, Any]]:
 
     url = f"https://ccl.utah.gov/ccl/public/facilities/{facility_id}.json"
     response = download_with_retry(url)
-    if response:
-        print(f"🔍 Fetching {facility_id}... ✅ Success")
-        return response.json()
-    print(f"🔍 Fetching {facility_id}... ❌ Failed after retries")
-    return None
+    if not response:
+        print(f"🔍 Fetching {facility_id}... ❌ Failed after retries")
+        return None
+    try:
+        data = response.json()
+    except ValueError as error:
+        snippet = (response.text or "")[:120].replace("\n", " ")
+        print(f"🔍 Fetching {facility_id}... ❌ Non-JSON response ({error}); body starts: {snippet!r}")
+        return None
+    print(f"🔍 Fetching {facility_id}... ✅ Success")
+    return data
 
 
 def format_address(address: Dict[str, Any]) -> str:
