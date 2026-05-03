@@ -86,8 +86,18 @@ if sys.platform == "win32":
     from ctypes import wintypes
 
     PROCESS_SUSPEND_RESUME = 0x0800
+    SPI_GETWORKAREA = 0x0030
     _kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
     _ntdll = ctypes.WinDLL("ntdll", use_last_error=True)
+    _user32 = ctypes.WinDLL("user32", use_last_error=True)
+
+    class RECT(ctypes.Structure):
+        _fields_ = [
+            ("left", wintypes.LONG),
+            ("top", wintypes.LONG),
+            ("right", wintypes.LONG),
+            ("bottom", wintypes.LONG),
+        ]
 
     _OpenProcess = _kernel32.OpenProcess
     _OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
@@ -105,6 +115,10 @@ if sys.platform == "win32":
     _NtResumeProcess.argtypes = [wintypes.HANDLE]
     _NtResumeProcess.restype = wintypes.DWORD
 
+    _SystemParametersInfoW = _user32.SystemParametersInfoW
+    _SystemParametersInfoW.argtypes = [wintypes.UINT, wintypes.UINT, wintypes.LPVOID, wintypes.UINT]
+    _SystemParametersInfoW.restype = wintypes.BOOL
+
 
 def set_process_paused(pid: int, paused: bool) -> None:
     if sys.platform == "win32":
@@ -121,6 +135,41 @@ def set_process_paused(pid: int, paused: bool) -> None:
         return
 
     os.kill(pid, signal.SIGSTOP if paused else signal.SIGCONT)
+
+
+def get_work_area(window) -> tuple[int, int, int, int]:
+    if sys.platform == "win32":
+        rect = RECT()
+        if _SystemParametersInfoW(SPI_GETWORKAREA, 0, ctypes.byref(rect), 0):
+            return rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top
+    return 0, 0, window.winfo_screenwidth(), window.winfo_screenheight()
+
+
+def fit_window_to_screen(window, desired_width: int, desired_height: int,
+                         min_width: int = 320, min_height: int = 320,
+                         margin: int = 12) -> None:
+    window.update_idletasks()
+    left, top, work_width, work_height = get_work_area(window)
+    available_width = max(320, work_width - (margin * 2))
+    available_height = max(320, work_height - (margin * 2))
+
+    min_width = min(max(320, min_width), available_width)
+    min_height = min(max(320, min_height), available_height)
+    window.minsize(int(min_width), int(min_height))
+
+    width = min(max(int(desired_width), int(min_width)), available_width)
+    height = min(max(int(desired_height), int(min_height)), available_height)
+
+    min_x = left + margin
+    min_y = top + margin
+    max_x = left + work_width - width - margin
+    max_y = top + work_height - height - margin
+
+    x = left + max(margin, (work_width - width) // 2)
+    y = top + max(margin, (work_height - height) // 2)
+    x = min(max(min_x, x), max_x)
+    y = min(max(min_y, y), max_y)
+    window.geometry(f"{width}x{height}+{x}+{y}")
 
 
 # ── Persistence ───────────────────────────────────────────────────────────────
@@ -190,17 +239,9 @@ class ScraperLauncher:
     def __init__(self, root):
         self.root = root
         root.title("KOP Scraper Launcher")
-        root.minsize(760, 560)
         root.configure(bg=SAND)
-        # Center on screen
-        root.update_idletasks()
-        screen_w = root.winfo_screenwidth()
-        screen_h = root.winfo_screenheight()
-        _w = min(960, screen_w - 20)
-        _h = min(860, screen_h - 80)   # leave room for taskbar + title bar
-        _x = max(0, (screen_w - _w) // 2)
-        _y = max(0, (screen_h - _h) // 2)
-        root.geometry(f"{_w}x{_h}+{_x}+{_y}")
+        fit_window_to_screen(root, desired_width=960, desired_height=860,
+                             min_width=760, min_height=560)
 
         self.state         = load_state()
         self.check_vars    = {}
@@ -215,9 +256,29 @@ class ScraperLauncher:
 
         self._build_ui()
         self._refresh_statuses()
+        self.root.update()
+        self._fit_main_window()
+        self.root.after_idle(self._fit_main_window)
         self._poll_log_queue()
 
     # ---------- UI construction ----------
+
+    def _fit_main_window(self):
+        req_width = self.root.winfo_reqwidth()
+        req_height = self.root.winfo_reqheight()
+        log_req_height = self.log_text.winfo_reqheight()
+
+        # The log pane is the only large flexible region. Keep a reasonable
+        # minimum log height, but do not let the window shrink below the width
+        # needed for the action buttons and scraper rows.
+        min_log_height = 160
+        min_width = max(760, req_width)
+        min_height = max(560, req_height - max(0, log_req_height - min_log_height))
+
+        desired_width = min(960, max(min_width, req_width))
+        desired_height = min(860, max(min_height, req_height))
+        fit_window_to_screen(self.root, desired_width=desired_width, desired_height=desired_height,
+                             min_width=min_width, min_height=min_height)
 
     def _build_ui(self):
         # Header band — Midnight Blue with White title
@@ -585,12 +646,8 @@ class ScraperLauncher:
         win = tk.Toplevel(self.root)
         win.title(f"{scraper_name} — Last Run Results")
         win.configure(bg=SAND)
-        win.minsize(600, 420)
-        win.update_idletasks()
-        _w, _h = 820, 580
-        _x = max(0, (win.winfo_screenwidth() - _w) // 2)
-        _y = max(0, (win.winfo_screenheight() - _h) // 2)
-        win.geometry(f"{_w}x{_h}+{_x}+{_y}")
+        fit_window_to_screen(win, desired_width=820, desired_height=580,
+                             min_width=600, min_height=420)
 
         # ── Header ────────────────────────────────────────────────────────
         hdr = tk.Frame(win, bg=MIDNIGHT)
