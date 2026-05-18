@@ -39,6 +39,7 @@ SCRAPERS = [
     {"name": "Arizona",     "key": "AZ", "script": TOOLS_DIR / "az_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "California",  "key": "CA", "script": TOOLS_DIR / "ca_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Connecticut", "key": "CT", "script": TOOLS_DIR / "ct_scraper.py",               "cwd": TOOLS_DIR},
+    {"name": "Florida (DJJ)", "key": "FL", "script": TOOLS_DIR / "fl_scraper.py",              "cwd": TOOLS_DIR, "args": ["--source", "djj"]},
     {
         "name": "Minnesota",
         "key": "MN",
@@ -48,6 +49,7 @@ SCRAPERS = [
         # OneDrive/lock-file interference during Chromium startup.
         "env_defaults": {"MN_BROWSER_PROFILE": str(MN_BROWSER_PROFILE)},
     },
+    {"name": "Nevada",      "key": "NV", "script": TOOLS_DIR / "nv_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Oregon",      "key": "OR", "script": TOOLS_DIR / "or_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Texas",       "key": "TX", "script": TOOLS_DIR / "tx_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Utah",        "key": "UT", "script": TOOLS_DIR / "utah_citation_scraper.py",    "cwd": TOOLS_DIR},
@@ -591,7 +593,7 @@ class ScraperLauncher:
 
         try:
             proc = subprocess.Popen(
-                [sys.executable, "-X", "utf8", "-u", str(script)],
+                [sys.executable, "-X", "utf8", "-u", str(script), *scraper.get("args", [])],
                 cwd=str(cwd),
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,

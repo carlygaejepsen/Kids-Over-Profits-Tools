@@ -12,7 +12,15 @@ scraper_launcher_state.json
 .az_state.json
 .ca_state.json
 .ct_state.json
+.fl_djj_state.json
+.fl_ahca_state.json
+.fl_dcf_state.json
+.nv_state.json
 .or_state.json
 .tx_state.json
 .utah_state.json
 .wa_state.json
+
+# Local PDF caches
+fl_pdfs/
+or_pdfs/

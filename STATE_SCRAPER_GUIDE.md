@@ -190,6 +190,31 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Scraper:** `wa_scraper.py` -- collects DOH search rows for residential treatment and behavioral health facility types, filters to KOP programs, then builds reports from linked PDFs
 - **Key detail:** Incremental state is keyed by facility name and report number. Reports missing a report number in the HTML cannot be skipped cheaply and still require PDF inspection.
 
+### FL (Florida — DCF, not implementable)
+- **Status:** Closed. `FLDCFScraper` is a stub that raises `NotImplementedError` and documents why.
+- **Why:** DCF Office of Licensing does not publish a public Residential Group Care provider directory. CARES (`caressearch.myflfamilies.com`, API at `caresapi.myflfamilies.com`) reverse-engineers cleanly via an anonymous token flow, but its scope is Child Care Facilities only — every record returns `providerType: "Child Care Facility"` (e.g. Heartland Educational Group, Marita's Playgroup, Goddard School). Residential Group Care providers are licensed under Ch. 409.175 F.S. but their list is held internally and contracted out via ~17 regional Community-Based Care (CBC) lead agencies. No unified equivalent of DJJ's or AHCA's public datasets exists as of 2026-05.
+- **If a public source ever materializes:** fill in `FLDCFScraper` and add a section here.
+
+### FL (Florida — AHCA Phase 2)
+- **Source:** Florida Agency for Health Care Administration (AHCA) — public facility locator at `quality.healthfinder.fl.gov` plus the inspection details viewer at `apps.ahca.myflorida.com/dm_web/`. Covers **Residential Treatment Centers for Children and Adolescents** (which includes Therapeutic Group Homes per Florida statute). ~36 facilities.
+- **Method:** `requests` only — no PDF parsing required for this source.
+- **FHF endpoint:** modern Razor Pages site. The AdvancedSearch handler returns HTML with the full facility list embedded as a JSON array in the page (rendered client-side by jQuery DataTables). The scraper just regex-extracts the array; no DataTables AJAX or pagination needed.
+- **dm_web endpoint:** classic ASP.NET. `facility_inspection_details.aspx?file_number=...&client_code=57&provider_type=...&provider_name=...` returns a `gridView` table of deficiency rows (Survey Date · Inspection Type · Track ID · Deficiency · Requirement Description · Correction Date). The dm_web session ID is captured from the redirect on first hit and reused for every facility.
+- **Scraper:** `fl_scraper.py --source ahca`. One inspection visit = one report row, grouped by (Survey Date + Track ID). All deficiencies for that visit are bundled into `categories.deficiencies` for the frontend.
+- **Incremental state:** `.fl_ahca_state.json`, seen-ID keyed by AHCA File Number; `report_id = "{track_id}-{survey_date}"` so the same Track ID with a follow-up correction date still counts as the same report.
+- **Adding more facility types:** extend `AHCA_FACILITY_TYPES` in `fl_scraper.py`. FHF dropdown values to consider next: `RTF` (Residential Treatment Facility — adult), `Crisis` (Crisis Stabilization Unit), `GH` (APD Licensed Group Home).
+- **Useful flags:** `--full`, `--no-post`, `--limit N`. Workers/PDF timeout flags don't apply (AHCA has no PDFs).
+- **First-run expectation:** ~1 minute (36 facilities × 1 dm_web request each).
+
+### FL (Florida — DJJ Phase 1)
+- **Source:** Florida Department of Juvenile Justice (`www.djj.state.fl.us`) — residential and detention facility directories plus QI, PREA, and SPEP report indices
+- **Method:** `requests` + BeautifulSoup over static HTML index pages, then PDF download + `pdfplumber` extraction (no SOAP/auth needed)
+- **Scraper:** `fl_scraper.py` dispatches on `--source`. Only `--source djj` is implemented; AHCA and DCF are stubs raising `NotImplementedError` until Phases 2 and 3 land. DJJ categories are selectable via `--categories residential,detention,prea,spep` (default: all four).
+- **Key detail:** Incremental state is keyed by facility directory slug (e.g. `broward-youth-treatment-center`), or by `unmatched-<program-slug>` for reports whose program name didn't fuzzy-match the directory. Unmatched reports surface in the API as synthetic facilities flagged with `categories.unmatched = true` — they're not silently dropped. `program_name` is namespaced as `DJJ-<slug>` so the future AHCA/DCF phases can't collide with DJJ on the `(state, facility_name, program_name)` unique key.
+- **PDF caching:** PDFs are cached locally under `fl_pdfs/` (gitignored). Reruns reuse cached files.
+- **Useful flags beyond `--full`:** `--no-post` (cache + parse only, no API write), `--no-profiles` (skip per-facility profile fetches — faster smoke test), `--limit N` (post at most N facilities — for end-to-end testing on production), `--workers N` (concurrent PDF download/parse workers; default 5, env `FL_WORKERS`), `--pdf-timeout N` (seconds before abandoning pdfplumber on a single PDF; default 120, env `FL_PDF_TIMEOUT`).
+- **First-run expectation:** The full DJJ scrape is ~1250 PDFs (≈90 QI + ~265 PREA + ~850 SPEP + ~40 detention QI). With the default 5 workers, expect roughly 1-2 hours wall-clock for an empty cache. Subsequent runs use `fl_pdfs/` cache + `.fl_djj_state.json` and complete in minutes.
+
 ### UT (Utah OCR/CSV export)
 - **Source:** Utah facility JSON endpoint at `ccl.utah.gov`
 - **Method:** `requests` JSON fetches plus CSV export

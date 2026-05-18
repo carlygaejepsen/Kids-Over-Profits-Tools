@@ -9,6 +9,7 @@ import json
 import time
 import logging
 import os
+import hashlib
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -28,9 +29,24 @@ API_URL = os.getenv(
     "INSPECTIONS_API_URL",
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
-API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 STATE_FILE = Path(os.getenv("CA_STATE_FILE", ".ca_state.json"))
+
+
+def fingerprints_from_state(state: Dict) -> Dict[str, Set[str]]:
+    """Convert {"fingerprints": {fid: [...]}} JSON into {fid: set(...)} for O(1) lookup."""
+    return {fid: set(ids) for fid, ids in state.get("fingerprints", {}).items()}
+
+
+def merge_new_fingerprints(state: Dict, new_fingerprints: Dict[str, List[str]]) -> None:
+    """Merge newly-seen content fingerprints into state in place."""
+    fp_dict = state.setdefault("fingerprints", {})
+    for fid, ids in new_fingerprints.items():
+        if not ids:
+            continue
+        existing = set(fp_dict.get(fid, []))
+        fp_dict[fid] = sorted(existing | set(ids))
 
 
 def smart_title_case(text):
@@ -137,16 +153,36 @@ class CaliforniaCCLParser:
         self.base_url = "https://www.ccld.dss.ca.gov/transparencyapi/api/FacilityReports"
         self.all_facilities: List[Dict[str, Any]] = []
     
+    def _compute_report_fingerprint(self, facility_id: str, report: Dict[str, Any]) -> str:
+        """Build a content-derived fingerprint so shifted indices don't look new."""
+        parts = [
+            str(facility_id),
+            str(report.get("report_type") or ""),
+            str(report.get("report_date") or ""),
+            str(report.get("visit_date") or ""),
+            str(report.get("date_signed") or ""),
+            str(report.get("complaint_control_number") or ""),
+            str(report.get("summary") or ""),
+            str(report.get("narrative") or ""),
+            json.dumps(report.get("deficiencies") or [], sort_keys=True),
+            json.dumps(report.get("allegations") or [], sort_keys=True),
+        ]
+        digest = hashlib.sha1("|".join(parts).encode("utf-8")).hexdigest()
+        return digest
+
     def fetch_reports(self, facility_id: str, max_reports: int = 50,
-                      seen: Optional[Set[str]] = None) -> List[Dict[str, Any]]:
+                      seen: Optional[Set[str]] = None,
+                      seen_fingerprints: Optional[Set[str]] = None,
+                      head_refresh: int = 8) -> List[Dict[str, Any]]:
         """Fetch all reports for a facility using index pagination.
 
-        If `seen` is provided, indices whose report_id ({facility_id}-{index})
-        is already in `seen` are skipped without an HTTP call. This assumes
-        index→content is stable across runs (chronological/oldest-first order).
-        Use --full periodically if reports may be added at index 0.
+        Incremental strategy:
+        - Always re-fetch the first `head_refresh` indices to catch index shifts.
+        - Beyond that window, skip legacy seen index IDs for speed.
+        - De-duplicate by content fingerprint so moved reports are not re-posted.
         """
         seen = seen or set()
+        seen_fingerprints = seen_fingerprints or set()
         reports = []
         index = 0
         consecutive_errors = 0
@@ -155,7 +191,8 @@ class CaliforniaCCLParser:
         print(f"Starting to fetch reports for facility {facility_id}")
 
         while index < max_reports and consecutive_errors < 3:
-            if f"{facility_id}-{index}" in seen:
+            legacy_report_id = f"{facility_id}-{index}"
+            if index >= head_refresh and legacy_report_id in seen:
                 skipped += 1
                 index += 1
                 continue
@@ -169,8 +206,19 @@ class CaliforniaCCLParser:
                 if response.status_code == 200:
                     parsed = self.parse_report(response.text)
                     if parsed and parsed.get('facility_number'):
+                        fingerprint = self._compute_report_fingerprint(facility_id, parsed)
+                        if fingerprint in seen_fingerprints:
+                            skipped += 1
+                            consecutive_errors = 0
+                            index += 1
+                            continue
+
                         parsed['facility_id'] = facility_id
                         parsed['report_index'] = index
+                        parsed['_report_fingerprint'] = fingerprint
+                        # If this index was already used, avoid ID collision/overwrite.
+                        if legacy_report_id in seen:
+                            parsed['_forced_report_id'] = f"{facility_id}-{index}-{fingerprint[:10]}"
                         reports.append(parsed)
                         consecutive_errors = 0
                         index += 1
@@ -909,7 +957,8 @@ class CaliforniaCCLParser:
     def _build_api_report(self, facility_id: str, report: Dict[str, Any]) -> Dict[str, Any]:
         """Map a parsed California report to the shared inspection API report schema."""
         report_index = report.get("report_index")
-        report_id = (
+        forced_report_id = report.get("_forced_report_id")
+        report_id = str(forced_report_id) if forced_report_id else (
             f"{facility_id}-{report_index}"
             if report_index is not None
             else f"{facility_id}-{report.get('report_date') or report.get('visit_date') or 'report'}"
@@ -933,15 +982,19 @@ class CaliforniaCCLParser:
         }
 
     def scrape(self, seen: Optional[Dict[str, Set[str]]] = None
-               ) -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
+               , seen_fingerprints: Optional[Dict[str, Set[str]]] = None
+               , head_refresh: int = 8
+               ) -> Tuple[List[Dict[str, Any]], Dict[str, List[str]], Dict[str, List[str]]]:
         """Scrape California facilities, skipping reports already in `seen`.
 
-        Returns (facilities, new_ids) where new_ids maps facility_id -> list of
-        report_ids encountered this run.
+        Returns (facilities, new_ids, new_fingerprints) where maps are keyed by
+        facility_id.
         """
         self.all_facilities = []
         seen = seen or {}
+        seen_fingerprints = seen_fingerprints or {}
         new_ids: Dict[str, List[str]] = {}
+        new_fingerprints: Dict[str, List[str]] = {}
         total = len(self.facility_ids)
 
         logger.info(f"Starting CA scrape for {total} facilities")
@@ -951,7 +1004,12 @@ class CaliforniaCCLParser:
             logger.info(f"[{i}/{total}] Facility {fac_id}")
 
             try:
-                reports = self.fetch_reports(fac_id, seen=seen.get(fac_id))
+                reports = self.fetch_reports(
+                    fac_id,
+                    seen=seen.get(fac_id),
+                    seen_fingerprints=seen_fingerprints.get(fac_id),
+                    head_refresh=head_refresh,
+                )
                 if not reports:
                     logger.info("  No new reports")
                     continue
@@ -970,6 +1028,14 @@ class CaliforniaCCLParser:
                 if ids_for_facility:
                     new_ids[fac_id] = ids_for_facility
 
+                fps_for_facility = [
+                    str(report.get("_report_fingerprint"))
+                    for report in reports
+                    if report.get("_report_fingerprint")
+                ]
+                if fps_for_facility:
+                    new_fingerprints[fac_id] = fps_for_facility
+
                 logger.info(
                     f"  {facility_info.get('facility_name', fac_id)} - {len(api_reports)} reports"
                 )
@@ -982,11 +1048,11 @@ class CaliforniaCCLParser:
                 continue
 
         logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities, new_ids
+        return self.all_facilities, new_ids, new_fingerprints
     
     def process_all_facilities(self) -> List[Dict[str, Any]]:
         """Backward-compatible wrapper for callers that still use the old method name."""
-        facilities, _ = self.scrape()
+        facilities, _, _ = self.scrape()
         return facilities
     
     def save_json(self, data: List[Dict], filename: str = "ccl_reports.json"):
@@ -3090,13 +3156,20 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true",
                     help=f"Ignore {STATE_FILE} and re-scan all reports")
+    ap.add_argument("--head-refresh", type=int, default=8,
+                    help="Always re-fetch this many top indices per facility (default: 8)")
     args = ap.parse_args()
 
     state = load_state(STATE_FILE)
     seen = {} if args.full else seen_from_state(state)
+    seen_fingerprints = {} if args.full else fingerprints_from_state(state)
 
     parser = CaliforniaCCLParser(FACILITY_IDS)
-    facilities, new_ids = parser.scrape(seen=seen)
+    facilities, new_ids, new_fingerprints = parser.scrape(
+        seen=seen,
+        seen_fingerprints=seen_fingerprints,
+        head_refresh=max(0, args.head_refresh),
+    )
 
     facilities_to_post = [f for f in facilities if f["reports"]]
     if not facilities_to_post:
@@ -3107,6 +3180,7 @@ def main():
     if save_to_api(facilities_to_post):
         logger.info("Data saved to database successfully!")
         merge_new_ids(state, new_ids)
+        merge_new_fingerprints(state, new_fingerprints)
         save_state(STATE_FILE, state)
     else:
         logger.error("API save failed -- state not advanced")

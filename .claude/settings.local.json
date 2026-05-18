@@ -18,9 +18,25 @@
       "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public/facilities/96697.json&timestamp=20260424\")",
       "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public/facilities/96697.json\")",
       "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov&timestamp=20260420\")",
-      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public&timestamp=20260424\")"
+      "Bash(curl -sS \"https://archive.org/wayback/available?url=ccl.utah.gov/ccl/public&timestamp=20260424\")",
+      "Bash(PYTHONIOENCODING=utf-8 python _verify_prea_finding.py)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\daniu\\\\OneDrive\\\\Documents\\\\GitHub\\\\Tools\\\\Kids-Over-Profits-Tools\" -Filter \"*_scraper.py\")",
+      "Bash(Select-Object Name)",
+      "WebFetch(domain:dss.nv.gov)",
+      "WebFetch(domain:nvdpbh.aithent.com)",
+      "WebFetch(domain:www.dpbh.nv.gov)",
+      "Bash(rm -f _probe_prea*.py _validate_*.py _count_prea_dnms.py _verify_prea_finding.py && python -m py_compile fl_scraper.py && echo \"compile OK\")",
+      "Bash(tee fl_rescrape.log)",
+      "PowerShell(python -c \"import pymupdf; print\\('pymupdf', pymupdf.__version__\\)\" 2>&1)",
+      "PowerShell(pip install pymupdf 2>&1)",
+      "PowerShell(tail -5)",
+      "Bash(PYTHONIOENCODING=utf-8 python _test_pymupdf.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python _test_pymupdf_qi.py)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools"
+    ]
   }
 }

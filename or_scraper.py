@@ -41,7 +41,7 @@ API_URL = os.getenv(
     "INSPECTIONS_API_URL",
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
-API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 BASE_URL = "https://www.oregon.gov/odhs/licensing/childrens-care-agencies"
 REPORT_LIBRARY_NAME = "reports"
@@ -475,6 +475,29 @@ def clean_section_text(value: Optional[str]) -> str:
     return cleaned.strip(" \n:-")
 
 
+def truncate_at_embedded_label(
+    value: Optional[str],
+    stop_patterns: Optional[List[str]] = None,
+) -> str:
+    text = clean_text(value)
+    if not text:
+        return ""
+
+    stop_patterns = stop_patterns or OREGON_INLINE_STOP_PATTERNS
+    cut_at: Optional[int] = None
+    for label in stop_patterns:
+        match = re.search(rf"\s+(?={label}\s*:)", text, flags=re.IGNORECASE)
+        if not match:
+            continue
+        if cut_at is None or match.start() < cut_at:
+            cut_at = match.start()
+
+    if cut_at is not None:
+        text = text[:cut_at]
+
+    return text.strip()
+
+
 def extract_labeled_block(
     text: str,
     labels: List[str],
@@ -492,7 +515,9 @@ def extract_labeled_block(
         )
         match = pattern.search(text)
         if match:
-            return clean_section_text(match.group(1))
+            return clean_section_text(
+                truncate_at_embedded_label(match.group(1), stop_patterns)
+            )
     return ""
 
 

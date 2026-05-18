@@ -52,7 +52,7 @@ API_URL = os.getenv(
     "INSPECTIONS_API_URL",
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
-API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 DRA_BASE = "https://disabilityrightsar.org/wp-json/wp/v2"
 PDF_CACHE_DIR = Path(os.getenv("AR_PDF_CACHE", ".ar_pdf_cache"))

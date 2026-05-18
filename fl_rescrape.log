@@ -1,0 +1,505 @@
+2026-05-14 18:32:06,779 - INFO - Residential directory: 38 facilities
+2026-05-14 18:32:07,093 - INFO - Detention directory: 21 facilities
+2026-05-14 18:32:07,093 - INFO - Enriching facility metadata from profile pages…
+2026-05-14 18:32:26,381 - INFO - QI index: 139 report links
+2026-05-14 18:32:26,761 - INFO - PREA index: 265 report links
+2026-05-14 18:32:26,766 - INFO - Building 404 reports across 112 facilities (5 worker threads, PDF timeout 120s — first full run can still take a while)
+2026-05-14 18:32:30,359 - INFO -   (1/404) [PREA] alachua-academy-prea-audit-report.pdf
+2026-05-14 18:32:30,538 - INFO -   (2/404) [PREA] alachua-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 18:33:02,373 - INFO -   (3/404) [PREA] Florida_Alachua Academy_Year3Cycle4.pdf
+2026-05-14 18:33:08,638 - INFO -   (4/404) [PREA] Florida_Alachua Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 18:33:08,667 - INFO -   (5/404) [PREA] alachua-academy-final-prea-audit-report18AD8BDE9FCC.pdf
+2026-05-14 18:33:09,840 - INFO -   (6/404) [PREA] alachua-rjdc-final-prea-audit-report.pdf
+2026-05-14 18:33:41,887 - INFO -   (7/404) [QI Detention] AlachuaRJDC-FINAL-FY2324.pdf
+2026-05-14 18:33:57,861 - INFO -   (8/404) [PREA] florida_alachua-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 18:33:59,421 - INFO -   (9/404) [QI Residential] Alachua Academy-FINAL-FY2425.pdf
+2026-05-14 18:34:00,736 - INFO -   (10/404) [QI Residential] AlachuaAcademy-FINAL-FY2324.pdf
+2026-05-14 18:34:27,726 - INFO -   (11/404) [QI Detention] AlachuaRJDC-FINAL-FY2526.pdf
+2026-05-14 18:34:31,411 - INFO -   (12/404) [PREA] Florida_Alachua Academy_Year3Cycle3.pdf
+2026-05-14 18:34:47,361 - INFO -   (13/404) [QI Residential] BrittTechnicalYA-FINAL-FY2425.pdf
+2026-05-14 18:34:52,860 - INFO -   (14/404) [QI Residential] Alachua Academy-FinalReport-FY2526 (2).pdf
+2026-05-14 18:35:07,037 - INFO -   (15/404) [PREA] broward-girls-academy.pdf
+2026-05-14 18:35:13,685 - INFO -   (16/404) [PREA] broward-juvenile-detention-center_final-prea-report-10-27-2015.pdf
+2026-05-14 18:35:20,544 - INFO -   (17/404) [PREA] Florida_Britt Technical Youth Adademy_Year1Cycle5.pdf
+2026-05-14 18:35:24,297 - INFO -   (18/404) [PREA] broward-youth-treament-center.pdf
+2026-05-14 18:35:33,863 - INFO -   (19/404) [PREA] Florida_Broward Youth Treatment Center_Year3Cycle4.pdf
+2026-05-14 18:35:34,011 - INFO -   (20/404) [PREA] Florida_Broward Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 18:36:47,621 - INFO -   (21/404) [PREA] Florida_Broward Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-14 18:36:54,783 - INFO -   (22/404) [PREA] florida_broward-ytc_year3cycle2.pdf
+2026-05-14 18:36:56,052 - INFO -   (23/404) [PREA] florida_broward-rjdc_year2cycle2.pdf
+2026-05-14 18:36:58,272 - INFO -   (24/404) [PREA] Florida_Broward Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-14 18:36:59,652 - INFO -   (25/404) [PREA] Florida_Broward YTC_Year3Cycle3.pdf
+2026-05-14 18:37:40,239 - INFO -   (26/404) [QI Detention] BrowardDetention-FINAL-FY2425.pdf
+2026-05-14 18:37:40,932 - INFO -   (27/404) [QI Residential] Broward Youth Treatment Center-FINAL-FY2324.pdf
+2026-05-14 18:37:42,933 - INFO -   (28/404) [QI Detention] Broward Detention Center -FinalReport-2526.pdf
+2026-05-14 18:37:46,392 - INFO -   (29/404) [QI Residential] BrowardYouthTreamentCenter-MQI-FINAL-FY2425.pdf
+2026-05-14 18:37:47,123 - INFO -   (30/404) [QI Residential] BrowardYouthTreatmentCenter-FinalReport-FY2526.pdf
+2026-05-14 18:37:59,381 - INFO -   (31/404) [PREA] columbus-juvenile-residential-facility-prea-audit-report.pdf
+2026-05-14 18:38:24,760 - INFO -   (32/404) [QI Residential] CSIOcala-FINAL-FY2324.pdf
+2026-05-14 18:38:38,058 - INFO -   (33/404) [PREA] Florida_Center for Success and Independence-Ocala_Year2Cycle4.pdf
+2026-05-14 18:38:41,008 - INFO -   (34/404) [QI Residential] CSIOcala-FINAL-FY2425 .pdf
+2026-05-14 18:38:49,917 - INFO -   (35/404) [PREA] Florida_Columbus Youth Academy_year1cycle4.pdf
+2026-05-14 18:38:57,242 - INFO -   (36/404) [PREA] florida_center-for-success-and-independence_year2cycle3.pdf
+2026-05-14 18:39:23,209 - INFO -   (37/404) [QI Residential] ColumbusYouthAcademy-FINAL-FY2324.pdf
+2026-05-14 18:39:24,575 - INFO -   (38/404) [QI Residential] ColumbusYouthAcademy-FINAL-FY2425.pdf
+2026-05-14 18:39:30,171 - INFO -   (39/404) [PREA] florida_columbus-youth-academy_year2cycle3.pdf
+2026-05-14 18:39:54,849 - INFO -   (40/404) [PREA] Florida_Crestview Youth Academy_year1cycle4.pdf
+2026-05-14 18:40:22,490 - INFO -   (41/404) [PREA] Florida_Crestview Youth Academy_Year1Cycle5.pdf
+2026-05-14 18:40:29,810 - INFO -   (42/404) [QI Residential] CYA-FINAL-FY2425.pdf
+2026-05-14 18:40:34,433 - INFO -   (43/404) [PREA] florida_crestview-youth-academy_year2cycle3.pdf
+2026-05-14 18:40:40,448 - INFO -   (44/404) [PREA] cypress-creek-juvenile-offender-correctional-center-prea-audit-report.pdf
+2026-05-14 18:40:43,043 - INFO -   (45/404) [QI Residential] CYA-FINAL-FY2324.pdf
+2026-05-14 18:41:01,297 - INFO -   (46/404) [PREA] Florida_Cypress Creek Juvenile Offender Correctional Center and Teatment Center_Year2Cycle4.pdf
+2026-05-14 18:41:18,068 - INFO -   (47/404) [PREA] cypress-creek-final-prea-audit-report.pdf
+2026-05-14 18:41:30,050 - INFO -   (48/404) [QI Residential] CypressCreekMax-FINAL-FY2324.pdf
+2026-05-14 18:41:33,408 - INFO -   (49/404) [QI Residential] CypressCreekHigh-FINAL-FY2324.pdf
+2026-05-14 18:41:40,619 - INFO -   (50/404) [PREA] florida_cypress-creek-jocc-treatment-center_year2cycle3.pdf
+2026-05-14 18:41:58,668 - INFO -   (51/404) [PREA] Florida_Daytona Juvenile Residential Facility_Year2Cycle4.pdf
+2026-05-14 18:42:02,148 - INFO -   (52/404) [PREA] daytona-juvenile-residential-facility-prea-audit-report.pdf
+2026-05-14 18:42:04,305 - INFO -   (53/404) [QI Residential] CypressCreekMax-FINAL-FY2425.pdf
+2026-05-14 18:42:19,079 - INFO -   (54/404) [QI Residential] CypressCreekHigh-FINAL-FY2425.pdf
+2026-05-14 18:42:31,881 - INFO -   (55/404) [PREA] daytona-juvenile-residential-facility-final-prea-audit-report.pdf
+2026-05-14 18:42:58,015 - INFO -   (56/404) [QI Residential] DaytonaJuvenileResidentialFacility-FINAL-FY2324.pdf
+2026-05-14 18:43:18,631 - INFO -   (57/404) [QI Residential] DaytonaJRF-FINAL-FY2425.pdf
+2026-05-14 18:43:31,229 - INFO -   (58/404) [QI Residential] DaytonaJRF-FINAL-FY2526.pdf
+2026-05-14 18:43:59,306 - WARNING -   PDF extract TIMED OUT after 120s for florida_daytona-juvenile-residential-facility_cycle2year3.pdf; continuing without extracted text
+2026-05-14 18:43:59,307 - INFO -   (59/404) [PREA] florida_daytona-juvenile-residential-facility_cycle2year3.pdf
+2026-05-14 18:44:08,246 - INFO -   (60/404) [QI Residential] DeepCreek-Intensive-FINAL-FY2324.pdf
+2026-05-14 18:44:08,444 - INFO -   (61/404) [PREA] Florida_Deep Creek Youth Academy_Year2Cycle4.pdf
+2026-05-14 18:44:22,245 - INFO -   (62/404) [QI Residential] DeepCreekMHSA-FINAL-FY2324.pdf
+2026-05-14 18:44:38,044 - INFO -   (63/404) [PREA] dove-academy-prea-audit-report.pdf
+2026-05-14 18:44:49,300 - INFO -   (64/404) [QI Residential] DeepCreekMHSA-FINAL-FY2425.pdf
+2026-05-14 18:45:03,604 - INFO -   (65/404) [PREA] dove-academy-final-audit-reportA634A5A9A1DB.pdf
+2026-05-14 18:45:11,987 - INFO -   (66/404) [QI Residential] DeepCreekIntensive-FINAL-FY2425.pdf
+2026-05-14 18:45:21,193 - INFO -   (67/404) [PREA] Florida_Dove Academy_Year2Cycle4.pdf
+2026-05-14 18:45:47,457 - INFO -   (68/404) [QI Residential] DOVE-FINAL-FY2324.pdf
+2026-05-14 18:46:20,696 - INFO -   (69/404) [QI Residential] DOVE-FINAL-FY2425.pdf
+2026-05-14 18:46:27,023 - INFO -   (70/404) [QI Residential] DOVE-FINAL-FY2526.pdf
+2026-05-14 18:46:38,964 - WARNING -   PDF extract TIMED OUT after 120s for florida_dove-academy_year2cycle3.pdf; continuing without extracted text
+2026-05-14 18:46:38,996 - INFO -   (71/404) [PREA] florida_dove-academy_year2cycle3.pdf
+2026-05-14 18:46:44,094 - INFO -   (72/404) [PREA] Florida_Duval Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 18:46:44,562 - INFO -   (73/404) [PREA] duval-academy-prea-audit-report.pdf
+2026-05-14 18:47:00,988 - INFO -   (74/404) [PREA] duval-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 18:47:06,248 - INFO -   (75/404) [PREA] Florida_Duval Academy_Year2Cycle4.pdf
+2026-05-14 18:47:27,089 - INFO -   (76/404) [PREA] duval-academy-final-prea-audit-report.pdf
+2026-05-14 18:47:46,999 - INFO -   (77/404) [PREA] duval-rjdc-final-prea-audit-report.pdf
+2026-05-14 18:47:50,161 - INFO -   (78/404) [QI Detention] DRJDC-Final FY2324.pdf
+2026-05-14 18:48:41,829 - INFO -   (79/404) [PREA] florida_duval-academy_year2cycle3.pdf
+2026-05-14 18:48:47,532 - INFO -   (80/404) [QI Detention] DuvalRJDC-FINAL-FY2425.pdf
+2026-05-14 18:48:55,085 - INFO -   (81/404) [QI Residential] DA-FINAL-FY2324.pdf
+2026-05-14 18:49:01,073 - WARNING -   PDF extract TIMED OUT after 120s for florida_duval-regional-juvenile-detention-center_year2cycle3.pdf; continuing without extracted text
+2026-05-14 18:49:01,074 - INFO -   (82/404) [PREA] florida_duval-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 18:49:01,335 - INFO -   (83/404) [QI Residential] DuvalAcademyRe-ReviewStandard2-FINAL-FY2526.pdf
+2026-05-14 18:49:07,148 - INFO -   (84/404) [QI Residential] Duval Academy-FINAL-FY2425.pdf
+2026-05-14 18:49:08,729 - INFO -   (85/404) [PREA] escambia-boys-base-prea-audit-report.pdf
+2026-05-14 18:49:11,906 - INFO -   (86/404) [PREA] Florida_Escambia Boy Base_Year2Cylce4.pdf
+2026-05-14 18:50:13,168 - INFO -   (87/404) [QI Residential] EBB-FINAL-FY2324.pdf
+2026-05-14 18:50:16,083 - INFO -   (88/404) [QI Residential] EBB-FINAL-FY2425 .pdf
+2026-05-14 18:51:01,282 - WARNING -   PDF extract TIMED OUT after 120s for florida_escambia-boys-base_year2cycle3.pdf; continuing without extracted text
+2026-05-14 18:51:01,297 - INFO -   (89/404) [PREA] florida_escambia-boys-base_year2cycle3.pdf
+2026-05-14 18:51:02,978 - INFO -   (90/404) [PREA] Florida_Everglades Youth Academy_Year3Cycle3.pdf
+2026-05-14 18:51:10,217 - WARNING -   PDF extract TIMED OUT after 120s for Florida_Everglades_Youth_Academy_Year3Cycle4.pdf; continuing without extracted text
+2026-05-14 18:51:10,265 - INFO -   (91/404) [PREA] Florida_Everglades Youth Academy_Year3Cycle4.pdf
+2026-05-14 18:52:01,056 - INFO -   (92/404) [QI Residential] EvergladesYouthAcademy(EYA)andEYASexOffenderProgram-FINAL-FY2324.pdf
+2026-05-14 18:52:02,201 - INFO -   (93/404) [QI Residential] EvergladesYouthAcademy(EYA)andEYASexOffenderProgram-FINAL-FY2324.pdf
+2026-05-14 18:52:16,458 - INFO -   (94/404) [QI Residential] EvergladesYouthAcademyMaxHigh-FINAL-FY2526.pdf
+2026-05-14 18:52:20,425 - INFO -   (95/404) [QI Residential] EYAMax-FINAL-FY2425.pdf
+2026-05-14 18:52:22,803 - INFO -   (96/404) [QI Residential] EvergladesSOP-FINAL-FY2425.pdf
+2026-05-14 18:52:52,373 - INFO -   (97/404) [QI Residential] EvergladesYouthAcademy-SOP-Final-FY2526.pdf
+2026-05-14 18:53:02,471 - INFO -   (98/404) [QI Residential] FortMyersAcademy-FINAL-FY2324.pdf
+2026-05-14 18:53:14,721 - INFO -   (99/404) [QI Residential] FortMyersAcademy-FINAL-FY2526.pdf
+2026-05-14 18:53:21,814 - INFO -   (100/404) [PREA] hillsborough-girls-academy-prea-audit-report.pdf
+2026-05-14 18:53:25,719 - INFO -   (101/404) [PREA] florida_fort-myers-youth-academy_year3cylce2.pdf
+2026-05-14 18:53:28,343 - INFO -   (102/404) [PREA] hillsborough-juvenile-detention-center-west-prea-audit-report.pdf
+2026-05-14 18:53:47,517 - INFO -   (103/404) [PREA] Florida_Hillsborough Juvenile Detention Center_year1cycle4.pdf
+2026-05-14 18:53:48,627 - INFO -   (104/404) [PREA] florida_hillsborough-girls-academy_year2cycle3.pdf
+2026-05-14 18:54:11,430 - INFO -   (105/404) [QI Residential] HillsboroughGirlsAcademy-FINAL-FY2324.pdf
+2026-05-14 18:54:11,745 - INFO -   (106/404) [PREA] hillsborough-rjdc-final-prea-audit-report.pdf
+2026-05-14 18:54:19,652 - INFO -   (107/404) [PREA] florida_hillsborough-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 18:54:24,987 - INFO -   (108/404) [QI Detention] HillsRJDC-FINAL-FY2324.pdf
+2026-05-14 18:54:29,281 - INFO -   (109/404) [QI Detention] HillsboroughRJDC-FINAL-FY2425.pdf
+2026-05-14 18:54:40,303 - INFO -   (110/404) [PREA] jacksonville-youth-academy-prea-audit-report.pdf
+2026-05-14 18:54:46,086 - INFO -   (111/404) [QI Detention] HRJDC-FINAL-FY2526.pdf
+2026-05-14 18:55:05,074 - INFO -   (112/404) [PREA] Florida_Jacksonville Youth Academy_Year2Cycle4.pdf
+2026-05-14 18:55:11,646 - INFO -   (113/404) [PREA] jacksonville-youth-academy-final-prea-report.pdf
+2026-05-14 18:55:34,118 - INFO -   (114/404) [PREA] Florida_JoAnn Bridges Academy_Year2Cycle4.pdf
+2026-05-14 18:55:35,296 - INFO -   (115/404) [QI Residential] JYA-FINAL-FY2324.pdf
+2026-05-14 18:55:37,389 - INFO -   (116/404) [PREA] florida_jacksonville-youth-academy_year2cycle3.pdf
+2026-05-14 18:55:39,663 - INFO -   (117/404) [QI Residential] JacksonvilleYouthAcademy-Final-FY2526 (1).pdf
+2026-05-14 18:55:42,645 - INFO -   (118/404) [PREA] joann-bridges-academy-prea-audit-report.pdf
+2026-05-14 18:56:15,404 - INFO -   (119/404) [QI Residential] JBA-MQI-FIINAL-FY2324.pdf
+2026-05-14 18:56:23,134 - INFO -   (120/404) [PREA] joann-bridges-final-prea-audit-report.pdf
+2026-05-14 18:56:32,849 - INFO -   (121/404) [QI Residential] JBA-FINAL-FY2425.pdf
+2026-05-14 18:56:37,540 - INFO -   (122/404) [QI Residential] JoAnnBridgesAcademy-FINAL-FY2526.pdf
+2026-05-14 18:56:42,947 - INFO -   (123/404) [PREA] florida_-joann-bridges-academy_year2cycle3.pdf
+2026-05-14 18:56:43,436 - INFO -   (124/404) [PREA] juvenile-unit-for-specialized-treatment-prea-audit-report.pdf
+2026-05-14 18:57:14,226 - INFO -   (125/404) [PREA] Florida_Juvenile Unit for Specialized Treatment-Twin Oaks Academy II_Year2Cycle4.pdf
+2026-05-14 18:57:35,018 - INFO -   (126/404) [QI Residential] JUST-TOVA-FINAL REPORT - 2526.pdf
+2026-05-14 18:57:36,783 - INFO -   (127/404) [QI Residential] JUST-TOVA-FINAL-FY2324.pdf
+2026-05-14 18:57:38,780 - INFO -   (128/404) [QI Residential] JUST.TOVA-FINAL-FY2425.pdf
+2026-05-14 18:57:49,164 - INFO -   (129/404) [PREA] florida_juvenile-unit-for-specialized-treatment_year2cycle3.pdf
+2026-05-14 18:57:52,043 - INFO -   (130/404) [PREA] kissimmee-sex-offender-program-prea-audit-report.pdf
+2026-05-14 18:57:55,885 - INFO -   (131/404) [PREA] kissimmee-report.pdf
+2026-05-14 18:58:13,371 - INFO -   (132/404) [PREA] Florida_Kissimmee Youth Academy_year1cycle4.pdf
+2026-05-14 18:58:43,608 - INFO -   (133/404) [PREA] Florida_Kissimmee Youth Academy_Year1Cycle5.pdf
+2026-05-14 18:58:44,018 - INFO -   (134/404) [QI Residential] Kissimmee Youth Academy-FINAL-FY2324.pdf
+2026-05-14 18:58:45,704 - INFO -   (135/404) [QI Residential] KYAMHOS-FINAL-FY2425.pdf
+2026-05-14 18:58:57,533 - INFO -   (136/404) [PREA] florida_kissimmee-youth-academy_year2cycle3.pdf
+2026-05-14 18:59:10,123 - INFO -   (137/404) [QI Residential] KYABDD-FINAL-FY2425.pdf
+2026-05-14 18:59:23,859 - INFO -   (138/404) [QI Residential] KissimmeeYouthAcademy-BIF.DD-FINAL-FY2526.pdf
+2026-05-14 18:59:25,485 - INFO -   (139/404) [PREA] les-peters-youth-academy-prea-audit-report.pdf
+2026-05-14 18:59:26,218 - INFO -   (140/404) [PREA] les-peters-academy-docx.pdf
+2026-05-14 18:59:27,034 - INFO -   (141/404) [QI Residential] KissimmeeYouthAcademy-FINAL-FY2526.pdf
+2026-05-14 18:59:56,560 - INFO -   (142/404) [PREA] florida_les-peters-academy_year2cycle3.pdf
+2026-05-14 19:00:06,585 - INFO -   (143/404) [QI Residential] LesPetersAcademy-FINAL-FY2324.pdf
+2026-05-14 19:00:08,661 - INFO -   (144/404) [QI Residential] LesPetersAcademy-MQI-Final-FY2425 (1).pdf
+2026-05-14 19:00:11,909 - INFO -   (145/404) [PREA] Florida_Miami Youth Academy_Year3Cycle4.pdf
+2026-05-14 19:00:13,083 - INFO -   (146/404) [PREA] Florida_Les Peters Academy_year1cycle4.pdf
+2026-05-14 19:00:13,822 - INFO -   (147/404) [PREA] miami-youth-academy_prea_audit_report.pdf
+2026-05-14 19:00:55,056 - INFO -   (148/404) [QI Residential] Miami Youth Academy-FINAL-FY2324.pdf
+2026-05-14 19:00:57,755 - INFO -   (149/404) [QI Residential] MiamiYouthAcademy-FINAL-FY2425.pdf
+2026-05-14 19:01:03,450 - INFO -   (150/404) [PREA] Florida_Miami Youth Academy_Year3Cycle3.pdf
+2026-05-14 19:01:06,260 - INFO -   (151/404) [PREA] Florida_Miami Youth Academy_Year3Cycle3.pdf
+2026-05-14 19:01:06,483 - INFO -   (152/404) [PREA] florida_miami-youth-academy_year3cycle2.pdf
+2026-05-14 19:01:41,766 - INFO -   (153/404) [PREA] Florida_Oak Grove Academy_Year2Cycle4.pdf
+2026-05-14 19:01:44,239 - INFO -   (154/404) [QI Residential] OGA-FINAL-FY2425.pdf
+2026-05-14 19:01:45,963 - INFO -   (155/404) [QI Residential] OGA-FINAL-FY2526.pdf
+2026-05-14 19:01:48,540 - INFO -   (156/404) [QI Residential] OGA-FINAL-FY2324.pdf
+2026-05-14 19:01:55,893 - INFO -   (157/404) [PREA] florida_oak-grove-academy_year2cycle3.pdf
+2026-05-14 19:01:56,292 - INFO -   (158/404) [PREA] Florida_Okaloosa Regional Juvenile Detention Center_year2cycle4.pdf
+2026-05-14 19:02:08,522 - INFO -   (159/404) [PREA] okaloosa-youth-academy-prea-audit-report.pdf
+2026-05-14 19:02:20,793 - INFO -   (160/404) [PREA] okaloosa-youth-development-center-prea-audit-report.pdf
+2026-05-14 19:02:43,989 - INFO -   (161/404) [PREA] florida_okaloosa-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:02:45,118 - INFO -   (162/404) [PREA] Florida_Okaloosa Youth Academy_Year1Cycle5.pdf
+2026-05-14 19:02:46,790 - INFO -   (163/404) [PREA] Florida_Okaloosa Regional Juvenile Detention Center_Year1Cycle5.pdf
+2026-05-14 19:02:59,780 - INFO -   (164/404) [PREA] Florida_Okaloosa Youth Academy_year1cycle4.pdf
+2026-05-14 19:03:17,152 - INFO -   (165/404) [QI Detention] ORJDC-MQI-FINAL-FY2324.pdf
+2026-05-14 19:03:23,872 - INFO -   (166/404) [PREA] florida_okaloosa-youth-academy_year2cycle3.pdf
+2026-05-14 19:03:28,098 - INFO -   (167/404) [QI Residential] OYA-FINAL-FY2324.pdf
+2026-05-14 19:03:28,702 - INFO -   (168/404) [QI Detention] ORJDC-FINAL-FY2425.pdf
+2026-05-14 19:03:46,570 - INFO -   (169/404) [QI Residential] OYA-FINAL-FY2425.pdf
+2026-05-14 19:04:00,043 - INFO -   (170/404) [QI Detention] ORJDC-FINAL-FY2526.pdf
+2026-05-14 19:04:16,735 - INFO -   (171/404) [QI Residential] OYA.OIYA-FINAL-FY2324.pdf
+2026-05-14 19:04:18,006 - INFO -   (172/404) [QI Residential] OYA-OIYA-MQI-FINAL-FY2425.pdf
+2026-05-14 19:04:19,786 - INFO -   (173/404) [PREA] Florida_Palm Beach Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 19:04:26,618 - INFO -   (174/404) [PREA] palm-beach-juvenile-detention-center_prea_audit_report.pdf
+2026-05-14 19:05:13,149 - INFO -   (175/404) [PREA] Florida_Palm Beach Youth Academy_Year3Cycle4.pdf
+2026-05-14 19:05:23,722 - INFO -   (176/404) [PREA] florida_palm-beach-rjdc_year3cycle2.pdf
+2026-05-14 19:05:36,144 - INFO -   (177/404) [PREA] florida_palm-beach-youth-academy_year3cycle2.pdf
+2026-05-14 19:05:45,048 - INFO -   (178/404) [PREA] Florida_Palm Beach Regional Detention Center_Year3Cycle3.pdf
+2026-05-14 19:05:49,485 - INFO -   (179/404) [PREA] Florida_West Palm Beach Youth Academy_Year3Cycle3.pdf
+2026-05-14 19:06:12,929 - INFO -   (180/404) [QI Residential] PalmBeachYouthAcademy-FINAL-FY2425.pdf
+2026-05-14 19:06:15,966 - INFO -   (181/404) [QI Residential] PalmBeachYouthAcademy-FINAL-FY2324.pdf
+2026-05-14 19:06:30,362 - INFO -   (182/404) [QI Detention] PBRJDC-FINAL-FY2526.pdf
+2026-05-14 19:06:35,222 - INFO -   (183/404) [QI Detention] PBRJDC-FINAL-FY2526.pdf
+2026-05-14 19:06:47,722 - INFO -   (184/404) [QI Residential] PalmBeachYouthAcademy-FinalReport--FY2526.pdf
+2026-05-14 19:06:58,749 - INFO -   (185/404) [QI Residential] RedwoodYA-FINAL-FY2526.pdf
+2026-05-14 19:07:09,200 - INFO -   (186/404) [PREA] florida_redwood-academy_year2cycle3.pdf
+2026-05-14 19:07:14,315 - INFO -   (187/404) [QI Residential] SilverSpringsYouthAcademy-FinalReport-FY2526.pdf
+2026-05-14 19:07:41,612 - INFO -   (188/404) [QI Residential] SouthFloridaYouthAcademy-MQI-FINAL-FY2425.pdf
+2026-05-14 19:07:52,892 - INFO -   (189/404) [QI Residential] TampaBayGirlsAcademyModEducation-FINAL-FY2526(UPDATED - 3.18.26).pdf
+2026-05-14 19:07:54,401 - INFO -   (190/404) [PREA] Florida_South Florida Youth Academy_Year3Cycle4.pdf
+2026-05-14 19:08:03,734 - INFO -   (191/404) [QI Residential] SAYA-FINAL-FY2425 .pdf
+2026-05-14 19:08:10,483 - INFO -   (192/404) [QI Residential] TampaBayGirlsAcademyModerate-FINAL-FY2526.pdf
+2026-05-14 19:08:13,714 - INFO -   (193/404) [PREA] tampa-residential-facility-prea-audit-report.pdf
+2026-05-14 19:08:18,731 - INFO -   (194/404) [PREA] Florida_St. Augustine Youth Academy_Year3Cycle4.pdf
+2026-05-14 19:08:44,114 - INFO -   (195/404) [PREA] Florida_Tampa Residential Facility_year1cycle4.pdf
+2026-05-14 19:08:55,162 - INFO -   (196/404) [QI Residential] TampaResidentialFacility-MQI-FINAL-FY2425.pdf
+2026-05-14 19:09:01,925 - INFO -   (197/404) [QI Residential] TampaResidentialFacility-FINAL-FY2324.pdf
+2026-05-14 19:09:09,070 - INFO -   (198/404) [QI Residential] TBGAHighMax-FINAL-FY2526.pdf
+2026-05-14 19:09:13,021 - INFO -   (199/404) [PREA] florida_tampa-residential-facility_year2cycle3.pdf
+2026-05-14 19:09:45,155 - INFO -   (200/404) [PREA] Florida_Walton Academy for Growth and Change_year1cycle4.pdf
+2026-05-14 19:09:52,510 - INFO -   (201/404) [PREA] waltonfinalprea-auditreport_2017.pdf
+2026-05-14 19:10:02,567 - INFO -   (202/404) [PREA] Florida_Walton Academy for Growth and Change_Year1Cycle5.pdf
+2026-05-14 19:10:04,857 - INFO -   (203/404) [QI Residential] WAGC-FINAL-FY2324.pdf
+2026-05-14 19:10:06,899 - INFO -   (204/404) [PREA] florida_walton-academy-for-growth-and-change_year2cycle3.pdf
+2026-05-14 19:10:31,847 - INFO -   (205/404) [QI Residential] WAGC-FINAL-FY2425.pdf
+2026-05-14 19:10:47,728 - INFO -   (206/404) [QI Residential] WimaumaAcademy-FINAL-FY2324.pdf
+2026-05-14 19:10:51,545 - INFO -   (207/404) [PREA] bay-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:10:56,154 - INFO -   (208/404) [QI Residential] WimaumaAcademy-FINAL-FY2425.pdf
+2026-05-14 19:11:03,080 - INFO -   (209/404) [PREA] Florida_Bay Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 19:11:41,784 - INFO -   (210/404) [QI Detention] BRJDC-FINAL-FY2324.pdf
+2026-05-14 19:11:43,557 - INFO -   (211/404) [PREA] Florida_Wimauma Academy_Year3Cycle4.pdf
+2026-05-14 19:11:44,767 - INFO -   (212/404) [PREA] bay-rjdc-final-prea-audit-report.pdf
+2026-05-14 19:11:52,552 - INFO -   (213/404) [QI Detention] BRJDC-FINAL-FY2425.pdf
+2026-05-14 19:11:56,262 - INFO -   (214/404) [QI Detention] BRJDC-Rereview-FINAL-FY2425.pdf
+2026-05-14 19:11:57,091 - INFO -   (215/404) [PREA] brevard-detention-center-prea-audit-report.pdf
+2026-05-14 19:12:02,488 - INFO -   (216/404) [PREA] brevard-group-treatment-home-prea-audit-report.pdf
+2026-05-14 19:12:08,796 - INFO -   (217/404) [PREA] florida_bay-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:12:13,054 - INFO -   (218/404) [PREA] brevard-group-treatment-home-prea-report-final.pdf
+2026-05-14 19:12:40,830 - INFO -   (219/404) [PREA] brevard-rjdc.pdf
+2026-05-14 19:12:46,749 - INFO -   (220/404) [PREA] Florida_Brevard Regional Juvenile Detetion Center_year1cycle4.pdf
+2026-05-14 19:13:05,656 - INFO -   (221/404) [PREA] Florida_Brevard Regional Juvenile Detention Center_Year1Cycle5.pdf
+2026-05-14 19:13:43,978 - INFO -   (222/404) [QI Detention] Brevard Detention-FINAL-FY2324.pdf
+2026-05-14 19:13:59,498 - INFO -   (223/404) [QI Detention] BrevardRJDC-FINAL-FY2425.pdf
+2026-05-14 19:14:01,288 - INFO -   (224/404) [PREA] florida_brevard-group-treatment-home_year2cycle3.pdf
+2026-05-14 19:14:02,885 - INFO -   (225/404) [PREA] florida_brevard-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:14:12,429 - INFO -   (226/404) [QI Detention] BrevardJuvenileDetentionCenter-FINAL-FY2526.pdf
+2026-05-14 19:14:50,060 - INFO -   (227/404) [QI Detention] CollierRegionalJuvenileDetentionCenter-FINAL-FY2324.pdf
+2026-05-14 19:15:32,496 - INFO -   (228/404) [QI Detention] CollierDetention-FINAL-FY2425.pdf
+2026-05-14 19:15:34,303 - INFO -   (229/404) [PREA] Florida_Collier Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 19:15:45,876 - INFO -   (230/404) [PREA] Florida_Collier Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-14 19:15:52,869 - INFO -   (231/404) [PREA] florida_collier-rjdc_year3cycle2.pdf
+2026-05-14 19:15:53,955 - INFO -   (232/404) [PREA] escambia-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:15:55,776 - INFO -   (233/404) [QI Detention] CollierDetention - Final-FY2526 (1).pdf
+2026-05-14 19:15:56,204 - INFO -   (234/404) [PREA] Florida_Escambia Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 19:16:44,932 - INFO -   (235/404) [QI Detention] ERJDC-FINAL-FY2324.pdf
+2026-05-14 19:16:47,966 - INFO -   (236/404) [QI Detention] ERJDC-MQI-FINAL-FY2425.pdf
+2026-05-14 19:16:53,343 - INFO -   (237/404) [QI Detention] EscambiaRJDC-Final FY2526.pdf
+2026-05-14 19:17:07,600 - INFO -   (238/404) [PREA] leon-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:17:13,440 - INFO -   (239/404) [PREA] Florida_Leon Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 19:17:31,228 - INFO -   (240/404) [PREA] florida_escambia-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:18:04,938 - INFO -   (241/404) [PREA] leon-rjdc-final-prea-audit-report-2018.pdf
+2026-05-14 19:18:05,925 - INFO -   (242/404) [QI Detention] LRJDC-FINAL-FY2324 (1).pdf
+2026-05-14 19:18:14,690 - INFO -   (243/404) [QI Detention] LRJDC-FINAL-FY2425.pdf
+2026-05-14 19:18:26,655 - INFO -   (244/404) [PREA] florida_leon-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:18:30,129 - INFO -   (245/404) [PREA] manatee-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:18:34,425 - INFO -   (246/404) [QI Detention] LRJDC- FINAL- FY2526.pdf
+2026-05-14 19:19:06,632 - INFO -   (247/404) [PREA] Florida_Manatee Regional Juvenile Detention Center_year1cycle4.pdf
+2026-05-14 19:19:22,298 - INFO -   (248/404) [PREA] manatee-rjdc-audit-report-nov28_2017-final_fbb.pdf
+2026-05-14 19:19:22,348 - INFO -   (249/404) [QI Detention] ManateeRJDC-FINAL-FY2324.pdf
+2026-05-14 19:19:31,051 - INFO -   (250/404) [QI Detention] ManateeRJDC-FINAL-FY2425.pdf
+2026-05-14 19:19:50,457 - INFO -   (251/404) [PREA] marion-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:19:51,261 - INFO -   (252/404) [PREA] florida_manatee-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:20:14,616 - INFO -   (253/404) [PREA] Florida_Marion Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 19:20:38,419 - INFO -   (254/404) [PREA] marion-youth-academy-prea-audit-report.pdf
+2026-05-14 19:20:51,673 - INFO -   (255/404) [PREA] florida_marion-youth-academy_year2cycle3.pdf
+2026-05-14 19:21:02,255 - INFO -   (256/404) [PREA] marion-rjdc-final-prea-audit-report.pdf
+2026-05-14 19:21:05,887 - INFO -   (257/404) [PREA] marion-youth-academy-final-prea-audit-report.pdf
+2026-05-14 19:21:22,512 - WARNING -   PDF extract TIMED OUT after 120s for florida_marion-regional-juvenile-deterntion-center_year2cycle3.pdf; continuing without extracted text
+2026-05-14 19:21:22,513 - INFO -   (258/404) [PREA] florida_marion-regional-juvenile-deterntion-center_year2cycle3.pdf
+2026-05-14 19:21:24,596 - INFO -   (259/404) [QI Detention] MRJDC-FINAL-FY2324.pdf
+2026-05-14 19:21:36,706 - INFO -   (260/404) [PREA] dade-juvenile-residential-facility.pdf
+2026-05-14 19:21:38,164 - INFO -   (261/404) [QI Detention] MRJDC-FINAL-FY2425.pdf
+2026-05-14 19:21:46,015 - INFO -   (262/404) [QI Detention] MRJDC-FINAL-FY2526.pdf
+2026-05-14 19:21:46,090 - INFO -   (263/404) [PREA] miami-dade-juvenile-detention-center_final-prea-report.pdf
+2026-05-14 19:22:00,411 - INFO -   (264/404) [PREA] Florida_Miami Dade Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 19:23:05,596 - INFO -   (265/404) [QI Detention] MiamiDetention-MQI-FINAL-FY2324.pdf
+2026-05-14 19:23:12,578 - INFO -   (266/404) [PREA] florida_dade-juvenile-residential-_year3cycle2.pdf
+2026-05-14 19:23:22,484 - INFO -   (267/404) [PREA] Florida_Miami Dade Regional Detention Center_Year3Cycle3.pdf
+2026-05-14 19:23:23,442 - INFO -   (268/404) [PREA] Florida_Miami Dade Regional Detention Center_Year3Cycle3.pdf
+2026-05-14 19:23:24,916 - INFO -   (269/404) [PREA] florida_miami-dade-rjdc_year2cycle2.pdf
+2026-05-14 19:23:38,650 - INFO -   (270/404) [PREA] monroe-juvenile-detention-center_prea_audit_report.pdf
+2026-05-14 19:24:09,347 - INFO -   (271/404) [QI Detention] Miami-DadeRegionalJuvenileDetentionCenter-MQI-FINAL-FY2425.pdf
+2026-05-14 19:24:12,902 - INFO -   (272/404) [QI Detention] MiamiDadeRJDC-FinalReport-FY2526.pdf
+2026-05-14 19:24:24,692 - INFO -   (273/404) [PREA] Florida_Monroe Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 19:25:13,279 - INFO -   (274/404) [PREA] florida_monroe-rjdc_year2cycle2.pdf
+2026-05-14 19:25:15,556 - INFO -   (275/404) [PREA] Florida_Monroe Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-14 19:25:17,197 - INFO -   (276/404) [QI Detention] MonroeRJDC -FINAL-FY2324.pdf
+2026-05-14 19:25:30,450 - INFO -   (277/404) [QI Detention] MonroeDetention-MQI-FINAL-FY2425.pdf
+2026-05-14 19:25:42,681 - INFO -   (278/404) [PREA] Florida_Monroe Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-14 19:26:03,621 - INFO -   (279/404) [QI Detention] MonroeRegionalJuvenileDetentionCenter-FINAL- FY2526 (1).pdf
+2026-05-14 19:27:01,609 - INFO -   (280/404) [PREA] orange-orlandoreport-(1).pdf
+2026-05-14 19:27:19,548 - WARNING -   PDF extract TIMED OUT after 120s for Florida_Orange_Youth_Academy_Year1Cycle5.pdf; continuing without extracted text
+2026-05-14 19:27:20,244 - WARNING -   PDF extract TIMED OUT after 120s for Florida_Orange_Regional_Juvenile_Detention_Center_Year1Cycle5.pdf; continuing without extracted text
+2026-05-14 19:27:20,324 - INFO -   (281/404) [PREA] Florida_Orange Youth Academy_Year1Cycle5.pdf
+2026-05-14 19:27:20,529 - INFO -   (282/404) [PREA] Florida_Orange Regional Juvenile Detention Center_Year1Cycle5.pdf
+2026-05-14 19:27:34,208 - WARNING -   PDF extract TIMED OUT after 120s for florida_orange-orlandointensiveyouthacademy_year2cycle3.pdf; continuing without extracted text
+2026-05-14 19:27:34,951 - INFO -   (283/404) [PREA] florida_orange-orlandointensiveyouthacademy_year2cycle3.pdf
+2026-05-14 19:27:42,824 - WARNING -   PDF extract TIMED OUT after 120s for florida_orange-regional-juvenile-detention-center_year2cycle3.pdf; continuing without extracted text
+2026-05-14 19:27:42,855 - INFO -   (284/404) [PREA] florida_orange-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:27:47,521 - INFO -   (285/404) [PREA] orange-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:28:00,491 - INFO -   (286/404) [PREA] orange-youth-academy-prea-audit-report.pdf
+2026-05-14 19:28:35,992 - INFO -   (287/404) [PREA] Florida_Orange Youth Academy_year1cycle4.pdf
+2026-05-14 19:28:42,028 - INFO -   (288/404) [PREA] Florida_Orange Regional Juvenile Detention Center_year1cycle4.pdf
+2026-05-14 19:28:53,103 - INFO -   (289/404) [PREA] orange-rjdc-final-prea-audit-report.pdf
+2026-05-14 19:28:58,044 - INFO -   (290/404) [QI Detention] OrangeRegionalJuvenileDetentionCenter-FINAL-FY2324.pdf
+2026-05-14 19:29:03,513 - INFO -   (291/404) [QI Detention] OrangeRegionalJuvenileDetentionCenter-FINAL-FY2425.pdf
+2026-05-14 19:29:12,664 - INFO -   (292/404) [PREA] central-pasco-girls-academy-prea-audit-report.pdf
+2026-05-14 19:29:33,615 - INFO -   (293/404) [QI Detention] OrangeRJDC-FINAL-FY2526.pdf
+2026-05-14 19:29:38,730 - INFO -   (294/404) [PREA] pasco-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:30:32,690 - INFO -   (295/404) [PREA] Florida_Pasco Regional Juvenile Detention Center_Year1Cycle5.pdf
+2026-05-14 19:30:58,221 - WARNING -   PDF extract TIMED OUT after 120s for florida_central-pasco-girls-academy_year2cycle3.pdf; continuing without extracted text
+2026-05-14 19:30:58,285 - INFO -   (296/404) [PREA] florida_central-pasco-girls-academy_year2cycle3.pdf
+2026-05-14 19:30:59,991 - INFO -   (297/404) [PREA] pasco-rjdc.pdf
+2026-05-14 19:31:03,725 - WARNING -   PDF extract TIMED OUT after 120s for florida_pasco-regional-juvenile-detention-center_year2cycle23E69EDAF8520.pdf; continuing without extracted text
+2026-05-14 19:31:03,785 - INFO -   (298/404) [PREA] florida_pasco-regional-juvenile-detention-center_year2cycle23E69EDAF8520.pdf
+2026-05-14 19:31:10,157 - INFO -   (299/404) [PREA] Florida_Pasco Regional Juvenile Detention Center_year1cycle4.pdf
+2026-05-14 19:31:33,124 - INFO -   (300/404) [QI Detention] PascoRJDC-FINAL-FY2324.pdf
+2026-05-14 19:31:52,068 - INFO -   (301/404) [QI Detention] PascoRJDC-FINAL-FY2425.pdf
+2026-05-14 19:31:54,618 - INFO -   (302/404) [QI Detention] PascoRJDC-MQI-FINAL-FY2526.pdf
+2026-05-14 19:31:58,449 - INFO -   (303/404) [PREA] pinellas-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:32:25,246 - INFO -   (304/404) [PREA] Florida_Pinellas Regional Juvenile Detention Center_year1cycle4.pdf
+2026-05-14 19:32:45,012 - INFO -   (305/404) [QI Detention] PinellasRegionalJuvenileDetentionCenter-FINAL-FY2324.pdf
+2026-05-14 19:32:45,027 - INFO -   Downloading PinellasRJDC-FinalReport-FY2526.pdf
+2026-05-14 19:32:53,737 - INFO -   (306/404) [PREA] Florida_Pinellas Regional Juvenile Detention Center_Year1Cycle5.pdf
+2026-05-14 19:33:02,309 - INFO -   (307/404) [PREA] pinellas-rjdc.pdf
+2026-05-14 19:33:03,634 - INFO -   (308/404) [PREA] florida_pinellas-regional-juvenile-detention-center_year2cycle2C29687A57C9A.pdf
+2026-05-14 19:33:14,509 - INFO -   (309/404) [PREA] st-lucie-regional-juvenile-detention-center_prea_audit_report.pdf
+2026-05-14 19:33:24,008 - INFO -   (310/404) [QI Detention] PinellasRJDC-FINAL-FY2425.pdf
+2026-05-14 19:33:42,927 - INFO -   (311/404) [QI Detention] PinellasRJDC-FinalReport-FY2526.pdf
+2026-05-14 19:34:05,624 - INFO -   (312/404) [QI Detention] St. Lucie Detention Center-FINAL-FY2324.pdf
+2026-05-14 19:34:11,907 - INFO -   (313/404) [PREA] Florida_St. Lucie Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-14 19:34:28,236 - INFO -   (314/404) [QI Detention] St.LucieRJDC-FINAL-FY2425.pdf
+2026-05-14 19:34:32,544 - INFO -   (315/404) [PREA] volusia-regional-juvenile-detention-center-prea-audit-report.pdf
+2026-05-14 19:34:53,426 - INFO -   (316/404) [PREA] florida_st-lucie-rjdc_year3cycle2.pdf
+2026-05-14 19:34:55,607 - INFO -   (317/404) [PREA] Florida_Volusia Regional Juvenile Detention Center_Year2Cycle4.pdf
+2026-05-14 19:35:16,626 - INFO -   (318/404) [PREA] pompano-youth-treatment-center-prea-audit-report.pdf
+2026-05-14 19:35:19,448 - INFO -   (319/404) [QI Detention] VolusiaRJDC-FINAL-FY2324.pdf
+2026-05-14 19:35:31,680 - INFO -   (320/404) [QI Residential] HBI-StatewideReport-FINAL-FY2324.pdf
+2026-05-14 19:35:35,843 - INFO -   (321/404) [PREA] volusia-rjdc-final-prea-audit-report.pdf
+2026-05-14 19:35:47,576 - INFO -   (322/404) [PREA] florida_volusia-regional-juvenile-detention-center_year2cycle3.pdf
+2026-05-14 19:36:13,951 - INFO -   (323/404) [QI Detention] VolusiaRJDC-FINAL-FY2425.pdf
+2026-05-14 19:36:41,540 - INFO -   (324/404) [PREA] Florida_Lake Academy_Year2Cycle4.pdf
+2026-05-14 19:36:56,110 - INFO -   (325/404) [PREA] lake-academy-final-prea-audit-report.pdf
+2026-05-14 19:37:03,030 - INFO -   (326/404) [PREA] polk-halfway-house-prea-audit-report.pdf
+2026-05-14 19:37:23,044 - INFO -   (327/404) [QI Residential] Lake Academy-FINAL-FY2324.pdf
+2026-05-14 19:37:29,317 - INFO -   (328/404) [PREA] florida_lake-academy_year2cycle3.pdf
+2026-05-14 19:37:41,366 - INFO -   (329/404) [PREA] Florida_Polk Halfway House_year1cycle4.pdf
+2026-05-14 19:38:14,455 - WARNING -   PDF extract TIMED OUT after 120s for florida_polk-halfway-house_year2cycle3.pdf; continuing without extracted text
+2026-05-14 19:38:14,471 - INFO -   (330/404) [PREA] florida_polk-halfway-house_year2cycle3.pdf
+2026-05-14 19:38:14,976 - INFO -   (331/404) [QI Residential] PolkHalfwayHouse-FINAL-FY2324.pdf
+2026-05-14 19:38:28,462 - INFO -   (332/404) [PREA] amkids-youth-environmental-services.pdf
+2026-05-14 19:38:33,494 - INFO -   (333/404) [PREA] bartow-youth-academy-prea-audit-report.pdf
+2026-05-14 19:38:35,149 - INFO -   (334/404) [QI Detention] SouthWestDetention-FINAL-FY2425.pdf
+2026-05-14 19:38:35,677 - INFO -   (335/404) [QI Detention] SouthWestDetention-FINAL-FY2526.pdf
+2026-05-14 19:38:47,309 - INFO -   (336/404) [PREA] challenge-juvenile-residential-facility-prea-audit-report.pdf
+2026-05-14 19:39:19,013 - INFO -   (337/404) [PREA] charles-britt-academy-prea-audit-report.pdf
+2026-05-14 19:39:38,829 - INFO -   (338/404) [PREA] bartowfinalprea-audit-report2017_1.pdf
+2026-05-14 19:39:47,325 - INFO -   (339/404) [PREA] crestviewyouthacademy_final-prea-auit-report.pdf
+2026-05-14 19:39:49,775 - INFO -   (340/404) [PREA] centralpascogirls-prea-audit-report.pdf
+2026-05-14 19:39:54,386 - INFO -   (341/404) [PREA] challenge-youth-academy-final-prea-audit-report.pdf
+2026-05-14 19:39:55,176 - INFO -   (342/404) [PREA] collierregionaljuveniledetentioncenter_prea_auditreport.pdf
+2026-05-14 19:40:09,584 - INFO -   (343/404) [PREA] bigcypresswildernessinstitute_prea_report.pdf
+2026-05-14 19:40:30,425 - INFO -   (344/404) [PREA] charles-britt-final-prea-report.pdf
+2026-05-14 19:40:49,808 - INFO -   (345/404) [PREA] escambiaboysbasereport.pdf
+2026-05-14 19:40:53,321 - INFO -   (346/404) [PREA] columbuspreareportfinal_11-27-17.pdf
+2026-05-14 19:40:53,769 - INFO -   (347/404) [PREA] escambiarjdc-final-prea-audit-report-11_30_17-(002).pdf
+2026-05-14 19:41:08,119 - INFO -   (348/404) [PREA] okeechobee-intensive-halfway-house.pdf
+2026-05-15 13:00:04,297 - WARNING -   PDF extract TIMED OUT after 120s for florida_okeechobee-girls-academy_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:00:04,364 - INFO -   (349/404) [PREA] florida_okeechobee-girls-academy_year3cycle2.pdf
+2026-05-15 13:00:24,981 - WARNING -   PDF extract TIMED OUT after 120s for florida_okeechobee-intensive-halfway-house_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:00:24,987 - INFO -   (350/404) [PREA] florida_okeechobee-intensive-halfway-house_year3cycle2.pdf
+2026-05-15 13:00:48,329 - WARNING -   PDF extract TIMED OUT after 120s for florida_okeechobee-juvenile-offender-correction-center_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:00:48,330 - WARNING -   PDF extract TIMED OUT after 120s for florida_okeechobee-youth-development-center-correctional-center_year3cylce2DE89D6301A27.pdf; continuing without extracted text
+2026-05-15 13:00:48,478 - INFO -   (351/404) [PREA] florida_okeechobee-juvenile-offender-correction-center_year3cycle2.pdf
+2026-05-15 13:00:48,712 - INFO -   (352/404) [PREA] florida_okeechobee-youth-development-center-correctional-center_year3cylce2DE89D6301A27.pdf
+2026-05-15 13:00:52,415 - INFO -   (353/404) [PREA] okeechobee-youth-treatment-center.pdf
+2026-05-15 13:01:02,812 - WARNING -   PDF extract TIMED OUT after 120s for florida_okeechobee-youth-treatment-center_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:01:02,830 - INFO -   (354/404) [PREA] florida_okeechobee-youth-treatment-center_year3cycle2.pdf
+2026-05-15 13:02:25,661 - WARNING -   PDF extract TIMED OUT after 120s for florida_pompanoytc_year2cycle2.pdf; continuing without extracted text
+2026-05-15 13:02:25,728 - INFO -   (355/404) [PREA] florida_pompanoytc_year2cycle2.pdf
+2026-05-15 13:02:49,711 - WARNING -   PDF extract TIMED OUT after 120s for florida_southwest-rjdc_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:02:49,734 - INFO -   (356/404) [PREA] florida_southwest-rjdc_year3cycle2.pdf
+2026-05-15 13:02:49,811 - WARNING -   PDF extract TIMED OUT after 120s for florida_youthenvironmentalservices-amikids_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:02:49,910 - INFO -   (357/404) [PREA] florida_youthenvironmentalservices-amikids_year2cycle3.pdf
+2026-05-15 13:02:52,675 - WARNING -   PDF extract TIMED OUT after 120s for florida_gulf-hastings-youth-academy_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:02:52,728 - INFO -   (358/404) [PREA] florida_gulf-hastings-youth-academy_year2cycle3.pdf
+2026-05-15 13:03:03,328 - WARNING -   PDF extract TIMED OUT after 120s for florida_hope-forest-academy_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:03:03,511 - INFO -   (359/404) [PREA] florida_hope-forest-academy_year2cycle3.pdf
+2026-05-15 13:03:29,148 - INFO -   (360/404) [PREA] melbourne-center-for-personal-growth-prea-audit-report.pdf
+2026-05-15 13:03:57,883 - INFO -   (361/404) [PREA] melbourne-center-for-personal-growth.pdf
+2026-05-15 13:04:26,281 - WARNING -   PDF extract TIMED OUT after 120s for florida_martin-girls-academy_year3cycle2.pdf; continuing without extracted text
+2026-05-15 13:04:26,311 - INFO -   (362/404) [PREA] florida_martin-girls-academy_year3cycle2.pdf
+2026-05-15 13:04:28,078 - INFO -   (363/404) [PREA] Florida_Melbourne Center for Personal Growth_year1cycle4.pdf
+2026-05-15 13:04:50,545 - WARNING -   PDF extract TIMED OUT after 120s for florida_melbourne-center-for-personal-growth_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:04:50,628 - INFO -   (364/404) [PREA] florida_melbourne-center-for-personal-growth_year2cycle3.pdf
+2026-05-15 13:05:08,864 - INFO -   (365/404) [PREA] hastings-comprehensive-mental-health-treatment-facility-gulf-academy-prea-audit-report.pdf
+2026-05-15 13:05:29,470 - WARNING -   PDF extract TIMED OUT after 120s for florida_brooksville-acadamy_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:05:29,492 - INFO -   (366/404) [PREA] florida_brooksville-acadamy_year2cycle3.pdf
+2026-05-15 13:05:58,347 - WARNING -   PDF extract TIMED OUT after 120s for florida_charles-britt-youth-academy_year2cycle3.pdf; continuing without extracted text
+2026-05-15 13:05:58,363 - INFO -   (367/404) [PREA] florida_charles-britt-youth-academy_year2cycle3.pdf
+2026-05-15 13:06:13,563 - INFO -   (368/404) [PREA] martin's-girls-academy.pdf
+2026-05-15 13:06:20,597 - INFO -   (369/404) [PREA] gulf_hastings-final-prea-audit-report.pdf
+2026-05-15 13:06:47,373 - INFO -   (370/404) [PREA] highlandsfinal-prea-audit-report2017.pdf
+2026-05-15 13:06:48,414 - INFO -   (371/404) [PREA] okeecchobee-juvenile-correction-center.pdf
+2026-05-15 13:06:53,523 - INFO -   (372/404) [PREA] hillsboroughgirlsacademypreareportfinal_11_26_17.pdf
+2026-05-15 13:07:16,056 - INFO -   (373/404) [PREA] oydc-oycc.pdf
+2026-05-15 13:07:18,487 - INFO -   (374/404) [PREA] okaloosarjdc-final-prea-audit-report-11_30_17.pdf
+2026-05-15 13:07:40,234 - INFO -   (375/404) [PREA] okaloosayouthacademyreport.pdf
+2026-05-15 13:07:45,239 - INFO -   (376/404) [PREA] pascoregionaljuveniledetentioncenter_prea-audit-final_10-08-2014.pdf
+2026-05-15 13:07:46,193 - INFO -   (377/404) [PREA] palmetto-youth-academy-prea-audit-report.pdf
+2026-05-15 13:08:03,405 - INFO -   (378/404) [PREA] polkhalfwayfinal-prea-audit-report2017.pdf
+2026-05-15 13:08:05,690 - INFO -   (379/404) [PREA] plam-beach-ya.pdf
+2026-05-15 13:08:06,029 - INFO -   (380/404) [PREA] frances-walker-halfway-house-prea-audit-report.pdf
+2026-05-15 13:08:06,716 - INFO -   (381/404) [PREA] ftmyersyouthacademy_prea_report.pdf
+2026-05-15 13:08:11,697 - INFO -   (382/404) [PREA] palmetto-final-prea-audit-report.pdf
+2026-05-15 13:08:15,727 - INFO -   (383/404) [PREA] union-juvenile-residential-facility-prea-audit-report.pdf
+2026-05-15 13:08:17,402 - INFO -   (384/404) [PREA] walton-youth-development-center-prea-audit-report.pdf
+2026-05-15 13:08:32,157 - INFO -   (385/404) [PREA] youth-environmental-services-prea-audit-report.pdf
+2026-05-15 13:08:40,624 - INFO -   (386/404) [PREA] spring-lake-youth-academy-prea-audit-report.pdf
+2026-05-15 13:08:55,066 - INFO -   (387/404) [PREA] Florida_Youth Environmental Services_year1cycle4.pdf
+2026-05-15 13:08:58,971 - INFO -   (388/404) [PREA] st-johns-youth-academy.pdf
+2026-05-15 13:08:59,378 - INFO -   (389/404) [PREA] just-twinoaks-final-prea-audit-report.pdf
+2026-05-15 13:09:10,221 - INFO -   (390/404) [PREA] union-final-prea-audit-report.pdf
+2026-05-15 13:09:10,447 - INFO -   (391/404) [PREA] swfloridaregionaljuveniledetentioncenter_prea_report.pdf
+2026-05-15 13:09:28,697 - INFO -   (392/404) [PREA] residential-alternative-for-the-mentally-challenged-prea-audit-report.pdf
+2026-05-15 13:09:44,586 - INFO -   (393/404) [PREA] st-johns-youth-academy-final-prea-audit-report.pdf
+2026-05-15 13:10:18,747 - INFO -   (394/404) [PREA] tamparesidentialfacilityreport_final-11_27_17.pdf
+2026-05-15 13:10:27,799 - INFO -   (395/404) [PREA] residential-alternative-for-mentally-challenged-final-prea-audit-report.pdf
+2026-05-15 13:10:47,572 - INFO -   (396/404) [PREA] spring-lake-final-prea-audit-report.pdf
+2026-05-15 13:10:55,546 - WARNING -   PDF extract TIMED OUT after 120s for Florida_St_Johns_Youth_Academy_Year3Cycle3.pdf; continuing without extracted text
+2026-05-15 13:10:55,577 - INFO -   (397/404) [PREA] Florida_St Johns Youth Academy_Year3Cycle3.pdf
+2026-05-15 13:11:32,456 - INFO -   (398/404) [PREA] Florida_Hiillsborough Girls Academy_year1cycle4.pdf
+2026-05-15 13:11:34,426 - INFO -   (399/404) [PREA] Florida_Hiillsborough Girls Academy_year1cycle4.pdf
+2026-05-15 13:11:40,225 - INFO -   (400/404) [PREA] Florida_Saint Lucie Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-15 13:12:08,989 - INFO -   (401/404) [PREA] Florida_Southwest Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-15 13:12:27,733 - INFO -   (402/404) [PREA] Florida_Southwest Regional Juvenile Detention Center_Year3Cycle3.pdf
+2026-05-15 13:13:17,781 - INFO -   (403/404) [PREA] Florida_Sothwest Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-15 13:13:18,234 - INFO -   (404/404) [PREA] Florida_Sothwest Regional Juvenile Detention Center_Year3Cycle4.pdf
+2026-05-15 13:13:18,242 - WARNING - 82 reports could not be matched to a facility (grouped into 64 synthetic facilities)
+2026-05-15 13:13:18,243 - INFO - Scrape complete: 112 facilities, 404 new reports
+2026-05-15 13:13:18,247 - INFO - Posting 112 facilities with new reports
+2026-05-15 13:13:20,669 - INFO - Split 112 facilities into 60 API requests using a 750,000-byte payload cap
+2026-05-15 13:13:20,692 - INFO - Posting batch 1/60: 1 facilities (2,928,663 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:25,155 - INFO - Posting batch 2/60: 1 facilities (597,370 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:26,311 - INFO - Posting batch 3/60: 1 facilities (3,445,399 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:28,019 - INFO - Posting batch 4/60: 1 facilities (1,122,562 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:29,159 - INFO - Posting batch 5/60: 1 facilities (872,931 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:30,194 - INFO - Posting batch 6/60: 1 facilities (1,324,755 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:31,735 - INFO - Posting batch 7/60: 1 facilities (1,809,718 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:34,187 - INFO - Posting batch 8/60: 1 facilities (961,968 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:37,983 - INFO - Posting batch 9/60: 1 facilities (1,216,531 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:39,141 - INFO - Posting batch 10/60: 1 facilities (1,240,061 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:40,527 - INFO - Posting batch 11/60: 1 facilities (2,371,942 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:41,919 - INFO - Posting batch 12/60: 1 facilities (502,421 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:43,062 - INFO - Posting batch 13/60: 1 facilities (2,010,610 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:44,662 - INFO - Posting batch 14/60: 1 facilities (895,082 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:45,824 - INFO - Posting batch 15/60: 1 facilities (1,837,357 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:51,954 - INFO - Posting batch 16/60: 1 facilities (1,352,427 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:53,158 - INFO - Posting batch 17/60: 1 facilities (1,231,734 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:54,963 - INFO - Posting batch 18/60: 1 facilities (1,459,879 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:56,840 - INFO - Posting batch 19/60: 1 facilities (2,179,045 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:58,072 - INFO - Posting batch 20/60: 1 facilities (991,322 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:13:59,127 - INFO - Posting batch 21/60: 1 facilities (1,782,836 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:00,279 - INFO - Posting batch 22/60: 1 facilities (1,315,061 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:01,384 - INFO - Posting batch 23/60: 1 facilities (2,695,054 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:02,729 - INFO - Posting batch 24/60: 1 facilities (546,627 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:03,717 - INFO - Posting batch 25/60: 1 facilities (3,312,811 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:04,970 - INFO - Posting batch 26/60: 2 facilities (708,206 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:05,927 - INFO - Posting batch 27/60: 1 facilities (712,532 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:06,963 - INFO - Posting batch 28/60: 1 facilities (668,664 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:08,749 - INFO - Posting batch 29/60: 1 facilities (266,375 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:09,668 - INFO - Posting batch 30/60: 1 facilities (1,132,899 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:10,726 - INFO - Posting batch 31/60: 1 facilities (1,464,173 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:11,853 - INFO - Posting batch 32/60: 1 facilities (842,955 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:12,846 - INFO - Posting batch 33/60: 1 facilities (1,373,400 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:13,948 - INFO - Posting batch 34/60: 1 facilities (2,142,614 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:15,076 - INFO - Posting batch 35/60: 1 facilities (1,689,642 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:16,206 - INFO - Posting batch 36/60: 1 facilities (961,275 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:17,310 - INFO - Posting batch 37/60: 1 facilities (1,444,391 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:18,464 - INFO - Posting batch 38/60: 1 facilities (1,006,900 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:19,530 - INFO - Posting batch 39/60: 1 facilities (1,627,050 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:20,630 - INFO - Posting batch 40/60: 1 facilities (2,225,608 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:21,844 - INFO - Posting batch 41/60: 1 facilities (1,778,091 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:23,001 - INFO - Posting batch 42/60: 1 facilities (958,196 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:24,024 - INFO - Posting batch 43/60: 1 facilities (1,575,507 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:25,107 - INFO - Posting batch 44/60: 1 facilities (1,595,973 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:26,229 - INFO - Posting batch 45/60: 1 facilities (1,087,379 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:27,301 - INFO - Posting batch 46/60: 1 facilities (1,395,127 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:28,504 - INFO - Posting batch 47/60: 2 facilities (79,692 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:29,329 - INFO - Posting batch 48/60: 1 facilities (1,107,872 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:30,529 - INFO - Posting batch 49/60: 2 facilities (678,316 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:31,617 - INFO - Posting batch 50/60: 4 facilities (545,965 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:32,678 - INFO - Posting batch 51/60: 5 facilities (722,667 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:33,734 - INFO - Posting batch 52/60: 6 facilities (706,319 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:34,750 - INFO - Posting batch 53/60: 16 facilities (747,787 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:35,818 - INFO - Posting batch 54/60: 5 facilities (732,980 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:37,380 - INFO - Posting batch 55/60: 7 facilities (696,589 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:38,548 - INFO - Posting batch 56/60: 7 facilities (625,054 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:42,000 - INFO - Posting batch 57/60: 5 facilities (714,500 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:43,039 - INFO - Posting batch 58/60: 2 facilities (508,723 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:44,585 - INFO - Posting batch 59/60: 2 facilities (739,296 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:46,011 - INFO - Posting batch 60/60: 1 facilities (872,479 bytes) to https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php
+2026-05-15 13:14:47,630 - INFO - API saved 112 facilities, 404 reports
+2026-05-15 13:14:48,252 - INFO - Saved successfully

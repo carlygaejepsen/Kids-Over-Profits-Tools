@@ -33,7 +33,7 @@ API_URL = os.getenv(
     "INSPECTIONS_API_URL",
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
-API_KEY = os.getenv("INSPECTIONS_API_KEY", "CHANGE_ME")
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 STATE_FILE = Path(os.getenv("TX_STATE_FILE", ".tx_state.json"))
 
