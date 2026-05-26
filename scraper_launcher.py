@@ -32,6 +32,8 @@ STATE_FILE = THIS_DIR / "scraper_launcher_state.json"
 TOOLS_DIR = THIS_DIR
 KOP_DIR   = Path(r"C:\Users\daniu\OneDrive\Documents\GitHub\Kids-Over-Profits")
 LOCAL_APPDATA_DIR = Path(os.environ.get("LOCALAPPDATA", str(THIS_DIR)))
+LAUNCHER_CONFIG_DIR = LOCAL_APPDATA_DIR / "KidsOverProfits"
+LAUNCHER_CONFIG_FILE = LAUNCHER_CONFIG_DIR / "scraper_launcher_config.json"
 MN_BROWSER_PROFILE = LOCAL_APPDATA_DIR / "KidsOverProfits" / "mn-browser-profile"
 
 SCRAPERS = [
@@ -207,6 +209,49 @@ def save_state(state):
     STATE_FILE.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
 
+def load_launcher_config() -> dict:
+    if LAUNCHER_CONFIG_FILE.exists():
+        try:
+            return json.loads(LAUNCHER_CONFIG_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def save_launcher_config(config: dict) -> None:
+    LAUNCHER_CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+    LAUNCHER_CONFIG_FILE.write_text(json.dumps(config, indent=2), encoding="utf-8")
+
+
+def _clean_api_key(value: str | None) -> str:
+    if value is None:
+        return ""
+    value = value.strip().strip('"').strip("'")
+    if not value or value == "CHANGE_ME":
+        return ""
+    return value
+
+
+def load_api_key_from_dotenv(dotenv_path: Path) -> dict:
+    values = {}
+    if not dotenv_path.exists():
+        return values
+    try:
+        for raw_line in dotenv_path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            key = key.strip()
+            if key in {"KOP_DATA_API_KEY", "INSPECTIONS_API_KEY"}:
+                cleaned = _clean_api_key(value)
+                if cleaned:
+                    values[key] = cleaned
+    except Exception:
+        pass
+    return values
+
+
 def format_last_run(entry):
     if not entry:
         return "Never run"
@@ -264,6 +309,7 @@ class ScraperLauncher:
                              min_width=760, min_height=560)
 
         self.state         = load_state()
+        self.launcher_config = load_launcher_config()
         self.check_vars    = {}
         self.status_labels = {}
         self.row_frames    = {}
@@ -273,11 +319,45 @@ class ScraperLauncher:
         self.processes: dict = {}
         self.log_queue     = queue.Queue()
         self.output_buffers: dict = {}  # key -> list of output lines from last run
+        self.api_key = self._resolve_api_key()
 
         self._build_ui()
         self._refresh_statuses()
         self.root.update()
         self._fit_main_window()
+
+    def _resolve_api_key(self) -> str:
+        # Prefer the inspections key when available, since the write endpoint
+        # validates against INSPECTIONS_API_KEY.
+        dotenv_keys = load_api_key_from_dotenv(KOP_DIR / ".env")
+        dotenv_key = dotenv_keys.get("INSPECTIONS_API_KEY") or dotenv_keys.get("KOP_DATA_API_KEY")
+        if dotenv_key:
+            self._persist_api_key(dotenv_key)
+            return dotenv_key
+
+        env_key = _clean_api_key(os.environ.get("INSPECTIONS_API_KEY")) or _clean_api_key(os.environ.get("KOP_DATA_API_KEY"))
+        if env_key:
+            self._persist_api_key(env_key)
+            return env_key
+
+        config_key = _clean_api_key(self.launcher_config.get("inspections_api_key")) or _clean_api_key(self.launcher_config.get("kop_data_api_key"))
+        if config_key:
+            return config_key
+
+        return ""
+
+    def _persist_api_key(self, api_key: str) -> None:
+        cleaned = _clean_api_key(api_key)
+        if not cleaned:
+            return
+        if (
+            self.launcher_config.get("kop_data_api_key") == cleaned
+            and self.launcher_config.get("inspections_api_key") == cleaned
+        ):
+            return
+        self.launcher_config["kop_data_api_key"] = cleaned
+        self.launcher_config["inspections_api_key"] = cleaned
+        save_launcher_config(self.launcher_config)
         self.root.after_idle(self._fit_main_window)
         self._poll_log_queue()
 
@@ -568,6 +648,13 @@ class ScraperLauncher:
         self._run_batch(SCRAPERS)
 
     def _run_batch(self, scrapers):
+        if not self.api_key:
+            self._log(
+                "system",
+                "WARNING: INSPECTIONS_API_KEY/KOP_DATA_API_KEY not found in environment, launcher config, or .env. "
+                "Scrapers will run but cannot post to the API until this key is provided.",
+                tag="err",
+            )
         if self.parallel_var.get():
             for s in scrapers:
                 self._run_one(s)
@@ -586,6 +673,9 @@ class ScraperLauncher:
 
         for env_key, env_value in scraper.get("env_defaults", {}).items():
             env.setdefault(env_key, env_value)
+        if self.api_key:
+            env["KOP_DATA_API_KEY"] = self.api_key
+            env["INSPECTIONS_API_KEY"] = self.api_key
 
         if not script.exists():
             self._log(key, f"ERROR: script not found — {script}", tag="err")
