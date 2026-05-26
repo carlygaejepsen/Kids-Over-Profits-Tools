@@ -215,6 +215,13 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Useful flags beyond `--full`:** `--no-post` (cache + parse only, no API write), `--no-profiles` (skip per-facility profile fetches — faster smoke test), `--limit N` (post at most N facilities — for end-to-end testing on production), `--workers N` (concurrent PDF download/parse workers; default 5, env `FL_WORKERS`), `--pdf-timeout N` (seconds before abandoning pdfplumber on a single PDF; default 120, env `FL_PDF_TIMEOUT`).
 - **First-run expectation:** The full DJJ scrape is ~1250 PDFs (≈90 QI + ~265 PREA + ~850 SPEP + ~40 detention QI). With the default 5 workers, expect roughly 1-2 hours wall-clock for an empty cache. Subsequent runs use `fl_pdfs/` cache + `.fl_djj_state.json` and complete in minutes.
 
+### NC (North Carolina MHLCS public records)
+- **Source:** NC DHHS Division of Health Service Regulation Mental Health Licensure and Certification Section public records directory at `results.asp`, with facility pages at `facility.asp?fid=...`
+- **Method:** `requests` + BeautifulSoup to read the directory and facility pages, then OCR each linked inspection PDF with `pdf2image` + `pytesseract`
+- **Scraper:** `nc_scraper.py` uses the workbook as the seed list, matches each license to the public directory, and posts OCRed inspection reports for each matched facility
+- **Key detail:** Every report PDF is OCRed, even when the PDF also contains embedded text. The workbook is only the facility seed list; the report content comes from the public NC inspection PDFs
+- **Useful flags:** `--input`, `--limit N`, `--no-post`, `--full`
+
 ### UT (Utah OCR/CSV export)
 - **Source:** Utah facility JSON endpoint at `ccl.utah.gov`
 - **Method:** `requests` JSON fetches plus CSV export

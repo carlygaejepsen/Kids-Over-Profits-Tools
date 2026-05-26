@@ -18,6 +18,7 @@ Most active state scrapers now run incrementally by default. Each scraper keeps 
 - `az_scraper.py`, `ca_scraper.py`, `ct_scraper.py`, `or_scraper.py`, `tx_scraper.py`, and `wa_scraper.py` track previously posted report IDs.
 - `utah_citation_scraper.py` now uses the same pattern for OCR-enhanced Utah exports, keyed by facility ID and inspection date.
 - `or_scraper.py` is incremental-only; use `--full` to re-scan Oregon reports without clearing existing rows.
+- `nc_scraper.py` scrapes the NC DHSR MHLCS public records directory and OCRs the inspection PDFs linked from each facility page, using the workbook as the seed list.
 
 ## Local artifacts
 

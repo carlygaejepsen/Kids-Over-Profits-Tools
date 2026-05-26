@@ -50,6 +50,13 @@ SCRAPERS = [
         "env_defaults": {"MN_BROWSER_PROFILE": str(MN_BROWSER_PROFILE)},
     },
     {"name": "Nevada",      "key": "NV", "script": TOOLS_DIR / "nv_scraper.py",               "cwd": TOOLS_DIR},
+    {
+        "name": "North Carolina",
+        "key": "NC",
+        "script": TOOLS_DIR / "nc_scraper.py",
+        "cwd": TOOLS_DIR,
+        "args": ["--input", str(KOP_DIR / "nc_youth_facilities.xlsx")],
+    },
     {"name": "Oregon",      "key": "OR", "script": TOOLS_DIR / "or_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Texas",       "key": "TX", "script": TOOLS_DIR / "tx_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Utah",        "key": "UT", "script": TOOLS_DIR / "utah_citation_scraper.py",    "cwd": TOOLS_DIR},
