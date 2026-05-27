@@ -658,11 +658,18 @@ def download_with_retry(url: str, max_attempts: int = 3, timeout: int = 30) -> O
 def fetch_facility_data(facility_id: int) -> Optional[Dict[str, Any]]:
     """Fetch JSON data for a single facility with robust error handling."""
 
-    url = f"https://ccl.utah.gov/ccl/public/facilities/{facility_id}.json"
+    url = f"https://cclapi.dlbc.utah.gov/api/public/facilities/{facility_id}"
     response = download_with_retry(url)
     if not response:
         print(f"🔍 Fetching {facility_id}... ❌ Failed after retries")
         return None
+    content_type = response.headers.get("Content-Type", "").lower()
+    if "html" in content_type:
+        snippet = (response.text or "")[:200].replace("\n", " ")
+        raise RuntimeError(
+            f"Facility endpoint returned HTML instead of JSON (Content-Type: {content_type}). "
+            f"The Utah CCL API may have moved again. URL: {url}. Body starts: {snippet!r}"
+        )
     try:
         data = response.json()
     except ValueError as error:
@@ -853,7 +860,7 @@ def main() -> None:
 
             for checklist_id in checklist_ids:
                 try:
-                    pdf_url = f"https://ccl.utah.gov/ccl/public/checklist/{checklist_id}?dl=1"
+                    pdf_url = f"https://cclapi.dlbc.utah.gov/api/public/checklist/{checklist_id}?dl=1"
                     pdf_response = download_with_retry(pdf_url)
 
                     if pdf_response:
