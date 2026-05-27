@@ -173,19 +173,23 @@ class CaliforniaCCLParser:
     def fetch_reports(self, facility_id: str, max_reports: int = 50,
                       seen: Optional[Set[str]] = None,
                       seen_fingerprints: Optional[Set[str]] = None,
-                      head_refresh: int = 8) -> List[Dict[str, Any]]:
+                      head_refresh: int = 8) -> Tuple[List[Dict[str, Any]], bool]:
         """Fetch all reports for a facility using index pagination.
 
         Incremental strategy:
         - Always re-fetch the first `head_refresh` indices to catch index shifts.
         - Beyond that window, skip legacy seen index IDs for speed.
         - De-duplicate by content fingerprint so moved reports are not re-posted.
+
+        Returns (reports, network_failure) where network_failure is True if every
+        attempt for this facility failed with a connection/DNS error.
         """
         seen = seen or set()
         seen_fingerprints = seen_fingerprints or set()
         reports = []
         index = 0
         consecutive_errors = 0
+        network_errors = 0
         skipped = 0
 
         print(f"Starting to fetch reports for facility {facility_id}")
@@ -229,6 +233,15 @@ class CaliforniaCCLParser:
                     consecutive_errors += 1
                     index += 1
 
+            except requests.exceptions.ConnectionError as e:
+                print(f"  Network error at index {index}: {e}")
+                network_errors += 1
+                consecutive_errors += 1
+                index += 1
+
+                if consecutive_errors >= 3:
+                    break
+
             except Exception as e:
                 print(f"  Exception at index {index}: {e}")
                 consecutive_errors += 1
@@ -237,11 +250,12 @@ class CaliforniaCCLParser:
                 if consecutive_errors >= 3:
                     break
 
+        network_failure = not reports and network_errors > 0 and network_errors == consecutive_errors
         msg = f"  Found {len(reports)} reports"
         if skipped:
             msg += f" ({skipped} indices skipped — already seen)"
         print(msg)
-        return reports
+        return reports, network_failure
     
     # Helper methods for continuation handling
     def _is_line_numbers_row(self, text):
@@ -996,6 +1010,8 @@ class CaliforniaCCLParser:
         new_ids: Dict[str, List[str]] = {}
         new_fingerprints: Dict[str, List[str]] = {}
         total = len(self.facility_ids)
+        consecutive_network_failures = 0
+        NETWORK_FAILURE_BAIL_THRESHOLD = 20
 
         logger.info(f"Starting CA scrape for {total} facilities")
 
@@ -1004,12 +1020,23 @@ class CaliforniaCCLParser:
             logger.info(f"[{i}/{total}] Facility {fac_id}")
 
             try:
-                reports = self.fetch_reports(
+                reports, network_failure = self.fetch_reports(
                     fac_id,
                     seen=seen.get(fac_id),
                     seen_fingerprints=seen_fingerprints.get(fac_id),
                     head_refresh=head_refresh,
                 )
+                if network_failure:
+                    consecutive_network_failures += 1
+                    if consecutive_network_failures >= NETWORK_FAILURE_BAIL_THRESHOLD:
+                        logger.error(
+                            f"Aborting scrape: {consecutive_network_failures} consecutive facilities "
+                            f"failed with network errors. Check connectivity to "
+                            f"www.ccld.dss.ca.gov and re-run."
+                        )
+                        break
+                else:
+                    consecutive_network_failures = 0
                 if not reports:
                     logger.info("  No new reports")
                     continue

@@ -60,6 +60,61 @@ TARGETS = [
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KOP-NV-scraper)"
 
+# Credential-type substrings that unambiguously indicate adult-only facilities.
+# Checked case-insensitively against hCredentialType (and hfName as a fallback).
+_ADULT_CREDENTIAL_KEYWORDS = [
+    "adult",
+    "senior",
+    "geriatric",
+    "assisted living",
+    "nursing home",
+    "skilled nursing",
+    "memory care",
+]
+
+# Credential-type substrings that confirm a facility serves minors.
+# Used for HCQC/HHF types where the search returns mixed-age results.
+_MINOR_CREDENTIAL_KEYWORDS = [
+    "adolescent",
+    "youth",
+    "juvenile",
+    "child",
+    "minor",
+    "teen",
+    "pediatric",
+]
+
+
+def _is_minor_serving(row: Dict[str, str], agency: str) -> bool:
+    """Return True if this facility plausibly serves minors.
+
+    CCP/DSS-CCL institutions are governed by NRS 432A (child care), so they
+    are always included.  HCQC/HHF facilities need active confirmation because
+    the same license type (ADA, RCF) covers both adolescent and adult programs.
+    """
+    if agency == "DSS-CCL":
+        return True
+
+    cred = (row.get("hCredentialType", "") or "").lower()
+    name = (row.get("hfName", "") or "").lower()
+    combined = cred + " " + name
+
+    # Explicit adult indicators → exclude
+    if any(kw in combined for kw in _ADULT_CREDENTIAL_KEYWORDS):
+        return False
+
+    # Explicit minor indicators → include
+    if any(kw in combined for kw in _MINOR_CREDENTIAL_KEYWORDS):
+        return True
+
+    # PRTF is defined by CMS as serving individuals under 21 → always include.
+    if "prtf" in cred or "psychiatric residential" in cred:
+        return True
+
+    # For ADA / RCF with no clear age signal: exclude by default.
+    # These types produce mostly adult recovery homes in Nevada.
+    return False
+
 # ASP.NET form field names (long, used everywhere)
 F_BU       = "ctl00$ContentPlaceHolder1$ucLicenseeSearchPublic$ddlBusinessUnit"
 F_ENTITY   = "ctl00$ContentPlaceHolder1$ucLicenseeSearchPublic$ddlEntity"
@@ -427,7 +482,8 @@ class NVFacilityScraper:
                 continue
 
             rows = _paginate_search(self.session, soup)
-            logger.info("  total rows: %d", len(rows))
+            rows = [r for r in rows if _is_minor_serving(r, agency)]
+            logger.info("  total rows after minor-serving filter: %d", len(rows))
 
             for i, row in enumerate(rows):
                 name = row.get("hfName", "?")
@@ -478,7 +534,7 @@ class NVFacilityScraper:
         return facilities, new_ids
 
 
-def save_to_api(facilities: List[Dict]) -> bool:
+def save_to_api(facilities: List[Dict], replace: bool = False) -> bool:
     if API_KEY == "CHANGE_ME":
         logger.error("KOP_DATA_API_KEY env var is not set — refusing to POST")
         return False
@@ -489,10 +545,74 @@ def save_to_api(facilities: List[Dict]) -> bool:
         scraped_timestamp=datetime.now().isoformat(),
         facilities=facilities,
         timeout=120,
+        replace=replace,
         info=logger.info,
         error=logger.error,
     )
     return bool(result.get("success"))
+
+
+def _is_minor_serving_facility(facility: Dict) -> bool:
+    """Same keyword logic as _is_minor_serving(), applied to stored API-format dicts.
+
+    Used by --purge to filter already-posted facilities without re-scraping ALiS.
+    """
+    info = facility.get("facility_info") or {}
+    cred = (info.get("program_category") or "").lower()
+    name = (info.get("facility_name") or "").lower()
+    combined = cred + " " + name
+
+    if any(kw in combined for kw in _ADULT_CREDENTIAL_KEYWORDS):
+        return False
+    if any(kw in combined for kw in _MINOR_CREDENTIAL_KEYWORDS):
+        return True
+    if "prtf" in cred or "psychiatric residential" in cred:
+        return True
+    # Credential types that contain drug/alcohol/recovery but no age signal → adult default
+    hcqc_markers = {"drug", "alcohol", "recovery", "treatment", "substance"}
+    if any(m in cred for m in hcqc_markers):
+        return False
+    # No HCQC markers → CCP institution type (child care under NRS 432A) → include
+    return True
+
+
+def purge_adults() -> None:
+    """Read all current NV facilities from the API, drop adult-only ones, rewrite the state."""
+    if API_KEY == "CHANGE_ME":
+        logger.error("KOP_DATA_API_KEY env var is not set — refusing to POST")
+        return
+
+    read_url = API_URL.replace("inspections-write.php", "inspections-read.php")
+    logger.info("Fetching current NV facilities from %s", read_url)
+    try:
+        resp = requests.get(read_url, params={"state": "NV"}, timeout=60)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as exc:
+        logger.error("Failed to read current NV data: %s", exc)
+        return
+
+    all_facilities = data.get("facilities") or []
+    logger.info("Found %d facilities in the database", len(all_facilities))
+
+    kept    = [f for f in all_facilities if     _is_minor_serving_facility(f)]
+    removed = [f for f in all_facilities if not _is_minor_serving_facility(f)]
+
+    logger.info("Keeping %d minor-serving facilities", len(kept))
+    for f in removed:
+        name = (f.get("facility_info") or {}).get("facility_name", "?")
+        cred = (f.get("facility_info") or {}).get("program_category", "?")
+        logger.info("  REMOVING: %s (%s)", name, cred)
+
+    if not removed:
+        logger.info("Nothing to remove — database is already clean")
+        return
+
+    logger.info("Rewriting NV database with replace=True (%d facilities)", len(kept))
+    if save_to_api(kept, replace=True):
+        logger.info("Purge complete. Removed %d adult/non-minor facilities.", len(removed))
+    else:
+        logger.error("API save failed during purge — database unchanged")
 
 
 def main() -> None:
@@ -501,7 +621,13 @@ def main() -> None:
                     help=f"Ignore {STATE_FILE} and re-post every inspection (use after schema changes)")
     ap.add_argument("--dry-run", action="store_true",
                     help="Scrape but do not POST to the API")
+    ap.add_argument("--purge", action="store_true",
+                    help="Read current NV DB, drop adult/non-minor facilities, rewrite with replace=True")
     args = ap.parse_args()
+
+    if args.purge:
+        purge_adults()
+        return
 
     state = load_state(STATE_FILE)
     seen = {} if args.full else seen_from_state(state)

@@ -13,6 +13,7 @@ import argparse
 import logging
 import os
 import re
+import time
 from collections import defaultdict
 from datetime import datetime
 from difflib import SequenceMatcher
@@ -317,13 +318,31 @@ def fetch_pdf_bytes(session: requests.Session, pdf_url: str) -> Optional[bytes]:
     cache_name = Path(urlparse(pdf_url).path).name
     cache_path = PDF_CACHE_DIR / cache_name
     if cache_path.exists():
-        return cache_path.read_bytes()
+        try:
+            data = cache_path.read_bytes()
+        except OSError as exc:
+            logger.warning("  PDF cache unreadable (%s), re-downloading: %s", exc, cache_name)
+            try:
+                cache_path.unlink()
+            except OSError:
+                pass
+        else:
+            if data.startswith(b"%PDF"):
+                logger.info("  PDF cache hit: %s (%d KB)", cache_name, len(data) // 1024)
+                return data
+            logger.warning("  PDF cache invalid (%d bytes, not a PDF), re-downloading: %s", len(data), cache_name)
+            try:
+                cache_path.unlink()
+            except OSError:
+                pass
 
+    logger.info("  PDF download start: %s", pdf_url)
+    start = time.monotonic()
     try:
         response = session.get(pdf_url, timeout=120)
         response.raise_for_status()
     except requests.RequestException as exc:
-        logger.warning("  PDF download failed for %s: %s", pdf_url, exc)
+        logger.warning("  PDF download failed for %s after %.1fs: %s", pdf_url, time.monotonic() - start, exc)
         return None
 
     if not response.content.startswith(b"%PDF"):
@@ -331,6 +350,7 @@ def fetch_pdf_bytes(session: requests.Session, pdf_url: str) -> Optional[bytes]:
         return None
 
     cache_path.write_bytes(response.content)
+    logger.info("  PDF downloaded: %s (%d KB, %.1fs)", cache_name, len(response.content) // 1024, time.monotonic() - start)
     return response.content
 
 
@@ -338,16 +358,40 @@ def ocr_pdf_bytes(pdf_bytes: bytes, cache_key: str) -> str:
     OCR_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_path = OCR_CACHE_DIR / f"{cache_key}.txt"
     if cache_path.exists():
-        return cache_path.read_text(encoding="utf-8", errors="replace")
-
-    images = convert_from_bytes(pdf_bytes, dpi=OCR_DPI, poppler_path=POPPLER_PATH or None)
-    text_parts: List[str] = []
-    for image in images:
         try:
-            text_parts.append(pytesseract.image_to_string(image))
+            text = cache_path.read_text(encoding="utf-8", errors="replace")
+        except OSError as exc:
+            logger.warning("  OCR cache unreadable (%s), re-running OCR: %s", exc, cache_key)
+            try:
+                cache_path.unlink()
+            except OSError:
+                pass
+        else:
+            logger.info("  OCR cache hit: %s", cache_key)
+            return text
+
+    logger.info("  OCR rasterize start: %s (dpi=%d, %d KB)", cache_key, OCR_DPI, len(pdf_bytes) // 1024)
+    raster_start = time.monotonic()
+    images = convert_from_bytes(pdf_bytes, dpi=OCR_DPI, poppler_path=POPPLER_PATH or None)
+    logger.info("  OCR rasterized %d pages in %.1fs: %s", len(images), time.monotonic() - raster_start, cache_key)
+
+    text_parts: List[str] = []
+    ocr_start = time.monotonic()
+    for page_num, image in enumerate(images, start=1):
+        page_start = time.monotonic()
+        try:
+            page_text = pytesseract.image_to_string(image)
         except Exception as exc:
-            logger.warning("  OCR failed for %s: %s", cache_key, exc)
+            logger.warning("  OCR failed for %s page %d: %s", cache_key, page_num, exc)
             break
+        page_elapsed = time.monotonic() - page_start
+        if page_elapsed > 15.0:
+            logger.warning("  OCR slow page: %s page %d took %.1fs", cache_key, page_num, page_elapsed)
+        else:
+            logger.info("  OCR page %d/%d done (%.1fs, %d chars): %s", page_num, len(images), page_elapsed, len(page_text), cache_key)
+        text_parts.append(page_text)
+
+    logger.info("  OCR total %.1fs (%d pages): %s", time.monotonic() - ocr_start, len(text_parts), cache_key)
 
     text = "\n\n".join(part.strip() for part in text_parts if part).strip()
     if text:
@@ -366,8 +410,10 @@ def parse_reports(session: requests.Session, facility_url: str, fid: str) -> Lis
 
     report_rows = tables[2].find_all("tr")
     reports: List[Dict[str, object]] = []
+    pdf_rows = [row for row in report_rows[1:] if row.find("a", href=True)]
+    logger.info("  fid=%s has %d report rows", fid, len(pdf_rows))
 
-    for row in report_rows[1:]:
+    for pdf_index, row in enumerate(report_rows[1:], start=1):
         cells = [cell.get_text(" ", strip=True) for cell in row.find_all(["td", "th"])]
         if len(cells) < 4:
             continue
@@ -377,10 +423,13 @@ def parse_reports(session: requests.Session, facility_url: str, fid: str) -> Lis
             continue
 
         pdf_url = urljoin(facility_url, link.get("href", ""))
-        pdf_bytes = fetch_pdf_bytes(session, pdf_url)
         pdf_name = Path(urlparse(pdf_url).path).name or f"{fid}-{cells[2]}"
         report_id = re.sub(r"[^A-Za-z0-9._-]+", "-", pdf_name)
+        logger.info("  report %d/%d (fid=%s): %s", pdf_index, len(pdf_rows), fid, report_id)
+        report_start = time.monotonic()
+        pdf_bytes = fetch_pdf_bytes(session, pdf_url)
         ocr_text = ocr_pdf_bytes(pdf_bytes, report_id) if pdf_bytes else ""
+        logger.info("  report %d/%d done in %.1fs (%d OCR chars): %s", pdf_index, len(pdf_rows), time.monotonic() - report_start, len(ocr_text), report_id)
 
         report_date = cells[2]
         inspection_type = cells[0]
@@ -479,12 +528,15 @@ def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -
         fid = entry["fid"]
         seen_for_fid = seen.get(fid, set())
 
+        logger.info("[%s/%s] %s (fid=%s) - fetching facility page", index, license_number, entry["name"], fid)
+        facility_start = time.monotonic()
         try:
             metadata = parse_facility_metadata(BeautifulSoup(session.get(facility_url, timeout=60).text, "html.parser"))
             reports = parse_reports(session, facility_url, fid)
         except requests.RequestException as exc:
             logger.warning("[%s/%s] failed to fetch facility page: %s", index, license_number, exc)
             continue
+        logger.info("[%s/%s] %s (fid=%s) - facility processing took %.1fs, %d reports parsed", index, license_number, entry["name"], fid, time.monotonic() - facility_start, len(reports))
 
         new_reports = [report for report in reports if report["report_id"] and report["report_id"] not in seen_for_fid]
         if not new_reports:

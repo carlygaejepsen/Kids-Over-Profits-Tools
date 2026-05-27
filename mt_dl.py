@@ -308,15 +308,34 @@ def run():
 
     # Additional options to avoid detection
     options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--start-maximized")
+
+    # Off-screen by default so the browser doesn't steal focus or sit on top of
+    # other work. Set MT_BROWSER_VISIBLE=1 to launch normally (e.g. if reCAPTCHA
+    # needs to be solved manually).
+    mt_visible = os.environ.get("MT_BROWSER_VISIBLE", "").strip().lower() in {"1", "true", "yes"}
+    if mt_visible:
+        options.add_argument("--start-maximized")
+    else:
+        # Chromium accepts very large negative coords; the window still renders
+        # off-screen but DOM and network behavior are unchanged.
+        options.add_argument("--window-position=-32000,-32000")
+        options.add_argument("--window-size=1600,1000")
 
     print("Launching browser...")
+    if not mt_visible:
+        print("(Browser launched off-screen. Set MT_BROWSER_VISIBLE=1 to show it — needed if reCAPTCHA appears.)")
     print("Auto-downloading ChromeDriver for your Chrome version...")
     # Let undetected-chromedriver auto-detect and download the correct version
     driver = uc.Chrome(options=options)
 
-    # Set window size
-    driver.set_window_size(1920, 1080)
+    if mt_visible:
+        driver.set_window_size(1920, 1080)
+    else:
+        driver.set_window_size(1600, 1000)
+        try:
+            driver.set_window_position(-32000, -32000)
+        except Exception as exc:
+            print(f"  Could not move window off-screen: {exc}")
 
     try:
         print(f"\nWill process {len(LICENSE_TYPES)} license type(s): {', '.join(LICENSE_TYPES)}\n")
