@@ -17,6 +17,7 @@ from typing import Any, Dict, List, Optional
 import pdfplumber
 import requests
 
+from inspection_api_client import post_facilities_to_api
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
@@ -41,6 +42,13 @@ CHECKLIST_DIR.mkdir(exist_ok=True)
 OUTPUT_JSON = OUTPUT_DIR / "ut_reports_with_ocr.json"
 OUTPUT_CSV = OUTPUT_DIR / f"utah_citations_{datetime.now().strftime('%m-%d-%Y')}.csv"
 STATE_FILE = Path(os.getenv("UTAH_STATE_FILE", ".utah_state.json"))
+
+API_URL = os.getenv(
+    "INSPECTIONS_API_URL",
+    "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
+)
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
+STATE_CODE = "UT"
 
 # Configuration
 DEBUG_EXTRACTION = True  # Set to True to see detailed extraction debug info
@@ -790,11 +798,150 @@ def write_csv_output(facilities_data: List[FacilityRecord]) -> None:
             writer.writerow(row)
 
 
+def _format_date(iso_str: str) -> str:
+    """Convert Utah's 'YYYY-MM-DD' inspection date to 'MM/DD/YYYY' for display."""
+    if not iso_str:
+        return ""
+    try:
+        return datetime.strptime(iso_str[:10], "%Y-%m-%d").strftime("%m/%d/%Y")
+    except ValueError:
+        return iso_str
+
+
+def _build_report(inspection: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    """Turn a single Utah inspection into one API report record.
+
+    report_id is the raw ISO inspection date so it stays aligned with the
+    incremental seen-state key (inspection_state_id). Inspections with no
+    date are skipped — they can't be deduped and aren't tracked in state.
+    """
+    iso_date = str(inspection.get("inspection_date", "") or "").strip()
+    if not iso_date:
+        return None
+
+    types = inspection.get("inspection_types", "")
+    if isinstance(types, list):
+        types = ", ".join(types)
+
+    findings = inspection.get("findings", []) or []
+    checklists = inspection.get("checklists", []) or []
+
+    content_parts: List[str] = []
+    for finding in findings:
+        rule = f"{finding.get('rule_number', '')}: {finding.get('rule_description', '')}".strip(": ").strip()
+        text = (finding.get("finding_text", "") or "").strip()
+        line = " — ".join(part for part in (rule, text) if part)
+        if line:
+            content_parts.append(line)
+
+    for checklist in checklists:
+        details: List[str] = []
+        if checklist.get("census") is not None:
+            details.append(f"Census: {checklist['census']}")
+        if checklist.get("capacity") is not None:
+            details.append(f"Capacity: {checklist['capacity']}")
+        if checklist.get("contact_person"):
+            details.append(f"Contact: {checklist['contact_person']}")
+        if checklist.get("licensor"):
+            details.append(f"Licensor: {checklist['licensor']}")
+        if details:
+            label = checklist.get("checklist_id", "")
+            content_parts.append(f"Checklist {label}: " + "; ".join(details))
+
+    raw_content = "\n".join(content_parts)
+    finding_count = len(findings)
+    if types and finding_count:
+        summary = f"{types} ({finding_count} finding{'s' if finding_count != 1 else ''})"
+    elif types:
+        summary = types
+    else:
+        summary = f"{finding_count} finding{'s' if finding_count != 1 else ''}"
+
+    return {
+        "report_id": iso_date,
+        "report_date": _format_date(iso_date),
+        "raw_content": raw_content,
+        "content_length": len(raw_content),
+        "summary": summary,
+        "categories": {
+            "Inspection Date": _format_date(iso_date),
+            "Inspection Type": types,
+            "Findings Count": str(finding_count),
+        },
+    }
+
+
+def _build_api_facility(record: FacilityRecord) -> Dict[str, Any]:
+    """Map a scraped Utah facility_record onto the {facility_info, reports, source} API schema."""
+    reports = [report for inspection in record.get("inspections", [])
+               if (report := _build_report(inspection)) is not None]
+
+    return {
+        "facility_info": {
+            "facility_name": record.get("name", ""),
+            "program_name": str(record.get("facility_id", "")),
+            "program_category": record.get("license_type", ""),
+            "full_address": record.get("address", ""),
+            "phone": str(record.get("phone", "") or ""),
+            "bed_capacity": str(record.get("capacity", "") or ""),
+            "license_exp_date": _format_date(record.get("expiration_date", "")),
+            "action": "Conditional" if record.get("conditional") else "Licensed",
+        },
+        "reports": reports,
+        "source": {
+            "facility_id": record.get("facility_id", ""),
+            "public_records_url": f"https://ccl.utah.gov/ccl/facility/{record.get('facility_id', '')}",
+            "regulation_date": record.get("regulation_date", ""),
+        },
+    }
+
+
+def transform_to_api(facilities_data: List[FacilityRecord]) -> List[Dict[str, Any]]:
+    """Transform scraped facility records into API payloads, dropping any with no reports."""
+    api_facilities = [_build_api_facility(record) for record in facilities_data]
+    return [facility for facility in api_facilities if facility["reports"]]
+
+
+def post_to_api(api_facilities: List[Dict[str, Any]], api_url: str) -> bool:
+    """Post transformed facilities to the Kids Over Profits inspections API."""
+    result = post_facilities_to_api(
+        api_url=api_url,
+        api_key=API_KEY,
+        state=STATE_CODE,
+        scraped_timestamp=datetime.now().isoformat(),
+        facilities=api_facilities,
+        timeout=180,
+        info=print,
+        error=print,
+    )
+    return bool(result.get("success"))
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true",
                     help=f"Ignore {STATE_FILE} and re-process all inspections")
+    ap.add_argument("--from-json", metavar="PATH", nargs="?", const=str(OUTPUT_JSON),
+                    help=f"Skip scraping; post an existing export (default: {OUTPUT_JSON}) to the API")
+    ap.add_argument("--no-post", action="store_true",
+                    help="Scrape and write local JSON/CSV but do not post to the API")
+    ap.add_argument("--api-url", default=API_URL, help="Override the inspections write endpoint")
     args = ap.parse_args()
+
+    if args.from_json:
+        json_path = Path(args.from_json)
+        if not json_path.exists():
+            print(f"❌ File not found: {json_path}")
+            return
+        facilities_data = json.loads(json_path.read_text(encoding="utf-8"))
+        api_facilities = transform_to_api(facilities_data)
+        report_count = sum(len(f["reports"]) for f in api_facilities)
+        print(f"📤 Posting {len(api_facilities)} facilities ({report_count} reports) from {json_path}")
+        if post_to_api(api_facilities, api_url=args.api_url):
+            print("✅ API save succeeded")
+        else:
+            print("❌ API save failed")
+        return
 
     facility_list = FACILITY_IDS[:3] if TEST_MODE else FACILITY_IDS
     mode_str = " (TEST MODE - first 3 facilities only)" if TEST_MODE else ""
@@ -830,6 +977,9 @@ def main() -> None:
             "facility_id": facility_id,
             "name": data.get("name", ""),
             "address": format_address(data.get("address", {})),
+            "license_type": data.get("licenseType", ""),
+            "phone": data.get("phone", ""),
+            "capacity": data.get("capacity", ""),
             "regulation_date": data.get("initialRegulationDate", ""),
             "expiration_date": data.get("expirationDate", ""),
             "conditional": data.get("conditional", False),
@@ -907,9 +1057,21 @@ def main() -> None:
 
     write_csv_output(facilities_data)
     print(f"📑 CSV summary saved to {OUTPUT_CSV}")
-    merge_new_ids(state, new_ids)
-    save_state(STATE_FILE, state)
-    print(f"💾 State updated: {STATE_FILE}")
+
+    if args.no_post:
+        print("⏭️  --no-post supplied; skipping API write (state not advanced)")
+        print("💡 Pro tip: Use a JSON viewer or 'python -m json.tool' for pretty printing")
+        return
+
+    api_facilities = transform_to_api(facilities_data)
+    report_count = sum(len(f["reports"]) for f in api_facilities)
+    print(f"📤 Posting {len(api_facilities)} facilities ({report_count} reports) to the API")
+    if post_to_api(api_facilities, api_url=args.api_url):
+        merge_new_ids(state, new_ids)
+        save_state(STATE_FILE, state)
+        print(f"💾 State updated: {STATE_FILE}")
+    else:
+        print("❌ API save failed; state not advanced so the next run will retry")
     print("💡 Pro tip: Use a JSON viewer or 'python -m json.tool' for pretty printing")
 
 

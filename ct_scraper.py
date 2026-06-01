@@ -2,6 +2,7 @@ import argparse
 import requests
 import re
 import os
+import sys
 from bs4 import BeautifulSoup
 import logging
 from pathlib import Path
@@ -12,6 +13,13 @@ from inspection_api_client import post_facilities_to_api
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 STATE_FILE = Path(os.getenv("CT_STATE_FILE", ".ct_state.json"))
+
+US_STATE_ABBREVS = {
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL",
+    "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT",
+    "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI",
+    "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "DC",
+}
 
 # Set up logging for better debugging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -220,6 +228,37 @@ class DCFFacilityScraper:
             "phone": phone.strip()
         }
         
+    @staticmethod
+    def _state_from_address(address: str) -> str:
+        """Two-letter US state from a free-form address ("…, CA 92612" -> "CA"); '' if none."""
+        for m in re.findall(r',\s*([A-Za-z]{2})\b', address or ""):
+            if m.upper() in US_STATE_ABBREVS:
+                last = m.upper()
+        return locals().get("last", "")
+
+    @staticmethod
+    def _program_location(program_name: str) -> str:
+        """
+        Best-effort facility location hint from the program name. The DCF portal
+        puts the specific home's street/house/town here (the name-cell address is
+        the licensee's), but the format varies:
+            "JRI / Chesterfield Road / GH #127" -> "Chesterfield Road"
+            "CHR / Mills House / GH #55"         -> "Mills House"
+            "Adelbrook (aka-CHCS) / Esther House / GH" -> "Esther House"
+        For slash-delimited names we drop the leading agency acronym and any
+        trailing licensing-code segment ("GH #55", "TGH #82", "CCF GH#150"); the
+        remaining middle is the location hint. Non-delimited names yield ''.
+        """
+        name = (program_name or "").strip()
+        if "/" not in name:
+            return ""
+        segs = [s.strip() for s in name.split("/") if s.strip()]
+        if len(segs) < 2:
+            return ""
+        code_re = re.compile(r'^(?:ccf\s*)?(?:gh|tgh|rt|ccf|mh)\b.*#?\s*\d*$', re.I)
+        middle = [s for s in segs[1:] if not code_re.match(s)]
+        return " / ".join(middle).strip()
+
     def _parse_table_row(self, row, row_index: int) -> Optional[Dict]:
         """
         Parse a single table row into facility data
@@ -248,7 +287,23 @@ class DCFFacilityScraper:
             
             # Merge the parsed facility info
             facility_info.update(parsed_facility_info)
-            
+
+            # The DCF name-cell address is the LICENSEE/agency mailing address,
+            # not the specific facility's location: several group homes under one
+            # agency share it, and chains list an out-of-state corporate HQ
+            # (e.g. Discovery -> Irvine, CA). Record it honestly and avoid passing
+            # an out-of-state HQ off as the facility address — leave full_address
+            # blank in that case so downstream uses the master/program location
+            # instead of a misleading address. (program_location is a best-effort
+            # hint from the program name.)
+            licensee_address = facility_info.get("full_address", "")
+            licensee_state = self._state_from_address(licensee_address)
+            facility_info["licensee_address"] = licensee_address
+            facility_info["licensee_state"] = licensee_state
+            facility_info["program_location"] = self._program_location(facility_info.get("program_name", ""))
+            if licensee_state and licensee_state != "CT":
+                facility_info["full_address"] = ""
+
             # Validate essential fields
             if not facility_info["facility_name"] or len(facility_info["facility_name"]) < 3:
                 logger.warning(f"Row {row_index}: Invalid facility name")
@@ -773,7 +828,9 @@ API_URL = os.getenv(
     "INSPECTIONS_API_URL",
     "https://kidsoverprofits.org/wp-content/themes/child/api/inspections-write.php",
 )
-API_KEY = "CHANGE_ME"  # Set this to match the key in your PHP endpoint
+# The write endpoint validates against KOP_DATA_API_KEY, which the launcher injects
+# into the environment.
+API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 
 def save_to_api(data: Dict, state: str = "CT") -> bool:
@@ -824,7 +881,7 @@ def main():
             save_state(STATE_FILE, state)
         else:
             logger.error("API save failed -- state not advanced")
-        
+
         # Show detailed sample
         if data['facilities']:
             sample = data['facilities'][0]
@@ -860,9 +917,15 @@ def main():
                     print(f"   Categories found: {list(report['categories'].keys())}")
                     if 'summary' in report:
                         print(f"   Summary: {report['summary']}")
+
+        # Surface API failures to the caller (launcher reads the exit code) so a
+        # rejected post shows as FAILED instead of a green run with 0 saved.
+        if not posted_ok:
+            sys.exit(1)
     else:
         print("Failed to scrape data")
         logger.error("Scraping failed - check logs for details")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

@@ -26,7 +26,7 @@ Per-scraper state files are gitignored. Some scrapers also keep local PDF/text c
 
 ## Running
 
-Set `INSPECTIONS_API_KEY` before posting to the live API. `INSPECTIONS_API_URL` is optional and defaults to the production endpoint.
+Set `KOP_DATA_API_KEY` before posting to the live API. `INSPECTIONS_API_URL` is optional and defaults to the production endpoint.
 
 Examples:
 

@@ -243,7 +243,7 @@ def load_api_key_from_dotenv(dotenv_path: Path) -> dict:
                 continue
             key, value = line.split("=", 1)
             key = key.strip()
-            if key in {"KOP_DATA_API_KEY", "INSPECTIONS_API_KEY"}:
+            if key == "KOP_DATA_API_KEY":
                 cleaned = _clean_api_key(value)
                 if cleaned:
                     values[key] = cleaned
@@ -327,20 +327,19 @@ class ScraperLauncher:
         self._fit_main_window()
 
     def _resolve_api_key(self) -> str:
-        # Prefer the inspections key when available, since the write endpoint
-        # validates against INSPECTIONS_API_KEY.
+        # The write endpoint validates against KOP_DATA_API_KEY.
         dotenv_keys = load_api_key_from_dotenv(KOP_DIR / ".env")
-        dotenv_key = dotenv_keys.get("INSPECTIONS_API_KEY") or dotenv_keys.get("KOP_DATA_API_KEY")
+        dotenv_key = dotenv_keys.get("KOP_DATA_API_KEY")
         if dotenv_key:
             self._persist_api_key(dotenv_key)
             return dotenv_key
 
-        env_key = _clean_api_key(os.environ.get("INSPECTIONS_API_KEY")) or _clean_api_key(os.environ.get("KOP_DATA_API_KEY"))
+        env_key = _clean_api_key(os.environ.get("KOP_DATA_API_KEY"))
         if env_key:
             self._persist_api_key(env_key)
             return env_key
 
-        config_key = _clean_api_key(self.launcher_config.get("inspections_api_key")) or _clean_api_key(self.launcher_config.get("kop_data_api_key"))
+        config_key = _clean_api_key(self.launcher_config.get("kop_data_api_key"))
         if config_key:
             return config_key
 
@@ -350,13 +349,9 @@ class ScraperLauncher:
         cleaned = _clean_api_key(api_key)
         if not cleaned:
             return
-        if (
-            self.launcher_config.get("kop_data_api_key") == cleaned
-            and self.launcher_config.get("inspections_api_key") == cleaned
-        ):
+        if self.launcher_config.get("kop_data_api_key") == cleaned:
             return
         self.launcher_config["kop_data_api_key"] = cleaned
-        self.launcher_config["inspections_api_key"] = cleaned
         save_launcher_config(self.launcher_config)
         self.root.after_idle(self._fit_main_window)
         self._poll_log_queue()
@@ -651,7 +646,7 @@ class ScraperLauncher:
         if not self.api_key:
             self._log(
                 "system",
-                "WARNING: INSPECTIONS_API_KEY/KOP_DATA_API_KEY not found in environment, launcher config, or .env. "
+                "WARNING: KOP_DATA_API_KEY not found in environment, launcher config, or .env. "
                 "Scrapers will run but cannot post to the API until this key is provided.",
                 tag="err",
             )
@@ -675,7 +670,6 @@ class ScraperLauncher:
             env.setdefault(env_key, env_value)
         if self.api_key:
             env["KOP_DATA_API_KEY"] = self.api_key
-            env["INSPECTIONS_API_KEY"] = self.api_key
 
         if not script.exists():
             self._log(key, f"ERROR: script not found — {script}", tag="err")
