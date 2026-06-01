@@ -53,13 +53,18 @@ VIEWS = [
     {
         "code": "RC",
         "page_path": "/Pages/rc.aspx",
-        "view_id": "{AC5902E1-7D1D-4B71-8909-8B7ACB46849D}",
+        # SharePoint view slug (basename of the view's Forms/<slug>.aspx URL).
+        # The numeric GUID is recreated whenever ODHS rebuilds the view, so it is
+        # resolved at runtime from this slug; view_id is only a last-resort fallback.
+        "view_slug": "rc",
+        "view_id": "{BAB5E212-1FE4-4320-8D15-E523E2EDBF3B}",
         "program_type": "(RC) Residential Care Programs",
     },
     {
         "code": "TBS",
         "page_path": "/Pages/tbs.aspx",
-        "view_id": "{D1F93F33-6BF8-46BD-8DAA-C95E3A5BC80D}",
+        "view_slug": "tbs",
+        "view_id": "{CD4CE9D6-BC46-496F-9824-63ED05D7C569}",
         "program_type": "(TBS) Therapeutic Boarding Schools",
     },
 ]
@@ -742,6 +747,8 @@ class ORFacilityScraper:
         self.pdf_dir = pdf_dir
         self.pdf_dir.mkdir(exist_ok=True)
         self.all_facilities: List[Dict] = []
+        # slug -> live view GUID, lazily populated from Views.asmx
+        self._view_id_by_slug: Optional[Dict[str, str]] = None
 
     def _post_soap(
         self,
@@ -774,6 +781,53 @@ class ORFacilityScraper:
         response.raise_for_status()
         return response.content
 
+    def _load_view_ids(self) -> Dict[str, str]:
+        """Map report-library view slugs to their current GUIDs.
+
+        ODHS periodically deletes and recreates the per-program views, which
+        changes their GUIDs and makes a hard-coded view_id 500 with
+        "View does not exist". Querying Views.asmx for the live collection keeps
+        the scraper self-healing. Keyed by both the view's URL basename and its
+        DisplayName (lowercased) so either spelling resolves.
+        """
+        if self._view_id_by_slug is not None:
+            return self._view_id_by_slug
+
+        mapping: Dict[str, str] = {}
+        try:
+            xml_bytes = self._post_soap(
+                service_name="Views",
+                action_name="GetViewCollection",
+                inner_xml=f"<listName>{REPORT_LIBRARY_NAME}</listName>",
+                referer_path="/Pages/rc.aspx",
+            )
+            root = ET.fromstring(xml_bytes)
+            for elem in root.iter():
+                if not elem.tag.endswith("View"):
+                    continue
+                guid = elem.attrib.get("Name")
+                if not guid:
+                    continue
+                display = (elem.attrib.get("DisplayName") or "").strip().lower()
+                url = elem.attrib.get("Url") or ""
+                url_slug = url.rsplit("/", 1)[-1].rsplit(".", 1)[0].strip().lower()
+                for slug in (display, url_slug):
+                    if slug:
+                        mapping[slug] = guid
+        except (requests.RequestException, ET.ParseError) as exc:
+            logger.warning(f"Could not resolve live Oregon view IDs ({exc}); using fallback GUIDs")
+
+        self._view_id_by_slug = mapping
+        return mapping
+
+    def _resolve_view_id(self, view: Dict) -> str:
+        """Return the live GUID for a view, falling back to the hard-coded one."""
+        slug = (view.get("view_slug") or "").lower()
+        live = self._load_view_ids().get(slug)
+        if live and live != view.get("view_id"):
+            logger.info(f"{view['code']}: resolved live view id {live} (was {view.get('view_id')})")
+        return live or view["view_id"]
+
     def _fetch_agency_websites(self) -> Dict[str, str]:
         xml_bytes = self._post_soap(
             service_name="Lists",
@@ -800,6 +854,7 @@ class ORFacilityScraper:
     def _fetch_view_rows(self, view: Dict) -> List[Dict]:
         all_rows: List[Dict] = []
         next_page_token: Optional[str] = None
+        view_id = self._resolve_view_id(view)
 
         while True:
             paging = (
@@ -811,7 +866,7 @@ class ORFacilityScraper:
                 action_name="GetListItems",
                 inner_xml=(
                     f"<listName>{REPORT_LIBRARY_NAME}</listName>"
-                    f"<viewName>{view['view_id']}</viewName>"
+                    f"<viewName>{view_id}</viewName>"
                     "<rowLimit>500</rowLimit>"
                     "<queryOptions><QueryOptions>"
                     "<IncludeAttachmentUrls>TRUE</IncludeAttachmentUrls>"
