@@ -70,7 +70,9 @@
       "Bash(git commit *)",
       "Bash(INSPECTIONS_API_KEY=\"test-injected-key-123\" python -c \"import ct_scraper; print\\('CT API_KEY resolved to:', ct_scraper.API_KEY\\)\")",
       "Bash(php -l \"C:\\\\Users\\\\daniu\\\\OneDrive\\\\Documents\\\\GitHub\\\\Kids-Over-Profits\\\\api\\\\inspections-write.php\")",
-      "Bash(echo \"exit=$? \\(1 = no matches, good\\)\")"
+      "Bash(echo \"exit=$? \\(1 = no matches, good\\)\")",
+      "Bash(MN_LIMIT_IDS=1 timeout 90 python -X utf8 -u -c ' *)",
+      "Bash(tasklist)"
     ],
     "additionalDirectories": [
       "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Kids-Over-Profits\\api",

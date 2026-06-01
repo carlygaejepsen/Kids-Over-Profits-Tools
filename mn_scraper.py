@@ -24,6 +24,7 @@ import io
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -262,6 +263,40 @@ async def goto_safe(page, url):
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
+def free_browser_profile(profile: Path) -> None:
+    """Release the dedicated Chromium profile before launching.
+
+    The browser runs off-screen, so an interrupted run (launcher closed, process
+    killed/paused, machine sleep) leaves an invisible Chromium alive that keeps
+    the profile locked. The next launch then dies instantly with Chromium
+    exit 21 / "profile in use" (TargetClosedError). Kill any leftover Chromium
+    still holding *this* profile and clear stale singleton locks. The profile is
+    private to this scraper, so anything using it is a leftover. Best-effort.
+    """
+    if sys.platform == "win32":
+        kill = (
+            "$p=$env:KOP_MN_PROFILE;"
+            "Get-CimInstance Win32_Process -Filter \"Name='chrome.exe'\" |"
+            " Where-Object { $_.CommandLine -like \"*$p*\" } |"
+            " ForEach-Object { try { Stop-Process -Id $_.ProcessId -Force -ErrorAction Stop } catch {} }"
+        )
+        try:
+            subprocess.run(
+                ["powershell", "-NoProfile", "-NonInteractive", "-Command", kill],
+                env={**os.environ, "KOP_MN_PROFILE": str(profile)},
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
+                capture_output=True, timeout=30,
+            )
+        except Exception as exc:
+            print(f"(could not sweep leftover browsers: {exc})")
+
+    for name in ("lockfile", "SingletonLock", "SingletonCookie", "SingletonSocket"):
+        try:
+            (profile / name).unlink()
+        except OSError:
+            pass
+
+
 async def run():
     if not MN_LICENSE_CSV:
         print("ERROR: MN_LICENSE_CSV is not set. Add it to .env or set it as an environment variable.")
@@ -284,6 +319,9 @@ async def run():
     print("(Profile is saved between runs — you only need to solve CAPTCHA once)\n")
 
     BROWSER_PROFILE.mkdir(parents=True, exist_ok=True)
+    # Clear any leftover off-screen Chromium / stale lock from an interrupted run,
+    # otherwise this launch fails with "profile in use" (exit 21).
+    free_browser_profile(BROWSER_PROFILE)
 
     # Off-screen by default so the Chromium window doesn't steal focus or sit
     # on top of other work. Set MN_BROWSER_VISIBLE=1 to launch it on-screen

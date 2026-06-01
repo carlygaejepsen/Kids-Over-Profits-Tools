@@ -323,6 +323,9 @@ class ScraperLauncher:
 
         self._build_ui()
         self._refresh_statuses()
+        # Start the live-log pump now that log_text exists. This must run on every
+        # launch (not gated behind a config write), or the Output pane stays blank.
+        self._poll_log_queue()
         self.root.update()
         self._fit_main_window()
 
@@ -353,8 +356,6 @@ class ScraperLauncher:
             return
         self.launcher_config["kop_data_api_key"] = cleaned
         save_launcher_config(self.launcher_config)
-        self.root.after_idle(self._fit_main_window)
-        self._poll_log_queue()
 
     # ---------- UI construction ----------
 
