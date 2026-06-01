@@ -1,0 +1,90 @@
+ LO loot eht si tsilkcehc noitcepsni sihT  ycnetsisnoc erusne ot esu srosnecil
+tsilkcehC nnoitcepsnI ttnemtaerT llaitnediseR
+)3202/30 desiveR( .noitcepsni yreve rof
+setoN
+8848-256
+)534(
+ :rebmuN enohP
+21439-22F
+:DI ytilicaF
+cnI
+,ymedacA
+hcnaR
+elgaE
+:emaN redivorP
+dacahcnarelgae@agp
+S
+0741
+W
+511
+ ro emaN etiS
+:sserddA liamE
+moc.yme
+07748
+,TU
+,egroeG
+tniaS
+:sserddA
+34
+ tneserP fo #
+75
+ devorppA
+stneilC\stnediseR
+:yticapaC
+:noitcepsni eht gnirud smeti gniwollof eht weiver esaelP
+:noitcepsni eht ot roirp smeti gniwollof eht weiver esaelP
+)seton yrassecen dna ekam dna detelpmoc fi kram kcehc a htiw kraM(
+)seton yrassecen dna ekam dna detelpmoc fi kram kcehc a htiw kraM(
+ SHHD yna dna flesruoy ecudortnI
+✔
+ skcehc dnuorgkcab erusne ot SCAD
+✔
+ffats
+.tnerruc era
+✔
+✔
+sweivretnI stneilC
+.secnairav elur evitca ynA
+✔
+✔
+sweivretnI ffatS
+.snoitidnoc ro snoitcirtser esnecil ynA
+✔
+:rehtO
+.secnairav elur dedeen ynA
+:noitamrofnI noitcepsnI
+ noitcepsni siht ecno tropeR noitcepsnI laiciffo na uoy dnes lliw rosnecil ehT .tnemetats ecnailpmoc laiciffo na ton si tsilkcehc sihT .detelpmoc si noitcepsni eht retfa tsilkcehc noitcepsni siht uoy liame lliw rosnecil ehT - 
+.noitcepsni siht fo stluser eht deredisnoc eb ot si tropeR noitcepsnI eht dna ,tropeR noitcepsnI ruoy fo trap eb nac tnailpmocnon sa ereh dekcehc smeti ylnO .tnemeganam yb devorppa neeb sah
+ yna fo ecnanetniam dna ecnailpmoc yfirev ot noitcepsni pu-wollof a tcudnoc yam rosnecil A .detsil etad deriuqer noitcerroc eht yb meht timbus esaelp ,sdrocer ro/dna noitatnemucod era smeti ecnailpmoc non ylno eht fI - 
+ .ecnailpmocnon
+noitamrofnI erutangiS
+mP
+00:2
+:etis-nO dednE emiT
+ma
+51:11
+:etis-nO detratS emiT
+32/72/21
+:etaD
+ylretrauq
+:epyT noitcepsnI
+naidnalsrA
+luaP
+3
+:noitcepsnI siht fo demrofnI laudividnI fo emaN
+:smetI tnailpmoC noN fo rebmuN
+nosreteP
+ebaCcM
+kcalB
+yrraL
+:noitcepsnI gnivresbO ffatS LO
+:noitcepsnI siht gnitcudnoC )s(rosneciL
+:weiver fo etad dna eman demrofni laudividni epyt/ngis esaelP
+yoremoP
+cirE
+ ,stnemetats eht htiw tnemeerga etutitsnoc ton seod tsilkcehc siht gningiS
+ denialpxe rosneciL ehT
+✔
+ erew ,yna fi ,secnailpmocnon dna detcudnoc saw noitcepsni eht taht ylno
+.)yna fi( smeti ecnailpmocnon
+ .denialpxe
