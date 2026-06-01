@@ -45,8 +45,8 @@ SCRAPERS = [
     {
         "name": "Minnesota",
         "key": "MN",
-        "script": KOP_DIR / "scripts" / "mn_scraper.py",
-        "cwd": KOP_DIR,
+        "script": TOOLS_DIR / "mn_scraper.py",
+        "cwd": TOOLS_DIR,
         # Keep Playwright's persistent profile out of the synced repo to avoid
         # OneDrive/lock-file interference during Chromium startup.
         "env_defaults": {"MN_BROWSER_PROFILE": str(MN_BROWSER_PROFILE)},
