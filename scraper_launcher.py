@@ -24,13 +24,17 @@ from datetime import datetime
 from pathlib import Path
 from tkinter import ttk, scrolledtext
 
+from kop_paths import kop_repo_dir
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 
 THIS_DIR   = Path(__file__).parent.resolve()
 STATE_FILE = THIS_DIR / "scraper_launcher_state.json"
 
 TOOLS_DIR = THIS_DIR
-KOP_DIR   = Path(r"C:\Users\daniu\OneDrive\Documents\GitHub\Kids-Over-Profits")
+# The web repo is a separate checkout; kop_repo_dir() finds it wherever it lives
+# (set KOP_REPO_DIR to override) so moving it doesn't break the launcher.
+KOP_DIR   = kop_repo_dir()
 LOCAL_APPDATA_DIR = Path(os.environ.get("LOCALAPPDATA", str(THIS_DIR)))
 LAUNCHER_CONFIG_DIR = LOCAL_APPDATA_DIR / "KidsOverProfits"
 LAUNCHER_CONFIG_FILE = LAUNCHER_CONFIG_DIR / "scraper_launcher_config.json"

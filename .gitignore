@@ -25,3 +25,4 @@ scraper_launcher_state.json
 # Local PDF caches
 fl_pdfs/
 or_pdfs/
+.claude/settings.json

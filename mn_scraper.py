@@ -9,11 +9,13 @@ BEFORE RUNNING: Close Chrome. Playwright needs to open your Chrome profile,
 and Chrome can only run in one instance at a time.
 
 Required:
-    MN_LICENSE_CSV        Path to CSV export from DHS Licensing Lookup
     INSPECTIONS_API_BASE  e.g. https://kidsoverprofits.org/wp-content/themes/child
     KOP_DATA_API_KEY      API key for inspections-write.php
 
 Optional:
+    MN_LICENSE_CSV        Path to CSV export from DHS Licensing Lookup. If unset,
+                          the newest Licensing_Lookup_Results*.csv next to this
+                          scraper (or in the web repo) is used automatically.
     MN_LIMIT_IDS          Only scrape first N facilities (for testing)
     MN_CHROME_USER_DATA   Path to Chrome User Data dir (auto-detected if not set)
 """
@@ -33,17 +35,19 @@ from urllib.parse import urljoin, parse_qsl, urlencode, urlparse
 
 from playwright.async_api import async_playwright
 
+from kop_paths import kop_repo_dir
+
 # Fix Windows console encoding
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 try:
     from dotenv import load_dotenv
-    # Config (MN_LICENSE_CSV, keys) lives in the sibling Kids-Over-Profits repo's
-    # .env, with a same-dir .env as an optional override. The launcher also injects
+    # Config (MN_LICENSE_CSV, keys) lives in the Kids-Over-Profits repo's .env,
+    # with a same-dir .env as an optional override. The launcher also injects
     # these vars when it starts the scraper; this keeps standalone runs working.
     _here = Path(__file__).resolve()
-    for _env in (_here.parent / ".env", _here.parents[2] / "Kids-Over-Profits" / ".env"):
+    for _env in (_here.parent / ".env", kop_repo_dir() / ".env"):
         if _env.exists():
             load_dotenv(_env)
             break
@@ -52,10 +56,30 @@ except ImportError:
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 
-MN_LICENSE_CSV = os.environ.get("MN_LICENSE_CSV", "").strip()
+def _discover_license_csv():
+    """Find the DHS Licensing Lookup CSV when MN_LICENSE_CSV isn't set.
+
+    The monthly export lands next to the scraper (or in the web repo) with a
+    dated name like 'Licensing_Lookup_Results_ Apr.15.2026.csv'. Auto-detecting
+    it means a fresh checkout works without configuring MN_LICENSE_CSV at all.
+    If several exports exist, prefer the most recently modified.
+    """
+    matches = [
+        p
+        for search_dir in (Path(__file__).parent, kop_repo_dir())
+        for p in search_dir.glob("Licensing_Lookup_Results*.csv")
+        if p.is_file()
+    ]
+    if not matches:
+        return ""
+    return str(max(matches, key=lambda p: p.stat().st_mtime))
+
+
+MN_LICENSE_CSV = os.environ.get("MN_LICENSE_CSV", "").strip() or _discover_license_csv()
 API_BASE       = os.environ.get("INSPECTIONS_API_BASE", "https://kidsoverprofits.org/wp-content/themes/child")
 API_KEY        = os.environ.get("KOP_DATA_API_KEY", "CHANGE_ME")
 MN_LIMIT_IDS   = int(os.environ.get("MN_LIMIT_IDS", "0") or 0)
+MN_FETCH_LIST  = os.environ.get("MN_FETCH_LIST", "").strip().lower() in {"1", "true", "yes"}
 
 BROWSER_PROFILE = Path(os.environ.get(
     "MN_BROWSER_PROFILE",
@@ -64,10 +88,18 @@ BROWSER_PROFILE = Path(os.environ.get(
 
 PROGRESS_FILE = Path(__file__).parent / "mn_progress.json"
 # The website reads its MN data from the Kids-Over-Profits repo's js/data dir.
-OUTPUT_JSON   = Path(__file__).resolve().parents[2] / "Kids-Over-Profits" / "js" / "data" / "mn_reports.json"
+OUTPUT_JSON   = kop_repo_dir() / "js" / "data" / "mn_reports.json"
 
 DOC_BASE    = "https://www.dhs.state.mn.us"
 DETAIL_BASE = "https://licensinglookup.dhs.state.mn.us/Details.aspx?l={}"
+RESULTS_BASE = "https://licensinglookup.dhs.state.mn.us/Results.aspx"
+# Results.aspx is a GET-parameterized ASP.NET search. t=40 / "Children's
+# Residential Facilities" is exactly the facility type this scraper targets, so
+# with MN_FETCH_LIST=1 the seed list can be pulled from the site instead of a
+# manual CSV export. Service sub-filters are left off so the query returns every
+# type-40 facility (the CSV export lists ~95). The site is behind Radware bot
+# protection, so this only works inside the CAPTCHA-capable browser session.
+RESULTS_DUMP_DIR = Path(__file__).parent / "mn_results_dump"
 DELAY_MS    = 1200   # ms between page loads
 
 # ── HELPERS ───────────────────────────────────────────────────────────────────
@@ -297,23 +329,127 @@ def free_browser_profile(profile: Path) -> None:
             pass
 
 
+def _results_url(e: int = 0) -> str:
+    params = {
+        "t": "40",
+        "tn": "Children's Residential Facilities",
+        "con": "All", "s": "All", "sn": "All", "co": "All", "ci": "All",
+        "n": "", "l": "", "z": "", "a": "False", "e": str(e),
+    }
+    return f"{RESULTS_BASE}?{urlencode(params)}"
+
+
+# Pulls each results row from the live DOM. Anchored on the Details.aspx?l=<id>
+# links rather than fixed column positions, so it survives layout changes; the
+# license id is the stable key and the row's other cells are captured raw.
+_RESULTS_ROW_JS = r"""() => {
+    const out = [];
+    for (const a of document.querySelectorAll('a[href*="Details.aspx?l="]')) {
+        const m = (a.getAttribute('href') || '').match(/l=(\d+)/);
+        if (!m) continue;
+        const tr = a.closest('tr');
+        const cells = tr
+            ? Array.from(tr.querySelectorAll('td,th')).map(td => (td.innerText || '').trim())
+            : [];
+        out.push({ license_id: m[1], name: (a.innerText || '').trim(), cells });
+    }
+    return out;
+}"""
+
+
+async def fetch_facility_list(page):
+    """Build the facility seed list from the DHS Results.aspx search page.
+
+    The site sits behind Radware bot protection, so this must run inside the
+    same real-browser session used for the detail pages (goto_safe handles the
+    CAPTCHA). Every results page is saved to mn_results_dump/ so the row and
+    pagination parsing can be refined against the real HTML — the pagination
+    heuristic here (increment the `e` offset until a page adds nothing new) is a
+    best guess until we've confirmed how Results.aspx actually pages.
+    """
+    RESULTS_DUMP_DIR.mkdir(parents=True, exist_ok=True)
+    facilities: dict = {}
+    page_size = None
+    max_pages = 40
+
+    for page_num in range(max_pages):
+        e = page_num * (page_size or 1)
+        url = _results_url(e)
+        print(f"  Results page {page_num + 1} (e={e})")
+        content = await goto_safe(page, url)
+        if content is None:
+            print("  Results page blocked (CAPTCHA not cleared) — stopping list fetch")
+            break
+
+        (RESULTS_DUMP_DIR / f"results_e{e}.html").write_text(content, encoding="utf-8")
+
+        rows = await page.evaluate(_RESULTS_ROW_JS)
+        new = 0
+        for r in rows:
+            lid = r.get("license_id")
+            if lid and lid not in facilities:
+                facilities[lid] = r
+                new += 1
+        print(f"    {len(rows)} row(s) on page, {new} new (total {len(facilities)})")
+
+        if page_size is None:
+            page_size = len(rows) or None
+        # An empty first page or a page that adds nothing new means we've hit the
+        # end — or that pagination isn't offset-based. Either way, stop and let
+        # the dumped HTML tell us which.
+        if not page_size or new == 0:
+            break
+        await page.wait_for_timeout(DELAY_MS)
+
+    result = []
+    for lid, r in facilities.items():
+        extra_cells = [c for c in (r.get("cells") or []) if c and c != r.get("name")]
+        result.append({
+            "license_id": lid,
+            "facility_info": {
+                "facility_name": r.get("name") or f"License {lid}",
+                "program_name": lid,
+                "program_category": "Children's Residential Facility",
+                # Until the column layout is confirmed from the dump, keep the
+                # remaining row cells as an address hint rather than guessing.
+                "full_address": ", ".join(extra_cells),
+                "phone": "",
+                "bed_capacity": "",
+                "executive_director": "",
+                "license_exp_date": "",
+                "relicense_visit_date": "",
+                "action": "",
+            },
+        })
+
+    print(f"  Built {len(result)} facilities from Results.aspx")
+    print(f"  Raw HTML saved to {RESULTS_DUMP_DIR} — send it over to finalize parsing.")
+    return result
+
+
 async def run():
-    if not MN_LICENSE_CSV:
-        print("ERROR: MN_LICENSE_CSV is not set. Add it to .env or set it as an environment variable.")
+    if not MN_FETCH_LIST and not MN_LICENSE_CSV:
+        print(
+            "ERROR: Could not find a DHS Licensing Lookup CSV. Drop the export "
+            "(Licensing_Lookup_Results*.csv) next to this scraper, set "
+            "MN_LICENSE_CSV to its path, or set MN_FETCH_LIST=1 to pull the list "
+            "straight from the DHS Licensing Lookup."
+        )
         sys.exit(1)
 
-    print(f"Loading CSV: {MN_LICENSE_CSV}")
-    facilities = load_csv(MN_LICENSE_CSV)
-    print(f"Loaded {len(facilities)} facilities")
-
-    if MN_LIMIT_IDS > 0:
-        facilities = facilities[:MN_LIMIT_IDS]
-        print(f"Limiting to first {len(facilities)} (MN_LIMIT_IDS={MN_LIMIT_IDS})")
+    # The facility seed list comes from one of two sources:
+    #   • the CSV export (default), loaded here before the browser starts, or
+    #   • the live DHS Results.aspx search (MN_FETCH_LIST=1), fetched below once
+    #     the CAPTCHA-capable browser session is up.
+    facilities = None
+    if not MN_FETCH_LIST:
+        print(f"Loading CSV: {MN_LICENSE_CSV}")
+        facilities = load_csv(MN_LICENSE_CSV)
+        print(f"Loaded {len(facilities)} facilities")
+    else:
+        print("MN_FETCH_LIST=1 — building the facility list from DHS Results.aspx")
 
     progress = load_progress()
-    with_prior = sum(1 for f in facilities if f["license_id"] in progress)
-    if with_prior:
-        print(f"{with_prior}/{len(facilities)} have prior data; checking for new inspections\n")
 
     print(f"Browser profile: {BROWSER_PROFILE}")
     print("(Profile is saved between runs — you only need to solve CAPTCHA once)\n")
@@ -349,6 +485,28 @@ async def run():
         await page.add_init_script(
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
         )
+
+        # With MN_FETCH_LIST=1 the seed list wasn't loaded from a CSV — pull it
+        # from Results.aspx now that the CAPTCHA-capable session exists. Fall
+        # back to the CSV if the site fetch comes up empty.
+        if facilities is None:
+            facilities = await fetch_facility_list(page)
+            if not facilities and MN_LICENSE_CSV:
+                print("  Results.aspx returned no facilities — falling back to CSV")
+                facilities = load_csv(MN_LICENSE_CSV)
+                print(f"  Loaded {len(facilities)} facilities from CSV")
+            if not facilities:
+                print("  No facilities to scrape (site fetch empty, no CSV fallback). Aborting.")
+                await context.close()
+                return
+
+        if MN_LIMIT_IDS > 0:
+            facilities = facilities[:MN_LIMIT_IDS]
+            print(f"Limiting to first {len(facilities)} (MN_LIMIT_IDS={MN_LIMIT_IDS})")
+
+        with_prior = sum(1 for f in facilities if f["license_id"] in progress)
+        if with_prior:
+            print(f"{with_prior}/{len(facilities)} have prior data; checking for new inspections\n")
 
         for i, fac in enumerate(facilities, 1):
             lid = fac["license_id"]

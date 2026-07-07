@@ -28,6 +28,7 @@ import pytesseract
 from openpyxl import load_workbook
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import kop_repo_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -45,8 +46,8 @@ WORKBOOK_FALLBACKS = [
     Path.cwd() / "nc_youth_facilities.csv",
     Path(__file__).with_name("nc_youth_facilities.xlsx"),
     Path(__file__).with_name("nc_youth_facilities.csv"),
-    Path(__file__).resolve().parents[2] / "Kids-Over-Profits" / "nc_youth_facilities.xlsx",
-    Path(__file__).resolve().parents[2] / "Kids-Over-Profits" / "nc_youth_facilities.csv",
+    kop_repo_dir() / "nc_youth_facilities.xlsx",
+    kop_repo_dir() / "nc_youth_facilities.csv",
 ]
 
 RESULTS_URL = "https://info.ncdhhs.gov/dhsr/mhlcs/sods/results.asp"
