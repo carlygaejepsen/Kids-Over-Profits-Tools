@@ -22,6 +22,13 @@ from typing import Dict, Iterable, List, Optional, Tuple
 from urllib.parse import urljoin, urlparse
 
 import requests
+try:
+    from curl_cffi import requests as cf_requests
+    from curl_cffi.requests.exceptions import RequestException as CurlRequestException
+    _HAVE_CURL_CFFI = True
+except ImportError:
+    cf_requests = None
+    _HAVE_CURL_CFFI = False
 from bs4 import BeautifulSoup
 from pdf2image import convert_from_bytes
 import pytesseract
@@ -79,6 +86,30 @@ if POPPLER_PATH:
     logger.info("Using POPPLER_PATH=%s", POPPLER_PATH)
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) KOP-NC-scraper"
+
+# Network errors to swallow-and-continue. curl_cffi raises its own exception
+# hierarchy, so include it when available.
+NETWORK_ERRORS = (requests.RequestException,) + (
+    (CurlRequestException,) if _HAVE_CURL_CFFI else ()
+)
+
+
+def make_session():
+    """Build the HTTP session for the Cloudflare-protected NC DHHS site.
+
+    info.ncdhhs.gov sits behind Cloudflare, which 403-blocks plain requests
+    regardless of User-Agent (it checks the TLS/JA3 fingerprint). curl_cffi with
+    Chrome impersonation presents a real browser fingerprint and passes, so use
+    it when available. Without it, fall back to requests — the run will then 403
+    with a clear hint to install curl_cffi.
+    """
+    if _HAVE_CURL_CFFI:
+        # Don't set a custom User-Agent: impersonation installs matching browser
+        # headers, and a contradicting UA would re-trip Cloudflare.
+        return cf_requests.Session(impersonate="chrome")
+    session = requests.Session()
+    session.headers.update({"User-Agent": UA})
+    return session
 
 
 def clean_text(value: object) -> str:
@@ -169,6 +200,11 @@ def pick_representative_row(rows: List[Dict[str, object]]) -> Dict[str, object]:
 
 def fetch_directory(session: requests.Session) -> List[Dict[str, str]]:
     response = session.get(RESULTS_URL, timeout=60)
+    if response.status_code == 403 and not _HAVE_CURL_CFFI:
+        raise RuntimeError(
+            "NC DHHS (info.ncdhhs.gov) is behind Cloudflare and returned 403. "
+            "Install curl_cffi to pass the browser check:  pip install curl_cffi"
+        )
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -342,7 +378,7 @@ def fetch_pdf_bytes(session: requests.Session, pdf_url: str) -> Optional[bytes]:
     try:
         response = session.get(pdf_url, timeout=120)
         response.raise_for_status()
-    except requests.RequestException as exc:
+    except NETWORK_ERRORS as exc:
         logger.warning("  PDF download failed for %s after %.1fs: %s", pdf_url, time.monotonic() - start, exc)
         return None
 
@@ -496,8 +532,7 @@ def _join_address(*parts: object) -> str:
 
 
 def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -> Tuple[List[Dict[str, object]], Dict[str, List[str]], List[Dict[str, object]]]:
-    session = requests.Session()
-    session.headers.update({"User-Agent": UA})
+    session = make_session()
 
     rows = load_workbook_rows(source_file)
     grouped_rows = group_workbook_rows(rows)
@@ -534,7 +569,7 @@ def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -
         try:
             metadata = parse_facility_metadata(BeautifulSoup(session.get(facility_url, timeout=60).text, "html.parser"))
             reports = parse_reports(session, facility_url, fid)
-        except requests.RequestException as exc:
+        except NETWORK_ERRORS as exc:
             logger.warning("[%s/%s] failed to fetch facility page: %s", index, license_number, exc)
             continue
         logger.info("[%s/%s] %s (fid=%s) - facility processing took %.1fs, %d reports parsed", index, license_number, entry["name"], fid, time.monotonic() - facility_start, len(reports))
