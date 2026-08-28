@@ -1,0 +1,331 @@
+** INBOUND NOTIFICATION : FAX RECEIVED SUCCESSFULLY **
+
+TIME_ RECEIVED REMOTE CSID DURATION PAGES = STATUS
+April 27, 2026 at 5:36:52 PM EDT 86 5 Received
+
+PRINTED: 04/16/2025
+FORM APPROVED
+Division of Health Service Regulation
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA, (X2) MULTIPLE-CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A. BUILDING: COMPLETED
+
+MHL0417169 8. WING ________H_ 04/15/2025
+
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, GITY, STATE, ZIP GODE
+1446 BRIDFORD PARKWAY, UNIT C
+
+QUALITY CARE IIE, LLC/BRIDFORD HOME GREENSBORO, NC 27407
+
+oy ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION 5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+Tas REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+- DEFICIENCY)
+V 000) INITIAL COMMENTS Vv 000
+
+An annual survey was completed on 4/15/25. A
+deficiency was cited.
+
+This facility is licensed for the following service
+category: 10A NCAC 27G .5600B Supervised
+Living for Minors with Developmental Disabilities.
+
+The facility is licensed for 3 and nas a current
+census of 2, The survey sample consisted of
+audits of.2 current clients.
+
+V 114 27G .0207 Emergency Plans and Supplies Vid
+
+10A NCAC 276 .0207 EMERGENCY PLANS
+AND SUPPLIES
+
+(a) Each facility shall develop a written fire plan
+and 4 disaster plan and shall make a copy of
+these plans available
+
+_to the county emergency services agencies upon
+request. The plans shalt include evacuation
+procedures and routes.
+
+(b) The plans shall be made available to all statf
+and evacuation procedures and routes shall be
+posted in the
+
+facility.
+
+(c) Fire and disaster drills in a 24-hour facility
+shall be held at least quarterly and shall be
+repeated far each shift.
+
+Drills shall be conducted under conditions that
+simulate the facility's rasponse to fire
+emergencies.
+
+(d) Each facility shall have a first ald kit
+accessible for use.
+
+Division of Health Service Regulation
+LABORAT! R/SUPPLIER REPRESENTATIVE'S SIGNATURE
+———
+
+rc
+
+S880 RVOR1
+
+Rule: 104 NCAC 27G .0207 — Emergency Plans and Supplies
+Tag: Vi14
+
+1. How the deficiency was corrected (Immediate Correction)
+
+Upon identification of the deficiency, the facility immediately implemented corrective
+actions to ensure compliance with fire and disaster drill requirements:
+
+Aull fire drill was conducted immediately after the survey for all active shifts (1st, 2nd, and
+rd shift if applicable).
+
+Documentation of the drill included:
+
+Date and time
+
+Shift
+
+Staff present
+
+Evacuation time
+
+Issues identified and corrective actions
+
+All staff currently employed were retrained on fire and disaster drill procedures, including:
+Evacuation routes
+
+Emergency roles
+
+Use of emergency equipment
+
+2. How you identified the root cause (WHY It happened)
+
+The agency conducted a root cause analysis and determined:
+
+There was no formal tracking system in place to ensure drills were completed quarterly
+AND per shift
+
+Staff were not clearly assigned responsibility for scheduling and documenting drills
+Supervisory oversight and QA monitoring were not consistently reviawing drill compliance
+
+3. System changes made to prevent recurrence
+
+The facility has implemented the following systemic corrections:
+Tracking & Scheduling
+
+AFire & Disaster Drill Log/Tracker has been created to monitor:
+
+Quarterly completion
+Each shift participation
+A12-month drill schedule has been established in advance
+
+Assigned Responsibitity
+
+The House Manager / Program Manager is now responsible for:
+Scheduting drills
+
+Ensuring completion for ALL shifts
+
+Ensuring documentation is completed same day
+
+Documentation System
+
+Astandardizad Fire Drill Raport Form is now required for every drilt
+Forms will be kept in the Safaty/Emergency Binder
+
+Staff Training
+
+All staff will receive:
+
+Initial training upon hire
+
+Annual refresher training
+
+Training includes:
+
+Evacuation procedures
+
+Fire safety response
+
+Emergency preparedness expectations
+
+4, Monitoring Plan (THIS IS WHAT SURVEYORS CARE ABOUT MOST)
+To ensure ongoing compliance:
+
+The Qualified Professional (QP) / Administrator will:
+Review fire drill documentation monthly ,
+Verify:
+
+Drills completed quarterly
+All shifts included :
+A QA audit tool will be used monthly to track compliance:
+
+Compliance Goal:
+100% compliance with:
+
+Quarterly dritls
+Each shift participation
+
+5. Duration of Monitoring
+Monthly audits
+Quarterly QA review meatings
+
+6. Person Responsible
+
+Primary: House Manager / Supervisor
+
+Oversight: Administrator / Qualified Professional (QP)
+QA Monitoring: Quality Assurance Tearn
+
+PRINTED: 04/16/2025
+FORM APPROVED
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES (41) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFIGATION NUMBER:
+
+(43) DATE SURVEY
+COMPLETED
+
+(2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+B. WING
+
+MHL0411169 04/15/2025
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+1446 BRIDFORD PARKWAY, UNIT C
+GREENSBORO, NC 27407
+
+NAME OF PROVIDER OR SUPPLIER
+
+QUALITY CARE III, LLC/BRIDFORD HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PREGEDED BY FULL PREFIX (EAGH CORRECTIVE ACTION SHOULD BE COMPLETE
+Tac REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+>
+Continued From page 1 Vidie
+
+This Rule is not met as evidenced by:
+
+Based on record review and interview, the facility
+failed to ensure flre and disaster drills were held
+at least quarterly and repeated for each shift.
+The findings are: .
+
+Review on 4/9/25 of the facility's fire drill log from
+4/14/24 - 2/8/25 revealed:
+
+- No fire drills were held on first or third shift
+during the second quarter (April - June) of 2024
++ No fire drills were held on first or third shift
+during the third quarter (July - Saptember)jof 2024.
+- No fire drills were held on first or third shift
+during the fourth quarter (October - December) of
+2024
+
+- No fire drills were held on first or third shift
+during the first quarter (January - March) of 2025
+
+Review on 4/9/25 of the facility's disaster drill log
+from 4/20/24-2/22/25 revealed:
+
+- No disaster drills were held on second or third
+shift during the second quarter (April - June) of
+2024
+
+- No disaster drills were held on second or third
+shift during the third quarter (July - September) of
+2024
+
+- No disaster drills were held on second or third
+shift during the fourth quarter (October -
+December) of 2024
+
+- No disaster drills were held on second or third
+shift during the first quarter (January - March) of
+2025
+
+Interview on 4/14/25 with the House Manager
+revealed:
+
+- Shifts were as follows: 7 am - 4 pm (1st shift);
+4 pm - 12 am (2nd shift) and 12 am - 7 am (3rd
+shift)
+
+- He will ensure fire and disaster drills were
+held as required
+
+Bivigion of Health Service Regulation
+
+STATE FORM 988 RVORH IFoontinuation shast 2 of 3
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+QUALITY GARE Ill, LLC/BRIDFORD HOME
+
+Division of Health Service Requlation
+
+(X%1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+MHL0411169
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+B. WING
+
+SUMMARY STATEMENT OF OFFICIENCIES:
+
+x4) 1D
+
+ary (EACH DEFICIENCY MUST BE PRECEDED 8Y FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+V 114] Continued From page 2
+
+Interview on 4/15/25 with the Qualified
+Professional revealed:
+
+- Unclear as to why staff had not conducted
+drills as required as staff had been provided with
+the necessary information as to how and when
+drills should be held
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+1446 BRIDFORD PARKWAY, UNIT C
+GREENSBORO, NC 27407
+
+PRINTED: 04/16/2025
+FORM APPROVED
+
+(3) DATE SURVEY
+COMPLETED
+
+04/15/2025
+
+1
+
+Ib PROVIDER'S PLAN OF CORRECTION
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE
+TAG GROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+V1i4
+
+STATE FORM
+
+Division of Health Service Regulation
+
+RVORA
+
+continuation sheet 3 of3

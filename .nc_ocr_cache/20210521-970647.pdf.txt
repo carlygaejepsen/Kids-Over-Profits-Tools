@@ -1,0 +1,2650 @@
+Division of Health Service Regulation
+
+VILLAGES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+OF HOPE HAVEN
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+(x4) ID
+PREFIX
+TAG
+
+SUMMARY STATEMENT OF DEFICIENCIES
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+ID
+PREFIX
+TAG
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE.
+CROSS-REFERENCED TO THE APPROPRIATE,
+DEFICIENCY)
+
+(xs)
+COMPLETE
+DATE
+
+V 000!
+
+V 118)
+
+INITIAL COMMENTS
+
+An annual, complaint and follow-up survey was
+completed on 5/10/21. The complaint was
+unsubstantiated (intake #NC172281). A
+deficiency was cited.
+
+This facility is licensed for the following service
+categories: 10A NCAC 27G .4100 Residential
+Recovery Programs for Individuals with
+Substance Abuse Disorders and 10A NCAC 27G
+-4300 Therapeutic Community.
+
+27G .0209 (C) Medication Requirements
+
+10A NCAC 27G .0209 MEDICATION
+REQUIREMENTS
+
+(c) Medication administration:
+
+(1) Prescription or non-prescription drugs shall
+only be administered to a client on the written
+order of a person authorized by law to prescribe
+drugs.
+
+(2) Medications shall be self-administered by
+clients only when authorized in writing by the
+client's physician.
+
+(3) Medications, including injections, shall be
+administered only by licensed persons, or by
+unlicensed persons trained by a registered nurse,
+pharmacist or other legally qualified person and
+privileged to prepare and administer medications.
+(4) A Medication Administration Record (MAR) of
+all drugs administered to each client must be kept
+current. Medications administered shall be
+recorded immediately after administration. The
+MAR is to include the following:
+
+(A) client's name;
+
+(B) name, strength, and quantity of the drug;
+
+(C) instructions for administering the drug;
+
+(D) date and time the drug is administered; and
+(E) name or initials of person administering the
+drug.
+
+Division of Health Service Regulation
+
+LABORATORY DI
+
+STATE FORM
+
+IRECTOR'S OR PROVIDER/SUPPLIER REPRESENTATIVE'S SIGNATURE
+
+V 000
+
+V 118
+
+6899
+
+M77711
+
+TITLE
+
+(X6) DATE
+
+If continuation sheet 1 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(5) Client requests for medication changes or
+checks shall be recorded and kept with the MAR
+file followed up by appointment or consultation
+with a physician.
+
+This Rule is not met as evidenced by:
+
+Based on records review, observations and
+interviews, the facility failed to ensure
+medications were administered with a signed
+prescription order and failed to ensure a MAR of
+all drugs administered to each client was kept
+current affecting 9 of 9 audited clients (#1, #2, #3,
+#4, #5, #6, #7, #8, #9). The findings are:
+
+Interview on 4/20/21 and 4/28/21 with the
+Medication Assurance Coordinator(MAC)
+revealed:
+
+-was hired in 11/2020 to the position of MAC;
+-administered medications(meds), communicated
+with the Nurse Practitioner(NP), scheduled
+appointments for clients with the NP, coordinated
+refills with pharmacies and managed the facility's
+medication room;
+
+-clients got their medications from different
+places/pharmacies;
+
+-some clients wanted to have medications
+discontinued but wouldn't go see the NP;
+
+-after 30 days, clients were responsible for getting
+their own refills and orders;
+
+-ran into issues with clients going to pick up their
+refills due to working, problems or delays with
+physicians’ refilling meds and issues with the
+pharmacies;
+
+-now have Kipu EMR(electronic medical records);
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 1 Vv 118
+
+If continuation sheet 2 of 30
+
+Division of Health Service Regulation
+
+NAME OF PROVIDER OR SUPPLIER
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+H TRYON STREET
+
+CHARLOTTE, NC 28206
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+FORM APPROVED
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+R
+05/10/2021
+
+-the NP has access to Kipu system;
+
+-did incident reports for missed meds;
+
+-"Kipu has been a learning experience;"
+
+-"N/A" means staff did not check "yes" or "no;"
+-if staff did not put "yes" or "no", Kipu went to
+"N/A;"
+
+-could mean out of med "possibly;"
+
+-could mean client did not take medication;
+-there was a section to add a note or comment;
+-if a medication count was zero and no refills are
+put in the system, then the system did not give
+the option to check "yes" or "no;"
+
+-if you have no option, you have to add a
+transaction;
+
+-had to discontinue the order, then create the
+exact same order;
+
+-"No" meant the client did not have the
+medication to take;
+
+-in the Kipu system, she had access to the day
+before but not the next day;
+
+-had started completing daily reports of clients
+who did not come in for their medications.
+
+Finding #1:
+
+Review on 4/19/21 of client #1's record revealed:
+-admission date of 1/7/21;
+
+-diagnoses of Alcohol use Disorder Severe,
+Cocaine Use Disorder Severe and Major
+Depressive Disorder;
+
+-admission assessment dated 1/6/21
+documented client #1 was homeless, was
+unemployed, used cocaine daily, had depression,
+high cholesterol, high blood pressure and had
+completed 45 days in substance abuse treatment;
+-treatment plan dated 1/20/21 documented the
+goal to maintain freedom from addiction;
+
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Division of Health Service Regulation
+STATE FORM
+
+6808 M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 2 Vv 118
+
+If continuation sheet 3 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #1's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-undated form faxed to the facility on 12/10/20
+and signed by a physician with no dosing
+instructions for the following medications:
+amlodipine 2.5mg(milligram) for
+HTN(hypertension), Lisinopril 10mg for HTN,
+haloperidol 5mg for MDD(Mood Dysregulation
+Disorder), sertraline 150mg for MDD and Vistaril
+50mg for anxiety;
+
+-self-administer order dated 4/24/21;
+
+-order dated 2/26/21 for haloperidol 5mg one
+tablet at bed with "discontinued" stamp on the
+order dated 4/26/21;
+
+-order dated 2/26/21 for metoprolol tartrate 50mg
+one tablet twice daily for high blood
+pressure(HBP);
+
+-order dated 2/26/21 for atorvastatin calcium
+80mg one tablet daily for high cholesterol;
+
+-order dated 4/23/21 for omeprazole 20mg two
+tablets at bed for acid reflux;
+
+-order dated 3/20/21 for bupropion
+HCL(hydrochloride) XL(extended release) 150mg
+one in the am for mood;
+
+-order dated 3/20/21 for doxycycline hyclate
+100mg one tablet twice daily for infections;
+-discontinue order dated 4/24/21 for haloperidol
+5mg one tablet a bed;
+
+-unsigned print-out from a medical provider dated
+1/19/21 listed the following medications:
+amlodipine besylate 5mg one half tablet daily,
+metoprolol tartrate 50mg one tablet daily,
+atorvastatin 40mg two tablets daily, gabapentin
+300mg two tablets twice daily for pain;
+
+-order dated 5/8/21 for the following medications:
+omeprazole 20mg two tablets at bed, Aspirin
+81mg one tablet daily, atorvastatin 80mg one
+tablet daily, metoprolol 50mg one tablet twice
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 3 Vv 118
+
+If continuation sheet 4 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+daily and sertraline 50mg 4 tablets daily.
+
+Observation on 4/20/21 at 10:45am of client #1's
+medications revealed:
+
+-haloperidol 5mg one tablet at bed dispensed
+2/9/21 empty bottle with no refills;
+
+-amlodipine besylate 5mg one half tablet daily
+dispensed 3/12/21;
+
+-metoprolol tartrate 50mg one tablet twice daily
+dispensed 3/24/21;
+
+-atorvastatin calcium 80mg one tablet daily
+dispensed 3/24/21;
+
+-omeprazole 20mg two tablets at bed dispensed
+3/24/21;
+
+-bupropion HCL XL 150mg one in the am
+dispensed 4/13/21;
+
+-doxycycline hyclate 100mg one tablet twice daily
+dispensed 4/13/21;
+
+-gabapentin 300mg two tablets twice daily
+dispensed 4/13/21;
+
+-lisinopril 5mg one tablet daily dispensed 3/21/21;
+-sertraline HCL 50mg 4 tablets daily dispensed
+2/9/21.
+
+Review on 4/20/21 of client #1's handwritten
+2/2021 MAR revealed the following dosing dates
+left blank with no explanation on the form:
+-metoprolol tartrate 50mg one tablet twice daily
+on 2/2-2/8(am), 2/19-2/25(am/pm);
+
+-haloperidol 5mg one tablet at bed on 2/19-2/25;
+-amlodipine besylate 5mg one half tablet daily on
+2/19-2/25;
+
+-atorvastatin calcium 80mg one tablet daily on
+2/19-2/25;
+
+-omeprazole 20mg two tablets at bed on
+2/19-2/25;
+
+-doxycycline hyclate 100mg one tablet twice daily
+for on 2/20-2/25(am/pm);
+
+-gabapentin 300mg two tablets twice daily on
+2/19-2/25(am/pm);
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 4 Vv 118
+
+If continuation sheet 5 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+-lisinopril 5mg one tablet daily on 2/19-2/25;
+-sertraline HCL 50mg 4 tablets daily on 2/19-2/25.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#1's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication:
+
+-metoprolol tartrate 50mg one tablet twice daily
+for am doses on 2/2 3/2, 3/7, 3/8, 3/9, 3/10, 3/11,
+3/12, 3/16, 3/17, 3/18, 3/19, 3/23, 3/24, 3/25,
+3/26, 3/27, 3/28, 3/29, 3/30, 3/31, 4/1, 4/5, 4/6,
+AIT, 4/8, 4/9, 4/12, 4/14, 4/15, 4/16, 4/19;
+-metoprolol tartrate 50mg one tablet twice daily
+for pm doses on 2/28, 3/7, 3/22, 3/23, 3/24, 3/25,
+3/26, 3/27, 4/19;
+
+-haloperidol 5mg one tablet at bed on 2/28, 3/7,
+3/24-4/19;
+
+-amlodipine besylate 5mg one half tablet daily on
+2/28, 3/7;
+
+-atorvastatin calcium 80mg one tablet daily on
+2/28, 3/7, 3/13, 3/18, 3/19, 3/22-4/1, 4/3, 4/7, 4/8,
+4/10, 4/12, 4/15, 4/17-4/19;
+
+-omeprazole 20mg two tablets at bed on 2/28,
+3/7, 3/12, 3/13-3/18, 3/22-3/28;
+
+-doxycycline hyclate 100mg one tablet twice daily
+missed am doses on 2/27, 2/28, 3/2,3/7, 3/9,
+3/10, 3/11, 3/15, 3/16, 3/17, 3/18, 3/19, 3/22,
+3/23, 3/24, 3/25, 3/26, 3/29, 3/31, 4/1, 4/5, 4/6,
+AIT, 4/12, 4/15, 4/16, 4/19;
+
+-doxycycline hyclate 100mg one tablet twice daily
+missed pm doses on 2/28, 3/7, 3/22, 3/26;
+-gabapentin 300mg two tablets twice daily missed
+am doses on 2/27, 3/1, 3/2, 3/7, 3/8, 3/9-3/12,
+3/15, 3/16, 3/18, 3/19, 3/20, 3/21-3/27, 3/29-4/10,
+4/12, 4/14-4/19;
+
+-gabapentin 300mg two tablets twice daily missed
+pm dose on 3/7, 3/16, 3/19, 3/24-3/26, 3/30-4/10,
+-lisinopril 5mg one tablet daily on 2/28, 3/7,
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 5 Vv 118
+
+If continuation sheet 6 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+3/23("Yes" and N/A" documented for same
+times/date), 3/24("Yes" and N/A" documented for
+same times/date), 3/25("Yes" and N/A"
+documented for same times/date), 3/26("Yes" and
+"No" documented for same date/time), 3/27(Yes"
+and "No" documented for same date/time),
+3/28("Yes" and N/A" documented for same
+times/date);
+
+-sertraline HCL 50mg 4 tablets daily on 2/28, 3/5,
+3/6, 3/7;
+
+-bupropion HCL XL 150mg one in the am on 4/7.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #1 missed his medications
+on 3/21(refused med), 3/22, 3/23, 3/25(refused
+gabapentin) 3/26, 3/29, 4/13, 4/14, 4/15, 4/16 and
+4/19.
+
+Interview on 4/26/21 with client #1 revealed:
+-took his medications at 8:15am and 8:00pm;
+-try to not miss his medications;
+
+-took his medications daily;
+
+-anytime he runs out, he can get his med refills
+without a problem.
+
+Finding #2:
+Review on 4/19/21 of client #2's record revealed:
+-admission date of 1/20/21;
+
+-diagnoses of Cannabis Use Disorder Severe,
+Opioid Use Disorder Severe, Amphetamine-type
+Substance Use Disorder Severe, Post Traumatic
+Stress Disorder(PTSD), Unspecified Depressive
+Disorder and Unspecified Anxiety Disorder;
+-admission assessment dated 1/14/21
+documented client #2 had a history of suicidal
+ideation, victim of abuse and rape, history of
+Hepatitis C, victim of domestic violence(DV), on
+probation, history of legal issues and ten year
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 6 Vv 118
+
+If continuation sheet 7 of 30
+
+Division of Health Service Regulation
+
+NAME OF PROVIDER OR SUPPLIER
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+H TRYON STREET
+
+CHARLOTTE, NC 28206
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+FORM APPROVED
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+R
+05/10/2021
+
+heroin use daily;
+
+-treatment plan dated 1/20/21 documented the
+goal to maintain freedom from addiction;
+
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #2's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-order dated 12/8/20 for the following
+medications: venlafaxine 75mg one tablet twice
+daily for mood; quetiapine 100mg one tablet at
+bed for mood and Trazadone 50mg one tablet a
+bed for sleep;
+
+-order dated 2/2/21 and 2/24/21 for levetiracetam
+500mg one tablet twice daily for seizures with
+"discontinued" stamp on the order dated 4/12/21;
+-order dated 2/24/21 for venlafaxine 75mg two
+tablets twice daily with "discontinued" stamp on
+the order dated 3/25/21;
+
+-orders dated 2/24/21 and 3/23/21 for quetiapine
+100mg two tablets in the am, one tablet at noon
+and two tablets in pm with "discontinued" stamp
+on the order dated 4/9/21;
+
+-order dated 2/24/21 for doxycycline hyclate
+100mg one tablet twice daily for infection with
+"discontinued" stamp on the order dated 3/4/21;
+-form undated and unsigned for gabapentin
+300mg one tablet three times daily for pain;
+-orders dated 5/8/21 for omeprazole 20mg one
+tablet in the am for acid reflux, venlafaxine 75mg
+two tablets twice daily, Trazadone 50mg three
+tablets at bed for sleep, quetiapine 100mg one
+tablet in the am, one tablet at 1pm and two
+tablets at bed;
+
+-discontinue order dated 3/2/21 for doxycycline
+hyclate 100mg one tablet twice daily.
+
+Division of Health Service Regulation
+STATE FORM
+
+6808 M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 7 Vv 118
+
+If continuation sheet 8 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+Observation on 4/20/21 at 11:45am of client #2's
+medications revealed:
+
+-levetiracetam 500mg one tablet twice daily
+dispensed 4/7/21;
+
+-venlafaxine 75mg two tablets twice daily
+dispensed 3/25/21;
+
+-quetiapine fumerate 100mg two tablets in the
+am, one tablet at noon and two tablets in pm
+dispensed 3/26/21;
+
+-Trazadone 50mg three tablets at bed dispensed
+4/7/21;
+
+-gabapentin 300mg one tablet three times daily
+dispensed 3/25/21.
+
+Review on 4/20/21 of client #2's handwritten
+2/2021 MAR revealed the following dosing dates
+left blank with no explanation on the form:
+-levetiracetam 500mg one tablet twice daily on
+2/2-2/3, 2/4;
+
+-quetiapine fumerate 100mg two tablets in the
+am, one tablet at noon and two tablets in pm for
+2/11 at 1pm;
+
+-Trazadone 50mg three tablets at bed for 2/1-2/3.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#2's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication for some
+dates:
+
+-quetiapine fumerate 100mg two tablets in the am
+on 2/27, 3/11, 3/20, 3/23-4/5, 4/6("Yes" and N/A"
+documented for same date/am dose);
+
+-quetiapine fumerate 100mg one tablet at noon
+on 3/3, 3/11, 3/11, 3/15, 3/20, 3/23-4/5, 4/6("Yes"
+and N/A" documented for same date/am dose);
+-quetiapine fumerate 100mg two tablets in pm on
+2/24, 3/7, 3/11, 3/11, 3/15, 3/20, 3/23-4/5,
+4/6("Yes" and N/A" documented for same
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 8 Vv 118
+
+If continuation sheet 9 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+date/am dose);
+
+-quetiapine fumerate all doses missed on 3/21
+and 3/22 with noted comments client #2 was out
+of her medication with no refills;
+
+-venlafaxine HCL 75mg two tablets twice daily for
+am dose on 2/27, 3/11-3/15, , 3/19, 3/21,
+3/23-3/25;
+
+-venlafaxine HCL 75mg two tablets twice daily for
+pm dose on 3/3, 3/11-3/15, 3/16, 3/17, 3/18, 3/19,
+3/20, 3/21, 3/23-3/25, 3/31;
+
+-venlafaxine HCL 75mg doses missed on 3/16,
+3/17, 3/18 and 3/22 with noted comments client
+#2 was out of her medications;
+
+-doxycycline hyclate 100mg one tablet twice daily
+on 2/27(am), 2/28(pm), 3/1(pm);
+
+-Trazadone 50mg three tablets at bed on 3/7, 3/9,
+3/10, 4/9, 4/12, 4/13;
+
+-levetiracetam 500mg 500mg one tablet twice
+daily for am on 2/27, 3/8, 3/9, 3/10, 3/11, 4/9;
+4/10-4/11(Yes" and "No" documented for same
+date/time all doses);
+
+-levetiracetam 500mg 500mg one tablet twice
+daily for pm on 3/7, 3/8, 3/9, 3/10, 3/11,
+4/10-4/11(Yes" and "No" documented for same
+date/time all doses);
+
+-gabapentin 300mg one tablet three times daily
+on 3/8(1pm/9pm), 3/9-3/24(all doses),
+3/24(am/1pm), 4/16(1pm),
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #2 missed medications on
+3/21(no refills), 3/23, 3/25, 3/24, 3/25, 3/26 and
+3/29.
+
+Interview on 4/26/21 with client #2 revealed:
+-takes her medications at 7:00am, 1:00pm and
+9:00pm;
+
+-first couple of weeks missed some of her
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 9 Vv 118
+
+If continuation sheet 10 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+medications;
+
+-not missed any medications recently;
+
+-only had a problem once because physician
+forgot to put amount on script.
+
+Finding #3
+
+Review on 4/19/21 of client #3's record revealed:
+-admission date of 9/15/20;
+
+-diagnoses of Cocaine Use Disorder Severe,
+Alcohol Use Disorder Severe, Cannabis Use
+Disorder Mild, Depression and PTSD;
+-admission assessment 8/19/20 documented
+client #3 used alcohol and drugs for fifteen years,
+was homeless, had a criminal history, had a
+history of suicidal/homicidal ideation, had limited
+coping skills and completed 28-day recovery
+treatment;
+
+-treatment plan dated 9/15/20 documented the
+following goal to dose medications as prescribed;
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #3's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-orders dated 8/19/20 for sertraline 100mg one
+tablet daily for depression, pantoprazole 40mg
+one tablet daily for GERD(gastroesophageal
+reflux disease), quetiapine 50mg 3 tablets at bed
+for depression and trazadone 50mg one tablet
+prn(as needed) for insomnia;
+
+-order dated 10/5/20 for hydroxyzine 25mg two
+tablets at bed for anxiety and Trazadone 100mg
+one tablet at bed;
+
+-order dated 2/25/21 for Trazadone 100mg one
+tablet at bed with "discontinued stamp" on the
+order dated 3/29/21;
+
+-order dated 2/25/21 for hydroxyzine 25mg two
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 10 Vv 118
+
+If continuation sheet 11 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+tablets once a day with "discontinued" stamp on
+the order dated 3/29/21;
+
+-order dated 2/25/21 for quetiapine fumerate
+25mg six tablets daily;
+
+-order dated 3/8/21 for gabapentin 300mg one
+tablet three times daily for pain with
+"discontinued" stamp on the order dated 3/18/21.
+-order dated 3/13/21 for gabapentin 300mg two
+tablets three times daily;
+
+Review on 4/20/21 of client #3's handwritten
+2/2021 MAR revealed the following dosing dates
+left blank with no explanation on the form:
+-sertraline 100mg one tablet daily on 2/13 and
+2/14;
+
+-hydroxyzine 25 mg two tablets at bed on 2/4 and
+2/13;
+
+-Trazadone 100mg one tablet at bed on 2/4 and
+2/14;
+
+-quetiapine fumerate 25mg six tablets daily on 2/4
+and 2/1.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#3's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication:
+
+-sertraline 100mg one tablet daily on 2/28, 3/12,
+3/15, 3/16, 3/18-3/29, 4/12, 4/18;
+
+-hydroxyzine 25 mg two tablets at bed on 2/25,
+3/23, 3/24-3/28, 4/5, 4/11, 4/13, 4/17, 4/18;
+-Trazadone 100mg one tablet at bed on 2/25,
+3/24, 3/25, 3/28, 4/5, 4/11, 4/13, 4/17, 4/18;
+-quetiapine fumerate 25mg six tablets daily on
+2/25, 3/23, 3/24-3/28,4/5, 4/11, 4/13;
+-gabapentin 300mg two tablets three times daily
+for am dose on 3/12, 3/15, 3/16, 3/19, 3/20, 3/24,
+3/25, 3/29, 4/11, 4/12, 4/17-4/19;
+
+-gabapentin 300mg two tablets three times daily
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 11 Vv 118
+
+If continuation sheet 12 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+for pm dose on 3/14, 3/16, 3/27, 3/28, 3/29, 4/2,
+4/3, 4/5, 4/1, 4/12, 4/13, 4/17-4/19.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #3 missed medications on
+3/21(no refill sertraline), 3/22, 3/23, 3/26, 3/29,
+4/13, 4/18, 4/19.
+
+Interview on 4/26/21 with client #3 revealed:
+-took his medications as prescribed;
+
+-not missed any medications;
+
+-no problems with refills;
+
+-always shows up for medication call;
+
+-if medications were not taken, got a write-up
+from counselor.
+
+Finding #4
+
+Review on 4/19/21 of client #4's record revealed:
+-admission date of 2/25/21;
+
+-diagnoses of Stimulant Use Disorder Severe,
+Opioid Use Disorder Severe, Alcohol Use
+Disorder and Unspecified Mood Disorder;
+-admission assessment 1/26/21 documented
+client #4 was unemployed, was a DV victim, had
+a criminal history, had Hepatitis C,
+IV(intravenous) use daily of opioids, past
+involvement with Social Services regarding her
+children and completed prior substance abuse
+treatment;
+
+-treatment plan dated 2/16/21 documented the
+goals to dose on medications as prescribed and
+complete Hepatitis C treatment;
+
+-review of monthly progress notes from
+2/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #4's facility medical records revealed the
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 12 Vv 118
+
+If continuation sheet 13 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+following Physician/NP's orders and other
+documents regarding medications:
+
+-order dated 2/20/21 for lamotrigine 150mg one
+tablet daily for mood;
+
+-order dated 2/20/21 for pantoprazole 40mg one
+daily acid reflux;
+
+-order dated 2/20/21 for ferrous sulfate 325mg
+one tablet daily for iron deficiency;
+
+-order dated 2/20/21 for multivitamin one tablet
+daily;
+
+-order dated 2/20/21 for vitamin C one tablet
+daily;
+
+-discontinue order dated 5/8/21 for multivitamin
+one tablet daily;
+
+-discontinue order dated 5/8/21 for vitamin C one
+tablet daily.
+
+Observation on 4/20/21 at 11:50am of client #4's
+medications revealed:
+
+-lamotrigine 150mg one tablet daily dispensed
+3/3/21;
+
+~pantoprazole 40mg one daily dispensed 3/3/21;
+-ferrous sulfate 325mg one tablet daily dispensed
+4/2/21;
+
+-multivitamin one tablet daily not on site;
+
+-vitamin C one tablet daily not on site.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#4's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication:
+
+-lamotrigine 150mg one tablet daily on 4/16;
+~pantoprazole 40mg one tablet daily on 4/16;
+-ferrous sulfate 325mg one tablet daily on 4/16;
+multivitamin one tablet daily not listed on MARs;
+-vitamin C one tablet daily not listed on MARs.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 13 Vv 118
+
+If continuation sheet 14 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #4 missed medications on
+4/16.
+
+Interview on 4/26/21 with client #4 revealed:
+-takes her medications;
+
+-no issues with getting refills;
+
+-never missed her medications.
+
+Finding #5
+
+Review on 4/19/21 of client #5's record revealed:
+-admission date of 2/8/21;
+
+-diagnoses of Alcohol Use Disorder Severe,
+Cannabis Use Disorder Severe, Cocaine Use
+Disorder Severe;
+
+-admission assessment 2/65/21 documented
+client #5 had completed 28 days of substance
+abuse treatment, smoked crack/cocaine daily,
+drank alcohol weekly, used cannabis daily, had
+HTN and experienced stress regarding his family;
+-treatment plan dated 2/16/21 documented the
+following goal to maintain freedom from addiction;
+-review of monthly progress notes from
+2/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #5's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-orders dated 2/5/21 for amlodipine 10mg one
+tablet daily for HTN, Losartan 25mg one tablet
+daily for HTN, Naltroxene 50mg one tablet daily
+for cravings and Prazosin 1mg one tablet at bed
+for nightmares;
+
+-order dated 3/2/21 for mirtazapine 30mg one
+tablet at bed for mood/sleep;
+
+-order dated 2/9/21 for quetiapine fumerate
+100mg one tablet at bed for bipolar disorder;
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 14 Vv 118
+
+If continuation sheet 15 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+PRINTED: 05/20/2021
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+H TRYON STREET
+
+CHARLOTTE, NC 28206
+
+FORM APPROVED
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+R
+05/10/2021
+
+-order dated 3/8/21 for duloxetine HCL 30mg two
+tablets daily for depression/anxiety with
+"discontinued" stamp on the order dated 3/25/21;
+-form dated 3/5/21 for gabapentin 300mg one
+tablet three times daily for pain with "approved" by
+NP, original prescriber's name on the form and a
+"discontinued" stamp on the order dated 3/7/21;
+-order dated 3/6/21 for gabapentin 300mg two
+tablets three times daily;
+
+-order dated 5/8/21 for Losartan 50mg one tablet
+daily for HBP;
+
+-order dated 3/5/21 and 5/8/21 for Metformin
+500mg one tablet twice daily for diabetes.
+
+Observation on 4/20/21 at 12:05pm of client #5's
+medications revealed:
+
+-gabapentin 300mg two tablets three times daily
+dispensed 3/24/21;
+
+-mirtazapine 15mg two tablets at bed dispensed
+3/4/21 bottle empty with "no refills" on label;
+-quetiapine fumerate 100mg one tablet at bed
+dispensed 4/6/21;
+
+-Naltroxene 50mg one tablet daily dispensed
+3/25/21;
+
+-Metformin 500mg one tablet twice daily
+dispensed 3/31/21;
+
+-Losartan 25mg one tablet daily dispensed
+4/9/21;
+
+-amlodipine besylate 10mg one tablet daily
+dispensed 3/19/21;
+
+-duloxetine 30mg two tablets in the am dispensed
+3/25/21 bottle empty with "no refills" on label;
+-Prazosin 1mg one tablet at bed not on site.
+
+Review on 4/20/21 of client #5's handwritten
+2/2021 MAR revealed the following dosing dates
+left blank with no explanation on the form:
+-quetiapine 100mg one tablet at bed for 2/9-2/14;
+-Naltroxene 50mg one tablet daily for 2/9-2/15;
+-amlodipine 10mg one tablet daily for 2/10-2/15;
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 15 Vv 118
+
+If continuation sheet 16 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+-Losartan 25mg one tablet daily for 2/9-2/15.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#5's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication on some dates:
+-duloxetine 30mg two tablets daily on 3/10,
+3/12-3/26, 4/19(client out of med);
+
+-Metformin 500mg one tablet twice daily on
+3/11(pm), 3/26(am), 4/5(pm), 4/6(am), 4/7(pm);
+-gabapentin 300mg two tablets three times daily
+for am dose on 3/21, 3/23-3/25, 3/26, 4/6(am);
+-gabapentin 300mg two tablets three times daily
+for pm dose on 3/12, 3/15, 3/22, 3/23-3/25, 3/30,
+4/8, 4/11, 4/12;
+
+-Naltroxene 50mg one tablet daily on 3/19-26;
+-mirtazapine 15mg two tablets at bed on 4/4-4/19;
+-amlodipine 10mg one tablet daily on 3/26, 4/6;
+-Losartan 25mg one tablet daily on 3/26, 4/6.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #5 missed medications on
+3/22-3/26, 4/13, 4/20.
+
+Interview on 4/26/21 with client #5 revealed:
+-takes his medications at 8:00am, 12:30pm, and
+8:00pm;
+
+-overslept one time and missed his medications;
+-big line in the mornings to get medications;
+-ran out of some medications;
+
+-had a hard time getting in touch with the doctor
+for refills;
+
+-started feeling bad;
+
+-ran out of mirtazapine, duloxetine for about a
+week;
+
+-both were for anxiety;
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 16 Vv 118
+
+If continuation sheet 17 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+
+FORM APPROVED
+
+-ran low on Metformin and gabapentin;
+
+-missed his blood pressure medication one day;
+-responsible for getting his own refills;
+
+-he has to call the doctor to write a prescription
+and the pharmacy did not get it;
+
+-the NP emailed and called the doctor to help
+him.
+
+Finding #6
+
+Review on 4/19/21 of client #6's record revealed:
+-admission date of 3/22/21;
+
+-diagnoses of Alcohol Use Disorder Severe and
+Crack/Cocaine Use Disorder;
+
+-admission assessment dated 3/12/21
+documented client #6 was unemployed, was a
+victim of DV, was homeless, had past overdoses
+in 2016 and 2018, past history of suicidal
+ideation, had blackouts from alcohol, past
+diagnoses of PTSD and Depression and history
+of substance abuse treatment;
+
+-treatment plan dated 3/22/21 documented the
+goal to abstain from drug and alcohol use;
+-review of monthly progress notes revealed no
+documentation of any issues with medication
+compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #6's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-orders dated 3/8/21 for gabapentin 300mg two
+tablets three times daily for pain and mirtazapine
+15mg one tablet at bed for depression;
+
+-order dated 3/23/21 for Keflex 500mg one tablet
+twice daily for 7 days for infection;
+
+-order dated 3/30/21 for Prozac 40mg two tablets
+daily for depression.
+
+Observation on 4/20/21 at 12:15pm of client #6's
+
+medications revealed:
+
+Division of Health Service Regulation
+STATE FORM
+
+6809
+
+M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 17 Vv 118
+
+If continuation sheet 18 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+-gabapentin 300mg two tablets three times daily
+dispensed 3/22/21;
+
+-mirtazapine 15mg one tablet at bed dispensed
+3/17/21;
+
+-Prozac 40mg two tablets daily dispensed
+3/17/21;
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#6's electronic MARs from 3/22/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication:
+
+-gabapentin 300mg two tablets three times daily
+on 3/22(pm), 3/25(pm), 3/30(pm), 4/3(am),
+4/10(pm), 4/11(pm);
+
+-mirtazapine 15mg one tablet at bed on 3/30,
+4/10;
+
+-Prozac 40mg two tablets daily on 3/30;
+
+-Keflex 500mg one tablet twice daily for 7 days on
+3/23(pm), 3/24(am/pm), 3/25(am), 3/30(pm),
+4/2(am/pm), 4/3(am), 4/3(pm-comment "finished).
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed no
+documentation for client #6's regarding
+medications.
+
+Interview on 4/26/21 with client #6 revealed:
+-take her medications three times a day at
+8:00am, 1:00pm and 9:00pm;
+
+-forgot to take her medications one time;
+-came in with established medication refills.
+
+Finding #7
+Review on 4/19/21 of client #7's record revealed:
+-admission date of 7/21/20;
+
+-diagnoses of Opioid Use Disorder, Alcohol Use
+Disorder and Bipolar Disorder;
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 18 Vv 118
+
+If continuation sheet 19 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+-admission assessment dated 6/26/20
+documented client #7 had a history of diagnosis
+of Bipolar-Manic Depressive Disorder, was
+employed, had a criminal history, lived in hotels,
+used alcohol and opioids daily and completed
+substance abuse treatment;
+
+-treatment plan dated 7/21/20 had the goal to
+dose on medications as prescribed;
+
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #7's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-order dated 12/5/20 for amlodipine 10mg one
+tablet daily for HBP;
+
+-order dated 12/5/20 for bupropion 300mg one
+tablet in the am for depression;
+
+-order dated 3/3/21 for Suboxone 8/2mg once a
+day for opioid addiction;
+
+-no order for Prazosin 2mg three tablets at bed
+for HBP.
+
+Observation on 4/20/21 at 2:00pm of client #7's
+medications revealed:
+
+-amlodipine 10mg one tablet daily bottle empty
+with 2 refills;
+
+-bupropion 300mg one tablet in the am bottle
+empty with 2 refills;
+
+-Prazosin 2mg three tablets at bed bottle empty
+with 2 refills
+
+-Suboxone 8/2mg once a day at 6pm.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#7's electronic MARs from 2/1/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 19 Vv 118
+
+If continuation sheet 20 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+PRINTED: 05/20/2021
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+H TRYON STREET
+
+CHARLOTTE, NC 28206
+
+FORM APPROVED
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+R
+05/10/2021
+
+system for the missed medication:
+
+-amlodipine 10mg one tablet daily on 3/11, 3/12,
+3/13, 3/14, 3/15, 3/16, 3/17, 3/18, 4/19;
+-bupropion 300mg one tablet in the am on
+3/11,3/12, 3/13, 3/14, 3/15, 3/16, 3/17, 3/18, 4/19;
+-Prazosin 2mg three tablets a bed on 3/7, 3/10,
+3/11, 3/13, 3/14, 3/15, 3/16, 3/17, 4/19;
+
+-Prazosin 2mg three tablets at bed documented
+as administered without a physician's order on
+2/1-3/6, 3/8, 3/9, 3/12, 3/18-4/18;
+
+-Suboxone 8/2mg once a day not listed on MARs
+on 2/26-3/2.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+documentation client #7 missed medications on
+4/19.
+
+Interview on 4/26/21 with client #7 revealed:
+-got his medications on time;
+
+-not missed any medications;
+
+-"| stay on top of it;"
+
+-"make sure | get all my refills."
+
+Finding #8
+
+Review on 4/19/21 of client #8's record revealed:
+-admission date of 7/20/20;
+
+-diagnoses of Alcohol Use Disorder Severe,
+Cocaine Use Disorder Severe, Unspecified
+Anxiety Disorder, Unspecified Trauma and
+Stressor Related Disorder, Unspecified
+Depressive Disorder;
+
+-admission assessment 7/16/20 documented
+client #8 was homeless, was victim of DV, used
+alcohol daily, had pending criminal charges, had
+limited coping skills, prior diagnosis of
+depression, had a history of inpatient psychiatric
+treatment in 6/2020, had history of suicidal
+ideation and had the following medications: HTN,
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 20 Vv 118
+
+If continuation sheet 21 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+COPD(Chronic Obstructive Pulmonary Disease),
+high cholesterol and reflux;
+
+-treatment plan dated 1/20/21 documented the
+goal to dose on medications as prescribed;
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #8's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-orders dated 7/10/20 for Lisinopril 20mg one
+tablet daily for HBP, amlodipine 10mg one tablet
+daily for HBP, omeprazole 40mg one tablet daily
+for heartburn, fluoxetine HCL 20mg one tablet
+daily for depression, quetiapine fumerate 100mg
+one tablet at bed for depression;
+
+-order dated 8/1/20 for loratadine 10mg one tablet
+daily for allergies;
+
+-unsigned print-out from a medical provider dated
+1/18/21 listed mirtazapine 15mg one tablet at
+bedtime for depression;
+
+-orders dated 5/8/21 for Ferrous Sulfate 325mg
+one tablet twice daily for iron deficiency and
+mirtazapine 15mg one tablet at bedtime.
+
+Observation on 4/20/21 at approximately 1:45pm
+of client #8's medications revealed:
+
+-Lisinopril 20mg one tablet daily dispensed
+4/6/21;
+
+-amlodipine 10mg one tablet daily dispensed
+4/6/21,
+
+-omeprazole 40mg one tablet daily dispensed
+4/6/21;
+
+-fluoxetine HCL 20mg one tablet daily dispensed
+4/16/21;
+
+-quetiapine fumerate 100mg one tablet at bed
+dispensed 9/30/20;
+
+-loratadine 10mg one tablet daily dispensed
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 21 Vv 118
+
+If continuation sheet 22 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+1/11/21;
+
+-Ferrous Sulfate 325mg one tablet twice daily
+dispensed 3/26/21;
+
+-mirtazapine 15mg one tablet at bedtime
+dispensed 4/16/21.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#8's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication for some
+dates:
+
+-Lisinopril 20mg one tablet daily on 2/27, 2/28,
+3/15, 3/20, 3/29, 4/1;
+
+-amlodipine 10mg one tablet daily on 2/27, 2/28,
+3/4, 3/15, 3/20, 3/29, 4/1;
+
+-omeprazole 40mg one tablet daily on 2/27, 2/28,
+3/4, 3/15, 3/20, 4/1;
+
+-fluoxetine HCL 20mg one tablet daily on 2/28,
+3/4, 3/15, 3/20, 3/23, 3/25, 3/26, 3/27, 3/30, 3/31,
+4/1, 4/2, 4/3, 4/5, 4/6, 4/7, 4/8, 4/9, 4/10, 4/11,
+4/12, 4/13, 4/14, 4/15, 4/16, 4/17, 4/18, 4/19;
+-quetiapine fumerate 100mg one tablet at bed on
+2/25, 3/4, 3/7, 3/12, 3/15, 3/22, 3/29, 4/19("N/A"
+and "Yes"documented for same time/date);
+-loratadine 10mg one tablet daily on 2/27, 2/28,
+3/15, 3/20, 3/29, 3/13, 4/1;
+
+-Ferrous Sulfate 325mg one tablet twice daily on
+2/25, 2/27, 2/28, 3/4, 3/12, 3/15, 3/20,
+3/21(comment "out of med"), 3/22-3/26, 3/29,
+3/30, 4/1, 4/7;
+
+-mirtazapine 15mg one tablet at bedtime on 2/25,
+3/4, 3/7, 3/12, 3/15, 3/20, 3/21(comment "out of
+med"), 3/22, 3.23, 3/24, 3/25, 3/26, 3/27, 3/29,
+3/30, 3/31, 4/2, 4/4-4/8, 4/11, 4/12-4/19.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 22 Vv 118
+
+If continuation sheet 23 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+documentation client #8 missed medications on
+3/25, 4/14, 4/15, 4/16.
+
+Finding #9
+
+Review on 4/19/21 of client #9's record revealed:
+-admission date of 8/17/20;
+
+-diagnoses of Alcohol Use Disorder Severe,
+Cocaine Use Disorder Severe, Bipolar Disorder
+and Major Depressive Disorder;
+
+-admission assessment dated 7/22/20
+documented client #9 was homeless, in and out
+of jail, inpatient psychiatric history for suicidal
+ideation, adopted, limited contact with family,
+victim of rape, completed 28 days of substance
+abuse treatment, history of Bipolar Disorder,
+Depression and Anxiety, use of alcohol, cocaine
+and cannabis, had COPD;
+
+-treatment plan dated 8/24/20 documented the
+goal to dose on medications as prescribed;
+-review of monthly progress notes from
+1/2021-3/2021 revealed no documentation of any
+issues with medication compliance.
+
+Review on 4/20/21, 4/23/21, 4/26/21 and 5/10/21
+of client #9's facility medical records revealed the
+following Physician/NP's orders and other
+documents regarding medications:
+
+-order dated 2/6/21 for bupropion HCL 150mg
+one tablet in the am for depression with
+discontinue order dated 3/9/21;
+
+-order dated 3/9/21 for bupropion HCL 150mg
+two tablets in the am;
+
+-order dated 1/6/21 for topiramate 50mg one
+tablet twice daily for Bipolar Disorder;
+
+-order dated 10/31/20 for Strattera 40mg one
+tablet daily for attention deficient disorder;
+
+-order dated 5/8/21 for Strattera 60mg one tablet
+in the am;
+
+-order dated 1/23/21 for benzotropine 1mg one
+tablet twice daily for tremors;
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 23 Vv 118
+
+If continuation sheet 24 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+A. BUILDING:
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+-discontinue order dated 4/15/21 for benzotropine
+1mg one tablet twice daily.
+
+Observation on 4/20/21 at1:30pm of client #9's
+medications revealed:
+
+-bupropion HCL 150mg two tablets in the am
+dispensed 3/24/21;
+
+-topiramate 50mg one tablet twice daily
+dispensed 4/16/21;
+
+-Strattera 60mg one tablet in the am dispensed
+2/15/21.
+
+Review on 4/20/21, 4/23/21 and 4/26/21 of client
+#9's electronic MARs from 2/25/21-4/19/21
+revealed the following dosing dates with the
+documentation of "No" or "N/A(not applicable)"
+with no explanation/comment in the electronic
+system for the missed medication for some
+dates:
+
+-topiramate 50mg one tablet twice daily for 3/15;
+-Strattera 60mg one tablet in the am for 3/15, 4/8,
+4/16, 4/17, 4/18, 4/29;
+
+-benzotropine 1mg one tablet twice daily for 3/5,
+3/6("Yes™ and "No" documented for the same
+time/date-6pm), 3/7("Yes" and "N/A" documented
+for the same time/date-6pm), 3/8(Yes™ and "No"
+documented for the same time/date-6pm), 3/15,
+3/22(comment "dosed"), 3/23, 3/24, 3/25, 3/26,
+3/27(Yes" and "N/A" documented for the same
+time/date-6pm), 3/28(Yes™ and "No" documented
+for the same time/date-6pm), 4/5, 4/6, 4/7,
+4/8-4/15;
+
+-bupropion HCL 150mg one tablet in the am still
+listed on MARs from 3/9-3/26 with no comments
+documented despite being discontinued on
+3/9/21.
+
+Review on 4/16/21 and 4/20/21 of the facility's
+incident reports and missed medication daily
+reports from 2/1/21-4/20/21 revealed
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 24 Vv 118
+
+If continuation sheet 25 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+MHL060-381
+
+NAME OF PROVIDER OR SUPPLIER
+
+VILLAGES OF HOPE HAVEN
+
+PRINTED: 05/20/2021
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTI
+
+H TRYON STREET
+
+CHARLOTTE, NC 28206
+
+FORM APPROVED
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+R
+05/10/2021
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118] Continued From page 25 Vv 118
+
+documentation client #9 missed medications on
+3/15, 3/22, 3/23, 3/24, 3/25, 4/13, 4/14, 4/15.
+
+Interview on 4/26/21 with client #9 revealed:
+-take her medications daily;
+
+-take her medications as prescribed;
+-sometimes the faxes did not go through for
+refills;
+
+-got her medications from a local mental health
+provider.
+
+Further interview on 4/28/21 with the MAC
+revealed:
+
+-client #1 refused to take his am medications;
+-told client #1 he needed to see the NP;
+
+-client #1 was a no show for at last two
+appointments with the NP;
+
+-client #1 has an appointment scheduled this
+week with the NP;
+
+-the pharmacy would not provide refills for client
+#2 when she ran out of medications;
+
+-client #3 ran out of medications;
+
+-client #3 worked third shift and kept putting off
+going to pharmacy to pick up medications;
+-worked out a plan for client #3 to go pick up his
+medications;
+
+-client #5 was not on medications when he was
+first admitted;
+
+-client #5 saw the NP and was placed on
+medications;
+
+-client #5 only had a fifteen day supply of
+medications and ran out;
+
+-had to wait on the NP to write the scripts;
+-client #5 was always good to take medications;
+-client #6 was out of her medications a couple of
+days;
+
+-client #6 came late for medication call and
+missed her medications;
+
+-client #7 ran out of his medications and did not
+realize he needed refills;
+
+Division of Health Service Regulation
+STATE FORM
+
+6808 M77711
+
+If continuation sheet 26 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+-client #7 had to see the NP to get refills;
+
+-not sure why client #7's Suboxone was not listed
+on the MARs;
+
+-client #8 did not come to med calls;
+
+-client #9 ran out of her medications and had to
+wait on the pharmacy to deliver the refills;
+
+-client #9 was good to take her medications.
+
+Interview on 5/7/21 with the VP(Vice President) of
+Clinical Director revealed:
+
+-feel it was a data entry error in Kipu;
+
+-if a medication was discontinued, it was not
+entered by staff in Kipu;
+
+-clients also did not show up for medication calls;
+-having COVID cases and lockdown at the facility
+was also a factor for medication issues.
+
+Interview with 5/7/21 and 5/10/21 with the
+Director of Programming revealed:
+
+-if someone missed a medication, a report was
+generated;
+
+-if clients came in later and took the medication, it
+was not missed;
+
+-found some physicians' orders that were not
+located by the MAC;
+
+-the MAC did not have access to these areas in
+Kipu;
+
+-can produce more medication orders from Kipu
+system by looking in the admissions section;
+-there were other areas where physicians’ orders
+were kept;
+
+-there were still some missing physicians’ orders
+after searching in Kipu and paper records.
+
+Interview on 5/7/21 with the VP of Operations
+revealed:
+
+-discussions already taking place between Kipu
+representatives and staff to address issues in the
+system;
+
+-know a pharmacy that does medications for all
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6808 M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 26 Vv 118
+
+If continuation sheet 27 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA (X2) MULTIPLE CONSTRUCTION (x3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE, DATE
+
+DEFICIENCY)
+
+V 118) Continued From page 27
+
+clients at other big facilities;
+-can look into this as an option.
+
+Interview with the CEO revealed:
+
+-been an incredible year of change;
+
+-hope headed in the right direction;
+
+-during conversion from paper to electronic, was
+some "messiness;"
+
+-had a part-time nurse for a few months;
+
+-she was going through each clients’ medications;
+-she had to leave due to personal reasons;
+
+-a challenge with all the different pharmacies
+clients use;
+
+-would like to convert all residents to the same
+pharmacy;.
+
+-need to address the record keeping piece;
+
+-will address issues with clients not having
+medications;
+
+-the NP comes tomorrow and can assist with this;
+-can't believe there are that many missing
+medication orders and missing medications;
+-physician orders should be in Kipu system.
+
+Due to the failure to accurately document
+medication administration, it could not be
+determined if client #1, #2, #3, #4, #5, #6, #7, #8
+and #9 received their medications as ordered by
+the physician/NP.
+
+Review on 5/10/21 of the Plan of Protection dated
+5/7/21 completed by the VP of Clinical Director
+revealed the following documented:
+
+"What immediate actions will the facility take to
+ensure the safety of the consumers in your care?
+Hope Haven is committed to providing quality
+care for residents that we serve in all capacities
+of their treatment and services. Effectively
+immediately, 5/7/21, the medication coordinator,
+has been granted all access and privileges in our
+EMR system KIPU. This will allow for more
+
+Division of Health Service Regulation
+STATE FORM
+
+V 118
+
+6808 M77711
+
+If continuation sheet 28 of 30
+
+Division of Health Service Regulation
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+MHL060-381
+
+3815 NORTI
+
+VILLAGES OF HOPE HAVEN
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING:
+
+PRINTED: 05/20/2021
+FORM APPROVED
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+05/10/2021
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+H TRYON STREET
+CHARLOTTE, NC 28206
+
+efficient documentation with respect to all
+medication needs of each client served.
+Medication Coordinator will be given full access to
+all medical records including doctors orders,
+discontinued orders, permission to self-administer
+for all Hope Haven's medical clients. The VP of
+clinical services, the director of clinical services,
+and the medication coordinator have personally
+reviewed each clients’ chart to include prescriber
+letters, MARs and medications that was
+documented incorrectly KIPU as listed as part of
+the audit;"
+
+"Describe your plan to make sure the above
+happens. All counselors will receive training on
+Monday 5/10/21 on how to monitor and enter
+specific documentation related to any medication
+administration for clients. Counselors will receive
+a medication check list for each of their clients
+which will require weekly review with their
+supervisor to ensure client is current on all
+medications. This check list will be in effect on
+Monday 5/10/21 with the first review on Friday
+5/17/21. We also hired another NP that has been
+trained on documentation, and will be able to
+monitor all prescriber letters immediately."
+
+Clients #1, #2, #3, #4, #5, #6, #7, #8 and #9 were
+prescribed medications to address diagnoses
+which included substance abuse, Bipolar
+Disorder, Depression, Anxiety and PTSD. Client
+#1 #2, #3, #5, #7 and #8 were prescribed
+medications to address medical issues which
+included high blood pressure, HTN, GERD, pain,
+insomnia and COPD. There were missing
+physicians’ orders for medications administered.
+There were dosing dates left blank with no
+explanation on the handwritten February 2021
+MARS for clients. There were numerous
+discrepancies throughout the electronic MARS
+from 2/25/21-4/19/21 with no explanation for the
+
+Division of Health Service Regulation
+
+STATE FORM
+
+6809
+
+M77711
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 28 Vv 118
+
+If continuation sheet 29 of 30
+
+Division of Health Service Regulation
+
+PRINTED: 05/20/2021
+
+FORM APPROVED
+
+following: missed doses, medications
+documented as administered and documented as
+not administered on the same dosing date/time,
+discontinued medications still listed on MARS and
+medications listed as "N/A." There were empty
+bottles of prescribed psychotropic medications in
+the medication room for clients #1 and client #7.
+There were medications not on site with no
+corresponding discontinue orders. There were
+medications on site not listed on the MARs. Some
+clients were without their psychotropic
+medications for periods of several weeks. The
+Medication Assurance Coordinator did not have
+access to several areas of the electronic system
+in order to monitor client medication compliance
+and accurate medication administration. The
+failure of the facility to ensure medications were
+administered as ordered for clients #1-#9 and
+ensure the MARS were kept current constitutes a
+Type A1 rule violation for serious neglect which
+must be corrected within 23 days. An
+administrative penalty of $3,000.00 is imposed. If
+the violation is not corrected within 23 days, an
+additional administrative penalty of $500.00 per
+day will be imposed for each day the facility is out
+of compliance beyond the 23rd day.
+
+Division of Health Service Regulation
+STATE FORM
+
+6809
+
+M77711
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING: COMPLETED
+R
+MHL060-381 05/10/2021
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+3815 NORTH TRYON STREET
+VILLAGES OF HOPE HAVEN
+CHARLOTTE, NC 28206
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETE
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+V 118) Continued From page 29 Vv 118
+
+If continuation sheet 30 of 30

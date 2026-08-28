@@ -1,0 +1,2293 @@
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+S
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+‘4
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+
+| CFR(s): 483.475(a)
+
+§403.748(a), §416.54(a), §418.113(a),
+| §441.184(a), §460.84(a), §482.15(a), §483.73(a), |
+§483.475(a), §484.102(a), §485.68(a),
+§485.625(a), §485.727(a), §485.920(a),
+| §486.360(a), §491.12(a), §494.62(a). |
+
+| The [facility] must comply with all applicable
+Federal, State and local emergency
+preparedness requirements. The [facility] must
+
+| develop establish and maintain a comprehensive
+emergency preparedness program that meets the |
+| requirements of this section. The emergency
+
+| preparedness program must include, but not be
+| limited to, the following elements: |
+
+|
+| (a) Emergency Plan. The [facility] must develop
+| and maintain an emergency preparedness plan
+that must be [reviewed], and updated at least |
+every 2 years. The plan must do all of the |
+following:
+
+* [For hospitals at §482.15 and CAHs at
+§485.625(a):] Emergency Plan. The [hospital or
+CAH] must comply with all applicable Federal,
+State, and local emergency preparedness |
+requirements. The [hospital or CAH] must |
+develop and maintain a comprehensive |
+emergency preparedness program that meets the
+requirements of this section, utilizing an |
+all-hazards approach. |
+|
+|
+|
+
+Plan. The LTC facility must develop and maintain
+an emergency preparedness plan that must be
+_ reviewed, and updated at least annually.
+
+| * [For LTC Facilities at §483.73(a):] Emergency
+|
+
+For ESRD Facilities at §494.62(a):] Emergency |
+
+(X2) MULTIPLE CONSTRUCTION
+
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER A BUILDING COMPLETED
+346146 EWING ——— 10/25/2022
+r NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+EXTRA SPECIAL CARE ann Ce
+FAYETTEVILLE, NC 28304
+(x4) 1D SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+ee ——— |
+E 004 | Develop EP Plan, Review and Update Annually E 004 |
+
+(X3) DATE SURVEY
+
+DHSR - Mental Health
+
+> 7
+
+4 4 LULZ
+
+Lic. & Cert. Section
+
+L
+LABORATORY-DIRECTOR'S OR PROVIDER/SUPPLIER REPRESENTATIVE'S SIGNATURE
+
+dori BOamec an
+
+THLE
+
+GP
+
+(X8) DATE
+
+}
+j w
+_C i122
+Any deficiency statement ending with an asterisk (*) denotes a deficiency which the institution may be excused from correcting providing it is determined that
+
+other safeguards provide sufficient protection to the patients. (See instructions.) Except for nursing homes, the findings stated above are disclosable 90 days
+
+following the date of survey whether or not a plan of correction is provided. For nursing homes, the above findings and plans of correction are disclosable 14
+days following the date these documents are made available to the facility. If deficiencies are cited, an approved plan of correction is requisite to continued
+program participation.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: 0FU211 Facility 1D: 944892 If continuation sheet Page 1 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+(X4) ID
+PREFIX
+TAG
+
+E 004
+
+E039
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+SUMMARY STATEMENT OF DEFICIENCIES |
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+Continued From page 1 |
+
+Plan. The ESRD facility must develop and
+
+| maintain an emergency preparedness plan that
+
+must be [evaluated], and updated at least every 2
+years.
+
+|.
+
+| This STANDARD is not met as evidenced by:
+
+Based on record reviews and interviews, the
+
+| facility failed to ensure the emergency plan was |
+
+| reviewed and updated biannually. This potentially
+
+affected all clients (#1, #2, #3, #4, #5, and #6)
+
+living in the home.
+
+| |
+
+| Review on 10/24/22 of the emergency
+
+| preparedness plan revealed 9/14/20 as the most
+
+| recent date of review and update.
+
+| Interview on 10/25/22 with the Qualified
+
+| Intellectual Disabilities Professional (QIDP)
+revealed that she was unable to locate an
+updated emergency plan following 9/14/20.
+EP Testing Requirements
+CFR(s): 483.475(d)(2)
+
+§416.54(d)(2), §418.113(d)(2), §441.184(d)(2).
+§460.84(d)(2), §482.15(d)(2), §483.73(d)(2), |
+§483.475(d)(2), §484.102(d)(2), §485.68(d)(2),
+§485.625(d)(2), §485.727(d)(2), §485.920(d)(2),
+§491.12(d)(2), §494.62(d)(2).
+
+*[For ASCs at §416.54, CORFs at §485.68, OPO,
+"Organizations" under §485.727, CMHCs at
+
+| §485.920, RHCs/FQHGs at §491.12, and ESRD
+
+| Facilities at §494.62]:
+
+| (2) Testing. The [facility] must conduct exercises
+to test the emergency plan annually. The [facility]
+| must do all of the following:
+
+Event 1D:0FU211
+
+PROVIDER'S PLAN OF CORRECTION
+
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+PREFIX
+TAG
+
+E 004
+
+E004: The facility will ensure the emergency
+| preparedness plan is reviewed and updated at
+| least every two years. The QP will monitor
+monthly.
+
+E 039
+
+Facility ID: 944892
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+(x5)
+COMPLETION
+DATE
+
+12/25/2022
+
+If continuation sheet Page 2 of 23
+
+PRINTED: 11/09/2022
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+
+CENTERS FOR MEDICARE & MEDICAID SERVICES OMB NO. 0938-0391
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A. BUILDING COMPLETED
+
+346146 Ee WING. 10/25/2022
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+EXTRA SPECIAL CARE 6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES iD PROVIDER'S PLAN OF CORRECTION x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) | TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+| DEFICIENCY)
+| |
+E 039 | Continued From page 2 E039
+
+|
+| (i) Participate in a full-scale exercise that is
+| community-based every 2 years; or
+(A) When a community-based exercise is not
+| accessible, conduct a facility-based functional
+| exercise every 2 years; or
+| (B) If the [facility] experiences an actual
+| natural or man-made emergency that requires | |
+| activation of the emergency plan, the [facility}is |
+| exempt from engaging in its next required |
+| community-based or individual, facility-based |
+functional exercise foliowing the onset of the
+| actual event.
+| (ii) Conduct an additional exercise at least every 2 |
+_ years, opposite the year the full-scale or |
+| functional exercise under paragraph (d)(2)(i) of
+this section is conducted, that may include, bul is
+not limited to the following: |
+(A) A second full-scale exercise that is
+community-based or individual, facility-based
+_ functional exercise; or
+(B) A mock disaster drill; or
+(C) A tabletop exercise or workshop that is led by |
+a facilitator and includes a group discussion using
+_ a narrated, clinically-relevant emergency |
+| scenario, and a set of problem statements,
+| directed messages, or prepared questions
+| designed to challenge an emergency plan.
+| | (iii) Analyze the [facility's] response to and
+| maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise the
+| [facility's] emergency plan, as needed.
+
+|
+|
+|
+*[For Hospices at 418.113(d):] |
+| (2) Testing for hospices that provide care in the
+| patient's home. The hospice must conduct
+exercises to test the emergency plan al least
+
+| annually. The hospice must do the following:
+
+| |
+FORM CMS-2567(02-99) Previous Versions Obsolete Event 1D:0FU211 Facility ID: 944892 \f continuation sheet Page 3 of 23
+
+PRINTED: 11/09/2022
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+CENTERS FOR MEDICARE & MEDICAID SERVICES OMB NO. 0938-0391
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A. BUILDING COMPLETED
+346146 B-WING. 10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(X4) ID SUMMARY STATEMENT OF DEFICIENCIES | PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL | PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) | TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+1 DEFICIENCY)
+i
+
+E039 Continued From page 3 E039,
+
+| (i) Participate in a full-scale exercise that is
+| community based every 2 years; or |
+| (A) When a community based exercise is not |
+accessible, conduct an individual facility based
+| functional exercise every 2 years; or
+| (B) If the hospice experiences a natural or |
+| man-made emergency that requires activation of
+| the emergency plan, the hospital is exempt from
+| engaging in its next required full scale
+| community-based exercise or individual |
+| facility-based functional exercise following the |
+| onset of the emergency event.
+(ii) Conduct an additional exercise every 2 years, |
+| opposite the year the full-scale or functional |
+| exercise under paragraph (d)(2)(i) of this section
+is conducted, that may include, but is not limited
+to the following:
+_(A) Asecond full-scale exercise that is
+| community-based or a facility based functional
+exercise; or
+(B) Amock disaster drill; or
+(C) A tabletop exercise or workshop that is led by |
+| a facilitator and includes a group discussion using | |
+a narrated, clinically-relevant emergency
+scenario, and a set of problem statements,
+directed messages, or prepared questions
+designed to challenge an emergency plan.
+
+| (3) Testing for hospices that provide inpatient
+
+| care directly. The hospice must conduct
+
+_ exercises to test the emergency plan twice per
+
+| year. The hospice must do the following: \
+| (i) Participate in an annual full-scale exercise that
+| is community-based; or
+
+(A) When a community-based exercise is not
+
+| accessible, conduct an annual individual
+
+| facility-based functional exercise; or
+
+| (B) If the hospice experiences a natural or
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211 Facility ID: 944892 If continuation sheet Page 4 of 23
+
+PRINTED: 11/09/2022
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+CENTERS FOR MEDICARE & MEDICAID SERVICES OMB NO. 0938-0391
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A. BUILDING COMPLETED
+346146 BE WING 10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+NAME OF PROVIDER OR SUPPLIER.
+
+EXTRA SPECIAL CARE
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES | ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL | PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+a
+
+E039 Continued From page 4 E 039
+|
+
+| man-made emergency that requires activation of
+| the emergency plan, the hospice is exempt from
+| engaging in its next required full-scale community |
+based or facility-based functional exercise
+| following the onset of the emergency event.
+| (ii) Conduct an additional annual exercise that |
+| may include, but is not limited to the following:
+| (A) Asecond full-scale exercise that is
+| community-based or a facility based functional |
+| exercise; or
+| (B) Amock disaster drill; or
+| (C) Atabletop exercise or workshop led by a |
+| facilitator that includes a group discussion using a
+| narrated, clinically-relevant emergency scenario,
+and a set of problem statements, directed
+| Messages, or prepared questions designed to
+_ challenge an emergency plan.
+(iii) Analyze the hospice's response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise the
+hospice's emergency plan, as needed. | |
+
+*[For PRFTs at §441.184(d), Hospitals at
+§482.15(d), CAHs at §485.625(d):]
+(2) Testing. The [PRTF, Hospital, CAH] must
+| conduct exercises to test the emergency plan
+| twice per year. The [PRTF, Hospital, CAH] must
+do the following:
+| (i) Participate in an annual full-scale exercise that
+| is community-based; or |
+| (A) When a community-based exercise is not |
+| accessible, conduct an annual individual, |
+|
+|
+
+facility-based functional exercise; or
+| (B) If the [PRTF, Hospital, CAH] experiences an
+| actual natural or man-made emergency that |
+| requires activation of the emergency plan, the
+| [facility] is exempt from engaging in its next
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211 Facility ID; 944892 lf continuation sheet Page 5 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER.
+
+346146
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES.
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+E 039 | Continued From page 5
+
+| | required full-scale community based or individual,
+facility-based functional exercise following the
+| onset of the emergency event. i
+(ii) Conduct an [additional] annual exercise or
+and that may include, but is not limited to the
+following:
+| (A) Asecond full-scale exercise that is
+| community-based or individual, a facility-based
+functional exercise; or |
+(B) A mock disaster drill; or |
+| (C) A tabletop exercise or workshop that is
+| led by a facilitator and includes a group
+| discussion, using a narrated, clinically-relevant
+emergency scenario, and a set of problem
+| statements, directed messages, or prepared
+| questions designed to challenge an emergency
+| plan.
+(iii) Analyze the [facility's] response to and
+maintain documentation of all drills, tabletop |
+_ exercises, and emergency events and revise the
+| [facility's] emergency plan, as needed.
+
+*[For PACE at §460.84(d):]
+(2) Testing. The PACE organization must conduct |
+exercises to test the emergency plan at least
+annually. The PACE organization must do the
+following:
+i | (i) Participate in an annual full-scale exercise that |
+| is community-based; or
+| (A) When a community-based exercise is not
+| accessible, conduct an annual individual,
+| facility-based functional exercise; or
+(B) If the PACE experiences an actual natural or
+| man- made emergency that requires activation of
+| the emergency plan, the PACE is exempt from
+| engaging in its next required full-scale community
+_ based or individual, facility-based functional
+| exercise following the onset of the emergency
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event 1D:0FU211
+
+[$A SSS
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+
+(X2) MULTIPLE CONSTRUCTION
+
+A. BUILDING COMPLETED
+8. WING ___£_____ 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+
+DEFICIENCY)
+
+E 039
+
+Facility ID: 944892
+
+lf continuation sheet Page 6 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+346146
+
+NAME OF PROVIDER OR SUPPLIER,
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+EXTRA SPECIAL CARE
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. |
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG
+
+REGULATORY OR LSC IDENTIFYING INFORMATION) |
+
+E 039 Continued From page 6
+
+| event.
+
+(ii) Conduct an additional exercise every 2
+
+| years opposite the year the full-scale or functional |
+
+| exercise under paragraph (d)(2)(i) of this section
+
+| is conducted that may include, but is not limited to
+
+| the following:
+
+| (A) Asecond full-scale exercise that is /
+
+| community-based or individual, a facility based
+
+_ functional exercise; or |
+
+| (B) Amock disaster drill; or |
+
+| (C) Atabletop exercise or workshop that is led by
+a facilitator and includes a group discussion, |
+
+_using a narrated, clinically-relevant emergency
+
+| scenario, and a set of problem statements,
+
+| directed messages, or prepared questions
+
+| designed to challenge an emergency plan. |
+
+| (ili) Analyze the PACE's response to and
+
+| maintain documentation of all drills, tabletop
+
+exercises, and emergency events and revise the
+
+PACE's emergency plan, as needed.
+
+*[For LTC Facilities at §483.73(d):]
+(2) The [LTC facility] must conduct exercises to
+test the emergency plan at least twice per year,
+including unannounced staff drills using the
+emergency procedures. The [LTC facility,
+ICF/ID] must do the following:
+(i) Participate in an annual full-scale exercise that
+is community-based; or
+| (A) When a community-based exercise is not
+| accessible, conduct an annual individual, |
+| facility-based functional exercise. |
+| (B) If the [LTC facility] facility experiences an |
+| actual natural or man-made emergency that |
+| requires activation of the emergency plan, the |
+| LTC facility is exempt from engaging its next |
+| required a full-scale community-based or |
+individual, facility-based functional exercise |
+|
+I
+
+Event !D:0FU211
+
+(X2) MULT
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+IPLE CONSTRUCTION (X3) DATE SURVEY
+
+A-BUILDING COMPLETED
+B WING 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+ID PROVIDER'S PLAN OF CORRECTION x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+
+DEFICIENCY)
+
+Facility ID: 944892 If continuation sheet Page 7 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+346146 B. WING
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+—
+
+NAME OF PROVIDER OR SUPPLIER
+6214 KILMORY DRIVE
+
+EXTRA SPECIAL CARE FAYETTEVILLE, NC 28304
+
+(X4) 1D SUMMARY STATEMENT OF DEFICIENCIES ID
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG
+
+| following the onset of the emergency event. |
+(ii) Conduct an additional annual exercise that |
+| may include, but is not limited to the following: |
+(A) Asecond full-scale exercise that is |
+| community-based or an individual, facility based |
+| functional exercise; or
+
+(B) Amock disaster drill; or
+
+| (C) A tabletop exercise or workshop that is led by
+a facilitator includes a group discussion, using a
+narrated, clinically-relevant emergency scenario,
+and a set of problem statements, directed
+
+| Messages, or prepared questions designed to | |
+| challenge an emergency plan. |
+| (ii) Analyze the [LTC facility] facility's response to
+| and maintain documentation of all drills, tabletop | |
+exercises, and emergency events, and revise the |
+| (LTC facility] facility's emergency plan, as needed.
+
+*[For ICF/IIDs at §483.475(d)]:
+(2) Testing. The ICF/IID must conduct exercises
+to test the emergency plan at least twice per year. |
+The ICF/AID must do the following:
+(i) Participate in an annual full-scale exercise that
+is community-based; or |
+(A) When a community-based exercise is not
+accessible, conduct an annual individual, |
+_ facility-based functional exercise; or.
+(B) If the ICF/ID experiences an actual natural or
+
+| the emergency plan, the ICF/IID is exempt from
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE.
+DEFICIENCY)
+
+E039 Continued From page 7 E039)
+
+engaging in its next required full-scale
+
+| community-based or individual, facility-based
+
+| functional exercise following the onset of the
+
+| emergency event.
+
+| (ii) Conduct an additional annual exercise that
+| may include, but is not limited to the following:
+| (A) A second full-scale exercise that is
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+|
+| man-made emergency that requires activation of
+|
+
+| community-based or an individual, facility-based
+
+Event ID:0FU211
+
+Facility ID: 944892
+
+(x5)
+COMPLETION
+DATE
+
+If continuation sheet Page 8 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X14) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+(x4) 1D SUMMARY STATEMENT OF DEFICIENCIES
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+E039 Continued From page 8
+
+functional exercise; or
+| (B) Amock disaster drill; or
+(C) A tabletop exercise or workshop that is led by
+a facilitator and includes a group discussion,
+| using a narrated, clinically-relevant emergency
+| scenario, and a set of problem statements,
+| directed messages, or prepared questions |
+designed to challenge an emergency plan.
+| (iii) Analyze the ICF/IID's response to and
+| maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise the
+ICF/IID's emergency plan, as needed.
+| |
+| *[For HHAs at §484.102] |
+| (d)(2) Testing. The HHA must conduct exercises
+| to test the emergency plan at
+_ least annually. The HHA must do the following:
+_ (i) Participate in a full-scale exercise that is
+, community-based; or |
+| (A) When a community-based exercise is not
+| accessible, conduct an annual individual, |
+| facility-based functional exercise every 2 years;
+or.
+
+(B) If the HHA experiences an actual natural
+| or man-made emergency that requires activation
+of the emergency plan, the HHA is exempt from
+
+engaging in its next required full-scale
+community-based or individual, facility based
+functional exercise following the onset of the
+emergency event.
+| (ii) Conduct an additional exercise every 2 years, —
+| opposite the year the full-scale or functional |
+| exercise under paragraph (d)(2)(i) of this section |
+is conducted, that may include, but is not |
+| limited to the following: |
+|
+
+(A) Asecond full-scale exercise that is
+| community-based or an individual, facility-based
+| functional exercise; or
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event 1D:0FU211
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC
+
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+SE eT |
+
+E 039
+
+|
+i
+Facility ID; 944892
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+28304
+
+If continuation sheet Page 9 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+346146
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022 _ |
+
+\ NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+
+(X4) 1D
+PREFIX (EACH DEFICIENCY MUST 3E PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+E 039 Continued From page 9
+
+(B) A mock disaster drill; or
+(C) A tabletop exercise or workshop thatis |
+| led by a facilitator and includes a group
+| discussion, using a narrated, clinically-relevant
+| emergency scenario, and a set of problem |
+| statements, directed messages, or prepared
+| questions designed to challenge an emergency
+| plan.
+| (ili) Analyze the HHA's response to and maintain |
+| documentation of all drills, tabletop exercises, and |
+| emergency events, and revise the HHA's
+| emergency plan, as needed.
+
+*[For OPOs at §486.360] |
+(d)(2) Testing. The OPO must conduct exercises
+to test the emergency plan. The OPO must do the |
+following:
+(i) Conduct a paper-based, tabletop exercise or
+workshop at least annually. A tabletop exercise is
+led by a facilitator and includes a group
+discussion, using a narrated, clinically relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+_ questions designed to challenge an emergency __
+| plan. If the OPO experiences an actual natural or —
+man-made emergency that requires activation of
+| the emergency plan, the OPO is exempt from
+_ engaging in its next required testing exercise
+following the onset of the emergency event.
+(ii) Analyze the OPO's response to and maintain
+documentation of all tabletop exercises, and
+_ emergency events, and revise the [RNHCI's and
+| OPO's] emergency plan, as needed. |
+
+|*[ RNCHIs at §403.748]:
+
+| (d)(2) Testing. The RNHCI must conduct
+| exercises to test the emergency plan. The RNHCI |
+| must do the following:
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event !D:0FU211
+
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+COMPLETION
+
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039
+
+Facility ID: 944892 If continuation sheet Page 10 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) |
+
+a |
+
+E 039 Continued From page 10
+
+_ (i) Conduct a paper-based, tabletop exercise at
+
+_ least annually. A tabletop exercise is a group
+
+discussion led by a facilitator, using a narrated,
+
+| clinically-relevant emergency scenario, and a set |
+
+| of problem statements, directed messages, or |
+
+| prepared questions designed to challenge an
+
+| emergency plan.
+
+(ii) Analyze the RNHCI's response to and
+
+| maintain documentation of all tabletop exercises,
+
+| and emergency events, and revise the RNHCI's
+
+| emergency plan, as needed.
+
+| This STANDARD is not met as evidenced by: |
+
+| Based on record reviews and interviews, the
+acility failed to conduct exercise to test the
+emergency preparedness plan. This potentially
+affected all clients (#1, #2, #3, #4, #5, and #6)
+iving in the home.
+
+Review on 10/24/22 of the emergency
+preparedness plan, dated 9/14/20, revealed that |
+neither a tabletop activity, nor a full-scale,
+community-based activity could be located.
+
+nterview on 10/25/22 with the Qualified
+ntellectual Disabilities Professional (QIDP)
+revealed that she was unable to locate either a
+_ tabletop activity, or a full-scale, community-based |
+| activity.
+W 120 SERVICES PROVIDED WITH OUTSIDE
+| SOURCES
+| CFR(s): 483.410(4)(3)
+
+| meet the needs of each client.
+| This STANDARD is not met as evidenced by:
+Based on record review and interviews, the
+facility failed to ensure outside services meet the
+| needs of each client through consistent
+
+|
+|
+| The facility must assure that outside services i
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+Event 1D:0FU211
+
+(X2) MULTIPLE CONSTRUCTION. (X3) DATE SURVEY
+A BUILDING COMPLETED
+BeWNING 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E039
+|
+|
+L = 12/25/2022
+
+£039: The facility will ensure to maintain
+
+documentation for all drills, tabletops sais
+
+exercises and emergency event and renee
+emergency plan as needed. The QP wi
+
+| monitor monthly.
+
+W 120, ——_—____
+
+12/25/2022
+| W120: The facility will ensure outside side
+
+service meet the needs of each client through
+
+consistent implementation across settings of
+
+behaviors management strategies, identified in
+
+the Behavior Support Plan and Dietary
+
+guideline. QP will provide each BIP and
+
+Dietary Guidelines to each teacher of the
+
+clients. QP will monitor as needed.
+
+Facility 1D: 944892 If continuation sheet Page 11 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER.
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES.
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 120 Continued From page 11
+
+implementation across settings of behavior
+| management strategies, identified in the Behavior
+| Suppori Plan (BIP), and dietary guidelines,
+identified in the Individual Program Plan. This
+| affected 1 of 4 audit clients (#6). The findings are:
+Review on 10/24/22 of client #6 IPP, dated
+| 8/19/22, revealed a prescribed regular diet, with
+seconds if desired, using soy milk instead of
+_ regular milk. All food should be pre-cut into
+| bite-sized pieces before serving. Client #6 should |
+use a plate guard at each meal. The IPP included
+| regurgitation as a target behavior for client #6 and |
+| stated that his BIP addressed the behavior.
+|
+
+| Review on 10/24/22 of client #6’s Behavior
+| Intervention Plan (BIP), dated 1/13/22, revealed a
+
+target behavior of regurgitation with an
+_ intervention requiring liquids to be served before
+
+serving meals. The BIP states that client #6
+_ should be given his meal after he consumes his
+
+liquid. The BIP further states that staff should
+encourage Client #6 to drink his liquid while telling |
+
+_ him that he will receive his meal afterwards. |
+
+Review on 10/25/22 of physician orders, dated |
+9/30/22 for client #6 revealed a prescribed regular
+diet, pre-cut and pre-plated to bite-sized pieces
+with the use of soy milk only. In addition, the
+orders included the use of a plate guard.
+
+| Interview on 10/24/22 with client #6's high school
+
+| teacher revealed that client #6's food is brought
+
+| from the cafeteria on a regular tray without a plate
+
+| guard. The teacher stated that all food was |
+
+| served to client #6 whole. When asked if he is |
+| served liquids before meals or encouraged to |
+
+| drink before eating, the teacher stated that client
+
+| #6 was food and beverages together without
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event 1D:0FU211
+
+(X2) MULTIPLE CONSTRUCTION
+A BUILDING
+
+B. WING
+
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+PROVIDER'S PLAN OF CORRECTION (x5)
+
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+Facility ID: 944892
+
+If continuation sheet Page 12 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+
+(X2) MULTIPLE CONSTRUCTION
+
+(x3) DATE SURVEY
+
+|
+W 120 | Continued From page 12
+
+| reference to liquids first.
+| Interview on 10/25/22 with the residential
+manager revealed that facility members had
+attended client #6's Individual Education Plan
+(IEP) meetings and was aware of information
+| about client #6. When asked if the school hada
+| copy of the client #6's BIP, the residential
+| manager stated that the school chose to develop |
+their own BIP instead of using the facility BIP. |
+Ww 130) PROTECTION OF CLIENTS RIGHTS
+| CFR(s): 483.420(a)(7)
+
+| The facility must ensure the rights of all clients. |
+| Therefore, the facility must ensure privacy during
+treatment and care of personal needs. |
+_ This STANDARD is not met as evidenced by: |
+| Based on observations, record review and
+| interviews with staff, the facility failed to provide
+| privacy to 2 of 4 audit clients (#3 and #5) during
+_ personal care. The findings are:
+
+A. During observations in the facility on 10/24/22
+at 4:22pm, staff B assisted client #3 to the
+bathroom next to the kitchen with her towel and
+grooming kit. Staff B had client #3 undress and
+get into the shower while the door was open
+revealing client #3 undressed with the door open.
+Client #3 continued to shower with the door open
+and staff B standing at the doorway. Client #3
+was cued to close the bathroom door as she got
+
+| dressed after getting out of the shower.
+
+"Review on 10/25/22 of client #3's adaptive
+behavior Inventory (ABI) dated 1/25/22 revealed
+
+| she is independent in closing the bathroom door
+
+| for privacy during bathing. |
+
+| Interview with the qualified intellectual disabilities
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A. BUILDING COMPLETED
+346146 B.WING 10/25/2022
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+EXTRA SPECIAL CARE 6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES | ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+
+W 130
+
+DEFICIENCY)
+
+|
+|
+|
+_
+
+wi 30: The facility will ensure all staff are
+trained on privacy of each client during
+Personal care and making sure all privacy of
+each client is met. Home Manager will
+monitor daily and QP will monitor monthly,
+
+| 12/25/2022
+
+Facility 1D: 944892
+
+if continuation sheet Page 13 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+‘e
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES.
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 130) Continued From page 13
+| professional (QIDP) revealed staff should close |
+| the bathroom door for privacy to protect client
+| #3's privacy during personal care. |
+
+| B. During observations in the facility on 10/25/22
+
+| at 5:40am client #5 went into the bathroom to use |
+
+| the toilet with the door open. There were two staff
+
+_ working in the facility. The bathroom is adjacent
+
+| to clients #3 and #4 who were in their bedroom
+
+_ with the door open. Staff B walked down the |
+
+| hallway and did not cue client #5 to close the
+bathroom door. Client #5 also was nat cued to |
+
+wash his hands after toileting. |
+
+| Review on 10/25/22 of client #5's ABI dated
+1/20/22 that client #5 is independent in closing
+the door for privacy and washing his hands after |
+
+| toileting.
+
+Interview on 10/25/22 with the QIDP revealed
+staff should close the bathroom door for privacy
+to protect client #5's privacy during personal care. |
+
+W 249, PROGRAM IMPLEMENTATION |
+CFR(s): 483.440(d)(1)
+
+As soon as the interdisciplinary team has
+
+| formulated a client's individual program plan,
+| each client must receive a continuous active |
+| treatment program consisting of needed
+
+_ interventions and services in sufficient number
+
+| and frequency to support the achievement of the
+| objectives identified in the individual program
+
+| plan.
+
+| This STANDARD is not met as evidenced by:
+| Based on observations, record review, and |
+| |
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+(X2) MULTIPLE CONSTRUCTION
+
+A. BUILDING
+
+B. WING.
+
+ID
+
+W 249
+
+Facility ID: 944892
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+PROVIDER'S PLAN OF CORRECTION
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+(x5)
+
+DEFICIENCY)
+
+if continuation sheet Page 14 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+346146
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B.WING
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) | Tas CROSS-REFERENCED TO THE APPROPRIATE DATE
+| DEFICIENCY)
+a
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+W 249 Continued From page 14
+
+interviews, the facility failed to ensure clients
+
+_ received a continuous active treatment program
+| consisting of needed interventions and services
+
+| to support the achievement of objectives |
+
+_ identified in the Individual Program Plan (IPP) in
+the areas of dietary guidelines. This affected 1 of |
+4 audit clients (#6). The findings are:
+
+|
+
+| Observations in the dining room on 10/24/22 to |
+
+| 10/25/22 revealed client #6 served beverages
+
+| with his food. On 10/24/22, at 4:49pm, the
+
+| residential manager (RM) told staff to make sure
+
+_ they gave client #6 liquids before food. At
+
+| 4:54pm, during snack time, Staff B assisted client |
+#6 to pour soy milk in a glass. He was then
+served his pretzel snack with his beverage. Client
+#6 did not have his beverage before eating.
+During dinner, at 6:01pm, client #6 was served
+pre-cut beef stew, vegetables, mashed potatoes,
+and bread with soy milk and water. On 10/25/22,
+
+_al 5:45am, Staff E served client #6 cereal and soy |
+
+“milk with juice.
+
+| Review on 10/24/22 of client #6 IPP, dated |
+_ 8/19/22, revealed a prescribed regular diet, with
+_ seconds if desired, using soy milk instead of
+
+_ regular milk. All food should be pre-cut into
+
+| bite-sized pieces before serving. The IPP stated
+| that client #6 had a history of regurgitation as a |
+target behavior. |
+
+Review on 10/24/22 of client #6's Behavior
+
+| Intervention Plan (BIP), dated 1/13/22, revealed a
+
+| target behavior of regurgitation with an
+intervention requiring liquids to be served before |
+
+| serving meals. The BIP states that client #6 |
+should be given his meal after he consumes his
+
+_liguid. The BIP further states that staff should
+
+_ encourage client #6 to drink his liquid while telling |
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event |D:0FU211
+
+Ww P| W249: The facility will ensure all clients
+
+12/25/2022
+
+received a continuous active treatment
+
+| program consisting of needed interventions
+and services to support the achievement of
+objectives identified in the Individual Program
+
+| Plan in the areas of dietary guidelines. The
+
+' facility will ensure all staff will be trained on
+
+| active treatment. QP will monitor monthly.
+Home Manager will monitor daily.
+
+Facility ID: 944892
+
+If continuation sheet Page 15 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+34G146
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(X4) ID SUMMARY STATEMENT OF DEFICIENCIES
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 249 Continued From page 15
+| him that he will receive his meal afterwards.
+
+| Interview on 10/25/22 with Staff E revealed client
+
+| #6 needs prompting to eat. When asked if client
+#6 should have liquids before his meal, Staff E
+
+_ Stated, "! think he had liquid when she gave him
+
+| meds."
+
+| Interview on 10/25/22 with the residential
+
+| manager revealed that client #6 had a history of
+
+projectile vomiting but did not "vomit like he use
+
+| to anymore.” The residential manager stated that |
+client #6's guidelines include food being pre-cut
+before serving with beverages being served first. |
+When asked if client #6 should drink before
+
+_ eating, the residential manager referred to the |
+
+_ BIP and stated that client #6 is to be served
+liquids before meals.
+
+W 262, PROGRAM MONITORING & CHANGE
+
+CFR(s): 483.440(f)(3)(i)
+
+The committee should review, approve, and
+_ monitor individual programs designed to manage
+_ inappropriate behavior and other programs that,
+_ in the opinion of the committee, involve risks to
+| client protection and rights.
+This STANDARD is not met as evidenced by:
+| Based on record review and confirmed by
+_ interviews with staff, the facility failed to obtain
+_ approval for 2 of 4 audit clients (#2 and #5)
+| restrictive behavior support programs (BSP) from
+| the human rights committee (HRC). The findings
+are.
+
+| A. Review on 10/24/22 of client #2's BSP dated
+| 7/12/21 revealed his BSP addressed the target
+
+behaviors of: non-compliance, self- injurious |
+| behavior, attention seeking, severe disruptive
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+Event 1D:0FU211
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+A. BUILDING COMPLETED
+BL WINS - —— 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+PROVIDER'S PLAN OF CORRECTION %5)
+PREFIX {EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE BATE
+DEFICIENCY)
+W 249
+|
+i}
+W 262
+12/25/2022 |
+| W262: The facility will ensure to obtained |
+approval for all restrictive behavior |
+intervention programs (BIP) from the human
+rights committee (HRC). QP will monitor as
+needed. |
+|
+|
+|
+|
+
+Facility 1D: 944892 If continuation sheet Page 16 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER
+
+346146 B. WING
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+SUMMARY STATEMENT OF DEFICIENCIES
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+1D
+| PREFIX
+TAG
+
+(X4) 1D
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION.
+A. BUILDING
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+—____|___
+
+W 262 Continued From page 16 |
+
+| behaviors, physical aggression, AWOL, PICA and
+crying. Further review of this BSP revealed it
+
+| incorporated the use of Clonidine, Risperdal,
+
+| Focalin and Guanfacine. Further review of this
+
+| BSP revealed no consent from the HRC.
+
+|B. Review on 10/25/22 of client #5's behavior
+| support program (BSP) dated 2/20/22 which
+| addressed target behaviors of PICA, begging for
+food, inappropriate toileting, stealing and physical |
+| aggression included the use of Olanzapine and
+| Clonidine. Further review of this program
+| revealed there was not approval from the HRC.
+|
+Interview on 10/25/22 with the qualified
+| intellectual disabilities professional (QIDP)
+_ revealed there was not HRC written or verbal
+approval for clients #2 and #5's BSPs.
+W 263 PROGRAM MONITORING & CHANGE
+CFR(s): 483.440(f)(3)(ii)
+
+|The committee should insure that these programs |
+are conducted only with the written informed
+
+| consent of the client, parents (if the client is a
+
+| minor) or legal guardian. |
+
+| This STANDARD is not met as evidenced by:
+
+| Based on record review and interview the facility
+
+failed to obtain written informed consent for 2 of 4 _
+
+| audit clients (#2 and #3) restrictive behavior |
+
+| support programs (BSP). The findings are: |
+
+|
+
+| |
+
+A. Review on 10/24/22 of client #2's BSP dated
+
+| 7/12/21 revealed his BSP addressed the target |
+
+| behaviors of: non-compliance, self- injurious |
+
+| behavior, attention seeking, severe disruptive |
+
+| behaviors, physical aggression, AWOL, PICA and |
+crying. Further review of this BSP revealed it
+
+_ incorporated the use of Clonidine, Risperdal,
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+w x
+
+W 263 |
+
+W263: The facility will ensure all clients 12/25/2022
+obtain written informed consent for
+Restrictive Behavior plan support programs.
+
+QP will monitor monthly.
+
+Facility ID: 944892 If continuation sheet Page 17 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER
+
+34G146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+SUMMARY STATEMENT OF DEFICIENCIES
+
+(x4) ID
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+
+PREFIX
+
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 263 Continued From page 17
+
+Focalin and Guanfacine. Additional review of this
+BSP revealed the last written informed consent
+_ from the legal guardian for client #2 was dated
+| 7/20/21 and the consent indicated it would be
+_ effective for one year after the program was
+signed. Additional review revealed no subsequent
+| written informed consent from the guardian since
+7/20/21.
+
+Interview on 10/25/22 with the qualified
+| intellectual disabilities professional (QIDP)
+| revealed there was not current written informed
+_ consent from #2's legal guardian since 7/20/21.
+|
+
+|
+|B. Review on 10/24/22 of client #3's BSP dated
+| 2/15/22 revealed her BSP addressed the target
+behaviors of: non-compliance, physical
+| aggression, self-injurious behavior, property |
+_ destruction physical aggression and stealing.
+Further review of this BSP revealed this program
+incorporated the use of Clonidine and |
+Aripiprazole. Additional review of this program
+revealed the last consent for client #3's BSP was
+for her previous program dated 8/21/21. The
+consent dated 8/21/21 revealed the written
+| informed consent was only valid for one year.
+There was not any written informed consent from
+_ client #’s legal guardian for the new BSP dated
+2/15/22.
+
+| Interview on 10/25/22 with the qualified
+intellectual disabilities professional (QIDP)
+| revealed there was not current written informed |
+| consent from #3's legal guardian since 8/21/21. |
+W 369 | DRUG ADMINISTRATION |
+| CFR(s): 483.460(k)(2) |
+|
+|
+
+| The system for drug administration must assure
+|
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+Event ID:0FU211
+
+———
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391,
+
+(X3) DATE SURVEY
+COMPLETED
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING __
+
+BL NWIING § es
+
+10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+ID
+PREFIX
+TAG
+
+(xs)
+COMPLETION
+DATE,
+
+——
+
+Ww 203)
+
+W 369
+
+|
+|
+
+Facility 1D: 944892 If continuation sheet Page 18 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+(x4) ID
+
+TAG
+
+W 369
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+PREFIX |
+
+(X1) PROVIDERISUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G146
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+A. BUILDING COMPLETED
+
+B. WING ££ _________. 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+Continued From page 18
+
+that all drugs, including those that are
+self-administered, are administered without error.
+This STANDARD is not met as evidenced by:
+Based on observation, record review and
+confirmed by interviews with staff, the facility
+failed to ensure all medications were
+administered to 1 of 4 audit clients (#2) without
+error. The finding is:
+
+During observations of the medication
+administration pass on 10/25/22 at 5:59am, staff
+D administered the following medications to client
+#2: Cetirizine Sml., Clonidine 0.1mg, Guanfacine
+2 mg., Risperdal .25mg., Focalin 15mg.,
+Pediasure (1) and Miralax 17 grams.
+
+Review of the physician orders dated 7/14/22 |
+revealed the following medications were ordered
+at 6am: Cetirizine Smi., Clonidine 0.1mg,
+Guanfacine 2 mg., Risperdal .25mg., Pediasure
+(1) and Miralax 17 grams.
+
+Further review of physician orders dated 10/31/21
+and the medication administration record for
+October 2022 revealed Focalin 15 mg. was
+ordered by the physician to be administered at 8
+am.
+
+Interview on 10/25/22 with the qualified
+
+intellectual disabilities professional (QIDP)
+
+revealed medications can be administered an |
+
+hour before or an hour after the prescribed time |
+
+indicated by the physician to be administered
+
+without error. |
+|
+
+PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX {EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+
+TAG CROSS-REFERENCED TO THE APPROPRIATE OATE
+DEFICIENCY)
+
+W 369)
+
+W369: The facility will ensure all medication 12/25/2022
+administered to the client during the
+
+appropriate time provided by physician. QP
+
+will monitor as needed.
+
+W 508 COVID-19 Vaccination of Facility Staff W 508
+CFR(s): 483.430(f)(1)-(3)(i)-(x)
+§ 483.430 Condition of Participation: Facility | |
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: 0FU211 Facility ID: 944892 If continuation sheet Page 19 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+34G146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING.
+
+{X3) DATE SURVEY
+COMPLETED
+
+————— 40/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+_|
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EAGH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(x4) 1D
+PREFIX
+
+TAG
+|
+i
+
+W 508 | Continued From page 19
+| Staffing.
+(f) Standard: COVID-19 Vaccination of facility
+| staff. The facility must develop and implement
+| policies and procedures to ensure that all staff are
+fully vaccinated for COVID-19. For purposes of
+this section, staff are considered fully vaccinated
+_ifit has been 2 weeks or more since they
+completed a primary vaccination series for
+COVID-19. The completion of a primary
+_ vaccination series for COVID-19 is defined here
+_as the administration of a single-dose vaccine, or
+_ the administration of all required doses of a
+| multi-dose vaccine.
+| (1) Regardless of clinical responsibility or client
+| contact, the policies and procedures must apply
+| to the following facility staff, who provide any |
+care, treatment, or other services for the facility
+and/or its clients: |
+(i) Facility employees;
+(ii) Licensed practitioners;
+(iii) Students, trainees, and volunteers; and
+(iv) Individuals who provide care, treatment, or
+| other services for the facility and/or its clients,
+| under contract or by other arrangement.
+| (2) The policies and procedures of this section
+_ do not apply to the following facility staff:
+(i) Staff who exclusively provide telehealth or |
+telemedicine services outside of the facility setting
+and who do not have any direct contact with
+clients and other staff specified in paragraph (f)(1)
+of this section; and
+(ii) Staff who provide support services for the
+| facility that are performed exclusively outside of
+| the facility setting and who do not have any direct
+_ contact with clients and other staff specified in
+| paragraph (f)(1) of this section.
+| (3) The policies and procedures must include, at |
+|
+
+a minimum, the following components:
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE,
+DEFICIENCY)
+W 508°
+
+Facility ID: 944892 If continuation sheet Page 20 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+34G146
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING 10/25/2022
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+STREET ADDRESS, CITY, STATE. ZIP CODE
+6214 KILMORY DRIVE
+FAYETTEVILLE, NC 28304
+
+SUMMARY STATEMENT OF DEFICIENCIES
+
+X4) 10
+teen (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 508 Continued From page 20 |
+
+(i) A process for ensuring all staff specified in
+paragraph (f)(1) of this section (except for those
+staff who have pending requests for, or who have |
+been granted, exemptions to the vaccination
+requirements of this section, or those staff for
+whom COVID-19 vaccination must be temporarily |
+delayed, as recommended by the CDC, due to
+clinical precautions and considerations) have
+received, ala minimum, a single-dose COVID-19
+vaccine, or the first dose of the primary
+vaccination series for a multi-dose COVID-19
+vaccine prior to staff providing any care,
+treatment, or other services for the facility and/or
+its clients;
+
+(iii) A process for ensuring the implementation of
+additional precautions, intended to mitigate the
+transmission and spread of COVID-19, for all staff!
+who are not fully vaccinated for COVID-19;
+
+(iv) A process for tracking and securely
+documenting the COVID-19 vaccination status of |
+all staff specified in paragraph (f)(1) of this
+section;
+
+(v) A process for tracking and securely
+documenting the COVID-19 vaccination status of |
+any staff who have obtained any booster doses
+as recommended by the CDC;
+
+(vi) A process by which staff may request an
+exemption from the staff COVID-19 vaccination
+requirements based on an applicable Federal law; |
+(vii) A process for tracking and securely
+documenting information provided by those staff
+who have requested, and for whom the facility
+has granted, an exemption from the staff
+COVID-19 vaccination requirements;
+
+(viii) A process for ensuring that all
+documentation, which confirms recognized
+clinical contraindications to COVID-19 vaccines
+and which supports staff requests for medical
+
+|
+fo
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: ne
+
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE:
+DEFICIENCY)
+W 508
+
+|
+
+If continuation sheet Page 21 of 23
+
+Facility ID: 944892
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X14) PROVIDER/SUPPLIERICLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 508 | Continued From page 21
+
+_ exemptions from vaccination, has been signed
+and dated by a licensed practitioner, whois not |
+the individual requesting the exemption, and who |
+is acting within their respective scope of practice
+as defined by, and in accordance with, all |
+applicable State and local laws, and for further |
+ensuring that such documentation contains:
+(A) All information specifying which of the
+authorized COVID-19 vaccines are clinically
+contraindicated for the staff member to receive
+and the recognized clinical reasons for the
+| contraindications; and |
+(B) A statement by the authenticating practitioner |
+recommending that the staff member be |
+| exempted from the facility's COVID-19
+vaccination requirements for staff based on the
+recognized clinical contraindications; |
+(ix) A process for ensuring the tracking and |
+secure documentation of the vaccination status of
+
+_ staff for whom COVID-19 vaccination must be
+temporarily delayed, as recommended by the
+CDC, due to clinical precautions and
+considerations, including, but not limited to,
+individuals with acute illness secondary to
+COVID-19, and individuals who received
+monoclonal antibodies or convalescent plasma
+for COVID-19 treatment; and
+
+(x) Contingency plans for staff who are not fully
+vaccinated for COVID-19.
+
+|
+Effective 60 Days After Publication: |
+| (ii) A process for ensuring that all staff specified in
+paragraph (f)(1) of this section are fully |
+vaccinated for COVID-19, except for those staff
+who have been granted exemptions to the
+vaccination requirements of this section, or those
+| staff for whom COVID-19 vaccination must be |
+| temporarily delayed, as recommended by the
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION, (X3) DATE SURVEY
+A. BUILDING COMPLETED
+
+8. WING ___________ 10/25/2022
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+6214 KILMORY DRIVE
+
+FAYETTEVILLE, NC 28304
+
+PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+W 508
+
+|
+|
+|
+|
+|
+!
+Facility ID: 944892 If continuation sheet Page 22 of 23
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER:
+
+346146
+
+NAME OF PROVIDER OR SUPPLIER
+
+EXTRA SPECIAL CARE
+
+SUMMARY STATEMENT OF DEFICIENCIES
+
+(x4) 1D
+PREFIX (EACH DEFICIENCY MUST 8E PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+W 508 | Continued From page 22 |
+
+| CDC, due to clinical precautions and
+considerations;
+
+This STANDARD is not met as evidenced by:
+
+| Based on record review and confirmed by
+interviews with staff, the facility did not have a
+
+| system for recording staff COVID-19 vaccination
+
+_ and/or approved exemption status as required.
+
+| This affected all clients in the facility (#1, #2, #3,
+
+| #4, #5 and #6). The finding is:
+
+| Review on 10/25/22 of the list for staff COVID-19 |
+
+| vaccinations and/or religious and medical
+
+| exemptions revealed there was confirmation for
+the administrator, qualified intellectual disabilities
+professional (QIDP) and the human resource
+director. The facility was unable to provide any
+other confirmations for the residential staff and
+professional contractors that worked with the
+clients in the facility.
+
+Interview on 10/25/22 with the QIDP and
+Administrator confirmed there was not currently a
+sysiem to provide documentation for staff
+vaccination and/or medical or religious
+
+| exemptions.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:0FU211
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING.
+
+PRINTED: 11/09/2022
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+10/25/2022
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+6214 KILMORY DRIVE
+
+FAYETTEVILLE, NC 28304
+ID PROVIDER'S PLAN OF CORRECTION (x5)
+
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 508
+W508: The facility will ensure to have a 12/25/2022
+
+system for recording staff COVID-19
+vaccination and/or approved exemption status
+as required. HR will monitor as new staff
+hired and QP will monitor weekly to make
+sure previous staff is vaccinated.
+
+Facility ID: 944892
+
+If continuation sheet Page 23 of 23

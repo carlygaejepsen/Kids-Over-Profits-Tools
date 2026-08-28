@@ -1,0 +1,55 @@
+Plan of Correction: UCU Residential Services LLC
+Tag V 132: Health Care Personnel Registry (HCPR) Notification
+
+Deficiency: The facility failed to notify the HCPR regarding an allegation that a staff member
+(Staff #1) pushed a client (Client #1) in the arm.
+
+* Immediate Corrective Action:
+
+* The Licensee will immediately notify the HCPR of the allegation involving Staff #1 and
+Client #1 as required by G.S. 8131E-256.
+
+* The facility will ensure that a full investigation is documented and results are reported to
+the Department within five working days of the initial notification.
+
+* Systemic Changes:
+
+* The facility will update its internal reporting protocol to ensure that allegations are
+reported regardless of the presence or health status of the Qualified Professional (QP).
+
+* Cross-training will be provided to the Licensee and other administrative staff to ensure
+HCPR notifications are submitted in the QP’s absence.
+
+* Monitoring:
+
+* The Licensee will conduct weekly audits of all internal incident reports for the next 90
+days to ensure any allegations meeting HCPR criteria have been filed correctly.
+
+Tag V 367: Incident Reporting Requirements (Level III)
+
+Deficiency: The facility failed to submit a Level Ill incident report into the Incident Response
+Improvement System (IRIS) regarding the allegation of abuse by Staff #1.
+
+* Immediate Corrective Action:
+
+* The Licensee will immediately submit the Level III incident report regarding the
+allegation of Staff #1 pushing Client #1 into the IRIS system.
+
+* Copies of this Level Ill report will be sent to the Division of Mental Health,
+Developmental Disabilities, and Substance Abuse Services and the responsible LME within
+the required 72-hour window (retroactively completed).
+
+* Systemic Changes:
+
+* Staff Training: All staff, including the Licensee and QP, will receive refresher training on
+10A NCAC 27G .0604, specifically focusing on the definitions of Level Il and Level Ill
+incidents and the mandatory 72-hour reporting timeline.
+
+* Contingency Plan: A written contingency plan will be established to designate a "Backup
+Submitter" for IRIS reports when the primary QP is unavailable due to illness or leave.
+
+* Monitoring:
+
+* The Licensee will review the IRIS dashboard monthly to ensure all documented
+incidents have a corresponding electronic submission and that all "missing or incomplete
+information" is updated by the end of the next business day

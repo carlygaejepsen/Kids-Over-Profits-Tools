@@ -1,0 +1,1137 @@
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+07/31/2024
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+ID PROVIDER'S PLAN OF CORRECTION (x8)
+
+PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+
+DEFICIENCY)
+
+E 039 | EP Testing Requirements
+CFR(s): 483.475(d)(2)
+
+§416.54(d)(2), §418.113(d)(2), §441.184(d)(2),
+§460.84(d)(2), §482.15(d)(2), §483.73(d)(2),
+
+§483.475(d)(2), §484.102(d)(2), §485.68(d)(
+§485.542(d)(2), §485.625(d)(2), §485.727(d
+§485.920(d)(2), §491.12(d)(2), §494.62(d)(2).
+
+S
+
+2),
+
+*[For ASCs at §416.54, CORFs at §485.68, REHs
+at §485.542, OPO, "Organizations" under
+§485.727, CMHCs at §485.920, RHCs/FQHCs at
+§491.12, and ESRD Facilities at §494.62]:
+
+(2) Testing. The [facility] must conduct exercises
+to test the emergency plan annually. The [facility]
+must do all of the following:
+
+(i) Participate in a full-scale exercise that is
+community-based every 2 years; or
+(A) When a community-based exercise is not
+accessible, conduct a facility-based functional
+exercise every 2 years; or
+
+(B) If the [facility] experiences an actual
+natural or man-made emergency that requires
+activation of the emergency plan, the [facility] is
+exempt from engaging in its next required
+community-based or individual, facility-based
+functional exercise following the onset of the
+actual event.
+(ii) Conduct an additional exercise at least every 2
+years, opposite the year the full-scale or
+functional exercise under paragraph (d)(2)(i) of
+this section is conducted, that may include, but is
+not limited to the following:
+(A) Asecond full-scale exercise that is
+community-based or individual, facility-based
+functional exercise; or
+(B) A mock disaster drill; or
+(C) A tabletop exercise or workshop that is led by
+
+LABORATORY DIRECTOR'S OR PROVIDER/SUPPLIER REPRESENTATIVE'S SIGNATURE
+
+E 039
+
+TITLE (X6) DATE
+
+Any deficiency statement ending with an asterisk (*) denotes a deficiency which the institution may be excused from correcting providing it is determined that
+other safeguards provide sufficient protection to the patients . (See instructions.) Except for nursing homes, the findings stated above are disclosable 90 days
+following the date of survey whether or not a plan of correction is provided. For nursing homes, the above findings and plans of correction are disclosable 14
+days following the date these documents are made available to the facility. If deficiencies are cited, an approved plan of correction is requisite to continued
+
+program participation.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete
+
+Event ID: WTJH11
+
+Facility ID: 922099 If continuation sheet Page 1 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+PRINTED: 08/01/2024
+
+FORM APPROVED
+
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+07/31/2024
+
+a facilitator and includes a group discussion using
+a narrated, clinically-relevant emergency
+scenario, and a set of problem statements,
+directed messages, or prepared questions
+designed to challenge an emergency plan.
+
+(iii) Analyze the [facility's] response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise the
+[facility's] emergency plan, as needed.
+
+*[For Hospices at 418. 113(d):]
+
+(2) Testing for hospices that provide care in the
+patient's home. The hospice must conduct
+exercises to test the emergency plan at least
+annually. The hospice must do the following:
+
+(i) Participate in a full-scale exercise that is
+community based every 2 years; or
+
+(A) When a community based exercise is not
+accessible, conduct an individual facility based
+functional exercise every 2 years; or
+
+(B) If the hospice experiences a natural or
+man-made emergency that requires activation of
+the emergency plan, the hospital is exempt from
+engaging in its next required full scale
+community-based exercise or individual
+facility-based functional exercise following the
+onset of the emergency event.
+
+(ii) Conduct an additional exercise every 2 years,
+opposite the year the full-scale or functional
+exercise under paragraph (d)(2)(i) of this section
+is conducted, that may include, but is not limited
+to the following:
+
+(A) Asecond full-scale exercise that is
+community-based or a facility based functional
+exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that is led by
+a facilitator and includes a group discussion using
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039) Continued From page 1 E 039
+
+Facility ID: 922099
+
+If continuation sheet Page 2 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+PRINTED: 08/01/2024
+
+FORM APPROVED
+
+OMB NO. 0938-0391
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+(X3) DATE SURVEY
+
+COMPLETED
+
+07/31/2024
+
+a narrated, clinically-relevant emergency
+
+scenario, and a set of problem statements,
+directed messages, or prepared questions
+designed to challenge an emergency plan.
+
+(3) Testing for hospices that provide inpatient
+care directly. The hospice must conduct
+exercises to test the emergency plan twice per
+year. The hospice must do the following:
+
+(i) Participate in an annual full-scale exercise that
+is community-based; or
+
+(A) When a community-based exercise is not
+accessible, conduct an annual individual
+facility-based functional exercise; or
+
+(B) If the hospice experiences a natural or
+man-made emergency that requires activation of
+the emergency plan, the hospice is exempt from
+engaging in its next required full-scale community
+based or facility-based functional exercise
+following the onset of the emergency event.
+
+(ii) Conduct an additional annual exercise that
+may include, but is not limited to the following:
+(A) Asecond full-scale exercise that is
+community-based or a facility based functional
+exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop led by a
+facilitator that includes a group discussion using a
+narrated, clinically-relevant emergency scenario,
+and a set of problem statements, directed
+messages, or prepared questions designed to
+challenge an emergency plan.
+
+(iii) Analyze the hospice's response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise the
+hospice's emergency plan, as needed.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 2 E 039
+
+Facility ID: 922099
+
+If continuation sheet Page 3 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+*[For PRFTs at §441.184(d), Hospitals at
+§482.15(d), CAHs at §485.625(d):]
+
+(2) Testing. The [PRTF, Hospital, CAH] must
+conduct exercises to test the emergency plan
+twice per year. The [PRTF, Hospital, CAH] must
+do the following:
+
+(i) Participate in an annual full-scale exercise that
+is community-based; or
+(A) When a community-based exercise is not
+accessible, conduct an annual individual,
+facility-based functional exercise; or
+(B) If the [PRTF, Hospital, CAH] experiences an
+actual natural or man-made emergency that
+requires activation of the emergency plan, the
+[facility] is exempt from engaging in its next
+required full-scale community based or individual,
+facility-based functional exercise following the
+onset of the emergency event.
+
+(ii) Conduct an [additional] annual exercise or
+and that may include, but is not limited to the
+following:
+
+(A) Asecond full-scale exercise that is
+community-based or individual, a facility-based
+functional exercise; or
+
+(B) A mock disaster drill; or
+
+(C) A tabletop exercise or workshop that is
+led by a facilitator and includes a group
+discussion, using a narrated, clinically-relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+questions designed to challenge an emergency
+plan.
+
+(iii) Analyze the [facility's] response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise the
+[facility's] emergency plan, as needed.
+
+*[For PACE at §460.84(d):]
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 3 E 039
+
+Facility ID: 922099
+
+If continuation sheet Page 4 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+(2) Testing. The PACE organization must conduct
+exercises to test the emergency plan at least
+annually. The PACE organization must do the
+following:
+
+(i) Participate in an annual full-scale exercise that
+is community-based; or
+
+(A) When a community-based exercise is not
+accessible, conduct an annual individual,
+facility-based functional exercise; or
+
+(B) If the PACE experiences an actual natural or
+man-made emergency that requires activation of
+the emergency plan, the PACE is exempt from
+engaging in its next required full-scale community
+based or individual, facility-based functional
+exercise following the onset of the emergency
+event.
+
+(ii) Conduct an additional exercise every 2
+years opposite the year the full-scale or functional
+exercise under paragraph (d)(2)(i) of this section
+is conducted that may include, but is not limited to
+the following:
+
+(A) Asecond full-scale exercise that is
+community-based or individual, a facility based
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that is led by
+a facilitator and includes a group discussion,
+using a narrated, clinically-relevant emergency
+scenario, and a set of problem statements,
+directed messages, or prepared questions
+designed to challenge an emergency plan.
+
+(iii) Analyze the PACE's response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise the
+PACE's emergency plan, as needed.
+
+*[For LTC Facilities at §483.73(d):]
+(2) The [LTC facility] must conduct exercises to
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+Facility ID: 922099
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 4 E 039
+
+If continuation sheet Page 5 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+test the emergency plan at least twice per year,
+including unannounced staff drills using the
+emergency procedures. The [LTC facility,
+ICF/IID] must do the following:
+
+(i) Participate in an annual full-scale exercise that
+is community-based; or
+
+(A) When a community-based exercise is not
+accessible, conduct an annual individual,
+facility-based functional exercise.
+
+(B) If the [LTC facility] facility experiences an
+actual natural or man-made emergency that
+requires activation of the emergency plan, the
+LTC facility is exempt from engaging its next
+required a full-scale community-based or
+individual, facility-based functional exercise
+following the onset of the emergency event.
+
+(ii) Conduct an additional annual exercise that
+may include, but is not limited to the following:
+
+(A) Asecond full-scale exercise that is
+community-based or an individual, facility based
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that is led by
+a facilitator includes a group discussion, using a
+narrated, clinically-relevant emergency scenario,
+and a set of problem statements, directed
+messages, or prepared questions designed to
+challenge an emergency plan.
+
+(iii) Analyze the [LTC facility] facility's response to
+and maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise the
+[LTC facility] facility's emergency plan, as needed.
+
+*[For ICF/IIDs at §483.475(d)]:
+
+(2) Testing. The ICF/IID must conduct exercises
+to test the emergency plan at least twice per year.
+The ICF/IID must do the following:
+
+(i) Participate in an annual full-scale exercise that
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039) Continued From page 5 E 039
+
+Facility ID: 922099
+
+If continuation sheet Page 6 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 6 E 039
+
+is community-based; or
+
+(A) When a community-based exercise is not
+accessible, conduct an annual individual,
+facility-based functional exercise; or.
+
+(B) If the ICF/IID experiences an actual natural or
+man-made emergency that requires activation of
+the emergency plan, the ICF/IID is exempt from
+engaging in its next required full-scale
+community-based or individual, facility-based
+functional exercise following the onset of the
+emergency event.
+
+(ii) Conduct an additional annual exercise that
+may include, but is not limited to the following:
+(A) Asecond full-scale exercise that is
+community-based or an individual, facility-based
+functional exercise; or
+
+(B) A mock disaster drill; or
+
+(C) A tabletop exercise or workshop that is led by
+a facilitator and includes a group discussion,
+using a narrated, clinically-relevant emergency
+scenario, and a set of problem statements,
+directed messages, or prepared questions
+designed to challenge an emergency plan.
+
+(iii) Analyze the ICF/IID's response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise the
+ICF/IID's emergency plan, as needed.
+
+*[For HHAs at §484.102]
+(d)(2) Testing. The HHA must conduct exercises
+to test the emergency plan at
+least annually. The HHA must do the following:
+(i) Participate in a full-scale exercise that is
+community-based; or
+
+(A) When a community-based exercise is not
+accessible, conduct an annual individual,
+facility-based functional exercise every 2 years;
+or.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+Facility ID: 922099
+
+If continuation sheet Page 7 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+(B) If the HHA experiences an actual natural
+or man-made emergency that requires activation
+of the emergency plan, the HHA is exempt from
+engaging in its next required full-scale
+community-based or individual, facility based
+functional exercise following the onset of the
+emergency event.
+
+(ii) Conduct an additional exercise every 2 years,
+opposite the year the full-scale or functional
+exercise under paragraph (d)(2)(i) of this section
+is conducted, that may include, but is not
+limited to the following:
+
+(A) A second full-scale exercise that is
+community-based or an individual, facility-based
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that is
+led by a facilitator and includes a group
+discussion, using a narrated, clinically-relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+questions designed to challenge an emergency
+plan.
+
+(iii) Analyze the HHA's response to and maintain
+documentation of all drills, tabletop exercises, and
+emergency events, and revise the HHA's
+emergency plan, as needed.
+
+*[For OPOs at §486.360]
+
+(d)(2) Testing. The OPO must conduct exercises
+to test the emergency plan. The OPO must do the
+following:
+
+(i) Conduct a paper-based, tabletop exercise or
+workshop at least annually. A tabletop exercise is
+led by a facilitator and includes a group
+discussion, using a narrated, clinically relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 7 E 039
+
+Facility ID: 922099
+
+If continuation sheet Page 8 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+07/31/2024
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 8 E 039
+
+questions designed to challenge an emergency
+plan. If the OPO experiences an actual natural or
+man-made emergency that requires activation of
+the emergency plan, the OPO is exempt from
+engaging in its next required testing exercise
+following the onset of the emergency event.
+
+(ii) Analyze the OPO's response to and maintain
+documentation of all tabletop exercises, and
+emergency events, and revise the [RNHCI's and
+OPO's] emergency plan, as needed.
+
+*[ RNCHIs at §403.748]:
+
+(d)(2) Testing. The RNHCI must conduct
+exercises to test the emergency plan. The RNHCI
+must do the following:
+
+(i) Conduct a paper-based, tabletop exercise at
+least annually. A tabletop exercise is a group
+discussion led by a facilitator, using a narrated,
+clinically-relevant emergency scenario, and a set
+of problem statements, directed messages, or
+prepared questions designed to challenge an
+emergency plan.
+
+(ii) Analyze the RNHCI's response to and
+maintain documentation of all tabletop exercises,
+and emergency events, and revise the RNHCI's
+emergency plan, as needed.
+
+This STANDARD is not met as evidenced by:
+Based on record review and interview, the facility
+failed to conduct biennial testing of the facility's
+emergency preparedness plan (EPP). The finding
+Is:
+
+Review on 7/30/24-7/31/24 of the facility's EPP
+revealed no evidence of a full-scale
+community-based or facility-based functional
+exercise training to evaluate the emergency plan.
+
+Interview on 7/31/24 with the qualified intellectual
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+disabilities professional (QIDP) confirmed that
+
+Facility ID: 922099 If continuation sheet Page 9 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+CFR(s): 483.460(k)(1)
+
+The system for drug administration must assure
+that all drugs are administered in compliance with
+the physician's orders.
+
+This STANDARD is not met as evidenced by:
+Based on observation, record review and
+interview, the facility failed to ensure all
+medications were administered in compliance
+with the physician orders for 1 of 6 clients (#2).
+The finding is:
+
+Observation in the group home on 7/31/24 at 6:38
+AM revealed staff A to prompt client #2 to the
+medication room. Continued observations
+revealed staff A to prompt client #2 to sanitize her
+hands. Further observation revealed staff A to
+obtain the basket of medications from the
+cabinet, educate client #2 and pour the client a
+cup of water. Subsequent observations revealed
+client #2 to choose applesauce and for staff A to
+punch all 6:30 AM and 8:00 AM medications into
+a medicine cup containing the applesauce. The
+client was observed to be fed all medications
+whole in applesauce and to drink water.
+
+Review of records for client #5 on 7/31/24
+revealed physician orders dated 7/31/24. Review
+of the 7/31/24 physician orders revealed
+medications to administer at 8:00 AM to be
+Divalproex tab 500MG DR, Levetiraceta tab
+750MG, Phenytoin EX cap 100MG, Propranolol
+tab 10MG, and Vitamin D3 1000IU tab. Client
+#2's Levothyroxine tab 88 MCG to be
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION %5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039] Continued From page 9 E 039
+the facility has no evidence of conducting a
+full-scale community or facility-based training to
+evaluate the emergency plan.
+W 368 | DRUG ADMINISTRATION W 368
+
+Facility ID: 922099
+
+If continuation sheet Page 10 of 13.
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+SUMMARY STATEMENT OF DEFICIENCIES
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(x4) ID
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+
+WILKESBORO, NC 28697
+ID
+
+PREFIX
+TAG
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+
+DEFICIENCY)
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+(8)
+COMPLETION
+DATE
+
+W 368 | Continued From page 10
+
+administered at 6:30 AM was administered as
+prescribed.
+
+Interview with staff A on 7/31/24 revealed that the
+staff confirmed with the surveyor that a
+medication error occurred. Continued interview
+with the staff revealed that client #2 was not
+supposed to receive the 8:00 AM medications
+and that nursing will be notified of the medication
+error.
+
+Interview with the facility nurse on 7/31/24
+confirmed the 7/31/24 physician orders for client
+#2 to be current. Continued interview with the
+facility nurse revealed that staff should administer
+all medications as prescribed.
+
+MEAL SERVICES
+
+CFR(s): 483.480(b)(2)(iv)
+
+W 475
+
+Food must be served with appropriate utensils.
+This STANDARD is not met as evidenced by:
+Based on observations, record reviews, and
+interviews, the facility failed to assure 2 of 6
+clients (#2 and #6) were provided appropriate
+utensils to allow each client to eat as
+independently as possible. The findings are:
+
+Afternoon observations in the group home on
+7/30/24 at 5:25 PM revealed all clients at the
+dining room table preparing for the dinner meal.
+The dinner meal consisted of the following: rice,
+beef Lo mein stir fry, broccoli, and 2% milk.
+Continued observations revealed client #2 and #6
+to be provided a spoon only as they participated
+in the dinner meal. Subsequent observations
+revealed all clients to consume the dinner meal
+with utensils provided. At no point during the
+observation period were client #2 and #6 offered
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+W 368
+
+W 475
+
+Facility ID: 922099
+
+If continuation sheet Page 11 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+
+a full place setting consisting of a fork, knife, and
+spoon during the dinner meal.
+
+Morning observations in the group home on
+7/31/24 at 7:54 AM revealed all clients at the
+dining room table preparing for the breakfast
+meal. The breakfast meal consisted of the
+following: cheese toast, strawberries, cereal with
+milk, orange juice, and coffee. Continued
+observations revealed client #2 to be provided
+with a maroon spoon and client #6 to be provided
+a regular spoon. Subsequent observations
+revealed all clients consumed the breakfast meal
+with the utensils provided. At no point during the
+observation period were client #2 and #6 offered
+a full place setting consisting of a fork, knife, and
+spoon during the breakfast meal.
+
+Review of records on 7/31/24 for client #2
+revealed a person-centered plan (PCP) dated
+1/24/24. Continued review of the PCP revealed
+that the client has no adaptive equipment needs.
+Continued review of the PCP revealed an
+Occupational Therapy (OT) evaluation dated
+9/22/23 to note that client #2 uses the following
+utensil: spoon, fork, and knife.
+
+Subsequent review of records on 7/31/24 for
+client #6 revealed a PCP dated 12/5/23.
+Continued review of the PCP revealed that the
+client is on a regular diet and thin liquids with no
+restriction or adaptive equipment used. Continued
+review of the PCP revealed an OT evaluation
+dated 9/22/23 to note that client #6 uses the
+following utensils: fork, knife, and spoon.
+
+Interview on 7/31/24 with the qualified intellectual
+disabilities professional (QIDP) confirmed that the
+PCP's for clients #2 and #6 were current.
+
+Continued interview with the QIDP confirmed that
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 475 | Continued From page 11 W 475
+
+Facility ID: 922099
+
+If continuation sheet Page 12 of 13
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+346229
+NAME OF PROVIDER OR SUPPLIER
+
+LAKEWOOD
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+PRINTED: 08/01/2024
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+07/31/2024
+STREET ADDRESS, CITY, STATE, ZIP CODE
+
+554 RIDGE LANE
+WILKESBORO, NC 28697
+
+client #2 and #6 should be provided with a full
+placement of utensils which includes a fork, knife,
+and spoon.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: WTJH11
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (x5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 475 | Continued From page 12 W 475
+
+Facility ID: 922099 If continuation sheet Page 13 of 13

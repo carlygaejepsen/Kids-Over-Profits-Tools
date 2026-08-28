@@ -1,0 +1,2949 @@
+PRINTED: 03/16/2020
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+
+CENTERS FOR MEDICARE & MEDICAID SERVICES. OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING COMPLETED
+Cc
+34G272 B. WING 03/11/2020
+
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+
+CREST ROAD GROUP HOME SOUTHERN PINES, NC 28387
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 006 | Plan Based on All Hazards Risk Assessment E 006
+
+CFR(s): 483.475(a)(1)-(2)
+
+[(a) Emergency Plan. The [facility] must develop
+and maintain an emergency preparedness plan
+that must be reviewed, and updated at least every
+2 years. The plan must do the following:]
+
+(1) Be based on and include a documented,
+facility-based and community-based risk
+assessment, utilizing an all-hazards approach.*
+
+(2) Include strategies for addressing emergency
+events identified by the risk assessment.
+
+*[For LTC facilities at §483.73(a)(1):] Emergency
+Plan. The LTC facility must develop and maintain
+an emergency preparedness plan that must be
+reviewed, and updated at least annually. The plan
+must do the following:
+
+(1) Be based on and include a documented,
+facility-based and community-based risk
+assessment, utilizing an all-hazards approach,
+including missing residents.
+
+(2) Include strategies for addressing emergency
+events identified by the risk assessment.
+
+*[For ICF/IIDs at §483.475(a)(1):] Emergency
+Plan. The ICF/IID must develop and maintain an
+emergency preparedness plan that must be
+reviewed, and updated at least every 2 years. The
+plan must do the following:
+
+(1) Be based on and include a documented,
+facility-based and community-based risk
+assessment, utilizing an all-hazards approach,
+including missing clients.
+
+(2) Include strategies for addressing emergency
+events identified by the risk assessment.
+
+* [For Hospices at §418.113(a)(2):] Emergency
+LABORATORY DIRECTOR'S OR PROVIDER/SUPPLIER REPRESENTATIVE'S SIGNATURE TITLE (X6) DATE
+
+Any deficiency statement ending with an asterisk (*) denotes a deficiency which the institution may be excused from correcting providing it is determined that
+other safeguards provide sufficient protection to the patients. (See instructions.) Except for nursing homes, the findings stated above are disclosable 90 days
+following the date of survey whether or not a plan of correction is provided. For nursing homes, the above findings and plans of correction are disclosable 14
+days following the date these documents are made available to the facility. If deficiencies are cited, an approved plan of correction is requisite to continued
+program participation.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111 Facility ID: 955486 If continuation sheet Page 1 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+Plan. The Hospice must develop and maintain an
+emergency preparedness plan that must be
+reviewed, and updated at least every 2 years. The
+plan must do the following:
+
+(1) Be based on and include a documented,
+facility-based and community-based risk
+assessment, utilizing an all-hazards approach.
+(2) Include strategies for addressing emergency
+events identified by the risk assessment,
+including the management of the consequences
+of power failures, natural disasters, and other
+emergencies that would affect the hospice's
+ability to provide care.
+
+This STANDARD is not met as evidenced by:
+Based on policy review and interview, the facility
+failed to develop an emergency preparedness
+(EP) plan including and based upon a community
+and facility-based risk assessment utilizing an
+all-hazards approach. This had the potential to
+affect all clients. The finding is:
+
+The facility did not have an EP plan based upon
+risk assessments.
+
+Review on 3/10/20 of the the facility's current EP
+plan revised on 12/31/19, revealed the plan did
+not provide specific information in regards to a
+facility-based and community-based risk
+assessment using an all-hazards approach.
+
+Interview on 3/10/20 with the Habilitation
+Specialist (HS) revealed that any additional
+information not contained in the EP manual
+presented most likely was kept at the corporate
+Office.
+
+Interview on 3/10/20 with the Qualified Intellectual
+Disabilities Professional (QIDP) identified that she
+could not locate a risk assessment for the group
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 006 | Continued From page 1 E 006
+
+Facility ID: 955486 If continuation sheet Page 2 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+CFR(s): 483.475(b)(1)
+
+[(b) Policies and procedures. [Facilities] must
+develop and implement emergency preparedness
+policies and procedures, based on the emergency
+plan set forth in paragraph (a) of this section, risk
+assessment at paragraph (a)(1) of this section,
+and the communication plan at paragraph (c) of
+this section. The policies and procedures must
+be reviewed and updated every 2 years (annually
+for LTC). At a minimum, the policies and
+procedures must address the following:
+
+(1) The provision of subsistence needs for staff
+and patients whether they evacuate or shelter in
+place, include, but are not limited to the following:
+(i) Food, water, medical and pharmaceutical
+supplies
+(ii) Alternate sources of energy to maintain
+the following:
+
+(A) Temperatures to protect patient health
+and safety and for the safe and sanitary storage
+of provisions.
+
+(B) Emergency lighting.
+
+(C) Fire detection, extinguishing, and
+alarm systems.
+
+(D) Sewage and waste disposal.
+
+*[For Inpatient Hospice at §418.113(b)(6)(iii):]
+Policies and procedures.
+(6) The following are additional requirements for
+hospice-operated inpatient care facilities only.
+The policies and procedures must address the
+following:
+
+(iii) The provision of subsistence needs for
+hospice employees and patients, whether they
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 006 | Continued From page 2 E 006
+home that identified specifics hazards.
+E 015 | Subsistence Needs for Staff and Patients E015
+
+Facility ID: 955486 If continuation sheet Page 3 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+evacuate or shelter in place, include, but are not
+limited to the following:
+
+(A) Food, water, medical, and
+pharmaceutical supplies.
+
+(B) Alternate sources of energy to
+maintain the following:
+
+(1) Temperatures to protect patient
+health and safety and for the safe and sanitary
+storage of provisions.
+
+(2) Emergency lighting.
+
+(3) Fire detection, extinguishing, and
+alarm systems.
+
+(C) Sewage and waste disposal.
+This STANDARD is not met as evidenced by:
+Based on observation, policy review and staff
+interviews, the facility failed to ensure emergency
+provisions for subsistence needs for staff and
+clients included adequate food and water as
+identified in the emergency preparedness (EP)
+plan. This potentially affected all clients residing
+in the home. The finding is:
+
+Adequate emergency food and water were not
+available.
+
+During observations in the home from 3/10/20 to
+3/11/20, the facility's portable container for
+emergency food supplies remained empty. In the
+acility cabinets was a large selection of canned
+vegetables, boxes of dry pasta and sauces, that
+required a heat source to prepare. In addition
+here was an inadequate supply of ready to eat
+oods in the cabinet which included: several
+opened containers of dry cereal, boxes of chips
+and crackers, 1 six pack of applesauce, 1 four
+pack of pudding, and 1 jar of peanut butter.
+
+Review on 3/11/20 of the facility's EP plan revised
+on 12/31/19, did not have specific information on
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 015 | Continued From page 3 E015
+
+Facility ID: 955486 If continuation sheet Page 4 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+E 015 | Continued From page 4
+
+emergency food storage policy or identify a
+rotation schedule to ensure the food's freshness.
+
+Interview on 3/10/20 with the Habilitation
+Specialist (HS) revealed that it was the
+responsibility of the Home Manager (HM) to stock
+
+the emergency supplies. 1
+that she was supposed to
+ensure that there were ad
+
+Interview on 3/11/20 with
+
+The HS acknowledged
+check monthly to
+lequate supplies.
+
+he Home Manager
+
+(HM) revealed that in January '20, the nutritionist
+visited the home and found expired food in the
+emergency supplies container. The nutritionist
+had the former HM discard all expired food. The
+
+HM commented that she
+
+annually. Currently, she s'
+pack of water and a few g
+
+food supplies were supposed to be check
+
+hought the emergency
+
+ated that they had a 24
+allons of water on hand
+
+for clients and staff. The HS did not have an
+explanation for why the food had not been
+replenished since she took over as HM a month
+ago.
+
+Policies/Procedures for Sheltering in Place
+CFR(s): 483.475(b)(4)
+
+E022
+
+(b) Policies and procedures. The [facilities] must
+develop and implement emergency preparedness
+policies and procedures, based on the emergency
+plan set forth in paragraph (a) of this section, risk
+assessment at paragraph (a)(1) of this section,
+and the communication plan at paragraph (c) of
+this section. The policies and procedures must
+be reviewed and updated at least every 2 years
+(annually for LTC).] At a minimum, the policies
+and procedures must address the following:]
+
+[(4) or (2),(3),(5),(6)] A means to shelter in place
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+E015
+
+E022
+
+Facility ID: 955486 If continuation sheet Page 5 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIER/CLIA
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: A
+
+34G272 B.
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+(x3) DATE SURVEY
+COMPLETED
+Cc
+
+03/11/2020
+
+BUILDING
+
+WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+E 022 | Continued From page 5
+
+for patients, staff, and volunteers who remain in
+the [facility].
+
+*[For Inpatient Hospices at §418.113(b):] Policies
+and procedures.
+
+(6) The following are additional requirements for
+hospice-operated inpatient care facilities only.
+The policies and procedures must address the
+following:
+
+(i) Ameans to shelter in place for patients,
+hospice employees who remain in the hospice.
+This STANDARD is not met as evidenced by:
+Based on record review and staff interviews, the
+facility failed to develop policy and procedures for
+heltering in place in their emergency
+preparedness (EP) plan. This potentially affected
+all clients residing in the home. The finding is:
+
+o
+
+The facility's EP plan only focused on evacuation.
+
+Review on 3/10/20 of the facility's EP plan revised
+on 12/31/19 did not include language for
+situations that would call for the clients and staff
+io shelter in place.
+
+nterview on 3/10/20 with the Habilitation
+Specialist (HS) and Qualified Intellectual
+Disabilities Professional (QIDP) revealed that
+heir EP policy had not addressed provisions and
+instruction for staff in the event of an emergency
+hat required them to shelter in place, for an
+undetermined period of time. The HS suggested
+hat if anyone in their household was suspected
+of having an infectious disease, she would seek
+medical guidance from the hospital, in the event a
+quarantine was necessary.
+Arrangement with Other Facili
+CFR(s): 483.475(b)(7)
+
+E025 ies
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+E022
+
+E025
+
+Facility ID: 955486 If continuation sheet Page 6 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+E 025 | Continued From page 6
+
+[(b) Policies and procedures. The [facilities] must
+develop and implement emergency preparedness
+policies and procedures, based on the emergency
+plan set forth in paragraph (a) of this section, risk
+assessment at paragraph (a)(1) of this section,
+and the communication plan at paragraph (c) of
+this section. The policies and procedures must
+be reviewed and updated at least every 2 years
+(annually for LTC).] At a minimum, the policies
+and procedures must address the following:]
+
+*[For Hospices at §418.113(b), PRFTs at
+§441.184,(b) Hospitals at §482.15(b), and LTC
+Facilities at §483.73(b):] Policies and procedures.
+(7) [or (5)] The development of arrangements with
+other [facilities] [and] other providers to receive
+patients in the event of limitations or cessation of
+operations to maintain the continuity of services
+to facility patients.
+
+*[For PACE at §460.84(b), ICF/IIDs at
+§483.475(b), CAHs at §486.625(b), CMHCs at
+§485.920(b) and ESRD Facilities at §494.62(b):]
+Policies and procedures. (7) [or (6), (8)] The
+development of arrangements with other
+[facilities] [or] other providers to receive patients
+in the event of limitations or cessation of
+operations to maintain the continuity of services
+to facility patients.
+
+*[For RNHCIs at §403.748(b):] Policies and
+procedures. (7) The development of
+arrangements with other RNHCls and other
+providers to receive patients in the event of
+limitations or cessation of operations to maintain
+the continuity of non-medical services to RNHCI
+patients.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+This STANDARD is not met as evidenced by:
+
+E025
+
+Facility ID: 955486 If continuation sheet Page 7 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+Cc
+03/11/2020
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+E 025 | Continued From page 7
+
+Based on interviews and review of the facility's
+emergency preparedness (EP) plan, the facility
+failed to document pre-arranged accomodations
+for clients in the event services could not be
+delivered in the home. This potentially affected all
+clients in the home. The finding is:
+
+The facility failed to list emergency
+accomodations in their EP plan.
+
+Review on 3/10/20 of the facility's EP plan revised
+on 12/31/19 revealed that there was no listing of
+accomodations or agreements for emergency
+purposes.
+
+nterview on 3/10/20 with the Habilitation
+Specialist (HS) revealed that the facility had an
+arrangement with a hotel in the county, but she
+did not have a copy of the agreement. The HS
+stated that the Qualified Intellectual Disabilities
+Professional (QIDP) had a copy of the hotel
+arrangements.
+
+nterview on 3/10/20 with the QIDP revealed that
+he facility had used a local hotel in the past for
+he group homes. The QIDP could not locate a
+copy of the agreement when reviewing the EP
+plan files.
+
+EP Training Program
+
+CFR(s): 483.475(d)(1)
+
+E 037
+
+*[For RNCHIs at §403.748, ASCs at §416.54,
+Hospitals at §482.15, ICF/IIDs at §483.475, HHAs
+at §484.102, "Organizations" under §485.727,
+OPOs at §486.360, RHC/FQHCs at §491.12:] (1)
+Training program. The [facility] must do all of the
+following:
+
+(i) Initial training in emergency preparedness
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+E025
+
+E 037
+
+Facility ID: 955486 If continuation sheet Page 8 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+policies and procedures to all new and existing
+staff, individuals providing services under
+arrangement, and volunteers, consistent with their
+expected roles.
+
+(ii) Provide emergency preparedness training
+at least every 2 years.
+
+(iii) Maintain documentation of all emergency
+preparedness training.
+
+(iv) Demonstrate staff knowledge of
+emergency procedures.
+
+(v) If the emergency preparedness policies
+and procedures are significantly updated, the
+[facility] must conduct training on the updated
+policies and procedures.
+
+*[For Hospices at §418.113(d):] (1) Training. The
+hospice must do all of the following:
+
+(i) Initial training in emergency preparedness
+policies and procedures to all new and existing
+hospice employees, and individuals providing
+services under arrangement, consistent with their
+expected roles.
+
+(ii) Demonstrate staff knowledge of
+emergency procedures.
+
+(iii) Provide emergency preparedness training
+at least every 2 years.
+
+(iv) Periodically review and rehearse its
+emergency preparedness plan with hospice
+employees (including nonemployee staff), with
+special emphasis placed on carrying out the
+procedures necessary to protect patients and
+others.
+
+(v) Maintain documentation of all emergency
+preparedness training.
+
+(vi) If the emergency preparedness policies
+and procedures are significantly updated, the
+hospice must conduct training on _—_ the updated
+policies and procedures.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 037 | Continued From page 8 E 037
+
+Facility ID: 955486 If continuation sheet Page 9 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+*[For PRTFs at §441.184(d):] (1) Training
+program. The PRTF must do all of the following:
+
+(i) Initial training in emergency preparedness
+policies and procedures to all new and existing
+staff, individuals providing services under
+arrangement, and volunteers, consistent with their
+expected roles.
+
+(ii) After initial training, provide emergency
+preparedness training every 2 years.
+
+(iii) Demonstrate staff knowledge of
+emergency procedures.
+
+(iv) Maintain documentation of all emergency
+preparedness training.
+
+(v) If the emergency preparedness policies
+and procedures are significantly updated, the
+PRTF must conduct training on the updated
+policies and procedures.
+
+*[For LTC Facilities at §483.73(d):] (1) Training
+Program. The LTC facility must do all of the
+following:
+(i) Initial training in emergency preparedness
+policies and procedures to all new and existing
+staff, individuals providing services under
+arrangement, and volunteers, consistent with their
+expected role.
+
+(ii) Provide emergency preparedness training
+least annually.
+
+(iii) Maintain documentation of all emergency
+preparedness training.
+
+(iv) Demonstrate staff knowledge of
+
+emergency procedures.
+
+a
+
+*[For CORFs at §485.68(d):](1) Training. The
+CORF must do all of the following:
+
+(i) Provide initial training in emergency
+preparedness policies and procedures to all new
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 037 | Continued From page 9 E 037
+
+Facility ID: 955486 If continuation sheet Page 10 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+(x3) DATE SURVEY
+COMPLETED
+Cc
+
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+and existing staff, individuals providing
+services under arrangement, and volunteers,
+consistent with their expected roles.
+
+(ii) Provide emergency preparedness training
+at least every 2 years.
+
+(iii) Maintain documentation of the training.
+
+(iv) Demonstrate staff knowledge of
+emergency procedures. All new personnel must
+be oriented and assigned specific
+
+responsibilities regarding the CORF's
+emergency plan within 2 weeks of their first
+workday. The training program must include
+instruction in the location and use of alarm
+systems and signals and firefighting equipment.
+
+(v)_ If the emergency preparedness policies
+and procedures are significantly updated, the
+CORF must conduct training on the updated
+policies and procedures.
+
+*[For CAHs at §485.625(d):] (1) Training program.
+The CAH must do all of the following:
+
+(i) Initial training in emergency preparedness
+policies and procedures, including prompt
+reporting and extinguishing of _ fires, protection,
+and where necessary, evacuation of patients,
+personnel, and guests, fire prevention, and
+cooperation with _ firefighting and disaster
+authorities, to all new and existing staff,
+individuals providing services under arrangement,
+and volunteers, consistent with their expected
+roles.
+
+(ii) Provide emergency preparedness training
+at least every 2 years.
+
+(iii) Maintain documentation of the training.
+
+(iv) Demonstrate staff knowledge of
+emergency procedures.
+
+(v)_ If the emergency preparedness policies
+and procedures are significantly updated, the
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 037 | Continued From page 10 E 037
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+Facility ID: 955486 If continuation sheet Page 11 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+CAH must conduct training on
+policies and procedures.
+
+the updated
+
+*[For CMHCs at §485.920(d):] (1) Training. The
+CMHC must provide initial training in emergency
+preparedness policies and procedures to all new
+and existing staff, individuals providing services
+under arrangement, and volunteers, consistent
+with their expected roles, and maintain
+documentation of the training. The CMHC must
+demonstrate staff knowledge of emergency
+procedures. Thereafter, the CMHC must provide
+emergency preparedness training at least every 2
+years.
+This STANDARD is not met as evidenced by:
+Based on record review and interviews, the
+facility failed to document emergency
+preparedness (EP) plan training for staff. This
+potentially affected all clients. The finding is:
+
+Staff did not receive EP plan training as required.
+
+Review on 3/10/20 of the facility's EP plan
+revealed that there were no evidence of EP
+training for all staff. There was one document,
+dated 1/22/20 titled Emergency Evacuations with
+an attached flyer on cooking safety. There were
+six participants which included four
+non-management staff. Further, the names of the
+facility's newest employees were not documented
+as receiving EP plan training sheet.
+
+Interview on 3/10/20 with the Habilitation
+Specialist (HS) revealed that the facility did not
+provide any training for any new staff; plus no
+table top or full scale EP exercises were
+conducted.
+
+Interview on 3/11/20 with the Qualified Intellectual
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 037 | Continued From page 11 E 037
+
+Facility ID: 955486 If continuation sheet Page 12 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+CFR(s): 483.475(d)(2)
+
+*[For RNCHI at §403.748, ASCs at §416.54,
+HHAs at §484.102, CORFs at §485.68, OPO,
+"Organizations" under §485.727, CMHC at
+§485.920, RHC/FQHC at §491.12, ESRD
+Facilities at §494.62]:
+
+(2) Testing. The [facility] must conduct exercises
+to test the emergency plan annually. The [facility]
+must do all of the following:
+
+(i) Participate in a full-scale exercise that is
+community-based every 2 years; or
+
+(A) When a community-based exercise is
+not accessible, conduct a facility-based functional
+exercise every 2 years; or
+
+(B) If the [facility] experiences an actual
+natural or man-made emergency that requires
+activation of the emergency plan, the [facility]
+is exempt from engaging in its next required
+community-based or individual, facility-based
+
+functional exercise following the onset of
+the actual event.
+
+(ii) Conduct an additional exercise at least
+every 2 years, opposite the year the full-scale or
+functional exercise under —_ paragraph (d)(2)(i) of
+this section is conducted, that may include, but is
+not limited to the following:
+
+(A) Asecond full-scale exercise that is
+community-based or individual, facility-based
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 037 | Continued From page 12 E 037
+Disabilities Professional (QIDP) revealed that she
+recalled someone trained staff in their homes on
+EP plan. The QIDP acknowledged that she did
+not have documentation of the training.
+E 039 | EP Testing Requirements E 039
+
+Facility ID: 955486 If continuation sheet Page 13 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+is led by a facilitator and includes a group
+discussion using a narrated,
+
+Clinically-relevant emergency scenario, anda
+set of problem statements, directed messages, or
+prepared questions designed to challenge an
+emergency plan.
+
+(iii) Analyze the [facility's] response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events, and
+revise the [facility's] emergency plan, as needed.
+
+*[For Hospices at 418.113(d):]
+
+(2) Testing for hospices that provide care in the
+patient's home. The hospice must conduct
+exercises to test the emergency plan at least
+annually. The hospice must do the following:
+
+(i) Participate in a full-scale exercise that is
+community based every 2 years; or
+
+(A) When a community based exercise is
+not accessible, conduct an individual facility
+based functional exercise every 2 years; or
+
+(B) If the hospice experiences a natural
+or man-made emergency that requires activation
+of the emergency plan, the hospital is
+exempt from engaging in its next required full
+scale community-based exercise or individual
+facility- based functional exercise following
+the onset of the emergency event.
+
+(ii) Conduct an additional exercise every 2
+years, opposite the year the full-scale or
+functional exercise under paragraph (d) (2)(i) of
+this section is conducted, that may include, but is
+not limited to the following:
+
+(A) Asecond full-scale exercise that is
+community-based or a facility based functional
+exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 13 E039
+
+Facility ID: 955486 If continuation sheet Page 14 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+is led by a facilitator and includes a group
+discussion using a narrated,
+
+Clinically-relevant emergency scenario, anda
+set of problem statements, directed messages, or
+prepared questions designed to challenge an
+emergency plan.
+
+(3) Testing for hospices that provide inpatient
+care directly. The hospice must conduct
+exercises to test the emergency plan twice per
+year. The hospice must do the following:
+(i) Participate in an annual full-scale exercise
+
+hat is community-based; or
+
+(A) When a community-based exercise is
+not accessible, conduct an annual individual
+acility-based functional exercise; or
+(B) If the hospice experiences a natural
+or man-made emergency that requires activation
+of the emergency plan, the hospice is
+exempt from engaging in its next required
+ull-scale community based or facility-based
+unctional exercise following the onset
+of the emergency event.
+(ii) Conduct an additional annual exercise
+hat may include, but is not limited to the
+ollowing:
+
+(A) Asecond full-scale exercise that is
+community-based or a facility based functional
+exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop led
+by a facilitator that includes a group discussion
+using a narrated, clinically-relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+questions designed to challenge an
+emergency plan.
+
+(iii) Analyze the hospice's response to and
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 14 E039
+
+Facility ID: 955486 If continuation sheet Page 15 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise
+the hospice's emergency plan, as needed.
+
+*[For PRFTs at §441.184(d), Hospitals at
+§482.15(d), CAHs at §485.625(d):]
+
+(2) Testing. The [PRTF, Hospital, CAH] must
+conduct exercises to test the emergency plan
+twice per year. The [PRTF, Hospital, CAH] must
+do the following:
+
+(i) Participate in an annual full-scale exercise
+that is community-based; or
+
+(A) When a community-based exercise is
+not accessible, conduct an annual individual,
+facility-based functional exercise; or
+
+(B) If the [PRTF, Hospital, CAH]
+experiences an actual natural or man-made
+emergency that requires activation of
+emergency plan, the [facility] is exempt from
+engaging in its next required full-scale community
+based or individual, facility-based
+functional exercise following the onset of the
+emergency event.
+
+(ii) Conduct an [additional] annual exercise or
+and that may include, but is not limited to the
+following:
+
+(A) Asecond full-scale
+community-based or individual,
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that
+is led by a facilitator and includes a group
+discussion, using a narrated,
+
+Clinically-relevant emergency scenario, anda
+set of problem statements, directed messages, or
+prepared questions designed to challenge an
+emergency plan.
+
+(iii) Analyze the [facility's] response to and
+
+the
+
+exercise that is
+a facility-based
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 15 E039
+
+Facility ID: 955486 If continuation sheet Page 16 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+maintain documentation of all drills, tabletop
+exercises, and emergency events and revise
+he [facility's] emergency plan, as needed.
+
+*[For LTC Facilities at §483.73(d):]
+
+(2) The [LTC facility] must conduct exercises to
+lest the emergency plan at least twice per year,
+including unannounced staff drills using the
+emergency procedures. The [LTC facility,
+CF/IID] must do the following:
+
+(i) Participate in an annual full-scale exercise
+hat is community-based; or
+
+(A) When a community-based exercise is
+not accessible, conduct an annual individual,
+acility-based functional exercise.
+
+(B) If the [LTC facility] facility experiences
+an actual natural or man-made emergency that
+requires activation of the emergency plan,
+he LTC facility is exempt from engaging its next
+required a full-scale community-based or
+
+individual, facility-based functional exercise
+‘ollowing the onset of the emergency event.
+
+(ii) Conduct an additional annual exercise
+hat may include, but is not limited to the
+ollowing:
+
+(A) Asecond full-scale exercise that is
+community-based or an individual, facility based
+‘unctional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that
+is led by a facilitator includes a group discussion,
+using a narrated, clinically-relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+questions designed to challenge an
+emergency plan.
+
+(iii) Analyze the [LTC facility] facility's
+response to and maintain documentation of all
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 16 E039
+
+Facility ID: 955486 If continuation sheet Page 17 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+drills, tabletop exercises, and emergency
+events, and revise the [LTC facility] facility's
+emergency plan, as needed.
+
+*[For ICF/IIDs at §483.475(d)]:
+
+(2) Testing. The ICF/IID must conduct exercises
+io test the emergency plan at least twice per year.
+The ICF/IID must do the following:
+
+(i) Participate in an annual full-scale exercise
+hat is community-based; or
+
+(A) When a community-based exercise is
+not accessible, conduct an annual individual,
+acility-based functional exercise; or.
+
+(B) If the ICF/IID experiences an actual
+natural or man-made emergency that requires
+activation of the emergency plan, the ICF/IID
+is exempt from engaging in its next required
+ull-scale community-based or individual, facility-
+
+based functional exercise following the onset
+of the emergency event.
+
+(ii) Conduct an additional annual exercise that
+may include, but is not limited to the following:
+
+(A) Asecond full-scale exercise that is
+community-based or an individual, facility-based
+functional exercise; or
+
+(B) Amock disaster drill; or
+
+(C) A tabletop exercise or workshop that
+is led by a facilitator and includes a group
+discussion, using a narrated,
+
+Clinically-relevant emergency scenario, anda
+set of problem statements, directed messages, or
+prepared questions designed to challenge an
+emergency plan.
+
+(iii) Analyze the ICF/IID's response to and
+maintain documentation of all drills, tabletop
+exercises, and emergency events, and revise
+the ICF/IID's emergency plan, as needed.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 17 E039
+
+Facility ID: 955486 If continuation sheet Page 18 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+*[For OPOs at §486.360]
+
+(d)(2) Testing. The OPO must conduct exercises
+to test the emergency plan. The OPO must do the
+following:
+
+(i) Conduct a paper-based, tabletop exercise
+or workshop at least annually. A tabletop exercise
+is led by a facilitator and includes a group
+discussion, using a narrated, clinically relevant
+emergency scenario, and a set of problem
+statements, directed messages, or prepared
+questions designed to challenge an emergency
+plan. If the OPO experiences an actual natural
+or man-made emergency that requires activation
+of the emergency plan, the OPO is exempt from
+engaging in its next required testing exercise
+following the onset of the emergency event.
+
+(ii) Analyze the OPO's response to and
+maintain documentation of all tabletop exercises,
+and emergency events, and revise the [RNHCI's
+and OPO's] emergency plan, as needed.
+
+This STANDARD is not met as evidenced by:
+Based on document review and interviews, the
+acility failed to ensure facility/community-based
+or tabletop exercises to test their emergency
+preparedness (EP) plan were conducted. This
+potentially affected all clients in the home. The
+indings is:
+
+The facility's EP plan did not include completion
+
+of facility/community-based or tabletop exercises.
+
+Review on 3/10/20 of the facility's EP plan revised
+on 12/31/19, did not include a full-scale
+community-based or tabletop exercise.
+
+nterview on 3/11/20 with the Home Manager
+(HM) revealed that she has been in her role for a
+month and had not conducted any training
+exercises on the EP full-scale community-based
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+E 039 | Continued From page 18 E039
+
+Facility ID: 955486 If continuation sheet Page 19 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+E 039 | Continued From page 19
+
+or tabletop exercises.
+
+Interview on 3/11/20 with the Habilitation
+Specialist (HS) revealed that she could not recall
+doing any full-scale community based exercise
+for the EP training.
+
+W 000 | INITIAL COMMENTS
+
+Acomplaint investigation was conducted during
+the recertification survey for intakes
+#NC00160528 and #NC00160659. One
+deficiency was cited as a result of the complaint.
+SERVICES PROVIDED WITH OUTSIDE
+SOURCES
+
+CFR(s): 483.410(d)(3)
+
+W 120
+
+The facility must assure that outside services
+meet the needs of each client.
+
+This STANDARD is not met as evidenced by:
+Based on record review and interview, the facility
+ailed to ensure outside services were
+coordinated in order to meet the needs of clients.
+This affected 2 of 3 audit clients (#1, #5). The
+indings are:
+
+A. The potential use of a pain medication was
+not coordinated with client #5's school.
+
+During an interview on 3/10/20, client #5's
+leacher revealed the use of a pain medication to
+be used at school was discussed at the client's
+ndividual Education Plan (IEP) meeting. The
+teacher felt having a pain medication available to
+be administered at school during her menstrual
+cycle would be helpful during the client's behavior
+episodes since she may be expressing pain.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+E 039
+
+W 000
+
+W 120
+
+Facility ID: 955486 If continuation sheet Page 20 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+Additional interview indicated she was not sure
+what happened after the IEP but no pain
+medication was ever provided from the facility.
+
+Interview via phone on 3/11/20 with the school's
+nurse confirmed pain medication for client #5 had
+been discussed. Additional interview indicated
+per her nurse's notes dated 1/10/20, a request for
+a physician's order for the pain medication had
+been sent home in the client's book bag;
+however, there had been no response from the
+facility since then.
+
+Review on 3/11/20 of client #5's record revealed
+an E-prescription dated 12/4/19 for
+Acetaminophen 325mg, two tablets by mouth 4
+times daily "PRN pain,"
+
+Interview on 3/11/20 with the Habilitation
+Specialist (HS) and Home Manager (HM)
+revealed they were not aware of a discussion
+regarding pain medication at school or request for
+an order being sent to the home.
+
+nterview via cell phone on 3/11/20 with the
+acility's nurse revealed client #5 has a prn order
+or Tylenol and she indicated the guardian felt the
+client was already on too many medications and
+some of her other medications could be
+addressing pain already.
+
+nterview via phone on 3/11/20 with the Qualified
+ntellectual Disabilities Professional (QIDP)
+indicated she had attended client #5's IEP
+meeting; however, she did not recall a discussion
+about pain medication being available at school
+or client #5.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 120 | Continued From page 20 W 120
+
+Facility ID: 955486 If continuation sheet Page 21 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+B. Facility did not ensure that client #1's school
+received medication and current individual
+program plan (IPP).
+
+During record review on 3/11/20, of client #1's
+Allergy and Anaphylaxis Emergency Plan dated
+2/24/20, identified allergy to tree nuts, grapes,
+celery, green pea, green pepper, green bean,
+sesame seed. To treat the allergy, the doctor
+prescribed the use of an Epinephrine Auto
+Injector (EPI pen) and Benadryl liquid, 3
+teaspoons by mouth.
+
+An additional review on 3/11/20 of client #1's IPP
+dated 3/1/20 revealed that the school staff were
+not in attendance.
+
+erview on 3/10/20 with client #1's teacher
+revealed, that client #1 had a reaction to a food
+allergy last month at school which required that
+EMS be called. An EPI pen was administered and
+urther allergy testing was coordinated by the
+acility. The teacher indicated that the school was
+still waiting for the facility to provide the liquid
+allergy medication for client #1. The teacher also
+indicated that she also did not receive the current
+PP from the facility.
+
+5
+
+erview on 3/11/20 with client #1's school nurse
+revealed that the facility did not furnish the liquid
+allergy medication after dropping off the food
+allergy list and EPI pen last month.
+
+5
+
+5
+
+erview on 3/11/20 with the Home Manager
+(HM) revealed that the school has not received
+he liquid allergy medication. The HM had made a
+request to the corporate office to place the
+medication on the supply list since it was an item
+not furnished by their pharmacy. The HM was still
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 120 | Continued From page 21 W 120
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+Facility ID: 955486 If continuation sheet Page 22 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+CFR(s): 483.430(e)(3)
+
+Si
+te
+to
+
+aff must be able to demonstrate the skills and
+cchniques necessary to administer interventions
+manage the inappropriate behavior of clients.
+
+This STANDARD is not met as evidenced by:
+Based on observations, record review and
+interviews, the facility failed to ensure all staff
+were able to demonstrate skills needed to
+implement interventions necessary to manage
+inappropriate behaviors for 2 of 3 audit clients
+(#1, #5). The findings are:
+
+A. Client #5's Behavior Intervention Plan (BSP)
+was not implemented as written.
+
+Throughout observations in the home during the
+survey on 3/10 - 3/11/20, staff were not observed
+to provide reinforcements for client #5's
+appropriate behaviors even though the client
+frequently sat quietly while completing tasks and
+complied with prompts from staff for various
+tasks.
+
+During dinner observations in the home on
+3/10/20 at 6:40pm, client #5 pointed to the bowl
+of macaroni and cheese and stated, "More
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 120 | Continued From page 22 W 120
+waiting for the corporate office to purchase the
+medication.
+Interview on 3/11/20 with the Habilitation
+Specialist (HS) revealed that the IPP was held on
+a Sunday and the school staff were not present.
+The HS indicated that she was out last week and
+had not sent the current IPP to the school.
+W 193 | STAFF TRAINING PROGRAM W 193
+
+Facility ID: 955486 If continuation sheet Page 23 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+macaroni and cheese". Staff C told the client to
+finish eating the food on her plate. The client was
+also told to remember her diet. Client #5 returned
+to eating her food. At 6:43pm, client #5 again
+asked for macaroni and cheese. The Home
+Manager (HM) stated, "Fruits and vegetables."
+Client #5 began to whine. After a few seconds,
+she turned over a glass of milk onto the table.
+The client was told to calm down. Client #5 then
+began to spit. Staff stated, "No spitting." Client
+#5 continued to spit and turned over another
+glass and began swearing repeatedly. Staff C
+and the HM then physically removed client #5
+from the table and walked her to her bedroom.
+
+Interview on 3/10/20 with Staff C revealed she
+has worked at the home for about a week and
+had a couple of days of training. She indicated
+she has had training on all behavior plans but has
+only had to implement one of the plans since
+starting this job. Additional interview revealed
+when client #5 has a behavior she should be
+given five minutes to calm down in her bedroom
+and then provided with an activity.
+
+Review on 3/11/20 of client #5's BSP dated 1/6/20
+revealed objectives to decrease the frequency of
+non-compliance, running away from staff, food
+stealing, profanity, explosive behaviors, spitting,
+and self-injurious behavior for 10 out of 12
+months. The plan noted, "[Client #5] will be
+reinforced for every task completed with an
+identified reinforcers. Provide [Client #5] with
+social praise at least every thirty minutes in the
+absence of the target behaviors. Give her a great
+deal of attention when she is exhibiting
+appropriate behaviors to encourage continued
+compliance as this will help her learn how to gain
+attention through a socially appropriate means
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 193 | Continued From page 23 W 193
+
+Facility ID: 955486 If continuation sheet Page 24 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+other than through inappropriate means...Allow
+for choices and decision-making whenever
+possible: Before a problem develops..."
+
+Further review of the BSP identified under spitting
+behaviors, "If [Client #5] appears to be getting
+ready to spit, staff will then tell her to swallow and
+redirect to an activity. If she spits, have her clean
+up the area with a cleaning solution using
+graduated guidance (least interaction
+necessary)...If she continues to spit, staff will say,
+‘[Client #5] No Spitting’ and then have her clean
+up the area." For profanity the plan noted staff
+should call the client's name "in a firm tone and
+ask her not to use such language..."
+
+Interview on 3/11/20 with the HM revealed several
+new staff were working in the home. Additional
+interview indicated most staff have been doing
+hands-on training as behaviors occur. She stated
+staff have read over each client's behavior plan.
+
+B. Client #1's BSP was not implemented as
+written.
+
+During morning observations in the home on
+3/11/20 at 6:00am, staff were not observed to
+provide positive reinforcements for appropriate
+behaviors, although the client completed tasks
+such as setting the table and placing food items
+on the table for breakfast.
+
+During additional morning observations in the
+home on 3/11/20 from 6:10am - 6:23am, client #1
+started arguments and caused disturbances with
+at least two other clients in the home. He refused
+to allow one client to sit on the couch, called other
+client's names, and threatened to fight another
+client. During this time, he was told to calm down
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 193 | Continued From page 24 W 193
+
+Facility ID: 955486 If continuation sheet Page 25 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+(x3) DATE SURVEY
+COMPLETED
+Cc
+
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+and asked if he wanted to go to his room. Client
+#1 ignored the prompts from staff.
+
+During observations in the home on 3/11/20 at
+7:00am, client #1 was unengaged while waiting
+for his bus to come. He went to the activity room
+door stating he wanted to go inside. Staff E
+blocked the door while telling him it was not time
+to go into the activity room yet. He continued to
+state he wanted to go in the room while
+attempting to go around the staff blocking the
+door. The staff repeatedly told him he could not
+go into the area. After several minutes of arguing
+back and forth with Staff E, the Habilitation
+Specialist (HS) told Staff E client #1 could go into
+he activity room if he wanted to. At 7:06am,
+client #1 went into the activity room and began
+using the computer.
+
+During further observations in the home on
+3/11/20 at 7:28am, client #1 began to use
+profanity while listening to music on the
+computer. Staff D called his name and went into
+he activity room to check on him briefly. A few
+minutes later, he used profanity again, the HS
+called his name and told him if he swears again
+he will need to come out of the activity room.
+
+During observations in the home on 3/11/20 at
+7:40am, client #1 had been on the computer
+istening to music for approximately 35 minutes.
+Staff E entered the room and told him he needed
+io take turns and allow another client to use the
+computer while the other client stood waiting.
+Client #1 became upset and screamed, "No!" The
+staff continued to remind client #1 about taking
+urns, being nice and sharing. Client #1 was then
+told to go to his room by the HS as she sat ata
+lable in an adjacent room. He screamed, "No,
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 193 | Continued From page 25 W 193
+
+Facility ID: 955486 If continuation sheet Page 26 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+‘m not going to my room...who gonna make
+me...I'm not getting up!" The client continued to
+sit at the computer. At 7:50am, when the HM
+entered the area and began prompting the client
+(0 go to his room in a firm voice, client #1
+complied and went to his bedroom.
+
+nterview on 3/11/20 with Staff E revealed she
+has worked at the home for approximately 3
+weeks. The staff indicated she had received
+raining on each client's BSP by the HM and HS.
+
+Review on 3/11/20 of client #1's BSP dated
+2/26/20 revealed objectives to decrease the
+requency of defined non-compliance, physical
+aggression, tantrum behavior, lying, profanity,
+running from staff and stealing food for 10 out of
+12 consecutive months. The BSP noted,
+"...provide [Client #1] with a variety of structured
+leisure and recreational activities while at the
+residence. When not actively engaged in obvious
+skill building habilitation goals, provide him the
+opportunity and encourage him to engage, during
+leisure time, in a structured and stimulating
+activity." Additionally, the plan noted, "[Client #1]
+will be reinforced for every task completed with
+an identified reinforcer. Provide [Client #1] with
+social praise at least every thirty minutes in the
+absence of the target behaviors. Identified
+reinforcers are as follows: social praise, water
+games, preferred edibles and walks."
+
+The plan also indicated, "...Do not give undo
+attention when applying an intervention. When
+[Client #1] is displaying inappropriate behavior, be
+sure to give him the least amount of attention
+necessary. Speak in a friendly positive manner.
+He responds poorly to changes in his
+environment, rules or when things don't go the
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES. ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 193 | Continued From page 26 W 193
+
+Facility ID: 955486 If continuation sheet Page 27 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION (x5)
+(EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+
+CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+ID
+PREFIX
+TAG
+
+W 193 | Continued From page 27
+
+way he expects them to. (He has difficulty
+handling disappointment). Be consistent and
+follow through with what you tell him...Focus on
+positive things he does. Allow for choices and
+decision-making whenever possible. Before a
+problem develops, provide clear opportunities
+rather than required participation whenever
+possible...to the degree possible, give him what
+he wants but do not reward demanding or
+otherwise inappropriate behaviors."
+
+Further review of the BSP under non-compliance
+indicated, "Staff will give [Client #1] an instruction.
+If he does not comply within one (1) minute, staff
+will repeat the instruction. If he does not comply
+after one (1) additional minute, wait five
+minutes,...during the 5 minute time span, talk to
+him and attempt to focus his attention on the
+request making it sound fun/seem fun. You may
+entice compliance by reminding him of the
+reinforcer he will earn upon completion of the
+activity." For profanity, the plan revealed, "Staff
+will say [Client #1] in a firm tone and ask him not
+io use such language. If he does not immediately
+stop, escort him away from others (His Room) for
+5 minutes of calm. Then engage his attention to
+another activity.’
+
+nterview on 3/11/20 with the HM revealed several
+new staff were working in the home. Additional
+interview indicated most staff have been doing
+hands-on training as behaviors occur. She stated
+staff have read over each client's behavior plan.
+PROGRAM DOCUMENTATION
+
+CFR(s): 483.440(e)(1)
+
+W 252
+
+Data relative to accomplishment of the criteria
+specified in client individual program plan
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+W 193
+
+W 252
+
+Facility ID: 955486 If continuation sheet Page 28 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+This STANDARD is not met as evidenced by:
+Based on record review and interviews, the
+facility failed to ensure all data relative to the
+accomplishment of Individual Program Plan (IPP)
+objectives was documented. This affected 1 of 3
+audit clients (#5). The finding is:
+
+Client #5's behavior data was not collected at the
+school.
+
+During a visit to client #5's school on 3/11/20 at
+12:25p, administrative staff indicated client #5
+was in the cafeteria having a behavior episode
+which required the intervention of several staff
+members.
+
+Interview on 3/11/20 with client #5's teacher
+confirmed client #5 was having aggressive
+behaviors and several staff needed to intervene.
+Additional interview indicated the client has had
+an increase in behaviors this school year and this
+was discussed during her Individual Education
+Plan (IEP) meeting earlier this year which was
+attended by the former Home Manager and the
+Qualified Intellectual Disabilities Professional
+(QIDP).
+
+Review on 3/10/20 of client #5's Behavior
+Intervention Plan (BIP) dated 1/6/20 revealed
+objectives to decrease the frequency of
+non-compliance, running away from staff, food
+stealing, profanity, explosive behaviors, spitting,
+and self-injurious behavior for 10 out of 12
+months. Additional review of client #5's record,
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 252 | Continued From page 28 W 252
+objectives must be documented in measurable
+terms.
+
+Facility ID: 955486 If continuation sheet Page 29 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+(x5)
+COMPLETION
+DATE
+
+ID
+PREFIX
+TAG
+
+W 252 | Continued From page 29
+
+behavior data sheets and incident reports did not
+include any behavior data from her school.
+
+Interview on 3/11/20 with the Home Manager
+(HM) indicated she thought they used to collect
+data from the schools but she was not sure.
+Additional interview revealed the teacher usually
+Calls to tell them about a behavior episode
+involving client #5; however, this was not
+documented. The HM acknowledged collecting
+client #5's behavior data from the school would
+be beneficial.
+
+nterview via cell phone on 3/11/20 with the
+Qualified Intellectual Disabilities Professional
+(QIDP) confirmed client #5's behavior data from
+school would be beneficial information overall for
+he psychologist to be aware of.
+
+CONDUCT TOWARD CLIENT
+
+CFR(s): 483.450(a)(1)
+
+W 267
+
+he facility must develop and implement written
+policies and procedures for the management of
+conduct between staff and clients.
+
+his STANDARD is not met as evidenced by:
+Based on observations and interviews, the facility
+failed to implement policies and procedures to
+ensure actions imposed upon clients by staff did
+not potentially affect the client's quality of life.
+
+This affected 1 of 3 audit clients (#3). The finding
+is:
+
+Staff smoked a cigarette within arms reach of
+client #3.
+
+During morning observations in the home on
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+W 252
+
+W 267
+
+Facility ID: 955486 If continuation sheet Page 30 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES.
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(X4) ID
+PREFIX
+TAG
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION (x5)
+(EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+
+CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+
+ID
+PREFIX
+TAG
+
+W 267 | Continued From page 30
+
+3/11/20 at 7:52am, Staff D prompted client #3
+outside to wait for his school bus. As they both
+waited at the end of the walkway in front of the
+home, Staff D began smoking a cigarette. As she
+stood within arms reach of client #3, the smoke
+floated near him. The staff continued to smoke in
+front of the client for approximately 3 - 5 minutes.
+
+Interview on 3/11/20 with Staff D revealed she
+had not been told she could not smoke in front of
+the clients. The staff stated she thought it was ok
+since they were outside.
+
+Interview on 3/11/20 with the Home Manager
+(HM) and Habilitation Specialist (HS) revealed
+staff should not be smoking in front of any clients
+and all staff have been told this.
+
+Interview via cell phone on 3/11/20 with the
+Qualified Intellectual Disabilities (QIDP)
+confirmed all staff have been told they cannot
+smoke in front of clients and they should be
+smoking in designated areas around the outside
+of the home. The QIDP stated, "That is not
+acceptable at all."
+
+EVACUATION DRILLS
+
+CFR(s): 483.470(i)(1)
+
+Ww 440
+
+The facility must hold evacuation drills at least
+quarterly for each shift of personnel.
+
+This STANDARD is not met as evidenced by:
+Based on document review and staff interview,
+the facility did not conduct the appropriate
+number of fire drills, per quarter. This had the
+potential to affect all clients. The finding is
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+W 267
+
+Ww 440
+
+Facility ID: 955486 If continuation sheet Page 31 of 32
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES.
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIER/CLIA
+IDENTIFICATION NUMBER:
+
+34G272
+
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+B. WING
+
+PRINTED: 03/16/2020
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+Cc
+03/11/2020
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+Facility did not conduct a fire drill, per shift, each
+quarter.
+
+During record review on 3/10/20 of the facility's
+fire drill log, it revealed that shifts that the drills
+were conducted, were incorrectly identified based
+on the time of day. The collected data stated:
+
+1st shift drills given on 3/18/19 at 1:30 am,
+9/10/19 at 5:00 am and 12/5/19 at 4:45 pm.
+2nd shift drills was given on 4/22/19 at 3:40 am.
+
+Interview on 3/10/20 with Qualified Intellectual
+Disabilities Professional (QIDP) revealed that 1st
+shift was between 8:00 am-4:00 pm; 2nd shift
+between 4:00 pm-12:00 am and 3rd shift between
+12:00 am-8:00 am. QIDP indicated that the
+former Home Manager (HM) was monitoring the
+fire drills until last month. QIDP also
+acknowledged that had not been "going behind"
+the former HM to check the drills schedule.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID:RWD111
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES 1D PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+W 440 | Continued From page 31 W 440
+
+Facility ID: 955486 If continuation sheet Page 32 of 32

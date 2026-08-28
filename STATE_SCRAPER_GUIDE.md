@@ -215,6 +215,15 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Useful flags beyond `--full`:** `--no-post` (cache + parse only, no API write), `--no-profiles` (skip per-facility profile fetches — faster smoke test), `--limit N` (post at most N facilities — for end-to-end testing on production), `--workers N` (concurrent PDF download/parse workers; default 5, env `FL_WORKERS`), `--pdf-timeout N` (seconds before abandoning pdfplumber on a single PDF; default 120, env `FL_PDF_TIMEOUT`).
 - **First-run expectation:** The full DJJ scrape is ~1250 PDFs (≈90 QI + ~265 PREA + ~850 SPEP + ~40 detention QI). With the default 5 workers, expect roughly 1-2 hours wall-clock for an empty cache. Subsequent runs use `fl_pdfs/` cache + `.fl_djj_state.json` and complete in minutes.
 
+### GA (Georgia RCCL TRAILS public portal)
+- **Source:** Georgia DHS Office of Inspector General "TRAILS" portal at `rcctrails.dhs.ga.gov` — Residential Child Care Licensing surveys (Statements of Deficiency)
+- **Method:** `requests`/`curl_cffi` against the ASP.NET WebForms flow (no browser). Terms-acceptance postback → per-program-type search → Telerik RadGrid pagination → facility detail → SOD report per EventID. PDF SOD bodies are extracted with `pdfplumber`; HTML bodies are parsed inline.
+- **Scraper:** `ga_scraper.py` — searches all seven RCCL program types (Child Caring Institution, Child Placing Agency, Children's Transition Care Center, Maternity Home, Runaway and Homeless Youth Program, Outdoor Child Caring Program, Maternity Supportive Housing Residence), collects every FACID, then pulls each facility's survey grid. One survey = one report; `report_id` is the EventID.
+- **Key detail:** The public search grid column headed "Active Facility" is actually the facility **name**; the grid exposes name, address, county, email, and operating status but no phone/capacity (those aren't published). `program_name` = FACID (stable unique key). Survey metadata (type, status, dates, under-appeal) always lands in `categories` even when the SOD body can't be extracted.
+- **IP block caveat:** The portal's AWS load balancer returns a bare `403 Forbidden` for datacenter/VPN IP ranges — this is IP-reputation based, so curl_cffi impersonation and real headless browsers are both blocked. **Run from a residential IP with any VPN turned off.** The scraper raises a clear error naming this cause when it sees an `awselb` 403.
+- **Useful flags:** `--limit N`, `--program-type "..."` (repeatable), `--no-sod` (metadata-only smoke test), `--no-post`, `--full`.
+- **Status:** Parsers validated against archived portal HTML; the stateful WebForms postback flow (acceptance + RadGrid pagination) still needs one live validation run from an unblocked IP.
+
 ### NC (North Carolina MHLCS public records)
 - **Source:** NC DHHS Division of Health Service Regulation Mental Health Licensure and Certification Section public records directory at `results.asp`, with facility pages at `facility.asp?fid=...`
 - **Method:** `requests` + BeautifulSoup to read the directory and facility pages, then OCR each linked inspection PDF with `pdf2image` + `pytesseract`

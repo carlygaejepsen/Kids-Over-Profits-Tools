@@ -1,0 +1,316 @@
+PRINTED: 05/01/2018
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+
+CENTERS FOR MEDICARE & MEDICAID SERVICES OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES
+
+(X1) PROVIDER/SUPPLIERICLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING COMPLETED
+R
+346272 04/30/2018
+
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+
+CREST ROAD GROUP HOME
+SOUTHERN PINES, NC 28387
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION %5)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+{E 006} | Plan Based on All Hazards Risk Assessment {E 006}
+
+CFR(s): 483.475(a)(1)-(2)
+
+[(a) Emergency Plan. The [facility] must develop
+and maintain an emergency preparedness plan
+that must be reviewed, and updated at least
+annually. The plan must do the following:]
+
+(1) Be based on and include a documented,
+facility-based and community-based risk
+assessment, utilizing an all-hazards approach.*
+
+*[For LTC facilities at §483.73(a)(1):] (1) Be based
+on and include a documented, facility-based and
+community-based risk assessment, utilizing an
+all-hazards approach, including missing residents.
+
+*[For ICF/IIDs at §483.475(a)(1):] (1) Be based on
+and include a documented, facility-based and
+community-based risk assessment, utilizing an
+all-hazards approach, including missing clients.
+
+(2) Include strategies for addressing emergency
+events identified by the risk assessment.
+
+* [For Hospices at §418.113(a)(2):] (2) Include
+strategies for addressing emergency events
+identified by the risk assessment, including the
+management of the consequences of power
+failures, natural disasters, and other emergencies
+that would affect the hospice's ability to provide
+care.
+
+This STANDARD is not met as evidenced by:
+Based on record review and staff interviews, the
+facility failed to develop specific policies and
+procedures to address emergency preparedness
+including and based upon a community and
+facility risk assessment, utilizing an all-hazards
+approach. The finding is:
+
+LABORATORY DIRECTOR'S OR PROVIDER/SUPPLIER REPRESENTATIVE'S SIGNATURE TITLE (X6) DATE
+
+Any deficiency statement ending with an asterisk (*) denotes a deficiency which the institution may be excused from correcting providing it is determined that
+other safeguards provide sufficient protection to the patients . (See instructions.) Except for nursing homes, the findings stated above are disclosable 90 days
+following the date of survey whether or not a plan of correction is provided. For nursing homes, the above findings and plans of correction are disclosable 14
+days following the date these documents are made available to the facility. If deficiencies are cited, an approved plan of correction is requisite to continued
+program participation.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: TFUB12 Facility ID: 955486 If continuation sheet Page 1 of 4
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+34G272
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+SUMMARY STATEMENT OF DEFICIENCIES
+(EACH DEFICIENCY MUST BE PRECEDED BY FULL
+REGULATORY OR LSC IDENTIFYING INFORMATION)
+
+(x4) ID
+PREFIX
+TAG
+
+PRINTED: 05/01/2018
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+04/30/2018
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+(EACH CORRECTIVE ACTION SHOULD BE
+CROSS-REFERENCED TO THE APPROPRIATE
+DEFICIENCY)
+
+ID
+PREFIX
+TAG
+
+(8)
+COMPLETION
+DATE
+
+{E 006} | Continued From page 1
+
+The facility did not have an emergency plan
+based upon risk assessments.
+
+Review on 4/30/18 of the facility's disaster
+preparedness plan dated 2016-2017 and
+2017-2018 revealed the plan did not include
+specific information in regards to the facility's risk
+priorities or the community's risk priorities of
+flood, fire, tornadoes, hurricanes, winter storms,
+bio terrorism, missing residents or other
+emergencies.
+
+Interviews on 4/30/18 with the qualified
+intellectual disabilites professional (QIDP)
+indicated the emergency plan is not complete and
+they are still trying to ascertain information for it.
+Management confirmed the plan did not include a
+risk assessment.
+
+Policies for Evac. and Primary/Alt. Comm.
+CFR(s): 483.475(b)(3)
+
+{E 020}
+
+[(b) Policies and procedures. The [facilities] must
+develop and implement emergency preparedness
+policies and procedures, based on the emergency
+plan set forth in paragraph (a) of this section, risk
+assessment at paragraph (a)(1) of this section,
+and the communication plan at paragraph (c) of
+this section. The policies and procedures must be
+reviewed and updated at least annually. At a
+minimum, the policies and procedures must
+address the following:]
+
+Safe evacuation from the [facility], which includes
+consideration of care and treatment needs of
+evacuees; staff responsibilities; transportation;
+identification of evacuation location(s); and
+primary and alternate means of communication
+with external sources of assistance.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: TFUB12
+
+{E 006}
+
+{E 020}
+
+Facility ID: 955486 If continuation sheet Page 2 of 4
+
+PRINTED: 05/01/2018
+DEPARTMENT OF HEALTH AND HUMAN SERVICES FORM APPROVED
+
+CENTERS FOR MEDICARE & MEDICAID SERVICES OMB NO. 0938-0391
+
+STATEMENT OF DEFICIENCIES (X1) PROVIDER/SUPPLIERICLIA (X2) MULTIPLE CONSTRUCTION (X3) DATE SURVEY
+
+AND PLAN OF CORRECTION IDENTIFICATION NUMBER: ‘A. BUILDING COMPLETED
+R
+346272 04/30/2018
+
+NAME OF PROVIDER OR SUPPLIER STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+
+SOUTHERN PINES, NC 28387
+
+CREST ROAD GROUP HOME
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID PROVIDER'S PLAN OF CORRECTION (xs)
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+{E 020} | Continued From page 2 {E 020}
+
+*[For RNHCs at §403.748(b)(3) and ASCs at
+§416.54(b)(2):]
+
+Safe evacuation from the [RNHCI or ASC] which
+includes the following:
+
+i) Consideration of care needs of evacuees.
+
+ii) Staff responsibilities.
+
+iii) Transportation.
+
+iv) Identification of evacuation location(s).
+
+(v) Primary and alternate means of
+communication with external sources of
+assistance.
+
+(
+(
+(
+(
+
+* [For CORFs at §485.68(b)(1), Clinics,
+Rehabilitation Agencies, OPT/Speech at
+§485.727(b)(1), and ESRD Facilities at
+§494.62(b)(2):]
+
+Safe evacuation from the [CORF; Clinics,
+Rehabilitation Agencies, and Public Health
+Agencies as Providers of Outpatient Physical
+Therapy and Speech-Language Pathology
+Services; and ESRD Facilities], which includes
+staff responsibilities, and needs of the patients.
+
+* [For RHCs/FQHCs at §491.12(b)(1):] Safe
+evacuation from the RHC/FQHC, which includes
+appropriate placement of exit signs; staff
+responsibilities and needs of the patients.
+
+This STANDARD is not met as evidenced by:
+Based on record review and staff interviews, the
+facility failed to develop specific policies and
+procedures to address emergency preparedness
+including evacuation locations based on a
+community and facility risk assessment. The
+finding is:
+
+The facility did not have an emergency plan which
+included evacuation locations.
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: TFUB12 Facility ID: 955486 If continuation sheet Page 3 of 4
+
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+CENTERS FOR MEDICARE & MEDICAID SERVICES
+
+STATEMENT OF DEFICIENCIES
+AND PLAN OF CORRECTION
+
+(X1) PROVIDER/SUPPLIERICLIA
+IDENTIFICATION NUMBER:
+
+34G272
+NAME OF PROVIDER OR SUPPLIER
+
+CREST ROAD GROUP HOME
+
+PRINTED: 05/01/2018
+FORM APPROVED
+OMB NO. 0938-0391
+
+(X3) DATE SURVEY
+COMPLETED
+
+R
+04/30/2018
+
+(X2) MULTIPLE CONSTRUCTION
+A. BUILDING
+
+STREET ADDRESS, CITY, STATE, ZIP CODE
+114 GREENHOUSE LANE
+SOUTHERN PINES, NC 28387
+
+PROVIDER'S PLAN OF CORRECTION
+
+(x5)
+
+Review on 4/30/18 of the facility's disaster
+preparedness plan dated 2016-2017 and
+2017-2018 revealed the plan did not include
+specific information in regards to the facility's
+evactuation locations in the event of flood, fire,
+tornadoes, hurricanes, winter storms, bio
+terrorism, missing residents or other
+emergencies.
+
+Interview on 4/30/18 the qualified intellectual
+disabilities professional (QIDP) confirmed the
+emergency plan is not complete and they are still
+trying to ascertain information for it. Management
+confirmed the plan did not include safe
+evacuation locations.
+
+(x4) ID SUMMARY STATEMENT OF DEFICIENCIES ID
+PREFIX (EACH DEFICIENCY MUST BE PRECEDED BY FULL PREFIX (EACH CORRECTIVE ACTION SHOULD BE COMPLETION
+TAG REGULATORY OR LSC IDENTIFYING INFORMATION) TAG CROSS-REFERENCED TO THE APPROPRIATE DATE
+DEFICIENCY)
+{E 020} | Continued From page 3 {E 020}
+
+FORM CMS-2567(02-99) Previous Versions Obsolete Event ID: TFUB12
+
+Facility ID: 955486 If continuation sheet Page 4 of 4
