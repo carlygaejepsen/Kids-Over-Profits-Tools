@@ -82,21 +82,20 @@ SEARCH_URL = f"{BASE}/Public/PublicFacilitiesSearch.aspx"
 DETAIL_URL = f"{BASE}/Public/ViewFacilityDetails.aspx"
 SOD_URL = f"{BASE}/Manage/SurveyShell/ViewSODReport.aspx"
 
-# Program types offered by the search dropdown (ddlProgType). These are the
-# residential/child-care license categories the RCCL unit licenses.
-PROGRAM_TYPES = [
-    "Child Caring Institution",
-    "Child Placing Agency",
-    "Children's Transition Care Center",
-    "Maternity Home",
-    "Runaway and Homeless Youth Program",
-    "Outdoor Child Caring Program",
-    "Maternity Supportive Housing Residence",
-]
-
-# Grab as many rows per RadGrid page as the portal allows, to minimize the
-# number of stateful postbacks.
-PAGE_SIZE = 50
+# Program types offered by the search dropdown (ddlProgType), mapped to the
+# numeric option values the portal expects. ASP.NET event validation 500s on
+# any posted value that is not one of these registered option values, so the
+# label text must never be posted directly.
+PROGRAM_TYPES = {
+    "Child Caring Institution": "1",
+    "Child Placing Agency": "2",
+    "Children's Transition Care Center": "3",
+    "Maternity Home": "4",
+    "Runaway and Homeless Youth Program": "5",
+    "Outdoor Child Caring Program": "6",
+    "Commercial Sexual Exploitation Recovery Center": "9",
+    "Qualified Residential Treatment Program": "10",
+}
 
 NETWORK_ERRORS = (requests.RequestException,) + (
     (CurlRequestException,) if _HAVE_CURL_CFFI else ()
@@ -202,14 +201,13 @@ def search_program_type(session, search_soup: BeautifulSoup, program_type: str) 
     """POST a search for one program type; return (facilities, result soup)."""
     fields = _hidden_fields(search_soup)
     prefix = "ctl00$ContentPlaceHolder1$"
-    fields[f"{prefix}ddlProgType"] = program_type
+    fields[f"{prefix}ddlProgType"] = PROGRAM_TYPES[program_type]
     for f in ("txtFacName", "txtPhone", "txtAddress", "txtCity", "txtCounty", "txtZip"):
         fields[f"{prefix}{f}"] = ""
     # RadButton search trigger.
     fields[f"{prefix}btnSearch_input"] = "Search"
     fields["__EVENTTARGET"] = ""
     fields["__EVENTARGUMENT"] = ""
-    fields[f"{prefix}radFacility$ctl00$ctl03$ctl01$PageSizeComboBox"] = str(PAGE_SIZE)
 
     resp = _post(session, SEARCH_URL, fields)
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -223,9 +221,12 @@ def _parse_result_grid(soup: BeautifulSoup) -> List[Dict[str, str]]:
         return []
 
     facilities: List[Dict[str, str]] = []
+    # Data rows carry 12 cells: FACID, Active Facility (the name), Program
+    # Type code, Services Provided, Address, City, State, County, Zip, Email,
+    # Active Date, and a trailing "File a Complaint" link.
     for row in grid.find_all("tr"):
         cells = row.find_all("td")
-        if len(cells) < 11:
+        if len(cells) < 12:
             continue
         link = row.find("a", href=re.compile(r"FACID=", re.I))
         facid = ""
@@ -241,17 +242,15 @@ def _parse_result_grid(soup: BeautifulSoup) -> List[Dict[str, str]]:
         facilities.append(
             {
                 "facid": facid,
-                # The grid column headed "Active Facility" actually holds the
-                # facility name (e.g. "ARK FAMILY COUNSELING CENTER / RICKY HOMES").
                 "name": _clean(cells[1].get_text()),
                 "program_type_code": _clean(cells[2].get_text()),
-                "address": _clean(cells[3].get_text()),
-                "city": _clean(cells[4].get_text()),
-                "state": _clean(cells[5].get_text()),
-                "county": _clean(cells[6].get_text()),
-                "zip": _clean(cells[7].get_text()),
-                "email": _clean(cells[8].get_text()),
-                "operating_status": _clean(cells[9].get_text()),
+                "services_provided": _clean(cells[3].get_text()),
+                "address": _clean(cells[4].get_text()),
+                "city": _clean(cells[5].get_text()),
+                "state": _clean(cells[6].get_text()),
+                "county": _clean(cells[7].get_text()),
+                "zip": _clean(cells[8].get_text()),
+                "email": _clean(cells[9].get_text()),
                 "active_date": _clean(cells[10].get_text()),
             }
         )
@@ -266,6 +265,12 @@ def _next_page_target(soup: BeautifulSoup, current_page: int) -> Optional[str]:
             m = re.search(r"__doPostBack\('([^']+)'", a["href"])
             if m:
                 return m.group(1)
+    # The pager window only shows 10 numeric links; past that, advance with the
+    # grid's "next page" button. On the final page the postback returns the same
+    # rows, which the caller's no-new-facilities guard turns into a stop.
+    btn = soup.find("input", class_="rgPageNext")
+    if btn and btn.get("name"):
+        return btn["name"]
     return None
 
 
@@ -421,12 +426,13 @@ def build_facility_payload(
             "executive_director": info.get("director", "") or info.get("administrator", ""),
             "license_exp_date": "",
             "relicense_visit_date": "",
-            "action": listing.get("operating_status", ""),
+            "action": "",
         },
         "reports": reports,
         "source": {
             "facid": listing["facid"],
             "program_type": listing.get("program_type") or listing.get("program_type_code", ""),
+            "services_provided": listing.get("services_provided", ""),
             "county": listing.get("county", ""),
             "email": listing.get("email", ""),
             "active_date": listing.get("active_date", ""),
@@ -468,7 +474,12 @@ def scrape(
     session = make_session()
     seen = seen or {}
     new_ids: Dict[str, List[str]] = {}
-    types = program_types or PROGRAM_TYPES
+    types = program_types or list(PROGRAM_TYPES)
+    unknown = [t for t in types if t not in PROGRAM_TYPES]
+    if unknown:
+        raise SystemExit(
+            f"Unknown program type(s): {unknown}. Valid: {list(PROGRAM_TYPES)}"
+        )
 
     search_soup = accept_terms(session)
 
