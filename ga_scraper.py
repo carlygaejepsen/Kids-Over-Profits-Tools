@@ -17,7 +17,9 @@ Flow reverse-engineered from the portal:
          -> facility info + a grid of surveys
          (EventID, Survey Start/Exit Date, Survey Type, Status, Under Appeal)
   6. GET  /Manage/SurveyShell/ViewSODReport.aspx?EID=<EventID>
-         -> the Statement of Deficiencies report (HTML, sometimes a PDF)
+         -> a Telerik WebForms ReportViewer shell. The SOD body is pulled
+            through /Telerik.ReportViewer.axd (Parameters -> Report ->
+            Export&ExportFormat=PDF) and text-extracted with pdfplumber.
 
 Each survey becomes one report; the survey metadata always lands in
 ``categories`` even when the SOD body cannot be extracted, so nothing is
@@ -39,6 +41,7 @@ import logging
 import os
 import re
 import time
+import uuid
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -350,11 +353,21 @@ def parse_facility_detail(session, facid: str) -> Tuple[Dict[str, str], List[Dic
     return info, surveys
 
 
+# The Telerik WebForms ReportViewer init call embeds the handler path and a
+# per-page-load 32-hex instance id:
+#   new ReportViewer('ctl00_..._rvSOD', ..., '/Telerik.ReportViewer.axd', '<instanceID>', ...)
+_TELERIK_VIEWER_RE = re.compile(r"'(/[^']*Telerik\.ReportViewer\.axd)'\s*,\s*'([0-9a-f]{32})'")
+
+
 def fetch_sod_report(session, event_id: str) -> str:
     """Fetch the Statement of Deficiencies for an EventID; return extracted text.
 
-    The report page can render as HTML or serve a PDF. Handle both; return "" if
-    nothing extractable (survey metadata is still captured by the caller).
+    The SOD page is a Telerik WebForms ReportViewer shell — its HTML holds only
+    toolbar chrome ("Export to the selected format", "Generating report...").
+    The real report must be pulled through the viewer's axd handler; see
+    _fetch_telerik_sod_text(). Non-viewer responses (direct PDF, PDF link,
+    plain HTML) keep their old handling. Returns "" if nothing extractable
+    (survey metadata is still captured by the caller).
     """
     try:
         resp = _get(session, SOD_URL, params={"EID": event_id})
@@ -367,6 +380,12 @@ def fetch_sod_report(session, event_id: str) -> str:
 
     if "pdf" in content_type or content[:4] == b"%PDF":
         return _extract_pdf_text(content, event_id)
+
+    # Telerik ReportViewer shell: drive the viewer's own handler to render the
+    # report server-side, then export it as PDF.
+    viewer = _TELERIK_VIEWER_RE.search(resp.text)
+    if viewer:
+        return _fetch_telerik_sod_text(session, resp.url, viewer.group(1), viewer.group(2), event_id)
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -385,6 +404,53 @@ def fetch_sod_report(session, event_id: str) -> str:
     # Otherwise treat the report body as HTML text.
     body = soup.find("form") or soup.body or soup
     return re.sub(r"\n{3,}", "\n\n", body.get_text("\n", strip=True))
+
+
+def _fetch_telerik_sod_text(session, page_url: str, handler_path: str, instance_id: str, event_id: str) -> str:
+    """Drive the Telerik ReportViewer handler to render + export the SOD as PDF.
+
+    Mirrors what the viewer's JS does (reverse-engineered from
+    Resources.ReportViewer.js):
+      1. optype=Parameters             — initializes the report instance
+      2. optype=Report&RenderID=<guid> — renders it server-side; the RenderID
+         is a CLIENT-generated GUID (GenerateGUID() in the viewer JS), so any
+         fresh UUID works
+      3. optype=Export&ExportFormat=PDF — downloads the rendered report
+    The instance id only lives as long as the shell page's server session, so
+    all three requests reuse the session that fetched the shell.
+    """
+    url = urljoin(BASE, handler_path)
+    headers = {"Referer": page_url}
+    try:
+        _get(session, url, params={"instanceID": instance_id, "optype": "Parameters"}, headers=headers)
+        _get(
+            session,
+            url,
+            params={
+                "instanceID": instance_id,
+                "optype": "Report",
+                "PageIndex": "0",
+                "RenderID": str(uuid.uuid4()),
+                "RenderingFormat": "HTML5",
+            },
+            headers=headers,
+        )
+        pdf_resp = _get(
+            session,
+            url,
+            params={"instanceID": instance_id, "optype": "Export", "ExportFormat": "PDF"},
+            headers=headers,
+        )
+    except NETWORK_ERRORS as exc:
+        logger.warning("    Telerik SOD export failed for %s: %s", event_id, exc)
+        return ""
+
+    if pdf_resp.content[:4] == b"%PDF":
+        return _extract_pdf_text(pdf_resp.content, event_id)
+
+    logger.warning("    Telerik SOD export for %s returned %s, not a PDF",
+                   event_id, pdf_resp.headers.get("content-type", "unknown"))
+    return ""
 
 
 def _extract_pdf_text(pdf_bytes: bytes, event_id: str) -> str:
