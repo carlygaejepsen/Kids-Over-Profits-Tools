@@ -24,6 +24,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import report_cache_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -52,7 +53,7 @@ FACILITY_TYPES = [
     ("Behavioral Health Agency", 2869, 20),
 ]
 
-PDF_CACHE_DIR = Path(__file__).parent / "wa_pdfs"
+PDF_CACHE_DIR = report_cache_dir("WA_PDF_CACHE", "wa_pdfs", Path(__file__).parent / "wa_pdfs")
 STATE_FILE = Path(os.getenv("WA_STATE_FILE", ".wa_state.json"))
 
 # KOP programs that are DOH-licensed (RTF or BHA). Juvenile detentions,

@@ -18,6 +18,7 @@ import pdfplumber
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import report_cache_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
@@ -35,7 +36,7 @@ except ImportError:  # pragma: no cover - optional dependency
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "middle"
-CHECKLIST_DIR = BASE_DIR / "checklists"
+CHECKLIST_DIR = report_cache_dir("UT_CHECKLIST_DIR", "ut_checklists", BASE_DIR / "checklists")
 OUTPUT_DIR.mkdir(exist_ok=True)
 CHECKLIST_DIR.mkdir(exist_ok=True)
 

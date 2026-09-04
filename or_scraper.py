@@ -29,6 +29,7 @@ import pdfplumber
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import report_cache_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -46,7 +47,7 @@ API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 BASE_URL = "https://www.oregon.gov/odhs/licensing/childrens-care-agencies"
 REPORT_LIBRARY_NAME = "reports"
 AGENCY_LIST_NAME = "agencies"
-PDF_CACHE_DIR = Path(__file__).parent / "or_pdfs"
+PDF_CACHE_DIR = report_cache_dir("OR_PDF_CACHE", "or_pdfs", Path(__file__).parent / "or_pdfs")
 STATE_FILE = Path(os.getenv("OR_STATE_FILE", ".or_state.json"))
 
 VIEWS = [

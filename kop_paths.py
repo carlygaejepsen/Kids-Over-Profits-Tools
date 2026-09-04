@@ -54,3 +54,60 @@ def kop_repo_dir() -> Path:
         if _looks_like_kop_repo(candidate):
             return candidate
     return candidates[0]
+
+
+# Google Drive for Desktop mount of the folder FileBird imports into the
+# kidsoverprofits.org media library. Downloaded inspection reports belong here,
+# not on this machine: writing into it uploads them to Drive, and FileBird
+# turns them into site documents.
+_DRIVE_FOLDER_NAME = "FileBird Cloud - kidsoverprofits.org"
+
+
+def _find_drive_base() -> Path:
+    """Locate the FileBird folder on whatever letter Drive for Desktop mounts.
+
+    The mount letter is per-account and has changed before (H:, then G:), so
+    scan every drive rather than hardcode one. KOP_DRIVE_BASE overrides. When
+    nothing is found, return the historical H: path so callers still have a
+    Path to test .exists() on and report in messages.
+    """
+    override = os.environ.get("KOP_DRIVE_BASE", "").strip()
+    if override:
+        return Path(override).expanduser()
+
+    # Folder-style mounts live under the profile as "My Drive (email)".
+    candidates = [
+        mount / _DRIVE_FOLDER_NAME for mount in sorted(Path.home().glob("My Drive*"))
+    ]
+    candidates += [
+        Path(f"{letter}:\\My Drive") / _DRIVE_FOLDER_NAME
+        for letter in "DEFGHIJKLMNOPQRSTUVWXYZ"
+    ]
+
+    for candidate in candidates:
+        try:
+            if candidate.is_dir():
+                return candidate
+        except OSError:
+            continue
+
+    return Path(r"H:\My Drive") / _DRIVE_FOLDER_NAME
+
+
+GOOGLE_DRIVE_BASE = _find_drive_base()
+
+
+def report_cache_dir(env_name: str, drive_subdir: str, local_fallback: Path) -> Path:
+    """Resolve where a scraper stores downloaded reports.
+
+    Preference order: the env override, the FileBird Google Drive folder
+    (so reports land in the cloud with no local copy), then the scraper's
+    historical local directory when Drive for Desktop isn't mounted. Local
+    accumulations can later be pushed to Drive with backup_reports.py.
+    """
+    env_value = os.environ.get(env_name, "").strip()
+    if env_value:
+        return Path(env_value).expanduser()
+    if GOOGLE_DRIVE_BASE.exists():
+        return GOOGLE_DRIVE_BASE / drive_subdir
+    return Path(local_fallback)

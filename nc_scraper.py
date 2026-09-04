@@ -35,7 +35,7 @@ import pytesseract
 from openpyxl import load_workbook
 
 from inspection_api_client import post_facilities_to_api
-from kop_paths import kop_repo_dir
+from kop_paths import kop_repo_dir, report_cache_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -58,23 +58,9 @@ WORKBOOK_FALLBACKS = [
 ]
 
 RESULTS_URL = "https://info.ncdhhs.gov/dhsr/mhlcs/sods/results.asp"
-GOOGLE_DRIVE_BASE = Path(r"H:\My Drive\FileBird Cloud - kidsoverprofits.org")
 
-
-def _default_cache_dir(env_name: str, preferred_subdir: str, local_fallback: str) -> Path:
-    env_value = os.getenv(env_name)
-    if env_value:
-        return Path(env_value)
-
-    preferred = GOOGLE_DRIVE_BASE / preferred_subdir
-    if GOOGLE_DRIVE_BASE.exists():
-        return preferred
-
-    return Path(local_fallback)
-
-
-PDF_CACHE_DIR = _default_cache_dir("NC_PDF_CACHE", "nc_pdfs", ".nc_pdf_cache")
-OCR_CACHE_DIR = _default_cache_dir("NC_OCR_CACHE", "nc_ocr", ".nc_ocr_cache")
+PDF_CACHE_DIR = report_cache_dir("NC_PDF_CACHE", "nc_pdfs", Path(".nc_pdf_cache"))
+OCR_CACHE_DIR = report_cache_dir("NC_OCR_CACHE", "nc_ocr", Path(".nc_ocr_cache"))
 
 TESSERACT_CMD = os.getenv("TESSERACT_CMD")
 POPPLER_PATH = os.getenv("POPPLER_PATH")

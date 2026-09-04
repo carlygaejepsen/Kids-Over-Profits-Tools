@@ -19,6 +19,7 @@ from typing import Dict, List, Optional, Tuple
 import requests
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import report_cache_dir
 from scraper_state import load_state, save_state
 
 try:
@@ -55,7 +56,7 @@ API_URL = os.getenv(
 API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 
 DRA_BASE = "https://disabilityrightsar.org/wp-json/wp/v2"
-PDF_CACHE_DIR = Path(os.getenv("AR_PDF_CACHE", ".ar_pdf_cache"))
+PDF_CACHE_DIR = report_cache_dir("AR_PDF_CACHE", "ar_pdfs", Path(".ar_pdf_cache"))
 TEXT_CACHE_DIR = Path(os.getenv("AR_TEXT_CACHE", ".ar_text_cache"))
 STATE_FILE = Path(os.getenv("AR_STATE_FILE", ".ar_state.json"))
 

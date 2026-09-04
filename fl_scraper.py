@@ -38,6 +38,7 @@ except ImportError:  # pragma: no cover — fallback gracefully when pymupdf isn
     pymupdf = None
 
 from inspection_api_client import post_facilities_to_api
+from kop_paths import report_cache_dir
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -60,7 +61,7 @@ DJJ_PREA_INDEX = "/partners-providers-staff/prison-rape-elimination-act-prea/com
 DJJ_SPEP_OPEN = "/research/standardized-program-evaluation-protocol-spep/residential-spep-reports-current-programs"
 DJJ_SPEP_CLOSED = "/research/standardized-program-evaluation-protocol-spep/residential-spep-reports-closed-programs"
 
-DJJ_PDF_CACHE = Path(__file__).parent / "fl_pdfs"
+DJJ_PDF_CACHE = report_cache_dir("FL_PDF_CACHE", "fl_pdfs", Path(__file__).parent / "fl_pdfs")
 DJJ_STATE_FILE = Path(os.getenv("FL_DJJ_STATE_FILE", ".fl_djj_state.json"))
 AHCA_STATE_FILE = Path(os.getenv("FL_AHCA_STATE_FILE", ".fl_ahca_state.json"))
 DCF_STATE_FILE = Path(os.getenv("FL_DCF_STATE_FILE", ".fl_dcf_state.json"))
