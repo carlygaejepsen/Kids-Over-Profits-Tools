@@ -48,9 +48,11 @@ SEARCH_URL = (
 
 # Facility types to scrape: (label, target_id, max_pages_to_check)
 # max_pages is a safety cap — scraper stops early when it hits an empty page.
+# As of 2026-09 the listing runs 6 RTF pages and 34 BHA pages (25 rows each);
+# the old 20-page BHA cap silently dropped every facility past page 20 (Pearl Youth Residence is on page 22).
 FACILITY_TYPES = [
-    ("Residential Treatment Facility", 2879, 10),
-    ("Behavioral Health Agency", 2869, 20),
+    ("Residential Treatment Facility", 2879, 30),
+    ("Behavioral Health Agency", 2869, 80),
 ]
 
 PDF_CACHE_DIR = report_cache_dir("WA_PDF_CACHE", "wa_pdfs", Path(__file__).parent / "wa_pdfs")
@@ -228,6 +230,39 @@ def parse_inspection_text(text: str) -> Dict:
     return parsed
 
 
+def mentions_case(text: str, case_number: str) -> bool:
+    """True when the document text names this case number (not as part of a longer one)."""
+    return re.search(r"(?<![\w-])" + re.escape(case_number) + r"(?![\w-])", text or "") is not None
+
+
+def build_unlinked_report(report_num: str, url: str, category: str, owner_case: str) -> Dict:
+    """A case DOH lists with another case's PDF: keep the case, drop the borrowed document."""
+    label = category.replace("_", " ").title()
+    return {
+        "report_id": report_num,
+        "report_date": "",
+        "raw_content": "",
+        "content_length": 0,
+        "summary": f"{label} — DOH has not published this case's document",
+        "categories": {
+            "report_category": category,
+            "report_type": "",
+            "inspection_number": report_num,
+            "license_number": "",
+            "inspection_type": "",
+            "inspection_date": "",
+            "inspector": "",
+            "administrator": "",
+            "service_types": "",
+            "pdf_url": "",
+            "listed_pdf_url": url,
+            "document_owner_case": owner_case,
+            "deficiencies": [],
+            "violation_count": 0,
+        },
+    }
+
+
 def extract_deficiencies(text: str) -> List[str]:
     """
     Very light deficiency extraction — grabs lines that look like citations
@@ -356,12 +391,23 @@ class WAInspectionScraper:
         report_num: str,
         url: str,
         category: str,
+        sharers: Optional[List[str]] = None,
     ) -> Optional[Dict]:
         pdf_path = self.download_pdf(url)
         if not pdf_path:
             return None
 
         text = extract_pdf_text(pdf_path)
+
+        # DOH sometimes links several case numbers to one case's PDF (twelve
+        # Pearl Youth Residence cases all point at 2023-11257.pdf). Only the
+        # case named in the document gets its text; the others are recorded
+        # without a document so they don't repeat another case's findings.
+        if report_num and sharers and len(sharers) > 1 and not mentions_case(text, report_num):
+            owners = [n for n in sharers if n != report_num and mentions_case(text, n)]
+            if owners:
+                logger.warning(f"  {report_num}: DOH links it to case {owners[0]}'s document; storing without it")
+                return build_unlinked_report(report_num, url, category, owners[0])
         parsed = parse_inspection_text(text)
         deficiencies = extract_deficiencies(text)
 
@@ -449,12 +495,17 @@ class WAInspectionScraper:
             reports: List[Dict] = []
             ids_for_facility: List[str] = []
             skipped = 0
+            sharers_by_url: Dict[str, List[str]] = {}
+            for links in row["reports_by_category"].values():
+                for report_num, url in links:
+                    if report_num:
+                        sharers_by_url.setdefault(url, []).append(report_num)
             for category, links in row["reports_by_category"].items():
                 for report_num, url in links:
                     if report_num and report_num in seen_for_facility:
                         skipped += 1
                         continue
-                    report = self.build_report(report_num, url, category)
+                    report = self.build_report(report_num, url, category, sharers_by_url.get(url))
                     if report:
                         reports.append(report)
                         if report.get("report_id"):
