@@ -103,7 +103,9 @@ QUICK START
         py tti_doc_finder.py review --window       # the list: filter, select, approve
         py tti_doc_finder.py review                # one at a time in the console
         py tti_doc_finder.py auto-approve "prea-audit"   # never ask me about these
-        py tti_doc_finder.py upload                # copy 25 approved ones to Drive
+        py tti_doc_finder.py refile                # match inbox-bound ones to a folder by name
+        py tti_doc_finder.py upload                # copy 25 approved ones to Drive (refiles first,
+                                                   # starts OneDrive if it isn't running)
         py tti_doc_finder.py stage                 # ...or build a folder for the importer
         py tti_doc_finder.py status                # what's waiting
         py tti_doc_finder.py history               # past scans
@@ -350,6 +352,18 @@ SKIP_DIR_NAMES = {
     "perflogs", "recovery", "windowsapps", "onedrivetemp", "intel", "amd", "nvidia",
     "config.msi", "documents and settings", "drivers", "xboxgames",
 }
+
+# The scrapers' report caches in this repo. backup_reports.py already moves each one
+# into its own Drive folder (fl_pdfs, ut_checklists, ...), so the doc finder leaves
+# them alone - filing them by hand only made second copies in the inbox.
+SCRAPER_CACHE_DIRS = {".nc_pdf_cache", ".nc_ocr_cache", ".ar_pdf_cache",
+                      "fl_pdfs", "or_pdfs", "wa_pdfs", "checklists"}
+SKIP_DIR_NAMES |= SCRAPER_CACHE_DIRS
+
+
+def in_scraper_cache(path):
+    """Is this file inside one of the scrapers' report caches?"""
+    return any(part.lower() in SCRAPER_CACHE_DIRS for part in Path(path).parent.parts)
 
 MAX_CONTENT_BYTES = 60 * 1024 * 1024   # don't open files bigger than this for text
 MAX_TEXT_CHARS = 300_000               # only search the first N characters
@@ -781,6 +795,9 @@ GENERIC_FOLDERS = _STATES | {
     "marketing", "strategy", "research", "general", "files", "docs", "pdf", "pdfs",
     "canada", "ireland", "israel", "jamaica", "costa rica", "mexico", "samoa",
     "board of directors", "property records", "academic reports", "parent guides",
+    # the organisation itself: it's in the name of this repo, so every file under
+    # Kids-Over-Profits-Tools matched it and landed in the top-level folder
+    "kids over profits", "kop",
     # scraper output folders - the pipelines fill these, hand-found documents don't
     # belong in them (see backup_reports.py REPORT_CACHES)
     "checklists", "ut checklists", "az inspections", "az reports", "dra reports",
@@ -860,17 +877,133 @@ def unique_destination(folder, filename):
     return candidate
 
 
-def upload(src, dest_dir, filename):
-    """Copy src into dest_dir (creating it). Returns (dest_path, error)."""
+# --------------------------------------------------------------------------------------
+# Getting a OneDrive document off the cloud and into Drive
+#
+# Most of OneDrive is online-only placeholders. Copying one makes OneDrive download it
+# first, and that only works while the OneDrive app is running - with just its
+# background service up, every copy fails with WinError 362 "The cloud file provider
+# is not running". The download lands on C:, and Drive for desktop caches the copy on
+# C: too, so a big batch can also fill the disk halfway through.
+# --------------------------------------------------------------------------------------
+CLOUD_NOT_RUNNING = 362        # ERROR_CLOUD_FILE_PROVIDER_NOT_RUNNING
+CLOUD_TIMEOUT = 426            # ERROR_CLOUD_FILE_REQUEST_TIMEOUT
+DISK_HEADROOM = 1024 ** 3      # leave at least 1 GB free on the disk the downloads land on
+
+
+def onedrive_exe():
+    for p in (os.path.join(os.environ.get("LOCALAPPDATA", ""), "Microsoft", "OneDrive", "OneDrive.exe"),
+              r"C:\Program Files\Microsoft OneDrive\OneDrive.exe",
+              r"C:\Program Files (x86)\Microsoft OneDrive\OneDrive.exe"):
+        if p and os.path.isfile(p):
+            return p
+    return ""
+
+
+def onedrive_running():
+    if not IS_WIN:
+        return True
     try:
-        os.makedirs(_lp(dest_dir), exist_ok=True)
-        dest = unique_destination(dest_dir, filename)
-        shutil.copy2(_lp(src), _lp(dest))
-        if os.path.getsize(_lp(dest)) != os.path.getsize(_lp(src)):
-            return dest, "size mismatch after copy"
-        return dest, ""
+        out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq OneDrive.exe", "/NH"],
+                             capture_output=True, text=True, timeout=20).stdout
+    except Exception:
+        return True                      # can't tell - let the copy speak for itself
+    return "onedrive.exe" in out.lower()
+
+
+def ensure_onedrive(wait=60):
+    """Start the OneDrive app if it isn't running. Returns '' or why it couldn't."""
+    if onedrive_running():
+        return ""
+    exe = onedrive_exe()
+    if not exe:
+        return "OneDrive isn't running and OneDrive.exe wasn't found - start OneDrive yourself"
+    print("  OneDrive isn't running, so its online-only files can't be read. Starting it...",
+          file=sys.stderr)
+    try:
+        subprocess.Popen([exe, "/background"])
     except OSError as exc:
-        return "", str(exc)
+        return f"couldn't start OneDrive: {exc}"
+    deadline = time.time() + wait
+    while time.time() < deadline:
+        time.sleep(3)
+        if onedrive_running():
+            time.sleep(5)                # let it register as the cloud provider
+            return ""
+    return "started OneDrive but it didn't come up within a minute"
+
+
+def under_onedrive(path):
+    roots = [os.environ.get(v) for v in ("OneDrive", "OneDriveConsumer", "OneDriveCommercial")]
+    return any(r and _is_under(path, r) for r in roots)
+
+
+def free_up_space(path):
+    """OneDrive's 'Free up space': drop the local copy, keep the file in the cloud.
+    Never delete a placeholder to save space - that deletes it from OneDrive too."""
+    if IS_WIN:
+        try:
+            subprocess.run(["attrib", "+U", "-P", path], capture_output=True, timeout=30)
+        except Exception:
+            pass
+
+
+def room_for(src, size):
+    """'' when the downloads have room, else what's short. The download lands on the
+    source's disk and Drive for desktop caches the copy on the system disk."""
+    disks = {os.path.splitdrive(os.path.abspath(src))[0].upper() or "C:",
+             (os.environ.get("SystemDrive") or "C:").upper()}
+    for disk in disks:
+        try:
+            free = shutil.disk_usage(disk + "\\").free
+        except OSError:
+            continue
+        if free - size < DISK_HEADROOM:
+            return (f"only {free / 1024 ** 3:.1f} GB free on {disk} - free some space "
+                    f"(or empty the Recycle Bin) and run it again")
+    return ""
+
+
+def upload(src, dest_dir, filename):
+    """Copy src into dest_dir (creating it). Returns (dest_path, error).
+
+    A OneDrive placeholder is downloaded by the copy; afterwards it goes back to
+    online-only so a batch doesn't pile the whole thing up on C:.
+    """
+    try:
+        was_cloud = is_cloud_only(os.stat(_lp(src)))
+    except OSError:
+        was_cloud = False
+    last_err = ""
+    for attempt in (1, 2):
+        dest = ""
+        try:
+            os.makedirs(_lp(dest_dir), exist_ok=True)
+            dest = unique_destination(dest_dir, filename)
+            shutil.copy2(_lp(src), _lp(dest))
+            if os.path.getsize(_lp(dest)) != os.path.getsize(_lp(src)):
+                return dest, "size mismatch after copy"
+            if was_cloud and under_onedrive(src):
+                free_up_space(src)
+            return dest, ""
+        except OSError as exc:
+            last_err = str(exc)
+            if dest and os.path.exists(_lp(dest)):
+                try:
+                    os.remove(_lp(dest))  # a half-written copy is worse than none
+                except OSError:
+                    pass
+            code = getattr(exc, "winerror", None)
+            if attempt == 1 and code == CLOUD_NOT_RUNNING:
+                why = ensure_onedrive()
+                if why:
+                    return "", f"{last_err} ({why})"
+                continue
+            if attempt == 1 and code == CLOUD_TIMEOUT:
+                time.sleep(10)
+                continue
+            break
+    return "", last_err
 
 
 # --------------------------------------------------------------------------------------
@@ -1879,6 +2012,63 @@ def approve_from_csv(args):
 # --------------------------------------------------------------------------------------
 # Uploading the approved documents, a batch at a time
 # --------------------------------------------------------------------------------------
+def upload_library(store, override=None):
+    """The library to file into: the one named, the one the last scan used, or the
+    one kop_paths resolves (the same FileBird folder the scrapers write to)."""
+    lib = store.library(override)
+    if not lib and GOOGLE_DRIVE_BASE is not None:
+        try:
+            if GOOGLE_DRIVE_BASE.is_dir():
+                lib = str(GOOGLE_DRIVE_BASE)
+        except OSError:
+            pass
+    return lib
+
+
+def refile_unmatched(store, library, decisions=(PENDING, APPROVED, FAILED), progress=None):
+    """Give every document still headed for the inbox a real folder where one fits.
+
+    A scan picks the folder, but a history read back from a report CSV never went
+    through a scan, so everything in it sat in the inbox. This runs the same matching
+    - the library's folder names against the filename, then against the folders the
+    document sits in - without opening the documents. Returns (refiled, still_inbox).
+    """
+    progress = progress or Progress()
+    progress.stage("Reading the library's folder names...")
+    _, _, _, per_folder = index_filebird([library], True, progress)
+    folders = FolderIndex([library], per_folder)
+    refiled = still = 0
+    for k, d in store.docs.items():
+        if d.get("decision") not in decisions:
+            continue
+        if d.get("folder") not in ("", DEFAULT_INBOX):
+            continue                                  # a scan or you already chose one
+        path = d.get("path", "")
+        parents = " / ".join(Path(path).parent.parts[-3:])
+        rel, _, confidence = folders.choose(d.get("filename") or os.path.basename(path), parents, "")
+        if rel:
+            d["folder"], d["folder_matched_in"] = rel, confidence
+            store.touch(k)
+            refiled += 1
+        else:
+            still += 1
+    store.save()
+    return refiled, still
+
+
+def refile_cmd(args):
+    store, _ = load_previous()
+    library = upload_library(store, args.filebird[0] if args.filebird else None)
+    if not library:
+        sys.exit("I don't know which FileBird library to file into.\n"
+                 f'    py tti_doc_finder.py refile --filebird "{DEFAULT_LIBRARY_HINT}"')
+    refiled, still = refile_unmatched(store, library)
+    out = (f"\n{refiled:,} documents now have a folder of their own.\n"
+           f"{still:,} matched no folder name and still go to '{DEFAULT_INBOX}'.\n")
+    print(out, file=sys.stderr)
+    return out
+
+
 def upload_approved(args):
     store, _ = load_previous()
     queue = store.with_decision(APPROVED)
@@ -1888,17 +2078,37 @@ def upload_approved(args):
         print("Nothing is approved yet. Review some first:  py tti_doc_finder.py review", file=sys.stderr)
         return "Nothing approved to upload."
 
-    library = store.library(args.filebird[0] if args.filebird else None)
+    library = upload_library(store, args.filebird[0] if args.filebird else None)
     if not library:
         sys.exit("I don't know which FileBird library to upload into.\n"
                  "Run a scan first, or name it explicitly:\n"
                  f'    py tti_doc_finder.py upload --filebird "{DEFAULT_LIBRARY_HINT}"')
 
+    # Anything still headed for the inbox gets a real folder first, if one fits.
+    refiled, _ = refile_unmatched(store, library)
+    if refiled:
+        print(f"  {refiled:,} documents given a folder by name before uploading.", file=sys.stderr)
+    queue = [(k, store.docs[k]) for k, _ in queue]
+
+    # The scrapers' caches are backup_reports.py's job - it files them in their own folders.
+    cached = [(k, d) for k, d in queue if in_scraper_cache(d.get("path", ""))]
+    for k, _ in cached:
+        store.decide(k, REJECTED, note="scraper report cache - backup_reports.py files these")
+    queue = [(k, d) for k, d in queue if not in_scraper_cache(d.get("path", ""))]
+    if cached:
+        store.save()
+        print(f"  {len(cached):,} scraper report files left to backup_reports.py.", file=sys.stderr)
+
     limit = len(queue) if args.all else min(args.batch, len(queue))
     interactive = bool(sys.stdin) and sys.stdin.isatty() and getattr(args, "ask", True)
     print(f"\n{len(queue):,} approved, uploading {limit:,} into {library}\n", file=sys.stderr)
 
-    done, failed, gone = 0, 0, 0
+    if any(under_onedrive(d.get("path", "")) for _, d in queue[:limit]):
+        why = ensure_onedrive()
+        if why:
+            print(f"  WARNING: {why}", file=sys.stderr)
+
+    done, failed, gone, stopped = 0, 0, 0, ""
     for i, (k, doc) in enumerate(queue[:limit], 1):
         src = doc.get("path", "")
         if not os.path.isfile(_lp(src)):
@@ -1906,6 +2116,14 @@ def upload_approved(args):
             print(f"  [{i}/{limit}] MISSING ON DISK  {doc.get('filename')}", file=sys.stderr)
             gone += 1
             continue
+        try:
+            size = os.path.getsize(_lp(src))
+        except OSError:
+            size = 0
+        stopped = room_for(src, size)
+        if stopped:
+            print(f"  Stopping: {stopped}", file=sys.stderr)
+            break
         dest_dir = os.path.join(library, *doc.get("folder", "").split("/"))
         dest, err = upload(src, dest_dir, doc.get("filename", os.path.basename(src)))
         if err:
@@ -1925,6 +2143,7 @@ def upload_approved(args):
     summary = (f"\nUploaded {done:,} documents into {library}.\n"
                + (f"  Failed:                {failed:,}\n" if failed else "")
                + (f"  No longer on disk:     {gone:,}\n" if gone else "")
+               + (f"  Stopped early:         {stopped}\n" if stopped else "")
                + f"  Still approved to go:  {c[APPROVED]:,}\n"
                + f"  Still to review:       {c[PENDING]:,}\n"
                + f"  Uploaded all together: {c[UPLOADED]:,}\n"
@@ -2801,6 +3020,10 @@ def main():
     up.add_argument("--all", action="store_true", help="upload every approved document, no batching")
     up.add_argument("--retry-failed", action="store_true", help="also retry the ones that failed before")
 
+    rf = sub.add_parser("refile", help="give documents headed for the inbox a real folder where "
+                                       "their name or location matches one (upload does this too)")
+    add_library(rf)
+
     stg = sub.add_parser("stage", help="put the approved documents and a manifest.json in a folder for "
                                        "api/import-documents.php (doesn't rely on the Drive sync)")
     stg.add_argument("--out", default=os.path.join(os.path.expanduser("~"),
@@ -2856,6 +3079,8 @@ def main():
         export_pending(args)
     elif args.command == "upload":
         upload_approved(args)
+    elif args.command == "refile":
+        refile_cmd(args)
     elif args.command == "stage":
         stage_approved(args)
     elif args.command == "auto-approve":
