@@ -27,3 +27,6 @@ fl_pdfs/
 or_pdfs/
 .nc_pdf_cache/
 .claude/settings.json
+
+# Doc finder: scan history and your keep/skip decisions (local file paths)
+.tti_doc_finder_state.json
