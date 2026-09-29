@@ -1,11 +1,20 @@
 """
 Arkansas PRTF Scraper — Disability Rights Arkansas
 
-Pulls all PRTF facility documents from disabilityrightsar.org via the WP REST API,
-downloads the linked Google Drive PDFs, extracts text with pdfplumber, and posts
-the data to the Kids-Over-Profits inspections API.
+Pulls PRTF facility documents from disabilityrightsar.org via the WP REST API,
+downloads the PDFs, extracts text with pdfplumber (OCR for scans), and posts
+the data to the Kids-Over-Profits inspections API. Two DRA collections:
+
+  documents  The document library (dlp_document, 2023 on): PDFs on Google
+             Drive, one doc category per facility.
+  prtf       The older PRTF database (prtf posts, 2019-2024): PDFs uploaded to
+             DRA's media library, tagged by facility, incident type and record
+             category, with DRA's own summary. Records whose PDF text matches a
+             library document already scraped are skipped, since DRA posted
+             many 2023-24 documents in both.
 """
 import argparse
+import hashlib
 import io
 import logging
 import os
@@ -78,6 +87,42 @@ FACILITY_NAMES = {
     "youth-home":              "Youth Home",
 }
 
+# PRTF database facility term slug -> the document library's category slug, so
+# both collections file under one facility (program_name DRA-<category slug>).
+PRTF_FACILITY_SLUGS = {
+    "centers-for-youth-and-families-little-rock": "centers-little-rock",
+    "centers-for-youth-and-families-monticello":  "centers-monticello",
+    "delta-family-services":                      "delta",
+    "little-creek":                               "little-creek",
+    "methodist-dacus":                            "methodist-dacus",
+    "methodist-little-rock":                      "methodist-little-rock",
+    "millcreek":                                  "millcreek",
+    "perimeter-of-forrest-city":                  "perimeter-forrest-city-2",
+    "perimeter-of-the-ozarks":                    "perimeter-ozarks-2",
+    "perimeter-of-west-memphis":                  "perimeter-west-memphis-2",
+    "piney-ridge-treatment-center":               "yellow-rock",
+    "timber-ridge":                               "timber-ridge",
+    "youth-home":                                 "youth-home",
+}
+
+# PRTF incident types that name the kind of document rather than what happened;
+# the first one on a record becomes its doc_type.
+PRTF_DOC_KINDS = (
+    "Notice of Incident", "Visit Compliance Report", "Licensing Compliance Record",
+    "Licensing Follow Up", "Complaint Survey with POC", "Complaint Survey",
+    "Revisit Survey with POC", "Validation Survey with POC", "Validation Survey",
+    "Inspection of Care Report", "Information Report", "Monitor Visit",
+    "Corrective Action Agreement", "Corrective Action Plan", "Notice of Sanction",
+)
+
+# PRTF incident types meaning the state found a violation. The library marks
+# these documents with its "Citation" tag, which is what the site flags.
+PRTF_CITATION_TYPES = {
+    "Complaint Survey with POC", "Revisit Survey with POC", "Validation Survey with POC",
+    "Complaint Founded", "Notice of Sanction", "Corrective Action Plan",
+    "Corrective Action Agreement", "Corrective Action Agreement & Appeal",
+}
+
 DRIVE_FILE_RE = re.compile(r"drive\.google\.com/file/d/([A-Za-z0-9_-]+)")
 
 
@@ -91,6 +136,12 @@ def parse_date_from_title(title: str) -> str:
     """Most DRA titles start with a date like '9/8/2025' or '02/19/2025'."""
     m = re.match(r"\s*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})", title)
     return m.group(1) if m else ""
+
+
+def text_fingerprint(text: str) -> str:
+    """Hash of a document's words, to spot the same PDF posted twice."""
+    words = re.findall(r"[a-z0-9]+", (text or "").lower())
+    return hashlib.sha1(" ".join(words).encode("utf-8")).hexdigest() if len(words) >= 20 else ""
 
 
 def doc_type_from_title(title: str) -> str:
@@ -284,6 +335,10 @@ class DRAScraper:
                 },
             })
 
+        return self._facility_shell(slug, term_name, reports)
+
+    @staticmethod
+    def _facility_shell(slug: str, term_name: str, reports: List[Dict]) -> Dict:
         return {
             "facility_info": {
                 "facility_name": FACILITY_NAMES.get(slug, term_name),
@@ -299,6 +354,158 @@ class DRAScraper:
             },
             "reports": reports,
         }
+
+    # --- PRTF database (older records) -------------------------------------
+
+    def _all_pages(self, base: str, params: Dict) -> List[Dict]:
+        out: List[Dict] = []
+        page = 1
+        while True:
+            r = self._get(f"{DRA_BASE}/{base}", params={**params, "per_page": 100, "page": page})
+            batch = r.json()
+            out.extend(batch)
+            if not batch or page >= int(r.headers.get("X-WP-TotalPages", "1")):
+                break
+            page += 1
+        return out
+
+    def _prtf_pdf_text(self, media: Dict) -> Tuple[str, Optional[bytes]]:
+        """(text, PDF bytes) of one PRTF media PDF. The bytes are None when the
+        text came from the cache; the PDF was archived on that earlier run."""
+        cache_key = f"media-{media['id']}"
+        text_cache = TEXT_CACHE_DIR / f"{cache_key}.txt"
+        if text_cache.exists():
+            return text_cache.read_text(encoding="utf-8", errors="replace"), None
+        if not self.download_pdfs:
+            return "", None
+        try:
+            r = self.session.get(media["source_url"], timeout=120)
+        except requests.RequestException as e:
+            logger.warning(f"    PDF download failed for media {media['id']}: {e}")
+            return "", None
+        if r.status_code != 200 or r.content[:4] != b"%PDF":
+            logger.warning(f"    PDF download media {media['id']} -> {r.status_code}")
+            return "", None
+        text = self._extract_pdf_text(r.content)
+        if not text and self.ocr:
+            logger.info(f"    OCR fallback for media {media['id']}")
+            text = self._ocr_pdf(r.content, cache_key)
+        if text:
+            text_cache.write_text(text, encoding="utf-8")
+        return text, r.content
+
+    @staticmethod
+    def _archive_prtf_pdf(media: Dict, content: bytes) -> None:
+        """Write the PDF to the Drive folder as dra-media-<id>.pdf, the name the
+        site's archive link looks up."""
+        archive = PDF_CACHE_DIR / f"dra-media-{media['id']}.pdf"
+        try:
+            if archive.stat().st_size == len(content):
+                return
+        except OSError:
+            pass
+        archive.write_bytes(content)
+
+    def _library_fingerprints(self) -> set:
+        """Fingerprints of the document library's PDFs (their cached text)."""
+        return {fp for path in TEXT_CACHE_DIR.glob("*.txt") if not path.name.startswith("media-")
+                for fp in [text_fingerprint(path.read_text(encoding="utf-8", errors="replace"))] if fp}
+
+    def scrape_prtf(self, slugs: Optional[List[str]] = None,
+                    modified_after: Optional[str] = None) -> Tuple[List[Dict], str]:
+        """PRTF database records as facilities (merged with the library's by
+        facility slug on the site). Returns (facilities, newest modified)."""
+        names = lambda terms: {t["id"]: unescape(t["name"]) for t in terms}
+        facilities = {t["id"]: t["slug"] for t in self._all_pages("facility", {})}
+        incident_types = names(self._all_pages("incident_type", {}))
+        record_categories = names(self._all_pages("record_category", {}))
+
+        params = {"orderby": "modified", "order": "asc"}
+        if modified_after:
+            params["modified_after"] = modified_after
+        posts = self._all_pages("prtf", params)
+        logger.info(f"PRTF database: {len(posts)} records" + (f" since {modified_after}" if modified_after else ""))
+        if not posts:
+            return [], ""
+
+        media_by_post: Dict[int, List[Dict]] = {}
+        ids = [p["id"] for p in posts]
+        for i in range(0, len(ids), 100):
+            for m in self._all_pages("media", {"parent": ",".join(map(str, ids[i:i + 100])),
+                                               "mime_type": "application/pdf",
+                                               "_fields": "id,source_url,post"}):
+                media_by_post.setdefault(m["post"], []).append(m)
+
+        library = self._library_fingerprints()
+        by_facility: Dict[str, List[Dict]] = {}
+        duplicates = unmapped = 0
+        for n, post in enumerate(posts, 1):
+            fac_slugs = [facilities.get(f, "") for f in post.get("facility", [])]
+            slug = next((PRTF_FACILITY_SLUGS[f] for f in fac_slugs if f in PRTF_FACILITY_SLUGS), "")
+            if not slug:
+                unmapped += 1
+                continue
+            if slugs and slug not in slugs:
+                continue
+            pdfs = sorted(media_by_post.get(post["id"], []), key=lambda m: m["id"])
+            if n % 100 == 0:
+                logger.info(f"  PRTF {n}/{len(posts)}")
+            fetched = [self._prtf_pdf_text(m) for m in pdfs]
+            texts = [t for t, _ in fetched]
+            raw_text = "\n\n".join(t for t in texts if t)
+            # Already a library document: skip it, and keep no second copy.
+            if any(text_fingerprint(t) in library for t in texts if t):
+                duplicates += 1
+                continue
+            for media, (_, content) in zip(pdfs, fetched):
+                if content:
+                    self._archive_prtf_pdf(media, content)
+
+            types = [incident_types.get(t, "") for t in post.get("incident_type", [])]
+            types = [t for t in types if t]
+            cats = [record_categories.get(c, "") for c in post.get("record_category", [])]
+            if "Police Report" in cats:
+                doc_type = "Police Report"
+            else:
+                doc_type = next((t for t in types if t in PRTF_DOC_KINDS), "") or (cats[0] if cats else "Document")
+            tags = [t for t in types if t != doc_type]
+            if any(t in PRTF_CITATION_TYPES for t in types):
+                tags.append("Citation")
+            if "Police Report" in cats and "Police Report" not in tags:
+                tags.append("Police Report")
+
+            title = strip_html(post.get("title", {}).get("rendered", ""))
+            post_date = (post.get("date") or "")[:10]
+            m = re.match(r"(\d{4})-(\d{2})-(\d{2})", post_date)
+            report_date = f"{m[2]}/{m[3]}/{m[1]}" if m and m[1] >= "2000" else parse_date_from_title(title.replace(".", "/"))
+            first = pdfs[0] if pdfs else {}
+            by_facility.setdefault(slug, []).append({
+                "report_id": f"prtf-{post.get('slug') or post['id']}",
+                "report_date": report_date,
+                "report_url": post.get("link", ""),
+                "raw_content": raw_text,
+                "content_length": len(raw_text),
+                "is_structured": False,
+                "summary": strip_html(post.get("content", {}).get("rendered", "")),
+                "categories": {
+                    "doc_type": doc_type,
+                    "tags": tags,
+                    "record_category": ", ".join(cats),
+                    "pdf_url": first.get("source_url", ""),
+                    "more_pdf_urls": [m["source_url"] for m in pdfs[1:]],
+                    "archive_name": f"dra-media-{first['id']}.pdf" if first else "",
+                    "doc_page_url": post.get("link", ""),
+                    "post_date": post.get("date", ""),
+                    "modified_date": post.get("modified", ""),
+                    "collection": "DRA PRTF database",
+                },
+            })
+
+        logger.info(f"PRTF database: {sum(len(v) for v in by_facility.values())} records kept, "
+                    f"{duplicates} already in the document library, {unmapped} with no known facility")
+        results = [self._facility_shell(slug, FACILITY_NAMES.get(slug, slug), reports)
+                   for slug, reports in sorted(by_facility.items())]
+        return results, max((p.get("modified", "") for p in posts), default="")
 
     def scrape(self, slugs: Optional[List[str]] = None,
                last_run: Optional[Dict[str, str]] = None
@@ -358,6 +565,8 @@ def main():
                     help="Skip posting to API (dry run)")
     ap.add_argument("--full", action="store_true",
                     help=f"Ignore {STATE_FILE} and re-scan all documents")
+    ap.add_argument("--source", choices=("both", "documents", "prtf"), default="both",
+                    help="documents = the 2023+ document library, prtf = the older PRTF database")
     args = ap.parse_args()
 
     if not pdfplumber and not args.no_pdfs:
@@ -368,7 +577,18 @@ def main():
     last_run = {} if args.full else state.get("last_run", {})
 
     scraper = DRAScraper(download_pdfs=not args.no_pdfs, ocr=not args.no_ocr)
-    facilities, new_cursors = scraper.scrape(slugs=args.slugs, last_run=last_run)
+    facilities: List[Dict] = []
+    new_cursors: Dict[str, str] = {}
+    # The library runs first: its cached text is what PRTF records are
+    # checked against for duplicates.
+    if args.source in ("both", "documents"):
+        facilities, new_cursors = scraper.scrape(slugs=args.slugs, last_run=last_run)
+    if args.source in ("both", "prtf"):
+        prtf_facilities, prtf_cursor = scraper.scrape_prtf(slugs=args.slugs,
+                                                           modified_after=last_run.get("prtf"))
+        facilities += prtf_facilities
+        if prtf_cursor and not args.slugs:
+            new_cursors["prtf"] = prtf_cursor
 
     if not facilities:
         logger.warning("No facilities scraped")
