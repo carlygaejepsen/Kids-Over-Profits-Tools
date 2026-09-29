@@ -10,6 +10,8 @@ endpoints that the childcare.hhs.texas.gov React app calls.
 """
 
 import argparse
+import hashlib
+import json
 import logging
 import os
 import re
@@ -227,6 +229,7 @@ class TXFacilityScraper:
         """
         deficiencies = history.get("deficienciesDetail", [])
         reports = []
+        id_counts: Dict[str, int] = {}
 
         for deficiency in deficiencies:
             citation_date = TXFacilityScraper._format_date(
@@ -242,9 +245,13 @@ class TXFacilityScraper:
                 deficiency.get("dtVrfd")
             )
 
-            # Build a unique report ID
+            # Operation, date and standard name a deficiency, but HHSC can cite
+            # one standard twice on a day; later ones get _2, _3 so they don't
+            # overwrite the first.
             raw_id = f"{op_id}_{citation_date}_{standard}"
-            report_id = re.sub(r"[^a-zA-Z0-9_]", "", raw_id)[:100]
+            base_id = re.sub(r"[^a-zA-Z0-9_]", "", raw_id)[:96]
+            id_counts[base_id] = id_counts.get(base_id, 0) + 1
+            report_id = base_id if id_counts[base_id] == 1 else f"{base_id}_{id_counts[base_id]}"
 
             # Categories dict uses the same keys the TX frontend expects
             categories = {
@@ -259,6 +266,9 @@ class TXFacilityScraper:
                 "Date Correction Evaluated": correction_date,
                 "Deficiency Narrative": narrative,
                 "Correction Narrative": correction_narrative,
+                "Additional Correction Narrative": deficiency.get("txtCrrctvEvalNrrtvAddnl") or "",
+                "Correction Evaluation Result": deficiency.get("txtCrrctvEvalRslt") or "",
+                "Correction Deadline": TXFacilityScraper._format_date(deficiency.get("dtCrrctnDdln")),
             }
 
             reports.append({
@@ -273,17 +283,29 @@ class TXFacilityScraper:
         return reports
 
     def scrape(self, operation_ids: Optional[List[str]] = None,
-               seen: Optional[Dict[str, Set[str]]] = None
-               ) -> Tuple[List[Dict], Dict[str, List[str]]]:
-        """Scrape operations, dropping deficiencies whose report_id is already in `seen`.
+               seen: Optional[Dict[str, Set[str]]] = None,
+               hashes: Optional[Dict[str, Dict[str, str]]] = None,
+               ) -> Tuple[List[Dict], Dict[str, List[str]], Dict[str, Dict[str, str]]]:
+        """Scrape operations, keeping deficiencies that are new or have changed.
 
-        State is keyed by op_id. Filtering happens after fetch (the history API
-        returns all deficiencies in one call, so we can't skip the fetch
-        itself), but it does prevent re-posting already-seen deficiencies.
+        HHSC keeps editing a deficiency after it is first published: the
+        correction is evaluated, narratives are added, a disputed citation is
+        revised. So a deficiency seen before is posted again whenever its
+        content differs from what was last posted (`hashes`, per op_id); the
+        write API updates it in place. One seen before but no longer listed
+        was withdrawn by HHSC; those are logged (self.withdrawn) and left on
+        the site. The history API returns every deficiency in one call, so
+        the fetch itself can't be skipped.
+
+        Returns (facilities to post, their report ids, their content hashes).
         """
         ids = operation_ids or OPERATION_IDS
         seen = seen or {}
+        hashes = hashes or {}
         new_ids: Dict[str, List[str]] = {}
+        new_hashes: Dict[str, Dict[str, str]] = {}
+        self.withdrawn: Dict[str, List[str]] = {}
+        changed_total = 0
         logger.info(f"Starting TX scrape for {len(ids)} operations")
 
         self._get_token()
@@ -303,11 +325,28 @@ class TXFacilityScraper:
                 history = self._get_compliance_history(provider_id)
                 reports = self._build_reports(op_id, history)
                 seen_for_op = seen.get(op_id, set())
-                new_reports = [r for r in reports if r["report_id"] and r["report_id"] not in seen_for_op]
+                hashes_for_op = hashes.get(op_id, {})
+                new_reports = []
+                changed = 0
+                for r in reports:
+                    rid = r["report_id"]
+                    if not rid:
+                        continue
+                    if rid not in seen_for_op:
+                        new_reports.append(r)
+                    elif hashes_for_op.get(rid) != report_hash(r):
+                        new_reports.append(r)
+                        changed += 1
+                gone = sorted(seen_for_op - {r["report_id"] for r in reports})
+                if gone:
+                    self.withdrawn[op_id] = gone
+                    logger.warning(f"  {len(gone)} deficiencies no longer listed by HHSC (left on the site): "
+                                   + ", ".join(gone[:5]))
                 if seen_for_op:
-                    logger.info(f"  {len(new_reports)} new of {len(reports)} deficiencies")
+                    logger.info(f"  {len(new_reports) - changed} new, {changed} changed of {len(reports)} deficiencies")
                 else:
                     logger.info(f"  {len(reports)} deficiencies")
+                changed_total += changed
 
                 if not new_reports:
                     continue
@@ -317,6 +356,7 @@ class TXFacilityScraper:
                     "reports": new_reports,
                 })
                 new_ids[op_id] = [r["report_id"] for r in new_reports]
+                new_hashes[op_id] = {r["report_id"]: report_hash(r) for r in new_reports}
 
             except requests.exceptions.RequestException as e:
                 logger.error(f"  HTTP error on {op_id}: {e}")
@@ -329,8 +369,15 @@ class TXFacilityScraper:
                 logger.error(f"  ERROR on {op_id}: {e}")
                 continue
 
-        logger.info(f"Scraping complete: {len(self.all_facilities)} facilities")
-        return self.all_facilities, new_ids
+        logger.info(f"Scraping complete: {len(self.all_facilities)} facilities, "
+                    f"{changed_total} changed deficiencies, "
+                    f"{sum(len(v) for v in self.withdrawn.values())} no longer listed")
+        return self.all_facilities, new_ids, new_hashes
+
+
+def report_hash(report: Dict) -> str:
+    """Fingerprint of what gets posted for a deficiency, to spot later edits."""
+    return hashlib.sha1(json.dumps(report, sort_keys=True).encode("utf-8")).hexdigest()
 
 
 # ── API posting ──────────────────────────────────────────────────────
@@ -358,18 +405,24 @@ def main():
 
     state = load_state(STATE_FILE)
     seen = {} if args.full else seen_from_state(state)
+    # Deficiencies posted before hashes were kept have none, so the first run
+    # re-posts each once with its current content.
+    hashes = {} if args.full else state.get("hashes", {})
 
     scraper = TXFacilityScraper()
-    facilities, new_ids = scraper.scrape(seen=seen)
+    facilities, new_ids, new_hashes = scraper.scrape(seen=seen, hashes=hashes)
 
     if not facilities:
-        logger.info("No new deficiencies since last run")
+        logger.info("No new or changed deficiencies since last run")
         return
 
-    logger.info(f"Posting {len(facilities)} facilities with new deficiencies to API")
+    logger.info(f"Posting {len(facilities)} facilities with new or changed deficiencies to API")
     if save_to_api(facilities):
         logger.info("Data saved to database successfully!")
         merge_new_ids(state, new_ids)
+        stored = state.setdefault("hashes", {})
+        for op_id, by_id in new_hashes.items():
+            stored.setdefault(op_id, {}).update(by_id)
         save_state(STATE_FILE, state)
     else:
         logger.error("API save failed — state not advanced")
