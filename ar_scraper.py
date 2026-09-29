@@ -357,14 +357,17 @@ class DRAScraper:
 
     # --- PRTF database (older records) -------------------------------------
 
-    def _all_pages(self, base: str, params: Dict) -> List[Dict]:
+    def _all_pages(self, base: str, params: Dict, label: str = "") -> List[Dict]:
         out: List[Dict] = []
         page = 1
         while True:
             r = self._get(f"{DRA_BASE}/{base}", params={**params, "per_page": 100, "page": page})
             batch = r.json()
             out.extend(batch)
-            if not batch or page >= int(r.headers.get("X-WP-TotalPages", "1")):
+            pages = int(r.headers.get("X-WP-TotalPages", "1"))
+            if label and (page % 10 == 0 or page == pages):
+                logger.info(f"  {label}: page {page} of {pages}")
+            if not batch or page >= pages:
                 break
             page += 1
         return out
@@ -415,6 +418,7 @@ class DRAScraper:
                     modified_after: Optional[str] = None) -> Tuple[List[Dict], str]:
         """PRTF database records as facilities (merged with the library's by
         facility slug on the site). Returns (facilities, newest modified)."""
+        logger.info("PRTF database: listing DRA's records (a few minutes before processing starts)")
         names = lambda terms: {t["id"]: unescape(t["name"]) for t in terms}
         facilities = {t["id"]: t["slug"] for t in self._all_pages("facility", {})}
         incident_types = names(self._all_pages("incident_type", {}))
@@ -423,7 +427,7 @@ class DRAScraper:
         params = {"orderby": "modified", "order": "asc"}
         if modified_after:
             params["modified_after"] = modified_after
-        posts = self._all_pages("prtf", params)
+        posts = self._all_pages("prtf", params, label="records")
         logger.info(f"PRTF database: {len(posts)} records" + (f" since {modified_after}" if modified_after else ""))
         if not posts:
             return [], ""
@@ -431,6 +435,8 @@ class DRAScraper:
         media_by_post: Dict[int, List[Dict]] = {}
         ids = [p["id"] for p in posts]
         for i in range(0, len(ids), 100):
+            if i % 1000 == 0:
+                logger.info(f"  finding PDFs: records {i + 1}-{min(i + 1000, len(ids))} of {len(ids)}")
             for m in self._all_pages("media", {"parent": ",".join(map(str, ids[i:i + 100])),
                                                "mime_type": "application/pdf",
                                                "_fields": "id,source_url,post"}):
@@ -439,7 +445,16 @@ class DRAScraper:
         library = self._library_fingerprints()
         by_facility: Dict[str, List[Dict]] = {}
         duplicates = unmapped = 0
+        started = time.monotonic()
+        logger.info(f"PRTF database: processing {len(posts)} records. Already-read ones go fast; "
+                    "new ones are downloaded and read, scans by OCR (slow). Nothing is posted "
+                    "until all are done; if stopped, a rerun picks up where this left off.")
         for n, post in enumerate(posts, 1):
+            if n % 25 == 0 or n == len(posts):
+                kept = sum(len(v) for v in by_facility.values())
+                elapsed = time.monotonic() - started
+                logger.info(f"  PRTF {n}/{len(posts)}: {kept} kept, {duplicates} duplicates, "
+                            f"{elapsed / 60:.0f} min so far")
             fac_slugs = [facilities.get(f, "") for f in post.get("facility", [])]
             slug = next((PRTF_FACILITY_SLUGS[f] for f in fac_slugs if f in PRTF_FACILITY_SLUGS), "")
             if not slug:
@@ -448,8 +463,6 @@ class DRAScraper:
             if slugs and slug not in slugs:
                 continue
             pdfs = sorted(media_by_post.get(post["id"], []), key=lambda m: m["id"])
-            if n % 100 == 0:
-                logger.info(f"  PRTF {n}/{len(posts)}")
             fetched = [self._prtf_pdf_text(m) for m in pdfs]
             texts = [t for t, _ in fetched]
             raw_text = "\n\n".join(t for t in texts if t)
