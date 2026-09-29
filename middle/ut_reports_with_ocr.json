@@ -1,173 +1,138 @@
 [
   {
-    "facility_id": 99864,
-    "name": "CERTS dba La Europa Academy (RT)",
-    "address": "1135 E Vine St, Murray, UT, 84121",
+    "facility_id": 93201,
+    "name": "Alliance Youth Services dba The Pointe",
+    "address": "4735 N Thanksgiving Way, Lehi, UT, 84043",
     "license_type": "Residential Treatment",
-    "phone": "8012689300",
-    "capacity": 36,
+    "phone": "8013106880",
+    "capacity": 12,
+    "regulation_date": "2021-12-01",
+    "expiration_date": "2026-11-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-05-20",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-04-30",
+        "inspection_types": "Investigation Inspection",
+        "findings": [
+          {
+            "rule_number": "R380-80-5(10)",
+            "rule_description": "Services and supervision to meet each clients needs",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 94203,
+    "name": "Care Youth Corporation - Falcon Ridge Ranch dba Rite Of Passage Inc/Falcon Ridge Ranch",
+    "address": "750 East Sr 9, Virgin, UT, 84779",
+    "license_type": "Residential Treatment",
+    "phone": "4356355260",
+    "capacity": 35,
+    "regulation_date": "2022-01-31",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-11",
+        "inspection_types": "Non On-Site Inspection",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-16",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 94202,
+    "name": "Care Youth Corporation dba Rite Of Passage Inc/Lava Heights Academy",
+    "address": "730 Spring Dr, Toquerville, UT, 84774",
+    "license_type": "Residential Treatment",
+    "phone": "4356350300",
+    "capacity": 39,
+    "regulation_date": "2022-01-31",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-07-09",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93761,
+    "name": "Cascade Lodge",
+    "address": "9091 E 100 S, Huntsville, UT, 84317",
+    "license_type": "Day Treatment",
+    "phone": "4355625800",
+    "capacity": 8,
     "regulation_date": "2022-03-01",
-    "expiration_date": "2027-02-28",
+    "expiration_date": "2027-05-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-29",
-        "inspection_types": "2nd Unannounced",
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Unannounced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
-            "census": 36,
+            "census": 15,
             "capacity": 36,
-            "contact_person": "Iris Wagner",
-            "licensor": "Heather Holbrook",
+            "contact_person": "Porter Roe; Sarah Winters",
+            "licensor": "Chanesea Butler",
             "extraction_method": "text",
-            "checklist_id": 1138043,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_99864_checklist_1138043.pdf"
+            "checklist_id": 1156345,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93761_checklist_1156345.pdf"
           }
         ]
       }
     ]
   },
   {
-    "facility_id": 93248,
-    "name": "Catalyst Residential Treatment Center dba Gray House",
-    "address": "1004 S 1025 W, Brigham City, UT, 84302",
+    "facility_id": 93341,
+    "name": "Cinnamon Hills Youth Crisis Center",
+    "address": "770 E St George Blvd, Saint George, UT, 84770",
     "license_type": "Residential Treatment",
-    "phone": "3852204677",
-    "capacity": 26,
-    "regulation_date": "2022-04-01",
-    "expiration_date": "2027-03-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "2nd Unannounced",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 26,
-            "capacity": 26,
-            "contact_person": "Kaylee Loveland (Smith)",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1122444,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93248_checklist_1122444.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93247,
-    "name": "Catalyst Residential Treatment Center dba Red House",
-    "address": "970 S 1025 W, Brigham City, UT, 84302",
-    "license_type": "Residential Treatment",
-    "phone": "3852204677",
-    "capacity": 24,
-    "regulation_date": "2022-04-01",
-    "expiration_date": "2027-03-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "2nd Unannounced",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 24,
-            "capacity": 24,
-            "contact_person": "Kaylee Loveland (Smith)",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1122326,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93247_checklist_1122326.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93323,
-    "name": "Certs dba Kolob Canyon Residential Treatment Center",
-    "address": "1338 E 600 S, New Harmony, UT, 84757",
-    "license_type": "Residential Treatment",
-    "phone": "8017558802",
-    "capacity": 16,
-    "regulation_date": "2022-06-01",
-    "expiration_date": "2027-05-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-13",
-        "inspection_types": "Unannounced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": null,
-            "contact_person": "Wendi Hunt",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1107463,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93323_checklist_1107463.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93321,
-    "name": "Certs dba Moonridge Academy",
-    "address": "9450 W 2400 S, Cedar City, UT, 84720",
-    "license_type": "Residential Treatment",
-    "phone": "4355869585",
-    "capacity": 24,
-    "regulation_date": "2022-06-01",
-    "expiration_date": "2027-05-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-13",
-        "inspection_types": "Unannounced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 24,
-            "capacity": null,
-            "contact_person": "Craig",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1107444,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93321_checklist_1107444.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93342,
-    "name": "Compass Academy 1 LLC",
-    "address": "4800 E 17160 N, Moroni, UT, 84646",
-    "license_type": "Outpatient Treatment",
-    "phone": "4354365321",
-    "capacity": null,
+    "phone": "4356740984",
+    "capacity": 164,
     "regulation_date": "2022-07-01",
     "expiration_date": "2027-06-30",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-13",
+        "inspection_date": "2026-08-11",
         "inspection_types": "Unannounced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Jennifer Harring",
-            "licensor": "PattiJo Hopes",
+            "census": 164,
+            "capacity": 164,
+            "contact_person": "Mary Taylor",
+            "licensor": "Larry Black",
             "extraction_method": "text",
-            "checklist_id": 1112003,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93342_checklist_1112003.pdf"
+            "checklist_id": 1157663,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93341_checklist_1157663.pdf"
           }
         ]
       }
@@ -185,7 +150,7 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-06-04",
+        "inspection_date": "2026-06-18",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -204,15 +169,21 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-06-10",
+        "inspection_date": "2026-07-16",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-06-10",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
+        "inspection_date": "2026-06-30",
+        "inspection_types": "Investigation Inspection, Non On-Site Inspection",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
         "checklists": []
       }
     ]
@@ -225,29 +196,31 @@
     "phone": "8014912270",
     "capacity": 60,
     "regulation_date": "2021-11-01",
-    "expiration_date": "2026-08-31",
+    "expiration_date": "2027-08-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-08-05",
-        "inspection_types": "Unannounced, Annual Inspection",
-        "findings": [],
-        "checklists": [
+        "inspection_date": "2026-07-23",
+        "inspection_types": "Investigation Inspection",
+        "findings": [
           {
-            "census": 60,
-            "capacity": 60,
-            "contact_person": "McKenzie Hall",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1148283,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93244_checklist_1148283.pdf"
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
           }
-        ]
+        ],
+        "checklists": []
       },
       {
-        "inspection_date": "2026-05-27",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
+        "inspection_date": "2026-07-01",
+        "inspection_types": "Focus, Non On-Site",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
         "checklists": []
       }
     ]
@@ -264,21 +237,65 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2025-11-17",
-        "inspection_types": "Investigation Inspection",
-        "findings": [
+        "inspection_date": "2026-08-20",
+        "inspection_types": "2nd Unannounced",
+        "findings": [],
+        "checklists": [
           {
-            "rule_number": "R380-80-5(4)",
-            "rule_description": "Provider shall protect clients from abuse, prevent abuse",
-            "finding_text": "The provider was out of compliance with R380-80-5(4) by not protecting clients from harm or mistreatment and any action that may compromise the health and safety through acts or omissions and shall instruct and encourage others to do the same. During the investigation inspection, the evidence substantiated that on November 4, 2025, staff members harmed a client by forcibly removing a client from the top bunk of a bed. During the unnecessary physical restraint, a staff member pulled the client downward, causing the client’s head to strike the staff member’s knee and subsequently hit the floor; the client incurred a concussion. \n"
-          },
-          {
-            "rule_number": "R380-80-5(3)",
-            "rule_description": "Provider shall comply with policies and safe practices",
-            "finding_text": "The provider was out of compliance with R380-80-5(3) by not complying with applicable and safe practices that address the appropriate treatment of clients. During the investigation, the evidence substantiated that two staff members failed to comply with the provider’s behavior management policy and procedure by conducting a physical restraint on a client who was not a harm to themselves or others, for staff convenience. \n"
+            "census": 57,
+            "capacity": null,
+            "contact_person": "Paul",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1181844,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93412_checklist_1181844.pdf"
           }
-        ],
-        "checklists": []
+        ]
+      },
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "2nd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 57,
+            "capacity": null,
+            "contact_person": "Paul",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1181844,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93412_checklist_1181844.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93413,
+    "name": "Elements Wilderness Program dba Huntington",
+    "address": "1190 N Mohrland Rd, Huntington, UT, 84528",
+    "license_type": "Outdoor Youth Program",
+    "phone": "8017123372",
+    "capacity": 50,
+    "regulation_date": "2022-05-01",
+    "expiration_date": "2027-04-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-13",
+        "inspection_types": "2nd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 50,
+            "capacity": 50,
+            "contact_person": "Harrison Ross",
+            "licensor": "Rob Jones",
+            "extraction_method": "text",
+            "checklist_id": 1180584,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93413_checklist_1180584.pdf"
+          }
+        ]
       }
     ]
   },
@@ -294,19 +311,7 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-01",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-06-17",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-06-02",
+        "inspection_date": "2026-07-28",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -325,49 +330,128 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-20",
+        "inspection_date": "2026-07-09",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-09",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93416,
+    "name": "Eva Carlston Academy dba Covecrest House",
+    "address": "4464 S Covecrest Dr, Salt Lake City, UT, 84124",
+    "license_type": "Residential Treatment",
+    "phone": "8014490089",
+    "capacity": 16,
+    "regulation_date": "2022-02-01",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
         "inspection_types": "3rd Unannounced",
         "findings": [],
         "checklists": [
           {
-            "census": 28,
-            "capacity": 28,
-            "contact_person": "Shelly Clark",
-            "licensor": "Larry Black",
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Kristi Ragsdale",
+            "licensor": "Heather Holbrook",
             "extraction_method": "text",
-            "checklist_id": 1117523,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93636_checklist_1117523.pdf"
+            "checklist_id": 1199765,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93416_checklist_1199765.pdf"
           }
         ]
       }
     ]
   },
   {
-    "facility_id": 110140,
-    "name": "Heritage Schools Inc - Homestead",
-    "address": "10324 South 5850 West, Payson, UT, 84651",
+    "facility_id": 93415,
+    "name": "Eva Carlston Academy dba Main House",
+    "address": "4943 S Wasatch Blvd, Salt Lake City, UT, 84124",
     "license_type": "Residential Treatment",
-    "phone": "8012264669",
+    "phone": "8014490089",
     "capacity": 16,
-    "regulation_date": "2024-04-01",
-    "expiration_date": "2027-03-31",
+    "regulation_date": "2022-02-01",
+    "expiration_date": "2027-01-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-20",
-        "inspection_types": "2nd Unannounced",
+        "inspection_date": "2026-09-01",
+        "inspection_types": "3rd Unannounced",
         "findings": [],
         "checklists": [
           {
             "census": 16,
             "capacity": 16,
-            "contact_person": "Chester Powelson",
-            "licensor": "Heather Guanajuato",
+            "contact_person": "Kristi Ragsdale",
+            "licensor": "Heather Holbrook",
             "extraction_method": "text",
-            "checklist_id": 1118164,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_110140_checklist_1118164.pdf"
+            "checklist_id": 1199803,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93415_checklist_1199803.pdf"
           }
         ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93414,
+    "name": "Eva Carlston Academy dba Vivid House",
+    "address": "3210 Bernada Dr, Salt Lake City, UT, 84124",
+    "license_type": "Residential Treatment",
+    "phone": "8016996563",
+    "capacity": 12,
+    "regulation_date": "2022-02-01",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 12,
+            "capacity": 12,
+            "contact_person": "Kristi Ragsdale",
+            "licensor": "Heather Holbrook",
+            "extraction_method": "text",
+            "checklist_id": 1199863,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93414_checklist_1199863.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93501,
+    "name": "Gateway Academy, LLC dba Draper Residential",
+    "address": "11706 S 700 E, Draper, UT, 84020",
+    "license_type": "Residential Treatment",
+    "phone": "8015233479",
+    "capacity": 35,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2027-06-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-07-28",
+        "inspection_types": "Investigation Inspection",
+        "findings": [
+          {
+            "rule_number": "R501-1-8(3)",
+            "rule_description": "Medication and hazardous items maintenance and storage",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
       }
     ]
   },
@@ -383,45 +467,10 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-07",
+        "inspection_date": "2026-07-16",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
-      },
-      {
-        "inspection_date": "2026-06-23",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
-        "checklists": []
-      }
-    ]
-  },
-  {
-    "facility_id": 93490,
-    "name": "Horseshoe Mountain Academy dba Hope House/Courage House",
-    "address": "90 N 161 W, Ephraim, UT, 84627",
-    "license_type": "Day Treatment",
-    "phone": "4358514886",
-    "capacity": 12,
-    "regulation_date": "2022-07-01",
-    "expiration_date": "2027-06-30",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-23",
-        "inspection_types": "Unannounced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": null,
-            "capacity": null,
-            "contact_person": "Whitley Winters",
-            "licensor": "Rob Jones",
-            "extraction_method": "text",
-            "checklist_id": 1127224,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93490_checklist_1127224.pdf"
-          }
-        ]
       }
     ]
   },
@@ -437,26 +486,10 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-28",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [
-          {
-            "rule_number": "R501-14-5(2)(a)-(b)",
-            "rule_description": "Application submitted within 2 weeks and applicant directly supervised",
-            "finding_text": "The provider was out of compliance with R501-14-5(2)(a) by not submitting a background check for an individual associated with the license within two weeks. During the file review, a staff member that had access to clients did not have a background check."
-          }
-        ],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Melissa Keller Adamson",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1136683,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_105460_checklist_1136683.pdf"
-          }
-        ]
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
       }
     ]
   },
@@ -472,20 +505,21 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-06-10",
-        "inspection_types": "Complaint, Investigation Inspection",
+        "inspection_date": "2026-07-16",
+        "inspection_types": "Investigation Inspection",
         "findings": [
           {
-            "rule_number": "R380-600-7(16)(a)-(e)",
-            "rule_description": "Critical incidents reporting requirements",
-            "finding_text": "The provider was out of compliance with R380-600-7(16)(a) by not reporting a critical incident withing one business day. During the inspection a client was placed in a restraint and this was not reported to Licensing. This is a repeat noncompliance as noted on 5/28/2025, 2/7/2024 and 1/18/2024."
-          },
-          {
-            "rule_number": "R501-1-16(1)(a)-(u)",
-            "rule_description": "Pre-service training requirements",
-            "finding_text": "The provider was out of compliance with R501-1-16(1)(p) by not ensuring that a staff member received their full pre-service training within 30 days. During the inspection a staff file revealed that a staff member did not receive their appropriate use of seclusion training within 30 days. This is a repeat noncompliance as noted on 8/6/2024 and 1/11/2024. <br/>"
+            "rule_number": "R380-80-6(1)(a)-(i)",
+            "rule_description": "Client rights",
+            "finding_text": ""
           }
         ],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-16",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
         "checklists": []
       }
     ]
@@ -502,33 +536,35 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-06-22",
-        "inspection_types": "Complaint, Investigation Inspection",
+        "inspection_date": "2026-09-02",
+        "inspection_types": "Announced, Annual Inspection",
         "findings": [
           {
-            "rule_number": "R501-1-8(1)(a)-(i)",
-            "rule_description": "Facility and safety requirements",
-            "finding_text": "The provider was out of compliance with R501-1-8(1)(a) due to not maintaining a clean building so that it is free from health hazards. During the inspection, evidence substantiated that multiple kitchen areas failed to meet sanitary standards. Specifically, the general kitchen area, the floor of the walk-in refrigerator, and the space beneath the kitchen sink were heavily soiled and required deep cleaning. This is a repeat rule noncompliance as noted on January 25, 2024. Technical Assistance was given on October 16, 2025."
+            "rule_number": "R501-19A-12(2)(a)-(g)",
+            "rule_description": "Individual responsible for background checks",
+            "finding_text": ""
+          },
+          {
+            "rule_number": "R501-19A-12(3)",
+            "rule_description": "Eligible background check before left unsupervised",
+            "finding_text": ""
           }
         ],
-        "checklists": []
-      }
-    ]
-  },
-  {
-    "facility_id": 93494,
-    "name": "Liahona Academy For Youth dba Liahona Treatment Center West Campus",
-    "address": "385 W 600 N, Hurricane, UT, 84737",
-    "license_type": "Outpatient Treatment",
-    "phone": "4356562227",
-    "capacity": 0,
-    "regulation_date": "2022-05-01",
-    "expiration_date": "2027-04-30",
-    "conditional": false,
-    "inspections": [
+        "checklists": [
+          {
+            "census": 48,
+            "capacity": 48,
+            "contact_person": "Stacie Warren",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1202823,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93493_checklist_1202823.pdf"
+          }
+        ]
+      },
       {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "2nd Unannounced",
+        "inspection_date": "2026-09-02",
+        "inspection_types": "Announced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
@@ -537,31 +573,26 @@
             "contact_person": "Stacie Warren",
             "licensor": "Larry Black",
             "extraction_method": "text",
-            "checklist_id": 1124103,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93494_checklist_1124103.pdf"
+            "checklist_id": 1202823,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93493_checklist_1202823.pdf"
           }
         ]
       },
       {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "2nd Unannounced",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 48,
-            "capacity": 48,
-            "contact_person": "Stacie Warren",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1124103,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93494_checklist_1124103.pdf"
-          }
-        ]
-      },
-      {
-        "inspection_date": "2026-06-30",
+        "inspection_date": "2026-05-20",
         "inspection_types": "Investigation Inspection",
-        "findings": [],
+        "findings": [
+          {
+            "rule_number": "R380-80-5(4)",
+            "rule_description": "Provider shall protect clients from abuse, prevent abuse",
+            "finding_text": ""
+          },
+          {
+            "rule_number": "R501-1-9(5)(a)-(d)",
+            "rule_description": "Use of alternate sleeping arrangements",
+            "finding_text": ""
+          }
+        ],
         "checklists": []
       }
     ]
@@ -578,13 +609,112 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-16",
+        "inspection_date": "2026-07-22",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-05-19",
+        "inspection_date": "2026-07-15",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-13",
+        "inspection_types": "Focus, Non On-Site",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93496,
+    "name": "Live For Life dba Live For Life Sequoia, LLC",
+    "address": "8783 S 2240 W, West Jordan, UT, 84088",
+    "license_type": "Residential Treatment",
+    "phone": "8014327986",
+    "capacity": 12,
+    "regulation_date": "2021-12-01",
+    "expiration_date": "2026-11-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-07-29",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-14",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-01",
+        "inspection_types": "Focus, Non On-Site",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93521,
+    "name": "Logan River Academy LLC dba Logan River Academy",
+    "address": "1683 S Highway 89/91, Logan, UT, 84321",
+    "license_type": "Residential Treatment",
+    "phone": "4351558400",
+    "capacity": 82,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2027-09-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-25",
+        "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-11",
+        "inspection_types": "Announced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 82,
+            "capacity": 82,
+            "contact_person": "Jennifer Winther; Travis Dunbar",
+            "licensor": "Josilyn Bertrand",
+            "extraction_method": "text",
+            "checklist_id": 1170363,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93521_checklist_1170363.pdf"
+          },
+          {
+            "census": 82,
+            "capacity": 82,
+            "contact_person": "Jennifer Winther; Travis Dunbar",
+            "licensor": "Josilyn Bertrand",
+            "extraction_method": "text",
+            "checklist_id": 1171204,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93521_checklist_1171204.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-07-21",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -592,19 +722,194 @@
     ]
   },
   {
-    "facility_id": 101496,
-    "name": "My Aunties' House",
-    "address": "718 South 600 East, Salt Lake City, UT, 84102",
-    "license_type": "Residential Treatment",
-    "phone": "8014672863",
-    "capacity": 10,
-    "regulation_date": "2023-08-30",
+    "facility_id": 93522,
+    "name": "Magellan Academy, Inc dba Vila Real - Girls",
+    "address": "706 N Whitehorse Dr, Spanish Fork, UT, 84660",
+    "license_type": "Outpatient Treatment",
+    "phone": "8017940318",
+    "capacity": 0,
+    "regulation_date": "2022-09-01",
     "expiration_date": "2027-08-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-27",
+        "inspection_date": "2026-03-13",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 98834,
+    "name": "Mountain Valley Recovery, LLC dba Mountain Valley Ranch",
+    "address": "6910 N Cowboy Lane,, Holden, UT, 84636",
+    "license_type": "Residential Treatment",
+    "phone": "4352530656",
+    "capacity": 18,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2027-09-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-13",
         "inspection_types": "Announced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": null,
+            "capacity": null,
+            "contact_person": "Loren Pence, Kellie Christensen",
+            "licensor": "Cassandra Richards",
+            "extraction_method": "text",
+            "checklist_id": 1166323,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_98834_checklist_1166323.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93528,
+    "name": "New Focus Academy",
+    "address": "1268 N Valley Heights Cir, Heber City, UT, 84032",
+    "license_type": "Residential Treatment",
+    "phone": "8444132722",
+    "capacity": 16,
+    "regulation_date": "2022-04-01",
+    "expiration_date": "2026-11-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Amanda Webb",
+            "licensor": "Rob Jones",
+            "extraction_method": "text",
+            "checklist_id": 1153883,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93528_checklist_1153883.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93529,
+    "name": "New Focus Academy dba New Focus West",
+    "address": "233 S 200 W, Heber City, UT, 84032",
+    "license_type": "Residential Treatment",
+    "phone": "8013012447",
+    "capacity": 12,
+    "regulation_date": "2021-11-01",
+    "expiration_date": "2026-11-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 12,
+            "capacity": 12,
+            "contact_person": "Amanda Webb",
+            "licensor": "Rob Jones",
+            "extraction_method": "text",
+            "checklist_id": 1153963,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93529_checklist_1153963.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93530,
+    "name": "New Haven dba Anthony House",
+    "address": "258 W 400 N, Saratoga Springs, UT, 84045",
+    "license_type": "Outpatient Treatment",
+    "phone": "8013097235",
+    "capacity": null,
+    "regulation_date": "2022-03-01",
+    "expiration_date": "2027-02-28",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-26",
+        "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 8,
+            "capacity": 8,
+            "contact_person": "Laura B arlow",
+            "licensor": "Heather Guanajuato",
+            "extraction_method": "text",
+            "checklist_id": 1175803,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93530_checklist_1175803.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-06-22",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93533,
+    "name": "New Haven dba Nightingale House",
+    "address": "228 W 400 N, Saratoga Springs, UT, 84045",
+    "license_type": "Outpatient Treatment",
+    "phone": "8013097235",
+    "capacity": 16,
+    "regulation_date": "2022-03-01",
+    "expiration_date": "2027-03-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Laura Barlow",
+            "licensor": "Heather Guanajuato",
+            "extraction_method": "text",
+            "checklist_id": 1175744,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93533_checklist_1175744.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-05-13",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-04-22",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-03-22",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       }
@@ -622,37 +927,460 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "Conditional, Monitoring Inspection",
+        "inspection_date": "2026-08-20",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 21,
+            "capacity": 21,
+            "contact_person": "Laura B arlow",
+            "licensor": "Heather Guanajuato",
+            "extraction_method": "text",
+            "checklist_id": 1175725,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93531_checklist_1175725.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93532,
+    "name": "New Haven dba Roosevelt House",
+    "address": "2152 E 7200 S, Spanish Fork, UT, 84660",
+    "license_type": "Residential Treatment",
+    "phone": "8013097235",
+    "capacity": 15,
+    "regulation_date": "2022-03-01",
+    "expiration_date": "2027-02-28",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 15,
+            "capacity": 15,
+            "contact_person": "Jeana Thomsen",
+            "licensor": "Heather Guanajuato",
+            "extraction_method": "text",
+            "checklist_id": 1196846,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93532_checklist_1196846.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-06-23",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-03-20",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       }
     ]
   },
   {
-    "facility_id": 93542,
-    "name": "Ascent Behavioral Hospital - Residential",
-    "address": "1624 E 4500 S, Salt Lake City, UT, 84117",
-    "license_type": "Day Treatment",
-    "phone": "8557012721",
-    "capacity": 40,
-    "regulation_date": "2022-10-01",
+    "facility_id": 93534,
+    "name": "New Haven dba Sacajawea House",
+    "address": "2096 E 7200 S, Spanish Fork, UT, 84660",
+    "license_type": "Residential Treatment",
+    "phone": "8013097235",
+    "capacity": 15,
+    "regulation_date": "2022-03-01",
     "expiration_date": "2027-02-28",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "2nd Unannounced",
+        "inspection_date": "2026-09-01",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 15,
+            "capacity": 15,
+            "contact_person": "Jeana Thomsen",
+            "licensor": "Heather Guanajuato",
+            "extraction_method": "text",
+            "checklist_id": 1196747,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93534_checklist_1196747.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-08-04",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-07",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-05-01",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93541,
+    "name": "New Haven dba Teresa House",
+    "address": "2172 E 7200 S, Spanish Fork, UT, 84660",
+    "license_type": "Residential Treatment",
+    "phone": "8013097235",
+    "capacity": 16,
+    "regulation_date": "2022-03-01",
+    "expiration_date": "2027-02-28",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
+        "inspection_types": "3rd Unannounced",
         "findings": [],
         "checklists": [
           {
             "census": 16,
             "capacity": 16,
-            "contact_person": "Eric Ricks",
-            "licensor": "Heather Holbrook",
+            "contact_person": "Jeana Thompsen",
+            "licensor": "Heather Guanajuato",
             "extraction_method": "text",
-            "checklist_id": 1121003,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93542_checklist_1121003.pdf"
+            "checklist_id": 1196863,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93541_checklist_1196863.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-07-29",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-06-04",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93712,
+    "name": "Oakgrove School/Waterfall Canyon Academy dba Residential Treatment Two",
+    "address": "700 25th St, Ogden, UT, 84401",
+    "license_type": "Residential Treatment",
+    "phone": "8013770100",
+    "capacity": 16,
+    "regulation_date": "2022-02-01",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-04",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Kim Munford",
+            "licensor": "Josilyn Bertrand",
+            "extraction_method": "text",
+            "checklist_id": 1149663,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93712_checklist_1149663.pdf"
+          },
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Kim Munford",
+            "licensor": "Josilyn Bertrand",
+            "extraction_method": "text",
+            "checklist_id": 1153784,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93712_checklist_1153784.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93537,
+    "name": "OASIS Ascent (DT, RT, OT)",
+    "address": "122 N 600 W, Provo, UT, 84601",
+    "license_type": "Outpatient Treatment",
+    "phone": "8013742121",
+    "capacity": 0,
+    "regulation_date": "2022-01-01",
+    "expiration_date": "2026-12-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-21",
+        "inspection_types": "Focus, Non On-Site",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-28",
+        "inspection_types": "Non On-Site Inspection",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-06-10",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 119530,
+    "name": "Oxbow Academy (East House)",
+    "address": "11470 E. 16000 N. , Mount Pleasant, UT, 84647",
+    "license_type": "Residential Treatment",
+    "phone": "8014912270",
+    "capacity": 16,
+    "regulation_date": "2025-06-30",
+    "expiration_date": "2027-06-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "Unannounced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Alan Kendall (Residential Director)",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1181704,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_119530_checklist_1181704.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 119535,
+    "name": "Oxbow Academy (Evaluation House)",
+    "address": "11470 E. 16000 N. , Mount Pleasant, UT, 84647",
+    "license_type": "Residential Treatment",
+    "phone": "8014912270",
+    "capacity": 16,
+    "regulation_date": "2025-06-30",
+    "expiration_date": "2027-06-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
+        "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "Unannounced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Alan Kendall",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1181543,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_119535_checklist_1181543.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 119533,
+    "name": "Oxbow Academy (West House)",
+    "address": "11470 E. 16000 N. , Mount Pleasant, UT, 84647",
+    "license_type": "Residential Treatment",
+    "phone": "8014912270",
+    "capacity": 16,
+    "regulation_date": "2025-06-30",
+    "expiration_date": "2027-06-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "Unannounced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Alan Kendall",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1181685,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_119533_checklist_1181685.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93560,
+    "name": "Oxbow Academy (West Campus)",
+    "address": "95 N State St, Wales, UT, 84667",
+    "license_type": "Residential Treatment",
+    "phone": "4354369460",
+    "capacity": 24,
+    "regulation_date": "2022-02-01",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-01",
+        "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-20",
+        "inspection_types": "3rd Unannounced",
+        "findings": [
+          {
+            "rule_number": "R501-14-5(2)(a)-(b)",
+            "rule_description": "Application submitted within 2 weeks and applicant directly supervised",
+            "finding_text": ""
+          }
+        ],
+        "checklists": [
+          {
+            "census": 24,
+            "capacity": 24,
+            "contact_person": "Kristen Hammond (House Coordinator)",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1181663,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93560_checklist_1181663.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93640,
+    "name": "Pine Ridge Behavioral Health dba Behavioral Health",
+    "address": "10380 E 22000 N, Fairview, UT, 84629",
+    "license_type": "Day Treatment",
+    "phone": "4354690342",
+    "capacity": 16,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2027-09-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-10",
+        "inspection_types": "Announced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Natalee Sorenson",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1157324,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93640_checklist_1157324.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-08-10",
+        "inspection_types": "Announced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Natalee Sorenson",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1157324,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93640_checklist_1157324.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93623,
+    "name": "Red Circle Lodge, Inc - Hildale",
+    "address": "930 N Memorial St, Hildale, UT, 84784",
+    "license_type": "Residential Treatment",
+    "phone": "4356688809",
+    "capacity": 30,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2026-11-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-10",
+        "inspection_types": "3rd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 30,
+            "capacity": null,
+            "contact_person": "Samantha Herda",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1157904,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93623_checklist_1157904.pdf"
           }
         ]
       }
@@ -670,10 +1398,88 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-08-06",
-        "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
+        "inspection_date": "2026-07-21",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-21",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-21",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-21",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-06-09",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-06-09",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 94216,
+    "name": "Rite Of Passage dba Willard Peak Residential Treatment",
+    "address": "971 S 800 W, Brigham City, UT, 84302",
+    "license_type": "Outpatient Treatment",
+    "phone": "4352398455",
+    "capacity": 0,
+    "regulation_date": "2022-10-01",
+    "expiration_date": "2027-09-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Announced, Annual Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93625,
+    "name": "Roots Transition",
+    "address": "150 Highland Dr, Park City, UT, 84098",
+    "license_type": "Residential Treatment",
+    "phone": "8018674292",
+    "capacity": 30,
+    "regulation_date": "2022-06-01",
+    "expiration_date": "2027-04-30",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-25",
+        "inspection_types": "Unannounced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 30,
+            "capacity": 30,
+            "contact_person": "Kami Black",
+            "licensor": "Heather Holbrook",
+            "extraction_method": "text",
+            "checklist_id": 1186843,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93625_checklist_1186843.pdf"
+          }
+        ]
       }
     ]
   },
@@ -689,53 +1495,19 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-27",
-        "inspection_types": "3rd Unannounced",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 44,
-            "capacity": 44,
-            "contact_person": "Alondra Navarrite",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1129843,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93637_checklist_1129843.pdf"
-          }
-        ]
-      },
-      {
-        "inspection_date": "2026-06-22",
-        "inspection_types": "Complaint, Investigation Inspection",
-        "findings": [
-          {
-            "rule_number": "R501-1-8(1)(a)-(i)",
-            "rule_description": "Facility and safety requirements",
-            "finding_text": "The provider was out of compliance with R501-1-8(1)(a) for failing to maintain clean mattresses and ensure the environment is free from health hazards. During the inspection, the evidence substantiated mattresses with visible urine stains and what appeared to be vomit residue. Maintaining stained or contaminated bedding compromises facility sanitation and exposes clients to potential biohazards and unhealthy sleeping conditions. This is a repeat rule noncompliance as noted on February 25, 2024, December 5, 2024, April 10, 2025, and July 28, 2025.Technical Assistance was given on November 25, 2025 and  July 28, 2025."
-          }
-        ],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-06-17",
+        "inspection_date": "2026-07-20",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-05-21",
+        "inspection_date": "2026-07-20",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-05-13",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-05-13",
+        "inspection_date": "2026-07-20",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -754,48 +1526,7 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection, Pre-Inspection",
-        "findings": [],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Additional Pre-Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 3,
-            "capacity": 41,
-            "contact_person": "Licensor(s) Conducting this Inspection: Chanesea Butler OL Staff Observing Inspection:",
-            "licensor": "Chanesea Butler",
-            "extraction_method": "text",
-            "checklist_id": 1117764,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93639_checklist_1117764.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93660,
-    "name": "Sorenson’s Ranch School/Sorenson’s Ranch School Foundation",
-    "address": "410 N 100 E, Koosharem, UT, 84744",
-    "license_type": "Day Treatment",
-    "phone": "4356387318",
-    "capacity": 76,
-    "regulation_date": "2022-07-01",
-    "expiration_date": "2027-06-30",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-08",
-        "inspection_types": "Investigation Inspection",
-        "findings": [],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-07-08",
+        "inspection_date": "2026-07-16",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -803,48 +1534,19 @@
     ]
   },
   {
-    "facility_id": 93666,
-    "name": "Telos Residential Treatment Center, LLC dba Telos RTC",
-    "address": "870 W Center St, Orem, UT, 84057",
+    "facility_id": 107485,
+    "name": "Telos U - Youth",
+    "address": "600 South Geneva Road, Orem, UT, 84059",
     "license_type": "Residential Treatment",
-    "phone": "8014268800",
-    "capacity": 56,
-    "regulation_date": "2022-10-01",
-    "expiration_date": "2026-09-30",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 56,
-            "capacity": 56,
-            "contact_person": "Jake Lortsher",
-            "licensor": "Heather Guanajuato",
-            "extraction_method": "text",
-            "checklist_id": 1111063,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93666_checklist_1111063.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 98883,
-    "name": "Telos U - Adult",
-    "address": "600 South Geneva Road, Orem, UT, 84058",
-    "license_type": "Residential Treatment",
-    "phone": "8018875300",
+    "phone": "8018775300",
     "capacity": 32,
-    "regulation_date": "2022-10-01",
-    "expiration_date": "2026-09-30",
+    "regulation_date": "2023-11-02",
+    "expiration_date": "2026-12-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-21",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-08-13",
+        "inspection_types": "Unannounced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
@@ -853,55 +1555,64 @@
             "contact_person": "Jake Lortsher",
             "licensor": "Heather Guanajuato",
             "extraction_method": "text",
-            "checklist_id": 1121303,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_98883_checklist_1121303.pdf"
+            "checklist_id": 1162544,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_107485_checklist_1162544.pdf"
           }
         ]
       }
     ]
   },
   {
-    "facility_id": 93695,
-    "name": "Turning Point Family Care, Inc. - Residential Treatment",
-    "address": "121 N 1550 W, Cedar City, UT, 84720",
+    "facility_id": 94380,
+    "name": "Three Peaks Ascent",
+    "address": "21185 N Pine Valley Rd, Beryl, UT, 84714",
     "license_type": "Residential Treatment",
-    "phone": "4358678168",
-    "capacity": 29,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
+    "phone": "4352387155",
+    "capacity": 24,
+    "regulation_date": "2023-06-15",
+    "expiration_date": "2027-06-30",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-09",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-06-18",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 96994,
+    "name": "Treatment Solutions LLC, DBA Kaizen Academy; Heritage Youth Services",
+    "address": "996 W 800 S, Payson, UT, 84651",
+    "license_type": "Residential Treatment",
+    "phone": "8017955448",
+    "capacity": 24,
+    "regulation_date": "2022-01-31",
+    "expiration_date": "2027-01-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-09-02",
+        "inspection_types": "3rd Unannounced",
         "findings": [],
         "checklists": [
           {
-            "census": 29,
-            "capacity": 29,
-            "contact_person": "Morgan Gomez",
-            "licensor": "Larry Black",
+            "census": 24,
+            "capacity": 24,
+            "contact_person": "Kris Kilpatrick",
+            "licensor": "PattiJo Hopes",
             "extraction_method": "text",
-            "checklist_id": 1107303,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93695_checklist_1107303.pdf"
+            "checklist_id": 1197363,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_96994_checklist_1197363.pdf"
           }
         ]
       },
       {
-        "inspection_date": "2026-07-09",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-06-04",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
-        "checklists": [
-          {
-            "census": 29,
-            "capacity": 29,
-            "contact_person": "Morgan Gomez",
-            "licensor": "Larry Black",
-            "extraction_method": "text",
-            "checklist_id": 1107303,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93695_checklist_1107303.pdf"
-          }
-        ]
+        "checklists": []
       }
     ]
   },
@@ -917,8 +1628,61 @@
     "conditional": true,
     "inspections": [
       {
-        "inspection_date": "2026-07-01",
-        "inspection_types": "Non On-Site Inspection",
+        "inspection_date": "2026-08-13",
+        "inspection_types": "Conditional, Monitoring Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-13",
+        "inspection_types": "Follow-Up, Additional Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Conditional, Monitoring Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Conditional, Monitoring Inspection, Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-27",
+        "inspection_types": "Conditional, Monitoring Inspection, Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-22",
+        "inspection_types": "Follow-Up, Additional Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-14",
+        "inspection_types": "Conditional, Monitoring Inspection",
+        "findings": [
+          {
+            "rule_number": "R501-1-8(1)(a)-(i)",
+            "rule_description": "Facility and safety requirements",
+            "finding_text": ""
+          },
+          {
+            "rule_number": "R501-14-5(2)(a)-(b)",
+            "rule_description": "Application submitted within 2 weeks and applicant directly supervised",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-14",
+        "inspection_types": "Follow-Up, Additional Follow-Up Inspection",
         "findings": [],
         "checklists": []
       }
@@ -936,201 +1700,28 @@
     "conditional": true,
     "inspections": [
       {
-        "inspection_date": "2026-06-25",
-        "inspection_types": "Investigation Inspection",
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Conditional, Monitoring Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-06-23",
-        "inspection_types": "Complaint, Focus Inspection",
-        "findings": [
-          {
-            "rule_number": "R380-80-3(1)",
-            "rule_description": "Provider is responsible for their own staff's compliance",
-            "finding_text": "The provider was out of compliance with R380-80-3(1) for failing to comply with each applicable federal, state, and local law, and each policy and administrative rule required by the department or by other state and federal agencies that regulate or oversee the provider’s programs. Investigative interviews indicate that the provider enforced restrictive calling policies that unlawfully blocked client communication with the Ombuds office. While the Ombudsman contact details were physically posted on-site, clients were not permitted to make unapproved outbound calls, and staff actively refused at least one client's request to contact the Ombudsman. <br/>"
-          },
-          {
-            "rule_number": "R501-19-5(1)(a)-(b)",
-            "rule_description": "Manager responsibilities and qualifications",
-            "finding_text": "The provider was out of compliance with R501-19-5(1)(b)((ii) and (iii) for not ensuring the manager has a bachelor's degree or equivalent training in a human service-related field and has at least three years management experience in a residential or secure treatment setting. During the investigation, a credential review revealed that eight (8) provider Program Managers do not meet the requirements for their position. "
-          },
-          {
-            "rule_number": "26B-2-123(6)(a)-(b)",
-            "rule_description": "Congregate care voice-to-voice communication",
-            "finding_text": "The provider was out of compliance with 26B-2-123(6)(a)(i) for failing to facilitate confidential voice-to-voice communication between a child and the child’s parents, guardian, foster parents, and siblings, as applicable. During the inspection, multiple client interviews confirmed that clients' weekly phone calls are conducted publicly and monitored by staff. The provider verified the practice, demonstrating that calls occur in a common area where staff remain within earshot to supervise the unit and are able to overhear conversations. <br/>"
-          }
-        ],
-        "checklists": []
-      },
-      {
-        "inspection_date": "2026-06-22",
-        "inspection_types": "Investigation Inspection",
+        "inspection_date": "2026-07-22",
+        "inspection_types": "Conditional, Monitoring Inspection",
         "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-06-22",
-        "inspection_types": "Investigation Inspection",
-        "findings": [
-          {
-            "rule_number": "R380-80-4(1)",
-            "rule_description": "Provider shall protect each client",
-            "finding_text": "The provider was out of compliance with R380-80-4(1) for not protecting a client from mistreatment. During the inspection, video evidence showed a staff member grabbing the top of a client’s hair with his hand, bending his fingers around her hair at the root, and holding onto it in order to push the client’s head back and hold it in place. \n"
-          }
-        ],
+        "inspection_date": "2026-07-22",
+        "inspection_types": "Follow-Up, Additional Follow-Up Inspection",
+        "findings": [],
         "checklists": []
       },
       {
-        "inspection_date": "2026-06-22",
-        "inspection_types": "Investigation Inspection",
+        "inspection_date": "2026-07-14",
+        "inspection_types": "Follow-Up, Additional Follow-Up Inspection",
         "findings": [],
         "checklists": []
-      }
-    ]
-  },
-  {
-    "facility_id": 98254,
-    "name": "Uinta Academy RTC LLC - ADULT NORTH",
-    "address": "3560 S Highway 23, Wellsville, UT, 84339",
-    "license_type": "Residential Treatment",
-    "phone": "4352452600",
-    "capacity": 10,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 10,
-            "capacity": 10,
-            "contact_person": "Daryn Reiner",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1115263,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_98254_checklist_1115263.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93700,
-    "name": "Uinta Academy RTC LLC - Achievement",
-    "address": "3550 S Highway 23, Wellsville, UT, 84339",
-    "license_type": "Residential Treatment",
-    "phone": "4352452600",
-    "capacity": 16,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Daryn Reiner",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1115203,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93700_checklist_1115203.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 98250,
-    "name": "Uinta Academy RTC LLC - Adult",
-    "address": "3869 S Highway 23, Wellsville, UT, 84339",
-    "license_type": "Residential Treatment",
-    "phone": "4352452600",
-    "capacity": 10,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 10,
-            "capacity": 10,
-            "contact_person": "Daryn Reiner",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1115243,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_98250_checklist_1115243.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93698,
-    "name": "Uinta Academy RTC LLC - East",
-    "address": "3746 S 4800 W, Wellsville, UT, 84339",
-    "license_type": "Residential Treatment",
-    "phone": "4352452600",
-    "capacity": 16,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Daryn Reiner",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1115245,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93698_checklist_1115245.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93699,
-    "name": "Uinta Academy RTC LLC- West",
-    "address": "3875 S Highway 23, Wellsville, UT, 84339",
-    "license_type": "Residential Treatment",
-    "phone": "4352452600",
-    "capacity": 16,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Daryn Reiner",
-            "licensor": "Josilyn Bertrand",
-            "extraction_method": "text",
-            "checklist_id": 1115246,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93699_checklist_1115246.pdf"
-          }
-        ]
       }
     ]
   },
@@ -1146,23 +1737,19 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-14",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Investigation Inspection",
+        "findings": [
           {
-            "census": 64,
-            "capacity": 64,
-            "contact_person": "Christan Gillespie",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1109445,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93701_checklist_1109445.pdf"
+            "rule_number": "R380-80-6(1)(a)-(i)",
+            "rule_description": "Client rights",
+            "finding_text": ""
           }
-        ]
+        ],
+        "checklists": []
       },
       {
-        "inspection_date": "2026-05-27",
+        "inspection_date": "2026-07-13",
         "inspection_types": "Investigation Inspection",
         "findings": [],
         "checklists": []
@@ -1181,223 +1768,67 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-08-04",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
-        "checklists": [
-          {
-            "census": 4,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111004,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93703_checklist_1111004.pdf"
-          }
-        ]
+        "checklists": []
       }
     ]
   },
   {
-    "facility_id": 93702,
-    "name": "Utah Youth Village (AA-CC)",
-    "address": "1492 Meadowbrook Dr, Tooele, UT, 84074",
+    "facility_id": 93704,
+    "name": "Vive Adolescent Care",
+    "address": "120 W 1470 S, Saint George, UT, 84770",
     "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 11,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
+    "phone": "4357036470",
+    "capacity": 29,
+    "regulation_date": "2022-07-01",
+    "expiration_date": "2027-06-30",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-08-27",
+        "inspection_types": "Unannounced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
-            "census": 5,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
+            "census": 14,
+            "capacity": 29,
+            "contact_person": "Justin Day",
+            "licensor": "Larry Black",
             "extraction_method": "text",
-            "checklist_id": 1110984,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93702_checklist_1110984.pdf"
+            "checklist_id": 1188125,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93704_checklist_1188125.pdf"
           }
         ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93241,
-    "name": "Utah Youth Village (AA-CW)",
-    "address": "1288 Whispering Horse Dr, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 11,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
+      },
       {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-08-27",
+        "inspection_types": "Unannounced, Annual Inspection",
         "findings": [],
         "checklists": [
           {
-            "census": 4,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
+            "census": 14,
+            "capacity": 29,
+            "contact_person": "Justin Day",
+            "licensor": "Larry Black",
             "extraction_method": "text",
-            "checklist_id": 1111024,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93241_checklist_1111024.pdf"
+            "checklist_id": 1188125,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93704_checklist_1188125.pdf"
           }
         ]
-      }
-    ]
-  },
-  {
-    "facility_id": 105000,
-    "name": "Utah Youth Village (AA-GH)",
-    "address": "1492 Meadowbrook Drive, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "4352280100",
-    "capacity": 11,
-    "regulation_date": "2023-08-31",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
+      },
       {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-07-08",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
-        "checklists": [
-          {
-            "census": 4,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111025,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_105000_checklist_1111025.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93262,
-    "name": "Utah Youth Village (AA-MB)",
-    "address": "1369 Erda Way, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 11,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
+        "checklists": []
+      },
       {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
+        "inspection_date": "2026-07-08",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
-        "checklists": [
-          {
-            "census": 3,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111103,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93262_checklist_1111103.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93264,
-    "name": "Utah Youth Village (AA-OR)",
-    "address": "1296 Whispering Horse Dr, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 11,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 3,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111123,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93264_checklist_1111123.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93261,
-    "name": "Utah Youth Village (AA-PC)",
-    "address": "1249 Whispering Horse Dr, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 10,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 2,
-            "capacity": 10,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111144,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93261_checklist_1111144.pdf"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "facility_id": 93263,
-    "name": "Utah Youth Village (AA-WC)",
-    "address": "1293 Whispering Horse Dr, Tooele, UT, 84074",
-    "license_type": "Residential Treatment",
-    "phone": "8012729980",
-    "capacity": 11,
-    "regulation_date": "2022-09-01",
-    "expiration_date": "2027-08-31",
-    "conditional": false,
-    "inspections": [
-      {
-        "inspection_date": "2026-07-07",
-        "inspection_types": "Announced, Annual Inspection",
-        "findings": [],
-        "checklists": [
-          {
-            "census": 0,
-            "capacity": 11,
-            "contact_person": "Annessa Heaton",
-            "licensor": "Heather Holbrook",
-            "extraction_method": "text",
-            "checklist_id": 1111183,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93263_checklist_1111183.pdf"
-          }
-        ]
+        "checklists": []
       }
     ]
   },
@@ -1413,20 +1844,10 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-30",
-        "inspection_types": "3rd Unannounced",
+        "inspection_date": "2026-08-04",
+        "inspection_types": "Investigation Inspection",
         "findings": [],
-        "checklists": [
-          {
-            "census": 16,
-            "capacity": 16,
-            "contact_person": "Kent Downs",
-            "licensor": "Heather Guanajuato",
-            "extraction_method": "text",
-            "checklist_id": 1141543,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93708_checklist_1141543.pdf"
-          }
-        ]
+        "checklists": []
       }
     ]
   },
@@ -1442,39 +1863,77 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-03-31",
-        "inspection_types": "Investigation Inspection, Non On-Site Inspection",
+        "inspection_date": "2026-08-13",
+        "inspection_types": "2nd Unannounced",
+        "findings": [
+          {
+            "rule_number": "R501-14-5(5)(a)-(b)",
+            "rule_description": "Denied applicants may not direct access to clients",
+            "finding_text": ""
+          }
+        ],
+        "checklists": [
+          {
+            "census": 36,
+            "capacity": null,
+            "contact_person": "Sydney",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1166784,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93715_checklist_1166784.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-08-13",
+        "inspection_types": "2nd Unannounced",
         "findings": [],
-        "checklists": []
+        "checklists": [
+          {
+            "census": 36,
+            "capacity": null,
+            "contact_person": "Sydney",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1166784,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93715_checklist_1166784.pdf"
+          }
+        ]
       }
     ]
   },
   {
-    "facility_id": 93717,
-    "name": "Young Women's Empowerment Center",
-    "address": "66 N 180 W, Ephraim, UT, 84627",
+    "facility_id": 104399,
+    "name": "Youth Health Associates LLC dba Bridges Academy",
+    "address": "387 E 450 So., Clearfield, UT, 84015",
     "license_type": "Residential Treatment",
-    "phone": "4353401880",
-    "capacity": 12,
-    "regulation_date": "2022-04-01",
-    "expiration_date": "2027-06-30",
+    "phone": "8017100474",
+    "capacity": 14,
+    "regulation_date": "2023-08-15",
+    "expiration_date": "2027-08-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-23",
-        "inspection_types": "Unannounced, Annual Inspection",
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Pre-Inspection",
         "findings": [],
         "checklists": [
           {
-            "census": null,
-            "capacity": null,
-            "contact_person": "Justice Roberts / Whitley Winters",
-            "licensor": "Rob Jones",
+            "census": 12,
+            "capacity": 12,
+            "contact_person": "Monie Riddle, Jason English",
+            "licensor": "Chanesea Butler",
             "extraction_method": "text",
-            "checklist_id": 1128763,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93717_checklist_1128763.pdf"
+            "checklist_id": 1174263,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_104399_checklist_1174263.pdf"
           }
         ]
+      },
+      {
+        "inspection_date": "2026-07-08",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
       }
     ]
   },
@@ -1490,8 +1949,8 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-07-13",
-        "inspection_types": "2nd Unannounced",
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Pre-Inspection",
         "findings": [],
         "checklists": [
           {
@@ -1500,16 +1959,26 @@
             "contact_person": "Devin Frischknecht",
             "licensor": "PattiJo Hopes",
             "extraction_method": "text",
-            "checklist_id": 1109523,
-            "pdf_file": "C:\\Users\\daniu\\OneDrive\\Documents\\GitHub\\Tools\\Kids-Over-Profits-Tools\\checklists\\facility_93762_checklist_1109523.pdf"
+            "checklist_id": 1154944,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93762_checklist_1154944.pdf"
           }
         ]
       },
       {
-        "inspection_date": "2026-06-03",
-        "inspection_types": "Non On-Site Inspection",
+        "inspection_date": "2026-08-06",
+        "inspection_types": "Announced, Annual Inspection",
         "findings": [],
-        "checklists": []
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Devin Frischknecht",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1154944,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93762_checklist_1154944.pdf"
+          }
+        ]
       }
     ]
   },
@@ -1525,13 +1994,68 @@
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-06-03",
-        "inspection_types": "Investigation Inspection",
+        "inspection_date": "2026-08-25",
+        "inspection_types": "Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-17",
+        "inspection_types": "Follow-Up Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-11",
+        "inspection_types": "2nd Unannounced, Pre-Inspection",
         "findings": [
           {
-            "rule_number": "R380-600-7(6)",
-            "rule_description": "No withholding or manipulating sources",
-            "finding_text": "The provider was out of compliance with R380-600-7(6) by withholding information to OL. During the inspection a client was punched during a restraint and this was not reported to Licensing. "
+            "rule_number": "R501-19A-11(1)(a)-(d)",
+            "rule_description": "Hazards, furnishings, fire drills, and utilities",
+            "finding_text": ""
+          },
+          {
+            "rule_number": "R501-19A-12(3)",
+            "rule_description": "Eligible background check before left unsupervised",
+            "finding_text": ""
+          }
+        ],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Licensor(s) Conducting this Inspection: Larry Black OL Staff Observing Inspection:",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1164683,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93724_checklist_1164683.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-08-11",
+        "inspection_types": "2nd Unannounced",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Licensor(s) Conducting this Inspection: Larry Black OL Staff Observing Inspection:",
+            "licensor": "Larry Black",
+            "extraction_method": "text",
+            "checklist_id": 1164683,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93724_checklist_1164683.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-07-16",
+        "inspection_types": "Non On-Site Technical Assistance",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
           }
         ],
         "checklists": []
@@ -1539,21 +2063,175 @@
     ]
   },
   {
-    "facility_id": 93763,
-    "name": "Zion Hills Inc.",
-    "address": "8097 West 2000 South Building 4, Cedar City, UT, 84720",
+    "facility_id": 93728,
+    "name": "Youth Health Associates LLC dba Eagle Academy",
+    "address": "446 E 450 S, Clearfield, UT, 84015",
     "license_type": "Residential Treatment",
-    "phone": "4355862500",
+    "phone": "8017792253",
     "capacity": 16,
-    "regulation_date": "2022-05-01",
-    "expiration_date": "2027-04-30",
+    "regulation_date": "2021-11-01",
+    "expiration_date": "2027-08-31",
     "conditional": false,
     "inspections": [
       {
-        "inspection_date": "2026-08-03",
+        "inspection_date": "2026-08-19",
+        "inspection_types": "Pre-Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Monie Riddle; Rachel Mays",
+            "licensor": "Chanesea Butler",
+            "extraction_method": "text",
+            "checklist_id": 1181665,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93728_checklist_1181665.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-07-08",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-07-07",
+        "inspection_types": "Investigation Inspection",
+        "findings": [],
+        "checklists": []
+      },
+      {
+        "inspection_date": "2026-06-19",
+        "inspection_types": "Focus, Non On-Site",
+        "findings": [
+          {
+            "rule_number": "R380-600-7(16)(a)-(e)",
+            "rule_description": "Critical incidents reporting requirements",
+            "finding_text": ""
+          }
+        ],
+        "checklists": []
+      }
+    ]
+  },
+  {
+    "facility_id": 93727,
+    "name": "Youth Health Associates LLC dba Lakeside Academy",
+    "address": "5887 S Weber Dr, Ogden, UT, 84405",
+    "license_type": "Residential Treatment",
+    "phone": "8014100474",
+    "capacity": 16,
+    "regulation_date": "2022-08-01",
+    "expiration_date": "2027-08-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-19",
+        "inspection_types": "Pre-Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 16,
+            "capacity": 16,
+            "contact_person": "Monie Riddle; Michael Norvang",
+            "licensor": "Chanesea Butler",
+            "extraction_method": "text",
+            "checklist_id": 1181524,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93727_checklist_1181524.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93725,
+    "name": "Youth Health Associates LLC -  dba Lakeview",
+    "address": "836 N 1375 W, Provo, UT, 84604",
+    "license_type": "Residential Treatment",
+    "phone": "8013109690",
+    "capacity": 16,
+    "regulation_date": "2021-08-01",
+    "expiration_date": "2027-08-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-25",
         "inspection_types": "Follow-Up Inspection, Non On-Site Inspection",
         "findings": [],
         "checklists": []
+      },
+      {
+        "inspection_date": "2026-08-05",
+        "inspection_types": "Additional Pre-Inspection, Unannounced, Annual Inspection",
+        "findings": [
+          {
+            "rule_number": "R501-14-5(2)(a)-(b)",
+            "rule_description": "Application submitted within 2 weeks and applicant directly supervised",
+            "finding_text": ""
+          },
+          {
+            "rule_number": "R501-14-5(5)(a)-(b)",
+            "rule_description": "Denied applicants may not direct access to clients",
+            "finding_text": ""
+          }
+        ],
+        "checklists": [
+          {
+            "census": 15,
+            "capacity": 15,
+            "contact_person": "Lindsey Brgoch",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1152623,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93725_checklist_1152623.pdf"
+          }
+        ]
+      },
+      {
+        "inspection_date": "2026-08-05",
+        "inspection_types": "Pre-Inspection, Unannounced, Annual Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": 15,
+            "capacity": 15,
+            "contact_person": "Lindsey Brgoch",
+            "licensor": "PattiJo Hopes",
+            "extraction_method": "text",
+            "checklist_id": 1152623,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93725_checklist_1152623.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "facility_id": 93726,
+    "name": "Youth Health Associates LLC dba Stepping Stones",
+    "address": "430 E 450 S, Clearfield, UT, 84015",
+    "license_type": "Residential Treatment",
+    "phone": "8013883945",
+    "capacity": 16,
+    "regulation_date": "2022-08-01",
+    "expiration_date": "2027-08-31",
+    "conditional": false,
+    "inspections": [
+      {
+        "inspection_date": "2026-08-18",
+        "inspection_types": "Pre-Inspection",
+        "findings": [],
+        "checklists": [
+          {
+            "census": null,
+            "capacity": null,
+            "contact_person": "Monie Riddle; Nathan Larson",
+            "licensor": "Chanesea Butler",
+            "extraction_method": "text",
+            "checklist_id": 1181564,
+            "pdf_file": "I:\\My Drive\\FileBird Cloud - kidsoverprofits.org\\ut_checklists\\facility_93726_checklist_1181564.pdf"
+          }
+        ]
       }
     ]
   }
