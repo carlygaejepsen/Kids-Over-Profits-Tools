@@ -334,64 +334,75 @@ def parse_facility_metadata(soup: BeautifulSoup) -> Dict[str, str]:
 
 
 def fetch_pdf_bytes(session: requests.Session, pdf_url: str) -> Optional[bytes]:
+    """Download a report PDF into memory and archive it to the Drive folder.
+
+    The Drive copy is written once and only read back when the source no
+    longer serves the document: reading it would pull it into Drive for
+    Desktop's local cache.
+    """
     if not pdf_url:
         return None
 
-    PDF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_name = Path(urlparse(pdf_url).path).name
     cache_path = PDF_CACHE_DIR / cache_name
-    if cache_path.exists():
-        try:
-            data = cache_path.read_bytes()
-        except OSError as exc:
-            logger.warning("  PDF cache unreadable (%s), re-downloading: %s", exc, cache_name)
-            try:
-                cache_path.unlink()
-            except OSError:
-                pass
-        else:
-            if data.startswith(b"%PDF"):
-                logger.info("  PDF cache hit: %s (%d KB)", cache_name, len(data) // 1024)
-                return data
-            logger.warning("  PDF cache invalid (%d bytes, not a PDF), re-downloading: %s", len(data), cache_name)
-            try:
-                cache_path.unlink()
-            except OSError:
-                pass
 
     logger.info("  PDF download start: %s", pdf_url)
     start = time.monotonic()
+    content: Optional[bytes] = None
     try:
         response = session.get(pdf_url, timeout=120)
         response.raise_for_status()
+        content = response.content
     except NETWORK_ERRORS as exc:
         logger.warning("  PDF download failed for %s after %.1fs: %s", pdf_url, time.monotonic() - start, exc)
-        return None
-
-    if not response.content.startswith(b"%PDF"):
+    if content is not None and not content.startswith(b"%PDF"):
         logger.warning("  Non-PDF response for %s", pdf_url)
+        content = None
+
+    if content is None:
+        try:
+            archived = cache_path.read_bytes()
+        except OSError:
+            return None
+        if archived.startswith(b"%PDF"):
+            logger.info("  using archived copy: %s (%d KB)", cache_name, len(archived) // 1024)
+            return archived
         return None
 
-    cache_path.write_bytes(response.content)
-    logger.info("  PDF downloaded: %s (%d KB, %.1fs)", cache_name, len(response.content) // 1024, time.monotonic() - start)
-    return response.content
+    logger.info("  PDF downloaded: %s (%d KB, %.1fs)", cache_name, len(content) // 1024, time.monotonic() - start)
+    try:
+        already_archived = cache_path.stat().st_size == len(content)
+    except OSError:
+        already_archived = False
+    if not already_archived:
+        PDF_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        cache_path.write_bytes(content)
+    return content
+
+
+def cached_ocr_text(cache_key: str) -> Optional[str]:
+    cache_path = OCR_CACHE_DIR / f"{cache_key}.txt"
+    if not cache_path.exists():
+        return None
+    try:
+        text = cache_path.read_text(encoding="utf-8", errors="replace")
+    except OSError as exc:
+        logger.warning("  OCR cache unreadable (%s), re-running OCR: %s", exc, cache_key)
+        try:
+            cache_path.unlink()
+        except OSError:
+            pass
+        return None
+    logger.info("  OCR cache hit: %s", cache_key)
+    return text
 
 
 def ocr_pdf_bytes(pdf_bytes: bytes, cache_key: str) -> str:
     OCR_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_path = OCR_CACHE_DIR / f"{cache_key}.txt"
-    if cache_path.exists():
-        try:
-            text = cache_path.read_text(encoding="utf-8", errors="replace")
-        except OSError as exc:
-            logger.warning("  OCR cache unreadable (%s), re-running OCR: %s", exc, cache_key)
-            try:
-                cache_path.unlink()
-            except OSError:
-                pass
-        else:
-            logger.info("  OCR cache hit: %s", cache_key)
-            return text
+    cached = cached_ocr_text(cache_key)
+    if cached is not None:
+        return cached
 
     logger.info("  OCR rasterize start: %s (dpi=%d, %d KB)", cache_key, OCR_DPI, len(pdf_bytes) // 1024)
     raster_start = time.monotonic()
@@ -450,8 +461,11 @@ def parse_reports(session: requests.Session, facility_url: str, fid: str) -> Lis
         report_id = re.sub(r"[^A-Za-z0-9._-]+", "-", pdf_name)
         logger.info("  report %d/%d (fid=%s): %s", pdf_index, len(pdf_rows), fid, report_id)
         report_start = time.monotonic()
-        pdf_bytes = fetch_pdf_bytes(session, pdf_url)
-        ocr_text = ocr_pdf_bytes(pdf_bytes, report_id) if pdf_bytes else ""
+        # OCR text first: the PDF is only fetched when it has not been read yet.
+        ocr_text = cached_ocr_text(report_id)
+        if ocr_text is None:
+            pdf_bytes = fetch_pdf_bytes(session, pdf_url)
+            ocr_text = ocr_pdf_bytes(pdf_bytes, report_id) if pdf_bytes else ""
         logger.info("  report %d/%d done in %.1fs (%d OCR chars): %s", pdf_index, len(pdf_rows), time.monotonic() - report_start, len(ocr_text), report_id)
 
         report_date = cells[2]

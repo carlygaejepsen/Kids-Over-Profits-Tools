@@ -38,7 +38,7 @@ except ImportError:  # pragma: no cover — fallback gracefully when pymupdf isn
     pymupdf = None
 
 from inspection_api_client import post_facilities_to_api
-from kop_paths import report_cache_dir
+from report_store import ReportStore, extract_with_cache
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -61,7 +61,7 @@ DJJ_PREA_INDEX = "/partners-providers-staff/prison-rape-elimination-act-prea/com
 DJJ_SPEP_OPEN = "/research/standardized-program-evaluation-protocol-spep/residential-spep-reports-current-programs"
 DJJ_SPEP_CLOSED = "/research/standardized-program-evaluation-protocol-spep/residential-spep-reports-closed-programs"
 
-DJJ_PDF_CACHE = report_cache_dir("FL_PDF_CACHE", "fl_pdfs", Path(__file__).parent / "fl_pdfs")
+DJJ_REPORTS = ReportStore("FL_PDF_CACHE", "fl_pdfs", Path(__file__).parent / "fl_pdfs")
 DJJ_STATE_FILE = Path(os.getenv("FL_DJJ_STATE_FILE", ".fl_djj_state.json"))
 AHCA_STATE_FILE = Path(os.getenv("FL_AHCA_STATE_FILE", ".fl_ahca_state.json"))
 DCF_STATE_FILE = Path(os.getenv("FL_DCF_STATE_FILE", ".fl_dcf_state.json"))
@@ -445,7 +445,7 @@ def extract_pdf_text(path: Path, timeout: int = DEFAULT_PDF_TIMEOUT) -> str:
 class FLDJJScraper:
     def __init__(
         self,
-        pdf_dir: Path = DJJ_PDF_CACHE,
+        reports: ReportStore = DJJ_REPORTS,
         workers: int = DEFAULT_WORKERS,
         pdf_timeout: int = DEFAULT_PDF_TIMEOUT,
     ):
@@ -455,8 +455,7 @@ class FLDJJScraper:
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
         })
-        self.pdf_dir = pdf_dir
-        self.pdf_dir.mkdir(exist_ok=True)
+        self.reports = reports
         self._html_cache: Dict[str, str] = {}
         self.all_facilities: List[Dict] = []
         self.workers = max(1, workers)
@@ -807,27 +806,32 @@ class FLDJJScraper:
                 return fac
         return None
 
-    def download_pdf(self, url: str) -> Optional[Path]:
-        if not url:
-            return None
-        safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", unquote(url.rsplit("/", 1)[-1].split("?", 1)[0]))
-        dest = self.pdf_dir / safe_name
-        if dest.exists() and dest.stat().st_size > 0:
-            return dest
+    def download_pdf(self, url: str, safe_name: str) -> Optional[bytes]:
         logger.info(f"  Downloading {safe_name}")
         try:
             response = self.session.get(url, timeout=120)
             response.raise_for_status()
-            dest.write_bytes(response.content)
             time.sleep(0.2)
-            return dest
+            return response.content
         except requests.RequestException as exc:
             logger.warning(f"  download failed {url}: {exc}")
             return None
 
+    def pdf_text(self, url: str) -> str:
+        """Text of the report PDF; the PDF itself goes to the Drive folder."""
+        if not url:
+            return ""
+        safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", unquote(url.rsplit("/", 1)[-1].split("?", 1)[0]))
+        extracted = extract_with_cache(
+            self.reports,
+            safe_name,
+            fetch=lambda: self.download_pdf(url, safe_name),
+            extract=lambda path: {"text": extract_pdf_text(path, timeout=self.pdf_timeout)},
+        )
+        return extracted["text"] if extracted else ""
+
     def _build_report(self, entry: Dict, facility: Optional[Dict]) -> Dict:
-        pdf_path = self.download_pdf(entry["pdf_url"])
-        raw_content = extract_pdf_text(pdf_path, timeout=self.pdf_timeout) if pdf_path else ""
+        raw_content = self.pdf_text(entry["pdf_url"])
         if not raw_content:
             fallback = [
                 f"Program: {entry.get('program_name', '')}",

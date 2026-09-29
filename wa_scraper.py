@@ -24,7 +24,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from inspection_api_client import post_facilities_to_api
-from kop_paths import report_cache_dir
+from report_store import ReportStore, extract_with_cache
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -55,7 +55,7 @@ FACILITY_TYPES = [
     ("Behavioral Health Agency", 2869, 80),
 ]
 
-PDF_CACHE_DIR = report_cache_dir("WA_PDF_CACHE", "wa_pdfs", Path(__file__).parent / "wa_pdfs")
+REPORTS = ReportStore("WA_PDF_CACHE", "wa_pdfs", Path(__file__).parent / "wa_pdfs")
 STATE_FILE = Path(os.getenv("WA_STATE_FILE", ".wa_state.json"))
 
 # KOP programs that are DOH-licensed (RTF or BHA). Juvenile detentions,
@@ -296,7 +296,7 @@ def extract_deficiencies(text: str) -> List[str]:
 # ── Search page scraping ────────────────────────────────────────────
 
 class WAInspectionScraper:
-    def __init__(self, pdf_dir: Path = PDF_CACHE_DIR):
+    def __init__(self, reports: ReportStore = REPORTS):
         self.session = requests.Session()
         self.session.headers.update({
             "User-Agent": (
@@ -305,8 +305,7 @@ class WAInspectionScraper:
                 "Chrome/125.0.0.0 Safari/537.36"
             ),
         })
-        self.pdf_dir = pdf_dir
-        self.pdf_dir.mkdir(exist_ok=True)
+        self.reports = reports
         self.all_facilities: List[Dict] = []
 
     def fetch_page(self, facility_type_id: int, page: int) -> str:
@@ -369,22 +368,27 @@ class WAInspectionScraper:
 
         return facilities
 
-    def download_pdf(self, url: str) -> Optional[Path]:
-        """Download to cache dir; return path. Skip if already cached."""
-        filename = url.rsplit("/", 1)[-1]
-        filename = re.sub(r"[^A-Za-z0-9._-]", "_", filename)
-        dest = self.pdf_dir / filename
-        if dest.exists() and dest.stat().st_size > 0:
-            return dest
+    def download_pdf(self, url: str) -> Optional[bytes]:
         try:
             resp = self.session.get(url, timeout=60)
             resp.raise_for_status()
-            dest.write_bytes(resp.content)
             time.sleep(0.5)  # be polite
-            return dest
+            return resp.content
         except requests.RequestException as e:
             logger.warning(f"  download failed {url}: {e}")
             return None
+
+    def pdf_text(self, url: str) -> Tuple[Optional[str], str]:
+        """(text, file name) of the report PDF; text is None when no document
+        could be had. The PDF itself goes to the Drive folder."""
+        filename = re.sub(r"[^A-Za-z0-9._-]", "_", url.rsplit("/", 1)[-1])
+        extracted = extract_with_cache(
+            self.reports,
+            filename,
+            fetch=lambda: self.download_pdf(url),
+            extract=lambda path: {"text": extract_pdf_text(path)},
+        )
+        return (extracted["text"] if extracted else None), filename
 
     def build_report(
         self,
@@ -393,11 +397,9 @@ class WAInspectionScraper:
         category: str,
         sharers: Optional[List[str]] = None,
     ) -> Optional[Dict]:
-        pdf_path = self.download_pdf(url)
-        if not pdf_path:
+        text, filename = self.pdf_text(url)
+        if text is None:
             return None
-
-        text = extract_pdf_text(pdf_path)
 
         # DOH sometimes links several case numbers to one case's PDF (twelve
         # Pearl Youth Residence cases all point at 2023-11257.pdf). Only the
@@ -412,7 +414,7 @@ class WAInspectionScraper:
         deficiencies = extract_deficiencies(text)
 
         return {
-            "report_id": report_num or pdf_path.stem,
+            "report_id": report_num or Path(filename).stem,
             "report_date": parsed["report_date"] or parsed["inspection_date"],
             "raw_content": text,
             "content_length": len(text),

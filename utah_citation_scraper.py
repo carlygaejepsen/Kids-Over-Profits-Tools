@@ -18,7 +18,7 @@ import pdfplumber
 import requests
 
 from inspection_api_client import post_facilities_to_api
-from kop_paths import report_cache_dir
+from report_store import ReportStore
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
@@ -36,9 +36,8 @@ except ImportError:  # pragma: no cover - optional dependency
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "middle"
-CHECKLIST_DIR = report_cache_dir("UT_CHECKLIST_DIR", "ut_checklists", BASE_DIR / "checklists")
+CHECKLISTS = ReportStore("UT_CHECKLIST_DIR", "ut_checklists", BASE_DIR / "checklists")
 OUTPUT_DIR.mkdir(exist_ok=True)
-CHECKLIST_DIR.mkdir(exist_ok=True)
 
 OUTPUT_JSON = OUTPUT_DIR / "ut_reports_with_ocr.json"
 OUTPUT_CSV = OUTPUT_DIR / f"utah_citations_{datetime.now().strftime('%m-%d-%Y')}.csv"
@@ -1018,8 +1017,10 @@ def main() -> None:
                         checklist_data = extract_checklist_data(pdf_response.content, checklist_id=checklist_id)
                         checklist_data["checklist_id"] = checklist_id
 
-                        pdf_path = CHECKLIST_DIR / f"facility_{facility_id}_checklist_{checklist_id}.pdf"
-                        pdf_path.write_bytes(pdf_response.content)
+                        # Extracted above from memory; the PDF goes to the Drive folder.
+                        pdf_path = CHECKLISTS.archive(
+                            f"facility_{facility_id}_checklist_{checklist_id}.pdf", pdf_response.content
+                        )
                         checklist_data["pdf_file"] = str(pdf_path)
 
                         inspection_record["checklists"].append(checklist_data)

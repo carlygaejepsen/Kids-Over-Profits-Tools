@@ -26,6 +26,9 @@ scraper_launcher_state.json
 fl_pdfs/
 or_pdfs/
 .nc_pdf_cache/
+
+# Text/findings extracted from report PDFs (report_store.py); the PDFs live on Drive
+.report_extract_cache/
 .claude/settings.json
 
 # Doc finder: scan history and your keep/skip decisions (local file paths)

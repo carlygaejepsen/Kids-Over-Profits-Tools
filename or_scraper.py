@@ -29,7 +29,7 @@ import pdfplumber
 import requests
 
 from inspection_api_client import post_facilities_to_api
-from kop_paths import report_cache_dir
+from report_store import ReportStore, extract_with_cache
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
 
 logging.basicConfig(
@@ -47,7 +47,7 @@ API_KEY = os.getenv("KOP_DATA_API_KEY", "CHANGE_ME")
 BASE_URL = "https://www.oregon.gov/odhs/licensing/childrens-care-agencies"
 REPORT_LIBRARY_NAME = "reports"
 AGENCY_LIST_NAME = "agencies"
-PDF_CACHE_DIR = report_cache_dir("OR_PDF_CACHE", "or_pdfs", Path(__file__).parent / "or_pdfs")
+REPORTS = ReportStore("OR_PDF_CACHE", "or_pdfs", Path(__file__).parent / "or_pdfs")
 STATE_FILE = Path(os.getenv("OR_STATE_FILE", ".or_state.json"))
 
 VIEWS = [
@@ -734,7 +734,7 @@ def parse_oregon_report_text(
 class ORFacilityScraper:
     """Scrape Oregon ODHS RC and TBS reports from the public SharePoint library."""
 
-    def __init__(self, pdf_dir: Path = PDF_CACHE_DIR):
+    def __init__(self, reports: ReportStore = REPORTS):
         self.session = requests.Session()
         self.session.headers.update({
             "User-Agent": (
@@ -745,8 +745,7 @@ class ORFacilityScraper:
             "Accept": "*/*",
             "Origin": "https://www.oregon.gov",
         })
-        self.pdf_dir = pdf_dir
-        self.pdf_dir.mkdir(exist_ok=True)
+        self.reports = reports
         self.all_facilities: List[Dict] = []
         # slug -> live view GUID, lazily populated from Views.asmx
         self._view_id_by_slug: Optional[Dict[str, str]] = None
@@ -971,14 +970,7 @@ class ORFacilityScraper:
                 if not entry["program_name"] and inferred_name:
                     entry["program_name"] = inferred_name
 
-    def download_pdf(self, url: str) -> Optional[Path]:
-        if not url:
-            return None
-        filename = re.sub(r"[^A-Za-z0-9._-]", "_", url.rsplit("/", 1)[-1])
-        dest = self.pdf_dir / filename
-        if dest.exists() and dest.stat().st_size > 0:
-            logger.debug(f"  [cached] {filename}")
-            return dest
+    def download_pdf(self, url: str, filename: str) -> Optional[bytes]:
         logger.info(f"  Downloading {filename}")
         try:
             response = self.session.get(
@@ -987,18 +979,34 @@ class ORFacilityScraper:
                 timeout=60,
             )
             response.raise_for_status()
-            dest.write_bytes(response.content)
             time.sleep(0.2)
-            return dest
+            return response.content
         except requests.RequestException as exc:
             logger.warning(f"  download failed {url}: {exc}")
             return None
 
+    def extract_pdf(self, url: str) -> Dict:
+        """Text and checklist findings of the report PDF; the PDF itself goes
+        to the Drive folder."""
+        if not url:
+            return {}
+        filename = re.sub(r"[^A-Za-z0-9._-]", "_", url.rsplit("/", 1)[-1])
+        extracted = extract_with_cache(
+            self.reports,
+            filename,
+            fetch=lambda: self.download_pdf(url, filename),
+            extract=lambda path: {
+                "text": extract_pdf_text(path),
+                # Table-based extraction; None for non-checklist PDFs.
+                "checklist_findings": extract_checklist_findings(path),
+            },
+        )
+        return extracted or {}
+
     def _build_report(self, entry: Dict) -> Dict:
-        pdf_path = self.download_pdf(entry["pdf_url"])
-        extracted_text = extract_pdf_text(pdf_path) if pdf_path else ""
-        # Try table-based extraction first; returns None for non-checklist PDFs.
-        checklist_findings = extract_checklist_findings(pdf_path) if pdf_path else None
+        extracted = self.extract_pdf(entry["pdf_url"])
+        extracted_text = extracted.get("text", "")
+        checklist_findings = extracted.get("checklist_findings")
         if extracted_text:
             raw_content = extracted_text
         else:
