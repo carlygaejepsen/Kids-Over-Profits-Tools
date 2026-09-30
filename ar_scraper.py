@@ -38,10 +38,11 @@ except ImportError:
 
 try:
     import pytesseract
-    from pdf2image import convert_from_bytes
+    from pdf2image import convert_from_bytes, pdfinfo_from_bytes
 except ImportError:
     pytesseract = None
     convert_from_bytes = None
+    pdfinfo_from_bytes = None
 
 # Optional: point at custom binaries via env vars
 TESSERACT_CMD = os.getenv("TESSERACT_CMD")
@@ -49,6 +50,11 @@ POPPLER_PATH = os.getenv("POPPLER_PATH")
 if TESSERACT_CMD and pytesseract:
     pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
 OCR_DPI = int(os.getenv("OCR_DPI", "250"))
+# Long scans are OCR'd up to this many pages; every page is rendered alone.
+OCR_MAX_PAGES = int(os.getenv("OCR_MAX_PAGES", "60"))
+# A run stops (and posts nothing) after this many downloads in a row fail,
+# rather than saving records with no text while the network is down.
+MAX_DOWNLOAD_FAILURES = 5
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
@@ -261,24 +267,31 @@ class DRAScraper:
             return ""
 
     def _ocr_pdf(self, pdf_bytes: bytes, drive_id: str) -> str:
+        """OCR a scanned PDF one page at a time. Rendering every page at once
+        held a long scan's images in memory together and ran the machine out
+        of memory (2026-09-30)."""
         if not self.ocr:
             return ""
+        kwargs = {"dpi": OCR_DPI}
+        if POPPLER_PATH:
+            kwargs["poppler_path"] = POPPLER_PATH
         try:
-            kwargs = {"dpi": OCR_DPI}
-            if POPPLER_PATH:
-                kwargs["poppler_path"] = POPPLER_PATH
-            images = convert_from_bytes(pdf_bytes, **kwargs)
+            info = pdfinfo_from_bytes(pdf_bytes, poppler_path=POPPLER_PATH or None)
+            page_count = int(info.get("Pages", 0))
         except Exception as e:
-            logger.warning(f"    pdf2image failed for {drive_id}: {e}")
+            logger.warning(f"    pdfinfo failed for {drive_id}: {e}")
             return ""
+        if page_count > OCR_MAX_PAGES:
+            logger.warning(f"    {drive_id}: {page_count} pages, OCR of the first {OCR_MAX_PAGES} only")
         pages = []
-        for img in images:
+        for number in range(1, min(page_count, OCR_MAX_PAGES) + 1):
             try:
-                pages.append(pytesseract.image_to_string(img))
-            except Exception as e:
-                logger.warning(f"    tesseract failed for {drive_id}: {e}")
-                return ""
-        return "\n\n".join(pages).strip()
+                images = convert_from_bytes(pdf_bytes, first_page=number, last_page=number, **kwargs)
+                pages.extend(pytesseract.image_to_string(img) for img in images)
+                del images
+            except (Exception, MemoryError) as e:
+                logger.warning(f"    OCR failed on page {number} of {drive_id}: {e}")
+        return "\n\n".join(p for p in pages if p).strip()
 
     def _process_pdf(self, drive_url: str) -> Tuple[str, str]:
         """Returns (raw_text, drive_id_or_empty)."""
@@ -383,8 +396,14 @@ class DRAScraper:
             return "", None
         try:
             r = self.session.get(media["source_url"], timeout=120)
+            self.download_failures = 0
         except requests.RequestException as e:
             logger.warning(f"    PDF download failed for media {media['id']}: {e}")
+            self.download_failures = getattr(self, "download_failures", 0) + 1
+            if self.download_failures >= MAX_DOWNLOAD_FAILURES:
+                raise RuntimeError(f"{MAX_DOWNLOAD_FAILURES} PDF downloads failed in a row; "
+                                   "is the network down? Stopping without posting. "
+                                   "Rerun to pick up where this left off.")
             return "", None
         if r.status_code != 200 or r.content[:4] != b"%PDF":
             logger.warning(f"    PDF download media {media['id']} -> {r.status_code}")
