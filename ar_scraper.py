@@ -150,6 +150,15 @@ def text_fingerprint(text: str) -> str:
     return hashlib.sha1(" ".join(words).encode("utf-8")).hexdigest() if len(words) >= 20 else ""
 
 
+def prtf_report_id(post: Dict) -> str:
+    """prtf-<slug>, cut to the 100 characters inspection_reports.report_id
+    holds; a cut one ends in a hash of the full slug so it stays unique."""
+    report_id = f"prtf-{post.get('slug') or post['id']}"
+    if len(report_id) <= 100:
+        return report_id
+    return report_id[:91] + "-" + hashlib.sha1(report_id.encode("utf-8")).hexdigest()[:8]
+
+
 def doc_type_from_title(title: str) -> str:
     """'9/8/2025 Police Report' -> 'Police Report'."""
     cleaned = re.sub(r"^\s*\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\s*", "", title).strip()
@@ -512,7 +521,7 @@ class DRAScraper:
             report_date = f"{m[2]}/{m[3]}/{m[1]}" if m and m[1] >= "2000" else parse_date_from_title(title.replace(".", "/"))
             first = pdfs[0] if pdfs else {}
             by_facility.setdefault(slug, []).append({
-                "report_id": f"prtf-{post.get('slug') or post['id']}",
+                "report_id": prtf_report_id(post),
                 "report_date": report_date,
                 "report_url": post.get("link", ""),
                 "raw_content": raw_text,
