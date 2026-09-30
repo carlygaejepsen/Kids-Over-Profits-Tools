@@ -30,11 +30,11 @@ import shutil
 import sys
 from pathlib import Path
 
-from kop_paths import GOOGLE_DRIVE_BASE
+import kop_paths
 
 BASE_DIR = Path(__file__).resolve().parent
 
-# local cache directory (relative to this repo) -> subfolder of GOOGLE_DRIVE_BASE
+# local cache directory (relative to this repo) -> subfolder of kop_paths.GOOGLE_DRIVE_BASE
 REPORT_CACHES = [
     (".nc_pdf_cache", "nc_pdfs"),
     (".nc_ocr_cache", "nc_ocr"),
@@ -128,18 +128,18 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if not GOOGLE_DRIVE_BASE.exists():
-        print(f"Google Drive folder not found: {GOOGLE_DRIVE_BASE}")
-        print(
-            "Start Google Drive for Desktop (H: must be mounted) and re-run. "
-            "Nothing was changed."
-        )
+    # The local caches are in OneDrive and the destination is Google Drive, so
+    # both have to be running; each asks to be opened, then Retry.
+    kop_paths.ensure_onedrive()
+    if not kop_paths.ensure_google_drive():
+        print(f"Google Drive folder not found: {kop_paths.GOOGLE_DRIVE_BASE}")
+        print("Nothing was changed. Open Google Drive for Desktop and run this again.")
         return 1
 
     grand_failed = 0
     for local_name, drive_subdir in REPORT_CACHES:
         local_dir = BASE_DIR / local_name
-        drive_dir = GOOGLE_DRIVE_BASE / drive_subdir
+        drive_dir = kop_paths.GOOGLE_DRIVE_BASE / drive_subdir
         if not local_dir.is_dir() or not any(local_dir.iterdir()):
             continue
 
