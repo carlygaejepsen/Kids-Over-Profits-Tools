@@ -35,3 +35,7 @@ mi_pdfs/
 
 # Doc finder: scan history and your keep/skip decisions (local file paths)
 .tti_doc_finder_state.json
+
+# Arkansas scraper caches (ar_scraper.py): extracted report text and downloaded PDFs
+.ar_text_cache/
+.ar_pdf_cache/
