@@ -224,6 +224,18 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Useful flags:** `--limit N`, `--program-type "..."` (repeatable), `--no-sod` (metadata-only smoke test), `--no-post`, `--full`.
 - **Status:** Parsers validated against archived portal HTML; the stateful WebForms postback flow (acceptance + RadGrid pagination) still needs one live validation run from an unblocked IP.
 
+### MI (Michigan child welfare licensing)
+- **Source:** MDHHS Division of Child Welfare Licensing public search at `michildwelfarepubliclicensingsearch.michigan.gov/licagencysrch/` (Salesforce Experience Cloud)
+- **Method:** `requests` against the site's anonymous Apex endpoint (`webruntime/api/apex/execute`), three methods of `COM_CWLicensingSearchController`: `getAgenciesDetail` (every licensed agency), `getContentDetails` (an agency's documents), `getContentBaseData` (one PDF as base64). Text PDFs, read with `pdfplumber` (text plus table rows).
+- **Scraper:** `mi_scraper.py` takes every agency whose type is not "Child Placing Agency" (about 110: private, government and state child caring institutions, court operated facilities, therapeutic group homes). One document = one report; `report_id` is the `ContentDocumentId`, `program_name` the licence number.
+- **Report types** (`categories.doc_type`, from the cover letter's "Attached is the ... Report"): `special_investigation` (complaint investigations: per allegation the rule, allegation and conclusion, from the section III tables since 2022 or the capitalised ALLEGATION:/APPLICABLE RULE/CONCLUSION: text before), `renewal`, `interim`, `original` (cited rules from "C. Rule/Statutory Violations" or the older "except for the following:" findings; `cap_required` from the cover letter). Flagged = a violation established, or an inspection with a corrective action plan or a cited rule.
+- **TLS:** the server leaves out its intermediate certificate, so the scraper verifies against certifi plus `certs/sectigo_ov_r36.pem`. If verification fails, the error names the fix (fetch the leaf certificate's AIA "CA Issuers" URL). Never `verify=False`.
+- **Class id:** `@udd/01p8z0000009E4V` (override `MI_CLASS_ID`). On "The Apex request is invalid." the scraper reads the new id from the site's view scripts and retries once.
+- **PDF storage:** `ReportStore("MI_PDF_CACHE", "mi_pdfs", ...)`, archived as `<licence>_<ContentDocumentId>.pdf`. The state has no direct document URL and lets licensees ask for violation reports to be taken down after two years, so the archived copy on the site is the reader's link (`categories.archive_name`).
+- **Incremental state:** `.mi_state.json`, seen-ID keyed by licence number, plus `agencies`: the last known record per licence, so a facility that drops off the list still has its documents asked for by id.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--agency <licence or agencyId>` (repeatable), `--out file.json` (what the read API would return, for testing the page).
+- **First-run expectation:** about 1,900 PDFs, one request every 0.5 s, roughly 1.5 hours; reruns read `.report_extract_cache/mi_pdfs/`.
+
 ### NC (North Carolina MHLCS public records)
 - **Source:** NC DHHS Division of Health Service Regulation Mental Health Licensure and Certification Section public records directory at `results.asp`, with facility pages at `facility.asp?fid=...`
 - **Method:** `requests` + BeautifulSoup to read the directory and facility pages, then OCR each linked inspection PDF with `pdf2image` + `pytesseract`

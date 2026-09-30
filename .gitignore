@@ -15,6 +15,7 @@ scraper_launcher_state.json
 .fl_djj_state.json
 .fl_ahca_state.json
 .fl_dcf_state.json
+.mi_state.json
 .nc_state.json
 .nv_state.json
 .or_state.json
@@ -25,6 +26,7 @@ scraper_launcher_state.json
 # Local PDF caches
 fl_pdfs/
 or_pdfs/
+mi_pdfs/
 .nc_pdf_cache/
 
 # Text/findings extracted from report PDFs (report_store.py); the PDFs live on Drive

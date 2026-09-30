@@ -40,6 +40,7 @@ REPORT_CACHES = [
     (".nc_ocr_cache", "nc_ocr"),
     (".ar_pdf_cache", "ar_pdfs"),
     ("fl_pdfs", "fl_pdfs"),
+    ("mi_pdfs", "mi_pdfs"),
     ("or_pdfs", "or_pdfs"),
     ("wa_pdfs", "wa_pdfs"),
     ("checklists", "ut_checklists"),
