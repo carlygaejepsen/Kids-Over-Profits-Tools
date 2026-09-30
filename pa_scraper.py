@@ -320,8 +320,18 @@ def ocr_page(path: Path, number: int) -> str:
     try:
         images = convert_from_path(str(path), dpi=OCR_DPI, first_page=number, last_page=number,
                                    poppler_path=find_poppler() or None)
+    except Exception:
+        # Poppler rejects a few malformed files ("Invalid page count 0") that
+        # pdfplumber opens; render the page through pdfplumber instead.
+        try:
+            with pdfplumber.open(path) as pdf:
+                images = [pdf.pages[number - 1].to_image(resolution=OCR_DPI).original]
+        except Exception as exc:
+            logger.warning(f"  OCR failed for {path.name} page {number}: {exc}")
+            return ""
+    try:
         return "\n".join(pytesseract.image_to_string(image) for image in images)
-    except Exception as exc:  # poppler or tesseract missing or failing
+    except Exception as exc:  # tesseract missing or failing
         logger.warning(f"  OCR failed for {path.name} page {number}: {exc}")
         return ""
 
@@ -795,6 +805,47 @@ def parse_report(name: str, pages: List[str], ocr: bool) -> Dict:
     return {"text": text, "categories": categories}
 
 
+PREVIEW_CHARS = 240
+
+
+def shorten(text: str, limit: int = PREVIEW_CHARS) -> str:
+    if len(text) <= limit:
+        return text
+    return re.sub(r"\s+\S*$", "", text[: limit - 1]) + "…"
+
+
+def split_detail(categories: Dict) -> None:
+    """Keep the list light: about 9,700 reports load at once on the page
+    (inspections-read.php ?lite=1). Each citation keeps its regulation,
+    title, statuses and the first PREVIEW_CHARS of the violation;
+    categories.detail holds the narrative and, per citation in the same
+    order, the full violation, requirement, plan and verification. Lite
+    lists leave detail out and send it with the report's text on open."""
+    compact: List[Dict] = []
+    detail: List[Dict] = []
+    for c in categories["citations"]:
+        short = shorten(c["violation"])
+        compact.append({k: v for k, v in {
+            "regulation": c["regulation"],
+            "title": c["title"],
+            "violation": short,
+            "plan_status": c["plan_status"],
+            "completion_date": c["completion_date"],
+            "verification_status": c["verification_status"],
+            "repeat": c.get("repeat"),
+        }.items() if v})
+        detail.append({k: v for k, v in {
+            "violation": c["violation"] if short != c["violation"] else "",
+            "regulation_text": c["regulation_text"],
+            "plan": c["plan"],
+            "plan_date": c["plan_date"],
+            "verification": c["verification"],
+            "verification_date": c["verification_date"],
+        }.items() if v})
+    categories["citations"] = compact
+    categories["detail"] = {"narrative": categories.pop("narrative", ""), "citations": detail}
+
+
 def summarize(categories: Dict) -> str:
     count = categories["citation_count"]
     regs = list(dict.fromkeys(c["regulation"] for c in categories["citations"] if c["regulation"]))
@@ -899,6 +950,33 @@ def full_address(unit: Dict) -> str:
 
 
 # ── Scraper ──────────────────────────────────────────────────────────────────
+
+
+UNIT_FIELDS = ("legal_entity", "unit", "service_type", "region", "county")
+DROP_WHEN_EMPTY = ("ocr", "date_corrected", "repeat_count", "counts_as_violation", "followup_of",
+                   "notice", "inspection_end", "inspection_type", "inspection_start")
+
+
+def prune_categories(categories: Dict, newest: bool) -> None:
+    """The page lists every report of the state at once, so each report
+    carries only what differs: the unit's entity, service type, region and
+    county ride on its newest report of the run (the page reads them from
+    there), the file name is the report_id, and empty or default values are
+    left out. The letter date goes with the detail."""
+    for key in DROP_WHEN_EMPTY:
+        if not categories.get(key):
+            categories.pop(key, None)
+    if categories.get("form") == "summary":
+        categories.pop("form")
+    categories.pop("file_name", None)
+    if not categories.get("date_corrected"):
+        categories.pop("file_date", None)
+    letter = categories.pop("letter_date", "")
+    if letter:
+        categories.setdefault("detail", {})["letter_date"] = letter
+    if not newest:
+        for key in UNIT_FIELDS:
+            categories.pop(key, None)
 
 
 def repaired_entity(entity: str, reports: List[Dict]) -> str:
@@ -1040,13 +1118,15 @@ class PAScraper:
         if len(extracted.get("pages") or []) > 1 and categories["kind"] == "other":
             self.stats["other_multi_page"] += 1
         self.stats["citations"] += categories["citation_count"]
+        summary = summarize(categories)
+        split_detail(categories)
         return {
             "report_id": name[:-4] if name.lower().endswith(".pdf") else name,
             "report_date": report_date,
             "report_url": REPORT_URL.format(name=name),
             "raw_content": text,
             "content_length": len(text),
-            "summary": summarize(categories),
+            "summary": summary,
             "categories": categories,
         }
 
@@ -1117,6 +1197,8 @@ class PAScraper:
         cited, counted = mark_violations(reports, cited_before)
         self.counted_followups += counted
         reports.sort(key=lambda r: r["report_date"], reverse=True)
+        for index, report in enumerate(reports):
+            prune_categories(report["categories"], newest=index == 0)
         facility = {"facility_info": self.facility_info(unit, listed), "reports": reports}
         return facility, [r["report_id"] for r in reports], cited
 
