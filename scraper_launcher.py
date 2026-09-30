@@ -162,6 +162,14 @@ def get_work_area(window) -> tuple[int, int, int, int]:
     return 0, 0, window.winfo_screenwidth(), window.winfo_screenheight()
 
 
+def ui_scale(window) -> float:
+    """1.0 at 100% Windows scaling, 2.0 at 200%. Returns 1.0 when Python isn't DPI-aware."""
+    try:
+        return max(1.0, window.winfo_fpixels("1i") / 96.0)
+    except tk.TclError:
+        return 1.0
+
+
 def fit_window_to_screen(window, desired_width: int, desired_height: int,
                          min_width: int = 320, min_height: int = 320,
                          margin: int = 12) -> None:
@@ -311,8 +319,9 @@ class ScraperLauncher:
         self.root = root
         root.title("KOP Scraper Launcher")
         root.configure(bg=SAND)
-        fit_window_to_screen(root, desired_width=960, desired_height=860,
-                             min_width=760, min_height=560)
+        s = ui_scale(root)
+        fit_window_to_screen(root, desired_width=int(960 * s), desired_height=int(860 * s),
+                             min_width=int(760 * s), min_height=int(560 * s))
 
         self.state         = load_state()
         self.launcher_config = load_launcher_config()
@@ -373,12 +382,13 @@ class ScraperLauncher:
         # The log pane is the only large flexible region. Keep a reasonable
         # minimum log height, but do not let the window shrink below the width
         # needed for the action buttons and scraper rows.
-        min_log_height = 160
-        min_width = max(760, req_width)
-        min_height = max(560, req_height - max(0, log_req_height - min_log_height))
+        s = ui_scale(self.root)
+        min_log_height = int(160 * s)
+        min_width = max(int(760 * s), req_width)
+        min_height = max(int(560 * s), req_height - max(0, log_req_height - min_log_height))
 
-        desired_width = min(960, max(min_width, req_width))
-        desired_height = min(860, max(min_height, req_height))
+        desired_width = min(int(960 * s), max(min_width, req_width))
+        desired_height = min(int(860 * s), max(min_height, req_height))
         fit_window_to_screen(self.root, desired_width=desired_width, desired_height=desired_height,
                              min_width=min_width, min_height=min_height)
 
@@ -400,9 +410,10 @@ class ScraperLauncher:
         body.pack(fill="both", expand=True)
 
         # ── Scrapers card ─────────────────────────────────────────────
+        # Packed last (below), so a short screen shrinks the scraper list,
+        # which scrolls, instead of the Output pane.
         card = tk.Frame(body, bg=WHITE, highlightbackground=TEAL,
                         highlightthickness=1, bd=0)
-        card.pack(fill="x")
 
         card_title = tk.Frame(card, bg=WHITE)
         card_title.pack(fill="x", padx=14, pady=(6, 3))
@@ -412,8 +423,35 @@ class ScraperLauncher:
                  bg=WHITE, fg=TEAL, font=FONT_SUBTITLE).pack(side="right")
         Divider(card, color=MINT, height=1).pack(fill="x", padx=14)
 
-        list_frame = tk.Frame(card, bg=WHITE, padx=14, pady=4)
-        list_frame.pack(fill="x")
+        # Scrollable scraper list: the scrollbar only shows when the rows don't fit.
+        list_outer = tk.Frame(card, bg=WHITE)
+        list_outer.pack(fill="both", expand=True)
+        list_canvas = tk.Canvas(list_outer, bg=WHITE, highlightthickness=0, bd=0)
+        list_scroll = ttk.Scrollbar(list_outer, orient="vertical", command=list_canvas.yview)
+        list_canvas.pack(side="left", fill="both", expand=True)
+        list_frame = tk.Frame(list_canvas, bg=WHITE, padx=14, pady=4)
+        list_item = list_canvas.create_window(0, 0, window=list_frame, anchor="nw")
+
+        def on_list_scroll(first, last):
+            list_scroll.set(first, last)
+            if float(first) <= 0.0 and float(last) >= 1.0:
+                list_scroll.pack_forget()
+            elif not list_scroll.winfo_ismapped():
+                list_scroll.pack(side="right", fill="y", before=list_canvas)
+
+        def on_list_resize(_event):
+            list_canvas.configure(scrollregion=list_canvas.bbox("all"),
+                                  width=list_frame.winfo_reqwidth(),
+                                  height=list_frame.winfo_reqheight())
+
+        def on_wheel(event):
+            list_canvas.yview_scroll(int(-event.delta / 120), "units")
+
+        list_canvas.configure(yscrollcommand=on_list_scroll)
+        list_frame.bind("<Configure>", on_list_resize)
+        list_canvas.bind("<Configure>", lambda e: list_canvas.itemconfigure(list_item, width=e.width))
+        list_canvas.bind("<Enter>", lambda e: list_canvas.bind_all("<MouseWheel>", on_wheel))
+        list_canvas.bind("<Leave>", lambda e: list_canvas.unbind_all("<MouseWheel>"))
 
         # Column headers
         hdr = tk.Frame(list_frame, bg=WHITE)
@@ -429,7 +467,6 @@ class ScraperLauncher:
 
         # ── Bulk actions bar ──────────────────────────────────────────
         actions = tk.Frame(body, bg=SAND, pady=6)
-        actions.pack(fill="x")
 
         self.parallel_var = tk.BooleanVar(value=False)
         chk = tk.Checkbutton(actions, text="Run in parallel",
@@ -450,7 +487,9 @@ class ScraperLauncher:
         # ── Output card ───────────────────────────────────────────────
         log_card = tk.Frame(body, bg=WHITE, highlightbackground=TEAL,
                             highlightthickness=1, bd=0)
-        log_card.pack(fill="both", expand=True)
+        log_card.pack(side="bottom", fill="both", expand=True)
+        actions.pack(side="bottom", fill="x")
+        card.pack(side="top", fill="both")
 
         log_title = tk.Frame(log_card, bg=WHITE)
         log_title.pack(fill="x", padx=14, pady=(10, 4))
@@ -463,7 +502,7 @@ class ScraperLauncher:
         log_wrap = tk.Frame(log_card, bg=WHITE, padx=10, pady=10)
         log_wrap.pack(fill="both", expand=True)
         self.log_text = scrolledtext.ScrolledText(
-            log_wrap, wrap="word", font=FONT_MONO,
+            log_wrap, wrap="word", font=FONT_MONO, height=10,
             state="disabled",
             bg=MIDNIGHT, fg=WHITE,
             insertbackground=CHARTREUSE,
@@ -478,7 +517,7 @@ class ScraperLauncher:
 
         # Footer
         footer = tk.Frame(self.root, bg=SAND)
-        footer.pack(fill="x", padx=16, pady=(0, 10))
+        footer.pack(side="bottom", fill="x", padx=16, pady=(0, 10), before=body)
         tk.Label(footer,
                  text=f"state: {STATE_FILE.name}",
                  bg=SAND, fg="#888", font=FONT_SUBTITLE).pack(side="right")
@@ -769,8 +808,9 @@ class ScraperLauncher:
         win = tk.Toplevel(self.root)
         win.title(f"{scraper_name} — Last Run Results")
         win.configure(bg=SAND)
-        fit_window_to_screen(win, desired_width=820, desired_height=580,
-                             min_width=600, min_height=420)
+        s = ui_scale(win)
+        fit_window_to_screen(win, desired_width=int(820 * s), desired_height=int(580 * s),
+                             min_width=int(600 * s), min_height=int(420 * s))
 
         # ── Header ────────────────────────────────────────────────────────
         hdr = tk.Frame(win, bg=MIDNIGHT)
