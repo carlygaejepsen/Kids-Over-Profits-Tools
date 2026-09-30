@@ -19,6 +19,7 @@ scraper_launcher_state.json
 .nc_state.json
 .nv_state.json
 .ok_state.json
+.pa_state.json
 .or_state.json
 .tx_state.json
 .utah_state.json
@@ -28,6 +29,7 @@ scraper_launcher_state.json
 fl_pdfs/
 or_pdfs/
 mi_pdfs/
+pa_pdfs/
 ok_html/
 .nc_pdf_cache/
 

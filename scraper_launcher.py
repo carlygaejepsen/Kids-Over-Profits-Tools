@@ -67,6 +67,7 @@ SCRAPERS = [
     },
     {"name": "Oklahoma",    "key": "OK", "script": TOOLS_DIR / "ok_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Oregon",      "key": "OR", "script": TOOLS_DIR / "or_scraper.py",               "cwd": TOOLS_DIR},
+    {"name": "Pennsylvania", "key": "PA", "script": TOOLS_DIR / "pa_scraper.py",              "cwd": TOOLS_DIR},
     {"name": "Texas",       "key": "TX", "script": TOOLS_DIR / "tx_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Utah",        "key": "UT", "script": TOOLS_DIR / "utah_citation_scraper.py",    "cwd": TOOLS_DIR},
     {"name": "Washington",  "key": "WA", "script": TOOLS_DIR / "wa_scraper.py",               "cwd": TOOLS_DIR},
