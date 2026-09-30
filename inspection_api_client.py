@@ -1,4 +1,6 @@
 import json
+import os
+from pathlib import Path
 from typing import Any, Callable, Dict, List
 
 import requests
@@ -9,6 +11,25 @@ RETRYABLE_SPLIT_STATUS_CODES = {413, 500}
 
 def _noop(_: str) -> None:
     pass
+
+
+# Where scraper_launcher.py keeps the write key it hands to the scrapers it
+# starts (LAUNCHER_CONFIG_FILE there).
+LAUNCHER_CONFIG_FILE = (Path(os.environ.get("LOCALAPPDATA", str(Path(__file__).parent)))
+                        / "KidsOverProfits" / "scraper_launcher_config.json")
+
+
+def resolve_api_key(api_key: str) -> str:
+    """The scraper's key, or the launcher's saved one when the scraper was run
+    directly and has only the "CHANGE_ME" placeholder."""
+    cleaned = (api_key or "").strip()
+    if cleaned and cleaned != "CHANGE_ME":
+        return cleaned
+    try:
+        saved = json.loads(LAUNCHER_CONFIG_FILE.read_text(encoding="utf-8")).get("kop_data_api_key") or ""
+    except (OSError, ValueError):
+        saved = ""
+    return saved.strip() or cleaned
 
 
 def build_payload(
@@ -279,6 +300,7 @@ def post_facilities_to_api(
 ) -> Dict[str, Any]:
     info = info or _noop
     error = error or _noop
+    api_key = resolve_api_key(api_key)
 
     if not facilities:
         info(f"No facilities to post to {api_url}")
