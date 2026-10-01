@@ -108,7 +108,7 @@ GOOGLE_DRIVE_BASE = _find_drive_base()
 _asked: dict = {}
 
 
-def _ask_retry(title: str, message: str) -> bool:
+def ask_retry(title: str, message: str) -> bool:
     """Show a Retry/Cancel box (a console prompt if there is no desktop).
     True means Retry."""
     try:
@@ -146,7 +146,7 @@ def ensure_google_drive() -> bool:
         if GOOGLE_DRIVE_BASE.exists():
             _asked["drive"] = True
             return True
-        if not _ask_retry(
+        if not ask_retry(
             "Google Drive isn't running",
             "Open Google Drive for Desktop from the Start menu, wait until the "
             "I: drive appears, then click Retry.\n\n"
@@ -168,7 +168,7 @@ def ensure_onedrive() -> bool:
         _asked["onedrive"] = True
         return True
     while not _is_running("OneDrive.exe"):
-        if not _ask_retry(
+        if not ask_retry(
             "OneDrive isn't running",
             "These tools live in your OneDrive folder, and files that are only in "
             "the cloud can't be read until OneDrive is running. Open OneDrive from "

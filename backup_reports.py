@@ -88,17 +88,38 @@ def migrate_pair(local_dir: Path, drive_dir: Path) -> tuple[int, int, int]:
 
     for rel, path in missing:
         dest = drive_dir / rel
-        try:
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(path, dest)
-            if dest.stat().st_size != path.stat().st_size:
-                raise OSError(f"size mismatch after copy: {dest}")
-        except OSError as exc:
-            print(f"    FAILED upload {rel}: {exc}")
-            failed += 1
-            continue
-        uploaded += 1
-        backed_up.append(path)
+        success = False
+        error_msg = None
+
+        while not success:
+            try:
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(path, dest)
+                if dest.stat().st_size != path.stat().st_size:
+                    raise OSError(f"size mismatch after copy: {dest}")
+                success = True
+                uploaded += 1
+                backed_up.append(path)
+            except OSError as exc:
+                error_msg = str(exc)
+                is_cloud_error = (
+                    hasattr(exc, 'winerror')
+                    and exc.winerror in (362, 404)
+                ) or "cloud file provider" in str(exc).lower()
+
+                if is_cloud_error:
+                    if kop_paths.ask_retry(
+                        "Cloud file provider error",
+                        f"The cloud file provider had an error while uploading {rel}.\n\n"
+                        f"Open the cloud provider application, then click Retry to continue.\n\n"
+                        "Cancel stops the migration here; no files have been deleted.",
+                    ):
+                        continue  # retry the upload
+
+                # Not a cloud error, or user chose Cancel
+                print(f"    FAILED upload {rel}: {error_msg}")
+                failed += 1
+                break  # stop retrying this file
 
     for path in backed_up:
         try:
