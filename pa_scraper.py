@@ -164,7 +164,8 @@ class PAClient:
 
 
 def cell_lines(td) -> List[str]:
-    return [re.sub(r"\s+", " ", x).strip() for x in td.get_text("\n").split("\n") if x.strip()]
+    # The directory double-encodes some names ("HOME &amp;amp; COMMUNITY").
+    return [re.sub(r"\s+", " ", html.unescape(x)).strip() for x in td.get_text("\n").split("\n") if x.strip()]
 
 
 def parse_search(page: str, code: str) -> List[Dict]:
@@ -401,9 +402,9 @@ def clean_pages(pages: List[str]) -> str:
     return "\n".join(p for p in out if p).strip()
 
 
-SECTION = re.compile(r"^((?:\d{4}|20)\.\d{1,3}[a-z]?)\s+([A-Za-z][^\n]{1,100}?)\s*$")
-REQUIREMENT = re.compile(r"^\d{1,2}\s*\.\s*(?:\S{0,3}\s*e\s*[qg]\s*u?\s*i\s*r|55\s+PA\s+Code\s+Chapter)", re.I)
-REG_LINE = re.compile(r"^((?:\d{4}|20)\.\d{1,3}[a-z]?(?:\.[0-9a-z]{1,4})+)\.?\s+(.*)$", re.I)
+SECTION = re.compile(r"^((?:\d{4}|20)[.,]\d{1,3}[a-z]?)\s+([A-Za-z][^\n]{1,100}?)\s*$")
+REQUIREMENT = re.compile(r"^\d{1,2}\s*[.,]\s*(?:\S{0,3}\s*e\s*[qg]\s*u?\s*i\s*r|55\s+PA\s+Code\s+Chapter)", re.I)
+REG_LINE = re.compile(r"^((?:\d{4}|20)[.,]\d{1,3}[a-z]?(?:[.,][0-9a-z]{1,4})+)[.,]?\s+(.*)$", re.I)
 VIOLATION = re.compile(r"^\S{0,6}\s*(?:D\s*e\s*s)?\S*\s*c?\s*r?\s*i?\s*p\s*t\s*i\s*o\s*n\s+of\s+Violation\b"
                        r"|^Area\s+of\s+Non-?\s*Compliance\b", re.I)
 PLAN = re.compile(r"^(?:Plan of Correction|POC Submission|Provider'?s Plan of Correct\w*(?: Action)?(?: or Response)?)\b"
@@ -444,10 +445,11 @@ def parse_citations(text: str) -> List[Dict]:
             if re.search(r"\(continued\)\s*$", title, re.I):
                 continue
             if not re.search(r"[.;:]$", title) and len(title.split()) <= 12:
-                section = (heading.group(1), one_line(title))
+                section = (heading.group(1).replace(",", "."), one_line(title))
                 field_name = None
                 continue
-        if REQUIREMENT.match(line) and len(line) < 40:
+        # OCR leaves form debris after the label ("1, 55 PA Code Chapter : | Senne ...").
+        if REQUIREMENT.match(line) and (len(line) < 40 or re.search(r"55\s+PA\s+Code\s+Chapter", line, re.I)):
             current = {"regulation": "", "section": section[0], "title": section[1],
                        "regulation_text": "", "violation": "", "plan": "", "plan_status": "",
                        "plan_date": "", "completion_date": "", "verification": "",
@@ -460,7 +462,7 @@ def parse_citations(text: str) -> List[Dict]:
         if field_name == "regulation_text" and not current["regulation"]:
             reg = REG_LINE.match(line)
             if reg:
-                current["regulation"] = reg.group(1).rstrip(".")
+                current["regulation"] = reg.group(1).replace(",", ".").rstrip(".")
                 current["regulation_text"] = reg.group(2)
                 continue
         if VIOLATION.match(line) and len(line) < 80:
@@ -640,7 +642,8 @@ SANCTION = re.compile(
     r"|revocation\s+of\s+(?:your|the)"
     r"|(?:decision|intent)\s+to\s+(?:revoke|refuse|not\s+renew)"
     r"|refus\w+\s+to\s+(?:issue|renew)"
-    r"|non-?renewal\s+of",
+    r"|non-?renewal\s+of"
+    r"|not\s+renewing\s+your\s+licen[cs]e",
     re.I,
 )
 CITED_LETTER = re.compile(
@@ -651,8 +654,9 @@ CITED_LETTER = re.compile(
     re.I | re.S,
 )
 FOLLOWUP_LETTER = re.compile(
-    r"plan\s+of\s+correction\s+is\s+fully\s+implemented"
-    r"|Plan\s+of\s+Correction\b.{0,160}?\b(?:has\s+been|is)\s+(?:reviewed\s+and\s+)?(?:has\s+been\s+)?accepted",
+    r"plan\s+of\s+corrections?\s+(?:is|are)\s+fully\s+implemented"
+    r"|Plan\s+of\s+Correction\b.{0,160}?\b(?:has\s+been|is)\s+(?:reviewed\s+and\s+)?(?:has\s+been\s+)?accepted"
+    r"|approving\s+your\s+(?:action\s+plan|plan\s+of\s+correction)",
     re.I | re.S,
 )
 WAIVER_LETTER = re.compile(r"waiver\s+of\s+55\s+Pa\.?\s*Code.{0,400}?\bis\s+hereby\s+granted", re.I | re.S)
@@ -660,6 +664,7 @@ CLEAN_LETTER = re.compile(
     r"no\s+regulatory\s+citations\s+have\s+been\s+identified"
     r"|No\s+(?:violations|deficiencies)\s+(?:were\s+)?found"
     r"|No\s+regulatory\s+violations\s+have\s+been\s+identified"
+    r"|(?:is|be)\s+in\s+(?:substantial\s+)?compliance\s+with\s+(?:the\s+)?regulations"
     r"|found\s+the\s+above[- ]?(?:named\s+)?(?:facility|agency),?\s+to\s+be\s+in\s+compliance"
     r"|No\s+Deficiencies\s+Identified"
     r"|in\s+complete\s+compliance\s+with"
@@ -700,7 +705,10 @@ def classify(text: str, citations: List[Dict]) -> str:
     flat = one_line(text)
     if SANCTION.search(flat):
         return "sanction"
-    cited = bool(CITED_LETTER.search(flat))
+    # "no regulatory violations were found": a "no" up to two words before
+    # the noun cancels the match.
+    cited = any(not re.search(r"\b(?:no|not\s+any)\s+(?:\S+\s+){0,2}$", flat[max(0, m.start() - 40):m.start()], re.I)
+                for m in CITED_LETTER.finditer(flat))
     if FOLLOWUP_LETTER.search(flat) and not cited:
         return "followup"
     if cited or citations:
@@ -1033,6 +1041,11 @@ class PAScraper:
         self.client = client or PAClient()
         self.reports = reports
         self.ocr_workers = max(1, ocr_workers)
+        # Tesseract starts 4 threads per page by default; with several pages
+        # at once that oversubscribes the CPU. One thread per process, one
+        # process per core, reads more pages a minute.
+        if self.ocr_workers > 1:
+            os.environ.setdefault("OMP_THREAD_LIMIT", "1")
         self.stats: Counter = Counter()
         self.forms: Counter = Counter()
         self.counted_followups = 0
@@ -1271,7 +1284,7 @@ def main() -> None:
     parser.add_argument("--since", type=int, default=0,
                         help="Only files whose name dates from this year on (stage the first run newest years first)")
     parser.add_argument("--batch", type=int, default=40, help="Units per API post; the state advances after each")
-    parser.add_argument("--ocr-workers", type=int, default=4, help="Parallel OCR of scanned reports")
+    parser.add_argument("--ocr-workers", type=int, default=os.cpu_count() or 4, help="Parallel OCR of scanned reports")
     parser.add_argument("--out", type=Path, help="Write what the read API would return to this JSON file")
     args = parser.parse_args()
 
