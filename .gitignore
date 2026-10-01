@@ -24,8 +24,23 @@ scraper_launcher_state.json
 .tx_state.json
 .utah_state.json
 .wa_state.json
+.nh_state.json
+.wy_dfs_state.json
+.wy_wdh_state.json
+.id_state.json
+.me_state.json
+.oh_state.json
+.va_vdss_state.json
+.va_state.json
+.wv_state.json
+.sd_state.json
+.md_state.json
+.ia_state.json
 
 # Local PDF caches
+nh_pdfs/
+nh_html/
+wy_pdfs/
 fl_pdfs/
 or_pdfs/
 mi_pdfs/
