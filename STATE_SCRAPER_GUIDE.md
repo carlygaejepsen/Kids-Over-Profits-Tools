@@ -288,6 +288,13 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Script:** `utah_citation_scraper.py` -- writes OCR-enhanced checklist data to JSON plus a flattened CSV export for newly observed inspections
 - **Key detail:** This script is not part of the WordPress inspections API pipeline, but it uses the same seen-ID state pattern keyed by facility ID and inspection date, so reruns only process newly observed inspections unless `--full` is used.
 
+### ID (Idaho Health and Welfare children's residential surveys)
+- **Source:** the department's public Laserfiche WebLink repository: residential facility folders under `Browse.aspx?id=19853`, the wilderness folder `id=19852` (Blue Fire), the provider list PDF `id=20035` (`https://publicdocuments.dhw.idaho.gov/WebLink/`, plain `requests`, no login). Folders list by `POST FolderListingService.aspx/GetFolderListing2` (`{"repoName":"PUBLIC-DOCUMENTS","folderId":<id>,"getNewListing":true,"start":0,"end":500,...}`, `type` 0 folder, -2 document); a document downloads from `ElectronicFile.aspx?docid=<entryId>&dbid=0&repo=PUBLIC-DOCUMENTS`, and `DocView.aspx?id=<entryId>` is the human link.
+- **Scraper:** `id_scraper.py`, 40 facilities and 156 documents on 2026-10-01. One report per document: statements of deficiencies (`kind: deficiencies`; per deficiency the rule, finding, rule text, plan of correction, correct-by date, repeat flag; tables read with `extract_tables()` and joined across page breaks) and no-deficiency letters (`kind: no_deficiencies`). `report_date` = the survey end date. Facility names are the state's folder names; address, licence, beds and ages come from the provider list.
+- **Unlisted folders:** a folder with no provider-list row keeps its reports, with `action` "Not on the state's current provider list" and `categories.provider.listed=false`; folders sharing a licence number stay separate and name each other in `categories.same_license_as`. A folder matching two provider rows (Mountaintop) is one facility with `categories.provider.sites`.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `id_pdfs/`. State file `.id_state.json` (seen reports and the folder registry).
+- **Useful flags:** `--full`, `--no-post`, `--cached` (folder listings and PDFs from the cache, no requests), `--limit N`, `--out file.json`.
+
 ## Adding a New State
 
 ### Step 1: Reverse-engineer the data source
