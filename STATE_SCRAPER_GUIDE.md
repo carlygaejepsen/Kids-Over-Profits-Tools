@@ -273,6 +273,15 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Key detail:** Every report PDF is OCRed, even when the PDF also contains embedded text. The workbook is only the facility seed list; the report content comes from the public NC inspection PDFs
 - **Useful flags:** `--input`, `--limit N`, `--no-post`, `--full`
 
+### WY (Wyoming Family Services findings and health department PRTF surveys)
+- **Source 1:** DFS `https://dfs.wyo.gov/providers/substitute-care/notice-of-non-compliance-findings-and-facility-visits/`, one page of accordions (`main-text="<provider>"`) linking Google Drive files and folders. Files download from `https://drive.google.com/uc?export=download&id=<id>` (check the body starts with `%PDF`; Drive answers HTML for quota, virus-scan and sign-in pages); folders list without login at `https://drive.google.com/embeddedfolderview?id=<id>`, and files a folder holds that the page lacks are taken too (copies of page documents are recognised and not posted twice). 2 s between Drive requests.
+- **Source 2:** WDH `https://ohlssurvey.health.wyo.gov` JSON API (`api/FacilitySearch/Search`, `api/FacilitySurveySearch/Search`, `sortBy` must be a list; `api/Survey/Download/<SurveyId>` is the CMS-2567 PDF). Facility type 16 (PRTF) by default, `--wdh-types` to widen.
+- **Scraper:** `wy_scraper.py --source dfs|wdh|all`, state files `.wy_dfs_state.json` and `.wy_wdh_state.json`. 26 facilities and 413 documents on 2026-10-01. DFS `program_name` = `DFS-<slug>` fixed once assigned (two providers that share documents stay separate records); WDH `program_name` = `WDH-<facility id>`. `report_id` = the Drive file id or `wdh-<SurveyId>`.
+- **Kinds** (`categories.kind`): `notice` (SCL-305, typed scan, OCR'd: `allegation`, `allegation_date`, `finding`, `rules[]`), `visit` (SCL-300, handwritten: never transcribed, no text posted, always neutral; the SCL-300 header wins over the form's "serves as notice" fine print), `other` (corrective action plans, recertifications), `survey` (2567; scanned surveys' plans of correction posted as one block, `outcome` cited/clean/unread). A notice with no finding read is neutral, never clean.
+- **Photos:** JPEG photos of visit forms are wrapped as one-page PDFs (Pillow) so the archive sync, which takes PDFs only, picks them up.
+- **Archive:** everything through `ReportStore` to the Drive folder `wy_pdfs/`; the state removes a provider's documents when it leaves the list. Held documents move to `.report_extract_cache/wy_held/`. A file Drive will not share (sign-in page) is marked `unavailable` and retried only with `--full`.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--facility NAME` (repeatable), `--no-folders`, `--reparse` (read archived PDFs before the source), `--out file.json`. Run it monthly.
+
 ### UT (Utah OCR/CSV export)
 - **Source:** Utah facility JSON endpoint at `ccl.utah.gov`
 - **Method:** `requests` JSON fetches plus CSV export
