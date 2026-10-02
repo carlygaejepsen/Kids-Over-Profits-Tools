@@ -1,0 +1,50 @@
+{
+  "about": "Operator allowlist for me_scraper.py. The Maine behavioral health board licenses organizations, not sites, and most of its 324 licences serve adults. Only entries with scope \"in\" are scraped and posted. \"unsure\" entries wait for the owner's decision; \"out\" entries record why a name that looks relevant was left out. Every licence not listed here is out. Checked against the full board list on 2026-10-01.",
+  "checked": "2026-10-01",
+  "operators": [
+    {"licence": "MHA229941", "name": "SWEETSER", "scope": "in", "why": "Children's residential treatment (Saco, Winterport and other sites). Covers our records Sweetser Residential Treatment Center and probably Dirigo Place."},
+    {"licence": "MHA229881", "name": "SPURWINK SERVICES INC.", "scope": "in", "why": "Children's residential treatment and group homes across southern Maine."},
+    {"licence": "MHA322081", "name": "KIDSPEACE NATIONAL CENTERS OF NEW ENGLAND, INC.", "scope": "in", "why": "Operator of KidsPeace Graham Lake (Ellsworth), which we track."},
+    {"licence": "MHA414770", "name": "GOOD WILL HOME ASSOCIATION", "display_name": "Good Will-Hinckley", "scope": "in", "why": "Operator of Good Will-Hinckley Roundel Residential, which we track. The board lists the licence under two names; the page uses the one the public knows."},
+    {"licence": "MHA559381", "name": "CONNECTIONS FOR KIDS", "scope": "in", "why": "Operator of Connections for Kids - Park Place Gorham, which we track."},
+    {"licence": "MHA227222", "name": "DAY ONE", "scope": "in", "why": "Youth substance use and mental health agency with residential programs; we track Day One."},
+    {"licence": "SAA221141", "name": "DAY ONE", "scope": "in", "why": "Day One's substance use licence; its residential programs for adolescents are substance use treatment."},
+    {"licence": "MHA229301", "name": "NFI NORTH, INC.", "scope": "in", "why": "Our records name NFI North as operator of Beacon House, Bridge Crossing, Dirigo Place, Oliver Place, Sidney Riverbend, Stetson Ranch, Summit View and Weymouth House."},
+    {"licence": "MHA733793", "name": "SUMMIT ACHIEVEMENT", "scope": "in", "why": "Wilderness and residential program in Stow, which we track."},
+    {"licence": "MHA220861", "name": "COMMUNITY HEALTH & COUNSELING SERVICES", "scope": "in", "why": "Runs children's residential programs in the Bangor area (plan allowlist). Multi-service: most of its surveys cover adult and outpatient work."},
+    {"licence": "MHA219601", "name": "AROOSTOOK MENTAL HEALTH CENTER", "scope": "in", "why": "Our record Calais Children's Residential names it as operator. Multi-service."},
+    {"licence": "MHA394165", "name": "MAINE CHILDREN'S HOME FOR LITTLE WANDERERS", "scope": "out", "decided": "owner 2026-10-01", "why": "Children's agency on the plan's allowlist. No residential authority on the licence and none of our records; the owner may prefer it out."},
+    {"licence": "MHA494640", "name": "WOODFORDS FAMILY SERVICES", "scope": "out", "decided": "owner 2026-10-01", "why": "Children's agency on the plan's allowlist. No residential authority on the licence and none of our records; the owner may prefer it out."},
+    {"licence": "MHA736074", "name": "YOUTH VILLAGES, INC", "scope": "out", "decided": "owner 2026-10-01", "why": "National youth operator on the plan's allowlist. Community support only in Maine and none of our records; the owner may prefer it out."},
+
+    {"licence": "SAA515559", "name": "SWEETSER", "scope": "in", "decided": "owner 2026-10-01", "why": "Sweetser's second licence (substance use, outpatient). Same operator, but not its residential programs."},
+    {"licence": "SAA733926", "name": "SPURWINK SERVICES INC.", "scope": "in", "decided": "owner 2026-10-01", "why": "Spurwink's second licence (substance use, outpatient). Same operator, but not its residential programs."},
+    {"licence": "SAA220021", "name": "AROOSTOOK MENTAL HEALTH CENTER", "scope": "in", "decided": "owner 2026-10-01", "why": "AMHC's substance use licence; includes residential alcohol and drug programs, which may be adult only."},
+    {"licence": "SAA733429", "name": "COMMUNITY HEALTH & COUNSELING SERVICES", "scope": "in", "decided": "owner 2026-10-01", "why": "CHCS's substance use licence (outpatient, crisis)."},
+    {"licence": "MHA230741", "name": "OPPORTUNITY ALLIANCE", "scope": "in", "decided": "owner 2026-10-01", "why": "Multi-service agency in South Portland with a residential mental health authority and children's services; no record of ours. Its residential programs may be adult only."},
+    {"licence": "MHA735866", "name": "CHARLIE HEALTH", "scope": "out", "decided": "owner 2026-10-01", "why": "National virtual intensive outpatient program for teenagers and young adults. Not residential; no record of ours."},
+    {"licence": "MHA603099", "name": "ST. ANDRE HOME, INC.", "scope": "out", "decided": "owner 2026-10-01", "why": "Historically group homes for adolescent girls and young mothers; now mainly services for women. No record of ours."},
+    {"licence": "MHA394273", "name": "MAINE SPECIAL EDUCATION/MENTAL HEALTH COLLABORATIVE", "scope": "out", "decided": "owner 2026-10-01", "why": "Children's day treatment schools (New Gloucester). Not residential; no record of ours."},
+
+    {"licence": "MHA402831", "name": "UNITED CEREBRAL PALSY OF NORTHEASTERN MAINE", "scope": "out", "why": "Children's community and outpatient services in Bangor; no residential authority and no tie to a record of ours."},
+    {"licence": "MHA237567", "name": "WINGS FOR CHILDREN AND FAMILIES, INC.", "scope": "out", "why": "Children's case management only."},
+    {"licence": "MHA656342", "name": "CHILDREN'S CENTER: EARLY INTERVENTION & FAMILY SUPPORT", "scope": "out", "why": "Early intervention for young children; not residential."},
+    {"licence": "MHA728262", "name": "SPECIAL CHILDREN'S FRIENDS", "scope": "out", "why": "Early intervention; not residential."},
+    {"licence": "MHA684282", "name": "MORRISON CENTER", "scope": "out", "why": "Disability day services; not residential youth treatment."},
+    {"licence": "MHA219401", "name": "ACADIA HEALTHCARE, INC.", "scope": "out", "why": "Northern Light Acadia Hospital's community licence (Bangor), not the Acadia Healthcare chain; the hospital itself is licensed elsewhere."},
+    {"licence": "MHA733937", "name": "MAINEHEALTH BEHAVIORAL HEALTH", "scope": "out", "why": "Hospital system's community programs; residential authority is for adults."},
+    {"licence": "MHA223481", "name": "ELWYN ADULT BEHAVIORAL SERVICES", "scope": "out", "why": "Adult services by name."},
+    {"licence": "MHA222762", "name": "KENNEBEC BEHAVIORAL HEALTH", "scope": "out", "why": "Community mental health centre; residential authority is adult supported housing."}
+  ],
+  "our_records_without_a_licence": [
+    {"record": "Becket House at Belgrade", "why": "No Becket licence on the board under any name (searched Becket, with and without prior names)."},
+    {"record": "Harbor Family Services", "why": "Not on the board."},
+    {"record": "The Ridge Maine (formerly Ironwood Maine)", "why": "Neither The Ridge, Ironwood nor Altior is on the board."},
+    {"record": "Elan School", "why": "Closed 2011; a private school, never on this board."},
+    {"record": "Hyde School", "why": "A private boarding school, not a behavioral health licensee."},
+    {"record": "Long Creek Youth Development Center", "why": "State juvenile correctional facility, not licensed by this board."},
+    {"record": "Elizabeth Levinson Center", "why": "State-run facility in Bangor; not on the board."},
+    {"record": "New Horizons for Young Women", "why": "Closed; not on the board."},
+    {"record": "Opportunity Farm", "why": "Closed; not on the board (Opportunity Alliance is an unrelated agency)."}
+  ]
+}

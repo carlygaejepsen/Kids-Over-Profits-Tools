@@ -295,6 +295,21 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Archive:** PDFs through `ReportStore` to the Drive folder `id_pdfs/`. State file `.id_state.json` (seen reports and the folder registry).
 - **Useful flags:** `--full`, `--no-post`, `--cached` (folder listings and PDFs from the cache, no requests), `--limit N`, `--out file.json`.
 
+### ME (Maine behavioral health organization surveys)
+- **Source:** the state licence lookup `https://www.pfr.maine.gov/almsonline/almsquery/searchcompany.aspx?board=6706` (form posts; the board's full licence list as CSV, each licence's page with its survey history, and since late 2024 the survey documents as PDFs). Plain `requests`, no login.
+- **Scope:** an operator allowlist in `me_scope.json` (licence, name, `scope` in/out/unsure, why; settled by the owner 2026-10-01). The licence covers a whole organization, so every survey of an allowed licence is posted, and one whose document names only adult programs gets `adult_program: true` (hidden on the page by default). Every licence not listed is out.
+- **Scraper:** `me_scraper.py`, 16 licences and 400 surveys on 2026-10-02. One facility per licence (`program_name` = licence number). Documents: statements of deficiencies, no-deficiency statements and plans of correction, OCR'd where scanned (upside-down pages re-read rotated). Flagged = outcome "Accepted plan of correction" or a parsed deficiency; waived surveys are neutral.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `me_pdfs/`; pages saved for `--from-saved`. The date of birth check needs a value after the words (the rule text names "date of birth").
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--licence <number>` (repeatable), `--out file.json`, `--from-saved DIR`, `--csv-copy FILE`.
+
+### OH (Ohio Department of Children and Youth compliance reviews)
+- **Source:** the agency search `https://odjfs2.my.site.com/FindFosterCareAdoptionAgencies/s/` (Salesforce Aura: `getFosterCareAdoptionAgenciesForMapView` for the list, `getAgencyDetails` per agency; report PDFs through Salesforce content delivery links, four requests each). Plain `requests`, no login.
+- **Scope:** agencies that run group homes or children's residential centers (159 agencies, 303 facilities on 2026-10-01); foster-only agencies are out. Reports exist only from July 2025.
+- **Scraper:** `oh_scraper.py`, one facility row per agency (`program_name` = the OFCLA agency id), its facilities listed in the categories. One report per compliance review (Full, Focused, Other), joined with its "Additional Findings" file. Findings of noncompliance flag a report; technical assistance items are kept apart and never flag.
+- **Robustness:** six retries with backoff (3 to 48 s), then the agency is skipped and listed; agency lists cached 12 hours (`--refresh` asks again); PDFs cached by review number.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `oh_pdfs/`. Run it monthly: the state keeps posting.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--agency <id>` (repeatable), `--refresh`, `--out file.json`.
+
 ## Adding a New State
 
 ### Step 1: Reverse-engineer the data source
