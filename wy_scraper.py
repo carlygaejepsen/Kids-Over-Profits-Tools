@@ -753,6 +753,14 @@ PRIVACY_PATTERNS = [
 ]
 
 
+# Documents the owner read and released after the check held them (a false
+# positive), by Drive file id. Never add one without the owner's word.
+OWNER_RELEASED = {
+    # Meadowlark Academy notice 2024-04-04: "calling a youth Miley Cyrus" (owner, 2026-10-02).
+    "10K2OFKGMb406oMQ0795PMDq-D8r_QyOA",
+}
+
+
 def privacy_hits(text: str) -> List[str]:
     """Names of the checks `text` trips; empty when it can be posted."""
     hits: List[str] = []
@@ -1200,7 +1208,7 @@ class WYScraper:
             if not label:
                 summary = "Document (the state's link gives no title)"
 
-        hits = privacy_hits(text) if text else []
+        hits = privacy_hits(text) if text and file_id not in OWNER_RELEASED else []
         if hits:
             self.stats["held_privacy"] += 1
             self.held.append(f"{facility} | {label or file_id} | {file_id} | {', '.join(hits)}")

@@ -296,25 +296,43 @@ def extract_pdf(path: Path) -> Dict:
             pages.append(page.extract_text() or "")
     blank = [i for i, p in enumerate(pages) if len(p.strip()) < 20]
     ocr: List[int] = []
+    failed: List[int] = []
     for i in blank:
         text = ocr_page(path, i + 1)
-        if text.strip():
+        if text is None:
+            failed.append(i + 1)
+        elif text.strip():
             pages[i] = text
             ocr.append(i + 1)
     result: Dict[str, Any] = {"text": "\n".join(pages).strip(), "pages": pages}
     if ocr:
         result["ocr_pages"] = ocr
         result["ocr"] = len(ocr) == len(pages)
+    if failed:
+        # Tesseract or Poppler could not run (on 2026-10-02 the machine was out
+        # of memory). Such an extraction is never cached or posted, so the next
+        # run reads the document again instead of keeping it with pages missing.
+        result["ocr_failed"] = failed
     return result
 
 
-def ocr_page(path: Path, number: int) -> str:
+def ocr_page(path: Path, number: int) -> Optional[str]:
+    """The page's OCR text ("" for a page with nothing on it), or None when
+    OCR could not run, after one retry."""
+    text = _ocr_page_once(path, number)
+    if text is None:
+        time.sleep(10)
+        text = _ocr_page_once(path, number)
+    return text
+
+
+def _ocr_page_once(path: Path, number: int) -> Optional[str]:
     try:
         import pytesseract
         from pdf2image import convert_from_path
     except ImportError:
         logger.warning(f"  {path.name} has scanned pages and pytesseract/pdf2image are not installed")
-        return ""
+        return None
     tesseract = find_tesseract()
     if tesseract:
         pytesseract.pytesseract.tesseract_cmd = tesseract
@@ -329,12 +347,12 @@ def ocr_page(path: Path, number: int) -> str:
                 images = [pdf.pages[number - 1].to_image(resolution=OCR_DPI).original]
         except Exception as exc:
             logger.warning(f"  OCR failed for {path.name} page {number}: {exc}")
-            return ""
+            return None
     try:
         return "\n".join(pytesseract.image_to_string(image) for image in images)
     except Exception as exc:  # tesseract missing or failing
         logger.warning(f"  OCR failed for {path.name} page {number}: {exc}")
-        return ""
+        return None
 
 
 # ── Parsing ──────────────────────────────────────────────────────────────────
@@ -1100,7 +1118,7 @@ class PAScraper:
     def _extract_bytes(self, name: str, data: bytes) -> Dict:
         with self.reports.working_copy(data, name) as path:
             result = extract_pdf(path)
-        if result.get("text"):
+        if result.get("text") and not result.get("ocr_failed"):
             self.reports.save_extract(name, result)
         return result
 
@@ -1197,6 +1215,11 @@ class PAScraper:
                 self.stats["no_text"] += 1
                 logger.warning(f"  no text for {name}")
                 continue
+            if got.get("ocr_failed"):
+                # Left out this run (so not marked seen) and read again next run.
+                self.stats["ocr_failed"] += 1
+                logger.warning(f"  OCR failed on page(s) {got['ocr_failed']} of {name}; retried next run")
+                continue
             reports.append(self.build_report(name, got, unit))
         if not reports:
             return None, [], cited_before
@@ -1237,6 +1260,7 @@ class PAScraper:
         logger.info(f"follow-ups counted because their citation document is not listed: {self.counted_followups}")
         logger.info(f"report dates taken from the document (file name year wrong): {self.stats['date_corrected']}")
         logger.info(f"documents without text: {self.stats['no_text']}")
+        logger.info(f"documents left for the next run because OCR failed: {self.stats['ocr_failed']}")
 
 
 # ── Output ───────────────────────────────────────────────────────────────────
@@ -1284,7 +1308,8 @@ def main() -> None:
     parser.add_argument("--since", type=int, default=0,
                         help="Only files whose name dates from this year on (stage the first run newest years first)")
     parser.add_argument("--batch", type=int, default=40, help="Units per API post; the state advances after each")
-    parser.add_argument("--ocr-workers", type=int, default=os.cpu_count() or 4, help="Parallel OCR of scanned reports")
+    parser.add_argument("--ocr-workers", type=int, default=2,
+                        help="Parallel OCR of scanned reports (each runs Poppler and Tesseract; more needs more memory)")
     parser.add_argument("--out", type=Path, help="Write what the read API would return to this JSON file")
     args = parser.parse_args()
 

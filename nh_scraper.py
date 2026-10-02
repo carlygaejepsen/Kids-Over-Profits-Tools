@@ -784,6 +784,8 @@ NOT_A_NAME = {
     "Management", "Development", "Behavior", "Behaviors", "Support", "Supports", "Center", "Home",
     "Academy", "School", "Unit", "Room", "Rooms", "Area", "Areas", "Interviews", "Interview", "Statements",
     "Life", "Counselor", "Counselors", "Advisor", "Advisors", "Bill", "Assistance",
+    # "Child Advocacy Center" (the Ridge RTC 2025-12-15 statement; owner released it, 2026-10-02).
+    "Advocacy",
     # Parts of a program's own name ("Oasis Teen Shelter", "Youth Villages").
     "Shelter", "Shelters", "House", "Houses", "Village", "Villages", "Ranch", "Campus", "Residence",
     "Residential", "Facility", "Facilities", "Hospital", "Programs",
