@@ -504,16 +504,20 @@ class VDSSScraper:
                 r"\d{1,2}/\d{1,2}/\d{2,4}|[A-Z][a-z]{2,8}\.? \d{1,2}, \d{4}", parsed["comments"])))[:1]
             date_corrected = bool(dates)
         violations = parsed["violations"]
-        complaint = bool(parsed["complaint"] or row["complaint"])
         kind = re.search(r"Type of inspection:\s*([^\n]{2,60})", parsed["comments"] or "", re.I) \
             or re.match(r"(?:An?\s+)?(?:unannounced\s+|onsite\s+|mandated\s+)*"
                         r"(monitoring|renewal|complaint|initial|focused)\s+inspection",
                         parsed["comments"] or "", re.I)
+        # On a one-line comment the type runs on into "Date(s) of inspection ...".
+        kind_text = re.split(r"\s+(?:other\s+)?date\(?s?\)?\s+of\b", one_line(kind.group(1)), maxsplit=1,
+                             flags=re.I)[0] if kind else ""
+        # The page's own "Complaint Related" field reads NO even on complaint inspections.
+        complaint = bool(parsed["complaint"] or row["complaint"] or kind_text.lower().startswith("complaint"))
         categories: Dict[str, Any] = {
             "source": "vdss",
             "kind": "inspection",
             "complaint_related": complaint,
-            "inspection_type": one_line(kind.group(1)).capitalize() if kind else "",
+            "inspection_type": kind_text.capitalize(),
             "inspection_dates": dates,
             "inspector": parsed["inspector"],
             "areas_reviewed": parsed["areas"],
@@ -623,6 +627,7 @@ def run_vdss(args: argparse.Namespace, timestamp: str) -> Tuple[List[Dict], VDSS
     facilities: List[Dict] = []
     new_ids: Dict[str, List[str]] = {}
     new_hashes: Dict[str, Dict[str, str]] = {}
+    inspections_seen = 0
     for index, lic in enumerate(ids, start=1):
         try:
             facility = scraper.scrape_facility(lic, licences.get(lic))
@@ -633,9 +638,12 @@ def run_vdss(args: argparse.Namespace, timestamp: str) -> Tuple[List[Dict], VDSS
         if not facility:
             continue
         meta = facility.pop("_meta")
+        inspections_seen += len(facility["reports"])
         logger.info(f"[{index}/{len(ids)}] {meta['name']} (VDSS-{lic}): {len(facility['reports'])} inspections"
                     + ("" if lic in listed else " [no longer listed]"))
-        licences[lic] = {"name": meta["name"], "last_listed": today if lic in listed
+        # A licence the state blanks reads "N/A": keep the last real name.
+        name = meta["name"] if meta["name"] not in ("N/A", "") else licences.get(lic, {}).get("name", meta["name"])
+        licences[lic] = {"name": name, "last_listed": today if lic in listed
                          else licences.get(lic, {}).get("last_listed", "")}
         fresh = [r for r in facility["reports"]
                  if args.full or hashes.get(lic, {}).get(r["report_id"]) != content_hash(r)]
@@ -644,6 +652,13 @@ def run_vdss(args: argparse.Namespace, timestamp: str) -> Tuple[List[Dict], VDSS
         facilities.append({"facility_info": facility["facility_info"], "reports": fresh})
         new_ids[lic] = [r["report_id"] for r in fresh]
         new_hashes[lic] = {r["report_id"]: content_hash(r) for r in fresh}
+    if len(ids) >= 5 and not inspections_seen:
+        # On 2026-10-03 the state's pages sent every facility with an empty
+        # inspectionsList for a while. Nothing is posted or written from that.
+        logger.error("VDSS: every facility came back with no inspections; the state's site is "
+                     "likely failing. VDSS is left out of this run")
+        scraper.bump("site_empty")
+        return [], scraper
     # The licence registry only remembers ids; it is not tied to a post.
     save_state(VDSS_STATE_FILE, state)
 
@@ -1287,11 +1302,12 @@ class DBHDSScraper:
 
     # -- payload ----------------------------------------------------------------
 
-    def plan_block(self, names: List[str], licence: str, rid: str) -> Tuple[List[Dict], List[str], List[str]]:
-        """(citations, archive names that hold a plan, problems)."""
+    def plan_block(self, names: List[str], licence: str, rid: str) -> Tuple[List[Dict], List[str], List[str], bool]:
+        """(citations, archive names that hold a plan, problems, the plan reads "No Violation")."""
         citations: List[Dict] = []
         held: List[str] = []
         problems: List[str] = []
+        no_violation = False
         for name in names:
             got = report_store().cached_extract(name)
             if not got:
@@ -1304,11 +1320,14 @@ class DBHDSScraper:
                 self.not_a_report.append(f"{name}: the plan PDF names licence {got['licence']}")
                 continue
             found = parse_citations(got.get("segments") or [])
-            if not found:
+            if not found and re.search(r"^No Violations?\s*$", got.get("text") or "", re.M | re.I):
+                self.bump("plans_no_violation")  # the state's form for a clean inspection
+                no_violation = True
+            elif not found:
                 problems.append(f"{name}: no table rows read ({got.get('pages')} pages)")
             citations.extend(found)
             held.append(name)
-        return citations, held, problems
+        return citations, held, problems, no_violation and not citations
 
     def build_facility(self, cache: Dict) -> Optional[Dict]:
         service, target = cache.get("service") or {}, cache.get("target") or {}
@@ -1325,10 +1344,16 @@ class DBHDSScraper:
         common = {"source": "dbhds", "provider": provider, "locations": location_names}
         reports: List[Dict] = []
 
-        def finish(report: Dict, citations: List[Dict], held_names: List[str], problems: List[str]) -> None:
+        def finish(report: Dict, citations: List[Dict], held_names: List[str], problems: List[str],
+                   no_violation: bool = False) -> None:
             cats = report["categories"]
-            cited = [c for c in citations if c["comp"] != "C"]
+            for c in citations:
+                # A row continued from the page before repeats its rating ("N N").
+                c["comp"] = (c["comp"].split() or [""])[0]
+            # C (substantial compliance) and ND (not determined) are not findings.
+            cited = [c for c in citations if c["comp"] not in ("C", "ND")]
             cats["has_cap"] = bool(held_names)
+            cats["no_violation"] = no_violation
             cats["citation_count"] = len(cited)
             cats["citations"] = [{
                 "standard": c["standard"], "comp": c["comp"], "location": c["location"],
@@ -1361,6 +1386,8 @@ class DBHDSScraper:
             what = "Investigation" if cats["kind"] == "investigation" else (cats.get("purpose") or "Inspection")
             if cited:
                 report["summary"] = f"{what}: {len(cited)} standard{'s' if len(cited) != 1 else ''} cited"
+            elif no_violation:
+                report["summary"] = f"{what}: no violation"
             elif held_names:
                 report["summary"] = f"{what}: plan posted, no citation read"
             else:
@@ -1395,19 +1422,19 @@ class DBHDSScraper:
             assign_report_ids(inspections)
         for row in inspections:
             rid = row["report_id"]
-            citations, held_names, problems = self.plan_block([f"{licence}_{rid}.pdf"], licence, rid)
+            citations, held_names, problems, no_violation = self.plan_block([f"{licence}_{rid}.pdf"], licence, rid)
             report = {"report_id": rid, "report_date": row["date"], "report_url": search_url,
                       "categories": {**common, "kind": "inspection", "purpose": row["purpose"]}}
-            finish(report, citations, held_names, problems)
+            finish(report, citations, held_names, problems, no_violation)
         for inv in service.get("investigations") or []:
             known = (cache.get("investigations") or {}).get(inv["number"], {})
-            citations, held_names, problems = self.plan_block(known.get("names") or [], licence, inv["number"])
+            citations, held_names, problems, no_violation = self.plan_block(known.get("names") or [], licence, inv["number"])
             cats = {**common, "kind": "investigation", "purpose": "Investigation",
                     "received": inv["received"], "closed": inv["closed"],
                     "inspection_start": known.get("start", ""), "inspection_end": known.get("end", "")}
             report = {"report_id": inv["number"], "report_date": inv["closed"] or inv["received"],
                       "report_url": search_url, "categories": cats}
-            finish(report, citations, held_names, problems)
+            finish(report, citations, held_names, problems, no_violation)
 
         reports.sort(key=lambda r: r["report_date"], reverse=True)
         info = {
@@ -1605,7 +1632,7 @@ def print_dbhds(facilities: List[Dict], scraper: DBHDSScraper) -> None:
     logger.info(f"investigations: {s.get('investigations', 0)} (with a plan {s.get('investigations_with_plan', 0)}, "
                 f"without {s.get('investigations_without_plan', 0)})")
     logger.info(f"flagged (citations read): {s.get('flagged', 0)}; plans with no citation read: "
-                f"{s.get('plans_without_citations', 0)}")
+                f"{s.get('plans_without_citations', 0)} (of them \"No Violation\" forms: {s.get('plans_no_violation', 0)})")
     if per:
         ordered = sorted(per)
         logger.info(f"citations per plan: total {sum(per)}, median {ordered[len(ordered) // 2]}, max {ordered[-1]}")
@@ -1665,7 +1692,9 @@ def main() -> None:
         for hold in holds:
             logger.info(f"  {hold['source']} {hold['facility']} ({hold['licence']}) {hold['report_id']} "
                         f"{hold['report_date']}: {'; '.join(hold['hits'][:3])}")
-    if args.out:
+    if args.out and not facilities and args.out.exists():
+        logger.warning(f"Nothing to write; {args.out} left as it was")
+    elif args.out:
         write_out(args.out, facilities, timestamp, notes)
     if not facilities:
         logger.info("No new reports since last run")

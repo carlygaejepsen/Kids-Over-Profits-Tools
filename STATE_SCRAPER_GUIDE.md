@@ -347,6 +347,8 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Privacy:** records containing a date of birth, likely full resident name, medical record number or an individual street address are held out for review.
 - **Archive:** report PDFs through `ReportStore` to `va_pdfs/`; the state keeps independent `.va_vdss_state.json` and `.va_dbhds_state.json` cursors.
 - **Useful flags:** `--source vdss|dbhds|all`, `--full`, `--no-post`, `--limit N`, `--out file.json`, `--licence <id>` (repeatable), `--service-type <label>` (repeatable), and `--refresh`.
+- **DBHDS plans:** a plan whose form reads "No Violation" is a clean result, not a parse failure. A service type with no licences answers "Your search did not return any results" and is read as empty.
+- **Slow walk:** each plan is a "View CAP" click, about 5 minutes per DBHDS service licence (165 on 2026-10-03), so a first full run takes 10+ hours. It resumes from the saved service pages and cached plan extractions; run it detached (`Start-Process`).
 - **First post:** do not post either source until the owner approves it and reviews any privacy holds.
 
 ## Adding a New State
