@@ -318,6 +318,37 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Useful flags:** `--full`, `--refresh` (re-download/re-extract all reports), `--no-post`, `--limit N`, `--facility <id>` (repeatable), `--ocr-share 0.05`, `--out file.json`.
 - **First post:** do not post until the owner resolves the unsure scope rows, approves the first post, and confirms Drive capacity for the archive.
 
+### IA (Iowa DIAL psychiatric medical institutions for children)
+- **Source:** the Department of Inspections, Appeals and Licensing health facilities database `https://dia-hfd.iowa.gov/` (ASP.NET Core; plain `requests`, every POST carries the anti-forgery token of the page before it). `POST /Home/EntitySearchAjax` lists PMICs (type 11, active and closed), `POST /home/VisitListAjax?id=<entity>` a facility's visits, `GET /Home/ViewReport?fileName=<name>` one CMS-2567 PDF.
+- **Scraper:** `ia_scraper.py`, 46 institutions and 246 visits (2018-09 to 2026-08) on 2026-10-03. One facility per institution (`program_name` "IA-<entity id>"), one report per visit (`report_id` = visit id). The 2567's two columns (findings, plan of correction) are split at the form's rules, scans read by OCR. Flagged = the state's own violation counts (federal + state > 0), not the parsed tags; 15 visits where the parsed tag count differs are listed at the end of a run.
+- **Re-posting:** the state replaces a visit's file when the plan of correction arrives, so the state file keeps `<visit>|<file>|<fed>|<state>` and a changed visit is posted again under the same `report_id`.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `ia_pdfs/`. State file `.ia_state.json`.
+- **Useful flags:** `--full`, `--refresh`, `--no-post`, `--limit N`, `--entity <id>` (repeatable), `--out file.json`.
+
+### MD (Maryland DHS residential child care inspection summaries)
+- **Source:** the Office of Licensing and Monitoring public file browser `https://dhs.maryland.gov/documents/?dir=Licensing-and-Monitoring/Reports` (plain `requests`): one folder per provider, only its `RCC` subfolder read.
+- **Scraper:** `md_scraper.py`, 20 providers and 155 reports (2019-01 to 2025-05) on 2026-10-03. One facility per provider; a report lists the sites inspected and each citation names its site. Three forms: the 2019 report (unrated citations), the 2019-2021 summary and the 10/2021 summary (citations in two blocks, "may present safety risks for children" and "do not present imminent safety risks", each with a status). Tables are read cell by cell (`find_tables`), never from `extract_text()`. Flagged = at least one citation.
+- **Privacy:** a report whose text carries a person's initials, a date of birth or a record number is left out whole and listed at the end of the run (15 on 2026-10-03, initials of youths and staff in citation comments).
+- **Archive:** PDFs through `ReportStore` to the Drive folder `md_pdfs/`. State file `.md_state.json`.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--out file.json`.
+
+### SD (South Dakota DSS youth care provider documents)
+- **Source:** the Office of Licensing and Accreditation portal `https://olapublic.sd.gov/youth-care-provider-search/` (plain `requests`): the provider list, each provider's profile with its Documents section, PDFs from `/api/mcase/attachments/<id>`.
+- **Scope:** residential treatment, intensive residential treatment, group care, shelter care and independent living; child placement agencies out. The list shows current providers only, so the state file keeps every profile link seen.
+- **Scraper:** `sd_scraper.py`, 27 providers and 118 documents (2024-05 to 2026-09) on 2026-10-03. One report per document, `categories.kind` licensing_study (each rule section answered Yes/No/N/A; flagged when one is No), corrective_action_plan (always flagged) or inspection (fire, health and safety forms; flagged on a failed item; scanned DPS forms are kept unread). Program certificates are skipped. The portal has no complaint documents.
+- **Privacy:** a document carrying a date of birth, a named child or a record number is left out and removed from the archive folder.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `sd_pdfs/`. State file `.sd_state.json`.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--out file.json`.
+
+### VA (Virginia VDSS and DBHDS residential licensing)
+- **Sources:** VDSS children's residential facility inspection pages at `https://www.dss.virginia.gov/licensed-care/search-licensing-programs/childrens-residential-facility-search/`; DBHDS youth residential service searches at `https://vadbhdsv7prod.glsuite.us/GLSuiteWeb/Clients/vadbhds/Public/ProviderSearch/ProviderSearchSearch.aspx` (Playwright only mints the gateway clearance cookie; the scraper then uses `requests`).
+- **Scope:** VDSS children's residential facilities and DBHDS psychiatric residential, therapeutic group home, crisis stabilization and youth substance-use services. DBHDS developmental-disability services are excluded.
+- **Scraper:** `va_scraper.py --source vdss|dbhds|all`. VDSS publishes inspection findings but not plans of correction. DBHDS records one inspection or investigation per service licence; only finalized plans are available, and its online records begin in late 2021. A report without a DBHDS plan is neutral, not a clean inspection.
+- **Privacy:** records containing a date of birth, likely full resident name, medical record number or an individual street address are held out for review.
+- **Archive:** report PDFs through `ReportStore` to `va_pdfs/`; the state keeps independent `.va_vdss_state.json` and `.va_dbhds_state.json` cursors.
+- **Useful flags:** `--source vdss|dbhds|all`, `--full`, `--no-post`, `--limit N`, `--out file.json`, `--licence <id>` (repeatable), `--service-type <label>` (repeatable), and `--refresh`.
+- **First post:** do not post either source until the owner approves it and reviews any privacy holds.
+
 ## Adding a New State
 
 ### Step 1: Reverse-engineer the data source

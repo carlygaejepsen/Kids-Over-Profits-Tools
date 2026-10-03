@@ -32,6 +32,7 @@ scraper_launcher_state.json
 .oh_state.json
 .va_vdss_state.json
 .va_state.json
+.va_dbhds_state.json
 .wv_state.json
 .sd_state.json
 .md_state.json
