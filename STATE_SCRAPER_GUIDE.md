@@ -310,6 +310,14 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Archive:** PDFs through `ReportStore` to the Drive folder `oh_pdfs/`. Run it monthly: the state keeps posting.
 - **Useful flags:** `--full`, `--no-post`, `--limit N`, `--agency <id>` (repeatable), `--refresh`, `--out file.json`.
 
+### WV (West Virginia OHFLAC surveys)
+- **Source:** OHFLAC's public facility-search JSON, per-facility survey-history HTML, and generated State/Federal CMS-2567 PDFs.
+- **Scope:** `wv_scope.json` is an explicit allowlist. Only `decision: "included"` records are scraped; the 16 `unsure` entries are excluded until the owner settles them.
+- **Scraper:** `wv_scraper.py`; report extraction keeps the Helvetica report layer and filters the stale embedded Arial template layer. Calibration covered 55 varied reports (35 State, 20 Federal; 2000-2026): mean OCR word recall was 98.1%, minimum 90.3%, with no unexpected fonts. A deterministic 5% sample is also OCR'd; sampled reports with unavailable OCR or below 90% recall are held for review. A C 173/F 156 finding is held only when it is absent from OCR, since a real 2016 C 173 finding was confirmed in the visible report.
+- **Archive:** PDFs through `ReportStore` to `wv_pdfs/`, synced by `api/sync-inspection-archive.php` to the site's `wv` archive directory.
+- **Useful flags:** `--full`, `--refresh` (re-download/re-extract all reports), `--no-post`, `--limit N`, `--facility <id>` (repeatable), `--ocr-share 0.05`, `--out file.json`.
+- **First post:** do not post until the owner resolves the unsure scope rows, approves the first post, and confirms Drive capacity for the archive.
+
 ## Adding a New State
 
 ### Step 1: Reverse-engineer the data source
@@ -531,10 +539,11 @@ Use `merge_new_ids()` only after a successful downstream write. That keeps rerun
 - **Default to incremental runs.** Treat `--full` as an explicit maintenance mode, not the default behavior.
 - **Pick a stable dedupe key.** Good choices are facility IDs, operation IDs, agency names, or upstream slugs. Bad choices are display strings that frequently change.
 - **Advance state only after success.** Never write seen IDs or date cursors before the API POST (or CSV export) succeeds.
+- **Make failures visible.** A failed fetch or downstream write must produce a nonzero process exit, not a success-shaped empty run.
 - **Handle None values.** State APIs often return `null` for optional fields. Use `value or ""` instead of `value` to avoid `TypeError` on string operations.
 - **The `categories` dict is your escape hatch.** Each state's data is different. Put whatever structured data the frontend needs into `categories` -- it's stored as JSON and passed through unchanged.
 - **Use cursor state when the source supports it.** Server-side date filters are much cheaper than fetching everything and deduping locally.
 - **Sort reports newest-first.** Do this in the frontend JS when converting API data. Watch out for date formats that `new Date()` can't parse (date ranges, non-standard formats).
 - **Test with 2-3 facilities first.** Run `scraper.scrape(facility_ids=["id1", "id2"])` before doing the full run.
-- **Use `--full` after parser changes or suspected backfills.** Especially important for index-based sources like CA, where older content could shift positions.
+- **Use `--full` after suspected backfills.** For parser changes in a scraper with a separate extraction cache, use its cache-refresh option (WV: `--refresh`) as well as bypassing incremental state.
 - **Salesforce sites** use the Aura framework. The `fwuid` in the context string changes on deploys. If the AZ scraper breaks, open the site in a browser, check the Network tab for an `aura` request, and copy the new `fwuid`.
