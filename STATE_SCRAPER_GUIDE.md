@@ -351,6 +351,15 @@ This is currently used by AR, where the Disability Rights Arkansas WordPress API
 - **Slow walk:** each plan is a "View CAP" click, about 5 minutes per DBHDS service licence (165 on 2026-10-03), so a first full run takes 10+ hours. It resumes from the saved service pages and cached plan extractions; run it detached (`Start-Process`).
 - **First post:** do not post either source until the owner approves it and reviews any privacy holds.
 
+### HI (Hawaii OHCA special treatment facility and therapeutic living program inspections)
+- **Source:** the Department of Health, Office of Health Care Assurance inspection reports page `https://health.hawaii.gov/ohca/inspection-reports/` (one static WordPress page, a Ninja Tables table of every licensed care home: name, type, one column of PDF links per year from 2023; plain `requests`; the site's REST API is closed). Only types `STF` and `TLP` are read (43 facilities, 110 statements on 2026-10-05). Licence numbers, addresses, phones and expiry come from the rosters linked on `https://health.hawaii.gov/ohca/state-licensing-section/` (found by file name each run).
+- **Scope:** a youth allowlist in `hi_scope.json`, one entry per page row (`data-row_id`) with `scope` in/out/unsure and why; only `in` is scraped, and a page row the file does not list is reported at the end of the run. 8 in, 33 out, 2 unsure on 2026-10-05.
+- **Scraper:** `hi_scraper.py`, 8 facilities and 20 statements (2023-02 to 2026-03) on 2026-10-05. One facility per page row (`program_name` = roster licence number such as `53-STF`, else `OHCA-row-<row id>`), one report per statement (`report_id` = the inspection date from the link label). `categories.kind` = `deficiencies` (flagged), `no_deficiencies`, or `unread`; each deficiency carries the rule, its text, the findings, the facility's correction (PART 1) and future plan (PART 2) and completion dates.
+- **Reading the form:** three columns (rules and findings, plan of correction, completion date), each cropped and read alone. Text pages: header words plus the table's vertical edges. Scans (most statements with deficiencies): one Tesseract pass finds the headers, the table rules are found as dark-pixel columns, each column is re-read; a plan whose answer words read below 75 OCR confidence is handwriting and is posted as "(handwritten; not transcribed ...)".
+- **Privacy:** posted text is checked for a date of birth, a social security number, a record number and a named or initialed client; a hit holds the report and moves its archived copy to `.report_extract_cache/hi_held/`. Anything that is not the statement form is `not_a_report`.
+- **Archive:** PDFs through `ReportStore` to the Drive folder `hi_pdfs/` (named `<yyyy>-<mm>_<state file name>`); the index page and rosters saved to `.report_extract_cache/hi_pages/`. State file `.hi_state.json`.
+- **Useful flags:** `--full`, `--no-post`, `--limit N`, `--facility NAME` (repeatable), `--cached` (page and rosters from the saved copies), `--reparse`, `--out file.json`. Run it quarterly.
+
 ## Adding a New State
 
 ### Step 1: Reverse-engineer the data source

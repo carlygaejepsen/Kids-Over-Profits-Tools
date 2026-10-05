@@ -56,6 +56,7 @@ SCRAPERS = [
         # OneDrive/lock-file interference during Chromium startup.
         "env_defaults": {"MN_BROWSER_PROFILE": str(MN_BROWSER_PROFILE)},
     },
+    {"name": "Hawaii", "key": "HI", "script": TOOLS_DIR / "hi_scraper.py", "cwd": TOOLS_DIR},
     {"name": "Idaho", "key": "ID", "script": TOOLS_DIR / "id_scraper.py", "cwd": TOOLS_DIR},
     {"name": "Iowa", "key": "IA", "script": TOOLS_DIR / "ia_scraper.py", "cwd": TOOLS_DIR},
     {"name": "Maine", "key": "ME", "script": TOOLS_DIR / "me_scraper.py", "cwd": TOOLS_DIR},
