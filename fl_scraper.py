@@ -5,7 +5,8 @@ Florida youth residential care is split across three independent regulators, so
 this scraper dispatches on --source:
 
     python fl_scraper.py --source djj  [--categories residential,detention,prea,spep] [--full]
-    python fl_scraper.py --source ahca [--full]
+    python fl_scraper.py --source ahca [--types RTC,CSU,PSYCH] [--all-ages] [--full]
+    python fl_scraper.py --source all  # djj, then ahca
     python fl_scraper.py --source dcf  # raises NotImplementedError — no public source
 
 Both implemented sources POST under state="FL". `program_name` is namespaced by
@@ -82,13 +83,65 @@ AHCA_FHF_SEARCH = f"{AHCA_FHF_BASE}/Facility-Search/FacilityLocateSearch"
 AHCA_FHF_HANDLER = f"{AHCA_FHF_SEARCH}?handler=AdvancedSearch"
 AHCA_DM_WEB_BASE = "https://apps.ahca.myflorida.com/dm_web/"
 
-# Each entry maps a FHF facility-type code to (dm_web client_code, full label).
-# RTC covers Residential Treatment Centers AND Therapeutic Group Homes per
-# Florida statute — Therapeutic Group Homes are a 12-bed-or-fewer subtype of
-# RTC. RTF and Crisis cover adjacent facility types; expand here when adding.
-AHCA_FACILITY_TYPES: Dict[str, Tuple[str, str]] = {
-    "RTC": ("57", "Residential Treatment Center for Children and Adolescents"),
+# AHCA facility types the scraper can read. Each one is found in the live
+# FloridaHealthFinder "Facility Type" dropdown: by `value` when we know it,
+# else by the first option whose label matches `label_re`. The dm_web client
+# code comes from each facility record's own ClientCode, falling back to
+# `client_code`. `name_re` keeps only the facilities of a mixed-age type that
+# serve young people (CSUs are licensed for adults and children alike) or
+# that are psychiatric (most hospitals are not); --all-ages turns it off.
+#   RTC    Residential Treatment Centers for Children and Adolescents, which
+#          includes Therapeutic Group Homes (12 beds or fewer) per statute.
+#   CSU    Crisis Stabilization Units, kept to children's/youth units.
+#   PSYCH  Hospitals named behavioral/psychiatric/mental health: the private
+#          psychiatric hospitals that run adolescent units.
+#   RTF    Residential Treatment Facilities (adults; young adult programs).
+#   SRT    Short-term Residential Treatment (adults, CSU step-down).
+_AHCA_YOUTH_NAME_RE = (
+    r"child|youth|adolescent|juvenile|\bkids?\b|\bteens?\b|pediatric|\bminors?\b"
+)
+_AHCA_PSYCH_NAME_RE = r"behavioral|behavioural|psychiatr|mental health|\bpsych\b"
+
+AHCA_FACILITY_TYPES: Dict[str, Dict[str, Any]] = {
+    "RTC": {
+        "value": "RTC",
+        "label_re": r"residential treatment center",
+        "client_code": "57",
+        "label": "Residential Treatment Center for Children and Adolescents",
+        "name_re": None,
+    },
+    "CSU": {
+        "value": "Crisis",
+        "label_re": r"crisis stabilization",
+        "client_code": "",
+        "label": "Crisis Stabilization Unit",
+        "name_re": _AHCA_YOUTH_NAME_RE,
+    },
+    "PSYCH": {
+        "value": "",
+        "label_re": r"^hospitals?$|^hospital\b",
+        "client_code": "",
+        "label": "Hospital",
+        "name_re": _AHCA_PSYCH_NAME_RE,
+    },
+    "RTF": {
+        "value": "RTF",
+        "label_re": r"residential treatment facilit",
+        "client_code": "",
+        "label": "Residential Treatment Facility",
+        "name_re": None,
+    },
+    "SRT": {
+        "value": "",
+        "label_re": r"short.?term residential",
+        "client_code": "",
+        "label": "Short Term Residential Treatment",
+        "name_re": None,
+    },
 }
+AHCA_DEFAULT_TYPES = ("RTC", "CSU", "PSYCH")
+AHCA_MAX_GRID_PAGES = int(os.getenv("FL_AHCA_MAX_PAGES", "60"))
+_AHCA_DATE_RE = re.compile(r"^\d{1,2}/\d{1,2}/\d{4}$")
 
 # Tokens stripped during normalization of program names so common naming-style
 # differences ("Alachua Academy" vs "Alachua Youth Academy" vs "AlachuaRJDC")
@@ -1085,7 +1138,8 @@ class FLDJJScraper:
 
 
 class FLAHCAScraper:
-    """AHCA Residential Treatment Center scraper.
+    """AHCA licensed-facility scraper: residential treatment centers and the
+    other AHCA facility types in AHCA_FACILITY_TYPES.
 
     Two endpoints:
       • FloridaHealthFinder (`quality.healthfinder.fl.gov`) — Razor Pages site
@@ -1105,10 +1159,9 @@ class FLAHCAScraper:
         })
         self._dm_session_id = ""
 
-    def fetch_fhf_facilities(self, type_code: str) -> List[Dict]:
-        """Submit a Razor-Pages search for one facility type and return the
-        embedded JSON facility list. The result page renders this same array
-        client-side via jQuery DataTables — we just grab it directly."""
+    def _search_form(self) -> Tuple[Dict[str, str], Dict[str, str]]:
+        """The AdvancedSearch form's hidden fields (antiforgery token) and the
+        Facility Type dropdown as {option value: label}."""
         resp = self.session.get(AHCA_FHF_SEARCH, timeout=30)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -1120,23 +1173,57 @@ class FLAHCAScraper:
             for inp in form.find_all("input")
             if inp.get("name")
         }
-        fields["FacilityTypeSelection"] = type_code
+        options: Dict[str, str] = {}
+        select = soup.find("select", attrs={"name": "FacilityTypeSelection"})
+        for opt in (select.find_all("option") if select else []):
+            value = (opt.get("value") or "").strip()
+            if value:
+                options[value] = opt.get_text(" ", strip=True)
+        return fields, options
 
-        post = self.session.post(AHCA_FHF_HANDLER, data=fields, timeout=60)
-        post.raise_for_status()
-        match = re.search(
-            r"(\[\s*\{[^}]*FileNumber[^}]*\}.*?\])",
-            post.text,
-            re.DOTALL,
-        )
-        if not match:
-            logger.warning(f"FHF: no embedded facility array for type={type_code}")
+    @staticmethod
+    def resolve_type_value(type_key: str, options: Dict[str, str]) -> Tuple[str, str]:
+        """(dropdown value, label) for one of AHCA_FACILITY_TYPES, or ("", "")
+        when the live dropdown has no such option. With no dropdown read (the
+        page changed), a known value is still tried."""
+        spec = AHCA_FACILITY_TYPES[type_key]
+        known = spec.get("value") or ""
+        if known and (not options or known in options):
+            return known, options.get(known, spec["label"])
+        pattern = re.compile(spec["label_re"], re.IGNORECASE)
+        for value, label in options.items():
+            if pattern.search(label.strip()) or pattern.search(value):
+                return value, label
+        return "", ""
+
+    @staticmethod
+    def extract_facility_array(html: str) -> List[Dict]:
+        """The facility list the result page embeds as a JSON array. Decoded
+        from the opening bracket with raw_decode, so a "]" inside a name or a
+        nested array does not cut it short."""
+        m = re.search(r"\[\s*\{[^{}]*?\"FileNumber\"", html)
+        if not m:
             return []
         try:
-            return json.loads(match.group(1))
+            data, _ = json.JSONDecoder().raw_decode(html, m.start())
         except json.JSONDecodeError as exc:
-            logger.error(f"FHF: failed to parse embedded JSON for type={type_code}: {exc}")
+            logger.error(f"FHF: failed to parse embedded JSON: {exc}")
             return []
+        return [r for r in data if isinstance(r, dict)] if isinstance(data, list) else []
+
+    def fetch_fhf_facilities(self, type_value: str) -> List[Dict]:
+        """Submit a Razor-Pages search for one facility type and return the
+        embedded JSON facility list. The result page renders this same array
+        client-side via jQuery DataTables — we just grab it directly."""
+        fields, _ = self._search_form()
+        fields["FacilityTypeSelection"] = type_value
+
+        post = self.session.post(AHCA_FHF_HANDLER, data=fields, timeout=120)
+        post.raise_for_status()
+        recs = self.extract_facility_array(post.text)
+        if not recs:
+            logger.warning(f"FHF: no embedded facility array for type={type_value}")
+        return recs
 
     def _open_dm_session(self) -> str:
         resp = self.session.get(AHCA_DM_WEB_BASE, timeout=30, allow_redirects=True)
@@ -1169,15 +1256,64 @@ class FLAHCAScraper:
             logger.warning(f"  dm_web fetch failed for file_number={file_number}: {exc}")
             return []
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+        deficiencies, pages = self.parse_deficiency_grid(resp.text)
+        # Long histories run over several grid pages, reached by ASP.NET
+        # postbacks (__doPostBack('gridView','Page$2')). The pager shows ten
+        # numbers at a time and a "..." link to the next ten, so each page's
+        # pager names the pages still to read.
+        done = {1}
+        html = resp.text
+        page = 2
+        while page in pages and page <= AHCA_MAX_GRID_PAGES:
+            form = self._postback_fields(html)
+            form["__EVENTTARGET"] = "gridView"
+            form["__EVENTARGUMENT"] = f"Page${page}"
+            try:
+                resp = self.session.post(url, data=form, timeout=60)
+                resp.raise_for_status()
+            except requests.RequestException as exc:
+                logger.warning(f"  dm_web page {page} failed for file_number={file_number}: {exc}")
+                break
+            html = resp.text
+            rows, more = self.parse_deficiency_grid(html)
+            deficiencies.extend(rows)
+            done.add(page)
+            pages = (pages | more) - done
+            page += 1
+        if len(done) > 1:
+            logger.info(f"    {len(done)} grid pages, {len(deficiencies)} deficiency rows")
+        return deficiencies
+
+    @staticmethod
+    def _postback_fields(html: str) -> Dict[str, str]:
+        soup = BeautifulSoup(html, "html.parser")
+        return {
+            inp.get("name"): inp.get("value", "")
+            for inp in soup.find_all("input", attrs={"type": "hidden"})
+            if inp.get("name")
+        }
+
+    @staticmethod
+    def parse_deficiency_grid(html: str) -> Tuple[List[Dict], Set[int]]:
+        """The gridView deficiency rows on one dm_web page, and the page
+        numbers its pager links to."""
+        soup = BeautifulSoup(html, "html.parser")
         grid = soup.find("table", id="gridView")
         if not grid:
-            return []
+            return [], set()
 
+        pages = {
+            int(n) for n in re.findall(r"Page\$(\d+)", str(grid))
+        }
         deficiencies: List[Dict] = []
-        for row in grid.find_all("tr")[1:]:
-            cells = [c.get_text(strip=True) for c in row.find_all(["td", "th"])]
-            if len(cells) < 6:
+        for row in grid.find_all("tr"):
+            # The pager is a row holding a nested table of page numbers; it
+            # used to be read as a survey dated "1234567". Skip it, its own
+            # rows, and the header.
+            if row.find("table") or row.find("th") or row.find_parent("table") is not grid:
+                continue
+            cells = [c.get_text(strip=True) for c in row.find_all("td", recursive=False)]
+            if len(cells) < 6 or not _AHCA_DATE_RE.match(cells[0]):
                 continue
             deficiencies.append({
                 "survey_date": cells[0],
@@ -1187,7 +1323,7 @@ class FLAHCAScraper:
                 "requirement_description": cells[4],
                 "correction_date": cells[5],
             })
-        return deficiencies
+        return deficiencies, pages
 
     @staticmethod
     def _normalize_survey_date(raw: str) -> str:
@@ -1238,7 +1374,7 @@ class FLAHCAScraper:
         reports.sort(key=lambda r: (r.get("report_date", ""), r["report_id"]))
         return reports
 
-    def _facility_payload(self, fhf: Dict, reports: List[Dict]) -> Dict:
+    def _facility_payload(self, fhf: Dict, reports: List[Dict], type_label: str = "") -> Dict:
         addr_parts = [
             fhf.get("Address", "").strip(),
             fhf.get("Address2", "").strip(),
@@ -1251,7 +1387,7 @@ class FLAHCAScraper:
             "facility_info": {
                 "facility_name": _safe_field(fhf.get("Name", "") or f"AHCA File #{fhf.get('FileNumber', '')}", 500),
                 "program_name": _safe_field(f"AHCA-{fhf.get('FileNumber', '')}", 500),
-                "program_category": _safe_field(fhf.get("FacilityType", ""), 255),
+                "program_category": _safe_field(fhf.get("FacilityType", "") or type_label, 255),
                 "full_address": full_address,
                 "phone": _safe_field(fhf.get("PhoneNumber", ""), 50),
                 "bed_capacity": _safe_field(fhf.get("BedCount", ""), 50),
@@ -1272,41 +1408,93 @@ class FLAHCAScraper:
             "reports": reports,
         }
 
+    @staticmethod
+    def keep_record(rec: Dict, type_key: str, all_ages: bool = False) -> bool:
+        """Whether a facility of this type is one KOP tracks: every RTC, only
+        the youth CSUs and the psychiatric hospitals (see AHCA_FACILITY_TYPES)."""
+        pattern = AHCA_FACILITY_TYPES[type_key].get("name_re")
+        if all_ages or not pattern:
+            return True
+        text = " ".join(
+            str(rec.get(k) or "") for k in ("Name", "DBA", "FacilityType", "Specialty", "ProviderType")
+        )
+        return bool(re.search(pattern, text, re.IGNORECASE))
+
     def scrape(
         self,
         seen: Optional[Dict[str, Set[str]]] = None,
         limit: int = 0,
         type_codes: Optional[List[str]] = None,
+        all_ages: bool = False,
     ) -> Tuple[List[Dict], Dict[str, List[str]]]:
         seen = seen or {}
         new_ids: Dict[str, List[str]] = defaultdict(list)
         all_facilities: List[Dict] = []
+        done_files: Set[str] = set()
 
-        type_codes = type_codes or list(AHCA_FACILITY_TYPES.keys())
+        try:
+            _, options = self._search_form()
+        except (requests.RequestException, RuntimeError) as exc:
+            logger.warning(f"FHF: could not read the facility type list ({exc}); trying known values only")
+            options = {}
+        if options:
+            logger.info("FHF facility types: " + "; ".join(f"{v}={l}" for v, l in options.items()))
+
+        type_codes = type_codes or list(AHCA_DEFAULT_TYPES)
         for type_code in type_codes:
+            if limit and len(all_facilities) >= limit:
+                break
             if type_code not in AHCA_FACILITY_TYPES:
-                logger.warning(f"Unknown AHCA facility type code: {type_code}")
+                logger.warning(f"Unknown AHCA facility type: {type_code}. Valid: {list(AHCA_FACILITY_TYPES)}")
                 continue
-            client_code, provider_type_label = AHCA_FACILITY_TYPES[type_code]
-            logger.info(f"Fetching FHF facilities for type={type_code} ({provider_type_label})")
-            recs = self.fetch_fhf_facilities(type_code)
-            logger.info(f"  {len(recs)} facilities returned")
+            spec = AHCA_FACILITY_TYPES[type_code]
+            type_value, type_label = self.resolve_type_value(type_code, options)
+            if not type_value:
+                logger.warning(
+                    f"AHCA type {type_code} ({spec['label']}): no matching option in the "
+                    f"FloridaHealthFinder dropdown; skipped. Options seen: {sorted(options.values())}"
+                )
+                continue
+            type_label = type_label or spec["label"]
+            logger.info(f"Fetching FHF facilities for {type_code}: value={type_value} ({type_label})")
+            try:
+                recs = self.fetch_fhf_facilities(type_value)
+            except requests.RequestException as exc:
+                logger.error(f"  FHF search failed for {type_code}: {exc}")
+                continue
+            kept = [r for r in recs if self.keep_record(r, type_code, all_ages)]
+            logger.info(f"  {len(recs)} facilities returned, {len(kept)} kept")
+            if len(kept) < len(recs):
+                logger.info(
+                    "  left out (not youth/psychiatric by name; --all-ages keeps them): "
+                    + "; ".join(sorted(str(r.get("Name", "")) for r in recs if r not in kept)[:40])
+                )
 
-            for i, rec in enumerate(recs):
+            for i, rec in enumerate(kept):
                 if limit and len(all_facilities) >= limit:
                     break
-                file_no = rec.get("FileNumber", "")
+                file_no = str(rec.get("FileNumber", "") or "")
+                # A facility licensed under two types is read once.
+                if not file_no or file_no in done_files:
+                    continue
+                done_files.add(file_no)
                 name = rec.get("Name", "") or f"AHCA File #{file_no}"
+                client_code = str(rec.get("ClientCode") or spec["client_code"] or "")
+                if not client_code:
+                    logger.warning(f"  {name} (file={file_no}): no dm_web client code; skipped")
+                    continue
                 logger.info(
-                    f"  [{i+1}/{len(recs)}] {name} (file={file_no}, status={rec.get('LicenseStatus','')})"
+                    f"  [{i+1}/{len(kept)}] {name} (file={file_no}, status={rec.get('LicenseStatus','')})"
                 )
                 deficiencies = self.fetch_inspection_deficiencies(
                     file_number=file_no,
                     client_code=client_code,
-                    provider_type_label=provider_type_label,
+                    provider_type_label=rec.get("FacilityType") or type_label,
                     name=name,
                 )
                 reports = self._build_reports_from_deficiencies(deficiencies)
+                for r in reports:
+                    r["categories"]["facility_type"] = type_code
                 # Incremental filter: skip already-posted reports.
                 key = file_no
                 new_reports = [
@@ -1315,7 +1503,7 @@ class FLAHCAScraper:
                 ]
                 if not new_reports:
                     continue
-                all_facilities.append(self._facility_payload(rec, new_reports))
+                all_facilities.append(self._facility_payload(rec, new_reports, type_label))
                 new_ids[key].extend(r["report_id"] for r in new_reports)
 
         logger.info(
@@ -1411,8 +1599,15 @@ def _run_ahca(args: argparse.Namespace) -> None:
     state = load_state(AHCA_STATE_FILE)
     seen = {} if args.full else seen_from_state(state)
 
+    type_codes = [t.strip().upper() for t in args.types.split(",") if t.strip()]
+    invalid = [t for t in type_codes if t not in AHCA_FACILITY_TYPES]
+    if invalid:
+        raise SystemExit(f"Unknown AHCA types: {invalid}. Valid: {list(AHCA_FACILITY_TYPES)}")
+
     scraper = FLAHCAScraper()
-    facilities, new_ids = scraper.scrape(seen=seen, limit=args.limit)
+    facilities, new_ids = scraper.scrape(
+        seen=seen, limit=args.limit, type_codes=type_codes, all_ages=args.all_ages,
+    )
 
     facilities_to_post = [f for f in facilities if f["reports"]]
     if not facilities_to_post:
@@ -1433,10 +1628,14 @@ def _run_ahca(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape Florida youth-facility data (DJJ / AHCA / DCF)")
-    parser.add_argument("--source", required=True, choices=("djj", "ahca", "dcf"),
-                        help="Which Florida data source to scrape")
+    parser.add_argument("--source", required=True, choices=("djj", "ahca", "all", "dcf"),
+                        help="Which Florida data source to scrape (all = djj, then ahca)")
     parser.add_argument("--categories", default=",".join(DJJ_CATEGORIES),
                         help=f"(DJJ only) comma-separated subset of {DJJ_CATEGORIES}")
+    parser.add_argument("--types", default=",".join(AHCA_DEFAULT_TYPES),
+                        help=f"(AHCA only) comma-separated subset of {list(AHCA_FACILITY_TYPES)}")
+    parser.add_argument("--all-ages", action="store_true",
+                        help="(AHCA only) keep every CSU and hospital, not just youth/psychiatric ones")
     parser.add_argument("--full", action="store_true",
                         help="Ignore the local state file and re-scan all reports")
     parser.add_argument("--no-post", action="store_true",
@@ -1454,6 +1653,9 @@ def main() -> None:
     if args.source == "djj":
         _run_djj(args)
     elif args.source == "ahca":
+        _run_ahca(args)
+    elif args.source == "all":
+        _run_djj(args)
         _run_ahca(args)
     elif args.source == "dcf":
         FLDCFScraper().scrape()
