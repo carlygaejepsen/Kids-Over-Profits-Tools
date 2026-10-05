@@ -23,6 +23,15 @@ import pdfplumber
 import requests
 from bs4 import BeautifulSoup
 
+try:  # OCR for scanned pages; without it a scan keeps its (often unreadable) text layer
+    import pytesseract
+    from pytesseract import Output
+    _TESSERACT = Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe")
+    if _TESSERACT.exists():
+        pytesseract.pytesseract.tesseract_cmd = str(_TESSERACT)
+except ImportError:
+    pytesseract = None
+
 from inspection_api_client import post_facilities_to_api
 from report_store import ReportStore, extract_with_cache
 from scraper_state import load_state, merge_new_ids, save_state, seen_from_state
@@ -140,15 +149,222 @@ REPORT_CATEGORY_COLUMNS = [
 
 # ── PDF text parsing ────────────────────────────────────────────────
 
-def extract_pdf_text(path: Path) -> str:
-    """Extract all page text from a PDF."""
+# How the PDFs are read. Bump when extract_pdf() changes: every cached
+# extraction made by an older version is read again from the archived PDF.
+EXTRACT_VERSION = 2
+
+# The Statement of Deficiency form is a table of three columns: the rule cited,
+# the inspector's findings, and the facility's plan of correction. Read line by
+# line across the page (pdfplumber's extract_text), the columns come out spliced
+# together mid-sentence, so findings are read column by column instead, by the
+# column rules or, failing those, the heading positions. Scanned pages whose
+# text layer is noise, or that have none, are read with Tesseract.
+
+COMMON = set(
+    "the of and to a in was that for is on with as by staff not be this were at from have an are or "
+    "facility patient youth review record interview based had did their which".split()
+)
+RULE_START = re.compile(r"^\s*(?:WAC|RCW)\s*\d{2,3}[-.]\d")
+# A deficiency's findings open "Based on ..." (investigations) or "[This] Washington
+# Administrative Code was not met as evidenced by:" (inspections) ...
+OPENING = re.compile(
+    # (inspectors also write "Washington Administration Code", "WAC was not met as ...").
+    r"^\s*(?:Based\s+on\b|.{0,60}?\b(?:was|is|were|are)\s+not\s+met\s+as\b)", re.I)
+# ... beside a rule citation, or an inspection's deficiency number ("1015 Resident rights").
+ROW_START = re.compile(r"^\s*(?:(?:WAC|RCW)\s*\d{2,3}[-.]\d|\d{3,4}\s+[A-Z])")
+# Page furniture repeated on continuation pages, never a finding.
+FURNITURE = re.compile(
+    r"^(?:Page \d+ of \d+|Statement of Deficiency Report|Department of Health|P\.O\. Box|TEL:)\b"
+    r"|^(?:Deficiency Number and Rule Reference|(?:Observation )?Findings(?: included)?:?|Plan of Correction)\s*$",
+    re.I)
+
+
+def text_is_readable(text: str) -> bool:
+    """False for a scanned page whose embedded text layer is noise."""
+    toks = re.findall(r"[A-Za-z]+", text or "")
+    if len(toks) < 15:
+        return True  # too little to judge; a short page, a signature, a blank
+    return sum(t.lower() in COMMON for t in toks) / len(toks) > 0.12
+
+
+def ocr_words(page) -> Tuple[List[Dict], float, float]:
+    """Words read from the page image, upright, in points: (words, width, height)."""
+    # 300 dpi, but no side over 3,500 pixels: a few scans are poster-sized and Tesseract runs out of memory.
+    dpi = min(300, 3500 * 72 / max(page.width, page.height))
+    img = page.to_image(resolution=dpi).original
     try:
-        with pdfplumber.open(path) as pdf:
-            pages = [(p.extract_text() or "") for p in pdf.pages]
-        return "\n".join(pages).strip()
-    except Exception as e:
-        logger.warning(f"  PDF extract failed for {path.name}: {e}")
-        return ""
+        osd = pytesseract.image_to_osd(img, output_type=Output.DICT)
+        angle = int(osd.get("rotate", 0))
+    except Exception:
+        angle = 0
+    if angle:
+        img = img.rotate(-angle, expand=True)
+    data = pytesseract.image_to_data(img, output_type=Output.DICT, config="--psm 3")
+    scale = 72 / dpi
+    words = []
+    for i, t in enumerate(data["text"]):
+        t = (t or "").strip()
+        if not t or float(data["conf"][i]) < 0:
+            continue
+        x0 = data["left"][i] * scale
+        top = data["top"][i] * scale
+        words.append({"text": t, "x0": x0, "x1": x0 + data["width"][i] * scale,
+                      "top": top, "bottom": top + data["height"][i] * scale})
+    return words, img.width * scale, img.height * scale
+
+
+def lines_of(words: List[Dict], tol: float = 3.0) -> List[Dict]:
+    """Words grouped into lines: [{'top', 'x0', 'text'}], top to bottom."""
+    out: List[Dict] = []
+    for w in sorted(words, key=lambda w: (round(w["top"]), w["x0"])):
+        if out and abs(out[-1]["top"] - w["top"]) <= tol:
+            out[-1]["words"].append(w)
+        else:
+            out.append({"top": w["top"], "words": [w]})
+    for line in out:
+        line["words"].sort(key=lambda w: w["x0"])
+        line["x0"] = line["words"][0]["x0"]
+        line["text"] = " ".join(w["text"] for w in line["words"])
+    return out
+
+
+def column_bounds(page, words: List[Dict], from_pdf: bool) -> Optional[Tuple[float, float, float, float]]:
+    """(rule left, findings left, plan left, right edge) from the column rules, else the headings."""
+    if from_pdf:
+        rules = sorted({round(r["x0"]) for r in page.rects if r["height"] > 100 and r["width"] < 4})
+        if len(rules) == 4:
+            return tuple(float(x) for x in rules)
+    heads = {}
+    for line in lines_of(words):
+        texts = [w["text"] for w in line["words"]]
+        if "Findings" in texts and "Plan" in texts:
+            # The older form heads the middle column "Observation Findings".
+            for w in line["words"]:
+                if w["text"] in ("Deficiency", "Observation", "Findings", "Plan") and w["text"] not in heads:
+                    heads[w["text"]] = w["x0"]
+            if "Observation" in heads and heads["Observation"] < heads.get("Findings", 1e9):
+                heads["Findings"] = heads.pop("Observation")
+            heads.pop("Observation", None)
+            break
+    if len(heads) == 3:
+        width = page.width if from_pdf else max(w["x1"] for w in words) + 10
+        return heads["Deficiency"] - 6, heads["Findings"] - 6, heads["Plan"] - 6, width
+    return None
+
+
+def table_top(words: List[Dict]) -> float:
+    """Below the heading row when the page has it, else the top of the page."""
+    for line in lines_of(words):
+        texts = [w["text"] for w in line["words"]]
+        if "Findings" in texts and "Plan" in texts and "Correction" in texts:
+            return line["top"] + 8
+    return 0.0
+
+
+def findings_of_fact(text: str) -> List[Dict]:
+    """An enforcement document's numbered FINDINGS OF FACT (1.1, 1.2, ...), up to the conclusions of law."""
+    m = re.search(r"\bFINDINGS\s+OF\s+FACTS?\b(.*?)(?:\bCONCLUSIONS?\s+OF\s+LAW\b|$)", text, re.S)
+    if not m:
+        return []
+    body = m.group(1)
+    # Page footers and running heads of a legal pleading.
+    body = re.sub(r"(?im)^.*\b(?:PAGE\s+\d+\s+OF\s+\d+|NOTICE OF INTENT|SUMMARY ACTION ORDER|STATEMENT OF CHARGES)\b.*$", "", body)
+    body = re.sub(r"(?im)^\s*NO\.\s*M\d{4}-\d+.*$", "", body)
+    out = []
+    for part in re.split(r"(?m)^\s*(?=\d\.\d{1,2}\s+\S)", body):
+        para = re.sub(r"\s+", " ", re.sub(r"^\s*\d\.\d{1,2}\s+", "", part)).strip()
+        if len(para) >= 40:
+            out.append({"rule": "Findings of fact", "rule_text": "", "findings": para, "plan": ""})
+    return out
+
+
+def extract_pdf(path: Path) -> Dict:
+    """{'text': all page text, 'findings': [{rule, rule_text, findings, plan}], 'ocr_pages': n}."""
+    texts: List[str] = []
+    deficiencies: List[Dict] = []
+    carried: Dict[str, Tuple[float, float, float, float]] = {}
+    ocr_pages = 0
+    current: Optional[Dict] = None
+    with pdfplumber.open(path) as pdf:
+        for page in pdf.pages:
+            layer = page.extract_text() or ""
+            from_pdf = True
+            words = None
+            # OCR a page whose text layer is noise, or an image-only page with no text layer at all.
+            needs_ocr = not text_is_readable(layer) or (len(re.findall(r"[A-Za-z]{2,}", layer)) < 15 and page.images)
+            if needs_ocr and pytesseract is not None:
+                try:
+                    words, _, _ = ocr_words(page)
+                except Exception:
+                    words = None  # OCR failed on this page: keep its text layer
+            if words is not None:
+                from_pdf = False
+                ocr_pages += 1
+                texts.append("\n".join(l["text"] for l in lines_of(words)))
+            else:
+                words = page.extract_words()
+                texts.append(layer)
+            if not words:
+                continue
+            # Column positions carry over to continuation pages, kept apart for text-layer and OCR pages
+            # (OCR coordinates come from the upright page image, not the PDF's own).
+            found = column_bounds(page, words, from_pdf)
+            key = "pdf" if from_pdf else "ocr"
+            if found:
+                carried[key] = found
+            bounds = carried.get(key)
+            if not bounds:
+                continue
+            left, mid, right, edge = bounds
+            top = table_top(words)
+            cols = {"rule": [], "findings": [], "plan": []}
+            for w in words:
+                if w["top"] < top:
+                    continue
+                cx = (w["x0"] + w["x1"]) / 2
+                if left <= cx < mid:
+                    cols["rule"].append(w)
+                elif mid <= cx < right:
+                    cols["findings"].append(w)
+                elif right <= cx < edge:
+                    cols["plan"].append(w)
+            # A deficiency starts where its findings open beside a citation or deficiency number.
+            # One deficiency often cites several rules in its left column, so a citation alone
+            # does not start one.
+            rule_starts = [l["top"] for l in lines_of(cols["rule"]) if ROW_START.match(l["text"])]
+            starts = [l["top"] for l in lines_of(cols["findings"])
+                      if OPENING.match(l["text"]) and any(abs(l["top"] - r) < 6 for r in rule_starts)]
+            events = []
+            for kind in cols:
+                for l in lines_of(cols[kind]):
+                    if FURNITURE.match(l["text"]):
+                        continue
+                    t = l["top"]
+                    # Lines of a row are a point or two apart across columns: snap them to the row's start.
+                    for s0 in starts:
+                        if s0 - 6 <= t < s0:
+                            t = s0
+                    events.append((t, kind, l["text"]))
+            for top_, kind, text in sorted(events, key=lambda e: (e[0], ("rule", "findings", "plan").index(e[1]))):
+                if any(abs(top_ - s0) < 0.01 for s0 in starts) and (current is None or current.get("_at") != (id(page), top_)):
+                    current = {"rule": [], "findings": [], "plan": [], "_at": (id(page), top_)}
+                    deficiencies.append(current)
+                if current is None:
+                    continue  # text above the first deficiency (the form's header)
+                current[kind].append(text)
+    out = []
+    for d in deficiencies:
+        rule = " ".join(d["rule"]).strip()
+        findings = "\n".join(d["findings"]).strip()
+        if not findings:
+            continue
+        m = re.match(r"((?:WAC|RCW)\s*[\d.\-]+(?:\([^)]*\))*\s*[^.]{0,120}\.?)", rule)
+        out.append({"rule": (m.group(1) if m else rule[:160]).strip(), "rule_text": rule,
+                    "findings": findings, "plan": "\n".join(d["plan"]).strip()})
+    text = "\n".join(texts).strip()
+    if not out:
+        out = findings_of_fact(text)
+    return {"text": text, "findings": out, "ocr_pages": ocr_pages}
 
 
 def parse_inspection_text(text: str) -> Dict:
@@ -378,17 +594,19 @@ class WAInspectionScraper:
             logger.warning(f"  download failed {url}: {e}")
             return None
 
-    def pdf_text(self, url: str) -> Tuple[Optional[str], str]:
-        """(text, file name) of the report PDF; text is None when no document
-        could be had. The PDF itself goes to the Drive folder."""
+    def pdf_text(self, url: str) -> Tuple[Optional[Dict], str]:
+        """(extraction, file name) of the report PDF: {'text', 'findings',
+        'ocr_pages'}, or None when no document could be had. The PDF itself goes
+        to the Drive folder."""
         filename = re.sub(r"[^A-Za-z0-9._-]", "_", url.rsplit("/", 1)[-1])
         extracted = extract_with_cache(
             self.reports,
             filename,
             fetch=lambda: self.download_pdf(url),
-            extract=lambda path: {"text": extract_pdf_text(path)},
+            extract=extract_pdf,
+            version=EXTRACT_VERSION,
         )
-        return (extracted["text"] if extracted else None), filename
+        return extracted, filename
 
     def build_report(
         self,
@@ -397,9 +615,10 @@ class WAInspectionScraper:
         category: str,
         sharers: Optional[List[str]] = None,
     ) -> Optional[Dict]:
-        text, filename = self.pdf_text(url)
-        if text is None:
+        extracted, filename = self.pdf_text(url)
+        if extracted is None:
             return None
+        text = extracted.get("text") or ""
 
         # DOH sometimes links several case numbers to one case's PDF (twelve
         # Pearl Youth Residence cases all point at 2023-11257.pdf). Only the
@@ -436,6 +655,10 @@ class WAInspectionScraper:
                 "pdf_url": url,
                 "deficiencies": deficiencies,
                 "violation_count": len(deficiencies),
+                # The inspector's findings, each with the rule it cites, read column by column
+                # (or an enforcement document's findings of fact). The facility's plan is not kept.
+                "findings": [{"rule": f["rule"], "findings": f["findings"]} for f in extracted.get("findings", [])],
+                "ocr_pages": extracted.get("ocr_pages", 0),
             },
         }
 
@@ -567,10 +790,25 @@ def save_to_api(facilities: List[Dict]) -> bool:
     return bool(result.get("success"))
 
 
+def write_out(path: Path, facilities: List[Dict]) -> None:
+    """What inspections-read.php would return for these facilities."""
+    import json
+    payload = {
+        "source_state": "WA",
+        "scraped_timestamp": datetime.now().isoformat(),
+        "facilities": [{"facility_info": f["facility_info"], "reports": f["reports"]} for f in facilities],
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    logger.info(f"Wrote {path}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true",
                     help=f"Ignore {STATE_FILE} and re-process all PDFs")
+    ap.add_argument("--no-post", action="store_true", help="Scrape and read, but post nothing to the API")
+    ap.add_argument("--out", type=Path, help="Write what the read API would return to this JSON file")
     args = ap.parse_args()
 
     state = load_state(STATE_FILE)
@@ -584,10 +822,14 @@ def main():
         return
 
     total_reports = sum(len(f["reports"]) for f in facilities)
-    logger.info(
-        f"Scraped {len(facilities)} facilities, {total_reports} new reports "
-        "— posting to API"
-    )
+    total_findings = sum(len(r["categories"].get("findings") or []) for f in facilities for r in f["reports"])
+    logger.info(f"Scraped {len(facilities)} facilities, {total_reports} new reports, {total_findings} findings read")
+    if args.out:
+        write_out(args.out, facilities)
+    if args.no_post:
+        logger.info("--no-post: nothing posted, state not advanced")
+        return
+    logger.info("Posting to API")
     if save_to_api(facilities):
         logger.info("Data saved to database successfully!")
         merge_new_ids(state, new_ids)

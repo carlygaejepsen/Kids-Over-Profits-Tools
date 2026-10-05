@@ -99,8 +99,12 @@ class ReportStore:
                 pass
 
 
-def extract_with_cache(store: ReportStore, name: str, fetch, extract) -> Optional[dict]:
+def extract_with_cache(store: ReportStore, name: str, fetch, extract, version: Optional[int] = None) -> Optional[dict]:
     """Return the cached extraction for `name`, or fetch, extract and archive it.
+
+    With `version`, a cached extraction made by another version of extract()
+    is a miss: the document is read again (from the archive when the source
+    no longer serves it) and the new extraction replaces the old.
 
     fetch() returns the PDF bytes from the source (None on failure);
     extract(path) returns a JSON-serialisable dict with a "text" key, cached
@@ -108,19 +112,24 @@ def extract_with_cache(store: ReportStore, name: str, fetch, extract) -> Optiona
     document could be had from the source or the archive.
     """
     cached = store.cached_extract(name)
-    if cached is not None:
+    if cached is not None and (version is None or cached.get("_extract_version") == version):
         return cached
 
-    data = fetch()
-    if data:
-        store.archive(name, data)
-    else:
-        data = store.archived_bytes(name)
-        if not data:
-            return None
+    # Re-reading a document already archived: the archived copy, not a new download.
+    data = store.archived_bytes(name) if cached is not None else None
+    if not data:
+        data = fetch()
+        if data:
+            store.archive(name, data)
+        else:
+            data = store.archived_bytes(name)
+            if not data:
+                return None
 
     with store.working_copy(data, name) as path:
         result: Any = extract(path)
+    if version is not None:
+        result["_extract_version"] = version
     # An empty extraction (a timed-out or failed parse) is retried next run.
     if result.get("text"):
         store.save_extract(name, result)
