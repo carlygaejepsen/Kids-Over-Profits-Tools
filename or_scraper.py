@@ -11,10 +11,17 @@ The public pages themselves are client-rendered SharePoint views. The scraper
 calls the same anonymous SharePoint SOAP endpoint behind those pages to get the
 report rows directly, downloads the linked PDFs, extracts text, then posts the
 grouped facility/report payload to the shared inspections API.
+
+Complaints: ODHS publishes no complaint documents per program. The same library
+holds a quarterly "Child Caring Agency Legislative Report" (Pages/reports.aspx)
+listing every abuse report substantiated at a child caring agency. Each one is
+posted as its own report with categories.kind = "complaint", under the
+provider's name (see ABUSE_PROVIDER_NAMES).
 """
 
 import argparse
 import html
+import json
 import logging
 import os
 import re
@@ -265,6 +272,400 @@ def extract_pdf_text(path: Path) -> str:
     except Exception as exc:
         logger.warning(f"  PDF extract failed for {path.name}: {exc}")
         return ""
+
+
+# ---------------------------------------------------------------------------
+# Substantiated abuse reports (the quarterly "Child Caring Agency Legislative
+# Report"). ODHS publishes no per-program complaint documents; each quarter it
+# lists every abuse report it substantiated at a child caring agency: report
+# number, provider, incident date, abuse type, whether injury, sexual abuse or
+# death resulted, a narrative and the corrective actions. The PDFs come in
+# three table layouts (2021-2024 Q3 four columns with the labels inside the
+# text cells, 2024 Q4 onward a header row plus a narrative table, 2025 Q3 one
+# label/value row per field), and a long entry continues in a bare two-cell
+# table on the next page.
+# ---------------------------------------------------------------------------
+
+ABUSE_EXTRACT_VERSION = 1   # bump after changing the table reader, so cached extracts are redone
+ABUSE_REPORT_ID_RE = re.compile(r"\bCC[A-Z]\s?\d{5,}[A-Z]?\b")
+ABUSE_STATS_ROW_RE = re.compile(r"^(Reporting time frame|The total number|The number of|Measure$)", re.I)
+ABUSE_HEADER_FRAGMENT_RE = re.compile(
+    r"^(Report/\s*Allegation|Provider|Approx(imate|\.)?(\s+(incident\s+)?date.*)?|incident|date|Abuse type|"
+    r"Did (physical|phys\.|reportable).*|injury, sexual|abuse or death|result\?|"
+    r"Nature of abuse and brief narrative|Corrective actions taken or ordered by the|"
+    r"Department, and outcome)$",
+    re.I,
+)
+ABUSE_NARRATIVE_LABEL_RE = re.compile(r"^Nature of abuse and brief\s+narrative\s*:?\s*", re.I)
+ABUSE_CORRECTIVE_LABEL_RE = re.compile(
+    r"^Corrective actions taken\s+or ordered by the\s+Department, and\s+outcome\s*:?\s*", re.I
+)
+ABUSE_KV_LABELS = [
+    (re.compile(r"^Report/\s*allegation$", re.I), "report_number"),
+    (re.compile(r"^Provider$", re.I), "provider"),
+    (re.compile(r"^Approximate (incident )?date( abuse occurred)?$", re.I), "incident_date"),
+    (re.compile(r"^Abuse type$", re.I), "abuse_type"),
+    (re.compile(r"^Did (physical|reportable) injury, sexual abuse or death result\?$", re.I), "injury_result"),
+    (re.compile(r"^Nature of abuse and brief narrative:?$", re.I), "narrative"),
+    (re.compile(r"^Corrective actions taken or ordered by the Department, and outcome:?$", re.I), "corrective_actions"),
+]
+# Abuse types as ORS 418.257 names them, for the early reports that have no
+# "Abuse type" column and only name it in the narrative.
+ABUSE_TYPES = [
+    "Neglect", "Sexual Abuse", "Physical Abuse", "Wrongful Restraint", "Involuntary Seclusion",
+    "Threat of Harm", "Financial Exploitation", "Verbal Abuse", "Mental Injury", "Abandonment",
+    "Sexual Exploitation", "Maltreatment",
+]
+
+
+# Facility name each provider's abuse reports are filed under. ODHS spells the
+# same provider several ways and often names only the agency. A name that
+# matches a site-visit program (same spelling as its facility_name) puts the
+# abuse reports beside that program's visits on /or-reports/; an agency named
+# without a program stays at the agency, never guessed onto one of its homes.
+# A provider not listed is filed under the name as printed and logged.
+ABUSE_REPORTS_SOURCE_PAGE = f"{BASE_URL}/Pages/reports.aspx"
+ABUSE_REPORTS_STATE_KEY = "ODHS quarterly legislative reports"
+ABUSE_REPORTS_PROGRAM_NAME = "ODHS substantiated abuse reports"
+ABUSE_REPORTS_CATEGORY = "Child caring agency"
+ABUSE_PROVIDER_NAMES = {
+    "adapt": "ADAPT",
+    "bob belloni ranch": "Bob Belloni Ranch",
+    "connections365": "Connections365",
+    "dragonfly adventures": "Dragonfly Adventures",
+    "janus youth programs": "Janus Youth Programs",
+    "janus youth programs cordero house": "Janus Youth Programs - Cordero House",
+    "jasper mountain": "Jasper Mountain",
+    "josephine county juvenile shelter": "Josephine County Juvenile Shelter",
+    "looking glass community services": "Looking Glass Community Services",
+    "madrona recovery": "Madrona Recovery",
+    "maple star oregon": "Maple Star Oregon",
+    "team bailey": "Team Bailey",
+    "trillium family services": "Trillium Family Services",
+    "youth progress association": "Youth Progress Association",
+    "albertina kerr": "Albertina Kerr Centers",
+    "albertina kerr centers": "Albertina Kerr Centers",
+    "family solutions": "Family Solutions",
+    "greater oregon behavioral health inc": "Greater Oregon Behavioral Health Inc. (GOBHI)",
+    "greater oregon behaviorial health inc": "Greater Oregon Behavioral Health Inc. (GOBHI)",
+    "j bar j": "J Bar J Youth Services",
+    "j bar j youth services": "J Bar J Youth Services",
+    "jasper safe center": "Jasper Mountain - SAFE Center",
+    "jasper mountain safe center": "Jasper Mountain - SAFE Center",
+    "looking glass regional crisis center": "Looking Glass Community Services - RCC",
+    "looking glass pathway for girls": "Looking Glass Community Services - Pathway for Girls",
+    "morrison center": "Morrison Child and Family Services",
+    "nara youth residential treatment center": "Native American Rehabilitation Association of the Northwest, Inc. (NARA)",
+    "new roads community counseling solutions": "Community Counseling Solutions - New Roads",
+    "next door inc": "The Next Door",
+    "parrott creek child and family services": "Parrott Creek Children and Family Svs",
+    "rimrock trails": "Rimrock Trails Treatment Services",
+    "rimrock trails atc": "Rimrock Trails Treatment Services",
+    "st marys home": "St Mary's Home for Boys",
+    "st mary s home for boys": "St Mary's Home for Boys",
+    "trillium": "Trillium Family Services",
+    "trillium farm home": "Trillium Family Services - Children's Farm Home",
+    "trillium children s farm home": "Trillium Family Services - Children's Farm Home",
+    "trillium parry center": "Parry Center",
+    "trillium sagebrush": "Trillium Family Services - Sagebrush",
+}
+
+
+def _abuse_cell(value: Optional[str]) -> str:
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def _abuse_join(existing: str, more: str) -> str:
+    return f"{existing} {more}".strip() if more else existing
+
+
+def _abuse_is_header(cell: str) -> bool:
+    """A column heading or a bare field label, never report text."""
+    return bool(
+        ABUSE_HEADER_FRAGMENT_RE.match(cell)
+        or (ABUSE_NARRATIVE_LABEL_RE.match(cell) and not ABUSE_NARRATIVE_LABEL_RE.sub("", cell))
+        or (ABUSE_CORRECTIVE_LABEL_RE.match(cell) and not ABUSE_CORRECTIVE_LABEL_RE.sub("", cell))
+    )
+
+
+def _abuse_stray(cell: str) -> bool:
+    """A lone word the table grid cut off a neighbouring column's line."""
+    return bool(cell) and " " not in cell and not re.search(r"[.!?]$", cell)
+
+
+def _abuse_type_label(raw: str) -> str:
+    """"WrongfulRestraint" (the type printed after the report number, its
+    line break lost) -> "Wrongful Restraint"."""
+    squeezed = re.sub(r"\s+", "", raw or "").lower()
+    for name in ABUSE_TYPES:
+        if name.replace(" ", "").lower() == squeezed:
+            return name
+    return (raw or "").strip()
+
+
+def parse_abuse_report_tables(tables: List[List[List[Optional[str]]]]) -> List[Dict[str, str]]:
+    """Entries of one legislative report, from its tables in reading order.
+
+    Each entry: report_number, allegation_count, provider, incident_date,
+    abuse_type, injury_result, narrative, corrective_actions (all as printed).
+    """
+    entries: List[Dict[str, str]] = []
+    current: Optional[Dict[str, str]] = None
+    expect_narrative = False   # a "Nature of abuse" header row was read; the texts follow
+    last_kv_field = ""         # label/value layout: the field a bare continuation row extends
+    kv_mode = False            # the current entry is in the label/value layout
+
+    def start(report_number: str) -> Dict[str, str]:
+        number = _abuse_cell(report_number)
+        count = ""
+        m = re.search(r"\((\d+)\s*allegations?\)", number, re.I)
+        if m:
+            count = m.group(1)
+            number = number[:m.start()].strip()
+        # 2023 Q3 and 2024 Q1 print the abuse type after the number: "CCA230031/ Neglect".
+        number, _, abuse_type = number.partition("/")
+        entry = {
+            "report_number": number.replace(" ", ""), "allegation_count": count, "provider": "",
+            "incident_date": "", "abuse_type": _abuse_type_label(abuse_type), "injury_result": "", "narrative": "",
+            "corrective_actions": "",
+        }
+        entries.append(entry)
+        return entry
+
+    for table in tables:
+        for row in table:
+            present = [_abuse_cell(c) for c in row if c is not None]
+            cells = [c for c in present if c]
+            if not cells:
+                continue
+            if ABUSE_STATS_ROW_RE.match(cells[0]):
+                # The restraint and seclusion totals close the report.
+                return entries
+
+            # Label/value layout (2025 Q3): one field per row.
+            kv_field = next((f for rx, f in ABUSE_KV_LABELS if rx.match(cells[0])), "")
+            if kv_field == "report_number" and len(cells) == 2 and ABUSE_REPORT_ID_RE.search(cells[1]):
+                current = start(cells[1])
+                expect_narrative, last_kv_field, kv_mode = False, "report_number", True
+                continue
+            if kv_field and kv_field != "report_number" and current is not None and (
+                    (len(cells) == 2 and not _abuse_is_header(cells[1])) or (len(cells) == 1 and kv_mode)):
+                value = cells[1] if len(cells) == 2 else ""
+                current[kv_field] = _abuse_join(current[kv_field], value)
+                expect_narrative, last_kv_field = False, kv_field
+                continue
+
+            # Column layouts: the row under the header holds the report.
+            if ABUSE_REPORT_ID_RE.match(cells[0]) and len(cells) >= 3:
+                current = start(cells[0])
+                expect_narrative, last_kv_field, kv_mode = False, "", False
+                current["provider"] = cells[1]
+                current["incident_date"] = cells[2]
+                if len(cells) >= 5:
+                    current["abuse_type"] = cells[3]
+                    current["injury_result"] = cells[4]
+                elif len(cells) == 4:
+                    current["injury_result"] = cells[3]
+                continue
+
+            # 2021-2024 Q3: label and text share a cell.
+            labelled = False
+            for cell in cells:
+                if ABUSE_NARRATIVE_LABEL_RE.match(cell) and ABUSE_NARRATIVE_LABEL_RE.sub("", cell):
+                    if current is not None:
+                        current["narrative"] = _abuse_join(current["narrative"], ABUSE_NARRATIVE_LABEL_RE.sub("", cell))
+                    labelled = True
+                elif ABUSE_CORRECTIVE_LABEL_RE.match(cell) and ABUSE_CORRECTIVE_LABEL_RE.sub("", cell):
+                    if current is not None:
+                        current["corrective_actions"] = _abuse_join(
+                            current["corrective_actions"], ABUSE_CORRECTIVE_LABEL_RE.sub("", cell))
+                    labelled = True
+            if labelled:
+                expect_narrative, last_kv_field = False, ""
+                continue
+
+            if all(_abuse_is_header(c) for c in cells) or (
+                    len(cells) >= 3 and re.match(r"^Report/\s*Allegation$", cells[0], re.I)):
+                if any(ABUSE_NARRATIVE_LABEL_RE.match(c) for c in cells):
+                    expect_narrative = True
+                continue
+
+            if current is None:
+                continue
+            # Narrative | corrective actions, or the rest of them after a page break.
+            if len(present) == 2:
+                if last_kv_field and not present[0]:
+                    current[last_kv_field] = _abuse_join(current[last_kv_field], present[1])
+                else:
+                    if not _abuse_stray(present[0]):
+                        current["narrative"] = _abuse_join(current["narrative"], present[0])
+                    if not _abuse_stray(present[1]):
+                        current["corrective_actions"] = _abuse_join(current["corrective_actions"], present[1])
+                expect_narrative = False
+            elif len(cells) == 1 and (expect_narrative or current["narrative"]) and not last_kv_field:
+                current["narrative"] = _abuse_join(current["narrative"], cells[0])
+                expect_narrative = False
+            elif len(cells) == 1 and last_kv_field:
+                current[last_kv_field] = _abuse_join(current[last_kv_field], cells[0])
+
+    return entries
+
+
+def extract_abuse_report_entries(path: Path) -> Dict[str, Any]:
+    """Entries of a legislative report PDF, plus how many report numbers its
+    text holds so a layout the table reader misses shows up in the log."""
+    try:
+        with pdfplumber.open(path) as pdf:
+            tables: List[List[List[Optional[str]]]] = []
+            texts: List[str] = []
+            for page in pdf.pages:
+                tables.extend(page.extract_tables() or [])
+                texts.append(page.extract_text() or "")
+    except Exception as exc:
+        logger.warning(f"  PDF extract failed for {path.name}: {exc}")
+        return {}
+    text = "\n".join(texts)
+    cut = re.search(r"Restraint and Involuntary Seclusion Report|Reporting time frame", text)
+    body = text[:cut.start()] if cut else text
+    numbers = {m.group(0).replace(" ", "") for m in ABUSE_REPORT_ID_RE.finditer(body)}
+    return {"text": text, "entries": parse_abuse_report_tables(tables), "numbers_in_text": len(numbers)}
+
+
+def abuse_types_of(entry: Dict[str, str]) -> List[str]:
+    """Abuse types of an entry: its "Abuse type" cell, else the ones its
+    narrative names."""
+    source = entry.get("abuse_type") or entry.get("narrative") or ""
+    found = [(m.start(), name) for name in ABUSE_TYPES
+             for m in [re.search(rf"\b{re.escape(name)}\b", source, re.I)] if m]
+    return [name for _, name in sorted(found)]
+
+
+def abuse_incident_date(printed: str, quarter: str) -> str:
+    """MM/DD/YYYY for the report row: the incident date when one is printed
+    ("03/2021" = the 1st), else the first day of the report's quarter."""
+    raw = (printed or "").strip()
+    m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", raw)
+    if m:
+        return normalize_report_date(m.group(0))
+    m = re.search(r"\b(\d{1,2})/(\d{4})\b", raw)
+    if m and 1 <= int(m.group(1)) <= 12:
+        return f"{int(m.group(1)):02d}/01/{m.group(2)}"
+    m = re.search(r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b.*?\b((?:19|20)\d{2})\b", raw, re.I)
+    if m:
+        month = "jan feb mar apr may jun jul aug sep oct nov dec".split().index(m.group(1).lower()) + 1
+        return f"{month:02d}/01/{m.group(2)}"
+    if re.fullmatch(r"(?:19|20)\d{2}", raw):
+        return f"01/01/{raw}"
+    m = re.fullmatch(r"(\d{4})-?Q([1-4])", (quarter or "").strip(), re.I)
+    if m:
+        return f"{(int(m.group(2)) - 1) * 3 + 1:02d}/01/{m.group(1)}"
+    return ""
+
+
+def norm_provider_name(name: str) -> str:
+    n = (name or "").lower().replace("’", "'")
+    n = re.sub(r"\([^)]*\)", " ", n)
+    n = re.sub(r"\s*&\s*", " and ", n)
+    n = re.sub(r"[^a-z0-9\s]", " ", n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+def abuse_provider_facility_name(provider: str) -> Tuple[str, bool]:
+    """(facility name the provider's abuse reports go under, known provider?)."""
+    known = ABUSE_PROVIDER_NAMES.get(norm_provider_name(provider))
+    if known:
+        return known, True
+    printed = re.sub(r"\s*[–—]\s*", " - ", (provider or "").replace("’", "'")).strip()
+    return printed, False
+
+
+def build_abuse_report(entry: Dict[str, str], source: Dict[str, str]) -> Dict:
+    """One substantiated abuse report as an inspections API report record.
+    `source` is the quarterly PDF: quarter, pdf_url, file_name."""
+    types = abuse_types_of(entry)
+    type_label = ", ".join(types) or entry.get("abuse_type", "")
+    harm = entry.get("injury_result", "")
+    lines = [
+        f"Substantiated abuse report {entry['report_number']}",
+        f"Provider: {entry['provider']}",
+        f"Approximate incident date: {entry['incident_date']}",
+        f"Abuse type: {type_label}" if type_label else "",
+        f"Did reportable injury, sexual abuse or death result? {harm}" if harm else "",
+        f"Nature of abuse: {entry['narrative']}" if entry["narrative"] else "",
+        f"Corrective actions and outcome: {entry['corrective_actions']}" if entry["corrective_actions"] else "",
+        f"Source: ODHS Child Caring Agency Legislative Report, {source['quarter']}",
+    ]
+    raw_content = "\n".join(line for line in lines if line)
+    categories = {
+        "kind": "complaint",
+        "report_type": "Substantiated abuse report",
+        "finding": "Substantiated",
+        "report_number": entry["report_number"],
+        "provider": entry["provider"],
+        "incident_date": entry["incident_date"],
+        "abuse_type": type_label,
+        "abuse_types": types,
+        "allegation_count": entry.get("allegation_count", ""),
+        "injury_result": harm,
+        "harm_resulted": bool(re.match(r"\s*yes", harm, re.I)),
+        "narrative": entry["narrative"],
+        "corrective_actions": entry["corrective_actions"],
+        "quarter": source["quarter"],
+        "source_page": ABUSE_REPORTS_SOURCE_PAGE,
+        "pdf_url": source["pdf_url"],
+        "file_name": source["file_name"],
+    }
+    return {
+        "report_id": entry["report_number"],
+        "report_date": abuse_incident_date(entry["incident_date"], source["quarter"]),
+        "report_url": source["pdf_url"],
+        "pdf_url": source["pdf_url"],
+        "raw_content": raw_content,
+        "content_length": len(raw_content),
+        "summary": f"Substantiated abuse report: {type_label}" if type_label else "Substantiated abuse report",
+        "categories": categories,
+    }
+
+
+def build_abuse_facilities(parsed_quarters: List[Tuple[Dict[str, str], List[Dict[str, str]]]]) -> List[Dict]:
+    """Facility payloads from [(source, entries)] of every quarterly report.
+    One facility per provider; a report number printed in two quarters is
+    kept once, from the later one."""
+    by_facility: Dict[str, Dict[str, Dict]] = defaultdict(dict)
+    for source, entries in parsed_quarters:
+        for entry in entries:
+            if not entry.get("report_number") or not entry.get("provider"):
+                logger.warning(f"  {source['file_name']}: skipped an entry without a report number or provider")
+                continue
+            name, _ = abuse_provider_facility_name(entry["provider"])
+            by_facility[name][entry["report_number"]] = build_abuse_report(entry, source)
+
+    facilities = []
+    for name in sorted(by_facility):
+        reports = sorted(
+            by_facility[name].values(),
+            key=lambda report: (sort_key_for_report_date(report["report_date"]), report["report_id"]),
+        )
+        facilities.append({
+            "facility_info": {
+                "facility_name": name,
+                # Its own row beside the program's site-visit row (the API keys a
+                # facility on name + program_name), so posting abuse reports never
+                # overwrites a licensed program's details.
+                "program_name": ABUSE_REPORTS_PROGRAM_NAME,
+                "program_category": ABUSE_REPORTS_CATEGORY,
+                "full_address": "",
+                "phone": "",
+                "bed_capacity": "",
+                "executive_director": "",
+                "license_exp_date": "",
+                "relicense_visit_date": "",
+                "action": "",
+                "agency_name": name,
+            },
+            "reports": reports,
+        })
+    return facilities
 
 
 def extract_checklist_findings(path: Path) -> Optional[List[Dict[str, str]]]:
@@ -1213,6 +1614,99 @@ class ORFacilityScraper:
         )
         return self.all_facilities, new_ids
 
+    def _fetch_legislative_rows(self) -> List[Dict]:
+        """Rows of the quarterly legislative reports, oldest quarter first."""
+        xml_bytes = self._post_soap(
+            service_name="Lists",
+            action_name="GetListItems",
+            inner_xml=(
+                f"<listName>{REPORT_LIBRARY_NAME}</listName>"
+                "<query><Query><Where><Contains>"
+                '<FieldRef Name="FileLeafRef" /><Value Type="Text">-leg</Value>'
+                "</Contains></Where></Query></query>"
+                "<rowLimit>2000</rowLimit>"
+            ),
+            referer_path="/Pages/reports.aspx",
+        )
+        root = ET.fromstring(xml_bytes)
+        rows = []
+        for elem in root.iter():
+            if not elem.tag.endswith("row"):
+                continue
+            row = dict(elem.attrib)
+            file_name = sharepoint_lookup_label(row.get("ows_FileLeafRef"))
+            # The file name is the steady part ("2026q2-leg.pdf"); the row's type
+            # columns are left blank on some quarters.
+            m = re.fullmatch(r"(\d{4})q([1-4])-leg\.pdf", file_name, re.I)
+            if not m:
+                continue
+            rows.append({
+                "row_id": clean_text(row.get("ows_ID")),
+                "modified": clean_text(row.get("ows_Modified")),
+                "quarter": f"{m.group(1)}-Q{m.group(2)}",
+                "file_name": file_name,
+                "pdf_url": build_pdf_url(row.get("ows_FileRef")),
+            })
+        rows.sort(key=lambda r: r["quarter"])
+        logger.info(f"Abuse reports: {len(rows)} quarterly legislative reports listed")
+        return rows
+
+    def scrape_abuse_reports(self, seen: Optional[Dict[str, Set[str]]] = None
+                             ) -> Tuple[List[Dict], Dict[str, List[str]]]:
+        """Substantiated abuse reports from the quarterly legislative reports
+        not read yet. State keeps each quarterly PDF by row id and modified
+        time, so a quarter ODHS reissues is read again."""
+        seen_keys = (seen or {}).get(ABUSE_REPORTS_STATE_KEY, set())
+        parsed_quarters: List[Tuple[Dict[str, str], List[Dict[str, str]]]] = []
+        new_keys: List[str] = []
+        unknown: Set[str] = set()
+
+        for row in self._fetch_legislative_rows():
+            state_key = f"{row['row_id']}@{row['modified']}"
+            if state_key in seen_keys:
+                continue
+            # A reissued quarter keeps its file name, so the archived copy and
+            # the cached extract carry the day ODHS last changed it.
+            stamp = re.sub(r"\D", "", row["modified"])[:8]
+            archive_name = row["file_name"].replace(".pdf", f"_{stamp}.pdf") if stamp else row["file_name"]
+            extracted = extract_with_cache(
+                self.reports,
+                archive_name,
+                fetch=lambda row=row: self.download_pdf(row["pdf_url"], row["file_name"]),
+                extract=extract_abuse_report_entries,
+                version=ABUSE_EXTRACT_VERSION,
+            ) or {}
+            entries = extracted.get("entries") or []
+            in_text = extracted.get("numbers_in_text", 0)
+            if "entries" not in extracted:
+                logger.warning(f"  {row['file_name']}: could not be read; it will be retried next run")
+                continue
+            if len(entries) != in_text:
+                # Not marked read: a layout the table reader does not know yet.
+                logger.warning(
+                    f"  {row['file_name']}: read {len(entries)} abuse reports but its text holds "
+                    f"{in_text} report numbers; posting what was read, the quarter will be retried"
+                )
+            else:
+                new_keys.append(state_key)
+            logger.info(f"  {row['quarter']}: {len(entries)} substantiated abuse report(s)")
+            for entry in entries:
+                if not abuse_provider_facility_name(entry.get("provider", ""))[1]:
+                    unknown.add(entry.get("provider", ""))
+            parsed_quarters.append((row, entries))
+
+        facilities = build_abuse_facilities(parsed_quarters)
+        for provider in sorted(p for p in unknown if p):
+            logger.warning(
+                f"  New abuse report provider, filed under its printed name: {provider} "
+                "(add it to ABUSE_PROVIDER_NAMES if it is a program already listed)"
+            )
+        logger.info(
+            f"Abuse reports: {sum(len(f['reports']) for f in facilities)} report(s) "
+            f"for {len(facilities)} provider(s)"
+        )
+        return facilities, ({ABUSE_REPORTS_STATE_KEY: new_keys} if new_keys else {})
+
 
 def save_to_api(facilities: List[Dict]) -> bool:
     result = post_facilities_to_api(
@@ -1229,7 +1723,10 @@ def save_to_api(facilities: List[Dict]) -> bool:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scrape Oregon ODHS RC/TBS report PDFs")
+    parser = argparse.ArgumentParser(
+        description="Scrape Oregon ODHS RC/TBS report PDFs and the substantiated abuse reports "
+                    "in the quarterly legislative reports"
+    )
     parser.add_argument(
         "--views",
         nargs="+",
@@ -1248,6 +1745,20 @@ def main():
         help=argparse.SUPPRESS,
     )
     parser.add_argument(
+        "--no-abuse-reports",
+        action="store_true",
+        help="Skip the substantiated abuse reports (quarterly legislative reports)",
+    )
+    parser.add_argument(
+        "--abuse-reports-only",
+        action="store_true",
+        help="Only the substantiated abuse reports, no site visit reports",
+    )
+    parser.add_argument(
+        "--out",
+        help="Also write the facilities that would be posted to this JSON file",
+    )
+    parser.add_argument(
         "--full",
         action="store_true",
         help=f"Ignore {STATE_FILE} and re-scan all reports",
@@ -1264,9 +1775,22 @@ def main():
     seen = {} if full else seen_from_state(state)
 
     scraper = ORFacilityScraper()
-    facilities, new_ids = scraper.scrape(view_codes=args.views, seen=seen)
+    facilities: List[Dict] = []
+    new_ids: Dict[str, List[str]] = {}
+    if not args.abuse_reports_only:
+        facilities, new_ids = scraper.scrape(view_codes=args.views, seen=seen)
+    if not args.no_abuse_reports:
+        abuse_facilities, abuse_ids = scraper.scrape_abuse_reports(seen=seen)
+        facilities = facilities + abuse_facilities
+        new_ids.update(abuse_ids)
 
     facilities_to_post = [f for f in facilities if f["reports"]]
+    if args.out:
+        Path(args.out).write_text(
+            json.dumps({"state": "OR", "facilities": facilities_to_post}, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        logger.info(f"Wrote {len(facilities_to_post)} facilities to {args.out}")
     if not facilities_to_post:
         logger.info("No new reports since last run")
         return

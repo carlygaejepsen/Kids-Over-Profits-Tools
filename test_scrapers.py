@@ -645,6 +645,162 @@ class TestOregonScraper(unittest.TestCase):
             ['899', '1281']
         )
 
+    # The quarterly legislative reports' three table layouts, as pdfplumber
+    # returns them (None = a merged cell).
+    ABUSE_TABLES_2021 = [
+        [
+            ['Report/ Allegation', 'Provider', 'Approximate Date\nAbuse Occurred',
+             'Did physical injury,\nsexual abuse or death\nresult?'],
+            ['CCA210047 (1\nallegation)', 'Example Ranch', '03/2021', 'No'],
+            ['Nature of Abuse and Brief Narrative:\nOne allegation of neglect was substantiated\nagainst a staff member.',
+             None,
+             'Corrective Actions Taken or Ordered by the\nDepartment, and Outcome:\nThe employee resigned.', None],
+        ],
+        # the rest of the entry, after a page break
+        [['The staff member assisted a\nyouth in eloping.', 'ODHS provided feedback.']],
+        [
+            ['Report/ Allegation', 'Provider', 'Approximate Date\nAbuse Occurred',
+             'Did physical injury,\nsexual abuse or death\nresult?'],
+            ['CCA230044/Wrongful\nRestraint', 'Trillium – Children’s\nFarm Home', '06/2023', 'Yes'],
+            ['Nature of Abuse and Brief Narrative:\nOne staff member engaged in a Wrongful Restraint.', None,
+             'Corrective Actions Taken or Ordered by the\nDepartment, and Outcome:\nEmployment terminated.', None],
+            # a word the grid cut off the other column's line
+            ['When', None, '', None],
+        ],
+        [
+            ['Reporting time frame (indicate which\nquarter in months and year):', None, None, 'Q4', None, None],
+            ['The total number of restraints used in\nprograms that quarter.', None, None, '788', None, None],
+        ],
+    ]
+    ABUSE_TABLES_2026 = [
+        [
+            ['Report/allegation', 'Provider', 'Approximate\nincident\ndate', 'Abuse type', '', 'Did reportable', ''],
+            [None, None, None, None, None, 'injury, sexual', None],
+            [None, None, None, None, None, 'abuse or death', None],
+            [None, None, None, None, None, 'result?', None],
+            ['CCA250124', 'Madrona Recovery', '12/13/2025', 'Involuntary\nSeclusion, Neglect', 'No', None, None],
+        ],
+        [['Approximate'], ['incident'], ['date']],
+        [
+            ['', 'Nature of abuse and brief narrative', '', '', 'Corrective actions taken or ordered by the', ''],
+            [None, '', None, None, 'Department, and outcome', None],
+            ['One allegation of Neglect was substantiated on a\nstaff.', None, None,
+             'The employee was disciplined.', None, None],
+        ],
+        [['The staff failed to conduct\nthe required checks.', '']],
+        [['Reporting time frame (months and year)', 'January 2026'], ['The total number of restraints used in\nprograms.', '9']],
+    ]
+    ABUSE_TABLES_2025Q3 = [
+        [
+            ['', 'Report/allegation', '', '', 'CCA250034', ''],
+            ['Provider', None, None, 'Janus Youth Programs', None, None],
+            ['Approximate incident\ndate', None, None, '03/01/2025', None, None],
+            ['Abuse type', None, None, 'Threat of Harm and Sexual Abuse', None, None],
+        ],
+        [
+            ['Did reportable injury,\nsexual abuse or death\nresult?', 'Yes, sexual abuse'],
+            ['Nature of abuse and brief\nnarrative', 'Two allegations of sexual abuse were substantiated.'],
+            ['Corrective actions taken\nor ordered by the\nDepartment, and\noutcome', ''],
+        ],
+        [['Measure', 'Number'], ['The total number of restraints used in programs.', '2556']],
+    ]
+
+    def test_oregon_abuse_reports_read_in_every_layout(self):
+        from or_scraper import parse_abuse_report_tables, abuse_types_of
+
+        early = parse_abuse_report_tables(self.ABUSE_TABLES_2021)
+        self.assertEqual([e['report_number'] for e in early], ['CCA210047', 'CCA230044'])
+        self.assertEqual(early[0]['allegation_count'], '1')
+        self.assertEqual(early[0]['provider'], 'Example Ranch')
+        self.assertEqual(early[0]['injury_result'], 'No')
+        self.assertEqual(
+            early[0]['narrative'],
+            'One allegation of neglect was substantiated against a staff member. '
+            'The staff member assisted a youth in eloping.'
+        )
+        self.assertEqual(early[0]['corrective_actions'], 'The employee resigned. ODHS provided feedback.')
+        self.assertEqual(abuse_types_of(early[0]), ['Neglect'])
+        # the type printed after the number, and no stray "When" in the narrative
+        self.assertEqual(early[1]['abuse_type'], 'Wrongful Restraint')
+        self.assertEqual(early[1]['narrative'], 'One staff member engaged in a Wrongful Restraint.')
+
+        current = parse_abuse_report_tables(self.ABUSE_TABLES_2026)
+        self.assertEqual(len(current), 1)
+        self.assertEqual(current[0]['provider'], 'Madrona Recovery')
+        self.assertEqual(abuse_types_of(current[0]), ['Involuntary Seclusion', 'Neglect'])
+        self.assertEqual(current[0]['injury_result'], 'No')
+        self.assertEqual(
+            current[0]['narrative'],
+            'One allegation of Neglect was substantiated on a staff. The staff failed to conduct the required checks.'
+        )
+        self.assertEqual(current[0]['corrective_actions'], 'The employee was disciplined.')
+
+        rows = parse_abuse_report_tables(self.ABUSE_TABLES_2025Q3)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['report_number'], 'CCA250034')
+        self.assertEqual(rows[0]['provider'], 'Janus Youth Programs')
+        self.assertEqual(rows[0]['incident_date'], '03/01/2025')
+        self.assertEqual(rows[0]['injury_result'], 'Yes, sexual abuse')
+        self.assertEqual(rows[0]['narrative'], 'Two allegations of sexual abuse were substantiated.')
+        self.assertEqual(rows[0]['corrective_actions'], '')
+        self.assertEqual(abuse_types_of(rows[0]), ['Threat of Harm', 'Sexual Abuse'])
+
+    def test_oregon_abuse_report_dates(self):
+        from or_scraper import abuse_incident_date
+
+        self.assertEqual(abuse_incident_date('9/26/2021', '2021-Q4'), '09/26/2021')
+        self.assertEqual(abuse_incident_date('12/25/2021- 01/25/2022', '2022-Q1'), '12/25/2021')
+        self.assertEqual(abuse_incident_date('03/2021', '2021-Q4'), '03/01/2021')
+        self.assertEqual(abuse_incident_date('April/May 2021', '2023-Q2'), '04/01/2021')
+        self.assertEqual(abuse_incident_date('2022', '2023-Q3'), '01/01/2022')
+        # no date printed: the first day of the report's quarter
+        self.assertEqual(abuse_incident_date('Unknown(historical)', '2021-Q4'), '10/01/2021')
+        self.assertEqual(abuse_incident_date('Multiple', '2024-Q3'), '07/01/2024')
+
+    def test_oregon_abuse_reports_become_complaint_records(self):
+        from or_scraper import (
+            ABUSE_REPORTS_PROGRAM_NAME, build_abuse_facilities, parse_abuse_report_tables,
+        )
+
+        source_old = {'quarter': '2021-Q4', 'pdf_url': 'https://www.oregon.gov/x/2021q4-leg.pdf',
+                      'file_name': '2021q4-leg.pdf'}
+        source_new = {'quarter': '2026-Q1', 'pdf_url': 'https://www.oregon.gov/x/2026q1-leg.pdf',
+                      'file_name': '2026q1-leg.pdf'}
+        facilities = build_abuse_facilities([
+            (source_old, parse_abuse_report_tables(self.ABUSE_TABLES_2021)),
+            (source_new, parse_abuse_report_tables(self.ABUSE_TABLES_2026)),
+            # the same report printed again in a later quarter is kept once
+            (source_new, parse_abuse_report_tables(self.ABUSE_TABLES_2021)[:1]),
+        ])
+        by_name = {f['facility_info']['facility_name']: f for f in facilities}
+        self.assertEqual(
+            sorted(by_name),
+            ['Example Ranch', 'Madrona Recovery', "Trillium Family Services - Children's Farm Home"]
+        )
+        for facility in facilities:
+            # never the program's own site-visit row
+            self.assertEqual(facility['facility_info']['program_name'], ABUSE_REPORTS_PROGRAM_NAME)
+
+        ranch = by_name['Example Ranch']['reports']
+        self.assertEqual(len(ranch), 1)
+        self.assertEqual(ranch[0]['categories']['quarter'], '2026-Q1')
+
+        report = by_name['Madrona Recovery']['reports'][0]
+        self.assertEqual(report['report_id'], 'CCA250124')
+        self.assertEqual(report['report_date'], '12/13/2025')
+        self.assertEqual(report['report_url'], source_new['pdf_url'])
+        self.assertEqual(report['summary'], 'Substantiated abuse report: Involuntary Seclusion, Neglect')
+        cats = report['categories']
+        self.assertEqual(cats['kind'], 'complaint')
+        self.assertEqual(cats['finding'], 'Substantiated')
+        self.assertEqual(cats['abuse_types'], ['Involuntary Seclusion', 'Neglect'])
+        self.assertFalse(cats['harm_resulted'])
+        self.assertIn('Nature of abuse: One allegation of Neglect', report['raw_content'])
+
+        farm = by_name["Trillium Family Services - Children's Farm Home"]['reports'][0]
+        self.assertTrue(farm['categories']['harm_resulted'])
+        self.assertEqual(farm['categories']['provider'], 'Trillium – Children’s Farm Home')
+
 
 if __name__ == '__main__':
     # Run the test suite
