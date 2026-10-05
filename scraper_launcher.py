@@ -44,6 +44,7 @@ SCRAPERS = [
     {"name": "Arkansas",    "key": "AR", "script": TOOLS_DIR / "ar_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Arizona",     "key": "AZ", "script": TOOLS_DIR / "az_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "California",  "key": "CA", "script": TOOLS_DIR / "ca_scraper.py",               "cwd": TOOLS_DIR},
+    {"name": "Colorado",    "key": "CO", "script": TOOLS_DIR / "co_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Connecticut", "key": "CT", "script": TOOLS_DIR / "ct_scraper.py",               "cwd": TOOLS_DIR},
     {"name": "Florida (DJJ)", "key": "FL", "script": TOOLS_DIR / "fl_scraper.py",              "cwd": TOOLS_DIR, "args": ["--source", "djj"]},
     {"name": "Georgia",     "key": "GA", "script": TOOLS_DIR / "ga_scraper.py",               "cwd": TOOLS_DIR},

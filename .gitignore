@@ -38,6 +38,7 @@ scraper_launcher_state.json
 .md_state.json
 .ia_state.json
 .hi_state.json
+.co_state.json
 
 # Local PDF caches
 nh_pdfs/
