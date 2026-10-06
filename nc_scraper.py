@@ -206,6 +206,9 @@ def fetch_directory(session: requests.Session) -> List[Dict[str, str]]:
         fid_match = re.search(r"fid=(\d+)", href)
         if not fid_match:
             continue
+        # The directory is one table per county, under <h3>Alamance County</h3>.
+        county_heading = row.find_previous("h3")
+        county = re.sub(r"\s+County$", "", county_heading.get_text(" ", strip=True)) if county_heading else ""
         entries.append(
             {
                 "fid": fid_match.group(1),
@@ -213,95 +216,161 @@ def fetch_directory(session: requests.Session) -> List[Dict[str, str]]:
                 "address": cells[1],
                 "city": cells[2],
                 "zip": cells[3],
+                "county": county,
                 "url": href,
             }
         )
     return entries
 
 
+STREET_WORDS = {
+    "street": "st", "road": "rd", "drive": "dr", "avenue": "ave", "av": "ave", "lane": "ln", "court": "ct",
+    "circle": "cir", "place": "pl", "boulevard": "blvd", "highway": "hwy", "parkway": "pkwy", "terrace": "ter",
+    "trail": "trl", "north": "n", "south": "s", "east": "e", "west": "w",
+}
+
+
+def norm_street(value: object) -> str:
+    """'723 North Fisher Street, Suite 2' -> '723 n fisher st'."""
+    text = re.sub(r"[^a-z0-9 ]+", " ", clean_text(value).lower())
+    text = re.split(r"\b(?:suite|ste|unit|apt|bldg|building|room)\b", text)[0]
+    return " ".join(STREET_WORDS.get(word, word) for word in text.split())
+
+
+def same_street(a: str, b: str) -> bool:
+    """Same house number and nearly the same street name."""
+    if not a or not b:
+        return False
+    num_a, _, rest_a = a.partition(" ")
+    num_b, _, rest_b = b.partition(" ")
+    if not re.match(r"^\d", num_a) or num_a != num_b:
+        return False
+    return rest_a == rest_b or SequenceMatcher(None, rest_a, rest_b).ratio() >= 0.8
+
+
+def same_name(a: str, b: str) -> bool:
+    """Name match without the old loose substring rule: a town name or a
+    company name alone inside another facility's name is not a match (that
+    is how 'Clinton' matched an adult day centre in Clinton)."""
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    shorter, longer = sorted((a, b), key=len)
+    if len(shorter.split()) >= 2 and len(shorter) >= 10 and re.search(rf"\b{re.escape(shorter)}\b", longer):
+        # The longer name may only add a home number or a site word, never a
+        # different home of the same company ("Falcon Crest 2" vs "Falcon Crest 3").
+        extra = re.sub(rf"\b{re.escape(shorter)}\b", " ", longer).split()
+        return not any(word.isdigit() for word in extra) and len(extra) <= 2
+    return SequenceMatcher(None, a, b).ratio() >= 0.92
+
+
 def score_match(record: Dict[str, object], entry: Dict[str, str]) -> float:
-    candidate_names = [clean_text(record.get("DBA Name")), clean_text(record.get("Name of Licensee Legal Name"))]
-    candidate_addresses = [
-        clean_text(record.get("Site Address")),
-        clean_text(record.get("Facility Address")),
-        clean_text(record.get("Site City")),
-        clean_text(record.get("Facility City")),
-    ]
-    candidate_name_blob = norm(" ".join(value for value in candidate_names if value))
-    candidate_address_blob = norm(
-        " ".join(
-            value
-            for value in [
-                clean_text(record.get("Site Address")),
-                clean_text(record.get("Site City")),
-                clean_text(record.get("Site Zip")),
-                clean_text(record.get("Facility Address")),
-                clean_text(record.get("Facility City")),
-                clean_text(record.get("Facility Zip")),
-            ]
-            if value
-        )
-    )
+    """0 = not this facility. A match needs the street address (house number
+    and street) in the same town or zip, or the facility's own name in the
+    same town or zip. County must agree when both sides have one."""
+    county = norm(record.get("County ") or record.get("County"))
+    if county and entry.get("county") and norm(entry["county"]) != county:
+        return 0.0
 
+    entry_street = norm_street(entry["address"])
+    entry_city = norm(entry["city"])
+    entry_zip = clean_text(entry["zip"])[:5]
     entry_name = norm(entry["name"])
-    entry_address = norm(f"{entry['address']} {entry['city']} {entry['zip']}")
 
-    best = 0.0
-    for cand in (candidate_name_blob, candidate_address_blob, *[norm(value) for value in candidate_names + candidate_addresses]):
-        if not cand:
-            continue
-        if cand == entry_name:
-            best = max(best, 100.0)
-        elif cand == entry_address:
-            best = max(best, 97.0)
-        elif cand in entry_name or entry_name in cand:
-            best = max(best, 94.0)
-        elif cand in entry_address or entry_address in cand:
-            best = max(best, 91.0)
-        else:
-            ratio = max(
-                SequenceMatcher(None, cand, entry_name).ratio(),
-                SequenceMatcher(None, cand, entry_address).ratio(),
-            )
-            if ratio >= 0.86:
-                best = max(best, 85.0 + (ratio * 15.0))
+    # Only the site address counts; the "Facility" (mailing) address is often a
+    # PO box or the company's office, shared by all its homes.
+    prefix = "Site" if clean_text(record.get("Site Address")) else "Facility"
+    street = norm_street(record.get(f"{prefix} Address"))
+    city = norm(record.get(f"{prefix} City"))
+    zip_code = clean_text(record.get(f"{prefix} Zip"))[:5]
+    if not ((city and city == entry_city) or (zip_code and zip_code == entry_zip)):
+        return 0.0
 
-    county = norm(record.get("County "))
-    if county and county in entry_address:
-        best += 1.0
-
-    return best
+    names = [norm(record.get("DBA Name")), norm(record.get("Name of Licensee Legal Name"))]
+    name_hit = same_name(names[0], entry_name) or bool(names[1] and names[1] == entry_name)
+    if same_street(street, entry_street):
+        return 100.0 if name_hit else 95.0
+    return 85.0 if name_hit else 0.0
 
 
-def match_directory_entry(record: Dict[str, object], entries: List[Dict[str, str]]) -> Optional[Dict[str, str]]:
-    if not entries:
-        return None
-
+def match_candidates(record: Dict[str, object], entries: List[Dict[str, str]], limit: int = 3) -> List[Tuple[float, Dict[str, str]]]:
+    """Directory entries that can be this license, best first. Each one is
+    still checked against the program codes on its page before it is used."""
     scored = [(score_match(record, entry), entry) for entry in entries]
+    scored = [item for item in scored if item[0] > 0]
     scored.sort(key=lambda item: item[0], reverse=True)
-    score, entry = scored[0]
-    if score < 80.0:
-        return None
-
-    return entry
+    return scored[:limit]
 
 
-def parse_facility_metadata(soup: BeautifulSoup) -> Dict[str, str]:
+# Program codes (10A NCAC 27G) whose rules are written for children or adolescents.
+# The page cuts Services at about 75 characters ("...Summer Developmental Day
+# Services for"), so the code decides, not the wording. .4100 (parents in
+# recovery, their children living with them) is a program for adults.
+YOUTH_PROGRAM_CODES = {
+    "27G.1300", "27G.1400", "27G.1700", "27G.1800", "27G.1900", "27G.2200", "27G.5200", "27G.5600B", "27G.5600D",
+}
+YOUTH_AGE_VALUES = {"MINOR", "MIN_ADL", "C&ADOL", "CHILD", "ADOL", "CHILDREN"}
+YOUTH_WORDS = re.compile(r"\b(child|children|adolescents?|minors?|youth|juveniles?)\b", re.I)
+
+
+def parse_program_rows(soup: BeautifulSoup) -> List[Dict[str, str]]:
+    """Every row of the facility page's program table (Program code,
+    Services, Age, Facility Type, Disability Category)."""
+    for table in soup.find_all("table"):
+        rows = table.find_all("tr")
+        if not rows:
+            continue
+        header = [cell.get_text(" ", strip=True).lower() for cell in rows[0].find_all(["td", "th"])]
+        if not header or not header[0].startswith("program code"):
+            continue
+        programs = []
+        for row in rows[1:]:
+            cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.find_all(["td", "th"])]
+            if len(cells) < 5 or not cells[0]:
+                continue
+            programs.append(
+                {"code": cells[0], "services": cells[1], "age": cells[2], "facility_type": cells[3], "disability": cells[4]}
+            )
+        return programs
+    return []
+
+
+def program_serves_minors(program: Dict[str, str]) -> bool:
+    if program.get("code") in YOUTH_PROGRAM_CODES:
+        return True
+    if clean_text(program.get("age")).upper() in YOUTH_AGE_VALUES:
+        return True
+    # "...for Individuals with Substance Abuse Disorders and their Children" is a
+    # program for parents; their children live there with them.
+    services = re.sub(r"\band their children\b", "", clean_text(program.get("services")), flags=re.I)
+    return bool(YOUTH_WORDS.search(services))
+
+
+def serves_minors(programs: List[Dict[str, str]], workbook_rows: Iterable[Dict[str, object]] = ()) -> bool:
+    """True when the facility page lists a program for children or
+    adolescents, or the licence workbook marks the same program code as
+    taking minors (Age Code MINOR / MIN_ADL; the page's Age column is mostly
+    blank). Adult-only facilities are never posted."""
+    if any(program_serves_minors(program) for program in programs):
+        return True
+    page_codes = {program["code"] for program in programs}
+    for row in workbook_rows:
+        if clean_text(row.get("Program Code")) in page_codes and clean_text(row.get("Age Code")).upper() in YOUTH_AGE_VALUES:
+            return True
+    return False
+
+
+def parse_facility_metadata(soup: BeautifulSoup) -> Dict[str, object]:
     facility_heading = soup.find("h3")
     facility_name = facility_heading.get_text(" ", strip=True) if facility_heading else ""
 
-    program_rows = soup.find_all("table")
-    services = ""
-    facility_type = ""
-    disability_category = ""
-    if len(program_rows) > 1:
-        data_rows = program_rows[1].find_all("tr")
-        if len(data_rows) > 1:
-            cells = [cell.get_text(" ", strip=True) for cell in data_rows[1].find_all(["td", "th"])]
-            if len(cells) >= 5:
-                services = cells[1]
-                facility_type = cells[3]
-                disability_category = cells[4]
+    # Describe the facility by its program for minors when it has several.
+    programs = parse_program_rows(soup)
+    main_program = next((program for program in programs if program_serves_minors(program)), programs[0] if programs else {})
+    services = main_program.get("services", "")
+    facility_type = main_program.get("facility_type", "")
+    disability_category = main_program.get("disability", "")
 
     contact_text = soup.get_text(" ", strip=True)
     contact_match = re.search(r"In Care of:\s*(.*?)\s*Phone:\s*\(?([0-9\-\)\(\s]+)", contact_text)
@@ -330,6 +399,7 @@ def parse_facility_metadata(soup: BeautifulSoup) -> Dict[str, str]:
         "facility_address": facility_address,
         "mailing_address": mailing_address,
         "county": county,
+        "programs": programs,
     }
 
 
@@ -433,10 +503,15 @@ def ocr_pdf_bytes(pdf_bytes: bytes, cache_key: str) -> str:
     return text
 
 
-def parse_reports(session: requests.Session, facility_url: str, fid: str) -> List[Dict[str, object]]:
+def fetch_facility_page(session: requests.Session, facility_url: str) -> BeautifulSoup:
     response = session.get(facility_url, timeout=60)
     response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
+    return BeautifulSoup(response.text, "html.parser")
+
+
+def parse_reports(session: requests.Session, facility_url: str, fid: str, soup: Optional[BeautifulSoup] = None) -> List[Dict[str, object]]:
+    if soup is None:
+        soup = fetch_facility_page(session, facility_url)
 
     tables = soup.find_all("table")
     if len(tables) < 3:
@@ -496,7 +571,7 @@ def parse_reports(session: requests.Session, facility_url: str, fid: str) -> Lis
     return reports
 
 
-def build_facility_payload(record: Dict[str, object], entry: Dict[str, str], metadata: Dict[str, str], reports: List[Dict[str, object]]) -> Dict[str, object]:
+def build_facility_payload(record: Dict[str, object], entry: Dict[str, str], metadata: Dict[str, object], reports: List[Dict[str, object]]) -> Dict[str, object]:
     program_codes = sorted({clean_text(row.get("Program Code")) for row in [record] if clean_text(row.get("Program Code"))})
     program_code_type = clean_text(record.get("Program Code Type"))
     facility_type = metadata.get("facility_type") or clean_text(record.get("Facility Type"))
@@ -522,6 +597,7 @@ def build_facility_payload(record: Dict[str, object], entry: Dict[str, str], met
             "services": metadata.get("services"),
             "disability_category": metadata.get("disability_category"),
             "workbook_program_codes": program_codes,
+            "programs": metadata.get("programs") or [],
         },
     }
 
@@ -546,9 +622,47 @@ def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -
     facilities: List[Dict[str, object]] = []
     unmatched: List[Dict[str, object]] = []
 
-    for index, (license_number, group_rows) in enumerate(sorted(grouped_rows.items()), start=1):
+    # Strongest matches claim their directory entry first, and an entry goes to
+    # one licence only: four A Place of My Own licences once all landed on the
+    # one fid whose name held the company name.
+    planned = []
+    for license_number, group_rows in grouped_rows.items():
         representative = pick_representative_row(group_rows)
-        entry = match_directory_entry(representative, directory_entries)
+        candidates = match_candidates(representative, directory_entries)
+        planned.append((candidates[0][0] if candidates else 0.0, license_number, group_rows, representative, candidates))
+    planned.sort(key=lambda item: (-item[0], item[1]))
+
+    claimed: Dict[str, str] = {}
+    pages: Dict[str, BeautifulSoup] = {}
+    skipped_adult: List[Dict[str, object]] = []
+
+    for index, (_, license_number, group_rows, representative, candidates) in enumerate(planned, start=1):
+        workbook_codes = {clean_text(row.get("Program Code")) for row in group_rows if clean_text(row.get("Program Code"))}
+        entry = None
+        metadata: Dict[str, object] = {}
+        soup = None
+        reason = "no directory entry at this address or name in the same town"
+        for score, candidate in candidates:
+            if candidate["fid"] in claimed:
+                reason = f"directory entry fid={candidate['fid']} already belongs to {claimed[candidate['fid']]}"
+                continue
+            try:
+                soup = pages.get(candidate["fid"]) or fetch_facility_page(session, candidate["url"])
+            except NETWORK_ERRORS as exc:
+                logger.warning("[%s/%s] failed to fetch facility page: %s", index, license_number, exc)
+                reason = f"facility page failed: {exc}"
+                continue
+            pages[candidate["fid"]] = soup
+            candidate_metadata = parse_facility_metadata(soup)
+            page_codes = {program["code"] for program in candidate_metadata["programs"]}
+            # The licence's program code must be on the page; otherwise this is a
+            # different facility that shares a town and part of a name.
+            if workbook_codes and not (workbook_codes & page_codes):
+                reason = f"fid={candidate['fid']} ({candidate['name']}) runs {sorted(page_codes)}, licence is {sorted(workbook_codes)}"
+                continue
+            entry, metadata = candidate, candidate_metadata
+            break
+
         if not entry:
             unmatched.append(
                 {
@@ -556,21 +670,29 @@ def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -
                     "facility_name": clean_text(representative.get("DBA Name")) or clean_text(representative.get("Name of Licensee Legal Name")),
                     "site_address": clean_text(representative.get("Site Address")),
                     "county": clean_text(representative.get("County ")),
+                    "reason": reason,
                 }
             )
             continue
 
-        facility_url = entry["url"]
         fid = entry["fid"]
+        claimed[fid] = license_number
+        if not serves_minors(metadata["programs"], group_rows):
+            logger.info("[%s/%s] %s (fid=%s) - adult-only programs %s, skipped", index, license_number, entry["name"], fid,
+                        [program["code"] for program in metadata["programs"]])
+            skipped_adult.append({"license_number": license_number, "fid": fid, "facility_name": entry["name"],
+                                  "programs": metadata["programs"]})
+            continue
+
+        facility_url = entry["url"]
         seen_for_fid = seen.get(fid, set())
 
-        logger.info("[%s/%s] %s (fid=%s) - fetching facility page", index, license_number, entry["name"], fid)
+        logger.info("[%s/%s] %s (fid=%s) - reading reports", index, license_number, entry["name"], fid)
         facility_start = time.monotonic()
         try:
-            metadata = parse_facility_metadata(BeautifulSoup(session.get(facility_url, timeout=60).text, "html.parser"))
-            reports = parse_reports(session, facility_url, fid)
+            reports = parse_reports(session, facility_url, fid, soup=soup)
         except NETWORK_ERRORS as exc:
-            logger.warning("[%s/%s] failed to fetch facility page: %s", index, license_number, exc)
+            logger.warning("[%s/%s] failed to read reports: %s", index, license_number, exc)
             continue
         logger.info("[%s/%s] %s (fid=%s) - facility processing took %.1fs, %d reports parsed", index, license_number, entry["name"], fid, time.monotonic() - facility_start, len(reports))
 
@@ -594,6 +716,8 @@ def scrape(source_file: Path, limit: Optional[int] = None, full: bool = False) -
         if limit is not None and len(facilities) >= limit:
             break
 
+    if skipped_adult:
+        logger.info("Skipped %d facilities whose programs are all for adults", len(skipped_adult))
     return facilities, new_ids, unmatched
 
 
